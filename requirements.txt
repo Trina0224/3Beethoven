@@ -1,0 +1,10 @@
+torch
+transformers
+huggingface_hub
+accelerate
+pandas
+requests
+peft
+trl
+datasets
+bitsandbytes
