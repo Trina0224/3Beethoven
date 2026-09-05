@@ -212,9 +212,13 @@ def training_dataset(records, tokenizer):
             assistant = (r["answer_letter"] if mode == "letter" else
                          f"Answer: {r['answer_letter']}\n\nExplanation: {r['explanation']}\n\nCommon misconception: {r['common_mistake']}")
             messages = [{"role": "user", "content": prompt_for(r, mode)}]
-            prefix = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True)
+            # Transformers 5 defaults to BatchEncoding; labels need token lists.
+            prefix = tokenizer.apply_chat_template(messages, tokenize=True, add_generation_prompt=True,
+                                                   return_dict=False)
             full = tokenizer.apply_chat_template(messages + [{"role": "assistant", "content": assistant}],
-                                                  tokenize=True, add_generation_prompt=False)
+                                                  tokenize=True, add_generation_prompt=False, return_dict=False)
+            if not isinstance(prefix, list) or not isinstance(full, list):
+                raise RuntimeError("Chat tokenizer must return flat token lists")
             if full[:len(prefix)] != prefix:
                 raise RuntimeError("Chat-template boundary mismatch")
             if len(full) > TRAINING["max_length"] or len(full) <= len(prefix):
