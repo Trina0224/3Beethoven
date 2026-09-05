@@ -1,0 +1,3233 @@
+{
+  "baseline": [
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.7781185659996481,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_01",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.22444015300061437,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_02",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.20618963800006895,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_03",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.23093112900005508,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_04",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.21240782699987903,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_05",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.20536807499956922,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_06",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.22103416600020864,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_07",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.20844052000029478,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_08",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.20355140999981813,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_09",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.2074932509995051,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_10",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.1644132540004648,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_11",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.20927814399965428,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_12",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.1673785980001412,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_13",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.20889787600026466,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_14",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.21807159800027875,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_15",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.21026016399991931,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_16",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.15399218399943493,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_17",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.20737104600084422,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_18",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.21383958900059952,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_19",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.2209953649999079,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_20",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.21812332599984074,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_21",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.20819171800030745,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_22",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.18818115400063107,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_23",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.20999006000056397,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_24",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.20722653300072125,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_25",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.2066017399993143,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_26",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.20423951399970974,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_27",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.20447793699986505,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_28",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.20740675599972747,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_29",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.20996837700022297,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_30",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.20955743200011057,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_31",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.20444177700028376,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_32",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.22591111599922442,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_33",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.20834499600005074,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_34",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.21247590399980254,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_35",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.20662633000029018,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_36",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.21487281000008807,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_37",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.2092017360000682,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_38",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.20379790200058778,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_39",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.20610766699974192,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_40",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.20449895199999446,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_41",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.20346936599980836,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_42",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.22139638699991337,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_43",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.2094760710006085,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_44",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.2095540689997506,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_45",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.20899082500000077,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_46",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.20906540299984044,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_47",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.21194604099946446,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_48",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.2089388680005868,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_49",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.2083541489992058,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_50",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.21740204300022015,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_51",
+      "predicted": "D",
+      "raw": "D."
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.2083053189999191,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_52",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.20981160399969667,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_53",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.20768142599990824,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_54",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.2074041350006155,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_55",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.2069674970007327,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_56",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.2259818410002481,
+      "expected": "B",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_57",
+      "predicted": "B",
+      "raw": "B."
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.20830327600015153,
+      "expected": "A",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_58",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.21787737099930382,
+      "expected": "D",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_59",
+      "predicted": "A",
+      "raw": "A."
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.20658214800005226,
+      "expected": "C",
+      "generated_tokens": 3,
+      "hit_token_limit": false,
+      "id": "holdout_60",
+      "predicted": "A",
+      "raw": "A."
+    }
+  ],
+  "distilled": [
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.2088992409999264,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_01",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.21002608399976452,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_02",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.21773338099956163,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_03",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.2226851479999823,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_04",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.21639456400043855,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_05",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.20650869899964164,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_06",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.22979611800019484,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_07",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.2166589449998355,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_08",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.21092845800012583,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_09",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.2049296659997708,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_10",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.2297892659998979,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_11",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.21161094200033403,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_12",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.21696936400076083,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_13",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.21159636399988813,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_14",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.2081291060003423,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_15",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.20856412400007684,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_16",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.21137145099964982,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_17",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.20715451799969742,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_18",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.2094689269997616,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_19",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.22799108599974716,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_20",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.2126136030001362,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_21",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.212372207000044,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_22",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.22989465400041809,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_23",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.20918527100002393,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_24",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.21194793199993,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_25",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.20351947899962397,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_26",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.2043983229996229,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_27",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.2104105520002122,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_28",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.21461908100081928,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_29",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": false,
+      "elapsed_seconds": 0.21349285399992368,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_30",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.2207708759997331,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_31",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.2045412799998303,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_32",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.22294052699999156,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_33",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.22143642500032001,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_34",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.22544547699999384,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_35",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.2282389760002843,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_36",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.20848971699979302,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_37",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.21450963700044667,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_38",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.20501268099997105,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_39",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.21452036099981342,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_40",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.2072267590001502,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_41",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.21794058399973437,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_42",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.22858757999983936,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_43",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.21415303200046765,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_44",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.21747616799984826,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_45",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.2309697459995732,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_46",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.20969819899983122,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_47",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.2209714079999685,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_48",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.21574073400006455,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_49",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.21017086499978177,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_50",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.23733877499944356,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_51",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.24822234099974594,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_52",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.21608932700019068,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_53",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": false,
+      "elapsed_seconds": 0.21822842900019168,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_54",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.20993103299952054,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_55",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.2198954519999461,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_56",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.22529103100077918,
+      "expected": "B",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_57",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.21620197399988683,
+      "expected": "A",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_58",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.22894813299990346,
+      "expected": "D",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_59",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.2092588559999058,
+      "expected": "C",
+      "generated_tokens": 2,
+      "hit_token_limit": false,
+      "id": "holdout_60",
+      "predicted": "D",
+      "raw": "D"
+    }
+  ],
+  "question_outcomes": [
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "poisson",
+      "choices": [
+        "4",
+        "12",
+        "36",
+        "144"
+      ],
+      "distilled": "B",
+      "id": "holdout_01",
+      "question": "A homogeneous Poisson process has rate 4 arrivals per minute. What is the variance of the number of arrivals in a three-minute window?",
+      "reference_reason": "Poisson parameter over three minutes is 4*3=12; variance equals this parameter.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "7",
+        "3",
+        "10",
+        "49"
+      ],
+      "distilled": "C",
+      "id": "holdout_02",
+      "question": "Independent counts X and Y have Poisson distributions with parameters 2 and 5. What is Var(X+Y)?",
+      "reference_reason": "Independence gives Var(X+Y)=Var(X)+Var(Y)=2+5=7.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "B",
+      "category": "poisson",
+      "choices": [
+        "18",
+        "162",
+        "6",
+        "2"
+      ],
+      "distilled": "B",
+      "id": "holdout_03",
+      "question": "Nine independent observations each have a Poisson distribution with mean 18. What is the variance of their sample mean?",
+      "reference_reason": "Variance of an independent sample mean is 18/9=2.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "Yes, with parameter 8",
+        "Yes, with parameter 20",
+        "No, because a Poisson distribution has equal theoretical mean and variance",
+        "Yes, with parameter 12"
+      ],
+      "distilled": "C",
+      "id": "holdout_04",
+      "question": "A count distribution has exact theoretical mean 8 and exact theoretical variance 20. Can this distribution be Poisson with any parameter?",
+      "reference_reason": "Unequal theoretical mean and variance rule out a Poisson distribution; these are not noisy sample estimates.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "31",
+        "3",
+        "26",
+        "Cannot be determined without independence"
+      ],
+      "distilled": "D",
+      "id": "holdout_05",
+      "question": "Random variables X and Y have finite means E[X]=4 and E[Y]=7. Independence is not assumed. What is E[3X-2Y+5]?",
+      "reference_reason": "Linearity does not require independence: 3*4-2*7+5=3.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "3",
+        "4",
+        "6",
+        "-3"
+      ],
+      "distilled": "D",
+      "id": "holdout_06",
+      "question": "A random variable X has finite mean and E[7-2X]=1. What is E[X]?",
+      "reference_reason": "7-2E[X]=1 implies E[X]=3.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "6",
+        "5",
+        "1",
+        "It cannot be determined from these means alone"
+      ],
+      "distilled": "D",
+      "id": "holdout_07",
+      "question": "The only information about X and Y is E[X]=2 and E[Y]=3, and all required expectations exist. What must E[XY] equal?",
+      "reference_reason": "E[XY] depends on dependence/covariance; independence was not given.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "11",
+        "22",
+        "0",
+        "It is undetermined unless X and Y have identical distributions"
+      ],
+      "distilled": "D",
+      "id": "holdout_08",
+      "question": "X and Y both have finite mean 11, but may be dependent and have different distributions. What is E[X-Y]?",
+      "reference_reason": "E[X-Y]=E[X]-E[Y]=0; dependence and different distributions do not change linearity.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "8",
+        "2",
+        "4",
+        "-2"
+      ],
+      "distilled": "C",
+      "id": "holdout_09",
+      "question": "X is continuously uniform on [-6,10]. What is E[X]?",
+      "reference_reason": "The midpoint is (-6+10)/2=2.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "B",
+      "category": "uniform",
+      "choices": [
+        "4",
+        "5",
+        "9",
+        "18"
+      ],
+      "distilled": "C",
+      "id": "holdout_10",
+      "question": "X is continuously uniform on [a,14] and E[X]=9. What is a?",
+      "reference_reason": "(a+14)/2=9 implies a=4.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "They have equal means and equal variances",
+        "X has a larger mean, but equal variance",
+        "Y has a larger mean and larger variance",
+        "They have equal means, but X has larger variance"
+      ],
+      "distilled": "D",
+      "id": "holdout_11",
+      "question": "X is uniform on [0,10] and Y is uniform on [4,6]. Which statement is correct?",
+      "reference_reason": "Both midpoints are 5, while variances are 100/12 and 4/12.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "6 minutes",
+        "8 minutes",
+        "4 minutes",
+        "12 minutes"
+      ],
+      "distilled": "C",
+      "id": "holdout_12",
+      "question": "A total waiting time X is uniform on [0,12] minutes. Given that X exceeds 4 minutes, what is the expected remaining wait X-4?",
+      "reference_reason": "Conditional X is uniform on (4,12), with mean 8; remaining mean is 8-4=4.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "A Type II error",
+        "A Type I error",
+        "A correct rejection",
+        "A correct non-rejection"
+      ],
+      "distilled": "B",
+      "id": "holdout_13",
+      "question": "A drug trial tests H0: the drug has no effect. The drug truly has no effect, but the trial rejects H0 and announces an effect. What happened?",
+      "reference_reason": "Rejecting a true null is a Type I error.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "0.02",
+        "0.98",
+        "0.50",
+        "It equals the test's power"
+      ],
+      "distilled": "B",
+      "id": "holdout_14",
+      "question": "A test of a simple null hypothesis has exact size alpha=0.02. When that null is true, what is the probability of rejecting it?",
+      "reference_reason": "For a simple null, exact test size is the rejection probability under that null.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "5",
+        "20",
+        "190",
+        "10"
+      ],
+      "distilled": "C",
+      "id": "holdout_15",
+      "question": "Two hundred tests each have a true null and an exact Type I error probability of 0.05. What is the expected number of false rejections?",
+      "reference_reason": "Linearity of expectation gives 200*0.05=10; independence is unnecessary for this expectation.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "It must increase",
+        "It always becomes exactly zero",
+        "It cannot increase",
+        "It becomes equal to the Type II error probability"
+      ],
+      "distilled": "C",
+      "id": "holdout_16",
+      "question": "For the same test statistic and sample size, a researcher uses a strictly smaller rejection region. What happens to the Type I error probability?",
+      "reference_reason": "Under a true null, a subset rejection event cannot have greater probability.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "A Type I error",
+        "A Type II error",
+        "A correct rejection",
+        "A correct non-rejection"
+      ],
+      "distilled": "B",
+      "id": "holdout_17",
+      "question": "A test uses H0: a machine's defect rate has not increased. In fact the rate has increased, but the test fails to reject H0. What happened?",
+      "reference_reason": "Failing to reject a false null is a Type II error.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "0.15",
+        "0.85",
+        "0.05",
+        "0.95"
+      ],
+      "distilled": "A",
+      "id": "holdout_18",
+      "question": "At a specified alternative, a test has power 0.85. What is its Type II error probability at that alternative?",
+      "reference_reason": "Power=1-beta, so beta=1-0.85=0.15.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "80",
+        "5",
+        "100",
+        "20"
+      ],
+      "distilled": "D",
+      "id": "holdout_19",
+      "question": "One hundred tests are conducted in situations where each null is false. Each test has Type II error probability 0.20 at its actual alternative. What is the expected number of failures to reject?",
+      "reference_reason": "Expected failures to reject false nulls equal 100*0.20=20.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "Yes; every failure to reject is a Type II error",
+        "No; every failure to reject is a Type I error",
+        "No; that classification also requires H0 to be false",
+        "Yes; failure to reject proves H0 is false"
+      ],
+      "distilled": "C",
+      "id": "holdout_20",
+      "question": "A report only says that a test failed to reject H0. It does not reveal whether H0 is true. Can this decision already be classified as a Type II error?",
+      "reference_reason": "A failure to reject is correct when H0 is true and Type II when H0 is false.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "It doubles",
+        "It is halved",
+        "It is quartered",
+        "It is unchanged"
+      ],
+      "distilled": "D",
+      "id": "holdout_21",
+      "question": "For a normal-theory mean interval with known population standard deviation, keep confidence level fixed and quadruple sample size. What happens to the interval width?",
+      "reference_reason": "Width is proportional to 1/sqrt(n), so multiplying n by 4 halves width.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "15.456",
+        "7.728",
+        "5.152",
+        "11.76"
+      ],
+      "distilled": "C",
+      "id": "holdout_22",
+      "question": "A two-sided normal-theory confidence interval uses standard error 3 and critical value 2.576. What is its total width?",
+      "reference_reason": "Total width is 2*2.576*3=15.456, not the one-sided margin of error.",
+      "right_to_wrong": true,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "There is a 95% probability that the fixed parameter is in this particular observed interval",
+        "95% of individual observations must be inside the interval",
+        "The next observation has a 95% chance of equaling the sample mean",
+        "Across repeated samples, about 95% of the intervals cover the fixed true parameter"
+      ],
+      "distilled": "D",
+      "id": "holdout_23",
+      "question": "Which is the frequentist meaning of a valid 95% confidence-interval procedure under its model assumptions?",
+      "reference_reason": "Coverage concerns the repeated-sampling random intervals, not a posterior probability for a fixed parameter.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "B",
+      "category": "confidence",
+      "choices": [
+        "4",
+        "8",
+        "16",
+        "32"
+      ],
+      "distilled": "C",
+      "id": "holdout_24",
+      "question": "A confidence interval has endpoints 10 and 18. Keeping its center and critical value fixed, the standard error doubles. What is the new total width?",
+      "reference_reason": "Original width=18-10=8; width is proportional to standard error, so new width=16.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "12",
+        "6",
+        "24",
+        "3"
+      ],
+      "distilled": "B",
+      "id": "holdout_25",
+      "question": "A homogeneous Poisson process averages 12 events per hour. What is the expected count in a half-hour observation?",
+      "reference_reason": "The expected count scales with duration: 12*0.5=6.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "exp(-3)",
+        "3*exp(-3)",
+        "1-exp(-3)",
+        "1/3"
+      ],
+      "distilled": "A",
+      "id": "holdout_26",
+      "question": "X has a Poisson distribution with parameter 3. What is P(X=0)?",
+      "reference_reason": "The Poisson mass at zero is exp(-lambda)*lambda^0/0!=exp(-3).",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "5",
+        "-5",
+        "169",
+        "13"
+      ],
+      "distilled": "D",
+      "id": "holdout_27",
+      "question": "Independent X and Y are Poisson with means 4 and 9. What is Var(X-Y)?",
+      "reference_reason": "Variances add for a difference of independent variables: 4+9=13.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "18",
+        "9",
+        "36",
+        "81"
+      ],
+      "distilled": "B",
+      "id": "holdout_28",
+      "question": "X is Poisson with mean 9 and Y=2X. What is Var(Y)?",
+      "reference_reason": "Var(2X)=4Var(X)=4*9=36.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "0.2",
+        "-ln(0.2)",
+        "ln(0.2)",
+        "5"
+      ],
+      "distilled": "B",
+      "id": "holdout_29",
+      "question": "A Poisson random variable has probability 0.2 of being zero. What is its mean?",
+      "reference_reason": "P(X=0)=exp(-lambda)=0.2, hence lambda=-ln(0.2).",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "poisson",
+      "choices": [
+        "Mean 12, variance 12",
+        "Mean 3, variance 3",
+        "Mean 12, variance 48",
+        "Mean 12, variance 144"
+      ],
+      "distilled": "C",
+      "id": "holdout_30",
+      "question": "Four independent Poisson counts each have parameter 3. What are the mean and variance of their total?",
+      "reference_reason": "The sum is Poisson with parameter 4*3=12.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "9",
+        "8",
+        "10",
+        "12"
+      ],
+      "distilled": "C",
+      "id": "holdout_31",
+      "question": "E[X]=2 and E[X squared]=7. What is E[(X+1) squared]?",
+      "reference_reason": "Expanding gives E[X^2]+2E[X]+1=7+4+1=12.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "7",
+        "3",
+        "10",
+        "It is undetermined despite independence"
+      ],
+      "distilled": "D",
+      "id": "holdout_32",
+      "question": "Independent X and Y have finite means 2 and 5. What is E[XY]?",
+      "reference_reason": "Independence gives E[XY]=E[X]E[Y]=2*5=10.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "expectation",
+      "choices": [
+        "Yes, always",
+        "No; the mean alone does not determine E[1/X]",
+        "No; it must equal 4",
+        "No; it must equal zero"
+      ],
+      "distilled": "B",
+      "id": "holdout_33",
+      "question": "X is strictly positive and E[X]=4. No distribution or other moments are given. Must E[1/X] equal 1/4?",
+      "reference_reason": "Expectation cannot generally be moved through a reciprocal; a constant X and a nonconstant positive X with the same mean differ.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "0.3",
+        "0.7",
+        "1",
+        "0"
+      ],
+      "distilled": "B",
+      "id": "holdout_34",
+      "question": "An indicator I equals 1 when event A occurs and 0 otherwise. If P(A)=0.3, what is E[I]?",
+      "reference_reason": "E[I]=1*0.3+0*0.7=0.3.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "Yes, with variance 2",
+        "Yes, with variance 5",
+        "Yes, with variance 14",
+        "No, because it would imply negative variance"
+      ],
+      "distilled": "D",
+      "id": "holdout_35",
+      "question": "Someone claims a real random variable has E[X]=3 and E[X squared]=5. All moments are finite. Is this possible?",
+      "reference_reason": "Var(X)=E[X^2]-E[X]^2=5-9=-4 is impossible.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "expectation",
+      "choices": [
+        "6",
+        "12",
+        "5",
+        "3"
+      ],
+      "distilled": "C",
+      "id": "holdout_36",
+      "question": "A random output is drawn from group A with probability 0.25 and group B otherwise. Their conditional means are 8 and 4. What is the overall mean?",
+      "reference_reason": "Total expectation gives 0.25*8+0.75*4=5.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "5/9",
+        "1/2",
+        "1/4",
+        "3/4"
+      ],
+      "distilled": "A",
+      "id": "holdout_37",
+      "question": "X is continuously uniform on [1,9]. What is P(X>5)?",
+      "reference_reason": "The favorable interval length is 9-5=4 out of total length 8.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "1.5",
+        "0",
+        "3",
+        "6"
+      ],
+      "distilled": "A",
+      "id": "holdout_38",
+      "question": "X is continuously uniform on [-3,3]. What is E[absolute value of X]?",
+      "reference_reason": "Absolute X is uniform on [0,3], with mean 1.5.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "5",
+        "6",
+        "36",
+        "3"
+      ],
+      "distilled": "D",
+      "id": "holdout_39",
+      "question": "X is continuously uniform on [2,8]. What is Var(X)?",
+      "reference_reason": "Uniform variance is (8-2)^2/12=36/12=3.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "B",
+      "category": "uniform",
+      "choices": [
+        "12",
+        "6",
+        "sqrt(12)",
+        "144"
+      ],
+      "distilled": "B",
+      "id": "holdout_40",
+      "question": "X is continuously uniform on [0,12]. What is its standard deviation?",
+      "reference_reason": "Variance is 12^2/12=12; standard deviation is sqrt(12).",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "uniform",
+      "choices": [
+        "0",
+        "4/3",
+        "2",
+        "4"
+      ],
+      "distilled": "D",
+      "id": "holdout_41",
+      "question": "X is continuously uniform on [-2,2]. What is E[X squared]?",
+      "reference_reason": "Mean is zero, so E[X^2]=Var(X)=4^2/12=4/3.",
+      "right_to_wrong": true,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "uniform",
+      "choices": [
+        "6",
+        "5",
+        "7",
+        "10"
+      ],
+      "distilled": "B",
+      "id": "holdout_42",
+      "question": "X is continuously uniform on [0,2] and Y=X+5. What is E[Y]?",
+      "reference_reason": "Uniform mean is 1, and adding 5 gives expectation 6.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "P(H0 is true given H0 was rejected)",
+        "P(fail to reject H0 given H0 is false)",
+        "P(H0 is false given H0 was not rejected)",
+        "P(reject H0 given H0 is true)"
+      ],
+      "distilled": "D",
+      "id": "holdout_43",
+      "question": "Which conditional probability defines the Type I error rate for a simple null?",
+      "reference_reason": "Type I error conditions on null truth; reversing the conditional is not valid.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "0.96",
+        "0.5",
+        "0.04",
+        "0.16"
+      ],
+      "distilled": "C",
+      "id": "holdout_44",
+      "question": "Under a true null, a continuous p-value is exactly uniform on [0,1]. A test rejects when p<0.04. What is its Type I error probability?",
+      "reference_reason": "For a uniform p-value, P(p<0.04)=0.04.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "type_i",
+      "choices": [
+        "0.05",
+        "1-0.95^10",
+        "0.95^10",
+        "0.05^10"
+      ],
+      "distilled": "B",
+      "id": "holdout_45",
+      "question": "Ten independent tests each have a true null and Type I error probability 0.05. What is the probability of at least one false rejection?",
+      "reference_reason": "Independence gives probability of no false rejection 0.95^10; take its complement.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "0.05",
+        "0.0025",
+        "0.95",
+        "0.5"
+      ],
+      "distilled": "B",
+      "id": "holdout_46",
+      "question": "Twenty hypotheses are each tested at level 0.0025. Without assuming independence, which upper bound follows for the probability of one or more false rejections?",
+      "reference_reason": "The union bound is at most 20*0.0025=0.05, and remains valid if fewer nulls are true.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "1",
+        "0.5",
+        "It depends on the sample size",
+        "0"
+      ],
+      "distilled": "D",
+      "id": "holdout_47",
+      "question": "A procedure never rejects any null hypothesis. What is its Type I error probability?",
+      "reference_reason": "A true null can never be rejected under this procedure.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "type_i",
+      "choices": [
+        "Yes, exactly 5%",
+        "Yes, at least 95%",
+        "No; that is a different conditional probability",
+        "Yes, provided the sample size exceeds 30"
+      ],
+      "distilled": "C",
+      "id": "holdout_48",
+      "question": "A significance threshold is 0.05. Does this by itself imply that 5% of all rejected hypotheses are actually true?",
+      "reference_reason": "Alpha controls rejection conditional on null truth, not null truth conditional on rejection.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "type_ii",
+      "choices": [
+        "It increases",
+        "It decreases",
+        "It must stay exactly constant",
+        "It becomes identical to the significance level"
+      ],
+      "distilled": "B",
+      "id": "holdout_49",
+      "question": "For a fixed nonzero effect and the usual z test with known variance and fixed significance level, increasing sample size has what effect on Type II error probability?",
+      "reference_reason": "A larger sample increases the standardized nonzero effect and power, reducing beta for this fixed-effect z-test setup.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "0",
+        "1",
+        "0.5",
+        "It equals the effect size"
+      ],
+      "distilled": "A",
+      "id": "holdout_50",
+      "question": "A test always rejects H0, regardless of data. At a specified false null, what is its Type II error probability?",
+      "reference_reason": "There are no failures to reject a false null when rejection is automatic.",
+      "right_to_wrong": false,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "D",
+      "category": "type_ii",
+      "choices": [
+        "The test with power 0.60",
+        "They have equal Type II error probability",
+        "Neither can have a Type II error",
+        "The test with power 0.90"
+      ],
+      "distilled": "D",
+      "id": "holdout_51",
+      "question": "Two tests have powers 0.60 and 0.90 at the same specified alternative. Which has smaller Type II error probability?",
+      "reference_reason": "Their beta values are 0.40 and 0.10 respectively.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "False positive",
+        "True positive",
+        "False negative",
+        "True negative"
+      ],
+      "distilled": "C",
+      "id": "holdout_52",
+      "question": "A medical screening model uses H0: the patient does not have the condition. The patient has it, but the test does not reject H0. Which term matches this Type II error?",
+      "reference_reason": "Failure to detect a condition that is present is a false negative and a failure to reject this false null.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "H0 has been proved true",
+        "The nonsignificant result does not rule out that alternative",
+        "The alternative has been proved false",
+        "A Type I error certainly occurred"
+      ],
+      "distilled": "B",
+      "id": "holdout_53",
+      "question": "A study fails to reject H0 and reports low power for an important specified alternative. Which conclusion is justified?",
+      "reference_reason": "Low power means a meaningful alternative can often be missed; nonsignificance is not proof of the null.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "type_ii",
+      "choices": [
+        "60",
+        "20",
+        "25",
+        "80"
+      ],
+      "distilled": "C",
+      "id": "holdout_54",
+      "question": "At a fixed alternative, a test has Type II error probability 0.25. In 80 repetitions at that alternative, what is the expected number of rejections?",
+      "reference_reason": "Power is 0.75, so expected rejections are 80*0.75=60.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "3",
+        "1/3",
+        "27",
+        "9"
+      ],
+      "distilled": "D",
+      "id": "holdout_55",
+      "question": "For a normal-theory mean interval at fixed confidence and known standard deviation, what sample-size factor is needed to make the width one third as large?",
+      "reference_reason": "Width scales as n^-1/2; reducing it by 3 requires n to increase by 3^2=9.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "900",
+        "90",
+        "100",
+        "10"
+      ],
+      "distilled": "B",
+      "id": "holdout_56",
+      "question": "A valid 90% confidence-interval procedure is applied to 1000 repeated samples under its assumptions. What is the expected number of intervals that miss the fixed true parameter?",
+      "reference_reason": "Noncoverage probability is 0.10, giving 1000*0.10=100 expected misses.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "B",
+      "baseline": "B",
+      "category": "confidence",
+      "choices": [
+        "Fail to reject that null mean",
+        "Reject that null mean",
+        "Accept the null with probability 0.95",
+        "The decision cannot be linked to the matching interval"
+      ],
+      "distilled": "B",
+      "id": "holdout_57",
+      "question": "A two-sided 95% z interval for a mean excludes a specified null mean. Using the matching two-sided z test and the same assumptions, what decision follows at level 0.05?",
+      "reference_reason": "Matching two-sided confidence intervals and tests invert one another: exclusion implies rejection.",
+      "right_to_wrong": false,
+      "teacher": "B",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "A",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "It doubles",
+        "It is halved",
+        "It is unchanged",
+        "It quadruples"
+      ],
+      "distilled": "C",
+      "id": "holdout_58",
+      "question": "A normal-theory interval keeps its confidence level and sample size fixed, but the known population standard deviation doubles. What happens to its width?",
+      "reference_reason": "Width is 2*z*sigma/sqrt(n), proportional to sigma.",
+      "right_to_wrong": true,
+      "teacher": "A",
+      "wrong_to_right": false
+    },
+    {
+      "answer_letter": "D",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "Yes, by definition",
+        "Yes, if the sample mean is 45",
+        "Yes, because both endpoints are positive",
+        "No; a mean-confidence interval is not an interval for individual observations"
+      ],
+      "distilled": "D",
+      "id": "holdout_59",
+      "question": "A 95% confidence interval for a population mean is [40,50]. Does it claim that 95% of individual population observations lie between 40 and 50?",
+      "reference_reason": "Uncertainty about a mean and dispersion of individual observations are different quantities.",
+      "right_to_wrong": false,
+      "teacher": "D",
+      "wrong_to_right": true
+    },
+    {
+      "answer_letter": "C",
+      "baseline": "A",
+      "category": "confidence",
+      "choices": [
+        "2",
+        "4",
+        "1",
+        "0.5"
+      ],
+      "distilled": "D",
+      "id": "holdout_60",
+      "question": "For a two-sided normal-theory interval, the desired half-width is 2 and the critical value is 2. What standard error is required?",
+      "reference_reason": "Half-width equals critical value times standard error: 2=2*SE, so SE=1.",
+      "right_to_wrong": false,
+      "teacher": "C",
+      "wrong_to_right": false
+    }
+  ],
+  "summary": {
+    "api_usage": {
+      "attempted_calls": 60,
+      "reported_cost_usd": 0.00106343,
+      "responses": 60,
+      "responses_without_cost": 0
+    },
+    "by_category": {
+      "confidence": {
+        "baseline": {
+          "accuracy": 0.3,
+          "correct": 3,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 8,
+            "B": 2
+          }
+        },
+        "distilled": {
+          "accuracy": 0.5,
+          "correct": 5,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "B": 2,
+            "C": 3,
+            "D": 5
+          }
+        },
+        "teacher": {
+          "accuracy": 0.9,
+          "correct": 9,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 1,
+            "B": 3,
+            "C": 3,
+            "D": 3
+          }
+        }
+      },
+      "expectation": {
+        "baseline": {
+          "accuracy": 0.3,
+          "correct": 3,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 9,
+            "B": 1
+          }
+        },
+        "distilled": {
+          "accuracy": 0.4,
+          "correct": 4,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "B": 2,
+            "C": 2,
+            "D": 6
+          }
+        },
+        "teacher": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 4,
+            "B": 1,
+            "C": 3,
+            "D": 2
+          }
+        }
+      },
+      "poisson": {
+        "baseline": {
+          "accuracy": 0.4,
+          "correct": 4,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 8,
+            "B": 2
+          }
+        },
+        "distilled": {
+          "accuracy": 0.6,
+          "correct": 6,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 1,
+            "B": 5,
+            "C": 3,
+            "D": 1
+          }
+        },
+        "teacher": {
+          "accuracy": 1,
+          "correct": 10,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 3,
+            "B": 3,
+            "C": 2,
+            "D": 2
+          }
+        }
+      },
+      "type_i": {
+        "baseline": {
+          "accuracy": 0.3,
+          "correct": 3,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 9,
+            "B": 1
+          }
+        },
+        "distilled": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "B": 4,
+            "C": 4,
+            "D": 2
+          }
+        },
+        "teacher": {
+          "accuracy": 0.9,
+          "correct": 9,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 2,
+            "B": 3,
+            "C": 3,
+            "D": 2
+          }
+        }
+      },
+      "type_ii": {
+        "baseline": {
+          "accuracy": 0.5,
+          "correct": 5,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 8,
+            "B": 1,
+            "D": 1
+          }
+        },
+        "distilled": {
+          "accuracy": 0.9,
+          "correct": 9,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 2,
+            "B": 3,
+            "C": 3,
+            "D": 2
+          }
+        },
+        "teacher": {
+          "accuracy": 1,
+          "correct": 10,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 3,
+            "B": 3,
+            "C": 2,
+            "D": 2
+          }
+        }
+      },
+      "uniform": {
+        "baseline": {
+          "accuracy": 0.3,
+          "correct": 3,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 7,
+            "B": 3
+          }
+        },
+        "distilled": {
+          "accuracy": 0.4,
+          "correct": 4,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 2,
+            "B": 2,
+            "C": 3,
+            "D": 3
+          }
+        },
+        "teacher": {
+          "accuracy": 0.7,
+          "correct": 7,
+          "invalid": 0,
+          "n": 10,
+          "predicted_positions": {
+            "A": 5,
+            "B": 3,
+            "C": 1,
+            "D": 1
+          }
+        }
+      }
+    },
+    "limits": [
+      "One seed and 60 internally authored questions; no independent external benchmark",
+      "Authored after training and before inference; none may be used as training targets",
+      "New transfer tasks are harder/different from the old development set; compare models within this set",
+      "Exact overlap checks do not exclude semantic overlap",
+      "No training or prompt tuning after observing these results"
+    ],
+    "protocol": {
+      "adapter_sha256": "7c3dd4513bd4f9e98ae03b9788f60a5337689de20056936cf03f7dba02bed4cf",
+      "benchmark_sha256": "9ab52132b6070eb69281e884ce256322730b1debb58407d7ed26048856bba5c4",
+      "benchmark_status": "post-training internally authored holdout frozen before inference",
+      "max_new_tokens": 16,
+      "new_teacher_attempt_cap": 60,
+      "prior_experiment_attempts": 94,
+      "prompt": "unchanged v0.3 primary letter-only prompt",
+      "student": "meta-llama/Llama-3.2-3B-Instruct",
+      "student_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+      "teacher": "meta-llama/llama-3.3-70b-instruct",
+      "training": false
+    },
+    "right_to_wrong": 11,
+    "scores": {
+      "baseline": {
+        "accuracy": 0.35,
+        "correct": 21,
+        "invalid": 0,
+        "n": 60,
+        "predicted_positions": {
+          "A": 49,
+          "B": 10,
+          "D": 1
+        }
+      },
+      "distilled": {
+        "accuracy": 0.5833333333333334,
+        "correct": 35,
+        "invalid": 0,
+        "n": 60,
+        "predicted_positions": {
+          "A": 5,
+          "B": 18,
+          "C": 18,
+          "D": 19
+        }
+      },
+      "teacher": {
+        "accuracy": 0.8666666666666667,
+        "correct": 52,
+        "invalid": 0,
+        "n": 60,
+        "predicted_positions": {
+          "A": 18,
+          "B": 16,
+          "C": 14,
+          "D": 12
+        }
+      }
+    },
+    "wrong_to_right": 25
+  },
+  "teacher": [
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 1.8829666080000607,
+      "expected": "B",
+      "id": "holdout_01",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.7636340039998686,
+      "expected": "A",
+      "id": "holdout_02",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.5069127959995967,
+      "expected": "D",
+      "id": "holdout_03",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.742551834000551,
+      "expected": "C",
+      "id": "holdout_04",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.6514597709992813,
+      "expected": "B",
+      "id": "holdout_05",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.9742512699995132,
+      "expected": "A",
+      "id": "holdout_06",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.582136361999801,
+      "expected": "D",
+      "id": "holdout_07",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.6849336549994405,
+      "expected": "C",
+      "id": "holdout_08",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.5335465540001678,
+      "expected": "B",
+      "id": "holdout_09",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.5394350819997271,
+      "expected": "A",
+      "id": "holdout_10",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 1.991685926000173,
+      "expected": "D",
+      "id": "holdout_11",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.3084488449994751,
+      "expected": "C",
+      "id": "holdout_12",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.5282167459999982,
+      "expected": "B",
+      "id": "holdout_13",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.8610300239997741,
+      "expected": "A",
+      "id": "holdout_14",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_i",
+      "correct": false,
+      "elapsed_seconds": 0.4643038449994492,
+      "expected": "D",
+      "id": "holdout_15",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.525852802999907,
+      "expected": "C",
+      "id": "holdout_16",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.7329031080007553,
+      "expected": "B",
+      "id": "holdout_17",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.4589738210006544,
+      "expected": "A",
+      "id": "holdout_18",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.5057758920002016,
+      "expected": "D",
+      "id": "holdout_19",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.6646838730002855,
+      "expected": "C",
+      "id": "holdout_20",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.6042908159997751,
+      "expected": "B",
+      "id": "holdout_21",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "confidence",
+      "correct": false,
+      "elapsed_seconds": 0.4326152749999892,
+      "expected": "A",
+      "id": "holdout_22",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.5358645340002113,
+      "expected": "D",
+      "id": "holdout_23",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.41031338599987066,
+      "expected": "C",
+      "id": "holdout_24",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.6485234179999679,
+      "expected": "B",
+      "id": "holdout_25",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 1.2354004839999106,
+      "expected": "A",
+      "id": "holdout_26",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.38560369799961336,
+      "expected": "D",
+      "id": "holdout_27",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.7854668800000582,
+      "expected": "C",
+      "id": "holdout_28",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.46689853699990636,
+      "expected": "B",
+      "id": "holdout_29",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "poisson",
+      "correct": true,
+      "elapsed_seconds": 0.45114398500027164,
+      "expected": "A",
+      "id": "holdout_30",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.5329937989999962,
+      "expected": "D",
+      "id": "holdout_31",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.42453524400025344,
+      "expected": "C",
+      "id": "holdout_32",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.19535205800002586,
+      "expected": "B",
+      "id": "holdout_33",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.4514005339997311,
+      "expected": "A",
+      "id": "holdout_34",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "expectation",
+      "correct": true,
+      "elapsed_seconds": 0.5329963750000388,
+      "expected": "D",
+      "id": "holdout_35",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "expectation",
+      "correct": false,
+      "elapsed_seconds": 0.30111775299974397,
+      "expected": "C",
+      "id": "holdout_36",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.5229265699999814,
+      "expected": "B",
+      "id": "holdout_37",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 5.545745917000204,
+      "expected": "A",
+      "id": "holdout_38",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "uniform",
+      "correct": false,
+      "elapsed_seconds": 0.3830604659997334,
+      "expected": "D",
+      "id": "holdout_39",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.2365980100003071,
+      "expected": "C",
+      "id": "holdout_40",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.9856741330004297,
+      "expected": "B",
+      "id": "holdout_41",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "uniform",
+      "correct": true,
+      "elapsed_seconds": 0.36887174699950265,
+      "expected": "A",
+      "id": "holdout_42",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.39246691900007136,
+      "expected": "D",
+      "id": "holdout_43",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.38574823399994784,
+      "expected": "C",
+      "id": "holdout_44",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 1.721707065999908,
+      "expected": "B",
+      "id": "holdout_45",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.8500940959993386,
+      "expected": "A",
+      "id": "holdout_46",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.7150765140004296,
+      "expected": "D",
+      "id": "holdout_47",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_i",
+      "correct": true,
+      "elapsed_seconds": 0.29022707600051945,
+      "expected": "C",
+      "id": "holdout_48",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.373786506000215,
+      "expected": "B",
+      "id": "holdout_49",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.641346844000509,
+      "expected": "A",
+      "id": "holdout_50",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.49962575100016693,
+      "expected": "D",
+      "id": "holdout_51",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.37757842400060326,
+      "expected": "C",
+      "id": "holdout_52",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.4056731939999736,
+      "expected": "B",
+      "id": "holdout_53",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "type_ii",
+      "correct": true,
+      "elapsed_seconds": 0.5341454589997738,
+      "expected": "A",
+      "id": "holdout_54",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.7260763270005555,
+      "expected": "D",
+      "id": "holdout_55",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.6468882839999424,
+      "expected": "C",
+      "id": "holdout_56",
+      "predicted": "C",
+      "raw": "C"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.7255749399992055,
+      "expected": "B",
+      "id": "holdout_57",
+      "predicted": "B",
+      "raw": "B"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.54390786499971,
+      "expected": "A",
+      "id": "holdout_58",
+      "predicted": "A",
+      "raw": "A"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.44014819099993474,
+      "expected": "D",
+      "id": "holdout_59",
+      "predicted": "D",
+      "raw": "D"
+    },
+    {
+      "category": "confidence",
+      "correct": true,
+      "elapsed_seconds": 0.4809577209998679,
+      "expected": "C",
+      "id": "holdout_60",
+      "predicted": "C",
+      "raw": "C"
+    }
+  ]
+}
