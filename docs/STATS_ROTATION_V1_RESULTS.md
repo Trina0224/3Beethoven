@@ -62,6 +62,7 @@ The strongest gains are in Type I/II error questions. Arithmetic/distribution to
 - Adapter SHA-256: `7c3dd4513bd4f9e98ae03b9788f60a5337689de20056936cf03f7dba02bed4cf`.
 - Benchmark SHA-256: `9ab52132b6070eb69281e884ce256322730b1debb58407d7ed26048856bba5c4`.
 - Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`.
+- Rotation output saved and verified in [Kaggle version 6](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=347586668&select=3beethoven_stats_rotation_v1.zip), with the 39.4 kB archive visible and version status Successful.
 - Original adapter and holdout archives remain in Kaggle version 5 (`347584475`); this diagnostic restores them as a mounted notebook input.
 
 ## Next experiment implied by the evidence
