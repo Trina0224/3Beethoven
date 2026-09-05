@@ -134,7 +134,7 @@ def prepare_data(root, client, plan, benchmark):
         if item["id"] in done:
             continue
         accepted = None
-        for attempt in range(2):
+        for attempt in range(3):
             instructions = ("Solve the supplied statistics question independently. Return JSON with string fields "
                             "answer_letter, explanation, common_mistake. Explain the decisive principle in "
                             "two concise sentences. The misconception must be explicitly described as incorrect.")
@@ -143,8 +143,14 @@ def prepare_data(root, client, plan, benchmark):
             # Preserve earlier paid responses even when repairing prompt formatting.
             if cached:
                 raw = cached["text"]
+                reference_conditioned = any("Reference check:" in m["content"] for m in cached["request"]["messages"])
             else:
                 question = prompt_for(item, "explain").split("\n\nChoose A, B, C, or D")[0]
+                reference_conditioned = attempt > 0
+                if reference_conditioned:
+                    question += (f"\n\nReference check: {item['reference_reason']} "
+                                 f"This value/decision maps to choice {item['answer_letter']}. "
+                                 "Recheck both the calculation and the option letter. Do not contradict the calculation in the final answer.")
                 raw = client.call(tag, [{"role": "system", "content": instructions},
                                        {"role": "user", "content": question + "\n\nReturn only the requested JSON object."}], json_mode=True)
             try:
@@ -155,12 +161,13 @@ def prepare_data(root, client, plan, benchmark):
                     if not isinstance(obj.get(field), str) or len(obj[field]) < length:
                         raise ValueError("Invalid explanation schema")
                 accepted = {**item, "explanation": obj["explanation"], "common_mistake": obj["common_mistake"],
-                            "teacher_model": TEACHER, "pipeline_version": "stats-flight-v0.3"}
+                            "teacher_model": TEACHER, "pipeline_version": "stats-flight-v0.3",
+                            "reference_conditioned": reference_conditioned}
                 break
             except (ValueError, TypeError) as exc:
                 append(root / "teacher_rejects.jsonl", {"id": item["id"], "attempt": attempt, "reason": str(exc)})
         if accepted is None:
-            raise RuntimeError(f"Teacher failed validation twice for {item['id']}; partial corpus preserved")
+            raise RuntimeError(f"Teacher failed validation three times for {item['id']}; partial corpus preserved")
         append(data_path, accepted)
         records.append(accepted)
         print(f"CORPUS {len(records)}/60 {item['id']} {client.stats()}", flush=True)
