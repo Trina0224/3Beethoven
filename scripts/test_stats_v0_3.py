@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from stats_v0_3_common import (CONCEPTS, audit, digest, group_split, make_curriculum,
-                             normalize_question, parse_answer, prompt_for, read_frozen)
+                             normalize_question, parse_answer, parse_teacher, prompt_for, read_frozen)
 from flight_run_stats_v0_3 import TeacherClient, append, package, training_dataset
 
 
@@ -76,6 +76,13 @@ class DataTests(unittest.TestCase):
         r = self.benchmark[0]
         self.assertTrue(prompt_for(r).endswith("Reply with ONLY the letter A, B, C, or D. Do not explain."))
         self.assertIn("D. 7", prompt_for(r))
+
+    def test_paid_plaintext_response_recovery(self):
+        raw = "Answer: B\nThe variance equals 15 because Poisson mean and variance are equal. A common mistake is to square the mean, which is incorrect."
+        parsed = parse_teacher(raw)
+        self.assertEqual(parsed["answer_letter"], "B")
+        self.assertTrue(parsed["common_mistake"].startswith("A common mistake"))
+        self.assertEqual(parse_teacher('```json\n{"answer_letter":"C"}\n```')["answer_letter"], "C")
 
 
 class LedgerTests(unittest.TestCase):
