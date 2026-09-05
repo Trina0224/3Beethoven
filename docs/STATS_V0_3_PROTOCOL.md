@@ -37,6 +37,11 @@ directly with v0.2's 41.67% does not establish regression.
   The teacher independently answers and supplies explanations. Its answer must
   agree with the reference. This is **teacher-explanation response distillation**,
   not wholly teacher-generated questions or logit-based distillation.
+- If an independently generated answer fails, a retry includes the program's
+  reference calculation and option mapping. Such responses are marked
+  `reference_conditioned`; they are corrected explanation synthesis, not
+  evidence that the teacher solved the question unaided. At most three attempts
+  per question, still subject to the persistent 120-attempt total ceiling.
 - Teacher evaluation: separate cache, never added to the training dataset.
   Stop generation if teacher accuracy is below 80% on the development set.
 - Check exact normalized question duplicates and exact evaluation overlap.
