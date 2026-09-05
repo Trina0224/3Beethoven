@@ -89,7 +89,9 @@ def main():
     from peft import PeftModel, LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, Trainer, TrainingArguments, set_seed
     from flight_run_stats_v0_1 import CausalCollator
-    candidates=[p for p in Path('/kaggle/input').rglob('teacher_train.jsonl') if (p.parent/'adapter'/'adapter_model.safetensors').exists()]
+    import kagglehub
+    source_mount=Path(kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/5'))
+    candidates=[p for p in source_mount.rglob('teacher_train.jsonl') if (p.parent/'adapter'/'adapter_model.safetensors').exists()]
     if len(candidates)!=1: raise RuntimeError('Mount original version 5 output with corpus and adapter')
     source=candidates[0].parent
     if hashlib.sha256((source/'adapter'/'adapter_model.safetensors').read_bytes()).hexdigest()!=OLD_ADAPTER_SHA:
