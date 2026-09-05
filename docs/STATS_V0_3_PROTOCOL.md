@@ -50,6 +50,14 @@ directly with v0.2's 41.67% does not establish regression.
   validation (8 / 2 per concept). Each training question has a letter-only and
   explanatory example, giving 96 training sequences. Format variants never
   cross the split.
+- A pre-training review of all 60 explanations also identified five content
+  issues (an unjustified Poisson uniqueness claim, a valid expectation identity
+  mislabeled as a mistake, and three confidence/precision confusions).
+  `review_stats_v0_3.py` asks the same Llama teacher to revise those explanations
+  using explicit review feedback. Original records and all paid responses are
+  retained. Review feedback is not itself a student target. These five calls
+  share the original 120-attempt ceiling; seven final records in total are
+  reference-conditioned (two answer corrections and five content revisions).
 - Seed 226; 3 epochs; learning rate 5e-5; LoRA r=16, alpha=32, dropout=.05;
   batch size 1, gradient accumulation 8. Choose the checkpoint by validation
   loss, not benchmark accuracy.
@@ -97,6 +105,12 @@ training logs, source snapshots, environment versions, and the adapter when
 available. Per-file SHA-256 checks and ZIP CRC verification are included.
 Kaggle's `Successful` label alone is **not** proof that these files were saved.
 Verify an actual downloaded archive before ending the interactive session.
+
+The Quick Save advanced setting was observed as **Never save output**. Use
+**Save output for this version when creating a Quick Save** explicitly. During
+this rerun, version 2's Output page listed the 142,636-byte initial corpus ZIP,
+but browser download events timed out. A file listing establishes saved output
+availability, not successful local download or end-to-end byte verification.
 
 ## Commands
 
