@@ -84,6 +84,32 @@ class DataTests(unittest.TestCase):
         self.assertTrue(parsed["common_mistake"].startswith("A common mistake"))
         self.assertEqual(parse_teacher('```json\n{"answer_letter":"C"}\n```')["answer_letter"], "C")
 
+    def test_training_masks_and_explicit_token_lists(self):
+        calls = []
+        class Tokenizer:
+            def apply_chat_template(self, messages, **kwargs):
+                calls.append(kwargs)
+                if kwargs.get("return_dict") is not False:
+                    return {"input_ids": [10, 20, 30]}
+                return [10, 20, 30] + ([40, 41] if len(messages) == 2 else [])
+        fake_datasets = types.SimpleNamespace(Dataset=types.SimpleNamespace(from_list=lambda rows: rows))
+        r = {**self.plan[0], "explanation": "Teacher explanation", "common_mistake": "Teacher misconception"}
+        with patch.dict(sys.modules, {"datasets": fake_datasets}):
+            rows = training_dataset([r], Tokenizer())
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all(c["return_dict"] is False for c in calls))
+        for row in rows:
+            self.assertEqual(row["labels"], [-100, -100, -100, 40, 41])
+            self.assertEqual(len(row["input_ids"]), len(row["attention_mask"]))
+
+    def test_real_template_mismatch_still_stops(self):
+        fake_datasets = types.SimpleNamespace(Dataset=types.SimpleNamespace(from_list=lambda rows: rows))
+        tokenizer = types.SimpleNamespace(apply_chat_template=lambda messages, **kw: [1, 2] if len(messages) == 1 else [1, 3, 4])
+        r = {**self.plan[0], "explanation": "Teacher explanation", "common_mistake": "Teacher misconception"}
+        with patch.dict(sys.modules, {"datasets": fake_datasets}):
+            with self.assertRaisesRegex(RuntimeError, "boundary mismatch"):
+                training_dataset([r], tokenizer)
+
 
 class LedgerTests(unittest.TestCase):
     def test_success_is_cached_and_capped(self):
