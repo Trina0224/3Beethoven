@@ -100,6 +100,28 @@ def parse_answer(text):
     return match.group(1).upper() if match else "INVALID"
 
 
+def parse_teacher(text):
+    """Recover explicit plain-text answers without purchasing the same response again."""
+    cleaned = text.strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", cleaned)
+    try:
+        obj = json.loads(cleaned)
+        if not isinstance(obj, dict):
+            raise ValueError("Teacher output must be an object")
+        return obj
+    except json.JSONDecodeError:
+        match = re.match(r"^Answer:\s*([ABCD])\s*\n+(.+)", cleaned, flags=re.S)
+        if not match:
+            raise ValueError("No structured JSON or explicit plain-text answer")
+        explanation = match.group(2).strip()
+        mistake = re.search(r"(?:A|The|One) common (?:mistake|misconception)\b", explanation)
+        if not mistake:
+            raise ValueError("Plain-text answer lacks an explicit misconception")
+        return {"answer_letter": match.group(1), "explanation": explanation[:mistake.start()].strip(),
+                "common_mistake": explanation[mistake.start():].strip()}
+
+
 def group_split(records):
     train, validation = [], []
     rng = random.Random(SEED)
