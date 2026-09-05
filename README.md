@@ -90,6 +90,20 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Planning / study phase.**
+**Statistics pilot completed; position-bias repair in progress.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
 
-Implementation deliberately starts after the first distillation design choices are finalized.
+| Checkpoint | Baseline | Trained v0.3 | Interpretation |
+|---|---:|---:|---|
+| Exposed development set, 24 questions | 33.3% | 75.0% | Development result |
+| New holdout, original order, 60 questions | 35.0% | 58.3% | Internally authored evaluation |
+| Same holdout, four cyclic rotations | 35.8% | 53.8% | Position-sensitivity diagnostic |
+| All four rotations correct | 1/60 | 17/60 | Robustness remains limited |
+
+- [Training report](docs/STATS_V0_3_RESULTS.md)
+- [Holdout report](docs/STATS_HOLDOUT_V1_RESULTS.md)
+- [Rotation report and raw responses](docs/STATS_ROTATION_V1_RESULTS.md)
+- [Teacher policy](docs/TEACHER_POLICY.md)
+
+Code and text results are preserved in GitHub. The adapter and holdout archives are in Kaggle version 5 (347584475); rotation results are in version 6 (347586668). Total recorded teacher usage through this checkpoint is 154 calls and $0.007196965 in response-reported costs, not a billing statement. Rotation evaluation added no teacher calls.
+
+The next bounded experiment reuses validated Llama training records, rotates letter-only examples, preserves original teacher explanations, and freezes a new evaluation set before training. Existing exposed benchmarks remain regression diagnostics.
