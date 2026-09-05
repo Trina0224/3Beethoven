@@ -128,4 +128,8 @@ retried, per the agreed manual-retrieval fallback. No local binary-archive
 download is claimed; all 180 raw responses and 60 question outcomes are also
 available directly on GitHub in the JSON linked above.
 
+After this output verification, the interactive GPU session was stopped; the
+menu changed from Stop session to Start session. Retrieve files from saved
+version 5, not from a new empty interactive working directory.
+
 See [the frozen protocol](STATS_HOLDOUT_V1_PROTOCOL.md).
