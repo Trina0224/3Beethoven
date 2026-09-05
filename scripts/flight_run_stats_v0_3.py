@@ -12,7 +12,7 @@ import zipfile
 from pathlib import Path
 
 from stats_v0_3_common import (SEED, audit, digest, group_split, make_curriculum,
-                             parse_answer, prompt_for, read_frozen, score_rows)
+                             parse_answer, parse_teacher, prompt_for, read_frozen, score_rows)
 
 TEACHER = "meta-llama/llama-3.3-70b-instruct"
 STUDENT = "meta-llama/Llama-3.2-3B-Instruct"
@@ -138,11 +138,17 @@ def prepare_data(root, client, plan, benchmark):
             instructions = ("Solve the supplied statistics question independently. Return JSON with string fields "
                             "answer_letter, explanation, common_mistake. Explain the decisive principle in "
                             "two concise sentences. The misconception must be explicitly described as incorrect.")
-            raw = client.call(f"train_{item['id']}_{attempt}",
-                              [{"role": "system", "content": instructions},
-                               {"role": "user", "content": prompt_for(item, "explain")}], json_mode=True)
+            tag = f"train_{item['id']}_{attempt}"
+            cached = read_json(root / "api_cache" / (tag + ".json"))
+            # Preserve earlier paid responses even when repairing prompt formatting.
+            if cached:
+                raw = cached["text"]
+            else:
+                question = prompt_for(item, "explain").split("\n\nChoose A, B, C, or D")[0]
+                raw = client.call(tag, [{"role": "system", "content": instructions},
+                                       {"role": "user", "content": question + "\n\nReturn only the requested JSON object."}], json_mode=True)
             try:
-                obj = json.loads(raw)
+                obj = parse_teacher(raw)
                 if obj.get("answer_letter") != item["answer_letter"]:
                     raise ValueError("Teacher answer disagrees with deterministic reference")
                 for field, length in (("explanation", 60), ("common_mistake", 15)):
