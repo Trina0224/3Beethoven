@@ -77,10 +77,15 @@ def append_jsonl(path, obj):
         handle.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
 
-def teacher_call(api_key, category, concept, variant, answer_letter):
+def teacher_call(api_key, category, concept, variant, answer_letter, attempt=1):
+    scenario_seed = (SEED * 1009 + variant * 97 + attempt * 31) % 10000
     user = (
         f"Category: {category}\nConcept: {concept}\nVariant: {variant}\n"
-        f"Required correct-answer position: {answer_letter}"
+        f"Required correct-answer position: {answer_letter}\n"
+        f"Scenario seed: {scenario_seed}\n"
+        "Make this question materially different from standard textbook one-liners. "
+        "Use the scenario seed to choose fresh names, context, and numerical values; "
+        "the seed itself must not appear in the question."
     )
     payload = {
         "model": base.TEACHER_MODEL,
@@ -117,41 +122,89 @@ def validate(record, category, concept, answer_letter):
 
 def build_corpus(api_key):
     RUN_DIR.mkdir(parents=True, exist_ok=True)
-    DATA_PATH.unlink(missing_ok=True)
-    REJECT_PATH.unlink(missing_ok=True)
-    accepted, questions = [], set()
-    schedule = [(cat, concept, v, LETTERS[(v - 1) % 4]) for cat, concept in TARGETS for v in range(1, VARIANTS_PER_TARGET + 1)]
-    random.shuffle(schedule)
-    for index, (category, concept, variant, letter) in enumerate(schedule, 1):
-        record, reason = None, "unknown"
-        for attempt in range(1, 3):
-            try:
-                candidate = teacher_call(api_key, category, concept, variant, letter)
-                ok, reason = validate(candidate, category, concept, letter)
-                normalized = re.sub(r"\W+", " ", candidate.get("question", "").lower()).strip()
-                if not ok:
-                    raise ValueError(reason)
-                if normalized in questions:
-                    raise ValueError("duplicate question")
-                candidate.update(teacher_model=base.TEACHER_MODEL, pipeline_version="stats-flight-v0.2")
-                record = candidate
-                questions.add(normalized)
-                break
-            except Exception as exc:
-                reason = str(exc)
-                time.sleep(attempt)
-        if record is None:
-            append_jsonl(REJECT_PATH, {"category": category, "concept": concept, "variant": variant, "reason": reason})
-            print(f"[{index:02d}/{len(schedule)}] REJECT {concept} {letter}: {reason}")
-        else:
-            accepted.append(record)
-            append_jsonl(DATA_PATH, record)
-            print(f"[{index:02d}/{len(schedule)}] OK {concept} answer={letter}")
-    counts = Counter(x["answer_letter"] for x in accepted)
-    print("Accepted:", len(accepted), "answer positions:", dict(counts))
-    if len(accepted) < 60 or max(counts.values(), default=0) - min(counts.values(), default=0) > 2:
-        raise RuntimeError(f"Corpus failed size/balance gate: n={len(accepted)}, positions={dict(counts)}")
-    return accepted, counts
+    accepted = []
+    if DATA_PATH.exists():
+        with DATA_PATH.open("r", encoding="utf-8") as handle:
+            accepted = [json.loads(line) for line in handle if line.strip()]
+        print(f"Resuming with {len(accepted)} accepted examples")
+
+    questions = {
+        re.sub(r"\\W+", " ", item.get("question", "").lower()).strip()
+        for item in accepted
+    }
+    position_counts = Counter(item["answer_letter"] for item in accepted)
+    concept_counts = Counter(item["concept"] for item in accepted)
+    target_per_concept = 10
+    target_per_position = 15
+    max_paid_calls = 120
+    paid_calls = 0
+    sequence = 1000
+
+    while any(concept_counts[concept] < target_per_concept for _, concept in TARGETS):
+        progress = False
+        for category, concept in TARGETS:
+            if concept_counts[concept] >= target_per_concept:
+                continue
+            eligible = [letter for letter in LETTERS if position_counts[letter] < target_per_position]
+            letter = min(eligible or list(LETTERS), key=lambda x: (position_counts[x], x))
+            sequence += 1
+            record, reason = None, "unknown"
+            for attempt in range(1, 4):
+                if paid_calls >= max_paid_calls:
+                    raise RuntimeError(
+                        f"Supplemental call cap reached; preserved n={len(accepted)} "
+                        f"positions={dict(position_counts)} concepts={dict(concept_counts)}"
+                    )
+                paid_calls += 1
+                try:
+                    candidate = teacher_call(api_key, category, concept, sequence, letter, attempt)
+                    ok, reason = validate(candidate, category, concept, letter)
+                    normalized = re.sub(r"\\W+", " ", candidate.get("question", "").lower()).strip()
+                    if not ok:
+                        raise ValueError(reason)
+                    if normalized in questions:
+                        raise ValueError("duplicate question")
+                    candidate.update(
+                        teacher_model=base.TEACHER_MODEL,
+                        pipeline_version="stats-flight-v0.2",
+                    )
+                    record = candidate
+                    questions.add(normalized)
+                    break
+                except Exception as exc:
+                    reason = str(exc)
+                    time.sleep(attempt)
+            if record is None:
+                append_jsonl(
+                    REJECT_PATH,
+                    {"category": category, "concept": concept, "variant": sequence, "reason": reason},
+                )
+                print(f"[supplement {paid_calls:03d}] REJECT {concept} {letter}: {reason}")
+            else:
+                accepted.append(record)
+                append_jsonl(DATA_PATH, record)
+                position_counts[letter] += 1
+                concept_counts[concept] += 1
+                progress = True
+                print(
+                    f"[supplement {paid_calls:03d}] OK {concept} answer={letter} "
+                    f"total={len(accepted)}/60"
+                )
+        if not progress and paid_calls >= max_paid_calls:
+            break
+
+    print("Accepted:", len(accepted), "answer positions:", dict(position_counts))
+    print("Concept counts:", dict(concept_counts))
+    if (
+        len(accepted) < 60
+        or min(concept_counts.values(), default=0) < target_per_concept
+        or max(position_counts.values(), default=0) - min(position_counts.values(), default=0) > 2
+    ):
+        raise RuntimeError(
+            f"Corpus failed size/balance gate: n={len(accepted)}, "
+            f"positions={dict(position_counts)}, concepts={dict(concept_counts)}"
+        )
+    return accepted, position_counts
 
 
 def make_training_dataset(records, tokenizer, max_length=768):
