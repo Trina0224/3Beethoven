@@ -63,6 +63,12 @@ directly with v0.2's 41.67% does not establish regression.
   loss, not benchmark accuracy.
 - Preserve and assert the tokenizer's chat-template prefix; refuse truncation
   or examples with no supervised tokens.
+- Runtime diagnosis on Transformers 5.0.0 showed that `apply_chat_template`
+  defaults to `BatchEncoding`, whereas the original builder expected lists.
+  Explicit `return_dict=False` yields a matching 113-token prefix / 115-token
+  full example in the diagnostic sample. The builder now requests token lists
+  explicitly; the boundary check remains enforced. This failure occurred before
+  any optimizer step; cached baseline results were reused on the repair resume.
 
 ## Predeclared evaluation
 
