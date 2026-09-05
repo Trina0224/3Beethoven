@@ -120,9 +120,12 @@ duplicate the already saved adapter.
 - Full question-level results and raw answers are also preserved in
   [STATS_HOLDOUT_V1_RESULTS.json](STATS_HOLDOUT_V1_RESULTS.json) on GitHub.
 
-The Kaggle save explicitly includes output. Final output listing verification
-is recorded at handoff; browser downloads were not retried, per the agreed
-manual-retrieval fallback. The existing model ZIP is retained alongside the
-new holdout ZIP.
+Kaggle **version 5**, scriptVersionId **347584475**, explicitly includes output.
+Its [Output page](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output)
+was inspected after saving and lists both the existing 92.73 MB model ZIP and
+the new holdout ZIP, plus their directories. Browser downloads were not
+retried, per the agreed manual-retrieval fallback. No local binary-archive
+download is claimed; all 180 raw responses and 60 question outcomes are also
+available directly on GitHub in the JSON linked above.
 
 See [the frozen protocol](STATS_HOLDOUT_V1_PROTOCOL.md).
