@@ -36,3 +36,10 @@ Final preservation confirmed: Kaggle version 14 (347620387) Successful, v0.9 and
 Kaggle version 15 (347625570) is Successful and its output visibly contains `3beethoven_stats_v0_10.zip` (551,081 bytes; SHA-256 `f5772cb391f1bbd342a0e3f278e39a1a2bbe554ce72b215af139d9dbb0d2fb6c`). This is preparation only: no v0.10 student training or test has run. The 112 audited teacher records yield 516 training and 64 validation sequences with rehearsal; actual maximum length is 303 tokens, below the 768-token cap. Corpus and audit are committed separately. Teacher usage: 221 calls, $0.02018775, complete cost reporting.
 
 Missing `bitsandbytes==0.50.2` blocks the frozen 4-bit training configuration. Automatic approval review rejected installation and requires action-time installation confirmation. Existing Secrets worked for teacher generation; no new notebook or Secret selection is needed. Complete preparation was saved before requesting that confirmation.
+
+
+## v0.10 completed — 2026-09-05 PDT
+
+Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
+
+Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
