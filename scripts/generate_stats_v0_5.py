@@ -35,7 +35,7 @@ def valid_target(obj,item):
             for k,low,high in (('explanation',40,1200),('common_mistake',15,500))))
 
 
-def parse_output(raw):
+def _parse_output(raw):
     cleaned=raw.strip()
     prefix=re.match(r'^Answer:\s*([ABCD])\s*\n',cleaned)
     if prefix:
@@ -48,6 +48,15 @@ def parse_output(raw):
         if len(parts)==2:
             return dict(answer_letter=prefix.group(1),explanation=parts[0].strip(),common_mistake=parts[1].strip())
     return parse_teacher(raw)
+
+
+def parse_output(raw):
+    obj=_parse_output(raw)
+    # Preserve the explicit corrected teacher answer without rewriting its prose.
+    correction=re.fullmatch(r'([ABCD]) is incorrect, the correct answer is ([ABCD])',str(obj.get('answer_letter','')))
+    if correction and correction.group(1)!=correction.group(2):
+        obj=dict(obj,answer_letter=correction.group(2))
+    return obj
 
 
 def main():
