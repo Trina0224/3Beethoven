@@ -2,7 +2,14 @@
 import json
 import random
 from pathlib import Path
-from stats_curriculum_v0_13 import KINDS, make, digest, prompt, score
+from stats_curriculum_v0_13 import KINDS, make, digest, prompt
+from formulation_grader import grade
+
+
+def score(raw,q):
+    result=grade(raw,q)
+    return dict(result,correct=result['math_correct'] is True,
+                invalid=not result['executable'],grader_version='formulation-v1')
 
 
 def reword(q,test=False):
