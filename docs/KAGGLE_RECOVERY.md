@@ -13,6 +13,7 @@ Use individual cells. Do not use Run All on the historical notebook: earlier cel
 | 9 | 347598932 | v0.5 selected adapter, corpus, 1,152 responses, audit documents and verified ZIP |
 | 10 | 347602173 | v0.6 paired corpus, rejected abstract cards and teacher test |
 | 11 | 347605195 | v0.6 selected adapter, 1,296 responses, logs and verified ZIP |
+| 12 | 347608100 | Inference-only diagnostic, 576 responses and verified ZIP; no model weights |
 
 The latest output is not a cumulative copy of all older output files. A notebook input added without a pinned version can resolve to the latest version after a restart.
 
@@ -113,3 +114,13 @@ Do not run `generate_stats_v0_6.py`: its paid abstract-card entry point is retir
 Only if the full comparison runner is needed: preserve the restored v0.6 working directory, remove the version-11 notebook input, and mount pinned version 9 for the required v0.5 comparison adapter. `run_stats_v0_6.py` checks its hash and skips completed results/training. The latest notebook output alone does not supply that control adapter. Preserve original archives rather than repacking them just to inspect results.
 
 Code and complete text results are in GitHub; the model ZIP remains in Kaggle version 11. Its source snapshot records the code used for the experiment; later GitHub changes add reporting and safer recovery without changing the selected adapter.
+
+## Restore v0.7 diagnostic results
+
+Kaggle version 12 (347608100) is confirmed Successful and its diagnostic ZIP was present before stopping the GPU. The archive is `3beethoven_stats_diagnostic_v0_7.zip`, 32,976 bytes, SHA-256 `3bf4a8d136fbf27d2df093708a83c31bda5c9161a24bafdf8c0b9d549216527d`.
+
+Remove an existing same-notebook input before requesting `trinashih/3beethoven-v0-2/versions/12`. Verify the ZIP hash, copy the ZIP to /kaggle/working, and extract into a fresh /kaggle/working/3beethoven_stats_diagnostic_v0_7 directory. Run `scripts/verify_stats_diagnostic_v0_7.py` from the repository. Verification needs no GPU, teacher requests or training.
+
+To reproduce inference, use `scripts/diagnose_stats_v0_7.py` with pinned version 9's v0.5 adapter after removing a conflicting same-notebook input. Version 12 has diagnostic data, not replacement weights. The script checkpoints answers and refuses protocol mismatches. Avoid Run All.
+
+The [diagnostic report](STATS_DIAGNOSTIC_V0_7_RESULTS.md) and [full JSON with explicit format review](STATS_DIAGNOSTIC_V0_7_RESULTS.json) are preserved in GitHub. Strict original scores remain unchanged; the report distinguishes formatting corrections from truncated calculations.
