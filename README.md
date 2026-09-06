@@ -30,7 +30,14 @@ set with new parameters, not a general reasoning benchmark.
 second moments and affine Poisson variance, despite verified teacher targets.
 Poisson time and conditional total wait improve from 0/8 to 6/8 each. Binomial,
 exactly-one, at-least-one and interval formulations reach 8/8 each. Intermediate
-steps were taught but not separately tested, so the remaining bottleneck is unresolved.
+steps were taught; a subsequent paired diagnostic now tests them separately.
+
+**New diagnostic: general formula reminders lift v0.15 to 7/8 on moments and 4/8
+on affine Poisson variance; v0.14 remains 0/8 on both with the same reminders.**
+The reminders contain no numeric answers. Unaided diagnostic results remain 0/8;
+number-role identification and independent mean/variance formulation are still
+unreliable. These are post-test diagnostic results, separate from the 44/64 score.
+See the [paired diagnostic and next teaching strategy](docs/STATS_V0_15_DIAGNOSTIC.md).
 
 The initial multi-rule teacher prompt accepted 133/168 train and 23/32 validation
 candidates. A separately recorded focused-teaching revision corrected 42 of 44
