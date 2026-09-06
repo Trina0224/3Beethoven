@@ -18,7 +18,15 @@
         15
       ],
       "restoration_verified": true,
-      "version15_path": "3beethoven_stats_v0_9/adapter/adapter_model.safetensors"
+      "version15_path": "3beethoven_stats_v0_9/adapter/adapter_model.safetensors",
+      "independent_backup": {
+        "filename": "3beethoven_v0_9_weights_backup.zip",
+        "bytes": 90115646,
+        "sha256": "773cee2a8262ba7533af87aaeb18ae022b83a92b62dad144dd2ce72ebca08ec1",
+        "saved": true,
+        "weight_bytes_verified": true,
+        "metadata": "Minimal loading config reconstructed from original displayed config and committed training script; exact original metadata remains in Kaggle."
+      }
     },
     "v10": {
       "status": "same-session evaluations running; no new trained weights yet",
@@ -26,8 +34,8 @@
     }
   },
   "limitations": [
-    "Command-line git push lacks authenticated credentials.",
-    "Browser weight download attempts timed out.",
-    "A recovery manifest is not a binary weight backup."
+    "Command-line git push lacks authenticated credentials; GitHub has no weight binary.",
+    "Browser download events timed out but files arrived and exact weight hashes were verified.",
+    "A recovery manifest is not a binary weight backup; the separately saved ZIP contains actual weights."
   ]
 }
