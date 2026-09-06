@@ -9,6 +9,25 @@ from stats_holdout_v0_6 import build,audit
 ROOT=Path('/kaggle/working/3beethoven_stats_v0_6')
 REPO=Path(__file__).resolve().parent.parent
 CAP=180
+CHECKS={
+ 'expectation_0':'Linearity of expectation always holds without independence. Contrast scaling a variable with squaring a variable; never claim dependence breaks linearity.',
+ 'expectation_1':'Second moment equals variance plus mean squared. Mean squared equals second moment only when variance is zero.',
+ 'expectation_2':'Equal-weight averaging is a special case of weighted averaging, not an alternative that invalidates weighted sums.',
+ 'confidence_0':'Finite two-sided interval width is twice margin of error. A one-sided confidence interval has an infinite endpoint; do not give it a finite total width. Contrast total width versus margin of error instead.',
+ 'confidence_1':'If new width is r times old width, new sample size is 1/(r*r) times old size. Define r clearly. Contrast sample size scaling with standard deviation scaling.',
+ 'confidence_2':'Width scales linearly with population standard deviation and inversely with square root of sample size.',
+ 'poisson_0':'Increasing observation duration scales count variance linearly; multiplying the realized random count scales variance quadratically.',
+ 'poisson_1':'Independent variances add; for dependent variables covariance must be included. Poisson mean equals variance.',
+ 'poisson_2':'Var(aX+b)=a*a*Var(X). A constant shift never adds to variance; Poisson mean equals variance.',
+ 'uniform_0':'A continuous uniform mean is the midpoint; variance uses squared interval length divided by 12.',
+ 'uniform_1':'A continuous uniform variance uses squared interval length divided by 12; shifting both endpoints equally does not change variance.',
+ 'uniform_2':'Interval probability is favorable length divided by total length. Probability at any single point is zero.',
+ 'type_i_0':'Expected false rejections is sum of per-test probabilities even with dependence; probability of at least one is a different quantity.',
+ 'type_i_1':'Union bound requires no independence and is an upper bound, not generally an exact probability.',
+ 'type_i_2':'Independence permits multiplying probabilities of avoiding rejection. At least one is the complement of none.',
+ 'type_ii_0':'At a fixed alternative, power=1-beta. Alpha is defined under a true null and is not one minus beta.',
+ 'type_ii_1':'Expected misses=sum of beta over studies, no independence needed. Expected detections=sum of power.',
+ 'type_ii_2':'For independent studies both miss with probability beta squared; at least one detects is its complement. Both detecting is power squared.'}
 
 class Client(TeacherClient):
     def __init__(self,key):
@@ -35,15 +54,18 @@ def main():
     save_json(ROOT/'test_questions.json',build())
     save_json(ROOT/'source_records.json',old)
     client=Client(UserSecretsClient().get_secret('OPENROUTER_API_KEY'))
+    bad=ROOT/'lessons'/'expectation_0.json'
+    if bad.exists() and read_json(bad)['target_cache_tag']=='lesson_expectation_0_2':
+        save_json(ROOT/'rejected_cards'/'expectation_0_initial.json',read_json(bad));bad.unlink()
     families=sorted({r['family'] for r in old['train']})
     def worker(family):
         path=ROOT/'lessons'/(family+'.json')
         if path.exists(): return read_json(path)
         examples=[r for r in old['train'] if r['family']==family]
         context='\n'.join(r['question']+' Reference: '+r['reference_reason'] for r in (examples[0],examples[-1]))
-        feedback=''
+        feedback=CHECKS[family]
         for attempt in range(3):
-            tag=f'lesson_{family}_{attempt}'
+            tag=f'lesson_v2_{family}_{attempt}'
             raw=client.call(tag,[
                 dict(role='system',content='Teach the shared mathematical method, not memorized option letters. Return JSON lesson and contrast, both strings. lesson: a short rule and 2 numbered reusable calculation steps. contrast: one closely related situation requiring a DIFFERENT operation, explaining the difference precisely. Under 100 words total. Use symbolic formulas. Do not call valid identities mistakes.'),
                 dict(role='user',content=context+'\n'+feedback)],json_mode=True)
@@ -51,16 +73,17 @@ def main():
             except (ValueError,TypeError): feedback='Use the requested JSON schema.';continue
             if not all(isinstance(obj.get(k),str) and 35<=len(obj[k])<=1000 for k in ('lesson','contrast')):
                 feedback='Both strings need a meaningful concise teaching explanation.';continue
-            rt=f'review_{family}_{attempt}'
+            rt=f'review_v2_{family}_{attempt}'
             reviewraw=client.call(rt,[
-                dict(role='system',content='Verify every formula and contrast. A valid identity must not be called wrong. Return JSON valid boolean and reason under 120 characters.'),
-                dict(role='user',content=context+'\nCandidate: '+json.dumps(obj))],max_tokens=180,json_mode=True)
-            review=parse_teacher(reviewraw)
+                dict(role='system',content='You are a JSON validity reviewer. Do not solve example questions. Return ONLY one JSON object with valid boolean and reason under 120 characters. Reject any false mathematical claim.'),
+                dict(role='user',content='Reference checks: '+CHECKS[family]+'\nReview this lesson and contrast: '+json.dumps(obj))],max_tokens=180,json_mode=True)
+            try: review=parse_teacher(reviewraw)
+            except (ValueError,TypeError): review=dict(valid=False,reason='Review was not valid JSON')
             if review.get('valid') is True:
                 out=dict(family=family,lesson=obj['lesson'],contrast=obj['contrast'],teacher_model=TEACHER,
                     target_cache_tag=tag,review_cache_tag=rt,review=review)
                 save_json(path,out);print('V06 LESSON',json.dumps(out),flush=True);return out
-            feedback=str(review.get('reason','Recheck mathematics'))
+            feedback=CHECKS[family]+' '+str(review.get('reason','Recheck mathematics'))
         raise RuntimeError('Lesson failed: '+family)
     try:
         with ThreadPoolExecutor(max_workers=4) as pool: cards=list(pool.map(worker,families))
