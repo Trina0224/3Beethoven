@@ -62,3 +62,15 @@ A separate focused-teaching pass makes at most ONE new response for each of the
 answers are sent, scoring and test questions remain frozen, and initial pass rates
 are not replaced by supplemented rates. This is an explicit preparation revision,
 not an undeclared third retry under the original two-attempt protocol.
+
+## Completed run
+
+Training revision: b65550d2271b901631c99bbf962ca582ad4429b2.
+200 training / 30 validation, 75 steps; selected checkpoint-75, validation loss
+0.0599129759. Initial teacher cost US$0.01596556, focused supplement US$0.0017028.
+Same-test semantic counts: vanilla 8/64, v0.14 30/64, v0.15 44/64.
+Paired improvement: 14 newly correct, zero newly wrong. Moment and affine Poisson
+variance remain 0/8; these failures are retained in the denominator.
+Old retention: 86/240, 123/240, 127/240. Saved Kaggle Version 29 Successful.
+Verification export was changed to file output after an editor save/render problem;
+scoring, weights and test answers were unchanged. Detailed hashes: current status.
