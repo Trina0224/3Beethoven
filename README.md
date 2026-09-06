@@ -8,6 +8,28 @@ The project is intentionally playful on the surface and rigorous underneath.
 
 ## Current experiment — 2026-09-06 PDT
 
+**v0.16 training and evaluation are complete. It is not a general replacement for v0.15.**
+
+| Same new test, semantic formulation review | v0.15 | v0.16 |
+|---|---:|---:|
+| Unaided, 96 questions | **34/96** | 29/96 |
+| Task-specific formula reminders, 24 weak-family questions | 11/24 | **22/24** |
+| Old multiple-choice retention | 127/240 | 126/240 |
+
+The student completed 150 optimizer steps through full reminders, quantity-only
+cues and no reminders. Unaided moments improve 0/12→3/12 and affine Poisson variance
+1/12→4/12, but other families regress. With rules, v0.16 reaches 10/12 moments and
+12/12 Poisson variance. Keep v0.15 as the general candidate and v0.16 as a
+rule-assisted specialist candidate. A complete skill/router system is not yet tested.
+The earlier 44/64 score below uses different questions and output instructions.
+
+All 720 responses, 392 finite tensors and ZIP integrity passed verification.
+Teacher cost: US$0.010648875. See the [full v0.16 report](docs/STATS_V0_16_REPORT.md),
+[raw results](docs/STATS_V0_16_RESULTS.json), [semantic review](docs/STATS_V0_16_SEMANTIC_REVIEW.json),
+and [backup status](docs/MODEL_BACKUP_STATUS.json).
+
+## Previous v0.15 experiment
+
 **v0.15 student training is complete: 44/64 correctly grounded formulations (68.8%).**
 The student emits a numerical expression; an exact calculator performs arithmetic.
 Training uses verified 70B responses, decomposed moment tasks, more weak-family
