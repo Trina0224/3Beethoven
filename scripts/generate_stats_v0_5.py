@@ -95,16 +95,19 @@ def main():
                 if not valid_target(obj,item):
                     feedback='The label disagreed with the reference or explanation schema failed.'; continue
                 if stopping.is_set(): return None
-                review_prompt=(prompt_for(item,'explain')+'\nReference: '+item['reference_reason']+
-                    '\nCandidate answer: '+json.dumps(obj)+'\nCheck the answer, every calculation, and the misconception. Return JSON with valid (boolean), answer_letter, and reason. Mark valid false if any mathematical claim is wrong or a valid identity is called a mistake. Do not approve merely because the letter matches.')
-                review_raw=client.call(f"review_{item['id']}_{attempt}",[dict(role='user',content=review_prompt)],max_tokens=250,json_mode=True)
+                review_prompt=(prompt_for(item,'explain').split('\n\nChoose A, B, C, or D')[0]+
+                    '\nReference: '+item['reference_reason']+' Reference choice: '+item['answer_letter']+'.'+
+                    '\nCandidate answer: '+json.dumps(obj))
+                review_system='You are reviewing a candidate, not answering a chat prompt. Check every calculation, conclusion and misconception. Return only JSON with valid (boolean), answer_letter (correct option), and reason (one sentence under 160 characters). Mark valid false if any mathematical claim is wrong or a valid identity is called a mistake. A matching answer letter alone is insufficient.'
+                review_tag=f"review_v2_{item['id']}_{attempt}"
+                review_raw=client.call(review_tag,[dict(role='system',content=review_system),dict(role='user',content=review_prompt)],max_tokens=250,json_mode=True)
                 try: review=parse_output(review_raw)
                 except (ValueError,TypeError): review=dict(valid=False,reason='Invalid review JSON')
-                save_json(ROOT/'reviews'/f"{item['id']}_{attempt}.json",review)
+                save_json(ROOT/'reviews'/(review_tag.removeprefix('review_')+'.json'),review)
                 if review.get('valid') is True and review.get('answer_letter')==item['answer_letter']:
                     accepted=dict(item,explanation=obj['explanation'],common_mistake=obj['common_mistake'],
                         teacher_model=TEACHER,question_sha256=digest(item),reference_conditioned=attempt>0,
-                        accepted_attempt=attempt,review_tag=f"review_{item['id']}_{attempt}")
+                        accepted_attempt=attempt,review_tag=review_tag)
                     save_json(out,accepted)
                     return accepted
                 feedback=str(review.get('reason','Content review rejected response'))
