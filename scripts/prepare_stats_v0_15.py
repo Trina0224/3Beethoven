@@ -29,10 +29,11 @@ def teacher_rows(repo=None):
     if not source:raise RuntimeError('Prepare teacher responses first')
     for split in ('train','validation'):
         qs={q['id']:q for q in data[split]};rows[split]=[]
+        supplements=read_json(ROOT/'focused_supplements.json',{})
         for r in source[split]:
             q=qs[r['id']]
             assert r['question_sha256']==digest(q)
-            for a in r['attempts']:
+            for a in r['attempts']+supplements.get(r['id'],[]):
                 judged=score(a['raw'],q)
                 if judged['correct']:
                     rows[split].append(dict(source_id=q['id'],prompt=prompt(q),target='Expression: '+judged['normalized_expression'],teacher_raw=a['raw'],selected_attempt=a['attempt'],source='rule-scaffolded 70B response'))
