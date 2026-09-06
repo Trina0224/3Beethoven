@@ -1,0 +1,2634 @@
+{
+  "validation": [
+    {
+      "id": "v17_validation_poisson_time_000",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        61,
+        237
+      ],
+      "question": "Count all arrivals in a 237-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 61 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "61",
+        "duration_minutes": "237/60"
+      },
+      "expression": "61*(237/60)",
+      "answer": "4819/20",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_time_001",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        19,
+        107
+      ],
+      "question": "Count all arrivals in a 107-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 19 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "19",
+        "duration_minutes": "107/60"
+      },
+      "expression": "19*(107/60)",
+      "answer": "2033/60",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_time_002",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        50,
+        210
+      ],
+      "question": "Count all arrivals in a 210-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 50 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "50",
+        "duration_minutes": "210/60"
+      },
+      "expression": "50*(210/60)",
+      "answer": "175",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_time_003",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        47,
+        520
+      ],
+      "question": "Count all arrivals in a 520-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 47 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "47",
+        "duration_minutes": "520/60"
+      },
+      "expression": "47*(520/60)",
+      "answer": "1222/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_time_004",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        53,
+        430
+      ],
+      "question": "Count all arrivals in a 430-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 53 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "53",
+        "duration_minutes": "430/60"
+      },
+      "expression": "53*(430/60)",
+      "answer": "2279/6",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_time_005",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        42,
+        493
+      ],
+      "question": "Count all arrivals in a 493-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 42 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "42",
+        "duration_minutes": "493/60"
+      },
+      "expression": "42*(493/60)",
+      "answer": "3451/10",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        62,
+        7,
+        2
+      ],
+      "question": "Adding 2 after multiplying a Poisson count X by 7 gives the displayed value. X has expectation 62. What variance does this display have?",
+      "bindings": {
+        "mean": "62",
+        "scale": "7",
+        "offset": "2"
+      },
+      "expression": "7**2*62",
+      "answer": "3038",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        67,
+        3,
+        19
+      ],
+      "question": "Adding 19 after multiplying a Poisson count X by 3 gives the displayed value. X has expectation 67. What variance does this display have?",
+      "bindings": {
+        "mean": "67",
+        "scale": "3",
+        "offset": "19"
+      },
+      "expression": "3**2*67",
+      "answer": "603",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        17,
+        7,
+        19
+      ],
+      "question": "Adding 19 after multiplying a Poisson count X by 7 gives the displayed value. X has expectation 17. What variance does this display have?",
+      "bindings": {
+        "mean": "17",
+        "scale": "7",
+        "offset": "19"
+      },
+      "expression": "7**2*17",
+      "answer": "833",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        24,
+        2,
+        9
+      ],
+      "question": "Adding 9 after multiplying a Poisson count X by 2 gives the displayed value. X has expectation 24. What variance does this display have?",
+      "bindings": {
+        "mean": "24",
+        "scale": "2",
+        "offset": "9"
+      },
+      "expression": "2**2*24",
+      "answer": "96",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        24,
+        5,
+        17
+      ],
+      "question": "Adding 17 after multiplying a Poisson count X by 5 gives the displayed value. X has expectation 24. What variance does this display have?",
+      "bindings": {
+        "mean": "24",
+        "scale": "5",
+        "offset": "17"
+      },
+      "expression": "5**2*24",
+      "answer": "600",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        44,
+        3,
+        3
+      ],
+      "question": "Adding 3 after multiplying a Poisson count X by 3 gives the displayed value. X has expectation 44. What variance does this display have?",
+      "bindings": {
+        "mean": "44",
+        "scale": "3",
+        "offset": "3"
+      },
+      "expression": "3**2*44",
+      "answer": "396",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_000",
+      "category": "moment",
+      "identity": [
+        "moment",
+        35,
+        555,
+        5,
+        2
+      ],
+      "question": "The quantity to average is the square of (5 times X plus 2), not the square of its average. The mean of X is 35, and its variance is 555. Set up that expectation.",
+      "bindings": {
+        "mean": "35",
+        "variance": "555",
+        "scale": "5",
+        "offset": "2"
+      },
+      "expression": "5**2*555+(5*35+2)**2",
+      "answer": "45204",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_001",
+      "category": "moment",
+      "identity": [
+        "moment",
+        25,
+        191,
+        3,
+        11
+      ],
+      "question": "The quantity to average is the square of (3 times X plus 11), not the square of its average. The mean of X is 25, and its variance is 191. Set up that expectation.",
+      "bindings": {
+        "mean": "25",
+        "variance": "191",
+        "scale": "3",
+        "offset": "11"
+      },
+      "expression": "3**2*191+(3*25+11)**2",
+      "answer": "9115",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_002",
+      "category": "moment",
+      "identity": [
+        "moment",
+        19,
+        83,
+        2,
+        17
+      ],
+      "question": "The quantity to average is the square of (2 times X plus 17), not the square of its average. The mean of X is 19, and its variance is 83. Set up that expectation.",
+      "bindings": {
+        "mean": "19",
+        "variance": "83",
+        "scale": "2",
+        "offset": "17"
+      },
+      "expression": "2**2*83+(2*19+17)**2",
+      "answer": "3357",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_003",
+      "category": "moment",
+      "identity": [
+        "moment",
+        65,
+        90,
+        2,
+        4
+      ],
+      "question": "The quantity to average is the square of (2 times X plus 4), not the square of its average. The mean of X is 65, and its variance is 90. Set up that expectation.",
+      "bindings": {
+        "mean": "65",
+        "variance": "90",
+        "scale": "2",
+        "offset": "4"
+      },
+      "expression": "2**2*90+(2*65+4)**2",
+      "answer": "18316",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_004",
+      "category": "moment",
+      "identity": [
+        "moment",
+        26,
+        573,
+        7,
+        19
+      ],
+      "question": "The quantity to average is the square of (7 times X plus 19), not the square of its average. The mean of X is 26, and its variance is 573. Set up that expectation.",
+      "bindings": {
+        "mean": "26",
+        "variance": "573",
+        "scale": "7",
+        "offset": "19"
+      },
+      "expression": "7**2*573+(7*26+19)**2",
+      "answer": "68478",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_moment_005",
+      "category": "moment",
+      "identity": [
+        "moment",
+        27,
+        212,
+        2,
+        7
+      ],
+      "question": "The quantity to average is the square of (2 times X plus 7), not the square of its average. The mean of X is 27, and its variance is 212. Set up that expectation.",
+      "bindings": {
+        "mean": "27",
+        "variance": "212",
+        "scale": "2",
+        "offset": "7"
+      },
+      "expression": "2**2*212+(2*27+7)**2",
+      "answer": "4569",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_000",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        55,
+        545
+      ],
+      "question": "Only waits exceeding 545 seconds are retained. Before this selection, total waiting time is uniform on [0,55] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "55",
+        "cutoff_minutes": "545/60"
+      },
+      "expression": "(55+545/60)/2",
+      "answer": "769/24",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_001",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        19,
+        571
+      ],
+      "question": "Only waits exceeding 571 seconds are retained. Before this selection, total waiting time is uniform on [0,19] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "19",
+        "cutoff_minutes": "571/60"
+      },
+      "expression": "(19+571/60)/2",
+      "answer": "1711/120",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_002",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        26,
+        310
+      ],
+      "question": "Only waits exceeding 310 seconds are retained. Before this selection, total waiting time is uniform on [0,26] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "26",
+        "cutoff_minutes": "310/60"
+      },
+      "expression": "(26+310/60)/2",
+      "answer": "187/12",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_003",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        33,
+        597
+      ],
+      "question": "Only waits exceeding 597 seconds are retained. Before this selection, total waiting time is uniform on [0,33] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "33",
+        "cutoff_minutes": "597/60"
+      },
+      "expression": "(33+597/60)/2",
+      "answer": "859/40",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_004",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        51,
+        331
+      ],
+      "question": "Only waits exceeding 331 seconds are retained. Before this selection, total waiting time is uniform on [0,51] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "51",
+        "cutoff_minutes": "331/60"
+      },
+      "expression": "(51+331/60)/2",
+      "answer": "3391/120",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_uniform_time_005",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        20,
+        549
+      ],
+      "question": "Only waits exceeding 549 seconds are retained. Before this selection, total waiting time is uniform on [0,20] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "20",
+        "cutoff_minutes": "549/60"
+      },
+      "expression": "(20+549/60)/2",
+      "answer": "583/40",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_000",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        7,
+        4,
+        30
+      ],
+      "question": "An experiment repeats 7 independent tests under true null hypotheses. A rejection occurs with probability 30/100 on each test. We count rejections and want the probability that the count equals 4.",
+      "bindings": {
+        "n": "7",
+        "r": "4",
+        "reject_probability": "30/100"
+      },
+      "expression": "comb(7,4)*(30/100)**4*(1-30/100)**(7-4)",
+      "answer": "194481/2000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_001",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        6,
+        2,
+        26
+      ],
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 26/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "6",
+        "r": "2",
+        "reject_probability": "26/100"
+      },
+      "expression": "comb(6,2)*(26/100)**2*(1-26/100)**(6-2)",
+      "answer": "950199627/3125000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_002",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        7,
+        3,
+        47
+      ],
+      "question": "An experiment repeats 7 independent tests under true null hypotheses. A rejection occurs with probability 47/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "bindings": {
+        "n": "7",
+        "r": "3",
+        "reject_probability": "47/100"
+      },
+      "expression": "comb(7,3)*(47/100)**3*(1-47/100)**(7-3)",
+      "answer": "5734493862041/20000000000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_003",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        8,
+        4,
+        26
+      ],
+      "question": "An experiment repeats 8 independent tests under true null hypotheses. A rejection occurs with probability 26/100 on each test. We count rejections and want the probability that the count equals 4.",
+      "bindings": {
+        "n": "8",
+        "r": "4",
+        "reject_probability": "26/100"
+      },
+      "expression": "comb(8,4)*(26/100)**4*(1-26/100)**(8-4)",
+      "answer": "374695386247/3906250000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_004",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        8,
+        5,
+        42
+      ],
+      "question": "An experiment repeats 8 independent tests under true null hypotheses. A rejection occurs with probability 42/100 on each test. We count rejections and want the probability that the count equals 5.",
+      "bindings": {
+        "n": "8",
+        "r": "5",
+        "reject_probability": "42/100"
+      },
+      "expression": "comb(8,5)*(42/100)**5*(1-42/100)**(8-5)",
+      "answer": "697249975023/4882812500000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_binomial_005",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        5,
+        2,
+        64
+      ],
+      "question": "An experiment repeats 5 independent tests under true null hypotheses. A rejection occurs with probability 64/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "5",
+        "r": "2",
+        "reject_probability": "64/100"
+      },
+      "expression": "comb(5,2)*(64/100)**2*(1-64/100)**(5-2)",
+      "answer": "373248/1953125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_000",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        14,
+        16
+      ],
+      "question": "For an existing defect, inspection A has miss probability 16/100, and independent inspection B has miss probability 14/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "16/100",
+        "miss_b": "14/100"
+      },
+      "expression": "(1-16/100)*(14/100)+(16/100)*(1-14/100)",
+      "answer": "319/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_001",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        31,
+        36
+      ],
+      "question": "For an existing defect, inspection A has miss probability 31/100, and independent inspection B has miss probability 36/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "31/100",
+        "miss_b": "36/100"
+      },
+      "expression": "(1-31/100)*(36/100)+(31/100)*(1-36/100)",
+      "answer": "1117/2500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_002",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        12,
+        22
+      ],
+      "question": "For an existing defect, inspection A has miss probability 22/100, and independent inspection B has miss probability 12/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "22/100",
+        "miss_b": "12/100"
+      },
+      "expression": "(1-22/100)*(12/100)+(22/100)*(1-12/100)",
+      "answer": "359/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_003",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        15,
+        43
+      ],
+      "question": "For an existing defect, inspection A has miss probability 15/100, and independent inspection B has miss probability 43/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "15/100",
+        "miss_b": "43/100"
+      },
+      "expression": "(1-15/100)*(43/100)+(15/100)*(1-43/100)",
+      "answer": "451/1000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_004",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        43,
+        63
+      ],
+      "question": "For an existing defect, inspection A has miss probability 63/100, and independent inspection B has miss probability 43/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "63/100",
+        "miss_b": "43/100"
+      },
+      "expression": "(1-63/100)*(43/100)+(63/100)*(1-43/100)",
+      "answer": "2591/5000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_exactly_one_005",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        38,
+        41
+      ],
+      "question": "For an existing defect, inspection A has miss probability 38/100, and independent inspection B has miss probability 41/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "38/100",
+        "miss_b": "41/100"
+      },
+      "expression": "(1-38/100)*(41/100)+(38/100)*(1-41/100)",
+      "answer": "299/625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_000",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        30,
+        35
+      ],
+      "question": "For an existing defect, inspection A has miss probability 30/100, and independent inspection B has miss probability 35/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "30/100",
+        "miss_b": "35/100"
+      },
+      "expression": "1-(30/100)*(35/100)",
+      "answer": "179/200",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_001",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        16,
+        30
+      ],
+      "question": "For an existing defect, inspection A has miss probability 16/100, and independent inspection B has miss probability 30/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "16/100",
+        "miss_b": "30/100"
+      },
+      "expression": "1-(16/100)*(30/100)",
+      "answer": "119/125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_002",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        13,
+        19
+      ],
+      "question": "For an existing defect, inspection A has miss probability 19/100, and independent inspection B has miss probability 13/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "19/100",
+        "miss_b": "13/100"
+      },
+      "expression": "1-(19/100)*(13/100)",
+      "answer": "9753/10000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_003",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        22,
+        30
+      ],
+      "question": "For an existing defect, inspection A has miss probability 22/100, and independent inspection B has miss probability 30/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "22/100",
+        "miss_b": "30/100"
+      },
+      "expression": "1-(22/100)*(30/100)",
+      "answer": "467/500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_004",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        27,
+        34
+      ],
+      "question": "For an existing defect, inspection A has miss probability 27/100, and independent inspection B has miss probability 34/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "27/100",
+        "miss_b": "34/100"
+      },
+      "expression": "1-(27/100)*(34/100)",
+      "answer": "4541/5000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_at_least_one_005",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        15,
+        16
+      ],
+      "question": "For an existing defect, inspection A has miss probability 16/100, and independent inspection B has miss probability 15/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "16/100",
+        "miss_b": "15/100"
+      },
+      "expression": "1-(16/100)*(15/100)",
+      "answer": "122/125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_000",
+      "category": "interval",
+      "identity": [
+        "interval",
+        48,
+        395,
+        3
+      ],
+      "question": "Increase sample size by a factor of 9, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 48 to 395. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "48",
+        "upper": "395",
+        "width_divisor": "3"
+      },
+      "expression": "(48+395)/2+(395-48)/(2*3)",
+      "answer": "838/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_001",
+      "category": "interval",
+      "identity": [
+        "interval",
+        32,
+        392,
+        2
+      ],
+      "question": "Increase sample size by a factor of 4, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 32 to 392. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "32",
+        "upper": "392",
+        "width_divisor": "2"
+      },
+      "expression": "(32+392)/2+(392-32)/(2*2)",
+      "answer": "302",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_002",
+      "category": "interval",
+      "identity": [
+        "interval",
+        58,
+        284,
+        7
+      ],
+      "question": "Increase sample size by a factor of 49, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 58 to 284. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "58",
+        "upper": "284",
+        "width_divisor": "7"
+      },
+      "expression": "(58+284)/2+(284-58)/(2*7)",
+      "answer": "1310/7",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_003",
+      "category": "interval",
+      "identity": [
+        "interval",
+        55,
+        129,
+        2
+      ],
+      "question": "Increase sample size by a factor of 4, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 55 to 129. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "55",
+        "upper": "129",
+        "width_divisor": "2"
+      },
+      "expression": "(55+129)/2+(129-55)/(2*2)",
+      "answer": "221/2",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_004",
+      "category": "interval",
+      "identity": [
+        "interval",
+        27,
+        231,
+        4
+      ],
+      "question": "Increase sample size by a factor of 16, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 27 to 231. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "27",
+        "upper": "231",
+        "width_divisor": "4"
+      },
+      "expression": "(27+231)/2+(231-27)/(2*4)",
+      "answer": "309/2",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_validation_interval_005",
+      "category": "interval",
+      "identity": [
+        "interval",
+        41,
+        455,
+        5
+      ],
+      "question": "Increase sample size by a factor of 25, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 41 to 455. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "41",
+        "upper": "455",
+        "width_divisor": "5"
+      },
+      "expression": "(41+455)/2+(455-41)/(2*5)",
+      "answer": "1447/5",
+      "provenance": "procedural_reference"
+    }
+  ],
+  "test": [
+    {
+      "id": "v17_test_poisson_time_000",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        43,
+        417
+      ],
+      "question": "Count all arrivals in a 417-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 43 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "43",
+        "duration_minutes": "417/60"
+      },
+      "expression": "43*(417/60)",
+      "answer": "5977/20",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_001",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        66,
+        301
+      ],
+      "question": "Count all arrivals in a 301-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 66 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "66",
+        "duration_minutes": "301/60"
+      },
+      "expression": "66*(301/60)",
+      "answer": "3311/10",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_002",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        15,
+        582
+      ],
+      "question": "Count all arrivals in a 582-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 15 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "15",
+        "duration_minutes": "582/60"
+      },
+      "expression": "15*(582/60)",
+      "answer": "291/2",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_003",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        67,
+        140
+      ],
+      "question": "Count all arrivals in a 140-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 67 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "67",
+        "duration_minutes": "140/60"
+      },
+      "expression": "67*(140/60)",
+      "answer": "469/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_004",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        61,
+        389
+      ],
+      "question": "Count all arrivals in a 389-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 61 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "61",
+        "duration_minutes": "389/60"
+      },
+      "expression": "61*(389/60)",
+      "answer": "23729/60",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_005",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        66,
+        267
+      ],
+      "question": "Count all arrivals in a 267-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 66 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "66",
+        "duration_minutes": "267/60"
+      },
+      "expression": "66*(267/60)",
+      "answer": "2937/10",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_006",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        22,
+        504
+      ],
+      "question": "Count all arrivals in a 504-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 22 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "22",
+        "duration_minutes": "504/60"
+      },
+      "expression": "22*(504/60)",
+      "answer": "924/5",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_007",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        44,
+        220
+      ],
+      "question": "Count all arrivals in a 220-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 44 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "44",
+        "duration_minutes": "220/60"
+      },
+      "expression": "44*(220/60)",
+      "answer": "484/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_008",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        48,
+        580
+      ],
+      "question": "Count all arrivals in a 580-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 48 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "48",
+        "duration_minutes": "580/60"
+      },
+      "expression": "48*(580/60)",
+      "answer": "464",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_009",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        28,
+        523
+      ],
+      "question": "Count all arrivals in a 523-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 28 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "28",
+        "duration_minutes": "523/60"
+      },
+      "expression": "28*(523/60)",
+      "answer": "3661/15",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_010",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        57,
+        562
+      ],
+      "question": "Count all arrivals in a 562-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 57 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "57",
+        "duration_minutes": "562/60"
+      },
+      "expression": "57*(562/60)",
+      "answer": "5339/10",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_time_011",
+      "category": "poisson_time",
+      "identity": [
+        "poisson_time",
+        33,
+        430
+      ],
+      "question": "Count all arrivals in a 430-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 33 per minute. Set up the count variance.",
+      "bindings": {
+        "rate_per_minute": "33",
+        "duration_minutes": "430/60"
+      },
+      "expression": "33*(430/60)",
+      "answer": "473/2",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        44,
+        5,
+        12
+      ],
+      "question": "Adding 12 after multiplying a Poisson count X by 5 gives the displayed value. X has expectation 44. What variance does this display have?",
+      "bindings": {
+        "mean": "44",
+        "scale": "5",
+        "offset": "12"
+      },
+      "expression": "5**2*44",
+      "answer": "1100",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        50,
+        6,
+        17
+      ],
+      "question": "Adding 17 after multiplying a Poisson count X by 6 gives the displayed value. X has expectation 50. What variance does this display have?",
+      "bindings": {
+        "mean": "50",
+        "scale": "6",
+        "offset": "17"
+      },
+      "expression": "6**2*50",
+      "answer": "1800",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        31,
+        2,
+        23
+      ],
+      "question": "Adding 23 after multiplying a Poisson count X by 2 gives the displayed value. X has expectation 31. What variance does this display have?",
+      "bindings": {
+        "mean": "31",
+        "scale": "2",
+        "offset": "23"
+      },
+      "expression": "2**2*31",
+      "answer": "124",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        65,
+        6,
+        18
+      ],
+      "question": "Adding 18 after multiplying a Poisson count X by 6 gives the displayed value. X has expectation 65. What variance does this display have?",
+      "bindings": {
+        "mean": "65",
+        "scale": "6",
+        "offset": "18"
+      },
+      "expression": "6**2*65",
+      "answer": "2340",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        36,
+        3,
+        16
+      ],
+      "question": "Adding 16 after multiplying a Poisson count X by 3 gives the displayed value. X has expectation 36. What variance does this display have?",
+      "bindings": {
+        "mean": "36",
+        "scale": "3",
+        "offset": "16"
+      },
+      "expression": "3**2*36",
+      "answer": "324",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        44,
+        4,
+        16
+      ],
+      "question": "Adding 16 after multiplying a Poisson count X by 4 gives the displayed value. X has expectation 44. What variance does this display have?",
+      "bindings": {
+        "mean": "44",
+        "scale": "4",
+        "offset": "16"
+      },
+      "expression": "4**2*44",
+      "answer": "704",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_006",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        57,
+        2,
+        8
+      ],
+      "question": "Adding 8 after multiplying a Poisson count X by 2 gives the displayed value. X has expectation 57. What variance does this display have?",
+      "bindings": {
+        "mean": "57",
+        "scale": "2",
+        "offset": "8"
+      },
+      "expression": "2**2*57",
+      "answer": "228",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_007",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        27,
+        2,
+        9
+      ],
+      "question": "Adding 9 after multiplying a Poisson count X by 2 gives the displayed value. X has expectation 27. What variance does this display have?",
+      "bindings": {
+        "mean": "27",
+        "scale": "2",
+        "offset": "9"
+      },
+      "expression": "2**2*27",
+      "answer": "108",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_008",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        61,
+        6,
+        9
+      ],
+      "question": "Adding 9 after multiplying a Poisson count X by 6 gives the displayed value. X has expectation 61. What variance does this display have?",
+      "bindings": {
+        "mean": "61",
+        "scale": "6",
+        "offset": "9"
+      },
+      "expression": "6**2*61",
+      "answer": "2196",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_009",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        17,
+        4,
+        22
+      ],
+      "question": "Adding 22 after multiplying a Poisson count X by 4 gives the displayed value. X has expectation 17. What variance does this display have?",
+      "bindings": {
+        "mean": "17",
+        "scale": "4",
+        "offset": "22"
+      },
+      "expression": "4**2*17",
+      "answer": "272",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_010",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        41,
+        4,
+        4
+      ],
+      "question": "Adding 4 after multiplying a Poisson count X by 4 gives the displayed value. X has expectation 41. What variance does this display have?",
+      "bindings": {
+        "mean": "41",
+        "scale": "4",
+        "offset": "4"
+      },
+      "expression": "4**2*41",
+      "answer": "656",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_poisson_scaled_011",
+      "category": "poisson_scaled",
+      "identity": [
+        "poisson_scaled",
+        68,
+        4,
+        6
+      ],
+      "question": "Adding 6 after multiplying a Poisson count X by 4 gives the displayed value. X has expectation 68. What variance does this display have?",
+      "bindings": {
+        "mean": "68",
+        "scale": "4",
+        "offset": "6"
+      },
+      "expression": "4**2*68",
+      "answer": "1088",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_000",
+      "category": "moment",
+      "identity": [
+        "moment",
+        13,
+        74,
+        2,
+        17
+      ],
+      "question": "The quantity to average is the square of (2 times X plus 17), not the square of its average. The mean of X is 13, and its variance is 74. Set up that expectation.",
+      "bindings": {
+        "mean": "13",
+        "variance": "74",
+        "scale": "2",
+        "offset": "17"
+      },
+      "expression": "2**2*74+(2*13+17)**2",
+      "answer": "2145",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_001",
+      "category": "moment",
+      "identity": [
+        "moment",
+        40,
+        408,
+        4,
+        20
+      ],
+      "question": "The quantity to average is the square of (4 times X plus 20), not the square of its average. The mean of X is 40, and its variance is 408. Set up that expectation.",
+      "bindings": {
+        "mean": "40",
+        "variance": "408",
+        "scale": "4",
+        "offset": "20"
+      },
+      "expression": "4**2*408+(4*40+20)**2",
+      "answer": "38928",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_002",
+      "category": "moment",
+      "identity": [
+        "moment",
+        35,
+        141,
+        6,
+        13
+      ],
+      "question": "The quantity to average is the square of (6 times X plus 13), not the square of its average. The mean of X is 35, and its variance is 141. Set up that expectation.",
+      "bindings": {
+        "mean": "35",
+        "variance": "141",
+        "scale": "6",
+        "offset": "13"
+      },
+      "expression": "6**2*141+(6*35+13)**2",
+      "answer": "54805",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_003",
+      "category": "moment",
+      "identity": [
+        "moment",
+        28,
+        285,
+        6,
+        20
+      ],
+      "question": "The quantity to average is the square of (6 times X plus 20), not the square of its average. The mean of X is 28, and its variance is 285. Set up that expectation.",
+      "bindings": {
+        "mean": "28",
+        "variance": "285",
+        "scale": "6",
+        "offset": "20"
+      },
+      "expression": "6**2*285+(6*28+20)**2",
+      "answer": "45604",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_004",
+      "category": "moment",
+      "identity": [
+        "moment",
+        56,
+        468,
+        6,
+        7
+      ],
+      "question": "The quantity to average is the square of (6 times X plus 7), not the square of its average. The mean of X is 56, and its variance is 468. Set up that expectation.",
+      "bindings": {
+        "mean": "56",
+        "variance": "468",
+        "scale": "6",
+        "offset": "7"
+      },
+      "expression": "6**2*468+(6*56+7)**2",
+      "answer": "134497",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_005",
+      "category": "moment",
+      "identity": [
+        "moment",
+        35,
+        425,
+        5,
+        22
+      ],
+      "question": "The quantity to average is the square of (5 times X plus 22), not the square of its average. The mean of X is 35, and its variance is 425. Set up that expectation.",
+      "bindings": {
+        "mean": "35",
+        "variance": "425",
+        "scale": "5",
+        "offset": "22"
+      },
+      "expression": "5**2*425+(5*35+22)**2",
+      "answer": "49434",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_006",
+      "category": "moment",
+      "identity": [
+        "moment",
+        30,
+        398,
+        2,
+        10
+      ],
+      "question": "The quantity to average is the square of (2 times X plus 10), not the square of its average. The mean of X is 30, and its variance is 398. Set up that expectation.",
+      "bindings": {
+        "mean": "30",
+        "variance": "398",
+        "scale": "2",
+        "offset": "10"
+      },
+      "expression": "2**2*398+(2*30+10)**2",
+      "answer": "6492",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_007",
+      "category": "moment",
+      "identity": [
+        "moment",
+        46,
+        517,
+        7,
+        18
+      ],
+      "question": "The quantity to average is the square of (7 times X plus 18), not the square of its average. The mean of X is 46, and its variance is 517. Set up that expectation.",
+      "bindings": {
+        "mean": "46",
+        "variance": "517",
+        "scale": "7",
+        "offset": "18"
+      },
+      "expression": "7**2*517+(7*46+18)**2",
+      "answer": "140933",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_008",
+      "category": "moment",
+      "identity": [
+        "moment",
+        28,
+        80,
+        7,
+        11
+      ],
+      "question": "The quantity to average is the square of (7 times X plus 11), not the square of its average. The mean of X is 28, and its variance is 80. Set up that expectation.",
+      "bindings": {
+        "mean": "28",
+        "variance": "80",
+        "scale": "7",
+        "offset": "11"
+      },
+      "expression": "7**2*80+(7*28+11)**2",
+      "answer": "46769",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_009",
+      "category": "moment",
+      "identity": [
+        "moment",
+        24,
+        371,
+        6,
+        9
+      ],
+      "question": "The quantity to average is the square of (6 times X plus 9), not the square of its average. The mean of X is 24, and its variance is 371. Set up that expectation.",
+      "bindings": {
+        "mean": "24",
+        "variance": "371",
+        "scale": "6",
+        "offset": "9"
+      },
+      "expression": "6**2*371+(6*24+9)**2",
+      "answer": "36765",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_010",
+      "category": "moment",
+      "identity": [
+        "moment",
+        44,
+        518,
+        6,
+        5
+      ],
+      "question": "The quantity to average is the square of (6 times X plus 5), not the square of its average. The mean of X is 44, and its variance is 518. Set up that expectation.",
+      "bindings": {
+        "mean": "44",
+        "variance": "518",
+        "scale": "6",
+        "offset": "5"
+      },
+      "expression": "6**2*518+(6*44+5)**2",
+      "answer": "91009",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_moment_011",
+      "category": "moment",
+      "identity": [
+        "moment",
+        19,
+        367,
+        4,
+        18
+      ],
+      "question": "The quantity to average is the square of (4 times X plus 18), not the square of its average. The mean of X is 19, and its variance is 367. Set up that expectation.",
+      "bindings": {
+        "mean": "19",
+        "variance": "367",
+        "scale": "4",
+        "offset": "18"
+      },
+      "expression": "4**2*367+(4*19+18)**2",
+      "answer": "14708",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_000",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        68,
+        165
+      ],
+      "question": "Only waits exceeding 165 seconds are retained. Before this selection, total waiting time is uniform on [0,68] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "68",
+        "cutoff_minutes": "165/60"
+      },
+      "expression": "(68+165/60)/2",
+      "answer": "283/8",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_001",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        36,
+        334
+      ],
+      "question": "Only waits exceeding 334 seconds are retained. Before this selection, total waiting time is uniform on [0,36] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "36",
+        "cutoff_minutes": "334/60"
+      },
+      "expression": "(36+334/60)/2",
+      "answer": "1247/60",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_002",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        67,
+        416
+      ],
+      "question": "Only waits exceeding 416 seconds are retained. Before this selection, total waiting time is uniform on [0,67] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "67",
+        "cutoff_minutes": "416/60"
+      },
+      "expression": "(67+416/60)/2",
+      "answer": "1109/30",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_003",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        58,
+        596
+      ],
+      "question": "Only waits exceeding 596 seconds are retained. Before this selection, total waiting time is uniform on [0,58] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "58",
+        "cutoff_minutes": "596/60"
+      },
+      "expression": "(58+596/60)/2",
+      "answer": "1019/30",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_004",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        24,
+        452
+      ],
+      "question": "Only waits exceeding 452 seconds are retained. Before this selection, total waiting time is uniform on [0,24] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "24",
+        "cutoff_minutes": "452/60"
+      },
+      "expression": "(24+452/60)/2",
+      "answer": "473/30",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_005",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        24,
+        424
+      ],
+      "question": "Only waits exceeding 424 seconds are retained. Before this selection, total waiting time is uniform on [0,24] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "24",
+        "cutoff_minutes": "424/60"
+      },
+      "expression": "(24+424/60)/2",
+      "answer": "233/15",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_006",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        68,
+        435
+      ],
+      "question": "Only waits exceeding 435 seconds are retained. Before this selection, total waiting time is uniform on [0,68] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "68",
+        "cutoff_minutes": "435/60"
+      },
+      "expression": "(68+435/60)/2",
+      "answer": "301/8",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_007",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        38,
+        573
+      ],
+      "question": "Only waits exceeding 573 seconds are retained. Before this selection, total waiting time is uniform on [0,38] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "38",
+        "cutoff_minutes": "573/60"
+      },
+      "expression": "(38+573/60)/2",
+      "answer": "951/40",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_008",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        22,
+        403
+      ],
+      "question": "Only waits exceeding 403 seconds are retained. Before this selection, total waiting time is uniform on [0,22] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "22",
+        "cutoff_minutes": "403/60"
+      },
+      "expression": "(22+403/60)/2",
+      "answer": "1723/120",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_009",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        24,
+        581
+      ],
+      "question": "Only waits exceeding 581 seconds are retained. Before this selection, total waiting time is uniform on [0,24] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "24",
+        "cutoff_minutes": "581/60"
+      },
+      "expression": "(24+581/60)/2",
+      "answer": "2021/120",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_010",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        22,
+        426
+      ],
+      "question": "Only waits exceeding 426 seconds are retained. Before this selection, total waiting time is uniform on [0,22] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "22",
+        "cutoff_minutes": "426/60"
+      },
+      "expression": "(22+426/60)/2",
+      "answer": "291/20",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_uniform_time_011",
+      "category": "uniform_time",
+      "identity": [
+        "uniform_time",
+        27,
+        486
+      ],
+      "question": "Only waits exceeding 486 seconds are retained. Before this selection, total waiting time is uniform on [0,27] minutes. What is the mean total duration, in minutes, of retained waits?",
+      "bindings": {
+        "upper_minutes": "27",
+        "cutoff_minutes": "486/60"
+      },
+      "expression": "(27+486/60)/2",
+      "answer": "351/20",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_000",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        9,
+        7,
+        64
+      ],
+      "question": "An experiment repeats 9 independent tests under true null hypotheses. A rejection occurs with probability 64/100 on each test. We count rejections and want the probability that the count equals 7.",
+      "bindings": {
+        "n": "9",
+        "r": "7",
+        "reject_probability": "64/100"
+      },
+      "expression": "comb(9,7)*(64/100)**7*(1-64/100)**(9-7)",
+      "answer": "782757789696/3814697265625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_001",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        7,
+        3,
+        17
+      ],
+      "question": "An experiment repeats 7 independent tests under true null hypotheses. A rejection occurs with probability 17/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "bindings": {
+        "n": "7",
+        "r": "3",
+        "reject_probability": "17/100"
+      },
+      "expression": "comb(7,3)*(17/100)**3*(1-17/100)**(7-3)",
+      "answer": "1632139117511/20000000000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_002",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        9,
+        2,
+        41
+      ],
+      "question": "An experiment repeats 9 independent tests under true null hypotheses. A rejection occurs with probability 41/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "9",
+        "r": "2",
+        "reject_probability": "41/100"
+      },
+      "expression": "comb(9,2)*(41/100)**2*(1-41/100)**(9-2)",
+      "answer": "37650808313826651/250000000000000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_003",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        7,
+        1,
+        22
+      ],
+      "question": "An experiment repeats 7 independent tests under true null hypotheses. A rejection occurs with probability 22/100 on each test. We count rejections and want the probability that the count equals 1.",
+      "bindings": {
+        "n": "7",
+        "r": "1",
+        "reject_probability": "22/100"
+      },
+      "expression": "comb(7,1)*(22/100)**1*(1-22/100)**(7-1)",
+      "answer": "270943269597/781250000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_004",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        6,
+        2,
+        55
+      ],
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 55/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "6",
+        "r": "2",
+        "reject_probability": "55/100"
+      },
+      "expression": "comb(6,2)*(55/100)**2*(1-55/100)**(6-2)",
+      "answer": "2381643/12800000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_005",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        5,
+        3,
+        25
+      ],
+      "question": "An experiment repeats 5 independent tests under true null hypotheses. A rejection occurs with probability 25/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "bindings": {
+        "n": "5",
+        "r": "3",
+        "reject_probability": "25/100"
+      },
+      "expression": "comb(5,3)*(25/100)**3*(1-25/100)**(5-3)",
+      "answer": "45/512",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_006",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        8,
+        4,
+        29
+      ],
+      "question": "An experiment repeats 8 independent tests under true null hypotheses. A rejection occurs with probability 29/100 on each test. We count rejections and want the probability that the count equals 4.",
+      "bindings": {
+        "n": "8",
+        "r": "4",
+        "reject_probability": "29/100"
+      },
+      "expression": "comb(8,4)*(29/100)**4*(1-29/100)**(8-4)",
+      "answer": "125812394045527/1000000000000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_007",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        9,
+        6,
+        19
+      ],
+      "question": "An experiment repeats 9 independent tests under true null hypotheses. A rejection occurs with probability 19/100 on each test. We count rejections and want the probability that the count equals 6.",
+      "bindings": {
+        "n": "9",
+        "r": "6",
+        "reject_probability": "19/100"
+      },
+      "expression": "comb(9,6)*(19/100)**6*(1-19/100)**(9-6)",
+      "answer": "525044310934941/250000000000000000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_008",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        9,
+        2,
+        36
+      ],
+      "question": "An experiment repeats 9 independent tests under true null hypotheses. A rejection occurs with probability 36/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "9",
+        "r": "2",
+        "reject_probability": "36/100"
+      },
+      "expression": "comb(9,2)*(36/100)**2*(1-36/100)**(9-2)",
+      "answer": "782757789696/3814697265625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_009",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        6,
+        3,
+        52
+      ],
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 52/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "bindings": {
+        "n": "6",
+        "r": "3",
+        "reject_probability": "52/100"
+      },
+      "expression": "comb(6,3)*(52/100)**3*(1-52/100)**(6-3)",
+      "answer": "15185664/48828125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_010",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        8,
+        2,
+        12
+      ],
+      "question": "An experiment repeats 8 independent tests under true null hypotheses. A rejection occurs with probability 12/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "8",
+        "r": "2",
+        "reject_probability": "12/100"
+      },
+      "expression": "comb(8,2)*(12/100)**2*(1-12/100)**(8-2)",
+      "answer": "28571735808/152587890625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_binomial_011",
+      "category": "binomial",
+      "identity": [
+        "binomial",
+        4,
+        2,
+        50
+      ],
+      "question": "An experiment repeats 4 independent tests under true null hypotheses. A rejection occurs with probability 50/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "bindings": {
+        "n": "4",
+        "r": "2",
+        "reject_probability": "50/100"
+      },
+      "expression": "comb(4,2)*(50/100)**2*(1-50/100)**(4-2)",
+      "answer": "3/8",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_000",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        30,
+        55
+      ],
+      "question": "For an existing defect, inspection A has miss probability 55/100, and independent inspection B has miss probability 30/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "55/100",
+        "miss_b": "30/100"
+      },
+      "expression": "(1-55/100)*(30/100)+(55/100)*(1-30/100)",
+      "answer": "13/25",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_001",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        24,
+        48
+      ],
+      "question": "For an existing defect, inspection A has miss probability 24/100, and independent inspection B has miss probability 48/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "24/100",
+        "miss_b": "48/100"
+      },
+      "expression": "(1-24/100)*(48/100)+(24/100)*(1-48/100)",
+      "answer": "306/625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_002",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        13,
+        24
+      ],
+      "question": "For an existing defect, inspection A has miss probability 24/100, and independent inspection B has miss probability 13/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "24/100",
+        "miss_b": "13/100"
+      },
+      "expression": "(1-24/100)*(13/100)+(24/100)*(1-13/100)",
+      "answer": "769/2500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_003",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        28,
+        49
+      ],
+      "question": "For an existing defect, inspection A has miss probability 28/100, and independent inspection B has miss probability 49/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "28/100",
+        "miss_b": "49/100"
+      },
+      "expression": "(1-28/100)*(49/100)+(28/100)*(1-49/100)",
+      "answer": "1239/2500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_004",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        11,
+        26
+      ],
+      "question": "For an existing defect, inspection A has miss probability 26/100, and independent inspection B has miss probability 11/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "26/100",
+        "miss_b": "11/100"
+      },
+      "expression": "(1-26/100)*(11/100)+(26/100)*(1-11/100)",
+      "answer": "391/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_005",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        15,
+        59
+      ],
+      "question": "For an existing defect, inspection A has miss probability 59/100, and independent inspection B has miss probability 15/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "59/100",
+        "miss_b": "15/100"
+      },
+      "expression": "(1-59/100)*(15/100)+(59/100)*(1-15/100)",
+      "answer": "563/1000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_006",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        20,
+        60
+      ],
+      "question": "For an existing defect, inspection A has miss probability 60/100, and independent inspection B has miss probability 20/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "60/100",
+        "miss_b": "20/100"
+      },
+      "expression": "(1-60/100)*(20/100)+(60/100)*(1-20/100)",
+      "answer": "14/25",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_007",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        14,
+        20
+      ],
+      "question": "For an existing defect, inspection A has miss probability 14/100, and independent inspection B has miss probability 20/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "14/100",
+        "miss_b": "20/100"
+      },
+      "expression": "(1-14/100)*(20/100)+(14/100)*(1-20/100)",
+      "answer": "71/250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_008",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        26,
+        41
+      ],
+      "question": "For an existing defect, inspection A has miss probability 41/100, and independent inspection B has miss probability 26/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "41/100",
+        "miss_b": "26/100"
+      },
+      "expression": "(1-41/100)*(26/100)+(41/100)*(1-26/100)",
+      "answer": "571/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_009",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        42,
+        63
+      ],
+      "question": "For an existing defect, inspection A has miss probability 63/100, and independent inspection B has miss probability 42/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "63/100",
+        "miss_b": "42/100"
+      },
+      "expression": "(1-63/100)*(42/100)+(63/100)*(1-42/100)",
+      "answer": "651/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_010",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        49,
+        63
+      ],
+      "question": "For an existing defect, inspection A has miss probability 63/100, and independent inspection B has miss probability 49/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "63/100",
+        "miss_b": "49/100"
+      },
+      "expression": "(1-63/100)*(49/100)+(63/100)*(1-49/100)",
+      "answer": "2513/5000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_exactly_one_011",
+      "category": "exactly_one",
+      "identity": [
+        "detection_pair",
+        31,
+        39
+      ],
+      "question": "For an existing defect, inspection A has miss probability 31/100, and independent inspection B has miss probability 39/100. What is the chance that one method detects and the other misses?",
+      "bindings": {
+        "miss_a": "31/100",
+        "miss_b": "39/100"
+      },
+      "expression": "(1-31/100)*(39/100)+(31/100)*(1-39/100)",
+      "answer": "2291/5000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_000",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        11,
+        19
+      ],
+      "question": "For an existing defect, inspection A has miss probability 19/100, and independent inspection B has miss probability 11/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "19/100",
+        "miss_b": "11/100"
+      },
+      "expression": "1-(19/100)*(11/100)",
+      "answer": "9791/10000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_001",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        24,
+        60
+      ],
+      "question": "For an existing defect, inspection A has miss probability 60/100, and independent inspection B has miss probability 24/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "60/100",
+        "miss_b": "24/100"
+      },
+      "expression": "1-(60/100)*(24/100)",
+      "answer": "107/125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_002",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        11,
+        64
+      ],
+      "question": "For an existing defect, inspection A has miss probability 64/100, and independent inspection B has miss probability 11/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "64/100",
+        "miss_b": "11/100"
+      },
+      "expression": "1-(64/100)*(11/100)",
+      "answer": "581/625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_003",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        12,
+        35
+      ],
+      "question": "For an existing defect, inspection A has miss probability 12/100, and independent inspection B has miss probability 35/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "12/100",
+        "miss_b": "35/100"
+      },
+      "expression": "1-(12/100)*(35/100)",
+      "answer": "479/500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_004",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        29,
+        35
+      ],
+      "question": "For an existing defect, inspection A has miss probability 35/100, and independent inspection B has miss probability 29/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "35/100",
+        "miss_b": "29/100"
+      },
+      "expression": "1-(35/100)*(29/100)",
+      "answer": "1797/2000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_005",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        28,
+        42
+      ],
+      "question": "For an existing defect, inspection A has miss probability 42/100, and independent inspection B has miss probability 28/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "42/100",
+        "miss_b": "28/100"
+      },
+      "expression": "1-(42/100)*(28/100)",
+      "answer": "1103/1250",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_006",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        13,
+        17
+      ],
+      "question": "For an existing defect, inspection A has miss probability 17/100, and independent inspection B has miss probability 13/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "17/100",
+        "miss_b": "13/100"
+      },
+      "expression": "1-(17/100)*(13/100)",
+      "answer": "9779/10000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_007",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        13,
+        16
+      ],
+      "question": "For an existing defect, inspection A has miss probability 13/100, and independent inspection B has miss probability 16/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "13/100",
+        "miss_b": "16/100"
+      },
+      "expression": "1-(13/100)*(16/100)",
+      "answer": "612/625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_008",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        47,
+        49
+      ],
+      "question": "For an existing defect, inspection A has miss probability 47/100, and independent inspection B has miss probability 49/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "47/100",
+        "miss_b": "49/100"
+      },
+      "expression": "1-(47/100)*(49/100)",
+      "answer": "7697/10000",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_009",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        36,
+        49
+      ],
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 49/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "36/100",
+        "miss_b": "49/100"
+      },
+      "expression": "1-(36/100)*(49/100)",
+      "answer": "2059/2500",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_010",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        36,
+        48
+      ],
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 48/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "36/100",
+        "miss_b": "48/100"
+      },
+      "expression": "1-(36/100)*(48/100)",
+      "answer": "517/625",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_at_least_one_011",
+      "category": "at_least_one",
+      "identity": [
+        "detection_pair",
+        45,
+        48
+      ],
+      "question": "For an existing defect, inspection A has miss probability 48/100, and independent inspection B has miss probability 45/100. What is the chance that one or both methods detect?",
+      "bindings": {
+        "miss_a": "48/100",
+        "miss_b": "45/100"
+      },
+      "expression": "1-(48/100)*(45/100)",
+      "answer": "98/125",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_000",
+      "category": "interval",
+      "identity": [
+        "interval",
+        12,
+        225,
+        2
+      ],
+      "question": "Increase sample size by a factor of 4, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 12 to 225. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "12",
+        "upper": "225",
+        "width_divisor": "2"
+      },
+      "expression": "(12+225)/2+(225-12)/(2*2)",
+      "answer": "687/4",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_001",
+      "category": "interval",
+      "identity": [
+        "interval",
+        23,
+        146,
+        4
+      ],
+      "question": "Increase sample size by a factor of 16, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 23 to 146. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "23",
+        "upper": "146",
+        "width_divisor": "4"
+      },
+      "expression": "(23+146)/2+(146-23)/(2*4)",
+      "answer": "799/8",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_002",
+      "category": "interval",
+      "identity": [
+        "interval",
+        19,
+        393,
+        6
+      ],
+      "question": "Increase sample size by a factor of 36, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 19 to 393. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "19",
+        "upper": "393",
+        "width_divisor": "6"
+      },
+      "expression": "(19+393)/2+(393-19)/(2*6)",
+      "answer": "1423/6",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_003",
+      "category": "interval",
+      "identity": [
+        "interval",
+        43,
+        563,
+        3
+      ],
+      "question": "Increase sample size by a factor of 9, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 43 to 563. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "43",
+        "upper": "563",
+        "width_divisor": "3"
+      },
+      "expression": "(43+563)/2+(563-43)/(2*3)",
+      "answer": "1169/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_004",
+      "category": "interval",
+      "identity": [
+        "interval",
+        51,
+        530,
+        3
+      ],
+      "question": "Increase sample size by a factor of 9, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 51 to 530. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "51",
+        "upper": "530",
+        "width_divisor": "3"
+      },
+      "expression": "(51+530)/2+(530-51)/(2*3)",
+      "answer": "1111/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_005",
+      "category": "interval",
+      "identity": [
+        "interval",
+        45,
+        544,
+        3
+      ],
+      "question": "Increase sample size by a factor of 9, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 45 to 544. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "45",
+        "upper": "544",
+        "width_divisor": "3"
+      },
+      "expression": "(45+544)/2+(544-45)/(2*3)",
+      "answer": "1133/3",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_006",
+      "category": "interval",
+      "identity": [
+        "interval",
+        57,
+        393,
+        5
+      ],
+      "question": "Increase sample size by a factor of 25, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 57 to 393. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "57",
+        "upper": "393",
+        "width_divisor": "5"
+      },
+      "expression": "(57+393)/2+(393-57)/(2*5)",
+      "answer": "1293/5",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_007",
+      "category": "interval",
+      "identity": [
+        "interval",
+        50,
+        178,
+        4
+      ],
+      "question": "Increase sample size by a factor of 16, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 50 to 178. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "50",
+        "upper": "178",
+        "width_divisor": "4"
+      },
+      "expression": "(50+178)/2+(178-50)/(2*4)",
+      "answer": "130",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_008",
+      "category": "interval",
+      "identity": [
+        "interval",
+        66,
+        534,
+        7
+      ],
+      "question": "Increase sample size by a factor of 49, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 66 to 534. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "66",
+        "upper": "534",
+        "width_divisor": "7"
+      },
+      "expression": "(66+534)/2+(534-66)/(2*7)",
+      "answer": "2334/7",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_009",
+      "category": "interval",
+      "identity": [
+        "interval",
+        57,
+        571,
+        5
+      ],
+      "question": "Increase sample size by a factor of 25, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 57 to 571. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "57",
+        "upper": "571",
+        "width_divisor": "5"
+      },
+      "expression": "(57+571)/2+(571-57)/(2*5)",
+      "answer": "1827/5",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_010",
+      "category": "interval",
+      "identity": [
+        "interval",
+        28,
+        334,
+        3
+      ],
+      "question": "Increase sample size by a factor of 9, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 28 to 334. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "28",
+        "upper": "334",
+        "width_divisor": "3"
+      },
+      "expression": "(28+334)/2+(334-28)/(2*3)",
+      "answer": "232",
+      "provenance": "procedural_reference"
+    },
+    {
+      "id": "v17_test_interval_011",
+      "category": "interval",
+      "identity": [
+        "interval",
+        48,
+        629,
+        4
+      ],
+      "question": "Increase sample size by a factor of 16, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 48 to 629. Where is its upper endpoint after this change?",
+      "bindings": {
+        "lower": "48",
+        "upper": "629",
+        "width_divisor": "4"
+      },
+      "expression": "(48+629)/2+(629-48)/(2*4)",
+      "answer": "3289/8",
+      "provenance": "procedural_reference"
+    }
+  ]
+}
