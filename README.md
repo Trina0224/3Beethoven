@@ -90,7 +90,7 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Statistics pilot through v0.6 completed. v0.6 did not improve fresh-test accuracy; v0.5 remains the leading statistics research candidate; v0.3 remains preserved for comparison and recovery.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
+**Statistics pilot through v0.9 completed. Targeted v0.9 reaches 64.06% on its frozen test, exceeding twice baseline, but misses the rotation-robustness goal and regresses slightly on the older test. Preserve v0.5 as the broader comparison candidate.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
 
 | Checkpoint | Baseline | Trained v0.3 | Interpretation |
 |---|---:|---:|---|
@@ -179,3 +179,15 @@ On the same 24 exposed questions, compact supplied-arithmetic strict scores rose
 - [All responses and explicit format review](docs/STATS_DIAGNOSTIC_V0_8_RESULTS.json)
 
 The v0.8 archive and audited v0.9 preparation are preserved in Kaggle version 13 (347615356). v0.9 uses 180 new targeted training examples and a separately frozen 48-question test; its [protocol](docs/STATS_V0_9_PROTOCOL.md), [teacher corpus](docs/STATS_V0_9_TEACHER_DATA.json), and [data audit](docs/STATS_V0_9_DATA_AUDIT.md) are preserved before the final comparison.
+
+## Targeted concise teaching — v0.9 completed
+
+Same-run new-test MC: baseline 59/192 (30.73%), v0.5 91/192 (47.40%), v0.9 123/192 (64.06%). Two of three predefined goals met: ≥60% and ≥2×baseline. All-four correct improved from 0/48 to 8/48 to 17/48, still below the 24/48 goal.
+
+No-choice strict scores: 9/48, 11/48, 33/48; independent format review: 18/48, 12/48, 33/48. Gains concentrate in squared expectation and conditional-uniform skills. Fraction arithmetic remains weak. Old-test v0.9 127/240 (52.92%) is below historical v0.5 133/240 (55.42%); those old controls were not rerun. This is targeted skill transfer, not proof of general mathematical improvement.
+
+- [Complete report, costs and limitations](docs/STATS_V0_9_RESULTS.md)
+- [960 student responses, teacher answers, logs and explicit format audit](docs/STATS_V0_9_RESULTS.json)
+- [Model recovery and exact archive hashes](docs/KAGGLE_RECOVERY.md)
+
+This run used 467 teacher calls and US$0.024613645 in reported response costs. Recorded cumulative usage is 1,306 calls and US$0.075317545, not an account balance or invoice.
