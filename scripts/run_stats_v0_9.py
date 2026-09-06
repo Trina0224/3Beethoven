@@ -2,7 +2,7 @@
 import os,gc,json,hashlib,shutil,importlib.metadata
 from pathlib import Path
 from flight_run_stats_v0_3 import STUDENT,TEACHER,read_json,save_json,package
-from stats_curriculum_v0_9 import build,prompt
+from stats_curriculum_v0_9 import build,prompt,numeric_score
 from stats_v0_3_common import digest,prompt_for,parse_answer
 from run_stats_v0_4 import dataset,evaluate,BASE_REVISION
 from diagnose_stats_v0_7 import ADAPTER_SHA,score
@@ -27,7 +27,7 @@ def numeric_evaluate(model,tok,questions,path):
         inp=tok(chat,add_special_tokens=False,return_tensors='pt').to(model.device)
         with torch.inference_mode():gen=model.generate(**inp,max_new_tokens=256,do_sample=False,pad_token_id=tok.eos_token_id)[0][inp['input_ids'].shape[-1]:]
         raw=tok.decode(gen,skip_special_tokens=True).strip()
-        pred,correct,invalid=score(raw,dict(mode='numeric',expected=q['answer']))
+        pred,correct,invalid=numeric_score(raw,q['answer'])
         rows.append(dict(id=q['id'],category=q['category'],prompt=question_prompt,expected=q['answer'],raw=raw,predicted=pred,correct=correct,invalid=invalid,generated_tokens=len(gen),hit_token_limit=len(gen)==256))
         save_json(path,rows)
         if len(rows)%12==0:print('V09 NUMERIC',path.stem,len(rows),'/48',flush=True)
