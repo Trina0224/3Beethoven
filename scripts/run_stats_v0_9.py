@@ -6,7 +6,7 @@ from stats_curriculum_v0_9 import build,prompt
 from stats_v0_3_common import digest,prompt_for,parse_answer
 from run_stats_v0_4 import dataset,evaluate,BASE_REVISION
 from diagnose_stats_v0_7 import ADAPTER_SHA,score
-from generate_stats_v0_9 import ROOT,Client,validate,target
+from generate_stats_v0_9 import ROOT,Client,validate,target,validated_solution
 from stats_holdout_v1 import questions as old_questions
 
 def examples(records):
@@ -50,7 +50,7 @@ def main():
             obj=validate(r['teacher_solution'],q);assert r['target']==target(obj)
             cached=read_json(ROOT/'api_cache'/(r['cache_tag']+'.json'))
             from stats_v0_3_common import parse_teacher
-            assert obj==parse_teacher(cached['text'])
+            assert obj==validated_solution(cached['text'],q)
     protocol=dict(base_revision=BASE_REVISION,data_sha256=digest(data),train_sha256=digest(train),validation_sha256=digest(val),epochs=3,steps=135,seed=226,lr=5e-5,effective_batch=8,lora_r=16,lora_alpha=32,lora_dropout=.05,train_sequences=360,validation_sequences=48,primary='new MC accuracy, double baseline, all-four correct',secondary='new no-choice compact numerical solutions',limits='Targeted curriculum and format change together; new instances of taught skills, not unseen-family transfer')
     prior=read_json(ROOT/'training_protocol.json');assert prior is None or prior==protocol
     save_json(ROOT/'training_protocol.json',protocol)
