@@ -8,6 +8,7 @@ Use individual cells. Do not use Run All on the historical notebook: earlier cel
 |---|---|---|
 | 5 | 347584475 | v0.3 adapter, teacher corpus, holdout, both ZIP archives |
 | 6 | 347586668 | 60-question four-rotation diagnostic and ZIP |
+| 7 | 347590242 | v0.4 adapter, reused teacher records, expanded targets, 1,008 responses and ZIP |
 
 The latest output is not a cumulative copy of all older output files. A notebook input added without a pinned version can resolve to the latest version after a restart.
 
