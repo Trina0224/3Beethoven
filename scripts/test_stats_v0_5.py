@@ -8,7 +8,7 @@ from stats_curriculum_v0_5 import build,audit,item,TOPICS
 from stats_holdout_v1 import questions
 from stats_holdout_v2 import questions as q2
 from stats_v0_3_common import make_curriculum
-from generate_stats_v0_5 import ReservedClient,valid_target
+from generate_stats_v0_5 import ReservedClient,valid_target,parse_output
 
 
 class ExpandedTests(unittest.TestCase):
@@ -35,6 +35,13 @@ class ExpandedTests(unittest.TestCase):
         self.assertTrue(valid_target(good,r))
         self.assertFalse(valid_target(dict(good,answer_letter='INVALID'),r))
         self.assertFalse(valid_target(dict(good,explanation='x'*1201),r))
+
+    def test_recover_teacher_output_without_new_generation(self):
+        self.assertEqual(parse_output('Answer: B\n{"answer_letter":"B","explanation":"kept","common_mistake":"kept"}')['explanation'],'kept')
+        obj=parse_output('Answer: B\nOriginal explanation.\nCommon mistake: Incorrectly changing the value.')
+        self.assertEqual(obj['explanation'],'Original explanation.')
+        self.assertEqual(obj['common_mistake'],'Incorrectly changing the value.')
+        with self.assertRaises(ValueError): parse_output('Answer: A\n{"answer_letter":"B"}')
 
     def test_parallel_reservations_cannot_exceed_cap(self):
         with tempfile.TemporaryDirectory() as directory:
