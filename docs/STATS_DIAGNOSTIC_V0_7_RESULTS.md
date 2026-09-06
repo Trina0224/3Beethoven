@@ -2,6 +2,8 @@
 
 ## Finding
 
+**Follow-up correction:** [v0.8](STATS_DIAGNOSTIC_V0_8_RESULTS.md) shows much stronger supplied-arithmetic performance with a compact calculation prompt (v0.5 18/24 strict, 20/24 after format review), and resolves the earlier length caps. The direct-answer failures below must not be interpreted as a general inability to calculate. Original observations and scores are preserved.
+
 The v0.5 student reliably maps a **supplied correct value to an option**, but often fails to derive that value independently. Its observed failures include selecting/applying mathematical rules, arithmetic execution, and sensitivity to answer format and prompting. These are multiple failure modes, not proof that a 3B model cannot learn statistics.
 
 We compared original Llama 3.2 3B Instruct and the selected v0.5 adapter on 24 already-exposed v0.6 questions: indices 0,1,4,5 from each of six topics. No training, no teacher calls, no new held-out accuracy claim. v0.6 was not retested. [Protocol](STATS_DIAGNOSTIC_V0_7_PROTOCOL.md).
