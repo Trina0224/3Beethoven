@@ -1,5 +1,13 @@
 # 3Beethoven Project Specification
 
+## Active statistics pilot addendum — 2026-09-06 PDT
+
+The original classical-music specification below is retained as project history and application intent. The user-authorized active pilot now targets **correct mathematical formulation**: understand a word problem, identify the event and units, bind the correct numbers, and emit an executable expression. Final arithmetic is performed by a bounded exact calculator. Merely naming a formula or giving the right final number does not meet this objective.
+
+v0.13 is the current student starting point. Its procedural SFT and familiar-template holdout must be distinguished from response distillation. v0.14 prepares independently generated 70B responses on differently worded problems; it has not yet trained a new student. Before proceeding, review teacher output independently of superficial formatting and establish a frozen teacher perturbation check. Parameter, unit and event changes must cause the corresponding expression changes; wording-only changes must preserve meaning. Reserve the student test from teacher-data generation. Do not change success criteria after seeing test outcomes.
+
+Teacher text is not ground truth, and text explanations are not access to internal reasoning. Preserve rejected attempts, report reference conditioning and format-only corrections, and compare student checkpoints on identical questions and prompts. Logit-based distillation remains deferred. Current evidence and backup locations are recorded in [STATS_CURRENT_STATUS.md](docs/STATS_CURRENT_STATUS.md).
+
 ## 1. One-line concept
 
 **Distill a large cloud Llama's classical-music knowledge and explanatory style into a small local Llama specialist that is technically credible and intentionally funny.**
