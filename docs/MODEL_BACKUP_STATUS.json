@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-06 00:38 America/Los_Angeles",
+  "status_as_of": "2026-09-06 02:27 America/Los_Angeles",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -94,11 +94,46 @@
       "gpu_session": "off, confirmed after final save",
       "report": "docs/STATS_V0_11_REPORT.md",
       "raw_results": "docs/STATS_V0_11_RESULTS.json"
+    },
+    "v12": {
+      "status": "training completed; selected weights saved; evaluation incomplete at browser-control loss",
+      "source_model": "v10",
+      "source_adapter_sha256": "14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9",
+      "selected_checkpoint": 135,
+      "best_validation_loss": 0.15432609617710114,
+      "training_loss": 0.17937856162035906,
+      "selected_saved_version": 25,
+      "saved_version_successful": true,
+      "archive": {
+        "filename": "3beethoven_stats_v0_12.zip",
+        "bytes_observed": 92802432,
+        "runner_archive_verified": true,
+        "sha256": null,
+        "independently_saved": false,
+        "downloaded_zip_crc_verified": false,
+        "downloaded_adapter_sha256_verified": false
+      },
+      "teacher_calls": 0,
+      "evaluation": {
+        "planned_responses": 1104,
+        "v10_completed": {
+          "micro_correct": 7,
+          "micro_n": 80,
+          "transfer_correct": 3,
+          "transfer_n": 48,
+          "old_correct": 130,
+          "old_n": 240
+        },
+        "v11_micro_generation_completed": true,
+        "final_results_available": false
+      },
+      "report": "docs/STATS_V0_12_INTERIM.md"
     }
   },
   "limitations": [
     "Command-line git push lacks authenticated credentials; GitHub has no weight binary.",
     "Browser download events timed out but files arrived and exact weight hashes were verified.",
-    "A recovery manifest is not a binary weight backup; the separately saved ZIP contains actual weights."
+    "A recovery manifest is not a binary weight backup; the separately saved ZIP contains actual weights.",
+    "v0.12 version 25 preserves selected weights, but final evaluation and an independent binary download remain pending after browser-control authentication was lost."
   ]
 }
