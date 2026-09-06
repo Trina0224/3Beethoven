@@ -1,0 +1,3627 @@
+{
+  "audit": {
+    "train": {
+      "n": 180,
+      "families": 18,
+      "sha256": "5fafc5422a3c7a7150fa4bbbf075bc87a8b63003599f12f96e70884cd806e451"
+    },
+    "validation": {
+      "n": 24,
+      "families": 6,
+      "sha256": "f0d4091f71d76b35b23704f8308690aa19bf4205603e3e619fb32db2bafdd67c"
+    },
+    "test": {
+      "n": 36,
+      "families": 6,
+      "sha256": "cd8285fdde59d1f6632b23de974cb634d75596dbc755d74a0d80f833b609ece6"
+    }
+  },
+  "data": {
+    "train": [
+      {
+        "id": "train_poisson_0_00",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 3 events per hour. What is the variance of its count over 2 hours?",
+        "choices": [
+          "3",
+          "6",
+          "12",
+          "18"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_01",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 4 events per hour. What is the variance of its count over 3 hours?",
+        "choices": [
+          "12",
+          "4",
+          "36",
+          "48"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_02",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 5 events per hour. What is the variance of its count over 4 hours?",
+        "choices": [
+          "5",
+          "80",
+          "100",
+          "20"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_03",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 6 events per hour. What is the variance of its count over 5 hours?",
+        "choices": [
+          "6",
+          "150",
+          "30",
+          "180"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_04",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 7 events per hour. What is the variance of its count over 6 hours?",
+        "choices": [
+          "7",
+          "42",
+          "252",
+          "294"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_05",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 8 events per hour. What is the variance of its count over 7 hours?",
+        "choices": [
+          "56",
+          "8",
+          "392",
+          "448"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_06",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 9 events per hour. What is the variance of its count over 8 hours?",
+        "choices": [
+          "9",
+          "576",
+          "648",
+          "72"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_07",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 10 events per hour. What is the variance of its count over 9 hours?",
+        "choices": [
+          "10",
+          "810",
+          "90",
+          "900"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_08",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 11 events per hour. What is the variance of its count over 10 hours?",
+        "choices": [
+          "11",
+          "110",
+          "1100",
+          "1210"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_0_09",
+        "category": "poisson",
+        "family": "poisson_0",
+        "question": "A Poisson process has 12 events per hour. What is the variance of its count over 11 hours?",
+        "choices": [
+          "132",
+          "12",
+          "1452",
+          "1584"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "A Poisson count has variance equal to rate times duration.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_00",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 4 and 5. What is Var(X+Y)?",
+        "choices": [
+          "1",
+          "20",
+          "81",
+          "9"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_01",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 5 and 7. What is Var(X+Y)?",
+        "choices": [
+          "2",
+          "35",
+          "12",
+          "144"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_02",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 6 and 9. What is Var(X+Y)?",
+        "choices": [
+          "3",
+          "15",
+          "54",
+          "225"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_03",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 7 and 11. What is Var(X+Y)?",
+        "choices": [
+          "18",
+          "4",
+          "77",
+          "324"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_04",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 8 and 13. What is Var(X+Y)?",
+        "choices": [
+          "5",
+          "104",
+          "441",
+          "21"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_05",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 9 and 15. What is Var(X+Y)?",
+        "choices": [
+          "6",
+          "135",
+          "24",
+          "576"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_06",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 10 and 17. What is Var(X+Y)?",
+        "choices": [
+          "7",
+          "27",
+          "170",
+          "729"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_07",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 11 and 19. What is Var(X+Y)?",
+        "choices": [
+          "30",
+          "8",
+          "209",
+          "900"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_08",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 12 and 21. What is Var(X+Y)?",
+        "choices": [
+          "9",
+          "252",
+          "1089",
+          "33"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_1_09",
+        "category": "poisson",
+        "family": "poisson_1",
+        "question": "Independent X and Y are Poisson with means 13 and 23. What is Var(X+Y)?",
+        "choices": [
+          "10",
+          "299",
+          "36",
+          "1296"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Independence makes the variances add; each Poisson variance equals its mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_00",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 5. For Y=3X+2, what is Var(Y)?",
+        "choices": [
+          "15",
+          "45",
+          "47",
+          "5"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_01",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 6. For Y=3X+3, what is Var(Y)?",
+        "choices": [
+          "54",
+          "18",
+          "57",
+          "6"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_02",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 7. For Y=3X+4, what is Var(Y)?",
+        "choices": [
+          "21",
+          "67",
+          "7",
+          "63"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_03",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 8. For Y=3X+5, what is Var(Y)?",
+        "choices": [
+          "24",
+          "77",
+          "72",
+          "8"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_04",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 9. For Y=3X+6, what is Var(Y)?",
+        "choices": [
+          "27",
+          "81",
+          "87",
+          "9"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_05",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 10. For Y=3X+7, what is Var(Y)?",
+        "choices": [
+          "90",
+          "30",
+          "97",
+          "10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_06",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 11. For Y=3X+8, what is Var(Y)?",
+        "choices": [
+          "33",
+          "107",
+          "11",
+          "99"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_07",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 12. For Y=3X+9, what is Var(Y)?",
+        "choices": [
+          "36",
+          "117",
+          "108",
+          "12"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_08",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 13. For Y=3X+10, what is Var(Y)?",
+        "choices": [
+          "39",
+          "117",
+          "127",
+          "13"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_poisson_2_09",
+        "category": "poisson",
+        "family": "poisson_2",
+        "question": "X is Poisson with mean 14. For Y=3X+11, what is Var(Y)?",
+        "choices": [
+          "126",
+          "42",
+          "137",
+          "14"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Adding a constant does not change variance; multiplying by 3 multiplies variance by 9.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_00",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=3. What is E[3X-4]?",
+        "choices": [
+          "13",
+          "9",
+          "-1",
+          "5"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_01",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=4. What is E[3X-5]?",
+        "choices": [
+          "17",
+          "12",
+          "7",
+          "-1"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_02",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=5. What is E[3X-6]?",
+        "choices": [
+          "21",
+          "9",
+          "15",
+          "-1"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_03",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=6. What is E[3X-7]?",
+        "choices": [
+          "11",
+          "25",
+          "18",
+          "-1"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_04",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=7. What is E[3X-8]?",
+        "choices": [
+          "29",
+          "21",
+          "-1",
+          "13"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_05",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=8. What is E[3X-9]?",
+        "choices": [
+          "33",
+          "24",
+          "15",
+          "-1"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_06",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=9. What is E[3X-10]?",
+        "choices": [
+          "37",
+          "17",
+          "27",
+          "-1"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_07",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=10. What is E[3X-11]?",
+        "choices": [
+          "19",
+          "41",
+          "30",
+          "-1"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_08",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=11. What is E[3X-12]?",
+        "choices": [
+          "45",
+          "33",
+          "-1",
+          "21"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_0_09",
+        "category": "expectation",
+        "family": "expectation_0",
+        "question": "E[X]=12. What is E[3X-13]?",
+        "choices": [
+          "49",
+          "36",
+          "23",
+          "-1"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity: multiply the mean by 3, then subtract the constant.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_00",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 2 and variance 5. What is E[X^2]?",
+        "choices": [
+          "4",
+          "9",
+          "5",
+          "49"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_01",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 3 and variance 6. What is E[X^2]?",
+        "choices": [
+          "15",
+          "9",
+          "6",
+          "81"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_02",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 4 and variance 7. What is E[X^2]?",
+        "choices": [
+          "16",
+          "7",
+          "121",
+          "23"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_03",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 5 and variance 8. What is E[X^2]?",
+        "choices": [
+          "25",
+          "8",
+          "33",
+          "169"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_04",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 6 and variance 9. What is E[X^2]?",
+        "choices": [
+          "36",
+          "45",
+          "9",
+          "225"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_05",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 7 and variance 10. What is E[X^2]?",
+        "choices": [
+          "59",
+          "49",
+          "10",
+          "289"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_06",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 8 and variance 11. What is E[X^2]?",
+        "choices": [
+          "64",
+          "11",
+          "361",
+          "75"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_07",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 9 and variance 12. What is E[X^2]?",
+        "choices": [
+          "81",
+          "12",
+          "93",
+          "441"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_08",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 10 and variance 13. What is E[X^2]?",
+        "choices": [
+          "100",
+          "113",
+          "13",
+          "529"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_1_09",
+        "category": "expectation",
+        "family": "expectation_1",
+        "question": "X has mean 11 and variance 14. What is E[X^2]?",
+        "choices": [
+          "135",
+          "121",
+          "14",
+          "625"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The second moment equals the variance plus the square of the mean.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_00",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 8 and 16. What is the overall mean?",
+        "choices": [
+          "12",
+          "24",
+          "10",
+          "14"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_01",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 12 and 20. What is the overall mean?",
+        "choices": [
+          "16",
+          "32",
+          "18",
+          "14"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_02",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 16 and 24. What is the overall mean?",
+        "choices": [
+          "20",
+          "22",
+          "40",
+          "18"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_03",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 20 and 28. What is the overall mean?",
+        "choices": [
+          "26",
+          "24",
+          "48",
+          "22"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_04",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 24 and 32. What is the overall mean?",
+        "choices": [
+          "28",
+          "56",
+          "26",
+          "30"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_05",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 28 and 36. What is the overall mean?",
+        "choices": [
+          "32",
+          "64",
+          "34",
+          "30"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_06",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 32 and 40. What is the overall mean?",
+        "choices": [
+          "36",
+          "38",
+          "72",
+          "34"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_07",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 36 and 44. What is the overall mean?",
+        "choices": [
+          "42",
+          "40",
+          "80",
+          "38"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_08",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 40 and 48. What is the overall mean?",
+        "choices": [
+          "44",
+          "88",
+          "42",
+          "46"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_expectation_2_09",
+        "category": "expectation",
+        "family": "expectation_2",
+        "question": "A mixture selects group A with probability 1/4 and group B otherwise. Their conditional means are 44 and 52. What is the overall mean?",
+        "choices": [
+          "48",
+          "96",
+          "50",
+          "46"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Weight the two conditional means by 1/4 and 3/4.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_00",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [2,12]. What is E[X]?",
+        "choices": [
+          "2",
+          "7",
+          "12",
+          "14"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_01",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [3,13]. What is E[X]?",
+        "choices": [
+          "8",
+          "3",
+          "13",
+          "16"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_02",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [4,14]. What is E[X]?",
+        "choices": [
+          "4",
+          "14",
+          "18",
+          "9"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_03",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [5,15]. What is E[X]?",
+        "choices": [
+          "5",
+          "15",
+          "10",
+          "20"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_04",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [6,16]. What is E[X]?",
+        "choices": [
+          "6",
+          "11",
+          "16",
+          "22"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_05",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [7,17]. What is E[X]?",
+        "choices": [
+          "12",
+          "7",
+          "17",
+          "24"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_06",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [8,18]. What is E[X]?",
+        "choices": [
+          "8",
+          "18",
+          "26",
+          "13"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_07",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [9,19]. What is E[X]?",
+        "choices": [
+          "9",
+          "19",
+          "14",
+          "28"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_08",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [10,20]. What is E[X]?",
+        "choices": [
+          "10",
+          "15",
+          "20",
+          "30"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_0_09",
+        "category": "uniform",
+        "family": "uniform_0",
+        "question": "X is continuously uniform on [11,21]. What is E[X]?",
+        "choices": [
+          "16",
+          "11",
+          "21",
+          "32"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The uniform mean is the midpoint of the endpoints.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_00",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,14]. What is Var(X)?",
+        "choices": [
+          "72",
+          "24",
+          "144",
+          "12"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_01",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,20]. What is Var(X)?",
+        "choices": [
+          "162",
+          "54",
+          "27",
+          "324"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_02",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,26]. What is Var(X)?",
+        "choices": [
+          "288",
+          "48",
+          "96",
+          "576"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_03",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,32]. What is Var(X)?",
+        "choices": [
+          "75",
+          "450",
+          "150",
+          "900"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_04",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,38]. What is Var(X)?",
+        "choices": [
+          "648",
+          "216",
+          "1296",
+          "108"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_05",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,44]. What is Var(X)?",
+        "choices": [
+          "882",
+          "294",
+          "147",
+          "1764"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_06",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,50]. What is Var(X)?",
+        "choices": [
+          "1152",
+          "192",
+          "384",
+          "2304"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_07",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,56]. What is Var(X)?",
+        "choices": [
+          "243",
+          "1458",
+          "486",
+          "2916"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_08",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,62]. What is Var(X)?",
+        "choices": [
+          "1800",
+          "600",
+          "3600",
+          "300"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_1_09",
+        "category": "uniform",
+        "family": "uniform_1",
+        "question": "X is continuously uniform on [2,68]. What is Var(X)?",
+        "choices": [
+          "2178",
+          "726",
+          "363",
+          "4356"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Uniform variance is interval length squared divided by 12.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_00",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,8]. What is P(X<2)?",
+        "choices": [
+          "3/4",
+          "1/4",
+          "1/2",
+          "1/8"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_01",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,12]. What is P(X<3)?",
+        "choices": [
+          "1/4",
+          "3/4",
+          "1/2",
+          "1/12"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_02",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,16]. What is P(X<4)?",
+        "choices": [
+          "3/4",
+          "1/2",
+          "1/16",
+          "1/4"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_03",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,20]. What is P(X<5)?",
+        "choices": [
+          "3/4",
+          "1/2",
+          "1/4",
+          "1/20"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_04",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,24]. What is P(X<6)?",
+        "choices": [
+          "3/4",
+          "1/4",
+          "1/2",
+          "1/24"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_05",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,28]. What is P(X<7)?",
+        "choices": [
+          "1/4",
+          "3/4",
+          "1/2",
+          "1/28"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_06",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,32]. What is P(X<8)?",
+        "choices": [
+          "3/4",
+          "1/2",
+          "1/32",
+          "1/4"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_07",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,36]. What is P(X<9)?",
+        "choices": [
+          "3/4",
+          "1/2",
+          "1/4",
+          "1/36"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_08",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,40]. What is P(X<10)?",
+        "choices": [
+          "3/4",
+          "1/4",
+          "1/2",
+          "1/40"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_uniform_2_09",
+        "category": "uniform",
+        "family": "uniform_2",
+        "question": "X is continuously uniform on [0,44]. What is P(X<11)?",
+        "choices": [
+          "1/4",
+          "3/4",
+          "1/2",
+          "1/44"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Uniform probability is favorable length divided by total length.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_00",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "40 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "40",
+          "4",
+          "1",
+          "2"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_01",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "60 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "60",
+          "6",
+          "3",
+          "3/2"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_02",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "80 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "80",
+          "4",
+          "8",
+          "2"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_03",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "100 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "5",
+          "100",
+          "10",
+          "5/2"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_04",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "120 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "120",
+          "12",
+          "3",
+          "6"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_05",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "140 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "140",
+          "14",
+          "7",
+          "7/2"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_06",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "160 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "160",
+          "8",
+          "16",
+          "4"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_07",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "180 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "9",
+          "180",
+          "18",
+          "9/2"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_08",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "200 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "200",
+          "20",
+          "5",
+          "10"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_0_09",
+        "category": "type_i",
+        "family": "type_i_0",
+        "question": "220 tests each have a true null and exact Type I error probability 0.05. What is the expected number of false rejections?",
+        "choices": [
+          "220",
+          "22",
+          "11",
+          "11/2"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Linearity of expectation gives the number of tests times each rejection probability; independence is not needed.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_00",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "2 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "1/50",
+          "49/50",
+          "1/5"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_01",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "3 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "3/100",
+          "1/100",
+          "97/100",
+          "3/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_02",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "4 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "24/25",
+          "2/5",
+          "1/25"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_03",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "5 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "19/20",
+          "1/20",
+          "1/2"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_04",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "6 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "3/50",
+          "47/50",
+          "3/5"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_05",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "7 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "7/100",
+          "1/100",
+          "93/100",
+          "7/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_06",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "8 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "23/25",
+          "4/5",
+          "2/25"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_07",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "9 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "91/100",
+          "9/100",
+          "9/10"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_08",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "10 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "1/100",
+          "1/10",
+          "9/10",
+          "1"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_1_09",
+        "category": "type_i",
+        "family": "type_i_1",
+        "question": "11 true null hypotheses are each tested at level 0.01. Without independence, what upper bound on the probability of at least one false rejection follows directly from the union bound?",
+        "choices": [
+          "11/100",
+          "1/100",
+          "89/100",
+          "11/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The union bound sums the per-test Type I error bounds.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_00",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "2 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "19/100",
+          "1/100",
+          "9/10",
+          "81/100"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_01",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "3 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "271/1000",
+          "1/1000",
+          "729/1000",
+          "9/10"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_02",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "4 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "3439/10000",
+          "6561/10000",
+          "1/10000",
+          "9/10"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_03",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "5 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "59049/100000",
+          "40951/100000",
+          "1/100000",
+          "9/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_04",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "6 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "468559/1000000",
+          "1/1000000",
+          "9/10",
+          "531441/1000000"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_05",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "7 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "5217031/10000000",
+          "1/10000000",
+          "4782969/10000000",
+          "9/10"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_06",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "8 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "56953279/100000000",
+          "43046721/100000000",
+          "1/100000000",
+          "9/10"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_07",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "9 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "387420489/1000000000",
+          "612579511/1000000000",
+          "1/1000000000",
+          "9/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_08",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "10 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "6513215599/10000000000",
+          "1/10000000000",
+          "9/10",
+          "3486784401/10000000000"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_i_2_09",
+        "category": "type_i",
+        "family": "type_i_2",
+        "question": "11 independent tests have true nulls and exact Type I error probability 1/10 each. What is the probability of no false rejections?",
+        "choices": [
+          "68618940391/100000000000",
+          "1/100000000000",
+          "31381059609/100000000000",
+          "9/10"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Each test avoids rejection with probability 9/10; independence gives the product.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_00",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 3/5. What is its Type II error probability?",
+        "choices": [
+          "3/5",
+          "2/5",
+          "1/20",
+          "8/5"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_01",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 31/50. What is its Type II error probability?",
+        "choices": [
+          "19/50",
+          "31/50",
+          "1/20",
+          "81/50"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_02",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 16/25. What is its Type II error probability?",
+        "choices": [
+          "16/25",
+          "1/20",
+          "41/25",
+          "9/25"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_03",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 33/50. What is its Type II error probability?",
+        "choices": [
+          "33/50",
+          "1/20",
+          "17/50",
+          "83/50"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_04",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 17/25. What is its Type II error probability?",
+        "choices": [
+          "17/25",
+          "8/25",
+          "1/20",
+          "42/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_05",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 7/10. What is its Type II error probability?",
+        "choices": [
+          "3/10",
+          "7/10",
+          "1/20",
+          "17/10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_06",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 18/25. What is its Type II error probability?",
+        "choices": [
+          "18/25",
+          "1/20",
+          "43/25",
+          "7/25"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_07",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 37/50. What is its Type II error probability?",
+        "choices": [
+          "37/50",
+          "1/20",
+          "13/50",
+          "87/50"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_08",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 19/25. What is its Type II error probability?",
+        "choices": [
+          "19/25",
+          "6/25",
+          "1/20",
+          "44/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_0_09",
+        "category": "type_ii",
+        "family": "type_ii_0",
+        "question": "At a fixed alternative, a test has power 39/50. What is its Type II error probability?",
+        "choices": [
+          "11/50",
+          "39/50",
+          "1/20",
+          "89/50"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Type II error probability is one minus power at the specified alternative.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_00",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 20 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "16",
+          "2",
+          "20",
+          "4"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_01",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 30 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "24",
+          "3",
+          "6",
+          "30"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_02",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 40 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "32",
+          "8",
+          "4",
+          "40"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_03",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 50 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "10",
+          "40",
+          "5",
+          "50"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_04",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 60 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "48",
+          "6",
+          "60",
+          "12"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_05",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 70 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "56",
+          "7",
+          "14",
+          "70"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_06",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 80 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "64",
+          "16",
+          "8",
+          "80"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_07",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 90 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "18",
+          "72",
+          "9",
+          "90"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_08",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 100 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "80",
+          "10",
+          "100",
+          "20"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_1_09",
+        "category": "type_ii",
+        "family": "type_ii_1",
+        "question": "At a specified false null, 110 studies each have Type II error probability 1/5. What is the expected number of failures to reject?",
+        "choices": [
+          "88",
+          "11",
+          "22",
+          "110"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The expected number of misses is the number of studies times beta.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_00",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 1/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "576/625",
+          "624/625",
+          "1/625",
+          "24/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_01",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 2/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "621/625",
+          "529/625",
+          "4/625",
+          "23/25"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_02",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 3/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "484/625",
+          "9/625",
+          "22/25",
+          "616/625"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_03",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 4/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "441/625",
+          "16/625",
+          "609/625",
+          "21/25"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_04",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 1/5 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "16/25",
+          "24/25",
+          "1/25",
+          "4/5"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_05",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 6/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "589/625",
+          "361/625",
+          "36/625",
+          "19/25"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_06",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 7/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "324/625",
+          "49/625",
+          "18/25",
+          "576/625"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_07",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 8/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "289/625",
+          "64/625",
+          "561/625",
+          "17/25"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_08",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 9/25 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "256/625",
+          "544/625",
+          "81/625",
+          "16/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_type_ii_2_09",
+        "category": "type_ii",
+        "family": "type_ii_2",
+        "question": "Two independent studies each have Type II error probability 2/5 at the same specified alternative. What is the probability that at least one rejects?",
+        "choices": [
+          "21/25",
+          "9/25",
+          "4/25",
+          "3/5"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Both studies fail to reject with probability beta squared; take the complement.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_00",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 2. What is its total width?",
+        "choices": [
+          "4",
+          "2",
+          "16",
+          "8"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_01",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 3. What is its total width?",
+        "choices": [
+          "6",
+          "3",
+          "12",
+          "24"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_02",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 4. What is its total width?",
+        "choices": [
+          "8",
+          "16",
+          "4",
+          "32"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_03",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 5. What is its total width?",
+        "choices": [
+          "20",
+          "10",
+          "5",
+          "40"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_04",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 6. What is its total width?",
+        "choices": [
+          "12",
+          "6",
+          "48",
+          "24"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_05",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 7. What is its total width?",
+        "choices": [
+          "14",
+          "7",
+          "28",
+          "56"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_06",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 8. What is its total width?",
+        "choices": [
+          "16",
+          "32",
+          "8",
+          "64"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_07",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 9. What is its total width?",
+        "choices": [
+          "36",
+          "18",
+          "9",
+          "72"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_08",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 10. What is its total width?",
+        "choices": [
+          "20",
+          "10",
+          "80",
+          "40"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_0_09",
+        "category": "confidence",
+        "family": "confidence_0",
+        "question": "A two-sided normal-theory confidence interval has critical value 2 and standard error 11. What is its total width?",
+        "choices": [
+          "22",
+          "11",
+          "44",
+          "88"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Total width is twice critical value times standard error.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_00",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/2 of its original width?",
+        "choices": [
+          "2",
+          "4",
+          "1/2",
+          "8"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_01",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/3 of its original width?",
+        "choices": [
+          "9",
+          "3",
+          "1/3",
+          "27"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_02",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/4 of its original width?",
+        "choices": [
+          "4",
+          "1/4",
+          "64",
+          "16"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_03",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/5 of its original width?",
+        "choices": [
+          "5",
+          "1/5",
+          "25",
+          "125"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_04",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/6 of its original width?",
+        "choices": [
+          "6",
+          "36",
+          "1/6",
+          "216"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_05",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/7 of its original width?",
+        "choices": [
+          "49",
+          "7",
+          "1/7",
+          "343"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_06",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/8 of its original width?",
+        "choices": [
+          "8",
+          "1/8",
+          "512",
+          "64"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_07",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/9 of its original width?",
+        "choices": [
+          "9",
+          "1/9",
+          "81",
+          "729"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_08",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/10 of its original width?",
+        "choices": [
+          "10",
+          "100",
+          "1/10",
+          "1000"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_1_09",
+        "category": "confidence",
+        "family": "confidence_1",
+        "question": "Keep confidence level and population standard deviation fixed. By what factor must sample size increase so a normal-theory mean interval has 1/11 of its original width?",
+        "choices": [
+          "121",
+          "11",
+          "1/11",
+          "1331"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Width scales with the inverse square root of sample size; square the desired reduction factor.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_00",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 4. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "4",
+          "4/3",
+          "36",
+          "12"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_01",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 6. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "6",
+          "2",
+          "18",
+          "54"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_02",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 8. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "8",
+          "24",
+          "8/3",
+          "72"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_03",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 10. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "30",
+          "10",
+          "10/3",
+          "90"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_04",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 12. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "12",
+          "4",
+          "108",
+          "36"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_05",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 14. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "14",
+          "14/3",
+          "42",
+          "126"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_06",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 16. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "16",
+          "48",
+          "16/3",
+          "144"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_07",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 18. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "54",
+          "18",
+          "6",
+          "162"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_08",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 20. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "20",
+          "20/3",
+          "180",
+          "60"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      },
+      {
+        "id": "train_confidence_2_09",
+        "category": "confidence",
+        "family": "confidence_2",
+        "question": "A normal-theory mean interval has total width 22. With confidence and sample size fixed, the known population standard deviation triples. What is its new width?",
+        "choices": [
+          "22",
+          "22/3",
+          "66",
+          "198"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Width is proportional to population standard deviation when confidence and sample size are fixed.",
+        "split": "train"
+      }
+    ],
+    "validation": [
+      {
+        "id": "validation_poisson_3_00",
+        "category": "poisson",
+        "family": "poisson_3",
+        "question": "A sample contains 2 independent Poisson observations, each with mean 6. What is the variance of the sample mean?",
+        "choices": [
+          "6",
+          "3",
+          "12",
+          "36"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The variance of an independent sample mean is the individual variance divided by sample size.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_poisson_3_01",
+        "category": "poisson",
+        "family": "poisson_3",
+        "question": "A sample contains 3 independent Poisson observations, each with mean 9. What is the variance of the sample mean?",
+        "choices": [
+          "3",
+          "9",
+          "27",
+          "81"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The variance of an independent sample mean is the individual variance divided by sample size.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_poisson_3_02",
+        "category": "poisson",
+        "family": "poisson_3",
+        "question": "A sample contains 4 independent Poisson observations, each with mean 12. What is the variance of the sample mean?",
+        "choices": [
+          "12",
+          "48",
+          "144",
+          "3"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The variance of an independent sample mean is the individual variance divided by sample size.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_poisson_3_03",
+        "category": "poisson",
+        "family": "poisson_3",
+        "question": "A sample contains 5 independent Poisson observations, each with mean 15. What is the variance of the sample mean?",
+        "choices": [
+          "15",
+          "75",
+          "3",
+          "225"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The variance of an independent sample mean is the individual variance divided by sample size.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_expectation_3_00",
+        "category": "expectation",
+        "family": "expectation_3",
+        "question": "E[X]=2, E[Y]=3, and Cov(X,Y)=2. What is E[XY]?",
+        "choices": [
+          "6",
+          "8",
+          "7",
+          "4"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Covariance equals E[XY]-E[X]E[Y]; rearrange.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_expectation_3_01",
+        "category": "expectation",
+        "family": "expectation_3",
+        "question": "E[X]=3, E[Y]=4, and Cov(X,Y)=2. What is E[XY]?",
+        "choices": [
+          "14",
+          "12",
+          "9",
+          "10"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Covariance equals E[XY]-E[X]E[Y]; rearrange.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_expectation_3_02",
+        "category": "expectation",
+        "family": "expectation_3",
+        "question": "E[X]=4, E[Y]=5, and Cov(X,Y)=2. What is E[XY]?",
+        "choices": [
+          "20",
+          "11",
+          "18",
+          "22"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Covariance equals E[XY]-E[X]E[Y]; rearrange.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_expectation_3_03",
+        "category": "expectation",
+        "family": "expectation_3",
+        "question": "E[X]=5, E[Y]=6, and Cov(X,Y)=2. What is E[XY]?",
+        "choices": [
+          "30",
+          "13",
+          "32",
+          "28"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Covariance equals E[XY]-E[X]E[Y]; rearrange.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_uniform_3_00",
+        "category": "uniform",
+        "family": "uniform_3",
+        "question": "X is continuously uniform on [0,7]. What is E[X^2]?",
+        "choices": [
+          "49/12",
+          "49/3",
+          "49/2",
+          "49"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Integrating x squared over the uniform interval gives w squared divided by 3.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_uniform_3_01",
+        "category": "uniform",
+        "family": "uniform_3",
+        "question": "X is continuously uniform on [0,10]. What is E[X^2]?",
+        "choices": [
+          "100/3",
+          "25/3",
+          "50",
+          "100"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Integrating x squared over the uniform interval gives w squared divided by 3.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_uniform_3_02",
+        "category": "uniform",
+        "family": "uniform_3",
+        "question": "X is continuously uniform on [0,13]. What is E[X^2]?",
+        "choices": [
+          "169/12",
+          "169/2",
+          "169",
+          "169/3"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Integrating x squared over the uniform interval gives w squared divided by 3.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_uniform_3_03",
+        "category": "uniform",
+        "family": "uniform_3",
+        "question": "X is continuously uniform on [0,16]. What is E[X^2]?",
+        "choices": [
+          "64/3",
+          "128",
+          "256/3",
+          "256"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Integrating x squared over the uniform interval gives w squared divided by 3.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_i_3_00",
+        "category": "type_i",
+        "family": "type_i_3",
+        "question": "2 independent tests each have a true null and exact Type I error probability 1/5. What is the probability of exactly one false rejection?",
+        "choices": [
+          "1/25",
+          "8/25",
+          "1/5",
+          "9/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Choose which single test rejects, multiply its rejection probability by non-rejection probabilities for the others.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_i_3_01",
+        "category": "type_i",
+        "family": "type_i_3",
+        "question": "3 independent tests each have a true null and exact Type I error probability 1/5. What is the probability of exactly one false rejection?",
+        "choices": [
+          "48/125",
+          "1/125",
+          "1/5",
+          "61/125"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Choose which single test rejects, multiply its rejection probability by non-rejection probabilities for the others.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_i_3_02",
+        "category": "type_i",
+        "family": "type_i_3",
+        "question": "4 independent tests each have a true null and exact Type I error probability 1/5. What is the probability of exactly one false rejection?",
+        "choices": [
+          "1/625",
+          "1/5",
+          "369/625",
+          "256/625"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Choose which single test rejects, multiply its rejection probability by non-rejection probabilities for the others.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_i_3_03",
+        "category": "type_i",
+        "family": "type_i_3",
+        "question": "5 independent tests each have a true null and exact Type I error probability 1/5. What is the probability of exactly one false rejection?",
+        "choices": [
+          "1/3125",
+          "1/5",
+          "256/625",
+          "2101/3125"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Choose which single test rejects, multiply its rejection probability by non-rejection probabilities for the others.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_ii_3_00",
+        "category": "type_ii",
+        "family": "type_ii_3",
+        "question": "Two independent studies have powers 1/5 and 4/5 at their specified alternatives. What is the probability that exactly one rejects?",
+        "choices": [
+          "4/25",
+          "17/25",
+          "21/25",
+          "1/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Exactly one rejection comprises two disjoint outcomes: first only or second only.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_ii_3_01",
+        "category": "type_ii",
+        "family": "type_ii_3",
+        "question": "Two independent studies have powers 3/10 and 4/5 at their specified alternatives. What is the probability that exactly one rejects?",
+        "choices": [
+          "31/50",
+          "6/25",
+          "43/50",
+          "9/100"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Exactly one rejection comprises two disjoint outcomes: first only or second only.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_ii_3_02",
+        "category": "type_ii",
+        "family": "type_ii_3",
+        "question": "Two independent studies have powers 2/5 and 4/5 at their specified alternatives. What is the probability that exactly one rejects?",
+        "choices": [
+          "8/25",
+          "22/25",
+          "4/25",
+          "14/25"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Exactly one rejection comprises two disjoint outcomes: first only or second only.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_type_ii_3_03",
+        "category": "type_ii",
+        "family": "type_ii_3",
+        "question": "Two independent studies have powers 1/2 and 4/5 at their specified alternatives. What is the probability that exactly one rejects?",
+        "choices": [
+          "2/5",
+          "9/10",
+          "1/2",
+          "1/4"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Exactly one rejection comprises two disjoint outcomes: first only or second only.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_confidence_3_00",
+        "category": "confidence",
+        "family": "confidence_3",
+        "question": "A two-sided normal-theory confidence interval needs total width 8 with critical value 2. What standard error gives this width?",
+        "choices": [
+          "4",
+          "2",
+          "8",
+          "1"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Standard error equals total width divided by twice the critical value.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_confidence_3_01",
+        "category": "confidence",
+        "family": "confidence_3",
+        "question": "A two-sided normal-theory confidence interval needs total width 12 with critical value 2. What standard error gives this width?",
+        "choices": [
+          "3",
+          "6",
+          "12",
+          "3/2"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Standard error equals total width divided by twice the critical value.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_confidence_3_02",
+        "category": "confidence",
+        "family": "confidence_3",
+        "question": "A two-sided normal-theory confidence interval needs total width 16 with critical value 2. What standard error gives this width?",
+        "choices": [
+          "8",
+          "16",
+          "2",
+          "4"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Standard error equals total width divided by twice the critical value.",
+        "split": "validation"
+      },
+      {
+        "id": "validation_confidence_3_03",
+        "category": "confidence",
+        "family": "confidence_3",
+        "question": "A two-sided normal-theory confidence interval needs total width 20 with critical value 2. What standard error gives this width?",
+        "choices": [
+          "10",
+          "20",
+          "5",
+          "5/2"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Standard error equals total width divided by twice the critical value.",
+        "split": "validation"
+      }
+    ],
+    "test": [
+      {
+        "id": "test_poisson_4_00",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 3 and 6. What is Var(2X-3Y)?",
+        "choices": [
+          "24",
+          "66",
+          "-42",
+          "117"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_poisson_4_01",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 4 and 7. What is Var(2X-3Y)?",
+        "choices": [
+          "79",
+          "29",
+          "-47",
+          "143"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_poisson_4_02",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 5 and 8. What is Var(2X-3Y)?",
+        "choices": [
+          "34",
+          "-52",
+          "169",
+          "92"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_poisson_4_03",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 6 and 9. What is Var(2X-3Y)?",
+        "choices": [
+          "39",
+          "-57",
+          "105",
+          "195"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_poisson_4_04",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 7 and 10. What is Var(2X-3Y)?",
+        "choices": [
+          "44",
+          "118",
+          "-62",
+          "221"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_poisson_4_05",
+        "category": "poisson",
+        "family": "poisson_4",
+        "question": "Independent Poisson counts X and Y have means 8 and 11. What is Var(2X-3Y)?",
+        "choices": [
+          "131",
+          "49",
+          "-67",
+          "247"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Independent variances add even for a difference, and coefficients are squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_00",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 2 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "8",
+          "16",
+          "144",
+          "24"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_01",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 3 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "8",
+          "21",
+          "33",
+          "169"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_02",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 4 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "8",
+          "44",
+          "28",
+          "196"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_03",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 5 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "57",
+          "8",
+          "37",
+          "225"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_04",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 6 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "8",
+          "48",
+          "256",
+          "72"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_expectation_4_05",
+        "category": "expectation",
+        "family": "expectation_4",
+        "question": "Independent X and Y have means 7 and 2, and variances 3 and 5. What is E[(X+Y)^2]?",
+        "choices": [
+          "8",
+          "61",
+          "89",
+          "289"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "The sum has mean k+2 and variance 8; second moment is variance plus mean squared.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_00",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,12]. Given X>4, what is E[X] under that condition?",
+        "choices": [
+          "6",
+          "8",
+          "4",
+          "10"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_01",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,18]. Given X>6, what is E[X] under that condition?",
+        "choices": [
+          "12",
+          "9",
+          "6",
+          "15"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_02",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,24]. Given X>8, what is E[X] under that condition?",
+        "choices": [
+          "12",
+          "8",
+          "20",
+          "16"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_03",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,30]. Given X>10, what is E[X] under that condition?",
+        "choices": [
+          "15",
+          "10",
+          "20",
+          "25"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_04",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,36]. Given X>12, what is E[X] under that condition?",
+        "choices": [
+          "18",
+          "24",
+          "12",
+          "30"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_uniform_4_05",
+        "category": "uniform",
+        "family": "uniform_4",
+        "question": "X is continuously uniform on [0,42]. Given X>14, what is E[X] under that condition?",
+        "choices": [
+          "28",
+          "21",
+          "14",
+          "35"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Conditioning truncates the uniform interval to (2k,6k); its midpoint is 4k.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_00",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 1/10. What is the probability that at least two reject?",
+        "choices": [
+          "1/1000",
+          "271/1000",
+          "3/100",
+          "7/250"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_01",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 1/5. What is the probability that at least two reject?",
+        "choices": [
+          "1/125",
+          "61/125",
+          "13/125",
+          "3/25"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_02",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 3/10. What is the probability that at least two reject?",
+        "choices": [
+          "27/1000",
+          "27/125",
+          "657/1000",
+          "27/100"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_03",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 2/5. What is the probability that at least two reject?",
+        "choices": [
+          "44/125",
+          "8/125",
+          "98/125",
+          "12/25"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_04",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 1/2. What is the probability that at least two reject?",
+        "choices": [
+          "1/8",
+          "7/8",
+          "3/4",
+          "1/2"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_i_4_05",
+        "category": "type_i",
+        "family": "type_i_4",
+        "question": "Three independent tests each have a true null and exact Type I error probability 3/5. What is the probability that at least two reject?",
+        "choices": [
+          "27/125",
+          "117/125",
+          "81/125",
+          "27/25"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Add the probabilities of exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_00",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 1/5 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "1/125",
+          "13/125",
+          "61/125",
+          "3/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_01",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 3/10 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "27/125",
+          "27/1000",
+          "657/1000",
+          "27/100"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_02",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 2/5 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "8/125",
+          "98/125",
+          "12/25",
+          "44/125"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_03",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 1/2 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "1/8",
+          "7/8",
+          "1/2",
+          "3/4"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_04",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 3/5 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "27/125",
+          "81/125",
+          "117/125",
+          "27/25"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_type_ii_4_05",
+        "category": "type_ii",
+        "family": "type_ii_4",
+        "question": "Three independent studies each have power 7/10 at a specified alternative. What is the probability that at least two reject?",
+        "choices": [
+          "98/125",
+          "343/1000",
+          "973/1000",
+          "147/100"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Use the binomial probabilities for exactly two and exactly three rejections.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_00",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [20,28]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "20",
+          "23",
+          "24",
+          "22"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_01",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [30,38]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "30",
+          "33",
+          "32",
+          "34"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_02",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [40,48]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "40",
+          "42",
+          "43",
+          "44"
+        ],
+        "answer_letter": "B",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_03",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [50,58]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "52",
+          "50",
+          "53",
+          "54"
+        ],
+        "answer_letter": "A",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_04",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [60,68]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "60",
+          "63",
+          "64",
+          "62"
+        ],
+        "answer_letter": "D",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      },
+      {
+        "id": "test_confidence_4_05",
+        "category": "confidence",
+        "family": "confidence_4",
+        "question": "A normal-theory mean interval is [70,78]. Its center, confidence level and population standard deviation stay fixed while sample size quadruples. What is the new lower endpoint?",
+        "choices": [
+          "70",
+          "73",
+          "72",
+          "74"
+        ],
+        "answer_letter": "C",
+        "reference_reason": "Quadrupling sample size halves the width from 8 to 4. Keep the center and subtract the new half-width 2.",
+        "split": "test"
+      }
+    ]
+  }
+}
