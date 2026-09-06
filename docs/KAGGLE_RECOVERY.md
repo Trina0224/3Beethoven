@@ -1,6 +1,18 @@
 # Recovering saved statistics experiments
 
-## Latest student: v0.15, saved Version 29
+## Latest trained candidate: v0.16
+
+Version 31 preserves completed training; use the final complete-output version recorded
+in `MODEL_BACKUP_STATUS.json` for all predictions and verification. Locate
+`3beethoven_stats_v0_16/adapter/adapter_model.safetensors` and verify SHA-256
+`117a009f72ebafe6e6baefef62a6b81e7bbcefbc902f7eb3d93f5e73f48d46d0`.
+Final ZIP `3beethoven_stats_v0_16.zip`: 371,440,108 bytes, SHA-256
+`494fd49d497ab1569578eb4983d22d90bd2721495bb1d683f46b3a26c385067f`.
+It includes intermediate and final adapters. Use the top-level `adapter` for the
+selected student. v16 is a rule-assisted candidate, not a general replacement for v15.
+The base revision is pinned in `protocol.json`; existing HF authorization is needed.
+
+## Retained general candidate: v0.15, saved Version 29
 
 Restore `trinashih/3beethoven-v0-2/versions/29` with
 `kagglehub.notebook_output_download`, then locate
