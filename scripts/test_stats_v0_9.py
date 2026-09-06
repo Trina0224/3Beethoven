@@ -1,7 +1,7 @@
 import unittest,itertools
 from fractions import Fraction as F
 from stats_curriculum_v0_9 import build,calculate
-from generate_stats_v0_9 import validate
+from generate_stats_v0_9 import validate,validated_solution
 
 class ShortCalculationChecks(unittest.TestCase):
     def test_all_references_and_probability_enumeration(self):
@@ -26,5 +26,13 @@ class ShortCalculationChecks(unittest.TestCase):
         self.assertEqual(calculate('0.1+0.2'),F(3,10))
         for expr in ('__import__("os")','2**9999','1/0','abs(2)'):
             with self.assertRaises((ValueError,ZeroDivisionError)):calculate(expr)
+
+    def test_numeric_suffix_never_hides_false_equality(self):
+        import json
+        q=dict(answer='108')
+        good=dict(rule='Second moment equals variance plus squared mean.',calculation='E[Y^2] = 4(2+4^2)+8*4+4 = 72+32+4 = 108',answer='108')
+        self.assertEqual(validated_solution(json.dumps(good),q)['calculation'],'4*(2+4^2)+8*4+4 = 72+32+4 = 108')
+        bad=dict(good,calculation='2**2*2+(2*4+2)**2 = 44 = 108')
+        with self.assertRaises(ValueError):validated_solution(json.dumps(bad),q)
 
 if __name__=='__main__':unittest.main()
