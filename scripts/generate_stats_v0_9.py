@@ -46,10 +46,12 @@ def main():
         path=ROOT/'accepted'/(q['id']+'.json');old=read_json(path)
         if old:assert old['question_sha256']==digest(q);return old
         error=''
-        for attempt in range(3):
+        for attempt in range(5):
             instructions='Solve the statistics question. Return ONLY JSON with string fields rule, calculation, answer. rule: one correct concise rule under 200 characters. calculation: a numerical equality with substituted numbers, using only numbers, parentheses, + - * / ** and =; no variables, factorial or function names. Every part separated by = must equal the final result. answer: exact integer or fraction only. Keep all fields short. No option letters or misconception discussion.'
             user=q['question']
             if attempt:user+='\nReference rule: '+q['reference_rule']+'\nVerified expression: '+q['reference_expression']+' = '+q['answer']+'\nPrevious check: '+error
+            if attempt>=3:
+                instructions+=' Repair mode: reproduce the supplied verified numerical equation exactly as the calculation field. Do not expand it or add intermediate equalities. Use the supplied reference rule faithfully, and the exact reference answer. You must not replace any number.'
             tag=f'short_{q["id"]}_{attempt}'
             raw=client.call(tag,[dict(role='system',content=instructions),dict(role='user',content=user)],max_tokens=300,json_mode=True)
             try:obj=validate(parse_teacher(raw),q)
