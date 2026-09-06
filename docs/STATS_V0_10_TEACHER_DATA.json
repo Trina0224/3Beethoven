@@ -1,0 +1,4825 @@
+{
+  "records": {
+    "train": [
+      {
+        "answer": "63521199/204800000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_000_2",
+        "category": "type_i",
+        "choices": [
+          "63521199/204800000",
+          "19/40",
+          "21/40",
+          "63521199/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_000",
+        "parameters": [
+          6,
+          3,
+          19,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 19/40. What is the probability exactly 3 reject?",
+        "question_sha256": "798061f3a1b9c1eef352c88a9d42627a0deed6575a70c88b49d89e57c43b6705",
+        "reference_chain": [
+          "20*(19/40)**3*(21/40)**3",
+          "20*(6859/64000)*(9261/64000)",
+          "(20*6859*9261)/(64000*64000)",
+          "1270423980/4096000000",
+          "63521199/204800000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "20*(19/40)**3*(21/40)**3",
+        "teacher_solution": {
+          "answer": "63521199/204800000",
+          "stages": [
+            "20*(19/40)**3*(21/40)**3",
+            "20*(6859/64000)*(9261/64000)",
+            "(20*6859*9261)/(64000*64000)",
+            "1270423980/4096000000",
+            "63521199/204800000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "84375/262144",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_001_0",
+        "category": "type_i",
+        "choices": [
+          "3/8",
+          "84375/262144",
+          "5/8",
+          "5625/262144"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_001",
+        "parameters": [
+          6,
+          2,
+          15,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 3/8. What is the probability exactly 2 reject?",
+        "question_sha256": "76a2701d8484aa184fb8dfd57dff1e47938028945b1ad9553a33546d6466ad0b",
+        "reference_chain": [
+          "15*(15/40)**2*(25/40)**4",
+          "15*(225/1600)*(390625/2560000)",
+          "(15*225*390625)/(1600*2560000)",
+          "1318359375/4096000000",
+          "84375/262144"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "15*(15/40)**2*(25/40)**4",
+        "teacher_solution": {
+          "answer": "84375/262144",
+          "stages": [
+            "(3/8)**2 * (5/8)**4 * 15",
+            "(9/64) * (625/4096) * 15",
+            "(9/64) * (625/4096) * (15/1)",
+            "(9 * 625 * 15) / (64 * 4096)",
+            "84375 / 262144"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "12321/64000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_002_1",
+        "category": "type_i",
+        "choices": [
+          "3/40",
+          "37/40",
+          "12321/64000",
+          "4107/64000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_002",
+        "parameters": [
+          3,
+          1,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 1 reject?",
+        "question_sha256": "5f7e55abf886a5180e98ec9289d3be6322b9fbbd55fc617b021ee9db112de30e",
+        "reference_chain": [
+          "3*(3/40)**1*(37/40)**2",
+          "3*(3/40)*(1369/1600)",
+          "(3*3*1369)/(40*1600)",
+          "12321/64000",
+          "12321/64000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(3/40)**1*(37/40)**2",
+        "teacher_solution": {
+          "answer": "12321/64000",
+          "stages": [
+            "3*(3/40)**1*(37/40)**2",
+            "3*(3/40)*(37/40)*(37/40)",
+            "3*(3/40)*(1369/1600)",
+            "(3*3*1369)/(40*1600)",
+            "12321/64000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "424589/20480000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_003_1",
+        "category": "type_i",
+        "choices": [
+          "11/40",
+          "29/40",
+          "424589/102400000",
+          "424589/20480000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_003",
+        "parameters": [
+          5,
+          4,
+          11,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 11/40. What is the probability exactly 4 reject?",
+        "question_sha256": "5804daee73fcc2655ef5fb91c89eeeb35d948b17055a40983ff2f37103e95116",
+        "reference_chain": [
+          "5*(11/40)**4*(29/40)**1",
+          "5*(14641/2560000)*(29/40)",
+          "(5*14641*29)/(2560000*40)",
+          "2122945/102400000",
+          "424589/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(11/40)**4*(29/40)**1",
+        "teacher_solution": {
+          "answer": "424589/20480000",
+          "stages": [
+            "5*(11/40)**4*(29/40)**1",
+            "5*(14641/2560000)*(29/40)",
+            "(5*14641*29)/(2560000*40)",
+            "2122945/102400000",
+            "424589/20480000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "999/640000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_004_2",
+        "category": "type_i",
+        "choices": [
+          "999/640000",
+          "3/40",
+          "37/40",
+          "999/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_004",
+        "parameters": [
+          4,
+          3,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 3 reject?",
+        "question_sha256": "b159b4e1f7d5f1957e6356b9bdc1f07bb957d9fe820b23e8e9a043fdc03d935b",
+        "reference_chain": [
+          "4*(3/40)**3*(37/40)**1",
+          "4*(27/64000)*(37/40)",
+          "(4*27*37)/(64000*40)",
+          "3996/2560000",
+          "999/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(3/40)**3*(37/40)**1",
+        "teacher_solution": {
+          "answer": "999/640000",
+          "stages": [
+            "4*(3/40)**3*(37/40)**1",
+            "4*(27/64000)*(37/40)",
+            "(4*27*37)/(64000*40)",
+            "3996/2560000",
+            "999/640000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "151959/640000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_005_1",
+        "category": "type_i",
+        "choices": [
+          "3/40",
+          "151959/640000",
+          "37/40",
+          "151959/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_005",
+        "parameters": [
+          4,
+          1,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 1 reject?",
+        "question_sha256": "c3d6ded56c6507d39f29964a85b930f578d9481896899127b2dc2f15f392994c",
+        "reference_chain": [
+          "4*(3/40)**1*(37/40)**3",
+          "4*(3/40)*(50653/64000)",
+          "(4*3*50653)/(40*64000)",
+          "607836/2560000",
+          "151959/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(3/40)**1*(37/40)**3",
+        "teacher_solution": {
+          "answer": "151959/640000",
+          "stages": [
+            "4*(3/40)**1*(37/40)**3",
+            "4*(3/40)*(50653/64000)",
+            "(4*3*50653)/(40*64000)",
+            "607836/2560000",
+            "151959/640000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "735/262144",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_006_2",
+        "category": "type_i",
+        "choices": [
+          "1/8",
+          "7/8",
+          "735/262144",
+          "49/262144"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_006",
+        "parameters": [
+          6,
+          4,
+          5,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/8. What is the probability exactly 4 reject?",
+        "question_sha256": "9a03ac4210c7e7d0f73fe5534559cca496b205520dc407f37042c2a31ea6f3c0",
+        "reference_chain": [
+          "15*(5/40)**4*(35/40)**2",
+          "15*(625/2560000)*(1225/1600)",
+          "(15*625*1225)/(2560000*1600)",
+          "11484375/4096000000",
+          "735/262144"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(5/40)**4*(35/40)**2",
+        "teacher_solution": {
+          "answer": "735/262144",
+          "stages": [
+            "15*(5/40)**4*(35/40)**2",
+            "15*(625/2560000)*(1225/1600)",
+            "(15*625*1225)/(2560000*1600)",
+            "11484375/4096000000",
+            "735/262144"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "12005/32768",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_007_1",
+        "category": "type_i",
+        "choices": [
+          "1/8",
+          "7/8",
+          "2401/32768",
+          "12005/32768"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_007",
+        "parameters": [
+          5,
+          1,
+          5,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/8. What is the probability exactly 1 reject?",
+        "question_sha256": "f5ed582b30f3d04b0aff2064c78a94c30f5f5f3cd2a25b159734be7d38f09605",
+        "reference_chain": [
+          "5*(5/40)**1*(35/40)**4",
+          "5*(5/40)*(1500625/2560000)",
+          "(5*5*1500625)/(40*2560000)",
+          "37515625/102400000",
+          "12005/32768"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(5/40)**1*(35/40)**4",
+        "teacher_solution": {
+          "answer": "12005/32768",
+          "stages": [
+            "5*(1/8)**1*(7/8)**4",
+            "5*(1/8)*(2401/4096)",
+            "(5*1*2401)/(8*4096)",
+            "12005/32768",
+            "12005/32768"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "96/625",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_008_1",
+        "category": "type_i",
+        "choices": [
+          "96/625",
+          "2/5",
+          "3/5",
+          "24/625"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_008",
+        "parameters": [
+          4,
+          3,
+          16,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 2/5. What is the probability exactly 3 reject?",
+        "question_sha256": "06642e7f25e6510d124f6ae9b3bb86851397a1d39059d107b6ef5ac24daa8e65",
+        "reference_chain": [
+          "4*(16/40)**3*(24/40)**1",
+          "4*(4096/64000)*(24/40)",
+          "(4*4096*24)/(64000*40)",
+          "393216/2560000",
+          "96/625"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(16/40)**3*(24/40)**1",
+        "teacher_solution": {
+          "answer": "96/625",
+          "stages": [
+            "4*(2/5)**3*(3/5)**1",
+            "4*(8/125)*(3/5)",
+            "(4*8*3)/(125*5)",
+            "96/625"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "243/200000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_009_2",
+        "category": "type_i",
+        "choices": [
+          "1/10",
+          "243/200000",
+          "9/10",
+          "81/1000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_009",
+        "parameters": [
+          6,
+          4,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 4 reject?",
+        "question_sha256": "736502fc8be29aafe52a8fa2debc3abe9641630a34415643bc441814259ac3eb",
+        "reference_chain": [
+          "15*(4/40)**4*(36/40)**2",
+          "15*(256/2560000)*(1296/1600)",
+          "(15*256*1296)/(2560000*1600)",
+          "4976640/4096000000",
+          "243/200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(4/40)**4*(36/40)**2",
+        "teacher_solution": {
+          "answer": "243/200000",
+          "stages": [
+            "15*(4/40)**4*(36/40)**2",
+            "15*(256/2560000)*(1296/1600)",
+            "(15*256*1296)/(2560000*1600)",
+            "4976640/4096000000",
+            "243/200000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "332667/819200000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_010_1",
+        "category": "type_i",
+        "choices": [
+          "3/40",
+          "37/40",
+          "332667/819200000",
+          "110889/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_010",
+        "parameters": [
+          6,
+          4,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 4 reject?",
+        "question_sha256": "c24d6935a8ccbe9793eeb727d10e4f432230b319f3eaaa88c26e294bb7e1a66e",
+        "reference_chain": [
+          "15*(3/40)**4*(37/40)**2",
+          "15*(81/2560000)*(1369/1600)",
+          "(15*81*1369)/(2560000*1600)",
+          "1663335/4096000000",
+          "332667/819200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(3/40)**4*(37/40)**2",
+        "teacher_solution": {
+          "answer": "332667/819200000",
+          "stages": [
+            "15*(3/40)**4*(37/40)**2",
+            "15*(81/2560000)*(1369/1600)",
+            "(15*81*1369)/(2560000*1600)",
+            "1663335/4096000000",
+            "332667/819200000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "8301447/20480000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_011_1",
+        "category": "type_i",
+        "choices": [
+          "7/40",
+          "33/40",
+          "8301447/102400000",
+          "8301447/20480000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_011",
+        "parameters": [
+          5,
+          1,
+          7,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 7/40. What is the probability exactly 1 reject?",
+        "question_sha256": "8a5983599d49e59fcf66684004abedd5acc9b728ed3494c6a873e18a3ac0d9e9",
+        "reference_chain": [
+          "5*(7/40)**1*(33/40)**4",
+          "5*(7/40)*(1185921/2560000)",
+          "(5*7*1185921)/(40*2560000)",
+          "41507235/102400000",
+          "8301447/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(7/40)**1*(33/40)**4",
+        "teacher_solution": {
+          "answer": "8301447/20480000",
+          "stages": [
+            "5*(7/40)**1*(33/40)**4",
+            "5*(7/40)*(33/40)*(33/40)*(33/40)*(33/40)",
+            "5*(7/40)*(1185921/2560000)",
+            "(5*7*1185921)/(40*2560000)",
+            "41507235/102400000",
+            "8301447/20480000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "18915363/819200000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_012_1",
+        "category": "type_i",
+        "choices": [
+          "18915363/819200000",
+          "9/40",
+          "31/40",
+          "6305121/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_012",
+        "parameters": [
+          6,
+          4,
+          9,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 9/40. What is the probability exactly 4 reject?",
+        "question_sha256": "c4cc114c75588d1afe1a8bfe6deedddf8d86b412edddbb8963c7feff609dd79a",
+        "reference_chain": [
+          "15*(9/40)**4*(31/40)**2",
+          "15*(6561/2560000)*(961/1600)",
+          "(15*6561*961)/(2560000*1600)",
+          "94576815/4096000000",
+          "18915363/819200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(9/40)**4*(31/40)**2",
+        "teacher_solution": {
+          "answer": "18915363/819200000",
+          "stages": [
+            "15*(9/40)**4*(31/40)**2",
+            "15*(6561/2560000)*(961/1600)",
+            "(15*6561*961)/(2560000*1600)",
+            "94576815/4096000000",
+            "18915363/819200000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "117/2048000000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_013_1",
+        "category": "type_i",
+        "choices": [
+          "1/40",
+          "117/2048000000",
+          "39/40",
+          "39/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_013",
+        "parameters": [
+          6,
+          5,
+          1,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/40. What is the probability exactly 5 reject?",
+        "question_sha256": "d3aaf9979c21059232dfde67bed95c7ac414a1344c7573af90c5e20587436f9e",
+        "reference_chain": [
+          "6*(1/40)**5*(39/40)**1",
+          "6*(1/102400000)*(39/40)",
+          "(6*1*39)/(102400000*40)",
+          "234/4096000000",
+          "117/2048000000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "6*(1/40)**5*(39/40)**1",
+        "teacher_solution": {
+          "answer": "117/2048000000",
+          "stages": [
+            "6*(1/40)**5*(39/40)**1",
+            "6*(1/102400000)*(39/40)",
+            "(6*1*39)/(102400000*40)",
+            "234/4096000000",
+            "117/2048000000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "6908733/20480000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_014_1",
+        "category": "type_i",
+        "choices": [
+          "13/40",
+          "27/40",
+          "6908733/20480000",
+          "6908733/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_014",
+        "parameters": [
+          5,
+          1,
+          13,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 13/40. What is the probability exactly 1 reject?",
+        "question_sha256": "628c38d0cc4282f5561c549cdd2d1c2da153c1b5428e17fea3b909e964babe12",
+        "reference_chain": [
+          "5*(13/40)**1*(27/40)**4",
+          "5*(13/40)*(531441/2560000)",
+          "(5*13*531441)/(40*2560000)",
+          "34543665/102400000",
+          "6908733/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(13/40)**1*(27/40)**4",
+        "teacher_solution": {
+          "answer": "6908733/20480000",
+          "stages": [
+            "5*(13/40)**1*(27/40)**4",
+            "5*(13/40)*(27/40)**4",
+            "5*(13/40)*(531441/2560000)",
+            "(5*13*531441)/(40*2560000)",
+            "34543665/102400000",
+            "6908733/20480000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "54/125",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_015_2",
+        "category": "type_i",
+        "choices": [
+          "2/5",
+          "3/5",
+          "18/125",
+          "54/125"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_015",
+        "parameters": [
+          3,
+          1,
+          16,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 2/5. What is the probability exactly 1 reject?",
+        "question_sha256": "3c85d553f36e4b33ea48a8766e73f36e055875861cc188201f9608eb952f95af",
+        "reference_chain": [
+          "3*(16/40)**1*(24/40)**2",
+          "3*(16/40)*(576/1600)",
+          "(3*16*576)/(40*1600)",
+          "27648/64000",
+          "54/125"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(16/40)**1*(24/40)**2",
+        "teacher_solution": {
+          "answer": "54/125",
+          "stages": [
+            "3*(16/40)**1*(24/40)**2",
+            "3*(16/40)*(576/1600)",
+            "(3*16*576)/(40*1600)",
+            "27648/64000",
+            "54/125"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "2736741/20480000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_016_2",
+        "category": "type_i",
+        "choices": [
+          "2736741/20480000",
+          "19/40",
+          "21/40",
+          "2736741/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_016",
+        "parameters": [
+          5,
+          4,
+          19,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 19/40. What is the probability exactly 4 reject?",
+        "question_sha256": "82219753e887f6273b075576b664c7c1af0b7f9a51aafbb08cc0f698d4c4dfd8",
+        "reference_chain": [
+          "5*(19/40)**4*(21/40)**1",
+          "5*(130321/2560000)*(21/40)",
+          "(5*130321*21)/(2560000*40)",
+          "13683705/102400000",
+          "2736741/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(19/40)**4*(21/40)**1",
+        "teacher_solution": {
+          "answer": "2736741/20480000",
+          "stages": [
+            "5*(19/40)**4*(21/40)**1",
+            "5*(130321/2560000)*(21/40)",
+            "(5*130321*21)/(2560000*40)",
+            "13683705/102400000",
+            "2736741/20480000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "9/20000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_017_0",
+        "category": "type_i",
+        "choices": [
+          "1/10",
+          "9/20000",
+          "9/10",
+          "9/100000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_017",
+        "parameters": [
+          5,
+          4,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 4 reject?",
+        "question_sha256": "8812e2dbcc60d02b7e1171a4f3bf5767158b52ec12f3045747b55bd271d62eda",
+        "reference_chain": [
+          "5*(4/40)**4*(36/40)**1",
+          "5*(256/2560000)*(36/40)",
+          "(5*256*36)/(2560000*40)",
+          "46080/102400000",
+          "9/20000"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "5*(4/40)**4*(36/40)**1",
+        "teacher_solution": {
+          "answer": "45/100000",
+          "stages": [
+            "(1/10)**4 * (9/10)**1 * 5",
+            "(1/10)**4 * (9/10) * 5",
+            "(1/10000) * (9/10) * 5",
+            "(9/100000) * 5",
+            "45/100000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "7780091/20480000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_018_2",
+        "category": "type_i",
+        "choices": [
+          "11/40",
+          "29/40",
+          "7780091/20480000",
+          "7780091/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_018",
+        "parameters": [
+          5,
+          1,
+          11,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 11/40. What is the probability exactly 1 reject?",
+        "question_sha256": "527f2dfcbfecf1daaa78332f70ecc1bb6e51480cd7a46139931ce39bfb911acd",
+        "reference_chain": [
+          "5*(11/40)**1*(29/40)**4",
+          "5*(11/40)*(707281/2560000)",
+          "(5*11*707281)/(40*2560000)",
+          "38900455/102400000",
+          "7780091/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(11/40)**1*(29/40)**4",
+        "teacher_solution": {
+          "answer": "7780091/20480000",
+          "stages": [
+            "5*(11/40)**1*(29/40)**4",
+            "5*(11/40)*(707281/2560000)",
+            "(5*11*707281)/(40*2560000)",
+            "38900455/102400000",
+            "7780091/20480000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "729/50000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_019_0",
+        "category": "type_i",
+        "choices": [
+          "1/10",
+          "9/10",
+          "729/1000000",
+          "729/50000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_019",
+        "parameters": [
+          6,
+          3,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 3 reject?",
+        "question_sha256": "4d940fe9f4c60ebd0bd42a5b4e2fdd52e87e1c1ecab583a13ed6ca8ea2827150",
+        "reference_chain": [
+          "20*(4/40)**3*(36/40)**3",
+          "20*(64/64000)*(46656/64000)",
+          "(20*64*46656)/(64000*64000)",
+          "59719680/4096000000",
+          "729/50000"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "20*(4/40)**3*(36/40)**3",
+        "teacher_solution": {
+          "answer": "729/50000",
+          "stages": [
+            "(1/10)**3 * (9/10)**3 * (6*5*4)/(1*2*3)",
+            "(1/10)**3 * (9/10)**3 * 20",
+            "(1/1000) * (729/1000) * 20",
+            "(729/1000000) * 20",
+            "14580/1000000",
+            "729/50000",
+            "729/50000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "256/3125",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_020_1",
+        "category": "type_i",
+        "choices": [
+          "256/3125",
+          "1/5",
+          "4/5",
+          "64/15625"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_020",
+        "parameters": [
+          6,
+          3,
+          8,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/5. What is the probability exactly 3 reject?",
+        "question_sha256": "02dc05986d872b90da4a74073a5c5359f20bec3fccec488f77d56be8736e54c5",
+        "reference_chain": [
+          "20*(8/40)**3*(32/40)**3",
+          "20*(512/64000)*(32768/64000)",
+          "(20*512*32768)/(64000*64000)",
+          "335544320/4096000000",
+          "256/3125"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "20*(8/40)**3*(32/40)**3",
+        "teacher_solution": {
+          "answer": "256/3125",
+          "stages": [
+            "20*(1/5)**3*(4/5)**3",
+            "20*(1/125)*(64/125)",
+            "20*(64)/(125*125)",
+            "1280/15625",
+            "256/3125"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "7/1024",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_021_0",
+        "category": "type_i",
+        "choices": [
+          "1/8",
+          "7/1024",
+          "7/8",
+          "7/4096"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_021",
+        "parameters": [
+          4,
+          3,
+          5,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/8. What is the probability exactly 3 reject?",
+        "question_sha256": "914a308e1e09a9cdc448d99af2dcca91ecce49de966fefb43e58e949542355ac",
+        "reference_chain": [
+          "4*(5/40)**3*(35/40)**1",
+          "4*(125/64000)*(35/40)",
+          "(4*125*35)/(64000*40)",
+          "17500/2560000",
+          "7/1024"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "4*(5/40)**3*(35/40)**1",
+        "teacher_solution": {
+          "answer": "7/1024",
+          "stages": [
+            "(1/8)**3 * (7/8)**1 * 4",
+            "(1/8)**3 * (7/8) * 4",
+            "(1/512) * (7/8) * 4",
+            "(1/512) * (7/1) * (1/8) * 4",
+            "(7/4096) * 4",
+            "28/4096",
+            "7/1024"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "232793757/2048000000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_022_1",
+        "category": "type_i",
+        "choices": [
+          "19/40",
+          "21/40",
+          "232793757/2048000000",
+          "77597919/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_022",
+        "parameters": [
+          6,
+          1,
+          19,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 19/40. What is the probability exactly 1 reject?",
+        "question_sha256": "4b9f2e94567dbb71ae9cf01f6e36ccd6278247d7df72f938b24379b80e7805d6",
+        "reference_chain": [
+          "6*(19/40)**1*(21/40)**5",
+          "6*(19/40)*(4084101/102400000)",
+          "(6*19*4084101)/(40*102400000)",
+          "465587514/4096000000",
+          "232793757/2048000000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "6*(19/40)**1*(21/40)**5",
+        "teacher_solution": {
+          "answer": "232793757/2048000000",
+          "stages": [
+            "6*(19/40)**1*(21/40)**5",
+            "6*(19/40)*(4084101/102400000)",
+            "(6*19*4084101)/(40*102400000)",
+            "465587514/4096000000",
+            "232793757/2048000000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "459/8000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_023_1",
+        "category": "type_i",
+        "choices": [
+          "3/20",
+          "17/20",
+          "153/8000",
+          "459/8000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_023",
+        "parameters": [
+          3,
+          2,
+          6,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 3/20. What is the probability exactly 2 reject?",
+        "question_sha256": "d9e221af180b34eb8fa2786a8d6f33d7a908db7310ec0f315ce4ef6da56da8fd",
+        "reference_chain": [
+          "3*(6/40)**2*(34/40)**1",
+          "3*(36/1600)*(34/40)",
+          "(3*36*34)/(1600*40)",
+          "3672/64000",
+          "459/8000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(6/40)**2*(34/40)**1",
+        "teacher_solution": {
+          "answer": "459/8000",
+          "stages": [
+            "3*(3/20)**2*(17/20)**1",
+            "3*(9/400)*(17/20)",
+            "(3*9*17)/(400*20)",
+            "459/8000",
+            "459/8000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "12/125",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_024_2",
+        "category": "type_i",
+        "choices": [
+          "12/125",
+          "1/5",
+          "4/5",
+          "4/125"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_024",
+        "parameters": [
+          3,
+          2,
+          8,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 1/5. What is the probability exactly 2 reject?",
+        "question_sha256": "a7b98ab10357c965fb41fcaf5dd4c49cece74e79fae08b4a11a8f29deb3010f9",
+        "reference_chain": [
+          "3*(8/40)**2*(32/40)**1",
+          "3*(64/1600)*(32/40)",
+          "(3*64*32)/(1600*40)",
+          "6144/64000",
+          "12/125"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(8/40)**2*(32/40)**1",
+        "teacher_solution": {
+          "answer": "12/125",
+          "stages": [
+            "3*(8/40)**2*(32/40)**1",
+            "3*(64/1600)*(32/40)",
+            "(3*64*32)/(1600*40)",
+            "6144/64000",
+            "12/125"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "1119371/10240000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_025_1",
+        "category": "type_i",
+        "choices": [
+          "11/40",
+          "1119371/10240000",
+          "29/40",
+          "1119371/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_025",
+        "parameters": [
+          5,
+          3,
+          11,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 11/40. What is the probability exactly 3 reject?",
+        "question_sha256": "9720229caf2180bc2bfeaf63229e4b81f1a58038c244868d3915d62eda26ffb0",
+        "reference_chain": [
+          "10*(11/40)**3*(29/40)**2",
+          "10*(1331/64000)*(841/1600)",
+          "(10*1331*841)/(64000*1600)",
+          "11193710/102400000",
+          "1119371/10240000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "10*(11/40)**3*(29/40)**2",
+        "teacher_solution": {
+          "answer": "1119371/10240000",
+          "stages": [
+            "10*(11/40)**3*(29/40)**2",
+            "10*(1331/64000)*(841/1600)",
+            "(10*1331*841)/(64000*1600)",
+            "11193710/102400000",
+            "1119371/10240000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "3087/10000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_026_1",
+        "category": "type_i",
+        "choices": [
+          "3/10",
+          "7/10",
+          "3087/10000",
+          "3087/100000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_026",
+        "parameters": [
+          5,
+          2,
+          12,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 3/10. What is the probability exactly 2 reject?",
+        "question_sha256": "5dde7ddad2af1128bd240ed4050e25c8186c9020f6ecac18a846b7aa7ea83e1f",
+        "reference_chain": [
+          "10*(12/40)**2*(28/40)**3",
+          "10*(144/1600)*(21952/64000)",
+          "(10*144*21952)/(1600*64000)",
+          "31610880/102400000",
+          "3087/10000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "10*(12/40)**2*(28/40)**3",
+        "teacher_solution": {
+          "answer": "3087/10000",
+          "stages": [
+            "10*(3/10)**2*(7/10)**3",
+            "10*(9/100)*(343/1000)",
+            "10*(9*343)/(100*1000)",
+            "10*3087/100000",
+            "3087/10000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "96/625",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_027_0",
+        "category": "type_i",
+        "choices": [
+          "1/5",
+          "4/5",
+          "16/625",
+          "96/625"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_027",
+        "parameters": [
+          4,
+          2,
+          8,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/5. What is the probability exactly 2 reject?",
+        "question_sha256": "7a42f9e436062fa19fca9ea9d06aef0526165466977b5eb4cdd67184ff7092b7",
+        "reference_chain": [
+          "6*(8/40)**2*(32/40)**2",
+          "6*(64/1600)*(1024/1600)",
+          "(6*64*1024)/(1600*1600)",
+          "393216/2560000",
+          "96/625"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "6*(8/40)**2*(32/40)**2",
+        "teacher_solution": {
+          "answer": "96/625",
+          "stages": [
+            "(1/5)**2 * (4/5)**2 * (4*3)/(1*2)",
+            "(1/25) * (16/25) * 6",
+            "(16/625) * 6",
+            "96/625"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "59319/640000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_028_0",
+        "category": "type_i",
+        "choices": [
+          "59319/640000",
+          "13/40",
+          "27/40",
+          "59319/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_028",
+        "parameters": [
+          4,
+          3,
+          13,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 13/40. What is the probability exactly 3 reject?",
+        "question_sha256": "88fa334749d5dfb01d236c01be83ca4d533228fb9ebc6dbbffea0eb514c826e6",
+        "reference_chain": [
+          "4*(13/40)**3*(27/40)**1",
+          "4*(2197/64000)*(27/40)",
+          "(4*2197*27)/(64000*40)",
+          "237276/2560000",
+          "59319/640000"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "4*(13/40)**3*(27/40)**1",
+        "teacher_solution": {
+          "answer": "59319/640000",
+          "stages": [
+            "(13/40)**3 * (27/40) * 4",
+            "(13/40)**3 * (27/40) * 4",
+            "(2197/64000) * (27/40) * 4",
+            "(2197/64000) * (27/40) * 4",
+            "(2197 * 27) / (64000 * 40) * 4",
+            "(59319) / (2560000) * 4",
+            "(59319 * 4) / 2560000",
+            "237276 / 2560000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "999/64000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_029_1",
+        "category": "type_i",
+        "choices": [
+          "3/40",
+          "999/64000",
+          "37/40",
+          "333/64000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_029",
+        "parameters": [
+          3,
+          2,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 2 reject?",
+        "question_sha256": "7ed3006e4832cb83ecd6b87408ba70ac105ed39b0a5a1daaef50eb26c3e97a75",
+        "reference_chain": [
+          "3*(3/40)**2*(37/40)**1",
+          "3*(9/1600)*(37/40)",
+          "(3*9*37)/(1600*40)",
+          "999/64000",
+          "999/64000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(3/40)**2*(37/40)**1",
+        "teacher_solution": {
+          "answer": "999/64000",
+          "stages": [
+            "3*(3/40)**2*(37/40)**1",
+            "3*(9/1600)*(37/40)",
+            "(3*9*37)/(1600*40)",
+            "999/64000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "107653/320000",
+        "answer_letter": "C",
+        "cache_tag": "audit_stages_v10_train_type_i_030",
+        "category": "type_i",
+        "choices": [
+          "7/20",
+          "13/20",
+          "107653/320000",
+          "107653/3200000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_030",
+        "original_cache_tag": "v10_train_type_i_030_1",
+        "original_teacher_solution": {
+          "answer": "107653/320000",
+          "stages": [
+            "10*(7/20)**2*(13/20)**3",
+            "10*(49/400)*(2197/8000)",
+            "10*(49*2197)/(400*8000)",
+            "107653/320000",
+            "34448960/102400000"
+          ]
+        },
+        "parameters": [
+          5,
+          2,
+          14,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 7/20. What is the probability exactly 2 reject?",
+        "question_sha256": "1f2cdaf9d08448dc3b8e3c96002f487fe82e5d655a3816e568bfc875885e707a",
+        "reference_chain": [
+          "10*(14/40)**2*(26/40)**3",
+          "10*(196/1600)*(17576/64000)",
+          "(10*196*17576)/(1600*64000)",
+          "34448960/102400000",
+          "107653/320000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "10*(14/40)**2*(26/40)**3",
+        "teacher_solution": {
+          "answer": "107653/320000",
+          "stages": [
+            "10*(14/40)**2*(26/40)**3",
+            "10*(196/1600)*(17576/64000)",
+            "(10*196*17576)/(1600*64000)",
+            "34448960/102400000",
+            "107653/320000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "11907/200000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_031_2",
+        "category": "type_i",
+        "choices": [
+          "3/10",
+          "7/10",
+          "3969/1000000",
+          "11907/200000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_031",
+        "parameters": [
+          6,
+          4,
+          12,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 3/10. What is the probability exactly 4 reject?",
+        "question_sha256": "f625fa59aaa39f350865c06b35c0135394134abe46d06b26de93b34e0b8ceeaf",
+        "reference_chain": [
+          "15*(12/40)**4*(28/40)**2",
+          "15*(20736/2560000)*(784/1600)",
+          "(15*20736*784)/(2560000*1600)",
+          "243855360/4096000000",
+          "11907/200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(12/40)**4*(28/40)**2",
+        "teacher_solution": {
+          "answer": "11907/200000",
+          "stages": [
+            "15*(12/40)**4*(28/40)**2",
+            "15*(20736/2560000)*(784/1600)",
+            "(15*20736*784)/(2560000*1600)",
+            "243855360/4096000000",
+            "11907/200000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "26973/2048000000",
+        "answer_letter": "A",
+        "cache_tag": "audit_stages_v10_train_type_i_032",
+        "category": "type_i",
+        "choices": [
+          "26973/2048000000",
+          "3/40",
+          "37/40",
+          "8991/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_032",
+        "original_cache_tag": "v10_train_type_i_032_1",
+        "original_teacher_solution": {
+          "answer": "26973/2048000000",
+          "stages": [
+            "6*(3/40)**5*(37/40)**1",
+            "6*(243/102400000)*(37/40)",
+            "(6*243*37)/(102400000*40)",
+            "6*(3/40)**5*(37/40)",
+            "6*(3/40)**5*(37/40)*(40/40)"
+          ]
+        },
+        "parameters": [
+          6,
+          5,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 5 reject?",
+        "question_sha256": "210af6af98fc8814d9580aeae981ab8b5e4f062bb9355a15dd4002530011b742",
+        "reference_chain": [
+          "6*(3/40)**5*(37/40)**1",
+          "6*(243/102400000)*(37/40)",
+          "(6*243*37)/(102400000*40)",
+          "53946/4096000000",
+          "26973/2048000000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "6*(3/40)**5*(37/40)**1",
+        "teacher_solution": {
+          "answer": "26973/2048000000",
+          "stages": [
+            "6*(3/40)**5*(37/40)**1",
+            "6*(243/102400000)*(37/40)",
+            "(6*243*37)/(102400000*40)",
+            "53946/4096000000",
+            "26973/2048000000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "16/625",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_033_1",
+        "category": "type_i",
+        "choices": [
+          "1/5",
+          "16/625",
+          "4/5",
+          "4/625"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_033",
+        "parameters": [
+          4,
+          3,
+          8,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/5. What is the probability exactly 3 reject?",
+        "question_sha256": "9997b1441df279b8f8d53169118bf826f3cbdc15352f0ebc15011f41da847942",
+        "reference_chain": [
+          "4*(8/40)**3*(32/40)**1",
+          "4*(512/64000)*(32/40)",
+          "(4*512*32)/(64000*40)",
+          "65536/2560000",
+          "16/625"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(8/40)**3*(32/40)**1",
+        "teacher_solution": {
+          "answer": "16/625",
+          "stages": [
+            "4*(1/5)**3*(4/5)**1",
+            "4*(1/125)*(4/5)",
+            "(4*1*4)/(125*5)",
+            "16/625",
+            "16/625"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "7428297/32000000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_034_1",
+        "category": "type_i",
+        "choices": [
+          "1/20",
+          "19/20",
+          "7428297/32000000",
+          "2476099/64000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_034",
+        "parameters": [
+          6,
+          1,
+          2,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/20. What is the probability exactly 1 reject?",
+        "question_sha256": "c36bf96d9858add29c137678f6812dfe63e7897ba9754aeded4366bb1c7913f6",
+        "reference_chain": [
+          "6*(2/40)**1*(38/40)**5",
+          "6*(2/40)*(79235168/102400000)",
+          "(6*2*79235168)/(40*102400000)",
+          "950822016/4096000000",
+          "7428297/32000000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "6*(2/40)**1*(38/40)**5",
+        "teacher_solution": {
+          "answer": "7428297/32000000",
+          "stages": [
+            "6*(1/20)**1*(19/20)**5",
+            "6*(1/20)*(19/20)*(19/20)*(19/20)*(19/20)*(19/20)",
+            "6*(1/20)*(19**5)/(20**5)",
+            "6*(19**5)/(20**6)",
+            "6*(2476099)/(64000000)",
+            "7428297/32000000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "21/512",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_035_0",
+        "category": "type_i",
+        "choices": [
+          "1/8",
+          "7/8",
+          "7/512",
+          "21/512"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_035",
+        "parameters": [
+          3,
+          2,
+          5,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 1/8. What is the probability exactly 2 reject?",
+        "question_sha256": "9c0267a26271493b391cffda349200990295b2a19356762d0ebbdc0b90f8e27b",
+        "reference_chain": [
+          "3*(5/40)**2*(35/40)**1",
+          "3*(25/1600)*(35/40)",
+          "(3*25*35)/(1600*40)",
+          "2625/64000",
+          "21/512"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "3*(5/40)**2*(35/40)**1",
+        "teacher_solution": {
+          "answer": "21/512",
+          "stages": [
+            "(1/8)**2 * (7/8) * 3",
+            "(1/64) * (7/8) * 3",
+            "(1/64) * (21/8) * 1",
+            "(1/64) * (21/8)",
+            "(21/8) / 64",
+            "21/512"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "81/10000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_036_2",
+        "category": "type_i",
+        "choices": [
+          "81/10000",
+          "1/10",
+          "9/10",
+          "81/100000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_036",
+        "parameters": [
+          5,
+          3,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 3 reject?",
+        "question_sha256": "d3729aa89e496e6be7d454cf94f6e4f92f4f76a06110e8787a03afcd7283ce68",
+        "reference_chain": [
+          "10*(4/40)**3*(36/40)**2",
+          "10*(64/64000)*(1296/1600)",
+          "(10*64*1296)/(64000*1600)",
+          "829440/102400000",
+          "81/10000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "10*(4/40)**3*(36/40)**2",
+        "teacher_solution": {
+          "answer": "81/10000",
+          "stages": [
+            "10*(4/40)**3*(36/40)**2",
+            "10*(64/64000)*(1296/1600)",
+            "(10*64*1296)/(64000*1600)",
+            "829440/102400000",
+            "81/10000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "7844067/819200000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_037_2",
+        "category": "type_i",
+        "choices": [
+          "7/40",
+          "7844067/819200000",
+          "33/40",
+          "2614689/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_037",
+        "parameters": [
+          6,
+          4,
+          7,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 7/40. What is the probability exactly 4 reject?",
+        "question_sha256": "454b15fe1ff12c66367d80ec5a50f82335dfa24ef1133e5a1eb9743b9e466e5c",
+        "reference_chain": [
+          "15*(7/40)**4*(33/40)**2",
+          "15*(2401/2560000)*(1089/1600)",
+          "(15*2401*1089)/(2560000*1600)",
+          "39220335/4096000000",
+          "7844067/819200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(7/40)**4*(33/40)**2",
+        "teacher_solution": {
+          "answer": "7844067/819200000",
+          "stages": [
+            "15*(7/40)**4*(33/40)**2",
+            "15*(2401/2560000)*(1089/1600)",
+            "(15*2401*1089)/(2560000*1600)",
+            "39220335/4096000000",
+            "7844067/819200000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "242622147/819200000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_038_1",
+        "category": "type_i",
+        "choices": [
+          "17/40",
+          "23/40",
+          "242622147/819200000",
+          "80874049/4096000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_038",
+        "parameters": [
+          6,
+          2,
+          17,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 17/40. What is the probability exactly 2 reject?",
+        "question_sha256": "9330fc60a94a3d741f134b10c5848627bd26c1e9f14332a8b64f934e80f171fd",
+        "reference_chain": [
+          "15*(17/40)**2*(23/40)**4",
+          "15*(289/1600)*(279841/2560000)",
+          "(15*289*279841)/(1600*2560000)",
+          "1213110735/4096000000",
+          "242622147/819200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(17/40)**2*(23/40)**4",
+        "teacher_solution": {
+          "answer": "242622147/819200000",
+          "stages": [
+            "15*(17/40)**2*(23/40)**4",
+            "15*(289/1600)*(279841/2560000)",
+            "(15*289*279841)/(1600*2560000)",
+            "1213110735/4096000000",
+            "242622147/819200000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "19683/200000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_039_1",
+        "category": "type_i",
+        "choices": [
+          "1/10",
+          "9/10",
+          "6561/1000000",
+          "19683/200000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_039",
+        "parameters": [
+          6,
+          2,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 2 reject?",
+        "question_sha256": "216fbe92fbb747b9995d96dba995cd69c9735a8cd5ee6ccb0b4f63fecf3c3695",
+        "reference_chain": [
+          "15*(4/40)**2*(36/40)**4",
+          "15*(16/1600)*(1679616/2560000)",
+          "(15*16*1679616)/(1600*2560000)",
+          "403107840/4096000000",
+          "19683/200000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(4/40)**2*(36/40)**4",
+        "teacher_solution": {
+          "answer": "19683/200000",
+          "stages": [
+            "15*(1/10)**2*(9/10)**4",
+            "15*(1/100)*(6561/10000)",
+            "15*(1/100)*(6561/10000)",
+            "15*(6561/1000000)",
+            "19683/200000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "203391/20480000",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_040_1",
+        "category": "type_i",
+        "choices": [
+          "203391/20480000",
+          "9/40",
+          "31/40",
+          "203391/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_040",
+        "parameters": [
+          5,
+          4,
+          9,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 9/40. What is the probability exactly 4 reject?",
+        "question_sha256": "17fe74a7ca100b38a0b9e727f5b1a8f28f286c11b30a018af1008bd816761994",
+        "reference_chain": [
+          "5*(9/40)**4*(31/40)**1",
+          "5*(6561/2560000)*(31/40)",
+          "(5*6561*31)/(2560000*40)",
+          "1016955/102400000",
+          "203391/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(9/40)**4*(31/40)**1",
+        "teacher_solution": {
+          "answer": "203391/20480000",
+          "stages": [
+            "5*(9/40)**4*(31/40)**1",
+            "5*(6561/2560000)*(31/40)",
+            "(5*6561*31)/(2560000*40)",
+            "1016955/102400000",
+            "203391/20480000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "112999/640000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_041_2",
+        "category": "type_i",
+        "choices": [
+          "17/40",
+          "112999/640000",
+          "23/40",
+          "112999/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_041",
+        "parameters": [
+          4,
+          3,
+          17,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 17/40. What is the probability exactly 3 reject?",
+        "question_sha256": "15f39a5e1ef623138cfbbe9c492759643daf7e3222d5547062689b49f23f2eb5",
+        "reference_chain": [
+          "4*(17/40)**3*(23/40)**1",
+          "4*(4913/64000)*(23/40)",
+          "(4*4913*23)/(64000*40)",
+          "451996/2560000",
+          "112999/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(17/40)**3*(23/40)**1",
+        "teacher_solution": {
+          "answer": "112999/640000",
+          "stages": [
+            "4*(17/40)**3*(23/40)**1",
+            "4*(4913/64000)*(23/40)",
+            "(4*4913*23)/(64000*40)",
+            "451996/2560000",
+            "112999/640000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "225/512",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_042_1",
+        "category": "type_i",
+        "choices": [
+          "3/8",
+          "5/8",
+          "225/512",
+          "75/512"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_042",
+        "parameters": [
+          3,
+          1,
+          15,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 3/8. What is the probability exactly 1 reject?",
+        "question_sha256": "6de7c1c15f48ef59033ce403d1701e553682fa93f79475cae283b2f7f01dfd7b",
+        "reference_chain": [
+          "3*(15/40)**1*(25/40)**2",
+          "3*(15/40)*(625/1600)",
+          "(3*15*625)/(40*1600)",
+          "28125/64000",
+          "225/512"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(15/40)**1*(25/40)**2",
+        "teacher_solution": {
+          "answer": "225/512",
+          "stages": [
+            "3*(3/8)**1*(5/8)**2",
+            "3*(3/8)*(25/64)",
+            "(3*3*25)/(8*64)",
+            "225/512"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "455877/10240000",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_043_0",
+        "category": "type_i",
+        "choices": [
+          "3/40",
+          "37/40",
+          "455877/102400000",
+          "455877/10240000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_043",
+        "parameters": [
+          5,
+          2,
+          3,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 3/40. What is the probability exactly 2 reject?",
+        "question_sha256": "472fb06355f7aacf136e62d44ce71e071845c293da4ae19464a01f356c27bea8",
+        "reference_chain": [
+          "10*(3/40)**2*(37/40)**3",
+          "10*(9/1600)*(50653/64000)",
+          "(10*9*50653)/(1600*64000)",
+          "4558770/102400000",
+          "455877/10240000"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "10*(3/40)**2*(37/40)**3",
+        "teacher_solution": {
+          "answer": "4558770/102400000",
+          "stages": [
+            "(3/40)**2 * (37/40)**3 * 10",
+            "(9/1600) * (50653/64000) * 10",
+            "(9/1600) * (50653/64000) * (10/1)",
+            "(9 * 50653) / (1600 * 64000) * 10",
+            "(455877/102400000) * 10",
+            "4558770/102400000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "9/2500",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_i_044_2",
+        "category": "type_i",
+        "choices": [
+          "9/2500",
+          "1/10",
+          "9/10",
+          "9/10000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_044",
+        "parameters": [
+          4,
+          3,
+          4,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/10. What is the probability exactly 3 reject?",
+        "question_sha256": "c41dabcccd559839259aeff1f78f677d8a2beeeb493e77f1c13d162adf2286c0",
+        "reference_chain": [
+          "4*(4/40)**3*(36/40)**1",
+          "4*(64/64000)*(36/40)",
+          "(4*64*36)/(64000*40)",
+          "9216/2560000",
+          "9/2500"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(4/40)**3*(36/40)**1",
+        "teacher_solution": {
+          "answer": "9/2500",
+          "stages": [
+            "4*(4/40)**3*(36/40)**1",
+            "4*(64/64000)*(36/40)",
+            "(4*64*36)/(64000*40)",
+            "9216/2560000",
+            "9/2500"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "130321/640000",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_i_045_2",
+        "category": "type_i",
+        "choices": [
+          "1/20",
+          "130321/640000",
+          "19/20",
+          "130321/3200000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_045",
+        "parameters": [
+          5,
+          1,
+          2,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/20. What is the probability exactly 1 reject?",
+        "question_sha256": "4abcb333bb9cb02f0fc62e6ce52dd3799f1bd0da372c4db365e175c21d0e5329",
+        "reference_chain": [
+          "5*(2/40)**1*(38/40)**4",
+          "5*(2/40)*(2085136/2560000)",
+          "(5*2*2085136)/(40*2560000)",
+          "20851360/102400000",
+          "130321/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(2/40)**1*(38/40)**4",
+        "teacher_solution": {
+          "answer": "130321/640000",
+          "stages": [
+            "5*(2/40)**1*(38/40)**4",
+            "5*(2/40)*(2085136/2560000)",
+            "(5*2*2085136)/(40*2560000)",
+            "20851360/102400000",
+            "130321/640000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "4563/1280000",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_i_046_0",
+        "category": "type_i",
+        "choices": [
+          "1/40",
+          "39/40",
+          "4563/1280000",
+          "1521/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_046",
+        "parameters": [
+          4,
+          2,
+          1,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/40. What is the probability exactly 2 reject?",
+        "question_sha256": "466182c701d09271606947b9ea0576f0429dd78d869112f3afd52022fc52d68a",
+        "reference_chain": [
+          "6*(1/40)**2*(39/40)**2",
+          "6*(1/1600)*(1521/1600)",
+          "(6*1*1521)/(1600*1600)",
+          "9126/2560000",
+          "4563/1280000"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "6*(1/40)**2*(39/40)**2",
+        "teacher_solution": {
+          "answer": "9126/2560000",
+          "stages": [
+            "(1/40)**2 * (39/40)**2 * 6",
+            "(1/1600) * (1521/1600) * 6",
+            "(1/1600) * (1521/1600) * (6/1)",
+            "(1/1600) * (9126/1600)",
+            "9126/2560000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "135/512",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_i_047_1",
+        "category": "type_i",
+        "choices": [
+          "3/8",
+          "5/8",
+          "45/512",
+          "135/512"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_train_type_i_047",
+        "parameters": [
+          3,
+          2,
+          15,
+          40
+        ],
+        "question": "A laboratory runs 3 independent tests when all null hypotheses are true. Each rejects with probability 3/8. What is the probability exactly 2 reject?",
+        "question_sha256": "f84c25f942ce91470a6329073fda9ca78dd6012a312d811753b94bc8efa7972d",
+        "reference_chain": [
+          "3*(15/40)**2*(25/40)**1",
+          "3*(225/1600)*(25/40)",
+          "(3*225*25)/(1600*40)",
+          "16875/64000",
+          "135/512"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "3*(15/40)**2*(25/40)**1",
+        "teacher_solution": {
+          "answer": "135/512",
+          "stages": [
+            "3*(15/40)**2*(25/40)**1",
+            "3*(225/1600)*(25/40)",
+            "(3*225*25)/(1600*40)",
+            "16875/64000",
+            "135/512"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "109/400",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_048_2",
+        "category": "type_ii",
+        "choices": [
+          "109/400",
+          "561/800",
+          "779/800",
+          "21/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_048",
+        "parameters": [
+          6,
+          7,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/20 and 7/40. What is the probability exactly one detects it?",
+        "question_sha256": "592fd210a9ef0fd6cdf31147ad8694275527aeccc121ff33625a2fa1c437f4f6",
+        "reference_chain": [
+          "(1-(6/40))*(7/40)+(6/40)*(1-(7/40))",
+          "(34/40)*(7/40)+(6/40)*(33/40)",
+          "238/1600+198/1600",
+          "(238+198)/1600",
+          "436/1600",
+          "109/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(6/40))*(7/40)+(6/40)*(1-(7/40))",
+        "teacher_solution": {
+          "answer": "109/400",
+          "stages": [
+            "(1-(6/40))*(7/40)+(6/40)*(1-(7/40))",
+            "(34/40)*(7/40)+(6/40)*(33/40)",
+            "238/1600+198/1600",
+            "(238+198)/1600",
+            "436/1600",
+            "109/400"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "199/400",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_049_0",
+        "category": "type_ii",
+        "choices": [
+          "231/800",
+          "199/400",
+          "629/800",
+          "171/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_049",
+        "parameters": [
+          18,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 9/20 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "18736ade1f05d11516afa47038dbe38f422725181e9bec2306a79a6e3745aa71",
+        "reference_chain": [
+          "(1-(18/40))*(19/40)+(18/40)*(1-(19/40))",
+          "(22/40)*(19/40)+(18/40)*(21/40)",
+          "418/1600+378/1600",
+          "(418+378)/1600",
+          "796/1600",
+          "199/400"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(18/40))*(19/40)+(18/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "199/400",
+          "stages": [
+            "(9/20) * (21/40) + (11/20) * (19/40)",
+            "(9/20) * (21/40) + (11/20) * (19/40)",
+            "(189/800) + (209/800)",
+            "(398/800)",
+            "(199/400)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "267/800",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_050_0",
+        "category": "type_ii",
+        "choices": [
+          "1053/1600",
+          "1587/1600",
+          "267/800",
+          "13/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_050",
+        "parameters": [
+          1,
+          13,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 13/40. What is the probability exactly one detects it?",
+        "question_sha256": "18888c380610484e3da77213334e5b48c7111c5d2e55c1c1e6fce070b501acf9",
+        "reference_chain": [
+          "(1-(1/40))*(13/40)+(1/40)*(1-(13/40))",
+          "(39/40)*(13/40)+(1/40)*(27/40)",
+          "507/1600+27/1600",
+          "(507+27)/1600",
+          "534/1600",
+          "267/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(1/40))*(13/40)+(1/40)*(1-(13/40))",
+        "teacher_solution": {
+          "answer": "267/800",
+          "stages": [
+            "(1/40) * (27/40) + (13/40) * (39/40)",
+            "(27/1600) + (507/1600)",
+            "(27 + 507) / 1600",
+            "534 / 1600",
+            "267 / 800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "73/200",
+        "answer_letter": "D",
+        "cache_tag": "audit_stages_v10_train_type_ii_051",
+        "category": "type_ii",
+        "choices": [
+          "247/400",
+          "393/400",
+          "7/400",
+          "73/200"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_051",
+        "original_cache_tag": "v10_train_type_ii_051_0",
+        "original_teacher_solution": {
+          "answer": "73/200",
+          "stages": [
+            "(1/20) * (13/20) + (7/20) * (19/20)",
+            "(1/20) * (13/20) + (133/400) * (19/19)",
+            "(13/400) + (133/400)",
+            "(146/400)",
+            "(73/200)"
+          ]
+        },
+        "parameters": [
+          2,
+          14,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/20 and 7/20. What is the probability exactly one detects it?",
+        "question_sha256": "9a8d7dcadb1e2fe2c075350c5f92175fff69328c3b7ea3736d50b2a0e73ca083",
+        "reference_chain": [
+          "(1-(2/40))*(14/40)+(2/40)*(1-(14/40))",
+          "(38/40)*(14/40)+(2/40)*(26/40)",
+          "532/1600+52/1600",
+          "(532+52)/1600",
+          "584/1600",
+          "73/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(2/40))*(14/40)+(2/40)*(1-(14/40))",
+        "teacher_solution": {
+          "answer": "73/200",
+          "stages": [
+            "(1-(2/40))*(14/40)+(2/40)*(1-(14/40))",
+            "(38/40)*(14/40)+(2/40)*(26/40)",
+            "532/1600+52/1600",
+            "(532+52)/1600",
+            "584/1600",
+            "73/200"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "189/400",
+        "answer_letter": "A",
+        "cache_tag": "audit_stages_v10_train_type_ii_052",
+        "category": "type_ii",
+        "choices": [
+          "189/400",
+          "341/800",
+          "719/800",
+          "81/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_052",
+        "original_cache_tag": "v10_train_type_ii_052_0",
+        "original_teacher_solution": {
+          "answer": "189/400",
+          "stages": [
+            "(9/40) * (11/20) + (31/40) * (9/20)",
+            "(9/40) * (11/20) + (31/40) * (9/20)",
+            "(99/800) + (279/800)",
+            "(378/800)",
+            "(378/800) / (1)",
+            "(189/400)"
+          ]
+        },
+        "parameters": [
+          9,
+          18,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 9/40 and 9/20. What is the probability exactly one detects it?",
+        "question_sha256": "b3809e7c3bcbe96597839da907d6fca24519cc611499066d714f74e035f6fc97",
+        "reference_chain": [
+          "(1-(9/40))*(18/40)+(9/40)*(1-(18/40))",
+          "(31/40)*(18/40)+(9/40)*(22/40)",
+          "558/1600+198/1600",
+          "(558+198)/1600",
+          "756/1600",
+          "189/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(9/40))*(18/40)+(9/40)*(1-(18/40))",
+        "teacher_solution": {
+          "answer": "189/400",
+          "stages": [
+            "(1-(9/40))*(18/40)+(9/40)*(1-(18/40))",
+            "(31/40)*(18/40)+(9/40)*(22/40)",
+            "558/1600+198/1600",
+            "(558+198)/1600",
+            "756/1600",
+            "189/400"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "153/800",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_053_2",
+        "category": "type_ii",
+        "choices": [
+          "1287/1600",
+          "153/800",
+          "1593/1600",
+          "7/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_053",
+        "parameters": [
+          1,
+          7,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 7/40. What is the probability exactly one detects it?",
+        "question_sha256": "0fa722b346e3a3c7adeec4ed0a03dc8c5059512a2307eb4801db91d77b14c0c2",
+        "reference_chain": [
+          "(1-(1/40))*(7/40)+(1/40)*(1-(7/40))",
+          "(39/40)*(7/40)+(1/40)*(33/40)",
+          "273/1600+33/1600",
+          "(273+33)/1600",
+          "306/1600",
+          "153/800"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(1/40))*(7/40)+(1/40)*(1-(7/40))",
+        "teacher_solution": {
+          "answer": "153/800",
+          "stages": [
+            "(1-(1/40))*(7/40)+(1/40)*(1-(7/40))",
+            "(39/40)*(7/40)+(1/40)*(33/40)",
+            "273/1600+33/1600",
+            "(273+33)/1600",
+            "306/1600",
+            "153/800"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "47/160",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_054_0",
+        "category": "type_ii",
+        "choices": [
+          "217/320",
+          "311/320",
+          "47/160",
+          "9/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_054",
+        "parameters": [
+          5,
+          9,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 9/40. What is the probability exactly one detects it?",
+        "question_sha256": "42bbf8594bfa99b34fdd317989af6f4283e1861511993b2e7f56973cdeb6926e",
+        "reference_chain": [
+          "(1-(5/40))*(9/40)+(5/40)*(1-(9/40))",
+          "(35/40)*(9/40)+(5/40)*(31/40)",
+          "315/1600+155/1600",
+          "(315+155)/1600",
+          "470/1600",
+          "47/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(5/40))*(9/40)+(5/40)*(1-(9/40))",
+        "teacher_solution": {
+          "answer": "47/160",
+          "stages": [
+            "(1/8) * (31/40) + (7/8) * (9/40)",
+            "(1/8) * (31/40) + (7/8) * (9/40)",
+            "(31/320) + (63/320)",
+            "(94/320)",
+            "(47/160)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "391/800",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_055_0",
+        "category": "type_ii",
+        "choices": [
+          "529/1600",
+          "1311/1600",
+          "289/1600",
+          "391/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_055",
+        "parameters": [
+          17,
+          17,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 17/40 and 17/40. What is the probability exactly one detects it?",
+        "question_sha256": "a9c76ab080d7fc2cb16ce15966602f3f6a22e6d9d6c8116327337a98a2ae67cf",
+        "reference_chain": [
+          "(1-(17/40))*(17/40)+(17/40)*(1-(17/40))",
+          "(23/40)*(17/40)+(17/40)*(23/40)",
+          "391/1600+391/1600",
+          "(391+391)/1600",
+          "782/1600",
+          "391/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(17/40))*(17/40)+(17/40)*(1-(17/40))",
+        "teacher_solution": {
+          "answer": "391/800",
+          "stages": [
+            "(17/40)*(23/40)+(23/40)*(17/40)",
+            "(17/40)*(23/40)+(23/40)*(17/40)",
+            "(17*23)/(40*40)+(23*17)/(40*40)",
+            "(391+391)/(40*40)",
+            "782/(40*40)",
+            "782/(1600)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "59/160",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_056_0",
+        "category": "type_ii",
+        "choices": [
+          "59/160",
+          "189/320",
+          "307/320",
+          "13/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_056",
+        "parameters": [
+          5,
+          13,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 13/40. What is the probability exactly one detects it?",
+        "question_sha256": "8702c606750d94e7ef68946cf9184729dfae9d4b33b1ce252b3dbc5aaa5240b6",
+        "reference_chain": [
+          "(1-(5/40))*(13/40)+(5/40)*(1-(13/40))",
+          "(35/40)*(13/40)+(5/40)*(27/40)",
+          "455/1600+135/1600",
+          "(455+135)/1600",
+          "590/1600",
+          "59/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(5/40))*(13/40)+(5/40)*(1-(13/40))",
+        "teacher_solution": {
+          "answer": "59/160",
+          "stages": [
+            "(1/8) * (27/40) + (7/8) * (13/40)",
+            "(1/8) * (27/40) + (7/8) * (13/40)",
+            "((1 * 27) / (8 * 40)) + ((7 * 13) / (8 * 40))",
+            "((27) / (320)) + ((91) / (320))",
+            "(27 + 91) / 320",
+            "118 / 320",
+            "59 / 160"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "193/400",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_057_1",
+        "category": "type_ii",
+        "choices": [
+          "357/800",
+          "193/400",
+          "743/800",
+          "57/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_057",
+        "parameters": [
+          6,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/20 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "165d0c2457ca0fc7b24e5484ad36e290e3b5b2b043763c859bec5244a86ce866",
+        "reference_chain": [
+          "(1-(6/40))*(19/40)+(6/40)*(1-(19/40))",
+          "(34/40)*(19/40)+(6/40)*(21/40)",
+          "646/1600+126/1600",
+          "(646+126)/1600",
+          "772/1600",
+          "193/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(6/40))*(19/40)+(6/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "193/400",
+          "stages": [
+            "(1-(3/20))*(19/40)+(3/20)*(1-(19/40))",
+            "(17/20)*(19/40)+(3/20)*(21/40)",
+            "(17*19)/(20*40)+(3*21)/(20*40)",
+            "(323+63)/(20*40)",
+            "(386)/(20*40)",
+            "(193)/(10*40)",
+            "193/400"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "389/800",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_058_0",
+        "category": "type_ii",
+        "choices": [
+          "651/1600",
+          "1429/1600",
+          "389/800",
+          "171/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_058",
+        "parameters": [
+          9,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 9/40 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "e645922d5f3430808959725f7c95862ea8ba93a66aaa6cc134b794010b9fe238",
+        "reference_chain": [
+          "(1-(9/40))*(19/40)+(9/40)*(1-(19/40))",
+          "(31/40)*(19/40)+(9/40)*(21/40)",
+          "589/1600+189/1600",
+          "(589+189)/1600",
+          "778/1600",
+          "389/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(9/40))*(19/40)+(9/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "389/800",
+          "stages": [
+            "(9/40) * (21/40) + (19/40) * (31/40)",
+            "(9/40) * (21/40) + (19/40) * (31/40)",
+            "(189/1600) + (589/1600)",
+            "(778/1600)",
+            "(389/800)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "15/32",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_059_0",
+        "category": "type_ii",
+        "choices": [
+          "25/64",
+          "55/64",
+          "9/64",
+          "15/32"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_059",
+        "parameters": [
+          15,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/8 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "ecfd192aa45f369c9dda14c1d1bb70c2b9d39b2b9b86dc96b5fce55863b1dcaa",
+        "reference_chain": [
+          "(1-(15/40))*(15/40)+(15/40)*(1-(15/40))",
+          "(25/40)*(15/40)+(15/40)*(25/40)",
+          "375/1600+375/1600",
+          "(375+375)/1600",
+          "750/1600",
+          "15/32"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(15/40))*(15/40)+(15/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "15/32",
+          "stages": [
+            "(3/8)*(5/8)+(5/8)*(3/8)",
+            "(15/64)+(15/64)",
+            "(30/64)",
+            "(15/32)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "179/800",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_060_0",
+        "category": "type_ii",
+        "choices": [
+          "179/800",
+          "1221/1600",
+          "1579/1600",
+          "21/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_060",
+        "parameters": [
+          3,
+          7,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 7/40. What is the probability exactly one detects it?",
+        "question_sha256": "a086c7d22e00406bdf67278272e4215fb279e55cf218b84ab054630e354de581",
+        "reference_chain": [
+          "(1-(3/40))*(7/40)+(3/40)*(1-(7/40))",
+          "(37/40)*(7/40)+(3/40)*(33/40)",
+          "259/1600+99/1600",
+          "(259+99)/1600",
+          "358/1600",
+          "179/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(3/40))*(7/40)+(3/40)*(1-(7/40))",
+        "teacher_solution": {
+          "answer": "179/800",
+          "stages": [
+            "(3/40) * (33/40) + (7/40) * (37/40)",
+            "(3/40) * (33/40) + (7/40) * (37/40)",
+            "(3 * 33) / (40 * 40) + (7 * 37) / (40 * 40)",
+            "(99 + 259) / (40 * 40)",
+            "(358) / (40 * 40)",
+            "(358) / 1600",
+            "179 / 800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "97/200",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_061_1",
+        "category": "type_ii",
+        "choices": [
+          "21/50",
+          "97/200",
+          "181/200",
+          "19/200"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_061",
+        "parameters": [
+          8,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/5 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "0c63e8798ce95076a52532f4e6269005d9499badaf92ef0b852950f6ca15bef2",
+        "reference_chain": [
+          "(1-(8/40))*(19/40)+(8/40)*(1-(19/40))",
+          "(32/40)*(19/40)+(8/40)*(21/40)",
+          "608/1600+168/1600",
+          "(608+168)/1600",
+          "776/1600",
+          "97/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(8/40))*(19/40)+(8/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "97/200",
+          "stages": [
+            "(4/5)*(19/40)+(1/5)*(1-(19/40))",
+            "(4/5)*(19/40)+(1/5)*(21/40)",
+            "(76/200)+(21/200)",
+            "(76+21)/200",
+            "97/200"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "383/800",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_062_2",
+        "category": "type_ii",
+        "choices": [
+          "777/1600",
+          "1543/1600",
+          "383/800",
+          "57/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_062",
+        "parameters": [
+          3,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "e7bafd2350eb9187c60291e66379a07fec910d4a0f5e81073c86d99e641ea27f",
+        "reference_chain": [
+          "(1-(3/40))*(19/40)+(3/40)*(1-(19/40))",
+          "(37/40)*(19/40)+(3/40)*(21/40)",
+          "703/1600+63/1600",
+          "(703+63)/1600",
+          "766/1600",
+          "383/800"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(3/40))*(19/40)+(3/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "383/800",
+          "stages": [
+            "(1-(3/40))*(19/40)+(3/40)*(1-(19/40))",
+            "(37/40)*(19/40)+(3/40)*(21/40)",
+            "703/1600+63/1600",
+            "(703+63)/1600",
+            "766/1600",
+            "383/800"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "91/200",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_063_2",
+        "category": "type_ii",
+        "choices": [
+          "87/200",
+          "89/100",
+          "11/100",
+          "91/200"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_063",
+        "parameters": [
+          11,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 11/40 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "b6db59a91b4ac114b4973843d9971490a09c1a99436e23dac87663d9bd6ab2a7",
+        "reference_chain": [
+          "(1-(11/40))*(16/40)+(11/40)*(1-(16/40))",
+          "(29/40)*(16/40)+(11/40)*(24/40)",
+          "464/1600+264/1600",
+          "(464+264)/1600",
+          "728/1600",
+          "91/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(11/40))*(16/40)+(11/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "91/200",
+          "stages": [
+            "(1-(11/40))*(16/40)+(11/40)*(1-(16/40))",
+            "(29/40)*(16/40)+(11/40)*(24/40)",
+            "464/1600+264/1600",
+            "(464+264)/1600",
+            "728/1600",
+            "91/200"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "79/160",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_064_0",
+        "category": "type_ii",
+        "choices": [
+          "79/160",
+          "21/64",
+          "263/320",
+          "57/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_064",
+        "parameters": [
+          15,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/8 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "821d07661560aa6e533b106d50c87dbe885b781f7f803942f3b0d6338e1b1033",
+        "reference_chain": [
+          "(1-(15/40))*(19/40)+(15/40)*(1-(19/40))",
+          "(25/40)*(19/40)+(15/40)*(21/40)",
+          "475/1600+315/1600",
+          "(475+315)/1600",
+          "790/1600",
+          "79/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(15/40))*(19/40)+(15/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "79/160",
+          "stages": [
+            "(3/8) * (21/40) + (5/8) * (19/40)",
+            "(3/8) * (21/40) + (5/8) * (19/40)",
+            "(63/320) + (95/320)",
+            "(158/320)",
+            "(79/160)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "283/800",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_065_0",
+        "category": "type_ii",
+        "choices": [
+          "957/1600",
+          "283/800",
+          "1523/1600",
+          "77/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_065",
+        "parameters": [
+          7,
+          11,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 11/40. What is the probability exactly one detects it?",
+        "question_sha256": "215da3390b62f878b3f3ecead88040cc4481ca4a042cec9f93ec4709806cb9e3",
+        "reference_chain": [
+          "(1-(7/40))*(11/40)+(7/40)*(1-(11/40))",
+          "(33/40)*(11/40)+(7/40)*(29/40)",
+          "363/1600+203/1600",
+          "(363+203)/1600",
+          "566/1600",
+          "283/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(7/40))*(11/40)+(7/40)*(1-(11/40))",
+        "teacher_solution": {
+          "answer": "283/800",
+          "stages": [
+            "(7/40) * (29/40) + (33/40) * (11/40)",
+            "(7/40) * (29/40) + (11/40) * (33/40)",
+            "(203/40**2) + (363/40**2)",
+            "(566/40**2)",
+            "(566/1600)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "37/80",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_066_0",
+        "category": "type_ii",
+        "choices": [
+          "13/32",
+          "139/160",
+          "37/80",
+          "21/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_066",
+        "parameters": [
+          14,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/20 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "e216b512f1b3210553d0730ca064a4b0b481dc5befeae2a1798737f5954ccfe2",
+        "reference_chain": [
+          "(1-(14/40))*(15/40)+(14/40)*(1-(15/40))",
+          "(26/40)*(15/40)+(14/40)*(25/40)",
+          "390/1600+350/1600",
+          "(390+350)/1600",
+          "740/1600",
+          "37/80"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(14/40))*(15/40)+(14/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "37/80",
+          "stages": [
+            "(7/20) * (5/8) + (13/20) * (3/8)",
+            "(7/20) * (5/8) + (13/20) * (3/8)",
+            "(35/160) + (39/160)",
+            "(74/160)",
+            "(37/80)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "71/160",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_067_0",
+        "category": "type_ii",
+        "choices": [
+          "161/320",
+          "303/320",
+          "17/320",
+          "71/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_067",
+        "parameters": [
+          5,
+          17,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 17/40. What is the probability exactly one detects it?",
+        "question_sha256": "eb31fcea25271f48570119ee8f40ba458fd49ac7b92969dec3236fffc04411cc",
+        "reference_chain": [
+          "(1-(5/40))*(17/40)+(5/40)*(1-(17/40))",
+          "(35/40)*(17/40)+(5/40)*(23/40)",
+          "595/1600+115/1600",
+          "(595+115)/1600",
+          "710/1600",
+          "71/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(5/40))*(17/40)+(5/40)*(1-(17/40))",
+        "teacher_solution": {
+          "answer": "71/160",
+          "stages": [
+            "(1/8) * (23/40) + (7/8) * (17/40)",
+            "(1/8) * (23/40) + (7/8) * (17/40)",
+            "(23/320) + (119/320)",
+            "(23 + 119) / 320",
+            "142 / 320",
+            "71 / 160"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "83/200",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_068_1",
+        "category": "type_ii",
+        "choices": [
+          "83/200",
+          "111/200",
+          "97/100",
+          "3/100"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_068",
+        "parameters": [
+          3,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "2594f66dce3e409ae4853986ac04e8ff922a9166c7461deb3eb47545d9509d93",
+        "reference_chain": [
+          "(1-(3/40))*(16/40)+(3/40)*(1-(16/40))",
+          "(37/40)*(16/40)+(3/40)*(24/40)",
+          "592/1600+72/1600",
+          "(592+72)/1600",
+          "664/1600",
+          "83/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(3/40))*(16/40)+(3/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "83/200",
+          "stages": [
+            "(1-(3/40))*(2/5)+(3/40)*(1-(2/5))",
+            "(37/40)*(2/5)+(3/40)*(3/5)",
+            "(37*2)/(40*5)+(3*3)/(40*5)",
+            "(74+9)/(40*5)",
+            "(83)/(40*5)",
+            "83/200"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "73/160",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_069_0",
+        "category": "type_ii",
+        "choices": [
+          "27/64",
+          "73/160",
+          "281/320",
+          "39/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_069",
+        "parameters": [
+          13,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 13/40 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "8484a0fb1decda930cf8c618a2b4161fef2aff5a5149bb867c7459cebfe26553",
+        "reference_chain": [
+          "(1-(13/40))*(15/40)+(13/40)*(1-(15/40))",
+          "(27/40)*(15/40)+(13/40)*(25/40)",
+          "405/1600+325/1600",
+          "(405+325)/1600",
+          "730/1600",
+          "73/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(13/40))*(15/40)+(13/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "73/160",
+          "stages": [
+            "(13/40) * (5/8) + (27/40) * (3/8)",
+            "(13/40) * (5/8) + (27/40) * (3/8)",
+            "(65/320) + (81/320)",
+            "(146/320)",
+            "(73/160)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "343/800",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_070_1",
+        "category": "type_ii",
+        "choices": [
+          "897/1600",
+          "1583/1600",
+          "343/800",
+          "17/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_070",
+        "parameters": [
+          1,
+          17,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 17/40. What is the probability exactly one detects it?",
+        "question_sha256": "ab141fa3df6342e892c6689c05b3c63bb86dc7390009d8cbf559be2677b6382e",
+        "reference_chain": [
+          "(1-(1/40))*(17/40)+(1/40)*(1-(17/40))",
+          "(39/40)*(17/40)+(1/40)*(23/40)",
+          "663/1600+23/1600",
+          "(663+23)/1600",
+          "686/1600",
+          "343/800"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(1/40))*(17/40)+(1/40)*(1-(17/40))",
+        "teacher_solution": {
+          "answer": "343/800",
+          "stages": [
+            "(1-(1/40))*(17/40)+(1/40)*(1-(17/40))",
+            "(39/40)*(17/40)+(1/40)*(23/40)",
+            "663/1600+23/1600",
+            "(663+23)/1600",
+            "686/1600",
+            "343/800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "7/32",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_071_0",
+        "category": "type_ii",
+        "choices": [
+          "49/64",
+          "63/64",
+          "1/64",
+          "7/32"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_071",
+        "parameters": [
+          5,
+          5,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 1/8. What is the probability exactly one detects it?",
+        "question_sha256": "50a1df7203619926839930996d7a60b338f0aeebeeaeef80a512e102d2c7b11d",
+        "reference_chain": [
+          "(1-(5/40))*(5/40)+(5/40)*(1-(5/40))",
+          "(35/40)*(5/40)+(5/40)*(35/40)",
+          "175/1600+175/1600",
+          "(175+175)/1600",
+          "350/1600",
+          "7/32"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(5/40))*(5/40)+(5/40)*(1-(5/40))",
+        "teacher_solution": {
+          "answer": "7/32",
+          "stages": [
+            "(1/8) * (7/8) + (7/8) * (1/8)",
+            "(1/8) * (7/8) + (7/8) * (1/8)",
+            "(1/8) * (7/8) + (7/8) * (1/8)",
+            "(1/8) * (7/8) + (7/8) * (1/8)",
+            "(7/64) + (7/64)",
+            "(14/64)",
+            "(7/32)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "23/80",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_072_0",
+        "category": "type_ii",
+        "choices": [
+          "23/80",
+          "111/160",
+          "157/160",
+          "3/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_072",
+        "parameters": [
+          3,
+          10,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 1/4. What is the probability exactly one detects it?",
+        "question_sha256": "7279f0504cddbcda8309162d73dd1b93bf0a12eea4fe9e4e33c257a94f553988",
+        "reference_chain": [
+          "(1-(3/40))*(10/40)+(3/40)*(1-(10/40))",
+          "(37/40)*(10/40)+(3/40)*(30/40)",
+          "370/1600+90/1600",
+          "(370+90)/1600",
+          "460/1600",
+          "23/80"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(3/40))*(10/40)+(3/40)*(1-(10/40))",
+        "teacher_solution": {
+          "answer": "23/80",
+          "stages": [
+            "(3/40) * (1 - 1/4) + (1 - 3/40) * (1/4)",
+            "(3/40) * (3/4) + (37/40) * (1/4)",
+            "(9/160) + (37/160)",
+            "(46/160)",
+            "(23/80)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "73/200",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_073_2",
+        "category": "type_ii",
+        "choices": [
+          "29/50",
+          "73/200",
+          "189/200",
+          "11/200"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_073",
+        "parameters": [
+          8,
+          11,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/5 and 11/40. What is the probability exactly one detects it?",
+        "question_sha256": "a06094258bcdb3829490ed5c25797001e7c2c12123b2dadf17834bd088007e22",
+        "reference_chain": [
+          "(1-(8/40))*(11/40)+(8/40)*(1-(11/40))",
+          "(32/40)*(11/40)+(8/40)*(29/40)",
+          "352/1600+232/1600",
+          "(352+232)/1600",
+          "584/1600",
+          "73/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(8/40))*(11/40)+(8/40)*(1-(11/40))",
+        "teacher_solution": {
+          "answer": "73/200",
+          "stages": [
+            "(1-(8/40))*(11/40)+(8/40)*(1-(11/40))",
+            "(32/40)*(11/40)+(8/40)*(29/40)",
+            "352/1600+232/1600",
+            "(352+232)/1600",
+            "584/1600",
+            "73/200"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "39/800",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_074_0",
+        "category": "type_ii",
+        "choices": [
+          "1521/1600",
+          "1599/1600",
+          "39/800",
+          "1/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_074",
+        "parameters": [
+          1,
+          1,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 1/40. What is the probability exactly one detects it?",
+        "question_sha256": "04ac92c30f236dbde2ea092698420c6c9a85569eefd14dae758b5d02a906feb1",
+        "reference_chain": [
+          "(1-(1/40))*(1/40)+(1/40)*(1-(1/40))",
+          "(39/40)*(1/40)+(1/40)*(39/40)",
+          "39/1600+39/1600",
+          "(39+39)/1600",
+          "78/1600",
+          "39/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(1/40))*(1/40)+(1/40)*(1-(1/40))",
+        "teacher_solution": {
+          "answer": "78/1600",
+          "stages": [
+            "(1/40) * (39/40) + (39/40) * (1/40)",
+            "(1/40) * (39/40) + (1/40) * (39/40)",
+            "2 * (1/40) * (39/40)",
+            "2 * (39/1600)",
+            "78/1600"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "19/40",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_075_2",
+        "category": "type_ii",
+        "choices": [
+          "3/8",
+          "17/20",
+          "3/20",
+          "19/40"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_075",
+        "parameters": [
+          15,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/8 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "4699a87b9719a819e821bad25435ba293359914e6dbde24337004399cbd856db",
+        "reference_chain": [
+          "(1-(15/40))*(16/40)+(15/40)*(1-(16/40))",
+          "(25/40)*(16/40)+(15/40)*(24/40)",
+          "400/1600+360/1600",
+          "(400+360)/1600",
+          "760/1600",
+          "19/40"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(15/40))*(16/40)+(15/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "19/40",
+          "stages": [
+            "(1-(15/40))*(16/40)+(15/40)*(1-(16/40))",
+            "(25/40)*(16/40)+(15/40)*(24/40)",
+            "400/1600+360/1600",
+            "(400+360)/1600",
+            "760/1600",
+            "19/40"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "387/800",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_076_1",
+        "category": "type_ii",
+        "choices": [
+          "387/800",
+          "693/1600",
+          "1467/1600",
+          "133/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_076",
+        "parameters": [
+          7,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "e97493795c3284644e46c6b04f84bf6821d33ad3b87d2d2cf2103a06026292a6",
+        "reference_chain": [
+          "(1-(7/40))*(19/40)+(7/40)*(1-(19/40))",
+          "(33/40)*(19/40)+(7/40)*(21/40)",
+          "627/1600+147/1600",
+          "(627+147)/1600",
+          "774/1600",
+          "387/800"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(7/40))*(19/40)+(7/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "387/800",
+          "stages": [
+            "(1-(7/40))*(19/40)+(7/40)*(1-(19/40))",
+            "(33/40)*(19/40)+(7/40)*(21/40)",
+            "627/1600+147/1600",
+            "(627+147)/1600",
+            "774/1600",
+            "387/800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "149/400",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_077_2",
+        "category": "type_ii",
+        "choices": [
+          "481/800",
+          "149/400",
+          "779/800",
+          "21/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_077",
+        "parameters": [
+          3,
+          14,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 7/20. What is the probability exactly one detects it?",
+        "question_sha256": "53c8b444562b27ed159343f1f353d004695af44fd561c3b2594a1d37580b9634",
+        "reference_chain": [
+          "(1-(3/40))*(14/40)+(3/40)*(1-(14/40))",
+          "(37/40)*(14/40)+(3/40)*(26/40)",
+          "518/1600+78/1600",
+          "(518+78)/1600",
+          "596/1600",
+          "149/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(3/40))*(14/40)+(3/40)*(1-(14/40))",
+        "teacher_solution": {
+          "answer": "149/400",
+          "stages": [
+            "(1-(3/40))*(14/40)+(3/40)*(1-(14/40))",
+            "(37/40)*(14/40)+(3/40)*(26/40)",
+            "518/1600+78/1600",
+            "(518+78)/1600",
+            "596/1600",
+            "149/400"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "61/200",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_078_1",
+        "category": "type_ii",
+        "choices": [
+          "33/50",
+          "193/200",
+          "61/200",
+          "7/200"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_078",
+        "parameters": [
+          7,
+          8,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 1/5. What is the probability exactly one detects it?",
+        "question_sha256": "0e5a30f96dd23416ae7b63e85ca05dcb5f6909eb918ac44845a26fceff6aa391",
+        "reference_chain": [
+          "(1-(7/40))*(8/40)+(7/40)*(1-(8/40))",
+          "(33/40)*(8/40)+(7/40)*(32/40)",
+          "264/1600+224/1600",
+          "(264+224)/1600",
+          "488/1600",
+          "61/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(7/40))*(8/40)+(7/40)*(1-(8/40))",
+        "teacher_solution": {
+          "answer": "61/200",
+          "stages": [
+            "(1-(7/40))*(8/40)+(7/40)*(1-(8/40))",
+            "(33/40)*(8/40)+(7/40)*(32/40)",
+            "264/1600+224/1600",
+            "(264+224)/1600",
+            "488/1600",
+            "61/200"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "137/400",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_079_1",
+        "category": "type_ii",
+        "choices": [
+          "493/800",
+          "767/800",
+          "33/800",
+          "137/400"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_079",
+        "parameters": [
+          6,
+          11,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/20 and 11/40. What is the probability exactly one detects it?",
+        "question_sha256": "3a8a2ee1858f86a6a4950e32cdb747fd6bad2369f2025bdaafe54c356a8e76fd",
+        "reference_chain": [
+          "(1-(6/40))*(11/40)+(6/40)*(1-(11/40))",
+          "(34/40)*(11/40)+(6/40)*(29/40)",
+          "374/1600+174/1600",
+          "(374+174)/1600",
+          "548/1600",
+          "137/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(6/40))*(11/40)+(6/40)*(1-(11/40))",
+        "teacher_solution": {
+          "answer": "137/400",
+          "stages": [
+            "(1-(3/20))*(11/40)+(3/20)*(1-(11/40))",
+            "(17/20)*(11/40)+(3/20)*(29/40)",
+            "(17*11)/(20*40)+(3*29)/(20*40)",
+            "(187+87)/(20*40)",
+            "(187+87)/800",
+            "274/800",
+            "137/400"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "37/80",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_080_1",
+        "category": "type_ii",
+        "choices": [
+          "37/80",
+          "77/160",
+          "151/160",
+          "9/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_080",
+        "parameters": [
+          5,
+          18,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 9/20. What is the probability exactly one detects it?",
+        "question_sha256": "46b274a9dd3da4a9a7159ac165193262f510ccbc66cef64ef01f1e1eacab4075",
+        "reference_chain": [
+          "(1-(5/40))*(18/40)+(5/40)*(1-(18/40))",
+          "(35/40)*(18/40)+(5/40)*(22/40)",
+          "630/1600+110/1600",
+          "(630+110)/1600",
+          "740/1600",
+          "37/80"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(5/40))*(18/40)+(5/40)*(1-(18/40))",
+        "teacher_solution": {
+          "answer": "37/80",
+          "stages": [
+            "(1-(9/20))*(1/8)+(9/20)*(1-(1/8))",
+            "(11/20)*(1/8)+(9/20)*(7/8)",
+            "(11/20)*(5/40)+(9/20)*(35/40)",
+            "(11*5)/(20*40)+(9*35)/(20*40)",
+            "55/800+315/800",
+            "(55+315)/800",
+            "370/800",
+            "37/80"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "33/80",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_081_0",
+        "category": "type_ii",
+        "choices": [
+          "17/32",
+          "33/80",
+          "151/160",
+          "9/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_081",
+        "parameters": [
+          6,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/20 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "b33f1adbccb6e18a8a66617b51d78e9eca32651475034a0234562f89395eaa44",
+        "reference_chain": [
+          "(1-(6/40))*(15/40)+(6/40)*(1-(15/40))",
+          "(34/40)*(15/40)+(6/40)*(25/40)",
+          "510/1600+150/1600",
+          "(510+150)/1600",
+          "660/1600",
+          "33/80"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(6/40))*(15/40)+(6/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "33/80",
+          "stages": [
+            "(3/20) * (5/8) + (17/20) * (3/8)",
+            "(3/20) * (5/8) + (17/20) * (3/8)",
+            "(15/160) + (51/160)",
+            "(66/160)",
+            "(33/80)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "173/400",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_082_2",
+        "category": "type_ii",
+        "choices": [
+          "377/800",
+          "723/800",
+          "173/400",
+          "77/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_082",
+        "parameters": [
+          11,
+          14,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 11/40 and 7/20. What is the probability exactly one detects it?",
+        "question_sha256": "3d8f462619b23fb83579379c42aba91898f03a7a5edb1154524a9e0dc99ca20c",
+        "reference_chain": [
+          "(1-(11/40))*(14/40)+(11/40)*(1-(14/40))",
+          "(29/40)*(14/40)+(11/40)*(26/40)",
+          "406/1600+286/1600",
+          "(406+286)/1600",
+          "692/1600",
+          "173/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(11/40))*(14/40)+(11/40)*(1-(14/40))",
+        "teacher_solution": {
+          "answer": "173/400",
+          "stages": [
+            "(1-(11/40))*(14/40)+(11/40)*(1-(14/40))",
+            "(29/40)*(14/40)+(11/40)*(26/40)",
+            "406/1600+286/1600",
+            "(406+286)/1600",
+            "692/1600",
+            "173/400"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "63/160",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_083_0",
+        "category": "type_ii",
+        "choices": [
+          "37/64",
+          "311/320",
+          "9/320",
+          "63/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_083",
+        "parameters": [
+          3,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "e00c97e4abcd22e5a3e53e0f23ad87ed56e5f1911247e9e412dff86a6691a2eb",
+        "reference_chain": [
+          "(1-(3/40))*(15/40)+(3/40)*(1-(15/40))",
+          "(37/40)*(15/40)+(3/40)*(25/40)",
+          "555/1600+75/1600",
+          "(555+75)/1600",
+          "630/1600",
+          "63/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(3/40))*(15/40)+(3/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "63/160",
+          "stages": [
+            "(3/40) * (5/8) + (37/40) * (3/8)",
+            "(3/40) * (5/8) + (37/40) * (3/8)",
+            "(15/320) + (111/320)",
+            "(126/320)",
+            "(63/160)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "191/400",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_084_2",
+        "category": "type_ii",
+        "choices": [
+          "191/400",
+          "399/800",
+          "781/800",
+          "19/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_084",
+        "parameters": [
+          2,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/20 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "1aba389c8bd839862ae61e2da5749a8efcc71f8d331ca55e042bf41533c948f8",
+        "reference_chain": [
+          "(1-(2/40))*(19/40)+(2/40)*(1-(19/40))",
+          "(38/40)*(19/40)+(2/40)*(21/40)",
+          "722/1600+42/1600",
+          "(722+42)/1600",
+          "764/1600",
+          "191/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(2/40))*(19/40)+(2/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "191/400",
+          "stages": [
+            "(1-(2/40))*(19/40)+(2/40)*(1-(19/40))",
+            "(38/40)*(19/40)+(2/40)*(21/40)",
+            "722/1600+42/1600",
+            "(722+42)/1600",
+            "764/1600",
+            "191/400"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "67/160",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_085_0",
+        "category": "type_ii",
+        "choices": [
+          "33/64",
+          "67/160",
+          "299/320",
+          "21/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_085",
+        "parameters": [
+          7,
+          15,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 3/8. What is the probability exactly one detects it?",
+        "question_sha256": "28852a776b6bb28d3ecabed5faff4c701b5fff261d7827d9f73542d72e925e17",
+        "reference_chain": [
+          "(1-(7/40))*(15/40)+(7/40)*(1-(15/40))",
+          "(33/40)*(15/40)+(7/40)*(25/40)",
+          "495/1600+175/1600",
+          "(495+175)/1600",
+          "670/1600",
+          "67/160"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(7/40))*(15/40)+(7/40)*(1-(15/40))",
+        "teacher_solution": {
+          "answer": "67/160",
+          "stages": [
+            "(7/40) * (1 - 3/8) + (3/8) * (1 - 7/40)",
+            "(7/40) * (5/8) + (3/8) * (33/40)",
+            "(7 * 5) / (40 * 8) + (3 * 33) / (8 * 40)",
+            "(35/320) + (99/320)",
+            "(35 + 99) / 320",
+            "134/320"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "33/100",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_086_1",
+        "category": "type_ii",
+        "choices": [
+          "259/400",
+          "391/400",
+          "33/100",
+          "9/400"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_086",
+        "parameters": [
+          3,
+          12,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/40 and 3/10. What is the probability exactly one detects it?",
+        "question_sha256": "385e53fbb28f9d599518ef64b8c0cdd4297ecb9f7f94eddca9ff601bb3e86aa0",
+        "reference_chain": [
+          "(1-(3/40))*(12/40)+(3/40)*(1-(12/40))",
+          "(37/40)*(12/40)+(3/40)*(28/40)",
+          "444/1600+84/1600",
+          "(444+84)/1600",
+          "528/1600",
+          "33/100"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(3/40))*(12/40)+(3/40)*(1-(12/40))",
+        "teacher_solution": {
+          "answer": "33/100",
+          "stages": [
+            "(1-(3/40))*(3/10)+(3/40)*(1-(3/10))",
+            "(37/40)*(3/10)+(3/40)*(7/10)",
+            "111/400+21/400",
+            "(111+21)/400",
+            "132/400",
+            "33/100"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "53/160",
+        "answer_letter": "D",
+        "cache_tag": "audit_stages_v10_train_type_ii_087",
+        "category": "type_ii",
+        "choices": [
+          "203/320",
+          "309/320",
+          "11/320",
+          "53/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_087",
+        "original_cache_tag": "v10_train_type_ii_087_0",
+        "original_teacher_solution": {
+          "answer": "53/160",
+          "stages": [
+            "(1/8) * (29/40) + (7/40) * (11/8)",
+            "(1/8) * (29/40) + (77/320)",
+            "(29/320) + (77/320)",
+            "(106/320)",
+            "(53/160)"
+          ]
+        },
+        "parameters": [
+          5,
+          11,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 11/40. What is the probability exactly one detects it?",
+        "question_sha256": "16c5d5f5e2c07afeb41defbcb450a2639eeef8272d432d398b9874c8e4c90e74",
+        "reference_chain": [
+          "(1-(5/40))*(11/40)+(5/40)*(1-(11/40))",
+          "(35/40)*(11/40)+(5/40)*(29/40)",
+          "385/1600+145/1600",
+          "(385+145)/1600",
+          "530/1600",
+          "53/160"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(5/40))*(11/40)+(5/40)*(1-(11/40))",
+        "teacher_solution": {
+          "answer": "53/160",
+          "stages": [
+            "(1-(5/40))*(11/40)+(5/40)*(1-(11/40))",
+            "(35/40)*(11/40)+(5/40)*(29/40)",
+            "385/1600+145/1600",
+            "(385+145)/1600",
+            "530/1600",
+            "53/160"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "191/400",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_088_0",
+        "category": "type_ii",
+        "choices": [
+          "191/400",
+          "299/800",
+          "681/800",
+          "119/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_088",
+        "parameters": [
+          14,
+          17,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/20 and 17/40. What is the probability exactly one detects it?",
+        "question_sha256": "187abab17d26e0e091607bc6e7371fce4df85bf569debc31f767d4b021be39b7",
+        "reference_chain": [
+          "(1-(14/40))*(17/40)+(14/40)*(1-(17/40))",
+          "(26/40)*(17/40)+(14/40)*(23/40)",
+          "442/1600+322/1600",
+          "(442+322)/1600",
+          "764/1600",
+          "191/400"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(14/40))*(17/40)+(14/40)*(1-(17/40))",
+        "teacher_solution": {
+          "answer": "191/400",
+          "stages": [
+            "(7/20) * (1 - 17/40) + (17/40) * (1 - 7/20)",
+            "(7/20) * (23/40) + (17/40) * (13/20)",
+            "(7 * 23) / (20 * 40) + (17 * 13) / (40 * 20)",
+            "(161 + 221) / (20 * 40)",
+            "(382) / (20 * 40)",
+            "(382) / 800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "323/800",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_089_0",
+        "category": "type_ii",
+        "choices": [
+          "837/1600",
+          "323/800",
+          "1483/1600",
+          "117/1600"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_089",
+        "parameters": [
+          9,
+          13,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 9/40 and 13/40. What is the probability exactly one detects it?",
+        "question_sha256": "e958ef6d74ffdc6eb71d4466bdbc8cf9fc631cca9bf22d0c4c9fd9832edc7786",
+        "reference_chain": [
+          "(1-(9/40))*(13/40)+(9/40)*(1-(13/40))",
+          "(31/40)*(13/40)+(9/40)*(27/40)",
+          "403/1600+243/1600",
+          "(403+243)/1600",
+          "646/1600",
+          "323/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(9/40))*(13/40)+(9/40)*(1-(13/40))",
+        "teacher_solution": {
+          "answer": "323/800",
+          "stages": [
+            "(1 - 9/40) * 13/40 + (1 - 13/40) * 9/40",
+            "(31/40) * 13/40 + (27/40) * 9/40",
+            "403/1600 + 243/1600",
+            "646/1600",
+            "323/800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "93/200",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_090_1",
+        "category": "type_ii",
+        "choices": [
+          "81/200",
+          "87/100",
+          "93/200",
+          "13/100"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_090",
+        "parameters": [
+          13,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 13/40 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "451533307c1354de2f2fc42bfdb397447d970a64d21e4cfc2905fbec9d7aee04",
+        "reference_chain": [
+          "(1-(13/40))*(16/40)+(13/40)*(1-(16/40))",
+          "(27/40)*(16/40)+(13/40)*(24/40)",
+          "432/1600+312/1600",
+          "(432+312)/1600",
+          "744/1600",
+          "93/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(13/40))*(16/40)+(13/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "93/200",
+          "stages": [
+            "(1-(13/40))*(2/5)+(13/40)*(1-(2/5))",
+            "(27/40)*(2/5)+(13/40)*(3/5)",
+            "54/200+39/200",
+            "(54+39)/200",
+            "93/200"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "29/80",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_091_0",
+        "category": "type_ii",
+        "choices": [
+          "93/160",
+          "151/160",
+          "9/160",
+          "29/80"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_091",
+        "parameters": [
+          9,
+          10,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 9/40 and 1/4. What is the probability exactly one detects it?",
+        "question_sha256": "f507182dfb4ae613ce275f51d92784fc76707995ef933ece059e5edc6fe4923c",
+        "reference_chain": [
+          "(1-(9/40))*(10/40)+(9/40)*(1-(10/40))",
+          "(31/40)*(10/40)+(9/40)*(30/40)",
+          "310/1600+270/1600",
+          "(310+270)/1600",
+          "580/1600",
+          "29/80"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(9/40))*(10/40)+(9/40)*(1-(10/40))",
+        "teacher_solution": {
+          "answer": "29/80",
+          "stages": [
+            "(9/40) * (3/4) + (31/40) * (1/4)",
+            "(9/40) * (3/4) + (31/40) * (1/4)",
+            "(27/160) + (31/160)",
+            "(58/160)",
+            "(29/80)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "81/200",
+        "answer_letter": "A",
+        "cache_tag": "v10_train_type_ii_092_0",
+        "category": "type_ii",
+        "choices": [
+          "81/200",
+          "117/200",
+          "99/100",
+          "1/100"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_092",
+        "parameters": [
+          1,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "ce61bc1352f605bbada2c9550e965a9981367661b8b6805273e06de39c43f804",
+        "reference_chain": [
+          "(1-(1/40))*(16/40)+(1/40)*(1-(16/40))",
+          "(39/40)*(16/40)+(1/40)*(24/40)",
+          "624/1600+24/1600",
+          "(624+24)/1600",
+          "648/1600",
+          "81/200"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(1/40))*(16/40)+(1/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "81/200",
+          "stages": [
+            "(1 - 1/40) * (2/5) + (1/40) * (1 - 2/5)",
+            "(39/40) * (2/5) + (1/40) * (3/5)",
+            "(78/200) + (3/200)",
+            "(81/200)",
+            "(81/200)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "77/160",
+        "answer_letter": "B",
+        "cache_tag": "v10_train_type_ii_093_2",
+        "category": "type_ii",
+        "choices": [
+          "147/320",
+          "77/160",
+          "301/320",
+          "19/320"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_093",
+        "parameters": [
+          5,
+          19,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/8 and 19/40. What is the probability exactly one detects it?",
+        "question_sha256": "b85d795efcccc00a5f71d9adf66399641d2af3cff28c7e21e9f3372c7e7ad3eb",
+        "reference_chain": [
+          "(1-(5/40))*(19/40)+(5/40)*(1-(19/40))",
+          "(35/40)*(19/40)+(5/40)*(21/40)",
+          "665/1600+105/1600",
+          "(665+105)/1600",
+          "770/1600",
+          "77/160"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(5/40))*(19/40)+(5/40)*(1-(19/40))",
+        "teacher_solution": {
+          "answer": "77/160",
+          "stages": [
+            "(1-(5/40))*(19/40)+(5/40)*(1-(19/40))",
+            "(35/40)*(19/40)+(5/40)*(21/40)",
+            "665/1600+105/1600",
+            "(665+105)/1600",
+            "770/1600",
+            "77/160"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "41/100",
+        "answer_letter": "C",
+        "cache_tag": "v10_train_type_ii_094_0",
+        "category": "type_ii",
+        "choices": [
+          "203/400",
+          "367/400",
+          "41/100",
+          "33/400"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_094",
+        "parameters": [
+          11,
+          12,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 11/40 and 3/10. What is the probability exactly one detects it?",
+        "question_sha256": "f00b5c6e8d8d45fad9818cd7335c0f3ba574ee53b5c979c6fdd22c6d10cbee37",
+        "reference_chain": [
+          "(1-(11/40))*(12/40)+(11/40)*(1-(12/40))",
+          "(29/40)*(12/40)+(11/40)*(28/40)",
+          "348/1600+308/1600",
+          "(348+308)/1600",
+          "656/1600",
+          "41/100"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(11/40))*(12/40)+(11/40)*(1-(12/40))",
+        "teacher_solution": {
+          "answer": "41/100",
+          "stages": [
+            "(11/40) * (7/10) + (29/40) * (3/10)",
+            "(11/40) * (7/10) + (29/40) * (3/10)",
+            "(77/400) + (87/400)",
+            "(164/400)",
+            "(41/100)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "193/400",
+        "answer_letter": "D",
+        "cache_tag": "v10_train_type_ii_095_0",
+        "category": "type_ii",
+        "choices": [
+          "297/800",
+          "683/800",
+          "117/800",
+          "193/400"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_train_type_ii_095",
+        "parameters": [
+          13,
+          18,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 13/40 and 9/20. What is the probability exactly one detects it?",
+        "question_sha256": "642b3d648067f40dd15f5cd18d4d16aed7a58c7b57c8f076c024c7f604387d2e",
+        "reference_chain": [
+          "(1-(13/40))*(18/40)+(13/40)*(1-(18/40))",
+          "(27/40)*(18/40)+(13/40)*(22/40)",
+          "486/1600+286/1600",
+          "(486+286)/1600",
+          "772/1600",
+          "193/400"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(13/40))*(18/40)+(13/40)*(1-(18/40))",
+        "teacher_solution": {
+          "answer": "193/400",
+          "stages": [
+            "(13/40) * (11/20) + (27/40) * (9/20)",
+            "(13/40) * (11/20) + (27/40) * (9/20)",
+            "((13 * 11) + (27 * 9)) / (40 * 20)",
+            "((143 + 243) / (40 * 20))",
+            "(386 / 800)",
+            "(193 / 400)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      }
+    ],
+    "validation": [
+      {
+        "answer": "4757297/20480000",
+        "answer_letter": "A",
+        "cache_tag": "v10_validation_type_i_000_1",
+        "category": "type_i",
+        "choices": [
+          "4757297/20480000",
+          "17/40",
+          "23/40",
+          "4757297/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_000",
+        "parameters": [
+          5,
+          1,
+          17,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 17/40. What is the probability exactly 1 reject?",
+        "question_sha256": "02abddc01c9e90f793fb50d2685c633cb5daa0b2110f41fc245b3c300130abac",
+        "reference_chain": [
+          "5*(17/40)**1*(23/40)**4",
+          "5*(17/40)*(279841/2560000)",
+          "(5*17*279841)/(40*2560000)",
+          "23786485/102400000",
+          "4757297/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(17/40)**1*(23/40)**4",
+        "teacher_solution": {
+          "answer": "4757297/20480000",
+          "stages": [
+            "5*(17/40)**1*(23/40)**4",
+            "5*(17/40)*(279841/2560000)",
+            "(5*17*279841)/(40*2560000)",
+            "23786485/102400000",
+            "4757297/20480000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "35/32768",
+        "answer_letter": "B",
+        "cache_tag": "v10_validation_type_i_001_2",
+        "category": "type_i",
+        "choices": [
+          "1/8",
+          "35/32768",
+          "7/8",
+          "7/32768"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_001",
+        "parameters": [
+          5,
+          4,
+          5,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/8. What is the probability exactly 4 reject?",
+        "question_sha256": "16c8321592685ef8e580d0ea8ab03241301a18d24d6082f7f6fbac07e91d7c78",
+        "reference_chain": [
+          "5*(5/40)**4*(35/40)**1",
+          "5*(625/2560000)*(35/40)",
+          "(5*625*35)/(2560000*40)",
+          "109375/102400000",
+          "35/32768"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(5/40)**4*(35/40)**1",
+        "teacher_solution": {
+          "answer": "35/32768",
+          "stages": [
+            "5*(5/40)**4*(35/40)**1",
+            "5*(625/2560000)*(35/40)",
+            "(5*625*35)/(2560000*40)",
+            "109375/102400000",
+            "35/32768"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "2381643/12800000",
+        "answer_letter": "C",
+        "cache_tag": "v10_validation_type_i_002_2",
+        "category": "type_i",
+        "choices": [
+          "9/20",
+          "11/20",
+          "2381643/12800000",
+          "793881/64000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_002",
+        "parameters": [
+          6,
+          4,
+          18,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 9/20. What is the probability exactly 4 reject?",
+        "question_sha256": "86ffe59cdcf1eb7faf87fb5f98291f081cfe9f8383fc7ccfafefb83e1b9aba8e",
+        "reference_chain": [
+          "15*(18/40)**4*(22/40)**2",
+          "15*(104976/2560000)*(484/1600)",
+          "(15*104976*484)/(2560000*1600)",
+          "762125760/4096000000",
+          "2381643/12800000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "15*(18/40)**4*(22/40)**2",
+        "teacher_solution": {
+          "answer": "2381643/12800000",
+          "stages": [
+            "15*(18/40)**4*(22/40)**2",
+            "15*(104976/2560000)*(484/1600)",
+            "(15*104976*484)/(2560000*1600)",
+            "762125760/4096000000",
+            "2381643/12800000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "72171/640000",
+        "answer_letter": "D",
+        "cache_tag": "v10_validation_type_i_003_1",
+        "category": "type_i",
+        "choices": [
+          "9/20",
+          "11/20",
+          "72171/3200000",
+          "72171/640000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_003",
+        "parameters": [
+          5,
+          4,
+          18,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 9/20. What is the probability exactly 4 reject?",
+        "question_sha256": "896d5bf23cef31ee6fc06d326710d425c7e8a52b0cb626ddd39d39d339c6690e",
+        "reference_chain": [
+          "5*(18/40)**4*(22/40)**1",
+          "5*(104976/2560000)*(22/40)",
+          "(5*104976*22)/(2560000*40)",
+          "11547360/102400000",
+          "72171/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(18/40)**4*(22/40)**1",
+        "teacher_solution": {
+          "answer": "72171/640000",
+          "stages": [
+            "5*(9/20)**4*(11/20)**1",
+            "5*(6561/160000)*(11/20)",
+            "(5*6561*11)/(160000*20)",
+            "360855/3200000",
+            "72171/640000"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "373527/10240000",
+        "answer_letter": "A",
+        "cache_tag": "v10_validation_type_i_004_2",
+        "category": "type_i",
+        "choices": [
+          "373527/10240000",
+          "7/40",
+          "33/40",
+          "373527/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_004",
+        "parameters": [
+          5,
+          3,
+          7,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 7/40. What is the probability exactly 3 reject?",
+        "question_sha256": "b61a6be5defbf5dca62e66eec785e2204ff08409548eaf25ea51b3d2b9c5e5e5",
+        "reference_chain": [
+          "10*(7/40)**3*(33/40)**2",
+          "10*(343/64000)*(1089/1600)",
+          "(10*343*1089)/(64000*1600)",
+          "3735270/102400000",
+          "373527/10240000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "10*(7/40)**3*(33/40)**2",
+        "teacher_solution": {
+          "answer": "373527/10240000",
+          "stages": [
+            "10*(7/40)**3*(33/40)**2",
+            "10*(343/64000)*(1089/1600)",
+            "(10*343*1089)/(64000*1600)",
+            "3735270/102400000",
+            "373527/10240000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "39/20480000",
+        "answer_letter": "B",
+        "cache_tag": "v10_validation_type_i_005_2",
+        "category": "type_i",
+        "choices": [
+          "1/40",
+          "39/20480000",
+          "39/40",
+          "39/102400000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_005",
+        "parameters": [
+          5,
+          4,
+          1,
+          40
+        ],
+        "question": "A laboratory runs 5 independent tests when all null hypotheses are true. Each rejects with probability 1/40. What is the probability exactly 4 reject?",
+        "question_sha256": "a4d25b7727063fa96746342a8b49def750ad05720d43fb0861fc12acab31386a",
+        "reference_chain": [
+          "5*(1/40)**4*(39/40)**1",
+          "5*(1/2560000)*(39/40)",
+          "(5*1*39)/(2560000*40)",
+          "195/102400000",
+          "39/20480000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "5*(1/40)**4*(39/40)**1",
+        "teacher_solution": {
+          "answer": "39/20480000",
+          "stages": [
+            "5*(1/40)**4*(39/40)**1",
+            "5*(1/2560000)*(39/40)",
+            "(5*1*39)/(2560000*40)",
+            "195/102400000",
+            "39/20480000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "59319/640000",
+        "answer_letter": "C",
+        "cache_tag": "v10_validation_type_i_006_2",
+        "category": "type_i",
+        "choices": [
+          "1/40",
+          "39/40",
+          "59319/640000",
+          "59319/2560000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_006",
+        "parameters": [
+          4,
+          1,
+          1,
+          40
+        ],
+        "question": "A laboratory runs 4 independent tests when all null hypotheses are true. Each rejects with probability 1/40. What is the probability exactly 1 reject?",
+        "question_sha256": "7809646179648d4840c5dc21b49a00789c6eea027db98f61ceac26fb8c73a589",
+        "reference_chain": [
+          "4*(1/40)**1*(39/40)**3",
+          "4*(1/40)*(59319/64000)",
+          "(4*1*59319)/(40*64000)",
+          "237276/2560000",
+          "59319/640000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "4*(1/40)**1*(39/40)**3",
+        "teacher_solution": {
+          "answer": "59319/640000",
+          "stages": [
+            "4*(1/40)**1*(39/40)**3",
+            "4*(1/40)*(59319/64000)",
+            "(4*1*59319)/(40*64000)",
+            "237276/2560000",
+            "59319/640000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "5491557/2048000000",
+        "answer_letter": "D",
+        "cache_tag": "v10_validation_type_i_007_2",
+        "category": "type_i",
+        "choices": [
+          "9/40",
+          "31/40",
+          "1830519/4096000000",
+          "5491557/2048000000"
+        ],
+        "family": "type_i_fraction",
+        "id": "v10_validation_type_i_007",
+        "parameters": [
+          6,
+          5,
+          9,
+          40
+        ],
+        "question": "A laboratory runs 6 independent tests when all null hypotheses are true. Each rejects with probability 9/40. What is the probability exactly 5 reject?",
+        "question_sha256": "c702e64f6ff0c5977466e6b496e21daf8a23e4a0f34bf2708c6cae965dc77603",
+        "reference_chain": [
+          "6*(9/40)**5*(31/40)**1",
+          "6*(59049/102400000)*(31/40)",
+          "(6*59049*31)/(102400000*40)",
+          "10983114/4096000000",
+          "5491557/2048000000"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "6*(9/40)**5*(31/40)**1",
+        "teacher_solution": {
+          "answer": "5491557/2048000000",
+          "stages": [
+            "6*(9/40)**5*(31/40)**1",
+            "6*(59049/102400000)*(31/40)",
+            "(6*59049*31)/(102400000*40)",
+            "10983114/4096000000",
+            "5491557/2048000000"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "1/5",
+        "answer_letter": "A",
+        "cache_tag": "v10_validation_type_ii_008_1",
+        "category": "type_ii",
+        "choices": [
+          "1/5",
+          "63/80",
+          "79/80",
+          "1/80"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_008",
+        "parameters": [
+          4,
+          5,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/10 and 1/8. What is the probability exactly one detects it?",
+        "question_sha256": "8306221771ba0860ba733b8a48ca221faa97e60581d4baadd7f5a90515746f95",
+        "reference_chain": [
+          "(1-(4/40))*(5/40)+(4/40)*(1-(5/40))",
+          "(36/40)*(5/40)+(4/40)*(35/40)",
+          "180/1600+140/1600",
+          "(180+140)/1600",
+          "320/1600",
+          "1/5"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(4/40))*(5/40)+(4/40)*(1-(5/40))",
+        "teacher_solution": {
+          "answer": "1/5",
+          "stages": [
+            "(1-(1/8))*(1/10)+(1/8)*(1-(1/10))",
+            "(7/8)*(1/10)+(1/8)*(9/10)",
+            "(7/80)+(9/80)",
+            "(7+9)/80",
+            "16/80",
+            "1/5"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "87/200",
+        "answer_letter": "B",
+        "cache_tag": "v10_validation_type_ii_009_2",
+        "category": "type_ii",
+        "choices": [
+          "99/200",
+          "87/200",
+          "93/100",
+          "7/100"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_009",
+        "parameters": [
+          7,
+          16,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 2/5. What is the probability exactly one detects it?",
+        "question_sha256": "6f78d6f207ed62e3ecdc35c6b363f055dd646d1e8f56b607dcb1aec7d7a50012",
+        "reference_chain": [
+          "(1-(7/40))*(16/40)+(7/40)*(1-(16/40))",
+          "(33/40)*(16/40)+(7/40)*(24/40)",
+          "528/1600+168/1600",
+          "(528+168)/1600",
+          "696/1600",
+          "87/200"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(7/40))*(16/40)+(7/40)*(1-(16/40))",
+        "teacher_solution": {
+          "answer": "87/200",
+          "stages": [
+            "(1-(7/40))*(16/40)+(7/40)*(1-(16/40))",
+            "(33/40)*(16/40)+(7/40)*(24/40)",
+            "528/1600+168/1600",
+            "(528+168)/1600",
+            "696/1600",
+            "87/200"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "21/80",
+        "answer_letter": "C",
+        "cache_tag": "v10_validation_type_ii_010_0",
+        "category": "type_ii",
+        "choices": [
+          "117/160",
+          "159/160",
+          "21/80",
+          "1/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_010",
+        "parameters": [
+          1,
+          10,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 1/4. What is the probability exactly one detects it?",
+        "question_sha256": "15aa5b87a3fc2069a908996d15aa8ce728c633cbd4b907b82b3e681209d83f06",
+        "reference_chain": [
+          "(1-(1/40))*(10/40)+(1/40)*(1-(10/40))",
+          "(39/40)*(10/40)+(1/40)*(30/40)",
+          "390/1600+30/1600",
+          "(390+30)/1600",
+          "420/1600",
+          "21/80"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(1/40))*(10/40)+(1/40)*(1-(10/40))",
+        "teacher_solution": {
+          "answer": "21/80",
+          "stages": [
+            "(1/40) * (3/4) + (39/40) * (1/4)",
+            "(3/160) + (39/160)",
+            "(42/160)",
+            "(21/80)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "77/800",
+        "answer_letter": "D",
+        "cache_tag": "v10_validation_type_ii_011_0",
+        "category": "type_ii",
+        "choices": [
+          "1443/1600",
+          "1597/1600",
+          "3/1600",
+          "77/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_011",
+        "parameters": [
+          1,
+          3,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/40 and 3/40. What is the probability exactly one detects it?",
+        "question_sha256": "aeecc9a92f648c59b3edcadcd979d71675fc5f5ab082df6cc7bf41793c2d07f2",
+        "reference_chain": [
+          "(1-(1/40))*(3/40)+(1/40)*(1-(3/40))",
+          "(39/40)*(3/40)+(1/40)*(37/40)",
+          "117/1600+37/1600",
+          "(117+37)/1600",
+          "154/1600",
+          "77/800"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(1/40))*(3/40)+(1/40)*(1-(3/40))",
+        "teacher_solution": {
+          "answer": "77/800",
+          "stages": [
+            "(1/40) * (37/40) + (39/40) * (3/40)",
+            "(1/40) * (37/40) + (3/40) * (39/40)",
+            "(37/1600) + (117/1600)",
+            "(37 + 117) / 1600",
+            "154 / 1600",
+            "77 / 800"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "123/400",
+        "answer_letter": "A",
+        "cache_tag": "v10_validation_type_ii_012_1",
+        "category": "type_ii",
+        "choices": [
+          "123/400",
+          "527/800",
+          "773/800",
+          "27/800"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_012",
+        "parameters": [
+          6,
+          9,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 3/20 and 9/40. What is the probability exactly one detects it?",
+        "question_sha256": "2724fe226e4dd317ceee0bb5dcd7da1af08638217a15ec82ef196cb77bb39fae",
+        "reference_chain": [
+          "(1-(6/40))*(9/40)+(6/40)*(1-(9/40))",
+          "(34/40)*(9/40)+(6/40)*(31/40)",
+          "306/1600+186/1600",
+          "(306+186)/1600",
+          "492/1600",
+          "123/400"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(6/40))*(9/40)+(6/40)*(1-(9/40))",
+        "teacher_solution": {
+          "answer": "123/400",
+          "stages": [
+            "(1-(3/20))*(9/40)+(3/20)*(1-(9/40))",
+            "(17/20)*(9/40)+(3/20)*(31/40)",
+            "153/800+93/800",
+            "(153+93)/800",
+            "246/800",
+            "123/400"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "37/80",
+        "answer_letter": "B",
+        "cache_tag": "v10_validation_type_ii_013_1",
+        "category": "type_ii",
+        "choices": [
+          "69/160",
+          "37/80",
+          "143/160",
+          "17/160"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_013",
+        "parameters": [
+          10,
+          17,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/4 and 17/40. What is the probability exactly one detects it?",
+        "question_sha256": "7dccaa273682bc831cd68a502ab482805c4d558a97b363065f9fc80af8dd4f32",
+        "reference_chain": [
+          "(1-(10/40))*(17/40)+(10/40)*(1-(17/40))",
+          "(30/40)*(17/40)+(10/40)*(23/40)",
+          "510/1600+230/1600",
+          "(510+230)/1600",
+          "740/1600",
+          "37/80"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(10/40))*(17/40)+(10/40)*(1-(17/40))",
+        "teacher_solution": {
+          "answer": "37/80",
+          "stages": [
+            "(1-(10/40))*(17/40)+(10/40)*(1-(17/40))",
+            "(30/40)*(17/40)+(10/40)*(23/40)",
+            "510/1600+230/1600",
+            "(510+230)/1600",
+            "740/1600",
+            "37/80"
+          ]
+        },
+        "verbatim_reference_repair": false
+      },
+      {
+        "answer": "8/25",
+        "answer_letter": "C",
+        "cache_tag": "v10_validation_type_ii_014_2",
+        "category": "type_ii",
+        "choices": [
+          "261/400",
+          "389/400",
+          "8/25",
+          "11/400"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_014",
+        "parameters": [
+          4,
+          11,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 1/10 and 11/40. What is the probability exactly one detects it?",
+        "question_sha256": "44cb108f3ea2394c82559915a05aabccfb7830d615ce503d963772f8d79b0bae",
+        "reference_chain": [
+          "(1-(4/40))*(11/40)+(4/40)*(1-(11/40))",
+          "(36/40)*(11/40)+(4/40)*(29/40)",
+          "396/1600+116/1600",
+          "(396+116)/1600",
+          "512/1600",
+          "8/25"
+        ],
+        "reference_conditioned": true,
+        "reference_expression": "(1-(4/40))*(11/40)+(4/40)*(1-(11/40))",
+        "teacher_solution": {
+          "answer": "8/25",
+          "stages": [
+            "(1-(4/40))*(11/40)+(4/40)*(1-(11/40))",
+            "(36/40)*(11/40)+(4/40)*(29/40)",
+            "396/1600+116/1600",
+            "(396+116)/1600",
+            "512/1600",
+            "8/25"
+          ]
+        },
+        "verbatim_reference_repair": true
+      },
+      {
+        "answer": "37/100",
+        "answer_letter": "D",
+        "cache_tag": "v10_validation_type_ii_015_0",
+        "category": "type_ii",
+        "choices": [
+          "231/400",
+          "379/400",
+          "21/400",
+          "37/100"
+        ],
+        "family": "type_ii_fraction",
+        "id": "v10_validation_type_ii_015",
+        "parameters": [
+          7,
+          12,
+          40
+        ],
+        "question": "Two independent methods inspect an existing defect. Their miss probabilities are 7/40 and 3/10. What is the probability exactly one detects it?",
+        "question_sha256": "801abc8b65f14408c178387872d4672c221214badcd17a6c071bfafd1e616151",
+        "reference_chain": [
+          "(1-(7/40))*(12/40)+(7/40)*(1-(12/40))",
+          "(33/40)*(12/40)+(7/40)*(28/40)",
+          "396/1600+196/1600",
+          "(396+196)/1600",
+          "592/1600",
+          "37/100"
+        ],
+        "reference_conditioned": false,
+        "reference_expression": "(1-(7/40))*(12/40)+(7/40)*(1-(12/40))",
+        "teacher_solution": {
+          "answer": "37/100",
+          "stages": [
+            "(7/40) * (7/10) + (33/40) * (3/10)",
+            "(7/40) * (7/10) + (33/40) * (3/10)",
+            "(7/40) * (7/10) + (33/40) * (3/10)",
+            "(7/40) * (7/10) + (33/40) * (3/10)",
+            "(49/400) + (99/400)",
+            "(148/400)",
+            "(37/100)"
+          ]
+        },
+        "verbatim_reference_repair": false
+      }
+    ]
+  },
+  "records_sha256": "aced5b6372725288a331975deb4a6f780ca416a7e00ed1043814418fef816f79",
+  "usage": {
+    "attempted_calls": 221,
+    "reported_cost_usd": 0.02018775,
+    "responses": 221,
+    "responses_without_cost": 0
+  }
+}
