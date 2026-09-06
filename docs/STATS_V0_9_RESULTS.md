@@ -41,6 +41,8 @@
 - type_ii_038 把分母 20×20 算成 200，結果多一倍。
 - confidence_040 的區間 [36,54] 中心應為 45，卻使用 50。
 
+另以精確有理數重算每個 Calculation 行的第一個數值運算式，46/48 與標準答案相等，只有 confidence_040、confidence_041 例外。這不表示後續等號都正確：最終只有33/48答對，運算執行與參數提取應分別檢查。
+
 因此這次證據支持「公式選擇和短解教學有幫助」，剩下瓶頸更集中在分數運算、讀取區間參數及選項穩定性。不能說 3B 完全學不會；也不能把會背公式當成可靠計算。
 
 ## 計分與格式複查
@@ -55,7 +57,7 @@
 
 204 筆 Llama 解答的計算與七條共用規則均審查。139 筆曾由參考答案引導、6 筆數值尾段正規化、3 筆逐字參考格式修復；類別可能重疊。資料不是 204 筆完全獨立的老師解題。[教材審查](STATS_V0_9_DATA_AUDIT.md)及[原文與修正來源](STATS_V0_9_TEACHER_DATA.json)均保存。測試題未用作訓練教材，老師測試在學生訓練評測後才呼叫。
 
-學生為 fresh-base Meta Llama 3.2 3B Instruct，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。NF4、LoRA r16/alpha32/dropout0.05，七種投影層，seed226，lr5e-5、effective batch8、3epochs/135steps。每題一筆選項字母加一筆無選項短解，共360訓練、48驗證序列。最大768tokens，過長直接拒絕，不靜默截斷。
+學生為 fresh-base Meta Llama 3.2 3B Instruct，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。NF4、LoRA r16/alpha32/dropout0.05，七種投影層，seed226，lr5e-5、effective batch8、3epochs/135steps。每題一筆選項字母加一筆無選項短解，共360訓練、48驗證序列。最大768tokens，過長直接拒絕，不靜默截斷。完成後核對408筆訓練／驗證序列，實際最長246tokens。
 
 三輪驗證 loss 0.344420 → 0.223295 → 0.212916；選中 step135，訓練688.75秒，重新載入已保存 adapter 後測試。Kaggle T4×2 配額中僅一張 T4 可見並使用。套件與所有 log 在結果 JSON；torch2.10.0+cu128、transformers5.0.0、peft0.19.1、bitsandbytes0.50.2。
 
