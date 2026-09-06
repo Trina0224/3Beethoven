@@ -41,7 +41,9 @@ def main():
         assert hashlib.sha256(z.read('adapter/adapter_model.safetensors')).hexdigest()==summary['adapter_sha256']
     output['verification']=dict(responses=count,finite_tensors=len(weights),manifest_files=len(manifest),archive_bytes=archive.stat().st_size,archive_sha256=hashlib.sha256(archive.read_bytes()).hexdigest())
     print('V15 VERIFIED',json.dumps(output['verification']),flush=True)
-    print('V15 EXPORT',json.dumps(output),flush=True)
+    # Keep large prediction exports out of the historical notebook DOM.
+    (ROOT/'verified_results.json').write_text(json.dumps(output,indent=2)+'\n')
+    print('V15 RESULTS SAVED',str(ROOT/'verified_results.json'),flush=True)
 
 
 if __name__=='__main__':main()
