@@ -87,6 +87,12 @@ def build():
 def prompt(q):
     return q['question']+'\nGive a concise numerical solution in exactly three short lines.\nFormula: state the needed formula or operation.\nCalculation: substitute the numbers and calculate.\nAnswer: give only the final numerical value on this line.\nUse fractions when exact. No introduction or commentary.'
 
+def numeric_score(raw,expected):
+    from diagnose_stats_v0_7 import numeric
+    value=numeric(raw);gold=F(expected)
+    correct=value is not None and abs(float(value-gold))<=max(1e-10,abs(float(gold))*1e-4)
+    return str(value) if value is not None else 'INVALID',correct,value is None
+
 if __name__=='__main__':
     import json
     data=build();print(json.dumps(dict(counts={k:len(v) for k,v in data.items()},sha256=digest(data))))
