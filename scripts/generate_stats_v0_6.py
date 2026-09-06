@@ -111,4 +111,5 @@ def main():
     finally:
         save_json(ROOT/'api_usage.json',client.stats());package(ROOT)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Abstract-card generation was retired after content audit. Use prepare_stats_v0_6_pairs.py; original code and caches remain for provenance.')
