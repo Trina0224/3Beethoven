@@ -53,6 +53,26 @@
       "gpu_session": "off, confirmed after final save",
       "report": "docs/STATS_V0_10_REPORT.md",
       "raw_results": "docs/STATS_V0_10_RESULTS.json"
+    },
+    "v11": {
+      "status": "second epoch running; first epoch checkpoint saved",
+      "intermediate_saved_version": 20,
+      "script_version_id": 347641282,
+      "checkpoint_path": "3beethoven_stats_v0_11/checkpoints/checkpoint-115",
+      "saved_contents_verified_in_ui": [
+        "adapter_model.safetensors",
+        "adapter_config.json",
+        "optimizer.pt",
+        "rng_state.pth",
+        "scheduler.pt",
+        "scaler.pt",
+        "trainer_state.json",
+        "training_args.bin",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "chat_template.jinja"
+      ],
+      "final_selected_model": false
     }
   },
   "limitations": [
