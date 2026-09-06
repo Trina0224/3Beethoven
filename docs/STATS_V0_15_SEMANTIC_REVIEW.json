@@ -1,0 +1,1784 @@
+{
+  "policy": "Supplemental final-formulation review. Frozen scores and all raw answers remain unchanged. Unresolved X, missing variance terms and wrong final expressions earn no credit.",
+  "models": {
+    "baseline": {
+      "n": 64,
+      "automatic_correct": 8,
+      "reviewed_correct": 8,
+      "by_category": {
+        "at_least_one": 0,
+        "binomial": 8,
+        "exactly_one": 0,
+        "interval": 0,
+        "moment": 0,
+        "poisson_scaled": 0,
+        "poisson_time": 0,
+        "uniform_time": 0
+      },
+      "rows": [
+        {
+          "id": "v15_test_poisson_time_000",
+          "category": "poisson_time",
+          "raw": "Expression: 188*50/60**2",
+          "raw_sha256": "2ae907979cd547e8f598bc69630c4d3d38c1e86f091b2935774b2a2e4203f45f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_001",
+          "category": "poisson_time",
+          "raw": "(389 * 64) / 60 ** 2",
+          "raw_sha256": "ed0a56bc084e28bb6b69ab961e2fcb9e816b7fd3884d4600307f9b7337917f29",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_002",
+          "category": "poisson_time",
+          "raw": "(535/60)**15",
+          "raw_sha256": "3ab6e60f15b7e1d26238e0d2877cb2d80e4dc76c189166083507219bca88fb82",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_003",
+          "category": "poisson_time",
+          "raw": "from fractions import Fraction\nimport math\n\nrate = Fraction(38, 60) # 38 per minute\ncount = rate * 175 # 175 seconds\nvariance = count * (1 + rate * 175) # Set up the count variance",
+          "raw_sha256": "8011c45e9a4fe4de2e919eb1ecd455f66e54f542d440bb1a1c663ee1e861cbe5",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_004",
+          "category": "poisson_time",
+          "raw": "(108/60) * 51 * (51 + 51)",
+          "raw_sha256": "cc357e04f364a6701885305021a51d1b93ea6c117f125b7837723b588dddab5d",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_005",
+          "category": "poisson_time",
+          "raw": "from fractions import Fraction\nimport math\n\nrate = Fraction(64, 60) # 64 per minute\narrival_time = 128 # seconds\nlambda_ = rate * arrival_time # 128/0.5\nn = arrival_time # 128\nvariance = lambda_ * n # 128 * 64/60",
+          "raw_sha256": "f7b2c17201cf530105b193d7afc1caafda02d31e9b13844956d21d235de79213",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_006",
+          "category": "poisson_time",
+          "raw": "(557/60)**26**",
+          "raw_sha256": "882f6ee2ec5761afa16060fdbb514ed39d48a57648ed9e3cefd372b2c27ce42c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_007",
+          "category": "poisson_time",
+          "raw": "lambda = 22/60 * 1/128 * comb(128, 1)",
+          "raw_sha256": "ad5bf3da2df0d5dfce811342b4c890ada59d1493897619bbbe086b8270bbfc51",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_000",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3*X + 20",
+          "raw_sha256": "50ef899a65b9fd880d24d0d2c278aef72e6865f782188a8cc799f3b4ff9e0013",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_001",
+          "category": "poisson_scaled",
+          "raw": "Expression: 36*6 + 15**2 / 6",
+          "raw_sha256": "6bb150b2c540f4a2cd281ee1a264bea00e8edff3d2a809c511e3675ba9cb496c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_002",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3*X + 9",
+          "raw_sha256": "069753dd8ea1f00bbf19657bedcfa34e97b27ac7a31c530649cf1c8124d8cce4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_003",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3*X + 9",
+          "raw_sha256": "069753dd8ea1f00bbf19657bedcfa34e97b27ac7a31c530649cf1c8124d8cce4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_004",
+          "category": "poisson_scaled",
+          "raw": "Expression: 56*4 + 10^2 / 4",
+          "raw_sha256": "2700fcf468a10f1b9934baf50e495b337a542170fa2f470b5080061f2b4b9a99",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_005",
+          "category": "poisson_scaled",
+          "raw": "Expression: 58*5 + 18 / (5^2 * 58)",
+          "raw_sha256": "6cedcd7ad01227bd75f78bddae969e8712d749aab3dacabe73b4abf8cf20090f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_006",
+          "category": "poisson_scaled",
+          "raw": "Expression: 36 * (1 + 7**2 / 36)",
+          "raw_sha256": "9a6b6c26c28d5c1e3485dfe574015c898889cccc0f17cd010ab58d3a83e7c966",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_007",
+          "category": "poisson_scaled",
+          "raw": "Expression: 47*4 + 14**2 / 4",
+          "raw_sha256": "02116f3409256c5fd7ec08c1833e33beb078515e503296a4d9c009d7f6008925",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_000",
+          "category": "moment",
+          "raw": "Expression: (6*X + 8)**2",
+          "raw_sha256": "a7f9efd8c5fd7b22214807e81adeb1f51c8ec41393fc579e37758c62ff792904",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_001",
+          "category": "moment",
+          "raw": "Expression: (4*X + 9)**2",
+          "raw_sha256": "8a09cc7d3f422df43cb25e44eff511445f0bad242ebfc6370b5535874c77d651",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_002",
+          "category": "moment",
+          "raw": "Expression: (7*X + 6)**2",
+          "raw_sha256": "14517113e38b90fb1627ddd7a513aeb10bff8941291da8baece580a1a71c6783",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_003",
+          "category": "moment",
+          "raw": "Expression: (5*X + 4)**2",
+          "raw_sha256": "a8eae2a4b9d5b860528b0ee684e95d4146b00db09dadc1fa19c51c6e25a9e81e",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_004",
+          "category": "moment",
+          "raw": "Expression: (2*X + 16)**2",
+          "raw_sha256": "42fe42d339e6dcaec3d5676016248f450748598c188e6446831caa5d34113535",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_005",
+          "category": "moment",
+          "raw": "Expression: (7*X + 4)**2",
+          "raw_sha256": "d6016e5d6acacbb5bfee836e4d4bfb8cce2164fa4a2902e40fee95410fd8b54f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_006",
+          "category": "moment",
+          "raw": "Expression: (5*X + 14)**2",
+          "raw_sha256": "6025499bf6fc6802e6de2a65279880ef5fe2f07e10d98ed785067656d0b3b053",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_007",
+          "category": "moment",
+          "raw": "Expression: (5*X + 21)**2",
+          "raw_sha256": "cb5412123a36bf50aef588d0ee7fa7a680410aa054d79b454e9251e748f210a2",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_000",
+          "category": "uniform_time",
+          "raw": "(416/60 + 56/2) * (56/60 + 416/60 + 1)/2",
+          "raw_sha256": "97097b931008aa1db0d9014fb97e1f0aa2f0ca652fd8b25bd44397801df76dcb",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_001",
+          "category": "uniform_time",
+          "raw": "(181/60 + 66/2) * 181/2",
+          "raw_sha256": "56c94c9f75115fb5ea6abdb1e351c2b7f577d8a1691cf021710c3aba750be418",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_002",
+          "category": "uniform_time",
+          "raw": "(591/60 + 63/2) * 63/2",
+          "raw_sha256": "44e6c470c6c1b03f332c68eaa0adfa5a1856de6199876237ac03ea20b9d2c0b3",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_003",
+          "category": "uniform_time",
+          "raw": "(22/60)*(295/60) + (22/60)*(295/60) + (22/60)*(295/60)",
+          "raw_sha256": "d557b9afe25ffd48a76168cb69e5ba4475a752ec44d7d23bad80ee7145a5c2ac",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_004",
+          "category": "uniform_time",
+          "raw": "(48/60)*385/2 + (48/60)*(48/60)/2",
+          "raw_sha256": "4ffbb4d75ef623eeaa545356c9debddb5d9ff62519f4e09f4d44c787d5fa328c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_005",
+          "category": "uniform_time",
+          "raw": "(566/60 + 25/2) * 25/2",
+          "raw_sha256": "efcf5b4505c51c6f339a5f86ed10a8792992164c1fdd23e32be28d41b2ce8267",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_006",
+          "category": "uniform_time",
+          "raw": "(87/60 + 55/60) * 87/2",
+          "raw_sha256": "4c8bbf244699d23348fea762ee1cc235fd77f7e9d479c5a56188b0cc5d681843",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_007",
+          "category": "uniform_time",
+          "raw": "(360/60 + 20/2) * (20/2 + 20/2)",
+          "raw_sha256": "023a0b710a346efc737ffa998e8f2850ebf01aa1d257975a942260da830d9b29",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_000",
+          "category": "binomial",
+          "raw": "Comb(4,1)*(53/100)**1*(1-53/100)**(4-1)",
+          "raw_sha256": "2c3735a261167d1938b801fbceb5967935acb2f148e1ea5fb06adbfeae347b11",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_001",
+          "category": "binomial",
+          "raw": "Comb(6, 4) * (65/100)**4 * (35/100)**2",
+          "raw_sha256": "7554aec6cd2534b43bd30523923324bf96a1066f5d12c3069deaf7b019ce2f97",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_002",
+          "category": "binomial",
+          "raw": "Comb(7, 5) * (36/100)**5 * (64/100)**2",
+          "raw_sha256": "e45fd696a1609a3f54fe4575c04d6316ca3dc7a3508acb2a815aa3ac970bcc1b",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_003",
+          "category": "binomial",
+          "raw": "Comb(6, 4) * (12/100)**4 * (88/100)**2",
+          "raw_sha256": "1c785a6865bc584644ed1d21445950839d7bf1b7a1a141f30255c5c3b7aab896",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_004",
+          "category": "binomial",
+          "raw": "Comb(4, 2) * (68/100)^2 * (32/100)^2",
+          "raw_sha256": "63e342e48b36c19dc5b5d18321f37f3cfbedad3ab78de857c19a3258d106f7bc",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_005",
+          "category": "binomial",
+          "raw": "Comb(5,1)*(66/100)**1*(1-66/100)**(5-1)",
+          "raw_sha256": "80f2bec9f235f774b9d286cba2733f8c4b0320288d7f54dcb1fd00d534bd1644",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_006",
+          "category": "binomial",
+          "raw": "Comb(4, 2) * (23/100)**2 * (1 - 23/100)**2",
+          "raw_sha256": "460271552a7de8291ea398d49713faf3f4eae5ffbdddf1cd0d17322a3aea4393",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_007",
+          "category": "binomial",
+          "raw": "Comb(9, 5) * (51/100)**5 * (49/100)**4",
+          "raw_sha256": "81c61d3d37b1f775c48e823ab4f75bd92ffb2973822f54d6152608ebe690004d",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_000",
+          "category": "exactly_one",
+          "raw": "(1 - 54/100) * (1 - 46/100)",
+          "raw_sha256": "5f63b0200a339a6ac88e5eabbf120b045b5e4175ca914b0b5db214bded2ae17f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_001",
+          "category": "exactly_one",
+          "raw": "(68/100) * (19/100) + (1 - 68/100) * (1 - 19/100)",
+          "raw_sha256": "b53e9fbbc553d7427bb34739fce3d4fb25e431c015f69075705620f162052b1a",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_002",
+          "category": "exactly_one",
+          "raw": "(1 - 25/100) * (1 - 17/100)",
+          "raw_sha256": "169058823b966e5d060bde0e2b02d5736dd4468ed82aa9ca72cd577959211858",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_003",
+          "category": "exactly_one",
+          "raw": "(1 - 18/100) * (1 - 42/100)",
+          "raw_sha256": "41c797b7161216d16a7bffa610a80df08fce4e4a09cce7da8b44dcf64758dfaa",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_004",
+          "category": "exactly_one",
+          "raw": "(52/100) * (22/100) + (48/100) * (78/100)",
+          "raw_sha256": "841aed1284456b574b741b5d2e8cbfb2e6b397b6979dd621b2692982ef67ecc2",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_005",
+          "category": "exactly_one",
+          "raw": "(23/100)*(45/100) + (23/100)*(55/100) + (45/100)*(23/100) + (45/100)*(55/100)",
+          "raw_sha256": "706d7fa3bdcb27adc733fc7ea5ed366b9bce1f69101586995ab6c5d4443ef73c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_006",
+          "category": "exactly_one",
+          "raw": "(52/100) * (18/100) + (18/100) * (52/100)",
+          "raw_sha256": "c1dece9972a81b7c8c6f0cfd4752da424e21bb4c29bcc7db37e02f705dbcd2e8",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_007",
+          "category": "exactly_one",
+          "raw": "(1 - 66/100) * (1 - 39/100)",
+          "raw_sha256": "4d79557dc8231fde37311748909baf0a87319bc14485e9970eda640312cea9fa",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_000",
+          "category": "at_least_one",
+          "raw": "(1 - 28/100) * (1 - 31/100)",
+          "raw_sha256": "c51c594ae030e50cb9740738aed6fa33f36315f7b308cc8c741a94a8b96f5c37",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_001",
+          "category": "at_least_one",
+          "raw": "(1 - 46/100) * (1 - 47/100)",
+          "raw_sha256": "1058245612f8836c0ef9c983306eb663c7c49d62ee633141ce5b1de12c333c34",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_002",
+          "category": "at_least_one",
+          "raw": "(1 - 32/100) * (1 - 22/100)",
+          "raw_sha256": "5bd746387fc921edd5a1e54e54177e545966e535e9eea0b1971cfb68b20a4b62",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_003",
+          "category": "at_least_one",
+          "raw": "(1 - 12/100) * (1 - 32/100)",
+          "raw_sha256": "f3d23955c7aec271b3125b870f429dfeba9faf93159727207eea0c83af29c2da",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_004",
+          "category": "at_least_one",
+          "raw": "(1 - 22/100) * (1 - 16/100)",
+          "raw_sha256": "de9b8738730dd12b79062a12826fbca3c38ea36bc13456e0e1ec13a047f93db9",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_005",
+          "category": "at_least_one",
+          "raw": "(1 - 20/100) * (1 - 35/100)",
+          "raw_sha256": "9d8e6ced954a555c98158d59d0d89a9d0c5cb1754b5feab52d795df4212ec269",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_006",
+          "category": "at_least_one",
+          "raw": "(1 - 61/100) * (1 - 27/100)",
+          "raw_sha256": "a506228846859da63cb1e1768a634fc499cedc5d524235765d5b3a6f5d6ba5d4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_007",
+          "category": "at_least_one",
+          "raw": "(1 - 20/100) * (1 - 21/100)",
+          "raw_sha256": "ea027f2a431f93c2b414ab5a0712b1ad94b2e1eae8c04548820d90357947160c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_000",
+          "category": "interval",
+          "raw": "570*36",
+          "raw_sha256": "7acd228c3275a37a89d6b93f991e65e18835267b7b2749991f50d86b970b7542",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_001",
+          "category": "interval",
+          "raw": "Expression: 474*36",
+          "raw_sha256": "49c9c943968e690ffcd9e24154eb107c35a74e60fc07bbe3f61c16da4870718c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_002",
+          "category": "interval",
+          "raw": "415*36",
+          "raw_sha256": "924ad0ac31d993888909f0ab920b424edee2a1b389969bc8ae1586da1419cd4a",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_003",
+          "category": "interval",
+          "raw": "(391 * 9 + 30) / 9",
+          "raw_sha256": "1221884f80787e3dc68a070dbd4a463d33f699f9bf49c694f5bfc0f6a6a1d21f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_004",
+          "category": "interval",
+          "raw": "40 + 4 * sqrt(583 - 40)",
+          "raw_sha256": "93bdd56fb314067fe5f945f8e3f72e2f5ddc941667f250b7289bb2a1fafd4277",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_005",
+          "category": "interval",
+          "raw": "418*4/3",
+          "raw_sha256": "03607bf1b7fa8d7f37a93102eef0a71781d19336d6dc263aec271f164d3a8572",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_006",
+          "category": "interval",
+          "raw": "(149*25 + 149)/2",
+          "raw_sha256": "d5119420e8fecefc9bc2025f786933d43bea2cb674ec6de41e9e26917de14cb8",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_007",
+          "category": "interval",
+          "raw": "592*9",
+          "raw_sha256": "c1d6dd49511e77c677614c142b6d742c5ec9e274894d3dfe525484fb55c66d34",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        }
+      ]
+    },
+    "v14": {
+      "n": 64,
+      "automatic_correct": 30,
+      "reviewed_correct": 30,
+      "by_category": {
+        "at_least_one": 8,
+        "binomial": 7,
+        "exactly_one": 7,
+        "interval": 8,
+        "moment": 0,
+        "poisson_scaled": 0,
+        "poisson_time": 0,
+        "uniform_time": 0
+      },
+      "rows": [
+        {
+          "id": "v15_test_poisson_time_000",
+          "category": "poisson_time",
+          "raw": "Expression: 188 / 60 ** 2 * 50",
+          "raw_sha256": "68c7bd1acd9f40b86efa117abb701b5c3d7f73876a06f11513c01bf293bc293c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_001",
+          "category": "poisson_time",
+          "raw": "Expression: 389 / 60 ** 2 * 64",
+          "raw_sha256": "79d24da93f35d2409a9998eeda685f714a2aa1e3d1415eaa6d150394e88ab6c5",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_002",
+          "category": "poisson_time",
+          "raw": "Expression: 535 / 60 ** 2 * 15",
+          "raw_sha256": "ca4e50f21a15be75d71a8b5167ba1b2d79b6e6803ff67f362bcd7577f732c83f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_003",
+          "category": "poisson_time",
+          "raw": "Expression: 175 / 60 ** 2 * 38",
+          "raw_sha256": "02531064eafd4a580412f44ee49d81896499bb94918338e81df5486d112af034",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_004",
+          "category": "poisson_time",
+          "raw": "Expression: 108 * (51 / 60) ** 2",
+          "raw_sha256": "e4e99dae81f797fc5105e8a79179336d596985624d344ae2cae721b881ac7cb6",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_005",
+          "category": "poisson_time",
+          "raw": "Expression: 64 / 128 ** 2",
+          "raw_sha256": "6afd31eb785bb1b77b31184ad2e13ce421c8f1c5bf2739ecc6e8a9270be0b9d6",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_006",
+          "category": "poisson_time",
+          "raw": "Expression: 26 * 557 / 60 ** 2",
+          "raw_sha256": "1a86d763b410782f13045c2a39ed6b73bfb1328c532c548cde985d7f4e7c44a0",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_007",
+          "category": "poisson_time",
+          "raw": "Expression: 22 / 128 ** 2",
+          "raw_sha256": "bf1d158edefa1887c5ed91c62222c76bc33d70b3cbd2f35bc7cc60675d29f59f",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_000",
+          "category": "poisson_scaled",
+          "raw": "Expression: 62 / 3 + 20",
+          "raw_sha256": "0e22815ecc37f85d1b1484bea615f6027c2ebf5ca0b54d8928c4da19ff722d7a",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_001",
+          "category": "poisson_scaled",
+          "raw": "Expression: 36 / 6 ** 2 + 15",
+          "raw_sha256": "ff7699f1914abc91361ba461c83801a9e1637cc5ac4487f366de5bbfe2d38d92",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_002",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3 * 55 / 3 + 9",
+          "raw_sha256": "66a7aeb64bc68a4e89f7d0ad67db4e387c47b37bb0ec07a30daaaf4fef5551d3",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_003",
+          "category": "poisson_scaled",
+          "raw": "Expression: 15 * 3 / 3 + 9",
+          "raw_sha256": "63b807b0797419e516631441cdd2a482cc5660aa4c822b97cca4213014366319",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_004",
+          "category": "poisson_scaled",
+          "raw": "Expression: 56 / 4 + 10",
+          "raw_sha256": "5face843e80b745e16d62cdcd02ed8012d75a461544e8b46a4e4fced611c0548",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_005",
+          "category": "poisson_scaled",
+          "raw": "Expression: 58 / 5 + 18 / 5",
+          "raw_sha256": "d5962433b844dfbc070f4f60b8a348e89d65e060189081af29805ad7f313f511",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_006",
+          "category": "poisson_scaled",
+          "raw": "Expression: 36 * 7 / (7 - 1) + 6",
+          "raw_sha256": "f140a1206031cd1102659f70f2eab69903b77ece108aaf55aa5c9ad9dd637e1e",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_007",
+          "category": "poisson_scaled",
+          "raw": "Expression: 47 * 4 + 14",
+          "raw_sha256": "b375c4643282b90a28f2efdb395de6c122a76accb81a9f99b1cc99537d26b339",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_000",
+          "category": "moment",
+          "raw": "Expression: (6 * (66 + 8) / 2) ** 2",
+          "raw_sha256": "531a0bdc693888eb39651bc4a860cb938ef9320836405a065ba35f7b1589f1cb",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_001",
+          "category": "moment",
+          "raw": "Expression: (4 * (33 + 199 / 2) + 9) ** 2 / 2",
+          "raw_sha256": "42d366d192bdf0268cd944005628c16760e9ace6aba17784b52c90296fa43e90",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_002",
+          "category": "moment",
+          "raw": "Expression: (7 * (64 + 443 / 1) + 6) ** 2 / 1",
+          "raw_sha256": "d376d22b87928f1fff696231d84ff309ccdfe396bcffa27362a3f867406540db",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_003",
+          "category": "moment",
+          "raw": "Expression: (5 * (33 + 100 / 2) + 4) ** 2 / 2",
+          "raw_sha256": "ee43a0df43ec56f55a66606dbb3a326d368cba670c614c79b977bca018acef23",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_004",
+          "category": "moment",
+          "raw": "Expression: (2 * X + 16) ** 2 / 3",
+          "raw_sha256": "5d6cda136bc9b0010fbd101fc9cb7de27cca7f9145a5b0a3555549d65f9cba91",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_005",
+          "category": "moment",
+          "raw": "Expression: (7 * (16 + 452 / 1) + 4) ** 2 / 1",
+          "raw_sha256": "8b2afb3b9966e5504c8f64e60da22dd815d593766fa15695e96c30c3a6745173",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_006",
+          "category": "moment",
+          "raw": "Expression: (5 * (60 + 315 / (1 ** 2)) / 1 + 14) ** 2",
+          "raw_sha256": "409602debd688020c3352f849410850b9d385711cd1f9e89efc55634420ac0b4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_007",
+          "category": "moment",
+          "raw": "Expression: (5 * (27 + 21) / 2) ** 2",
+          "raw_sha256": "94dff23efbffb78023d8b17e4b7f5828b51aa6afebe79b4a1ff15a659b20485b",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_000",
+          "category": "uniform_time",
+          "raw": "Expression: (416 + 56) / 2",
+          "raw_sha256": "7df9f43962bceb402bb95ea1d525624c77a197e823ed7effa96504ed4a0e1226",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_001",
+          "category": "uniform_time",
+          "raw": "Expression: (181 + 66) / 2",
+          "raw_sha256": "e691043c4d11db1d55f1996e023bd311cc5134b0f284d05a7d654f3cb7af9fe9",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_002",
+          "category": "uniform_time",
+          "raw": "Expression: (591 / 60 + 1) / 2",
+          "raw_sha256": "6717933b7ccfbf369c24236023b7fd8349450ce8ed3ed36b7ff23485122cf040",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_003",
+          "category": "uniform_time",
+          "raw": "Expression: (22 * 295 / 2) + (22 * (295 - 22) / 2)",
+          "raw_sha256": "4bd8fac51b4b15a594242b16c3513475217e9fbc686ebcdb2f72000b05940fa6",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_004",
+          "category": "uniform_time",
+          "raw": "Expression: (48 * 385 / 2) + (48 * (385 - 385) / 2)",
+          "raw_sha256": "a70515f2b574204e3ed43d82a66b22f4dec4ab809047423f53497217e87d749c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_005",
+          "category": "uniform_time",
+          "raw": "Expression: (25 * 566 + 25 * (566 - 566) / 2) / 2",
+          "raw_sha256": "9c92c577743c6493b58e9dda2afadcb624828af55b63a3671c02068c2e0f50de",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_006",
+          "category": "uniform_time",
+          "raw": "Expression: (87 + 55) / 2",
+          "raw_sha256": "2e063d5df3bfdf3fc2cccefd89f07aa28e4fc0c5a060a27652489729971bbde2",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_007",
+          "category": "uniform_time",
+          "raw": "Expression: (360 + 20) / 2 + (360 - 0) / 2",
+          "raw_sha256": "043695d6ac8066d8511fa9d78858210b1240510d160c183a57f336d82d6ecfca",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_000",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 1) * (53/100) ** 1 * (1 - 53/100) ** (4 - 1)",
+          "raw_sha256": "eaaa490f13daad1693907dcf355435617e6450e0fd99e68f46f45ea8b169bf04",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_001",
+          "category": "binomial",
+          "raw": "Expression: comb(6, 4) * (65 / 100) ** 4 * (1 - 65 / 100) ** (6 - 4)",
+          "raw_sha256": "42530b51aa2ff662d361a339e3123ba1c009a6ac4c4cc7f6d29e502f53556c20",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_002",
+          "category": "binomial",
+          "raw": "Expression: comb(7, 5) * (36/100) ** 5 * (1 - 36/100) ** (7 - 5)",
+          "raw_sha256": "e45f47a732c7502cbe0c44ddc9afd68f7f42521f26433216bfc693ee87cce564",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_003",
+          "category": "binomial",
+          "raw": "Expression: comb(6, 4) * (12/100 ** 4) * ((1 - 12/100) ** (6 - 4))",
+          "raw_sha256": "b2db33c7ea6e479061ac4c8a29ee04a26a4a41f5d95c18d6d2cc6b6702757e66",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_004",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 2) * (68/100) ** 2 * (1 - 68/100) ** (4 - 2)",
+          "raw_sha256": "d1f8dd5502d8a37f3550da456ebab02e1959c70639222963a91531082fe9269d",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_005",
+          "category": "binomial",
+          "raw": "Expression: comb(5, 1) * (66/100) ** 1 * (1 - 66/100) ** (5 - 1)",
+          "raw_sha256": "725ca3fd2b4ea3428e2b2f701fdb64036849109af0fe29b9dff206d8e27f7b65",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_006",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 2) * (23/100) ** 2 * (1 - 23/100) ** (4 - 2)",
+          "raw_sha256": "c07e94dd15582a1b8f29f5d5466ea26b9e7da5ad20cafcba37fa6afa372c32a7",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_007",
+          "category": "binomial",
+          "raw": "Expression: comb(9, 5) * (51/100) ** 5 * (1 - 51/100) ** (9 - 5)",
+          "raw_sha256": "ea78b1ca804408cf59cb12e7ad835c238e0504479c84e4e83c94b356142741c7",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_000",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 54/100) * (46/100) + 54/100 * (1 - 46/100)",
+          "raw_sha256": "da3af0d60812452d169095e9044eb18b7beaa580a6e1bf762d07801fcbc403e3",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_001",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 68 / 100) * (19 / 100) + (68 / 100) * (1 - 19 / 100)",
+          "raw_sha256": "448a2e0d43ea235761a8f144b0cc3a67de91f000b24b358a7764b26c8f7cb1f3",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_002",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 25 / 100) * (17 / 100) + (25 / 100) * (1 - 17 / 100)",
+          "raw_sha256": "7760bc123f00ad3eaab3dcb0faacb159ab157ca6b79f8b663b417cd375db2500",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_003",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 18 / 100) * (42 / 100) + (18 / 100) * (1 - 42 / 100)",
+          "raw_sha256": "cade816d7e7f5a3b7f0df2139fb4e4cf64ec2951c513ac474301c5767c0cba06",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_004",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 52/100) * (22/100) + 52/100 * (1 - 22/100)",
+          "raw_sha256": "ba9b6a344ce27ff7297ac308bea5bd7142b4c5b6e169025b2349e263b30f5b07",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_005",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 23 / 100) * (45 / 100) + (23 / 100) * (1 - 45 / 100)",
+          "raw_sha256": "9d74e1cd5e13425acfb823e7053f40d808b2273b394894b54225f435ecf47fb8",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_006",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 52/100) * (18/100) + (52/100) * (1 - 18/100)",
+          "raw_sha256": "76bb9f0fbf2e98a3b9ac983c579b85f1464c2f55b904f68d223544c4644cc79c",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_007",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 66 / 100) * (39 / 100)",
+          "raw_sha256": "5fd335fc2a57bf9e19eba6fa40ec3827aceed45da101fc06664c0e55ce0a3699",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_000",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (28/100) * (31/100)",
+          "raw_sha256": "62ff81ca3bb86c2b141b4b7b0196d57597394832b449c76ec70a53b2053e71f5",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_001",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (46/100) * (47/100)",
+          "raw_sha256": "2d0fe218092b371e2eeabdcb4d846a3b5d1f6c4ffd54f870f5003a9ea3f0a4a2",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_002",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (32/100) * (22/100)",
+          "raw_sha256": "ef5e952792b065422d28e42791e249ddae834e7e3f52ebeb3b3486ec821326c6",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_003",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (12/100) * (32/100)",
+          "raw_sha256": "463f84be1f48e25c3d910184d9db55fa6d77fcefe53db614929b3e7daef232d7",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_004",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (22/100) * (16/100)",
+          "raw_sha256": "1832511369393e6e5364efdedee00baed7cd463e1db900f5faaed72d68b227f6",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_005",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (20/100) * (35/100)",
+          "raw_sha256": "fac12f5d1b3f1972b1c2c76baa58921169779909f591db52cc22e8744e29f2f1",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_006",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (61/100) * (27/100)",
+          "raw_sha256": "bd82ef7fb0437b8c0d374ae474c8482dbc3aafa96c4e1b30875954814810f490",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_007",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (20/100) * (21/100)",
+          "raw_sha256": "c4a88a32296f0ef55115c6df2de71bc06197a508fd8e90e73bb4f74fe9d58090",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_000",
+          "category": "interval",
+          "raw": "Expression: (570 + 45) / 2 + (570 - 45) / 2 / 6",
+          "raw_sha256": "8f7f2b671af3998cbedaaac0d08f2bb2f268e4bb75120cf56afe035b4078014a",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_001",
+          "category": "interval",
+          "raw": "Expression: (33 + 474) / 2 + (474 - 33) / 2 / 6",
+          "raw_sha256": "d971513feadbb042b9479aefe873969aacf2a5a5dff7de447863c6bf1ab243d4",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_002",
+          "category": "interval",
+          "raw": "Expression: (415 + 54) / 2 + (415 - 54) / 2 / 6",
+          "raw_sha256": "5f92f4af953ea137295884d7d1c8477e9cc45d2cfdfaa085bccbc46bcace0d4a",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_003",
+          "category": "interval",
+          "raw": "Expression: (391 + 30) / 2 + (391 - 30) / 2 / 3",
+          "raw_sha256": "12626889a86b5366614d25f0f4a146828f23c2a9a7adefcd5b674fca1825829a",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_004",
+          "category": "interval",
+          "raw": "Expression: (583 + 40) / 2 + (583 - 40) / 2 / 2",
+          "raw_sha256": "0107edc8108798e0c2addb8378c197a6ab3962c0422ace6503f102d17feb4380",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_005",
+          "category": "interval",
+          "raw": "Expression: (418 + 34) / 2 + (418 - 34) / 2 / 2",
+          "raw_sha256": "ada9d3490ef1d2e82b4701403274bf3edbf03b7928faab8c5aa3a0e4da5f3934",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_006",
+          "category": "interval",
+          "raw": "Expression: (149 + 52) / 2 + (149 - 52) / 2 / 5",
+          "raw_sha256": "98f5f11674348cf57c1a420e2abae85ed5c062b1bdadf1b6bf1b8840a6f49e54",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_007",
+          "category": "interval",
+          "raw": "Expression: (592 + 23) / 2 + (592 - 23) / 2 / 3",
+          "raw_sha256": "6b49a85b6c9d57d0ca6129e905be6affcc1f4f68ffc53eb086b595687ea816ea",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        }
+      ]
+    },
+    "v15": {
+      "n": 64,
+      "automatic_correct": 42,
+      "reviewed_correct": 44,
+      "by_category": {
+        "at_least_one": 8,
+        "binomial": 8,
+        "exactly_one": 8,
+        "interval": 8,
+        "moment": 0,
+        "poisson_scaled": 0,
+        "poisson_time": 6,
+        "uniform_time": 6
+      },
+      "rows": [
+        {
+          "id": "v15_test_poisson_time_000",
+          "category": "poisson_time",
+          "raw": "Expression: 188 * (50 / 60)",
+          "raw_sha256": "ecd98abf432a20e20ad39e58bef7b9ca5358960013eba9da253eaf1594ee1c61",
+          "automatic_correct": false,
+          "reviewed_correct": true,
+          "additional_credit_reason": "188*(50/60)=50*(188/60) by multiplication/division associativity. Both the event rate and seconds-to-minutes conversion are correctly included."
+        },
+        {
+          "id": "v15_test_poisson_time_001",
+          "category": "poisson_time",
+          "raw": "Expression: 64 * (389 / 60)",
+          "raw_sha256": "ac59f90e24e27486b92eb102bdbc80ce716701855715a59f216deac893d68842",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_002",
+          "category": "poisson_time",
+          "raw": "Expression: 15 * (535 / 60)",
+          "raw_sha256": "351eda060f65998b4575cd85bea7f183af712ad561f7453263751888e6d6669c",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_003",
+          "category": "poisson_time",
+          "raw": "Expression: 38 * (175 / 60)",
+          "raw_sha256": "23b5765119971462f253e7d58f7b414f464fdc0d74d79669b702c545226b55bf",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_004",
+          "category": "poisson_time",
+          "raw": "Expression: 51 * (108 / 60)",
+          "raw_sha256": "e3282e4934bdddcfa39c4788c50d5d7ad8eee159dbf720ba66ea5964e44da114",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_005",
+          "category": "poisson_time",
+          "raw": "Expression: 64 / 2 ** 2",
+          "raw_sha256": "c592a80bebec0402a74ec6ea98f7cf7be3cd1c285e24b217b038cf51379a7d70",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_006",
+          "category": "poisson_time",
+          "raw": "Expression: 26 * (557 / 60)",
+          "raw_sha256": "838d18a30f8bc3d1ecf481c6c61821208b1eae9b86888cbab572e62312ae486e",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_time_007",
+          "category": "poisson_time",
+          "raw": "Expression: 22 / 2 ** 2",
+          "raw_sha256": "7117ba4053c9e3cedfdd210f806b2bf0c3a6e749dedf3d67a74f2c2d8d1fb02d",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_000",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3 * 62",
+          "raw_sha256": "62694dd835a88449161d6a5c3b943204a1c9c7073cd3b476ccd5005e51194ca4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_001",
+          "category": "poisson_scaled",
+          "raw": "Expression: 6 ** 2 * 36 / 6",
+          "raw_sha256": "475e5c261f332bfb0bb07849fc2f4c71edb51c5f2417f86c92c2385aef057463",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_002",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3 * 55",
+          "raw_sha256": "b47b8af6ead58c0d05b006bd66123cfb0f8930f86c82ba7d83289cdebc8f4f3e",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_003",
+          "category": "poisson_scaled",
+          "raw": "Expression: 3 * 15",
+          "raw_sha256": "49bde90185f980ec9a7da0745ec91c17615815c213005130da42a0ac51a8b73c",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_004",
+          "category": "poisson_scaled",
+          "raw": "Expression: 4 * 56",
+          "raw_sha256": "d163635e207c0921fbd05f48f46e1bbc05aeb7a7ba11f784ed1945e1401b523a",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_005",
+          "category": "poisson_scaled",
+          "raw": "Expression: 18 + 5 * 58",
+          "raw_sha256": "29b81a2cbefff7efa117a4666e062ed16eea48fc99cb2a0325c0915b1fd82fdc",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_006",
+          "category": "poisson_scaled",
+          "raw": "Expression: 7 ** 2 * 36 / 7",
+          "raw_sha256": "4e0a14f4bd1d2e7336289f3e96fef16501ef7b6aae0eddeab33016a752158ca2",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_poisson_scaled_007",
+          "category": "poisson_scaled",
+          "raw": "Expression: 4 * 47",
+          "raw_sha256": "b2e19a38a712cca0a89269d24acfd171f994e6ef9d110ca8fe715a2f3921cbe8",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_000",
+          "category": "moment",
+          "raw": "Expression: (6 * (66 + 8 / 2) + 8) ** 2 / 2",
+          "raw_sha256": "f13c4fda92833033145f2260a69d0c71c0f9e7cb1d5665e6d7b00ce47e2d67e5",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_001",
+          "category": "moment",
+          "raw": "Expression: (4 * 33 + 9) ** 2 / 4",
+          "raw_sha256": "66d0c2a0af9019088f417281b294a3dd4f178d9becdc48021c5b101eeed5d4d4",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_002",
+          "category": "moment",
+          "raw": "Expression: (7 * (64 + 6) / 2) ** 2",
+          "raw_sha256": "91ddf481e012d7893508534da163d08275b9b8a286dfcb8e6ca00350830b1dc8",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_003",
+          "category": "moment",
+          "raw": "Expression: (5 * 33 + 4) ** 2",
+          "raw_sha256": "4168350cb63d20bfe847bc4a291d9a325482aa50d4f11726f26b1297894364e8",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_004",
+          "category": "moment",
+          "raw": "Expression: (2 * 64 + 16) ** 2 / 3",
+          "raw_sha256": "5787d637fe847ceb1fd19471bbcf2c0b3218b2fead704820a38fd8bce30ddc0a",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_005",
+          "category": "moment",
+          "raw": "Expression: (7 * (16 + 452 / 1) + 4) ** 2 / 1",
+          "raw_sha256": "8b2afb3b9966e5504c8f64e60da22dd815d593766fa15695e96c30c3a6745173",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_006",
+          "category": "moment",
+          "raw": "Expression: (5 * (60 + 14) / 2) ** 2",
+          "raw_sha256": "686dadada1c3f95d06d61fe76fa48b514f5086362a0529c6e0dec483ba2188f9",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_moment_007",
+          "category": "moment",
+          "raw": "Expression: (5 * 27 + 21) ** 2",
+          "raw_sha256": "f6746b4b88da4d7f6c255a54a959576440554e5fd6689ba30d04ffe79e668696",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_000",
+          "category": "uniform_time",
+          "raw": "Expression: (416 / 60 + 56) / 2",
+          "raw_sha256": "ce051a61cd167d538ca9184aee09c12ad60ce5b9508683f4959c96972038ed11",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_001",
+          "category": "uniform_time",
+          "raw": "Expression: (181 / 60 + 66) / 2",
+          "raw_sha256": "481358610411451db5bf2bfefb7eb5e491856f50dff844e7328d15c42c746c59",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_002",
+          "category": "uniform_time",
+          "raw": "Expression: (591 / 60 + 63) / 2",
+          "raw_sha256": "8a86b74e530ba76353404868f6b5d6848ff3e8ef10390ce09e8a636843de4358",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_003",
+          "category": "uniform_time",
+          "raw": "Expression: (22 * (295 / 60 - 0) + (295 / 60 - 0) * (295 / 60 - 0) / 2) / (295 / 60 - 0)",
+          "raw_sha256": "75db6f0454303cc03d284b02f91360d2384e8519c08cb34adc10fa525e1efcc1",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_004",
+          "category": "uniform_time",
+          "raw": "Expression: (48 * (385 / 60 - 385 / 60 + 1) + 385 / 60) / 2",
+          "raw_sha256": "58fc26721b114db11ecbfbd78a4d3c345f107e9937f9b11256b3151c6a1a8bc3",
+          "automatic_correct": false,
+          "reviewed_correct": true,
+          "additional_credit_reason": "The multiplier (385/60-385/60+1) is identically one, so the expression reduces to (48+385/60)/2, the conditional total wait. This is a symbolic cancellation, not merely numerical coincidence."
+        },
+        {
+          "id": "v15_test_uniform_time_005",
+          "category": "uniform_time",
+          "raw": "Expression: (566 / 60 + 25) / 2",
+          "raw_sha256": "985e469d3e64d9a17571bd69f2521ad130acd19c96b7164e69d3a75f2798e193",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_006",
+          "category": "uniform_time",
+          "raw": "Expression: (87 + 55) / 2",
+          "raw_sha256": "2e063d5df3bfdf3fc2cccefd89f07aa28e4fc0c5a060a27652489729971bbde2",
+          "automatic_correct": false,
+          "reviewed_correct": false,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_uniform_time_007",
+          "category": "uniform_time",
+          "raw": "Expression: (360 / 60 + 20) / 2",
+          "raw_sha256": "05a25d6a6a2c9f619919b89718b284af91d3e30d6e929c55ac9c9f3878950f18",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_000",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 1) * (53 / 100) ** 1 * (1 - 53 / 100) ** (4 - 1)",
+          "raw_sha256": "5e643a4d3f3996cc2f2a3d904a7d3e223d2914ac0628359781aede111e4ec7fb",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_001",
+          "category": "binomial",
+          "raw": "Expression: comb(6, 4) * (65 / 100) ** 4 * (1 - 65 / 100) ** (6 - 4)",
+          "raw_sha256": "42530b51aa2ff662d361a339e3123ba1c009a6ac4c4cc7f6d29e502f53556c20",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_002",
+          "category": "binomial",
+          "raw": "Expression: comb(7, 5) * (36 / 100) ** 5 * (1 - 36 / 100) ** (7 - 5)",
+          "raw_sha256": "ee323be7a7941605e0ff84094a41518fb0eaee5ebdaa8785da8b0ab85b615feb",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_003",
+          "category": "binomial",
+          "raw": "Expression: comb(6, 4) * (12 / 100) ** 4 * (1 - 12 / 100) ** (6 - 4)",
+          "raw_sha256": "c8d8fab2478571d736d757d890f55ef44d3974687b6743de72a2e9f09e824578",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_004",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 2) * (68 / 100) ** 2 * (1 - 68 / 100) ** 2",
+          "raw_sha256": "489d681c4c30193f7b936478d5f262fc22588746d7ded041ea88dd2e2bda2bff",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_005",
+          "category": "binomial",
+          "raw": "Expression: comb(5, 1) * (66 / 100) ** 1 * (1 - 66 / 100) ** (5 - 1)",
+          "raw_sha256": "0229fe8f370c3959f8d88bb7869f5315589d2e1a34b58d0b0082e2590257584e",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_006",
+          "category": "binomial",
+          "raw": "Expression: comb(4, 2) * (23 / 100) ** 2 * (1 - 23 / 100) ** (4 - 2)",
+          "raw_sha256": "7f676996c4dccc5676dba895482fc22f10e088ba139fea8cf7568d124b71215d",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_binomial_007",
+          "category": "binomial",
+          "raw": "Expression: comb(9, 5) * (51 / 100) ** 5 * (1 - 51 / 100) ** (9 - 5)",
+          "raw_sha256": "6f69bbd6105482fb79461c5304a401d5d6a9d7420447eda594d012616f96b832",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_000",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 54 / 100) * (46 / 100) + 54 / 100 * (1 - 46 / 100)",
+          "raw_sha256": "8e70cb284236f1c17a849de3fb965439ef8e5cd9f2f074530afb5b83c6c82ecb",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_001",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 68 / 100) * (19 / 100) + 68 / 100 * (1 - 19 / 100)",
+          "raw_sha256": "b85e1a6e1d8a33b55b4f0f2f9263e1e56220920b3e196647c44f432502787705",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_002",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 25 / 100) * (17 / 100) + (1 - 17 / 100) * (25 / 100)",
+          "raw_sha256": "8b3e2add49ab31462ae638c08b8cfa0e93956d1bddde0129597e46a975b3518c",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_003",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 18 / 100) * (42 / 100) + (1 - 42 / 100) * (18 / 100)",
+          "raw_sha256": "206b03839fea8ab04b0ca120a7e5d89e0f4384ad778d8aa82e604ebe4ef95daf",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_004",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 52 / 100) * (22 / 100) + 52 / 100 * (1 - 22 / 100)",
+          "raw_sha256": "51b26236ec61db618945905ea8e11d87cbbdbb55954417eb9919cade06f99f39",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_005",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 23 / 100) * (45 / 100) + 23 / 100 * (1 - 45 / 100)",
+          "raw_sha256": "d67c6711de990a78927457040ef93b9b0f2c2f91819b9980be956806a3a85c91",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_006",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 52 / 100) * (18 / 100) + (1 - 18 / 100) * (52 / 100)",
+          "raw_sha256": "209380dccbd07104863e72dce71de35082bc046050e76739948c7db7a7c3452b",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_exactly_one_007",
+          "category": "exactly_one",
+          "raw": "Expression: (1 - 66 / 100) * (39 / 100) + 66 / 100 * (1 - 39 / 100)",
+          "raw_sha256": "1f3a88ce18c61609b4a7e112b2346220d26d8df27497dc2559c429528f838f75",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_000",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - 28 / 100 * (31 / 100)",
+          "raw_sha256": "b3ca6c041370ca39e1c942317eb89c585d709f3d33c26272a464f9eecdf4292b",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_001",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - 46 / 100 * (47 / 100)",
+          "raw_sha256": "e806e9b5cb9366e8a2387fb634eedb2725b526e0d63ddc47cf5ae02e16de20d3",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_002",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - 32 / 100 * (22 / 100)",
+          "raw_sha256": "f5ec72e559ce8d431a868cb95e8bebb410cbdb6e55528bbbdc3dba12aa4a5313",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_003",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - 12 / 100 * (32 / 100)",
+          "raw_sha256": "3b62fc11c1cb5563b9d6f240d8b0f85275ed737ada59f346b9b4cc08fa352a25",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_004",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (22 / 100) * (16 / 100)",
+          "raw_sha256": "ecb798518af5485292e4d1e5b74f62fca6765a80f2d232dbaaaee200b9adc660",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_005",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (20 / 100) * (35 / 100)",
+          "raw_sha256": "c9771b72083ea050610728be6cfe5f9ff6d69e2c17e476c69ad9dc1668a73f57",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_006",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - 61 / 100 * (27 / 100)",
+          "raw_sha256": "50077bbc3ccccb714c504550e5c46a1f2d0783bd140d1b0790e45c0298b15ce0",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_at_least_one_007",
+          "category": "at_least_one",
+          "raw": "Expression: 1 - (20 / 100) * (21 / 100)",
+          "raw_sha256": "ca9312f005db4e04c16d309935f38c9950e786ed5249d76f38c7b1f5ba15311b",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_000",
+          "category": "interval",
+          "raw": "Expression: (45 + 570) / 2 + (570 - 45) / (2 * 6)",
+          "raw_sha256": "968461be4bc85eef22c8727dd69229f1f33f6aa69c94f4730fef126139797a44",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_001",
+          "category": "interval",
+          "raw": "Expression: (33 + 474) / 2 + (474 - 33) / (2 * 6)",
+          "raw_sha256": "48d65f796a42b8617fda2ff8a1a196b3832a49bab420911b4a2c84f2e8ba0bb7",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_002",
+          "category": "interval",
+          "raw": "Expression: (54 + 415) / 2 + (415 - 54) / (2 * 6)",
+          "raw_sha256": "10c958f0403841d0a2ea829e79f79bc3a2680604cddf7232741a957199074f73",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_003",
+          "category": "interval",
+          "raw": "Expression: (30 + 391) / 2 + (391 - 30) / (2 * 3)",
+          "raw_sha256": "c0aab6fe7f7f406c949d24724fd892c849f20d84472e692e7bab5eeb19ff4cf9",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_004",
+          "category": "interval",
+          "raw": "Expression: (40 + 583) / 2 + (583 - 40) / (2 * 2)",
+          "raw_sha256": "dfab4b056df9a4c6e7171e94d2d7f8f52cd8fea4e7d8ac6a324bde98ba12edd5",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_005",
+          "category": "interval",
+          "raw": "Expression: (34 + 418) / 2 + (418 - (34 + 418) / 2) / 2",
+          "raw_sha256": "88cb5c05f92aafd5afa9497d2c077c29db099397fc3b37c06b6ed7716858b3de",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_006",
+          "category": "interval",
+          "raw": "Expression: (149 + 52) / 2 + (149 - 52) / (2 * 5)",
+          "raw_sha256": "6e1d08efe1f4a7a3866994e9d49077dc06983ee8694242ef3c9413926a100aa1",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        },
+        {
+          "id": "v15_test_interval_007",
+          "category": "interval",
+          "raw": "Expression: (23 + 592) / 2 + (592 - 23) / (2 * 3)",
+          "raw_sha256": "e73b5cff1c589f98cc008fd2ec10b31396c1a4596b243e29cbe5af26706a4e4a",
+          "automatic_correct": true,
+          "reviewed_correct": true,
+          "additional_credit_reason": null
+        }
+      ]
+    }
+  }
+}
