@@ -158,3 +158,15 @@ v0.6 reused the audited v0.5 questions and paired related Llama explanations. In
 - [Recovery instructions](docs/KAGGLE_RECOVERY.md)
 
 Kaggle version 10 (347602173) preserves preparation; version 11 (347605195) preserves the selected adapter and verified ZIP. This run added 113 teacher calls and $0.005929430 in response-reported costs. Cumulative recorded usage is 839 calls and $0.050703900, not an account balance or invoice. The GPU session was stopped after successful preservation.
+
+## Student failure diagnosis — v0.7 completed
+
+Inference-only comparison of baseline and v0.5 on 24 exposed questions (576 responses): v0.5 maps a supplied correct value to its option in 96/96 cases, but solves only 41/96 original MC rotations. After explicit format review, no-choice direct answers are 4/24 correct; supplied-rule answers 5/24; supplied arithmetic expressions 6/24. Observed errors include variance scaling, probability arithmetic and interval endpoint rules. These are diagnostic conditions, not new held-out accuracy.
+
+Short-calculation outputs were often truncated (baseline 16/24, v0.5 6/24), so their scores cannot establish unconstrained reasoning performance. The report preserves strict scores, all raw answers and every format-only correction. Both models reproduce all 96 original MC outputs.
+
+- [Complete diagnosis and concrete errors](docs/STATS_DIAGNOSTIC_V0_7_RESULTS.md)
+- [Raw responses and format audit](docs/STATS_DIAGNOSTIC_V0_7_RESULTS.json)
+- [Fixed diagnostic protocol](docs/STATS_DIAGNOSTIC_V0_7_PROTOCOL.md)
+
+No weights changed and no teacher calls were made. Results are preserved in Kaggle version 12 (347608100); GPU stopped. v0.5 remains the leading experimental candidate.
