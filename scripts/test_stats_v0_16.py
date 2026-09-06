@@ -21,4 +21,12 @@ class CurriculumTests(unittest.TestCase):
         self.assertFalse(score('Expression: '+q['expression']+'+'+b['offset'],q)['correct'])
         self.assertNotIn('E[Y**2]',prompt(q,'full'))
 
+    def test_teacher_review_does_not_change_student_grader(self):
+        from review_teacher_v0_16 import teacher_score
+        q=next(q for q in build()['train'] if q['task']=='variance')
+        a=q['bindings']['scale'];partial=q['expression'].replace(a+'**2',str(int(a)**2),1)
+        self.assertTrue(teacher_score('Expression: '+partial,q)['correct'])
+        self.assertFalse(score('Expression: '+partial,q)['correct'])
+        self.assertFalse(teacher_score('Expression: '+partial+'+'+q['bindings']['offset'],q)['correct'])
+
 if __name__=='__main__':unittest.main()
