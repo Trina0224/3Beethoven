@@ -1,0 +1,406 @@
+{
+  "decisions": [
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_003",
+      "question": "The quantity to average is the square of (6 times X plus 20), not the square of its average. The mean of X is 28, and its variance is 285. Set up that expectation.",
+      "raw": "Expression: (6*X+20)**2",
+      "raw_sha256": "14c376c0a24e89fbf92567e0a68a577d63131be31603521ee8df773e2f766058",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "6**2*285+(6*28+20)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_004",
+      "question": "The quantity to average is the square of (6 times X plus 7), not the square of its average. The mean of X is 56, and its variance is 468. Set up that expectation.",
+      "raw": "Expression: (6*X+7)**2",
+      "raw_sha256": "011f009cdfadac66c591f3e7aead78d94fb0b0eb4bf8798964bc7d8b4ca2c9c7",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "6**2*468+(6*56+7)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_007",
+      "question": "The quantity to average is the square of (7 times X plus 18), not the square of its average. The mean of X is 46, and its variance is 517. Set up that expectation.",
+      "raw": "Expression: (7*X+18)**2",
+      "raw_sha256": "f0d398db71720e1575f257af4d7358d1a5ff6b7feb4156f35c1250d4bcb7327b",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "7**2*517+(7*46+18)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_008",
+      "question": "The quantity to average is the square of (7 times X plus 11), not the square of its average. The mean of X is 28, and its variance is 80. Set up that expectation.",
+      "raw": "Expression: (7*X+11)**2",
+      "raw_sha256": "ca4da274baa5c7ca7e6f1da99092c83d61d2bd6b8484d566d2b2ca220b353422",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "7**2*80+(7*28+11)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_009",
+      "question": "The quantity to average is the square of (6 times X plus 9), not the square of its average. The mean of X is 24, and its variance is 371. Set up that expectation.",
+      "raw": "Expression: (6*X+9)**2",
+      "raw_sha256": "370919dd254fde7f618a88d3627e1f1f4690fd441f1bbcfa559c10881b3b801e",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "6**2*371+(6*24+9)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_moment_010",
+      "question": "The quantity to average is the square of (6 times X plus 5), not the square of its average. The mean of X is 44, and its variance is 518. Set up that expectation.",
+      "raw": "Expression: (6*X+5)**2",
+      "raw_sha256": "6cd39e48c9b71ebd0db94c4a430059adabfdda4fa6266b7d61fdab2e71888b14",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "6**2*518+(6*44+5)**2"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_binomial_004",
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 55/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "raw": "Expression: (11/20)*(11/20)*(55/100)*(55/100)*(55/100)*(55/100)+(11/20)*(11/20)*(55/100)*(55/100)*(55/100)*(1-55/100)+(11/20)*(11/20)*(1-55/100)*(55/100)*(55/100)*(55/100)+(11/20)*(1-55/100)*(55/100)*(55/100)*(55/100)*(55/100)+(1-55/100)*(55/100)*(55/100)*(55/100)*(55/100)*(55/100)",
+      "raw_sha256": "c90b1884b63ac4ed11bc2a545d24ae93eb03f822b83e1cd0b7c8bbd3a2eec11b",
+      "reason": "所列乘積加總不等於恰有兩次成功的二項機率。",
+      "reference": "comb(6,2)*(55/100)**2*(1-55/100)**(6-2)"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": false,
+      "id": "v17_test_binomial_009",
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 52/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "raw": "Expression: (52/100)*(6 choose 3)*(1-52/100)**(6-3)",
+      "raw_sha256": "c08be4d1927225faac1f3146f17894f05bede7ed3c11547eef48556b05f044bf",
+      "reason": "成功機率缺少三次方；即使接受 choose 記號仍不正確。",
+      "reference": "comb(6,3)*(52/100)**3*(1-52/100)**(6-3)"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_003",
+      "question": "For an existing defect, inspection A has miss probability 12/100, and independent inspection B has miss probability 35/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-12/100*35/100",
+      "raw_sha256": "3666d2dbef0888fce9d37ae760f0fc83fc189667b37b4501b56f828331e3032d",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(12/100)*(35/100)"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_005",
+      "question": "For an existing defect, inspection A has miss probability 42/100, and independent inspection B has miss probability 28/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-42/100*28/100",
+      "raw_sha256": "11137cdacae2b461764bdf42d237724c0852265db21b9cd0dbffebd904e454eb",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(42/100)*(28/100)"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_009",
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 49/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-36/100*49/100",
+      "raw_sha256": "58fe46c1d6d27ed7b2ded369d8e46056f87a20acf16ac452be3373e85c43b058",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(36/100)*(49/100)"
+    },
+    {
+      "candidate": "stage_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_010",
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 48/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-36/100*48/100",
+      "raw_sha256": "c57ba9202a899dd43516d618e3ac869f13a3ea11f089990511bf9e1cd76ac63a",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(36/100)*(48/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_000",
+      "question": "Count all arrivals in a 417-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 43 per minute. Set up the count variance.",
+      "raw": "Expression: 43/60*417",
+      "raw_sha256": "f3467ec53134ae88bcd58eeb94b9ae401a6db84b795bde03b9b205bc1752816a",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "43*(417/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_001",
+      "question": "Count all arrivals in a 301-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 66 per minute. Set up the count variance.",
+      "raw": "Expression: 66/60*301",
+      "raw_sha256": "f24d5a94051329d68985429897ba0e6f6bb0395e656ce8e103f5b1a4b0501a83",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "66*(301/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_003",
+      "question": "Count all arrivals in a 140-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 67 per minute. Set up the count variance.",
+      "raw": "Expression: 67/60*140",
+      "raw_sha256": "c7d38d480ef4f3779a8a5d5378aa64bfe046c4bb8798af73416a5b3f33180617",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "67*(140/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_005",
+      "question": "Count all arrivals in a 267-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 66 per minute. Set up the count variance.",
+      "raw": "Expression: 66/60*267",
+      "raw_sha256": "15af862b081a3fdbbc15c310323c2558aa075468c4901109df3178f6a2dd909c",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "66*(267/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_006",
+      "question": "Count all arrivals in a 504-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 22 per minute. Set up the count variance.",
+      "raw": "Expression: 22/60*504",
+      "raw_sha256": "55af93c35c8d1ee04788a3552e14638a7e53c0c1b5783f31822ec935ac4a6992",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "22*(504/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_007",
+      "question": "Count all arrivals in a 220-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 44 per minute. Set up the count variance.",
+      "raw": "Expression: 44/60*220",
+      "raw_sha256": "da076712b0d291493dfaac06407ee0abcee06ce478005edab8659b9d649cc750",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "44*(220/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_009",
+      "question": "Count all arrivals in a 523-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 28 per minute. Set up the count variance.",
+      "raw": "Expression: 28/60*523",
+      "raw_sha256": "f20fba754918a49c0a80dc338db79ef7a7d5c28f50163fb2e9fcbc473b210cb7",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "28*(523/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_poisson_time_011",
+      "question": "Count all arrivals in a 430-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 33 per minute. Set up the count variance.",
+      "raw": "Expression: 33/60*430",
+      "raw_sha256": "83d82c4e778def486b8ef88dc755cad6e1338a463be20a808fd49caac2572507",
+      "reason": "先將每分鐘速率除以 60，再乘秒數，與先換算時間等價。",
+      "reference": "33*(430/60)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": false,
+      "id": "v17_test_moment_007",
+      "question": "The quantity to average is the square of (7 times X plus 18), not the square of its average. The mean of X is 46, and its variance is 517. Set up that expectation.",
+      "raw": "Expression: (7*X+18)**2",
+      "raw_sha256": "f0d398db71720e1575f257af4d7358d1a5ff6b7feb4156f35c1250d4bcb7327b",
+      "reason": "仍含未知隨機變數 X，沒有列出期望值與變異數的數值算式。",
+      "reference": "7**2*517+(7*46+18)**2"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_binomial_004",
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 55/100 on each test. We count rejections and want the probability that the count equals 2.",
+      "raw": "Expression: C(6,2)*(55/100)**2*(1-55/100)**(6-2)",
+      "raw_sha256": "351453858d1a0c7f8a69e127fca1a4521a61ee34ae5e0ae917f246f6c7e698fb",
+      "reason": "C(n,r) 為標準組合數記號；其餘機率次方與失敗次數皆正確。",
+      "reference": "comb(6,2)*(55/100)**2*(1-55/100)**(6-2)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_binomial_009",
+      "question": "An experiment repeats 6 independent tests under true null hypotheses. A rejection occurs with probability 52/100 on each test. We count rejections and want the probability that the count equals 3.",
+      "raw": "Expression: C(6,3)*(52/100)**3*(1-52/100)**(6-3)",
+      "raw_sha256": "5a8a128cc8f74b9c9dedfc1e863719f43661b1040a0d007bdbf16dc8a1c109a7",
+      "reason": "C(n,r) 為標準組合數記號；其餘機率次方與失敗次數皆正確。",
+      "reference": "comb(6,3)*(52/100)**3*(1-52/100)**(6-3)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_000",
+      "question": "For an existing defect, inspection A has miss probability 19/100, and independent inspection B has miss probability 11/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-19/100*11/100",
+      "raw_sha256": "4318cc511f99a9b9e64d463b339ff62777bfc72f7dda2896bffc82951c3b39a6",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(19/100)*(11/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_001",
+      "question": "For an existing defect, inspection A has miss probability 60/100, and independent inspection B has miss probability 24/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-60/100*24/100",
+      "raw_sha256": "a7a012e41b5364413ab136a5af41b44a533ba25ef28e4db0366325c3653c3a13",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(60/100)*(24/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_002",
+      "question": "For an existing defect, inspection A has miss probability 64/100, and independent inspection B has miss probability 11/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-64/100*11/100",
+      "raw_sha256": "1b42412d2e70c6eac0e32d40e50392b6d14760d524d7d0848799d501706ef627",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(64/100)*(11/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_003",
+      "question": "For an existing defect, inspection A has miss probability 12/100, and independent inspection B has miss probability 35/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-12/100*35/100",
+      "raw_sha256": "3666d2dbef0888fce9d37ae760f0fc83fc189667b37b4501b56f828331e3032d",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(12/100)*(35/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_004",
+      "question": "For an existing defect, inspection A has miss probability 35/100, and independent inspection B has miss probability 29/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-35/100*29/100",
+      "raw_sha256": "c0c858fa4bd82a9880e7eaf99a61c146c262dcec68b0b7ae905431ce4fd8408e",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(35/100)*(29/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_005",
+      "question": "For an existing defect, inspection A has miss probability 42/100, and independent inspection B has miss probability 28/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-42/100*28/100",
+      "raw_sha256": "11137cdacae2b461764bdf42d237724c0852265db21b9cd0dbffebd904e454eb",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(42/100)*(28/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_006",
+      "question": "For an existing defect, inspection A has miss probability 17/100, and independent inspection B has miss probability 13/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-17/100*13/100",
+      "raw_sha256": "7706b02dc1185e8d614ecfb781d6413614864a1f50052c63179be45f2b16d10c",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(17/100)*(13/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_007",
+      "question": "For an existing defect, inspection A has miss probability 13/100, and independent inspection B has miss probability 16/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-13/100*16/100",
+      "raw_sha256": "2cbfba7499c2b9283ea69a2ec936c0adbb3086aba10aa8f0ea0cb3079f5aadf0",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(13/100)*(16/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_008",
+      "question": "For an existing defect, inspection A has miss probability 47/100, and independent inspection B has miss probability 49/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-47/100*49/100",
+      "raw_sha256": "e10e92e945d834ec95b8f6786a8aea35e994ef45f00282e3325522e70d082b43",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(47/100)*(49/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_009",
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 49/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-36/100*49/100",
+      "raw_sha256": "58fe46c1d6d27ed7b2ded369d8e46056f87a20acf16ac452be3373e85c43b058",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(36/100)*(49/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_010",
+      "question": "For an existing defect, inspection A has miss probability 36/100, and independent inspection B has miss probability 48/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-36/100*48/100",
+      "raw_sha256": "c57ba9202a899dd43516d618e3ac869f13a3ea11f089990511bf9e1cd76ac63a",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(36/100)*(48/100)"
+    },
+    {
+      "candidate": "control_3",
+      "credit": true,
+      "id": "v17_test_at_least_one_011",
+      "question": "For an existing defect, inspection A has miss probability 48/100, and independent inspection B has miss probability 45/100. What is the chance that one or both methods detect?",
+      "raw": "Expression: 1-48/100*45/100",
+      "raw_sha256": "cf9ac090860f8ad9b7c98ba9f1ed92e3a3b226acae9d0a1c060dd58e12e079ef",
+      "reason": "乘除優先順序正確，省略括號不改變補事件乘積。",
+      "reference": "1-(48/100)*(45/100)"
+    }
+  ],
+  "metrics": {
+    "control_3": {
+      "automatic": 22,
+      "by_category": {
+        "at_least_one": 12,
+        "binomial": 2,
+        "exactly_one": 0,
+        "interval": 10,
+        "moment": 0,
+        "poisson_scaled": 1,
+        "poisson_time": 11,
+        "uniform_time": 8
+      },
+      "pending": 0,
+      "reviewed_correct": 44,
+      "semantic_credits": 22
+    },
+    "stage_3": {
+      "automatic": 32,
+      "by_category": {
+        "at_least_one": 12,
+        "binomial": 0,
+        "exactly_one": 0,
+        "interval": 3,
+        "moment": 0,
+        "poisson_scaled": 0,
+        "poisson_time": 11,
+        "uniform_time": 10
+      },
+      "pending": 0,
+      "reviewed_correct": 36,
+      "semantic_credits": 4
+    },
+    "v15": {
+      "automatic": 64,
+      "by_category": {
+        "at_least_one": 12,
+        "binomial": 12,
+        "exactly_one": 12,
+        "interval": 9,
+        "moment": 0,
+        "poisson_scaled": 1,
+        "poisson_time": 9,
+        "uniform_time": 9
+      },
+      "pending": 0,
+      "reviewed_correct": 64,
+      "semantic_credits": 0
+    }
+  },
+  "reviewed_at_utc": "2026-09-06T23:31:31.442726+00:00",
+  "scope": "All 35 pending historical-transfer answers; frozen automatic results unchanged. C(n,r) receives mathematical credit, not strict syntax compliance."
+}
