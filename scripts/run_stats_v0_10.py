@@ -25,7 +25,8 @@ def prepare():
             assert all(r[k]==v for k,v in q.items())
             obj=validate(r['teacher_solution'],q)
             assert obj==parse_teacher(read_json(ROOT/'api_cache'/(r['cache_tag']+'.json'))['text'])
-            text='Formula: '+rules[q['category']]['rule']+'\nCalculation: '+' = '.join(obj['stages'])+'\nAnswer: '+obj['answer']
+            stages=[s for i,s in enumerate(obj['stages']) if i==0 or ''.join(s.split())!=''.join(obj['stages'][i-1].split())]
+            text='Formula: '+rules[q['category']]['rule']+'\nCalculation: '+' = '.join(stages)+'\nAnswer: '+obj['answer']
             rows[split].append(dict(source_id=q['id'],mode='staged_fraction',prompt=prompt(q),target=text))
         assert len(rows[split])==len(data[split])
         rows[split]+=examples(read_json(SOURCE/(split+'_records.json')))
