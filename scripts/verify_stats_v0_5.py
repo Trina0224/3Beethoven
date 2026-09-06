@@ -34,7 +34,9 @@ def corpus():
 
 
 def verify():
-    export={'summary':read_json(ROOT/'summary.json')}
+    export={'summary':read_json(ROOT/'summary.json'),
+            'environment':read_json(ROOT/'environment.json'),
+            'trainer_log':read_json(ROOT/'trainer_log.json')}
     for label,n in (('new',36),('old',60)):
         qs={r['id']:r for r in read_json(ROOT/(label+'_benchmark.json'))}
         assert len(qs)==n
