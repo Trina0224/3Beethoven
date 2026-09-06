@@ -1,11 +1,5 @@
 # 3Beethoven
 
-> **獨立教師檢查完成（2026-09-06）**：自動 41/48，另 2 題人工確認列式正確，合計 43/48；5 題是真正公式錯誤。未達事先固定的 44/48 門檻，學生 v0.14 尚未開訓。換單位與事件各 8/8。 [完整診斷](docs/STATS_V0_14_TEACHER_CHECK_REPORT.md)。
-
-
-> **Grader 已修正（2026-09-06）**：現有教師回答首次通過 151/160；兩次至少一次通過 157/160。320 筆中 302 正確、15 錯誤、3 待審。缺少標籤不再等於數學錯誤；原始嚴格分數保留為歷史紀錄。這不是獨立擾動測試或學生訓練結果。[重評方法與結果](docs/STATS_V0_14_GRADER_CORRECTION.md)。
-
-
 **A tiny local classical-music snob, distilled from a much larger Llama teacher.**
 
 3Beethoven is an experiment in **response distillation / synthetic-data distillation**. The goal is to use a large cloud-hosted Meta Llama model as a teacher, then train a much smaller local Llama student to become a focused classical-music specialist.
@@ -14,26 +8,43 @@ The project is intentionally playful on the surface and rigorous underneath.
 
 ## Current experiment — 2026-09-06 PDT
 
-**The active statistics pilot trains a 3B student to read a word problem and produce a correctly substituted, executable expression.** Formula choice, event interpretation, units and parameter bindings must be correct; an exact calculator performs the arithmetic. The classical-music project remains the original application, not a capability demonstrated by these statistics results. Logit distillation is deferred.
+**v0.14 student response distillation is complete.** The goal is a correctly
+substituted numerical expression; an exact calculator handles arithmetic.
+126 verified teacher examples / 31 validation examples, initialized from v0.13,
+trained for 32 steps. Checkpoint selection used validation loss only.
 
-| Evidence | Baseline | v0.10 | v0.13 |
+| Same 64-question wording/parameter test | Vanilla 3B | v0.13 | v0.14 |
 |---|---:|---:|---:|
-| v0.13 test: strict two-line interface | 0/96 | 0/96 | 96/96 |
-| Same answers: correct setup explicitly present, retrospective review | 18/96 | 39/96 | 96/96 |
-| Old multiple-choice retention, 60 questions × four rotations | 86/240 | 130/240 | 128/240 |
+| Frozen automatic formulation score | 0/64 | 5/64 | 30/64 |
+| Supplemental semantic review | 8/64 | 8/64 | **33/64 (51.6%)** |
+| Old multiple-choice retention | 86/240 | 128/240 | 123/240 |
 
-The first two strict zeros are format rejections, not zero mathematical ability. The retrospective metric credits a correct setup even if later output contradicts it: 1 baseline and 12 v0.10 credited answers have such conflicts. It is not final tool-readiness accuracy. v0.13 used **procedural SFT, with no new teacher calls**; its test uses held-out parameters from familiar template families, so 96/96 does not establish broad word-problem generalization.
+All models received identical prompts. Semantic review credits mathematically
+correct notation, complements, event sums and multiplication/division equivalence;
+it does not repair wrong formulas. Raw scores and every response remain available.
+The new student answers 25 more questions correctly than v0.13 (4.125 times as many).
+Improvements concentrate in binomial/event probabilities and confidence intervals.
+Second moments, affine Poisson variance and conditional waiting times remain weak;
+old-test retention dropped by 5/240. This is a limited-domain result, not broad reasoning.
 
-**v0.14 teacher preparation finished; student training has not started.** Llama 3.3 70B answered 128 training and 32 validation candidates independently, with no supplied gold answers. All 160 were rejected by the strict interface gate; raw examples contain valid mathematics alongside missing labels, symbolic expressions and binding issues. Do not interpret this as 0% teacher reasoning accuracy. The 320 calls cost US$0.01482488 in API-reported usage. No automatic retry beyond the frozen cap is scheduled.
+The earlier v0.13 96/96 result used familiar templates and a two-line prompt;
+this test changes wording and uses one-line expressions. The two scores are not
+interchangeable. v0.13 was procedural SFT; v0.14 adds filtered independent 70B responses.
 
-Next gate: review and normalize representation without changing mathematical meaning; then assess the teacher on explicitly paired wording, parameter, unit and event perturbations before training the student. The existing 64-question v0.14 student test remains reserved, not teacher-generation material. No teacher perturbation pass has been established yet; agree and freeze its scoring criteria before evaluating it.
+The independent teacher diagnostic remains 43/48 after semantic review and failed
+its gate. A new frozen diagnostic with general symbolic formula reminders passed
+46/48, with unchanged thresholds. Neither diagnostic was used as student training data.
 
-- [Current status, limitations and next checks](docs/STATS_CURRENT_STATUS.md)
-- [v0.13 protocol](docs/STATS_V0_13_PROTOCOL.md), [288 raw answers](docs/STATS_V0_13_RESULTS.json), [format-independent review](docs/STATS_V0_13_FORMAT_INDEPENDENT_REVIEW.json)
-- [Teacher reliability review](docs/STATS_TEACHER_REVIEW_FOLLOWUP.md)
-- [v0.14 protocol](docs/STATS_V0_14_PROTOCOL.md), [raw teacher attempts](docs/STATS_V0_14_TEACHER_RAW.json)
+**Weights and outputs: Kaggle Version 28, Successful.** 912 responses, 392 finite
+weight tensors and ZIP integrity verified. GitHub contains source, teacher targets,
+raw results and review; the binary adapter is preserved on Kaggle.
 
-v0.13 weights and outputs were saved successfully in **Kaggle Version 26**. Source, scoring records and text results are on GitHub. Historical results below retain their original metrics and thresholds.
+- [Current status and limitations](docs/STATS_CURRENT_STATUS.md)
+- [Training protocol](docs/STATS_V0_14_TRAINING_RUN.md)
+- [All 912 predictions and verification](docs/STATS_V0_14_RESULTS.json)
+- [Semantic review](docs/STATS_V0_14_SEMANTIC_REVIEW.json)
+- [Recovery instructions](docs/KAGGLE_RECOVERY.md)
+- [Historical v0.13 results](docs/STATS_V0_13_RESULTS.json)
 
 ## Core idea
 
