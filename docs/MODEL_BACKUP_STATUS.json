@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-06 05:11 PDT",
+  "status_as_of": "2026-09-06 05:58 PDT",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -143,6 +143,22 @@
       "restoration_verified": false,
       "finite_tensors": 392,
       "reviewed_formulation_correct": 33,
+      "formulation_n": 64
+    },
+    "v15": {
+      "status": "completed and verified",
+      "saved_kaggle_versions": [
+        29
+      ],
+      "version_status": "Successful",
+      "file": "3beethoven_stats_v0_15/adapter/adapter_model.safetensors",
+      "sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
+      "archive": "3beethoven_stats_v0_15.zip",
+      "archive_bytes": 93892056,
+      "archive_sha256": "49b1e411edab050f0aae694b0b1b80181613bca5afacc8d79dd75abfe0eed097",
+      "finite_tensors": 392,
+      "restoration_verified": false,
+      "reviewed_formulation_correct": 44,
       "formulation_n": 64
     }
   },
