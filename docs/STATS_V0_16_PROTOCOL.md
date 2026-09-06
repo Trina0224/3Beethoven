@@ -24,6 +24,10 @@ Start v15; QLoRA configuration inherited. Effective batch eight, learning rate 2
 
 This bundles contrastive tasks, support fading and additional compute; it is not a compute-matched ablation. Scale extraction targets may be scalar; all formulation targets require the numerical expression structure.
 
+## Pre-training teacher review amendment
+
+Initial automatic acceptance was 150/192 train and 21/36 validation (361 calls, US$0.010648875). Most pending responses correctly evaluated the scale square, e.g. `9*variance` for scale 3. Before training, a separate teacher-only structural review accepts exactly this scale-square simplification with the remaining AST and exact value verified. It neither repairs teacher text nor changes the frozen student test grader. Original records and initial acceptance counts remain intact. Reviewed acceptance is 188/192 train and 36/36 validation: mean 48, scale 48, variance 47, moment 45. Four truly incorrect training targets are excluded; no extra teacher calls. Each stage therefore has 236 sequences including replay.
+
 ## Evaluation and completion
 
 Evaluate v15 and v16 with identical no-hint prompts on the fresh 96, separately with focused task-specific rules on the 24 moment/Poisson-variance questions, and on the old 240 option rotations. Total 720 saved responses. Current aided prompt is focused by task, unlike the previous diagnostic's combined rules; compare checkpoints within this run, not aided percentages across runs.
