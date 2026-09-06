@@ -29,7 +29,7 @@ def prepare():
             rows[split].append(dict(source_id=q['id'],mode='staged_fraction',prompt=prompt(q),target=text))
         assert len(rows[split])==len(data[split])
         rows[split]+=examples(read_json(SOURCE/(split+'_records.json')))
-    prior=read_json(repo/'docs/STATS_V0_5_FROZEN_QUESTIONS.json')
+    prior=read_json(repo/'docs/STATS_V0_5_FROZEN_QUESTIONS.json')['data']
     for topic in ('poisson','expectation','uniform','type_i','type_ii','confidence'):
         selected=[q for q in prior['train'] if q['category']==topic][:10]
         assert len(selected)==10
