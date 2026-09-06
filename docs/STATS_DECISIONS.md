@@ -90,3 +90,10 @@ formula hints, new teacher generation, logits or RAG were introduced.
 The user asked to preserve why each version was proposed, especially their recollection that reviewing v15–v17 led them to revisit logically related simple-to-complex teaching. Original pre-training v15/v16 protocols and the original v17/v18 protocols were retrieved from fixed Git commits. The earlier grounded formulation plan also explicitly mentioned stabilizing simpler layers before composition; subsequent decomposition and hint-fading curricula had not implemented v18's depth-gated schedule.
 
 [STATS_MOTIVATION_EXPECTATIONS.md](STATS_MOTIVATION_EXPECTATIONS.md) records the source audit, version motivations, expectations, implementation gap and an article paragraph. It explicitly distinguishes pre-experiment records from today's retrospective restatement. At writing, v18 training/validation was complete and primary tests were running. Do not treat the newly organized hypotheses as newly preregistered claims or infer an order advantage from curriculum improvement alone. Future versions must record motivation and expected/falsifying outcomes before execution, as added to PROJECT_SPEC.md.
+
+
+## 2026-09-06 PDT：v18 結果後，進入 v19
+
+當時已見證據：v18 新題兩版 96/96，歷史八類複核 v15／分階段／打亂為 64／36／44。35 筆待複核全數處理，26 筆補認；舊技能退步仍存在。這不證明統計領域選錯，也不能用程序監督的 v18 代表整個 response distillation 成敗。
+
+研究轉折：使用者詢問災難性遺忘與 adapter 縫合後，決定先補上全八類舊技能重播，並明確要求訓練前更新文件。v19 預期、否證條件與停止規則見 [事前計畫](STATS_V0_19_PROTOCOL.md)。這是新決策，沒有改寫 v18 當初預期。

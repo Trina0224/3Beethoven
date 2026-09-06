@@ -6,7 +6,15 @@
 
 The project is intentionally playful on the surface and rigorous underneath.
 
-## Current experiment — v0.17 completed, 2026-09-06 PDT
+## Current experiment — v0.19 preparation
+
+v0.18 training and semantic review are complete. On the new chain test, v15 / staged / shuffled score 76 / 96 / 96 out of 96. On the historical eight-family test, reviewed scores are 64 / 36 / 44. Neither new adapter is promoted. Retaining simpler new-course problems did not preserve all earlier skills.
+
+The authorized v19 follow-up starts from v15 and jointly trains all eight historical skills with the new concept chains. Its motivation, expected outcome, retention gates and stopping rules are recorded before execution in the [v19 protocol](docs/STATS_V0_19_PROTOCOL.md). This is historical teacher-response replay plus procedural supervision, with no new teacher calls. No v19 result is available yet. Final v18 Kaggle preservation remains to be confirmed.
+
+[Current status](docs/STATS_CURRENT_STATUS.md) · [v18 reviewed transfer](docs/STATS_V0_18_TRANSFER_REVIEW.md) · [Research motivations](docs/STATS_MOTIVATION_EXPECTATIONS.md)
+
+## Previous experiment — v0.17 completed, 2026-09-06 PDT
 
 **Exact adapter mixtures and conservative retraining are complete; neither is promoted.**
 
