@@ -1,5 +1,18 @@
 # Recovering saved statistics experiments
 
+## Latest student: v0.14, saved Version 28
+
+Version 28 was confirmed Successful with output saving enabled. Restore specifically
+`trinashih/3beethoven-v0-2/versions/28` using the existing `kagglehub.notebook_output_download`
+workflow, then locate `3beethoven_stats_v0_14/adapter/adapter_model.safetensors`.
+Verify SHA-256 `c7def77757fefaaf41db6938500159795a47503dac54d72d79113de47a3239a5` before loading.
+The ZIP is `3beethoven_stats_v0_14.zip` (92,760,672 bytes),
+SHA-256 `e360452b023423a956c1a43a1284fe9d7b749acb847284cab26ffd1072fe7e53`.
+The adapter requires the original Llama 3.2 3B Instruct base revision recorded in
+`training_protocol.json`; it is not a standalone full base model.
+Do not assume the latest notebook input contains older versions' weights.
+
+
 Use individual cells. Do not use Run All on the historical notebook: earlier cells perform paid teacher generation and old training stages.
 
 ## Preserved checkpoints
