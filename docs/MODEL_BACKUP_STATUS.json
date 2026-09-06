@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-05 23:07 America/Los_Angeles",
+  "status_as_of": "2026-09-06 00:38 America/Los_Angeles",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -55,9 +55,9 @@
       "raw_results": "docs/STATS_V0_10_RESULTS.json"
     },
     "v11": {
-      "status": "training complete; selected model independently backed up; evaluation running",
+      "status": "training, evaluation and independent backup completed",
       "intermediate_saved_version": 20,
-      "script_version_id": 347642986,
+      "script_version_id": 347652560,
       "checkpoint_path": "3beethoven_stats_v0_11/checkpoints/checkpoint-115",
       "saved_contents_verified_in_ui": [
         "adapter_model.safetensors",
@@ -78,13 +78,22 @@
       "adapter_sha256": "9994b0eb73cf824791ffbeb81dd08a301bb08801e2c38f38829af3cfd8618541",
       "independent_backup": {
         "filename": "3beethoven_stats_v0_11.zip",
-        "bytes": 92765434,
-        "sha256": "f4358cf73179df2f89cbbe4d1840b4e16211cc15a43cb766a7ebdf87baa77be6",
+        "bytes": 92805792,
+        "sha256": "3b34b0590d0f3e40a203c2b6dda299e12640e71e53c87dbd56ef5ca465fac348",
         "saved": true,
         "weight_bytes_verified": true,
         "manifest_verified": true,
-        "includes_final_evaluation": false
-      }
+        "includes_final_evaluation": true,
+        "includes_final_report": true,
+        "downloaded_zip_crc_verified": true
+      },
+      "final_version": 24,
+      "finite_tensors": 392,
+      "manifest_files": 81,
+      "evaluation_responses": 816,
+      "gpu_session": "off, confirmed after final save",
+      "report": "docs/STATS_V0_11_REPORT.md",
+      "raw_results": "docs/STATS_V0_11_RESULTS.json"
     }
   },
   "limitations": [
