@@ -2,7 +2,7 @@
 import json,hashlib,zipfile
 from fractions import Fraction as F
 from flight_run_stats_v0_3 import read_json
-from stats_curriculum_v0_9 import build
+from stats_curriculum_v0_9 import build,numeric_score
 from stats_holdout_v1 import questions as old_questions
 from stats_v0_3_common import parse_answer
 from diagnose_stats_v0_7 import score
@@ -19,7 +19,7 @@ def main():
                 assert len(rows)==48 and {r['id'] for r in rows}==set(qmap)
                 for r in rows:
                     assert r['expected']==qmap[r['id']]['answer']
-                    pred,c,bad=score(r['raw'],dict(mode='numeric',expected=r['expected']))
+                    pred,c,bad=numeric_score(r['raw'],r['expected'])
                     assert (pred,c,bad)==(r['predicted'],r['correct'],r['invalid'])
                 assert sum(r['correct'] for r in rows)==summary['models'][name][suite]['correct']
             else:
