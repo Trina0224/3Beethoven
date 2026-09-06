@@ -113,3 +113,11 @@ The v0.4 repair reused the same teacher records with rotated letter targets. On 
 - [Kaggle recovery and resume instructions](docs/KAGGLE_RECOVERY.md)
 
 The v0.4 model archive is preserved in Kaggle version 7 (347590242). This repair added zero teacher calls. The evidence supports partial transfer with remaining position sensitivity and weak arithmetic generalization, not a claim that distillation failed or that the teacher is inadequate. A subsequent study should examine training coverage and target weighting with a separately frozen evaluation.
+
+## Expanded curriculum experiment
+
+v0.5 is in progress with 180 training questions across 18 task families, 24 validation questions, and 36 frozen test questions. All concrete questions were frozen before teacher generation. The teacher, student and v0.3 training recipe are retained; this run expands curriculum coverage and increases training steps. The preferred completed experimental checkpoint remains v0.3 until new results warrant a change.
+
+- [Frozen v0.5 protocol](docs/STATS_V0_5_PROTOCOL.md)
+- [All frozen questions](docs/STATS_V0_5_FROZEN_QUESTIONS.json)
+- [Teacher generation and review](scripts/generate_stats_v0_5.py)
