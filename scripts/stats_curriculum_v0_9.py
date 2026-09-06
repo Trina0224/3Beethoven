@@ -10,12 +10,14 @@ def calculate(expr):
     if len(list(ast.walk(tree)))>80:raise ValueError('Expression too large')
     ops={ast.Add:operator.add,ast.Sub:operator.sub,ast.Mult:operator.mul,ast.Div:operator.truediv,ast.Pow:operator.pow}
     def walk(n):
-        if isinstance(n,ast.Constant) and type(n.value) in (int,float) and abs(n.value)<100000:return F(str(n.value))
+        if isinstance(n,ast.Constant) and type(n.value) in (int,float) and abs(n.value)<10**12:return F(str(n.value))
         if isinstance(n,ast.UnaryOp) and isinstance(n.op,ast.USub):return -walk(n.operand)
         if isinstance(n,ast.BinOp) and type(n.op) in ops:
             a,b=walk(n.left),walk(n.right)
             if isinstance(n.op,ast.Pow) and (b.denominator!=1 or abs(b)>8):raise ValueError('Power out of bounds')
-            return ops[type(n.op)](a,int(b) if isinstance(n.op,ast.Pow) else b)
+            value=ops[type(n.op)](a,int(b) if isinstance(n.op,ast.Pow) else b)
+            if value.numerator.bit_length()>4096 or value.denominator.bit_length()>4096:raise ValueError('Numeric result too large')
+            return value
         raise ValueError('Unsupported expression')
     return walk(tree.body)
 
