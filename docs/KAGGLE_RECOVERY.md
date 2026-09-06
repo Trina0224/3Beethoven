@@ -187,3 +187,10 @@ An independent v0.9 binary backup subsequently succeeded: browser download event
 Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
 
 Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
+
+
+## v0.11 selected model saved; evaluation running
+
+Kaggle version20 contains checkpoint-115, including 97.31 MB adapter, optimizer, RNG, scheduler, scaler, trainer state and tokenizer (verified in saved-output UI). Version21 is Successful and contains the selected model after the two-epoch run. Validation selected checkpoint115 (loss0.1145005077), not checkpoint230 (loss approximately0.1325). No test results selected this checkpoint.
+
+If the session is lost before final evaluation, recover version21 with `kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/21')`. Copy its `3beethoven_stats_v0_10` and `3beethoven_stats_v0_11` directories into `/kaggle/working/` in a fresh session before running `scripts/run_stats_v0_11.py`. Preserve `training_complete.json`, `training_protocol.json`, selected `adapter/`, frozen questions, and partial response files; the runner verifies protocol/adapter provenance, skips completed training, and continues missing responses. Do not overwrite a newer working run with an older snapshot. Use the eventual final version in MODEL_BACKUP_STATUS.json once available. GitHub has the fixed data, protocol and scripts; binary weights remain in the saved outputs until the final independent ZIP backup.
