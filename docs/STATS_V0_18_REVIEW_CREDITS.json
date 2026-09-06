@@ -1,0 +1,14 @@
+[
+  {
+    "file": "baseline_validation.json",
+    "id": "v18_validation_second_moment_001_d2",
+    "raw_sha256": "e73159b871ec0d35b00d50ccbdf1fbe1ffd68f31acbe6240070a2cb42bb0c53c",
+    "reason": "Poisson second moment: mean*(mean+1) is the factored form of mean**2+mean. Correct numeric binding and requested quantity."
+  },
+  {
+    "file": "baseline_validation.json",
+    "id": "v18_validation_second_moment_002_d2",
+    "raw_sha256": "14e385c6bc633306f56ef0a0a8473a4280d430ea8ee1950add8458d876c5deb6",
+    "reason": "Poisson second moment: mean*(mean+1) is the factored form of mean**2+mean. Correct numeric binding and requested quantity."
+  }
+]

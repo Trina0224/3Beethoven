@@ -4,14 +4,17 @@ from flight_run_stats_v0_3 import read_json as read
 
 def main():
     result=read(ROOT/'verified_results.json');s=result['summary'];out=result['outputs']
+    review=read(ROOT/'semantic_review.json');automatic={n:m['correct'] for n,m in s['tests'].items()}
+    if review:s['tests']={n:review['metrics'][n+'_test.json'] for n in s['tests']}
     lines=['# v0.18 concept-depth curriculum: completed results','',
-           'The user-requested 1 → 2 → 3 curriculum retains simpler problems and preserves stage checkpoints. Scores below are frozen automatic formulation scores; pending semantic review is disclosed separately. No model is promoted on this narrow benchmark.','',
+           'The user-requested 1 → 2 → 3 curriculum retains simpler problems and preserves stage checkpoints. Explicit response-level semantic credits, when present, supplement frozen scores; original decisions remain unchanged. No model is promoted on this narrow benchmark.','',
            '## Same untouched 96-question test','',
-           '| Candidate | Depth 1 /32 | Depth 2 /32 | Depth 3 /32 | Total /96 | Pending |',
-           '|---|---:|---:|---:|---:|---:|']
+           '| Candidate | Depth 1 /32 | Depth 2 /32 | Depth 3 /32 | Total /96 | Frozen auto /96 | Unresolved |',
+           '|---|---:|---:|---:|---:|---:|---:|']
     for name,m in s['tests'].items():
-        lines.append('| '+name+' | '+' | '.join(str(m['by_depth'][str(d)]['correct']) for d in (1,2,3))+f" | {m['correct']} | {m['pending']} |")
-    lines+=['','## Where capabilities appear','',
+        lines.append('| '+name+' | '+' | '.join(str(m['by_depth'][str(d)]['correct']) for d in (1,2,3))+f" | {m['correct']} | {automatic[name]} | {m['pending']} |")
+    lines+=['','The baseline already scores 16/16 on depth-1 validation in this run. Do not claim those primitive skills first emerged during stage 1; the stage trajectory tests retention and subsequent composition.','',
+            '## Where capabilities appear','',
             '| Track and depth /8 | '+' | '.join(s['tests'])+' |',
             '|---|'+ '|'.join('---:' for _ in s['tests'])+'|']
     for cell in s['tests']['v15']['by_cell']:
@@ -26,13 +29,15 @@ def main():
     final=f"stage_{len(s['stages'])}";control=f"control_{len(s['stages'])}"
     a={r['id']:r for r in out[control+'_test.json']};b={r['id']:r for r in out[final+'_test.json']}
     wins=sum(b[i]['correct'] and not a[i]['correct'] for i in a);losses=sum(a[i]['correct'] and not b[i]['correct'] for i in a)
+    if review:wins,losses=(review['curriculum_vs_control'][k] for k in ('newly_correct','newly_wrong'))
     lines += [f"Against the shuffled control, the final curriculum newly answers {wins} questions correctly and newly misses {losses}, for a net {wins-losses:+d}/96. Both arms see the exact same {result['verification']['matched_training_exposures']} training-row exposures, with matching optimizer updates and reset boundaries.",'',
               'The control globally shuffles the realized multiset. Its budget is determined by curriculum validation, not independently optimized for the control. One seed and adaptive stopping limit causal/general claims. A small difference does not establish a reliable universal order effect.','',
               '## Scope and reproducibility','',
               'New targets are exact procedural supervised references, not newly generated Llama teacher responses. Teacher calls and API cost are zero. Both arms start from the hash-verified v15 adapter and pinned original base. The constant LR is 2e-5 and effective batch is 8. This differs from v17 in both data and LR; cross-run improvement cannot be attributed solely to order.','',
               'Concept depth counts explicitly listed domain-rule applications, not internal reasoning steps. Primitive one-step Poisson-variance questions necessarily have a scalar reference, so their score alone does not establish robust reasoning. Other tasks require verified expression structure as well as exact arithmetic agreement.','',
               'Question stories and primitive identities within tracks are split before training; previous overlapping full-task identities are blocked. Fresh parameters in known chain templates do not measure unseen concepts. Affine second moments and broad retention on the old eight-family benchmark are not established by this run.','',
-              f"Verified {result['verification']['responses']} generated responses, {len(result['verification']['stage_checkpoints'])} full curriculum epoch checkpoints, and {len(result['verification']['weights'])} boundary adapters. Truncated responses: {result['verification']['truncated']}. Pending response-level reviews across validation and test: {len(result['pending_semantic_review'])}.",'',
+              f"Verified {result['verification']['responses']} generated responses, {len(result['verification']['stage_checkpoints'])} full curriculum epoch checkpoints, and {len(result['verification']['weights'])} boundary adapters. Truncated responses: {result['verification']['truncated']}. Initially pending response-level reviews across validation and test: {len(result['pending_semantic_review'])}; explicit semantic credits: {len(review['credits']) if review else 0}.",'',
+              'Two baseline depth-2 validation responses correctly factor the Poisson second moment as mean*(mean+1). The supplemental baseline depth-2 count is 14/16, versus frozen automatic 12/16. This correction does not alter any stage transition.','',
               'Full optimizer/RNG checkpoints are preserved in Kaggle output. The compact ZIP contains stage/control boundary adapters, data, source, histories and results; it excludes full optimizer checkpoints. Final archive hash and saved Kaggle version are recorded in MODEL_BACKUP_STATUS.json. A fresh-session restoration of new v18 weights is not claimed.','']
     (ROOT/'report.md').write_text('\n'.join(lines))
     print('V18 REPORT WRITTEN',flush=True)
