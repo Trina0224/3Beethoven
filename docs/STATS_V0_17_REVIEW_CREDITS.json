@@ -1,0 +1,42 @@
+{
+  "mix_50_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "train_32_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "train_32_validation::v17_validation_interval_003": {
+    "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+    "reason": "Correct center plus half-width divided by two; denominator 4 equals 2*2."
+  },
+  "train_16_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "train_16_validation::v17_validation_interval_003": {
+    "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+    "reason": "Correct center plus half-width divided by two; denominator 4 equals 2*2."
+  },
+  "v16_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "mix_75_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "v15_validation::v17_validation_interval_003": {
+    "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+    "reason": "Correct center plus half-width divided by two; denominator 4 equals 2*2."
+  },
+  "train_8_validation::v17_validation_poisson_time_002": {
+    "raw": "Expression: 210 * (50 / 60)",
+    "reason": "Correct rate times seconds divided by 60; multiplication factors may commute."
+  },
+  "train_8_validation::v17_validation_interval_003": {
+    "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+    "reason": "Correct center plus half-width divided by two; denominator 4 equals 2*2."
+  }
+}

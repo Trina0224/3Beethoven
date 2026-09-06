@@ -62,3 +62,24 @@ See [full reviewed report](STATS_V0_11_REPORT.md) and [raw responses and indepen
 The alternative-method pilot restarts from v0.10 and teaches explicit place-value multiplication, repeated multiplication for powers, Euclidean GCD, reduced fractions and full Type I/II statistical calculation chains. It uses 560 deterministic new examples plus 516 unchanged rehearsal sequences and zero teacher calls. Training completed in 270 optimizer steps; validation selected checkpoint135 with loss0.1543260962. Kaggle Quick Save version25 was confirmed Successful with output saving enabled.
 
 The full comparison had not finished when browser control restarted and lost its authenticated Kaggle session. v0.10's new strict baselines are arithmetic7/80, statistical transfer3/48 and old MC130/240. These low free-response baselines support the diagnosis that procedural calculation and output validity are distinct from retained option-selection performance. Do not claim v0.12 improvement until all three model summaries and independent format review are recovered. See [interim recovery record](STATS_V0_12_INTERIM.md).
+
+
+## v0.17 exact mixtures and conservative rehearsal — 2026-09-06 PDT
+
+The user authorized both adapter mixture comparisons and retraining from v15.
+Three exact delta mixtures (25/50/75% v16) and three checkpoints (8/16/32) were
+compared on a fresh balanced validation set, alongside both parents. Training used
+256 accepted historical teacher responses, lr 5e-6 and 32 steps; zero teacher calls.
+Validation selected step 8 and the 25% mixture before test. Supplemental review of
+all validation expressions leaves selection unchanged.
+
+Same new 96-question unaided results: v15 64, v16 57, mixture 65, retrained 64.
+New/lost pairs: mixture 5/4; retrained 1/1. Old MC v15/retrained 127/240 each.
+The six-question gain goal is missed by both; mixture also exceeds the three-loss
+non-target retention limit. Do not promote either as a general replacement.
+
+v16 correctly formulates 9/12 moments and 12/12 affine Poisson variances without
+reminders in this prompt/test condition, while losing other skills. Preserve that
+complementarity; this experiment does not establish a successful consolidation or
+rule out other curricula, merge methods or routing. No test-time model selection,
+formula hints, new teacher generation, logits or RAG were introduced.

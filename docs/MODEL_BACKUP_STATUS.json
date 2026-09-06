@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-06 07:15 PDT",
+  "status_as_of": "2026-09-06 15:23 PDT",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -12,7 +12,10 @@
     "v16": {
       "status": "training, evaluation and output backup complete; rule-assisted specialist candidate",
       "promoted_as_general_replacement": false,
-      "saved_kaggle_versions": [31, 32],
+      "saved_kaggle_versions": [
+        31,
+        32
+      ],
       "final_version": 32,
       "final_version_status": "Successful",
       "adapter_path": "3beethoven_stats_v0_16/adapter/adapter_model.safetensors",
@@ -22,7 +25,7 @@
       "finite_tensors": 392,
       "verified_responses": 720,
       "manifest_files": 737,
-      "restoration_verified": false,
+      "restoration_verified": true,
       "archive": {
         "filename": "3beethoven_stats_v0_16.zip",
         "bytes": 371440108,
@@ -31,7 +34,8 @@
         "contains_intermediate_adapters": true
       },
       "report": "docs/STATS_V0_16_REPORT.md",
-      "raw_results": "docs/STATS_V0_16_RESULTS.json"
+      "raw_results": "docs/STATS_V0_16_RESULTS.json",
+      "restoration_scope": "Exact adapter weights restored from saved Kaggle Version 32 into fresh v17 session, SHA-256 checked, loaded and evaluated; not a fresh full-archive restore."
     },
     "v09": {
       "file": "adapter/adapter_model.safetensors",
@@ -181,9 +185,40 @@
       "archive_bytes": 93892056,
       "archive_sha256": "49b1e411edab050f0aae694b0b1b80181613bca5afacc8d79dd75abfe0eed097",
       "finite_tensors": 392,
-      "restoration_verified": false,
+      "restoration_verified": true,
       "reviewed_formulation_correct": 44,
-      "formulation_n": 64
+      "formulation_n": 64,
+      "restoration_scope": "Exact adapter weights restored from saved Kaggle Version 32 into fresh v17 session, SHA-256 checked, loaded and evaluated; not a fresh full-archive restore."
+    },
+    "v17": {
+      "status": "training, evaluation, semantic review and output backup complete; not promoted",
+      "promoted_as_general_replacement": false,
+      "saved_kaggle_versions": [
+        33,
+        34
+      ],
+      "final_version": 34,
+      "final_version_status": "Successful",
+      "adapter_path": "3beethoven_stats_v0_17/adapter/adapter_model.safetensors",
+      "adapter_sha256": "f710f8938ddbe489a88bdf13cd090a8cbe63da1a6fe77cc796621f0e333c2861",
+      "selected_checkpoint": 8,
+      "total_optimizer_steps": 32,
+      "source_model": "v15",
+      "finite_tensors": 392,
+      "verified_responses": 1248,
+      "manifest_files": 170,
+      "restoration_verified": false,
+      "archive": {
+        "filename": "3beethoven_stats_v0_17.zip",
+        "bytes": 919289296,
+        "sha256": "56db100e688ebbe43bd6e982b33033ab854aa1d7f14c0f732e2f7e7bca8a83df",
+        "crc_verified": true,
+        "contains_intermediate_adapters": true
+      },
+      "report": "docs/STATS_V0_17_REPORT.md",
+      "raw_results": "docs/STATS_V0_17_RESULTS.json",
+      "semantic_review": "docs/STATS_V0_17_SEMANTIC_REVIEW.json",
+      "gpu_session": "retained for user-authorized v18 curriculum experiment"
     }
   },
   "limitations": [
@@ -193,3 +228,4 @@
     "v0.12 version 25 preserves selected weights, but final evaluation and an independent binary download remain pending after browser-control authentication was lost."
   ]
 }
+

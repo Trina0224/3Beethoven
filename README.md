@@ -6,7 +6,36 @@
 
 The project is intentionally playful on the surface and rigorous underneath.
 
-## Current experiment — 2026-09-06 PDT
+## Current experiment — v0.17 completed, 2026-09-06 PDT
+
+**Exact adapter mixtures and conservative retraining are complete; neither is promoted.**
+
+| Same fresh 96-question unaided formulation test | Correct |
+|---|---:|
+| v0.15 | 64/96 |
+| v0.16 | 57/96 |
+| 75% v0.15 + 25% v0.16 delta mixture | 65/96 |
+| v0.17 retrained, validation-selected step 8 | 64/96 |
+
+The mixture gains five answers and loses four; the new student gains one and loses
+one. Old MC stays 127/240 for v0.15 and the selected student. A 32-step rehearsal
+run completed on 256 verified historical Llama targets, with zero new teacher calls.
+Three mixture ratios and three training checkpoints were selected using a separate
+48-question balanced validation set before the final test.
+
+v0.16 reaches **9/12 second moments and 12/12 affine Poisson variance without
+formula reminders on this test**, but loses waiting-time and interval skills.
+Complementary capabilities are present; successful single-model consolidation is
+not established. Keep v0.15 as the general candidate and preserve the alternatives.
+The prompt explicitly permits `comb(n,r)` and differs from the earlier experiment;
+absolute scores across runs are not directly comparable.
+
+See the [full v0.17 report](docs/STATS_V0_17_REPORT.md),
+[all raw results](docs/STATS_V0_17_RESULTS.json),
+[semantic review](docs/STATS_V0_17_SEMANTIC_REVIEW.json), and
+[weight recovery/backup status](docs/MODEL_BACKUP_STATUS.json).
+
+## Previous v0.16 experiment — 2026-09-06 PDT
 
 **v0.16 training and evaluation are complete. It is not a general replacement for v0.15.**
 

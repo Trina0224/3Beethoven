@@ -1,6 +1,33 @@
 # Recovering saved statistics experiments
 
-## Latest trained candidate: v0.16
+## Latest experiment: v0.17
+
+Training and evaluation completed. Keep v15 as the general candidate: v17 is not promoted.
+Version 33 preserves the trained checkpoints. Use the final successful version in
+`MODEL_BACKUP_STATUS.json` for complete raw results, review and ZIP.
+
+The selected v17 adapter is `3beethoven_stats_v0_17/adapter/adapter_model.safetensors`,
+SHA256 `f710f8938ddbe489a88bdf13cd090a8cbe63da1a6fe77cc796621f0e333c2861`.
+It is the validation-selected **step 8**, after a complete 32-step run. All candidate
+adapters are retained under `train_8/adapter`, `train_16/adapter`, `train_32/adapter`
+and `mix_25/adapter`, `mix_50/adapter`, `mix_75/adapter` within the v17 output directory.
+The mixtures have doubled LoRA rank/alpha; use their saved configuration files.
+
+Restore the pinned final Kaggle output, check the recorded archive hash and CRC,
+and recover the complete v17 directory. Preserve `training_complete.json`,
+`protocol.json`, `selection.json`, and all response JSON files. Clone the current
+repository for the frozen questions, source and review-credit records. The verifier
+runs without loading the base model or making teacher calls. Do not rerun training
+or regenerate teacher data just to retrieve weights.
+
+For an interrupted run, retain its original candidate folders and selection record;
+`run_stats_v0_17.py` skips completed training and saved predictions. Source v15/v16
+weights are hash-checked. Their teacher corpus is restored from committed original
+records and focused supplements; the v15 adapter-only saved directory is sufficient.
+Both source adapters were restored and successfully used in the fresh v17 session.
+A fresh-session restore of the new v17 archive itself has not been tested.
+
+## Previous candidate: v0.16
 
 Version 31 preserves completed training. **Version 32 is Successful** and contains
 the complete predictions and verification; restore `trinashih/3beethoven-v0-2/versions/32`
