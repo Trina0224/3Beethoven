@@ -161,3 +161,12 @@ ZIP bytes: 93,446,957. Adapter SHA256: `805a2170a805f6176aa3837857890b8c44fc8f85
 The ZIP preserves raw strict results, teacher provenance, source and training state. The later independent format audit and narrative report are in [GitHub results JSON](STATS_V0_9_RESULTS.json) and [report](STATS_V0_9_RESULTS.md), also copied into the repository folder in saved output before final preservation; later GitHub reporting additions do not alter the ZIP. Do not regenerate data or train merely to recover the completed adapter.
 
 After version-14 output verification, the GPU session was stopped and the editor explicitly showed `Draft Session off (run a cell to start)`.
+
+
+## v0.10 audited preparation checkpoint
+
+Kaggle version 15 (347625570) is Successful and its output visibly contains `3beethoven_stats_v0_10.zip` (551,081 bytes; SHA-256 `f5772cb391f1bbd342a0e3f278e39a1a2bbe554ce72b215af139d9dbb0d2fb6c`). This is preparation only: no v0.10 student training or test has run. The 112 audited teacher records yield 516 training and 64 validation sequences with rehearsal; actual maximum length is 303 tokens, below the 768-token cap. Corpus and audit are committed separately. Teacher usage: 221 calls, $0.02018775, complete cost reporting.
+
+Missing `bitsandbytes==0.50.2` blocks the frozen 4-bit training configuration. Automatic approval review rejected installation and requires action-time installation confirmation. Existing Secrets worked for teacher generation; no new notebook or Secret selection is needed. Complete preparation was saved before requesting that confirmation.
+
+Restore pinned version 15 using `kagglehub.notebook_output_download("trinashih/3beethoven-v0-2/versions/15")` after removing any conflicting same-notebook input. Copy and hash-check the v0.10 ZIP above, then extract into `/kaggle/working/3beethoven_stats_v0_10`; restore the v0.9 adapter from the unchanged version-14 archive using the preceding instructions. Preserve the teacher cache, audit gate and prepared examples. Do not rerun the teacher generator or use Run All. After specific installation approval, install `bitsandbytes==0.50.2`, then run `python -u scripts/run_stats_v0_10.py` from the pulled repository. Run the verifier and independently audit numeric formats, preserve results and stop GPU afterward.
