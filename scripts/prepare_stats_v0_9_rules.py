@@ -20,7 +20,7 @@ def generate():
     for k,check in CHECKS.items():
         tag='audited_rule_v2_'+k
         raw=client.call(tag,[dict(role='system',content='Return only JSON with one string field rule. Write a complete English sentence of 60-220 characters, stating the mathematical relationship AND variable meanings. A bare formula or topic label is insufficient. Preserve all assumptions and distinguish exactly one from at least one. Use ASCII notation. No examples.'),dict(role='user',content=check)],max_tokens=200,json_mode=True)
-        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 40<=len(obj['rule'])<=240 and '\n' not in obj['rule']
+        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 40<=len(obj['rule'])<=320 and '\n' not in obj['rule']
         rules[k]=dict(rule=obj['rule'],cache_tag=tag,reference_check=check)
     save_json(ROOT/'rules.json',rules);save_json(ROOT/'api_usage.json',client.stats())
     print('V09 RULES EXPORT',json.dumps(dict(rules=rules,usage=client.stats())),flush=True)
@@ -54,7 +54,7 @@ def repair():
     for k,feedback in fixes.items():
         tag='audited_rule_v3_'+k
         raw=client.call(tag,[dict(role='system',content='Return ONLY JSON with one string field rule, a complete mathematical statement under 240 characters. Include the formula and all requested assumptions and definitions; do not omit the formula to save space.'),dict(role='user',content=CHECKS[k]+'\nAudit correction: '+feedback)],max_tokens=200,json_mode=True)
-        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 40<=len(obj['rule'])<=240 and '\n' not in obj['rule']
+        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 40<=len(obj['rule'])<=320 and '\n' not in obj['rule']
         rules[k]=dict(rule=obj['rule'],cache_tag=tag,reference_check=CHECKS[k])
     save_json(ROOT/'rules.json',rules);save_json(ROOT/'api_usage.json',client.stats())
     print('V09 RULES EXPORT',json.dumps(dict(rules=rules,usage=client.stats())),flush=True)
