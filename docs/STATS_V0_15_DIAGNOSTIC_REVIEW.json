@@ -1,0 +1,2967 @@
+{
+  "policy": "Full-output semantic review: explicit correct scalar for extraction; correct fully substituted formula with consistent continuation for formulation; no gold repair. Original auto grades unchanged.",
+  "summary": {
+    "v14": {
+      "moment": {
+        "extract_mean": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_variance": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_scale": {
+          "n": 8,
+          "correct": 0
+        },
+        "extract_offset": {
+          "n": 8,
+          "correct": 8
+        },
+        "mean": {
+          "n": 8,
+          "correct": 0
+        },
+        "variance": {
+          "n": 8,
+          "correct": 0
+        },
+        "original": {
+          "n": 8,
+          "correct": 0
+        },
+        "hinted": {
+          "n": 8,
+          "correct": 0
+        }
+      },
+      "poisson_scaled": {
+        "extract_mean": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_variance": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_scale": {
+          "n": 8,
+          "correct": 0
+        },
+        "extract_offset": {
+          "n": 8,
+          "correct": 8
+        },
+        "mean": {
+          "n": 8,
+          "correct": 5
+        },
+        "variance": {
+          "n": 8,
+          "correct": 1
+        },
+        "original": {
+          "n": 8,
+          "correct": 0
+        },
+        "hinted": {
+          "n": 8,
+          "correct": 0
+        }
+      }
+    },
+    "v15": {
+      "moment": {
+        "extract_mean": {
+          "n": 8,
+          "correct": 7
+        },
+        "extract_variance": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_scale": {
+          "n": 8,
+          "correct": 0
+        },
+        "extract_offset": {
+          "n": 8,
+          "correct": 8
+        },
+        "mean": {
+          "n": 8,
+          "correct": 1
+        },
+        "variance": {
+          "n": 8,
+          "correct": 0
+        },
+        "original": {
+          "n": 8,
+          "correct": 0
+        },
+        "hinted": {
+          "n": 8,
+          "correct": 7
+        }
+      },
+      "poisson_scaled": {
+        "extract_mean": {
+          "n": 8,
+          "correct": 8
+        },
+        "extract_variance": {
+          "n": 8,
+          "correct": 7
+        },
+        "extract_scale": {
+          "n": 8,
+          "correct": 4
+        },
+        "extract_offset": {
+          "n": 8,
+          "correct": 8
+        },
+        "mean": {
+          "n": 8,
+          "correct": 4
+        },
+        "variance": {
+          "n": 8,
+          "correct": 0
+        },
+        "original": {
+          "n": 8,
+          "correct": 0
+        },
+        "hinted": {
+          "n": 8,
+          "correct": 4
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "81b8a03f97e8787c53fe1a86bda042b6f0de9b0ec9c09357e107c99ba4d6948a",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "16b391e7c820e913ff7f61663a99f8c109fa7164146d0d2a3374ea062c9a1456",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "22a38a34aa3c858a813ecd9d1aedd8d5be00eebaf19d85f4ff26dd7ced5467b2",
+      "automatic": true,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cde275cb0e91ec3eec58ea6396d56badcaf58136501507a14d05534c6b682ebc",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "2e2a985574852407f4da3f0edad224a67d09b75ef90b64e7a84049014df52aec",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "68683f9af060bd322bbeb8052645eb42733d610172834ec68d62dcb198e1bae6",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "a2a036aa653a505ed04cf315193803f909cdd9d5569bacf58b034b2265c37873",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_000_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "1ee74d0877c0747b00cb2b886f0411508b0a12bbe777bf93090640ab581e609d",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "cf37aaeb4ba62a757045d97a995df20fd4c650c7a56a88cf6e775dde0362f547",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "b88cc2b4a009d377a4f5f9fda245e609ceb326c558a2b54f789319728c70de51",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "468c3a8ddda84848bc5a5bda8c5f64f1e76984f1c34527ecaa07235f10a48a78",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "868b67554b0ad4f9158a88f8dd8dbd7dd044e5c8ad5b03ad4225f5353c657613",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "7ccb9d34e09cfdcd9424b1fc28e182627b33f3ea3c82cbf62049906729364ef1",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "935dc7e17e911e3a85f2f7b710841dd063ba72df3e48c6b8793026323060659f",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_001_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "097aa57fc7d908119ca6e84f26bd6fd61c36ad4e0c0cc4359c941151e6fee67f",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "02d20bbd7e394ad5999a4cebabac9619732c343a4cac99470c03e23ba2bdc2bc",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "c76123431980c479cae6ffdec7f382a3bc592e59617f15f5d413d31e3380720c",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "5cdf65cf40baf01db12fbb3a61938e6a216e27a642a88d8961e8a02f623c9aa0",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cc5ed760ba285c4c680f67fe33bc5a5593967b6131b313bb546d22a1b048682e",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "1ac49dffde3b5d6d63d25866cac707c001dde905d90a8e167e1ac8bad56d3de1",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "2fbb23c84031192f1b1554be17f3a9aa312f43f8f98863ad05d9769f019292ee",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Explicit 3^2 * 55 in prose and consistent final variance 495; no later contradictory conclusion.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "1425dcee109e25edca9ed99c1c36784535e1f675aa05478f05dfbadca5e8efe9",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_002_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "40423b9e7ebd1358bee67671eb1684c502ccbf6ec033004e9de92f7fa00a777b",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "a903b7a4d825fbdf0cf5f5a2803ce86e1f4ba1d7012125ecd2be5caa1fa183db",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "89c79c17abddbda00d792d7e527b580a7ee714276e66b0df691616d7519f93f4",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cc5ed760ba285c4c680f67fe33bc5a5593967b6131b313bb546d22a1b048682e",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "dafaa606ff7d6c68665b678601b10d22b399d93cef7ee666050304baf694535d",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "0502d891c057a173a69e833d0abbc80d97feefe082a31cd9106c4f29e0ed6c5a",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "721a49c1ee873eb6eba9e0694500cb9e53b4ac8eddfc3c083d74133944688b41",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_003_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "5a4ff4f995d2eeb9ff5e68f5a0a6d45ae70dd2b397331f6f58c780003c8c513e",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "7688b6ef52555962d008fff894223582c484517cea7da49ee67800adc7fc8866",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "8c8f3d880d811efdbd226ac48b69c3fd14ae1f0614f1edb96a6bbd7d0bc10840",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "76e1cdc84064957537e09020a1ae03ad89b6d6712bdfee84b6c3b920c3d46593",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "c70e2fb0854470a8d1682446b1613ec0ac0682fc901c46bb428c48e50fe7a1cb",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "7cd48fc5faeaebad3d217b2a613ab0dd2d45dea9c948d7bcf9adf0e197e98947",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "5a9ef77676a6e863cdfc01ab03770d2c0d93a763fbadf64d98f0aaf11b078b76",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "33cbb3635418b4e19df7aa3395c9826bba62f1c7c0e0e9d8bc5e20ef1a51d8dd",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_004_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "47eda36a2460cea2ab84a0c621875757f8bf79bff040d569539c83225f727ebb",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "6208ef0f7750c111548cf90b6ea1d0d0a66f6bff40dbef07cb45ec436263c7d6",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "ebbc58a25397c554a992b180cd84b57a512c97b0e5557a1ca7c129c7fb2316d1",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "32e9b21423d5255f4f2fb73139d64f455e99ae1a8dbca0e1aef59a0b5f6eb025",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "5f291aede797708c7f08507293aaf0d1bcc277a378a17073a436bed75f300766",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "2eee10a4ce69fcb0e0c0e0fbaba7195dd4ef9817a63853a3e7d3a89486812ac0",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "7b37d4dadb646d444b835f99b9cd12b25877a574cf21a9c60affe5462525fa64",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "4722756de1eae679bf32e0305533ab8f3b6705522b1c1dc92de0f4595c35ccd4",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_005_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "cdfbf1871cfba1613aac1fde3a9e68cd0fd935f24937f47ed8fcd7e083fc84e8",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "39dc85a126856f717042e0ede6eca547704a64234494e9814c4e619d0b1082dc",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "b9e71105b03133c6e0c76f8cd34c853225f4c8e7a759456b7090a604774f0adc",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "b76df22cd5816420a158f23fa3292213f779e68cc7fff956a3fbd27f20eb6902",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "d9b283afded47abde2a3c72b355f5188319bdc81a398646cbba09f2745312e24",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "da80cda7a1f454cfc63377123552badbde0e672454536bc44b2de6d462cdba27",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "5164d542c0d13697367577a033076a49882b3f727d58aef582fe7eed60fa38d1",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_006_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "518fbb3351cc43802fa7a5b594ccedaf3df456337bfd0f9a677586933b948d2d",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "31489056e0916d59fe3add79e63f095af3ffb81604691f21cad442a85c7be617",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "d021a40b123003b32d822198025083303c3cab8eb7ee5a0f09f087f3e44a81e8",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "44bbb6bdda4c04df66c938341f6790f70fc3bedab35b68c970cf068f4a01fbbe",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "23f4f0770809cd5619e1a8e8debf656342d0cda0bc648d9c4a7a94a45a449c1d",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "589457848be3e548363b74a065d6120d09afb63e4904e01266783ae68ab94f9e",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "0cd75b84b5443cd9ab6520ab48dfe695b939058b5f9dde232baf304fc1aac400",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "7f6d44d91b9b3eaf8d7914be2e85084a84395daff6ff981fc1d85d31f20c2567",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_poisson_scaled_007_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "268062e3295bc20e37ac3b8f55aa9df0117ab06118b69c094768b77f2b089f06",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "326c92a9404b960360b363f04d5d95fa6b69f7b5bae84730615b5b44d74f5f48",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "a05198938c6ca8cd56289c6dba6bb8aaa68dfe8e0d7a37df2fb76e48eeba4244",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "4665f9c431554b7d4c60e4f512718689a5df89de0dd899eafc2506b8e45f9d04",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "ab254d6e6eef2d4d60fdf8586d31ffb60496973998868e16db5d2971576b6ae5",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "46db31ae0fb85b94a08ddd512eab3248541a7a271643e1ce0b9a0fcb18a920e4",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "8e044243908c7ecbae414ff82e04729f02e1f0c3dc6add1cdbe52e63f81e50ff",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "a4c59abd6c8a7618c35a057090d644d314c84fc899b3e5aa705750eb2fc82a39",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_000_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "4cf73aadcfa5191c47c261cd51afef268c946f20cdef1679c36fb0a810b9afab",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "235c0eeaa55cd09ab52db75e1a4e6ef45f99f8c8943b482b652c1d13280cde60",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "4bf0f34983767fe8739b41ca11f1aefc4772c657050e9afb90cf359e042ab999",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "0622949775c4018b5b6ca7340ee20e07597eead9673ec934e596d1f19c57e59f",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "cae1a9fb35791fd98511d745c2e1102be7d24fc9b58de6d79e9cfce4da93813c",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "7a8d65fa2c988cbab975d34d599e14dca559a3bb4467d5ead2e21fb57489da9a",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "7a8d65fa2c988cbab975d34d599e14dca559a3bb4467d5ead2e21fb57489da9a",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "42d366d192bdf0268cd944005628c16760e9ace6aba17784b52c90296fa43e90",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_001_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "093513b81817748bede22b1efa83ed4da51777c1a93669d6b41cb23c0a8ef5c5",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "dd221547ea90f1bb7e32978718b8347b04d6ad851a2caad04db25db230e892a3",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "a1d8a8ee13b6ff73f311633e9e68c6a382eb8d95695b32c59671d951fea4b320",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "b67e9822c7ec7afcdfb8a5c82c455a5f889e77412ef6eb68df546e592bc4457e",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "75a5187a421d0395017baa948697b50797290f0d8df9d28e6bb84bd5805bff2b",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "6b9fed4d5f7ca5d08363d7a1a49a186dfd01d177ac85f7acf09c5268d7a915ee",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "6b9fed4d5f7ca5d08363d7a1a49a186dfd01d177ac85f7acf09c5268d7a915ee",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "57c6ada404eea88049bd60be998df08c4a986e4b0d95f3c5aa499135a667ed75",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_002_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "725ef21e4764cd65f8f6e044d65dc188e36f3b0275513d4254d9ef27d73e6dae",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "235c0eeaa55cd09ab52db75e1a4e6ef45f99f8c8943b482b652c1d13280cde60",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "7a11fb4f08b83cfbaa6531c039c5422ca5b9e94e180e1bbf249a934bfc7479f8",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "f964cbbe5b375e7bc5c32d180a137b64c12f132299a39a3619bf3417479c8143",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "38436e2e7d78cae9b1f99d07239e841e7fcd1a1c7a6dc9039f3fe9b250c1726f",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "ba42f954013c929aa12597258c36f02bfd9cb93053f7f52b104e4b9cb9dd5fca",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "ba42f954013c929aa12597258c36f02bfd9cb93053f7f52b104e4b9cb9dd5fca",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "a973dcb4d14ff9f69b97c82c5b1a79d5743f8a3b0a8ac40f176265cfa333d967",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_003_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "a030dedfac9f602dab2b3172f491ffbbdca510ae2f34a7cba31946ff35598bb5",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "dd221547ea90f1bb7e32978718b8347b04d6ad851a2caad04db25db230e892a3",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "cc6bb91d4a9aec9fe2e20ae49fd18166f522a7918a2ff2ecd1c2c35b5d4649e1",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "dac0bde37bb3bcec0850946ee336064ac1d93860d0f4e79880344b191a145e15",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "6b94ea677a0bd63e5e4a93d6593c86563968ea97f71c33ec0b12eb8301e1dbed",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "fe387d2108906f034cb70301737e23e3fabf2144bd3836dc61d742596e034e76",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "fe387d2108906f034cb70301737e23e3fabf2144bd3836dc61d742596e034e76",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "9e7ed97794d3f7e7cee96ff8dbdc8bd3eb994181b736cef00993f4f3dc80349d",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_004_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "3b998ca2f4f25daf3c673e90cd4092abce2cf47e6a587abaff461cdbf4b8fd1a",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "720b4dca7f33434f4e2b1724eece691e2248fd101de1c474c3768cb0cba53b71",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "549a2fac47d713cc00f2db498ad6b5574fb03c9293aef6c7ad50a11b394c197d",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "5f7d8c6a98a8e85f13288c6f1c8725a4f001f3091b0d824a6d9d1b13051ca905",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "38436e2e7d78cae9b1f99d07239e841e7fcd1a1c7a6dc9039f3fe9b250c1726f",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "db1425addf017700fa40d405b3619f95da6601183ddac3774aa62a30fc33da2d",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "db1425addf017700fa40d405b3619f95da6601183ddac3774aa62a30fc33da2d",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "32565b6fbdd45ef371ea6a84addd6cf803507ca6f77741568236978e462fb04c",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_005_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "b170a8e57ef229199d6d59b7ce320ef558e248c3d35865cb65acafe3d306fad9",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "d09f5b497074d82293d5c9eb54fcebb49bd140fee05c8cf753e76bc6c2d2b93d",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "9a39641060d4c67be3ac89613d0d45f31d6f97fada8e199a0cd84d8c5c86beb5",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "268241e57e720ba5f977a038b983b75fd0754364390f01700553e642830504d0",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "9a08e1b1000c35edee9b209fe218ea9293a4a44cc4f34588db586c81868be227",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "ae8e0092379d71094462b4caf181c2ad63bdda2e4bec3290a595b8264bcbee06",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "ae8e0092379d71094462b4caf181c2ad63bdda2e4bec3290a595b8264bcbee06",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "8e822f2119a354080cfb33ccbae9cb1add9dfeebe8c6300032ca0e44d19cac8b",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_006_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "5fa1683294ef0279f2c2e3c93d643f5ac6b6c29df772ec224090e1f5bd2d9f64",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "95204e2017619009f81298598fb0740c9af4f3e0bf3b6d8137d62077e61396dd",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "d6c26c64d5c5f69659feb7b67a3301afe2ab2ef97356882d5772d854003adcbc",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "6e580673a5aeef34d5ff3f4b34ab651770783fb0fb34308155079e28e031e64c",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "b3edea26968c1a4faa27877818fd2cc41d3c6678449fed386c1284f69688c7d8",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "35c91d8970b18279053639c7455328cb3fd7d26a8b044882962693659b05d7bf",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "35c91d8970b18279053639c7455328cb3fd7d26a8b044882962693659b05d7bf",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "7041fb706cd46d00a01ae6ee3ce9bfd2e23db1e9071309cfa339597a335fbc86",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v14",
+      "id": "v15_test_moment_007_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "53b8947c1bacdc6fc24d76d61964368594279a87bd833731e29a9e8b4487a31e",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "81b8a03f97e8787c53fe1a86bda042b6f0de9b0ec9c09357e107c99ba4d6948a",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "114ac3f206d447763df6a963cf1f063c9e376829aeaf9a700835dba7f85bc85f",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "fd1ed8214e1137f1f974eac26116b59e8b4cf538abb93bdc9b2a48f415dcfee9",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cde275cb0e91ec3eec58ea6396d56badcaf58136501507a14d05534c6b682ebc",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "bb91781b38e8b7114d4c8239df5aedc073f68de5520cdd006f5b1e18ae5f566d",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "62694dd835a88449161d6a5c3b943204a1c9c7073cd3b476ccd5005e51194ca4",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "a584af87be11b019e86f275c84233aa5311c6213841bb2b6435c9830f460909f",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_000_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "0f6b726f2c68b169e53024e31524c94488c179058e68a3b295f8fc2ab068e785",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "6cadc42dc292a0bbcb6760d07f016b272d974077bd7eb808724808af6c60ac55",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "8070e4d67099d4880e8e1b78b7e9fadc8bbc1e736eec6faafa2d4975e35a76f9",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "468c3a8ddda84848bc5a5bda8c5f64f1e76984f1c34527ecaa07235f10a48a78",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "5a60302ec3d491bab65f589104a5db886f7d4723d28bcd136cb2e26c0cf4ca73",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "a443d06341a913c1b93fd7a13d4c595109af7547c30170c51c68b91b3488cfd0",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "7515fd018bd59bd3270d20a7cf82e7802fda0cbedc0237f268dd78a083bb2867",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_001_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "7c49b5d49b2144209fbb9bd9224884a01230f509707bfd50c95a73116a665c7f",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "02d20bbd7e394ad5999a4cebabac9619732c343a4cac99470c03e23ba2bdc2bc",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "4e9a00de0b32db614d96d7c227e80892ef03c1bfcb18738635d3ed9a75906cbf",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "fd1ed8214e1137f1f974eac26116b59e8b4cf538abb93bdc9b2a48f415dcfee9",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cc5ed760ba285c4c680f67fe33bc5a5593967b6131b313bb546d22a1b048682e",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "f1c33515e06f90c6311e5ce276097020ec0f8b050aa0ddb941341f80f47636b5",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "b47b8af6ead58c0d05b006bd66123cfb0f8930f86c82ba7d83289cdebc8f4f3e",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "79d5b017b1576505e4441d9cc51008f8917c314d3c8d0e7bda0d2a47b9da63d8",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_002_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "8243ec308f533e33829a2479c418d2945133f8254d1889d52d229941e7d8c3b9",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "e629fa6598d732768f7c726b4b621285f9c3b85303900aa912017db7617d8bdb",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "485d9a50ae8bb908ca465f4bad841072655054bda355ff7a68639a0641d124d2",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "fd1ed8214e1137f1f974eac26116b59e8b4cf538abb93bdc9b2a48f415dcfee9",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "cc5ed760ba285c4c680f67fe33bc5a5593967b6131b313bb546d22a1b048682e",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "676449c4a69bb5d15350e5aeb5cbef2d65b3c6cc5c2ea83983827755dd135be4",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "5a7f5784a9e5f1074a2e6e0f498da8487fe82f5b5440549759de7bbab85b5034",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "d89c0bacc8bf9e5fd11947b1993e6da3f8d13a751c6c48b53f0bda286aa03d18",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_003_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "d060b781d951885ddbae92231e3db74080d03fe3880d9e4b3d7317c27ed57c8f",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "7688b6ef52555962d008fff894223582c484517cea7da49ee67800adc7fc8866",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "705467714e2a9b24c071d85bec6d182b11767abb51311294e331e3a5d0283884",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "093879dcf43f81156946fecb7064636cecef50c0f7a2fe697bade23d110e18b6",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "c70e2fb0854470a8d1682446b1613ec0ac0682fc901c46bb428c48e50fe7a1cb",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "cb63fc17661b2258253c3e522e264e1108d85675a1b1d971c4375c19753e482d",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "d163635e207c0921fbd05f48f46e1bbc05aeb7a7ba11f784ed1945e1401b523a",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "7ca5077bfbc049ddf11bccd89c01016d373c10ba9659cbe2c710197d3810dead",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_004_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "612a062a3b1ef09cb4363841d769c072b9de4db5b017753bef30a8789e052a51",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "6208ef0f7750c111548cf90b6ea1d0d0a66f6bff40dbef07cb45ec436263c7d6",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "1355118eac1e961b056b7b8749a1560acb8ff3f3d9ecdf17d46959f3cf186657",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "78ed06e61f385ff8e8fb88243e3394be4cbf3405f88b8dc141f0e0a93407954c",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "5f291aede797708c7f08507293aaf0d1bcc277a378a17073a436bed75f300766",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "08c856afb4933140c8c510b00515433e512f1663a0b91f6175dfdbf3340ec20b",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "a22adba5428a6596099886dee7c0f8b899ec5336acd17eac1bdb7873c824da0a",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "cca64ead6243754088965882e37893e4e8e294f0bda484939f12b461640a0439",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_005_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "95aec67ec6c5002bf84d7f79d9af977d3c589764ffb301f6607a4bf4201b7bc0",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "76a50887d8f1c2e9301755428990ad81479ee21c25b43215cf524541e0503269",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "79f71b404086980e83d50d28f6bf536dcb4b0b81ec41d743b0337cadc6af650d",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "d743a7c2d85df48ad9bb70a3c90ab4f6edc5371549e7562356d8f6b99b206642",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "b76df22cd5816420a158f23fa3292213f779e68cc7fff956a3fbd27f20eb6902",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "25cdd70a31f2d0ffa998d373a08ca1750550fbe2ebc0f425645b33bc62686563",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "18c794a7f35c29874a751330b82d66a8e4652615fb2cf32e76e8136cc0557280",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "bbb6cd2b677fe7101df1568e0a4e51c1ffb600b3828dde635d8543422918badb",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_006_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "53552a6fbfbfcb786314c551dda9a7e613d7a1289f2fde3fa4f020ebe41f463f",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_extract_mean",
+      "family": "poisson_scaled",
+      "stage": "extract_mean",
+      "raw_sha256": "31489056e0916d59fe3add79e63f095af3ffb81604691f21cad442a85c7be617",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_extract_variance",
+      "family": "poisson_scaled",
+      "stage": "extract_variance",
+      "raw_sha256": "9808456747cc2b1dd740c03939b920730c5199ad26ae146c22e1c44378c402ff",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_extract_scale",
+      "family": "poisson_scaled",
+      "stage": "extract_scale",
+      "raw_sha256": "2db6cbeef2c5239041d5ea3650bf2b9adef1346bfe16ceee5a8244c2462685e2",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_extract_offset",
+      "family": "poisson_scaled",
+      "stage": "extract_offset",
+      "raw_sha256": "23f4f0770809cd5619e1a8e8debf656342d0cda0bc648d9c4a7a94a45a449c1d",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_mean",
+      "family": "poisson_scaled",
+      "stage": "mean",
+      "raw_sha256": "4ff8afc8f3fb25e27b0ca932079a9dcf66cbff3df351d1496ebbafcf43a1b1f0",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct fully substituted mean formula appears, followed by consistent arithmetic/final answer; prose formatting does not remove credit.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_variance",
+      "family": "poisson_scaled",
+      "stage": "variance",
+      "raw_sha256": "b2e19a38a712cca0a89269d24acfd171f994e6ef9d110ca8fe715a2f3921cbe8",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_original",
+      "family": "poisson_scaled",
+      "stage": "original",
+      "raw_sha256": "e5aa6b1502faf7ee4ddf1d0e68de69eb4b8466913d251de30fd6c1b49c5ad144",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_poisson_scaled_007_hinted",
+      "family": "poisson_scaled",
+      "stage": "hinted",
+      "raw_sha256": "99e702ab4ae8408f28cd62e1b315b9d4d9f53aafbe709ed8e29c7354d6a69506",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "326c92a9404b960360b363f04d5d95fa6b69f7b5bae84730615b5b44d74f5f48",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "a05198938c6ca8cd56289c6dba6bb8aaa68dfe8e0d7a37df2fb76e48eeba4244",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "c7875987eefa41078c9c47c865c04b2817d2c316dcedbc2f97e55fee8c8de586",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "ab254d6e6eef2d4d60fdf8586d31ffb60496973998868e16db5d2971576b6ae5",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "3ed4bb0c0fa4a74352762d8c173937430055bf198b371b5f328b37d790273359",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": [
+        "Correct final mean formula; earlier arithmetic and variance claims are wrong. Final formulation credit only."
+      ]
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "fc650c7521d6bc6ed6f25b14428e6961b0c2831f21dadff5b18189c54263d5cb",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "fe1c15f8b3f2815b938dc114e9794efec4f3a2fe979ef01ce0408be607dda7f4",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_000_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "9ce8e55c904ef1e115eabfe89a24570494d88795732e43f190497f5e48e62bde",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "235c0eeaa55cd09ab52db75e1a4e6ef45f99f8c8943b482b652c1d13280cde60",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "4bf0f34983767fe8739b41ca11f1aefc4772c657050e9afb90cf359e042ab999",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "07e30a28e6a0c3ecf47acb7509bebf400a310be4da10a38e63cc4c4fb7066b7f",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "cae1a9fb35791fd98511d745c2e1102be7d24fc9b58de6d79e9cfce4da93813c",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "dbf6e50555db69a12313571bfed8078831fb010dccfa17302fe6bc2a911055cd",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "d986cc4244dad2b433989facd64e3ac6dea0545623bce4bb93422eafebfef1d6",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "f513726f9a1b8e3815ae20faff01c5315a625c3d02e6eac8edc98a42170355fd",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_001_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "33a5f7cc2899be13771f1cdaed28e444f92aff4aa120c4356c38e17c32569796",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "dd221547ea90f1bb7e32978718b8347b04d6ad851a2caad04db25db230e892a3",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "a1d8a8ee13b6ff73f311633e9e68c6a382eb8d95695b32c59671d951fea4b320",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "ac3300bbbbf3ce11a343f71257da471f948bc84decf5af4567ac2f751921980c",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "75a5187a421d0395017baa948697b50797290f0d8df9d28e6bb84bd5805bff2b",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "cf034093cd7b211e741ef6a4c53f44d5e9f39642d84445e6593194296d1338c8",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "e52e3ab35e7729f36100fc4b786c1438920d5549d91908f41baaf296c3c05f2e",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "180ac88d90be5bbfaf7d454805d861b0b98f0d93e0853a96aa678e3ba8860661",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_002_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "e8d4b811a2e07f5fb77bb039f07b017ccbe870dff47232f2c80e73dd0523c3ed",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "235c0eeaa55cd09ab52db75e1a4e6ef45f99f8c8943b482b652c1d13280cde60",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "7a11fb4f08b83cfbaa6531c039c5422ca5b9e94e180e1bbf249a934bfc7479f8",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "71b03fb74ed949fc48fadf3eca4559628c9d5785fd59a3b662ff7f462d38b5de",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "38436e2e7d78cae9b1f99d07239e841e7fcd1a1c7a6dc9039f3fe9b250c1726f",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "520cf14cbf5db5c82be540ed9da9130b5f80afd279c39cfa1c4ae230bf576a4c",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "f8594fde9de91d274f618742defdba7352e9ff11c284f53316ca5223eaad55f8",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "a973dcb4d14ff9f69b97c82c5b1a79d5743f8a3b0a8ac40f176265cfa333d967",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_003_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "157d57df8872e750752efc74be9240d45641e94aa6398201108f8c553d6ac2a7",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "dd221547ea90f1bb7e32978718b8347b04d6ad851a2caad04db25db230e892a3",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "cc6bb91d4a9aec9fe2e20ae49fd18166f522a7918a2ff2ecd1c2c35b5d4649e1",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "0c43ad06e8b931ca7f9b708c85a909e71ae4e92d9531361b4118747ed72f4c02",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "6b94ea677a0bd63e5e4a93d6593c86563968ea97f71c33ec0b12eb8301e1dbed",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "b434f619bccee59372dc0f61d9280a803be40c9c856122779aabc9d94ad86b95",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "d3e79c548dae82444423da4e05b26a665b3064bc6002501d35fda386fedef1fc",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "3282fd20e93272f9af712c4bbb2d1768e226d4887002e60c04a50e43a24cf359",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_004_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "8e61a3eee04ee4175350b3720728850cb8f7d778c93a3dfa6a9beecbfa8bf90e",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "720b4dca7f33434f4e2b1724eece691e2248fd101de1c474c3768cb0cba53b71",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "549a2fac47d713cc00f2db498ad6b5574fb03c9293aef6c7ad50a11b394c197d",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "87582170577396dac36de35940e37023cb4e5aaf6be970d6c42e408ef99f3ef6",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "38436e2e7d78cae9b1f99d07239e841e7fcd1a1c7a6dc9039f3fe9b250c1726f",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "ba10c71e45994ac0d0bc29cf65ecb304b0a207ef13b5d326a3ce5f90a57e6958",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "cec03f0a450bc89822e326712faad3cab80c22f4c9e3be179884b838e27efa18",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "32565b6fbdd45ef371ea6a84addd6cf803507ca6f77741568236978e462fb04c",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_005_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "7e11451e8d9364a982b920b81e59461f00d8b194470328c8b89287a4f3777338",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "2d9bd9329cf4c1ea0c8095d6858e69f52d1ef5eb565c5a567ee888725e6b7b86",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": [
+        "Correct E[X]=60, but additionally confuses it with the transformed quantity expectation. Binding credit only."
+      ]
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "9a39641060d4c67be3ac89613d0d45f31d6f97fada8e199a0cd84d8c5c86beb5",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "bd4a90d08451681a58ebb082e28e2414c4ef9171829b3b8e6de8fafd1c447913",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "9a08e1b1000c35edee9b209fe218ea9293a4a44cc4f34588db586c81868be227",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "63ab098c0045d7df4d5fe2948e39073e9ec591dc3cce906869989f47503de7e3",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "e802e26d8cfdfa6409c3f96e751b350854dcf1878f8163faecd31fbdc0dd7856",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "8e822f2119a354080cfb33ccbae9cb1add9dfeebe8c6300032ca0e44d19cac8b",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_006_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "fa85da14bb5bf6a0373508ee3b5795585f8adc6fc554bc6f98cc99322e2f483e",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_extract_mean",
+      "family": "moment",
+      "stage": "extract_mean",
+      "raw_sha256": "d982b1ba04dc0b25fa5da21cf6cc63d74530d1d63d0a3fdddfad766b76e334f3",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_extract_variance",
+      "family": "moment",
+      "stage": "extract_variance",
+      "raw_sha256": "d6c26c64d5c5f69659feb7b67a3301afe2ab2ef97356882d5772d854003adcbc",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_extract_scale",
+      "family": "moment",
+      "stage": "extract_scale",
+      "raw_sha256": "738f405f77d4ec73303e93e18bc6413185df7a9f30814872dd559b4e49f966d0",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "Wrong or unfinished multiplier/value; do not credit a truncated trailing digit or an intermediate correct number.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_extract_offset",
+      "family": "moment",
+      "stage": "extract_offset",
+      "raw_sha256": "b3edea26968c1a4faa27877818fd2cc41d3c6678449fed386c1284f69688c7d8",
+      "automatic": null,
+      "semantic_correct": true,
+      "reason": "Correct requested scalar is explicitly stated in the response, including prose.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_mean",
+      "family": "moment",
+      "stage": "mean",
+      "raw_sha256": "541ee7c3165613e66609389d157b41cec11593244248429dc0ae9922a9058932",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_variance",
+      "family": "moment",
+      "stage": "variance",
+      "raw_sha256": "ecca596f0bbb05fc1025bbbc681587fbe96354473e31d4013341fc5ed5151a07",
+      "automatic": null,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_original",
+      "family": "moment",
+      "stage": "original",
+      "raw_sha256": "7041fb706cd46d00a01ae6ee3ce9bfd2e23db1e9071309cfa339597a335fbc86",
+      "automatic": false,
+      "semantic_correct": false,
+      "reason": "No complete correct requested answer; unresolved X, wrong formula/binding, or unfinished response.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "id": "v15_test_moment_007_hinted",
+      "family": "moment",
+      "stage": "hinted",
+      "raw_sha256": "a84b256cf840c1f1324e7489a46647cf91d030404f7335d4812f8edf410b4e3a",
+      "automatic": true,
+      "semantic_correct": true,
+      "reason": "Reviewed full output: correct final substituted formula.",
+      "flags": []
+    }
+  ]
+}
