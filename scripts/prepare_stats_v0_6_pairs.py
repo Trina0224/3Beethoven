@@ -21,8 +21,14 @@ def assemble(old):
 
 def main():
     from kaggle_secrets import UserSecretsClient
+    ROOT.mkdir(exist_ok=True)
+    existing=read_json(ROOT/'test_questions.json')
+    if existing is not None and existing!=build():
+        raise RuntimeError('Frozen test differs; refuse mixed runs')
+    save_json(ROOT/'test_questions.json',build())
     old=read_json(REPO/'docs'/'STATS_V0_5_TEACHER_DATA.json')
     assert digest(old['train'])=='bcdae76a80519a037e3d7f3451800ff56a48c7f64fa8b26f13b993ef382a2c1f'
+    save_json(ROOT/'source_records.json',old)
     rows=assemble(old)
     save_json(ROOT/'train_records.json',rows)
     save_json(ROOT/'validation_records.json',old['validation'])
