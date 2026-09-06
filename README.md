@@ -90,7 +90,7 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Statistics pilot completed; position-bias repair in progress.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
+**Statistics pilot and v0.4 repair completed; retain v0.3 as the preferred experimental checkpoint.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
 
 | Checkpoint | Baseline | Trained v0.3 | Interpretation |
 |---|---:|---:|---|
@@ -106,4 +106,10 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 Code and text results are preserved in GitHub. The adapter and holdout archives are in Kaggle version 5 (347584475); rotation results are in version 6 (347586668). Total recorded teacher usage through this checkpoint is 154 calls and $0.007196965 in response-reported costs, not a billing statement. Rotation evaluation added no teacher calls.
 
-The next bounded experiment reuses validated Llama training records, rotates letter-only examples, preserves original teacher explanations, and freezes a new evaluation set before training. Existing exposed benchmarks remain regression diagnostics.
+The v0.4 repair reused the same teacher records with rotated letter targets. On a new 24-question, four-rotation probe, baseline / v0.3 / v0.4 scored 30.21% / 56.25% / 51.04%. The old-set gain (53.75% to 55.83%) did not carry over to this new probe; v0.4 is not promoted. Both trained models answered all rotations correctly for 8/24 new questions.
+
+- [v0.4 complete results and all 1,008 responses](docs/STATS_V0_4_RESULTS.md)
+- [v0.4 frozen protocol](docs/STATS_V0_4_PROTOCOL.md)
+- [Kaggle recovery and resume instructions](docs/KAGGLE_RECOVERY.md)
+
+The v0.4 model archive is preserved in Kaggle version 7 (347590242). This repair added zero teacher calls. The evidence supports partial transfer with remaining position sensitivity and weak arithmetic generalization, not a claim that distillation failed or that the teacher is inadequate. A subsequent study should examine training coverage and target weighting with a separately frozen evaluation.
