@@ -170,3 +170,12 @@ Short-calculation outputs were often truncated (baseline 16/24, v0.5 6/24), so t
 - [Fixed diagnostic protocol](docs/STATS_DIAGNOSTIC_V0_7_PROTOCOL.md)
 
 No weights changed and no teacher calls were made. Results are preserved in Kaggle version 12 (347608100); GPU stopped. v0.5 remains the leading experimental candidate.
+
+## Prompt and output-length diagnosis — v0.8 completed
+
+On the same 24 exposed questions, compact supplied-arithmetic strict scores rose to baseline 14/24 and v0.5 18/24 (format review: 18/24 and 20/24). Extending previously truncated original-step outputs yielded 8/24 and 10/24 strict. Compact full-problem scores were 3/24 and 8/24: compact formatting alone was not universally better. These results qualify the earlier interpretation of broad arithmetic weakness and highlight problem-to-formula translation as a remaining bottleneck. There were no teacher calls or weight changes.
+
+- [v0.8 report and limitations](docs/STATS_DIAGNOSTIC_V0_8_RESULTS.md)
+- [All responses and explicit format review](docs/STATS_DIAGNOSTIC_V0_8_RESULTS.json)
+
+The v0.8 archive and audited v0.9 preparation are preserved in Kaggle version 13 (347615356). v0.9 uses 180 new targeted training examples and a separately frozen 48-question test; its [protocol](docs/STATS_V0_9_PROTOCOL.md), [teacher corpus](docs/STATS_V0_9_TEACHER_DATA.json), and [data audit](docs/STATS_V0_9_DATA_AUDIT.md) are preserved before the final comparison.
