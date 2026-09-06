@@ -8,7 +8,7 @@ def main():
     from run_stats_v0_4 import metrics
     from stats_holdout_v1 import questions as old_questions
     data=build();summary=read(ROOT/'summary.json');out=dict(summary=summary,environment=read(ROOT/'environment.json'),
-        teacher_records=read(ROOT/'teacher/records.json'),training_logs={s:read(ROOT/s/'log.json') for s in ('full','cue','none')})
+        teacher_records=read(ROOT/'teacher/records.json'),teacher_structural_review=read(ROOT/'teacher/structural_review.json'),training_logs={s:read(ROOT/s/'log.json') for s in ('full','cue','none')})
     count=0
     for name in ('v15','v16'):
         for condition in ('unaided','aided'):
