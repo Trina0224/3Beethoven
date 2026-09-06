@@ -80,12 +80,15 @@ def main():
     assert digest(data)==DATA_SHA
     assert data==read(repo/'docs/STATS_V0_14_FROZEN_QUESTIONS.json')
     if not torch.cuda.is_available(): raise RuntimeError('CUDA GPU required')
-    gate=read(repo/'docs/STATS_V0_14_TEACHER_PERTURBATION_RESULTS.json')
-    if not gate or not gate['summary']['passed']: raise RuntimeError('Independent teacher gate has not passed')
+    gate=read(repo/'docs/STATS_V0_14_TEACHER_SCAFFOLD_RESULTS.json')
+    if not gate or not gate['summary']['passed']: raise RuntimeError('New rule-scaffolded teacher gate has not passed')
     restore()
     ROOT.mkdir(exist_ok=True)
     protocol=dict(data_sha256=DATA_SHA,source_adapter_sha256=SOURCE_SHA,source='v0.13',
         base_revision=BASE_REVISION,method='Filtered independent 70B response distillation; teacher-only AST normalization',
+        teacher_check='New rule-scaffolded diagnostic; earlier independent diagnostic remains failed',
+        teacher_check_sha256=gate['summary']['protocol_sha256'],
+        training_teacher_reminders=False,
         seed=1414,epochs=2,lr=2e-5,effective_batch=8,new_teacher_calls=0,
         checkpoint_selection='validation loss only',max_new_tokens=160,
         auto_score='Frozen formulation-v1: mathematical structure and exact execution; labels separate',
