@@ -1,0 +1,1058 @@
+{
+  "pairs": [
+    {
+      "id": 0,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_00_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            53,
+            421
+          ],
+          "question": "A homogeneous Poisson arrival process averages 53 arrivals per minute. Find the variance of the arrival count during 421 seconds.",
+          "bindings": {
+            "rate_per_minute": "53",
+            "duration_minutes": "421/60"
+          },
+          "expression": "53*(421/60)",
+          "answer": "22313/60",
+          "target": "Bindings: rate_per_minute=53; duration_minutes=421/60\nExpression: 53*(421/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_00_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            53,
+            421
+          ],
+          "question": "Count all arrivals in a 421-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 53 per minute. Set up the count variance.",
+          "bindings": {
+            "rate_per_minute": "53",
+            "duration_minutes": "421/60"
+          },
+          "expression": "53*(421/60)",
+          "answer": "22313/60",
+          "target": "Bindings: rate_per_minute=53; duration_minutes=421/60\nExpression: 53*(421/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_01_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            53,
+            421
+          ],
+          "question": "A homogeneous Poisson arrival process averages 53 arrivals per minute. Find the variance of the arrival count during 421 seconds.",
+          "bindings": {
+            "rate_per_minute": "53",
+            "duration_minutes": "421/60"
+          },
+          "expression": "53*(421/60)",
+          "answer": "22313/60",
+          "target": "Bindings: rate_per_minute=53; duration_minutes=421/60\nExpression: 53*(421/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_01_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            60,
+            421
+          ],
+          "question": "A homogeneous Poisson arrival process averages 60 arrivals per minute. Find the variance of the arrival count during 421 seconds.",
+          "bindings": {
+            "rate_per_minute": "60",
+            "duration_minutes": "421/60"
+          },
+          "expression": "60*(421/60)",
+          "answer": "421",
+          "target": "Bindings: rate_per_minute=60; duration_minutes=421/60\nExpression: 60*(421/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_02_0",
+          "category": "poisson_scaled",
+          "identity": [
+            "poisson_scaled",
+            54,
+            5,
+            19
+          ],
+          "question": "X is Poisson with mean 54. A recorded quantity is Y=5*X+19. Find Var(Y).",
+          "bindings": {
+            "mean": "54",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*54",
+          "answer": "1350",
+          "target": "Bindings: mean=54; scale=5; offset=19\nExpression: 5**2*54",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_02_1",
+          "category": "poisson_scaled",
+          "identity": [
+            "poisson_scaled",
+            54,
+            5,
+            19
+          ],
+          "question": "Adding 19 after multiplying a Poisson count X by 5 gives the displayed value. X has expectation 54. What variance does this display have?",
+          "bindings": {
+            "mean": "54",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*54",
+          "answer": "1350",
+          "target": "Bindings: mean=54; scale=5; offset=19\nExpression: 5**2*54",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_03_0",
+          "category": "poisson_scaled",
+          "identity": [
+            "poisson_scaled",
+            54,
+            5,
+            19
+          ],
+          "question": "X is Poisson with mean 54. A recorded quantity is Y=5*X+19. Find Var(Y).",
+          "bindings": {
+            "mean": "54",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*54",
+          "answer": "1350",
+          "target": "Bindings: mean=54; scale=5; offset=19\nExpression: 5**2*54",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_03_1",
+          "category": "poisson_scaled",
+          "identity": [
+            "poisson_scaled",
+            61,
+            5,
+            19
+          ],
+          "question": "X is Poisson with mean 61. A recorded quantity is Y=5*X+19. Find Var(Y).",
+          "bindings": {
+            "mean": "61",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*61",
+          "answer": "1525",
+          "target": "Bindings: mean=61; scale=5; offset=19\nExpression: 5**2*61",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_04_0",
+          "category": "moment",
+          "identity": [
+            "moment",
+            55,
+            435,
+            5,
+            19
+          ],
+          "question": "A random variable X has mean 55 and variance 435. Find E[(5*X+19)^2].",
+          "bindings": {
+            "mean": "55",
+            "variance": "435",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*435+(5*55+19)**2",
+          "answer": "97311",
+          "target": "Bindings: mean=55; variance=435; scale=5; offset=19\nExpression: 5**2*435+(5*55+19)**2",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_04_1",
+          "category": "moment",
+          "identity": [
+            "moment",
+            55,
+            435,
+            5,
+            19
+          ],
+          "question": "The quantity to average is the square of (5 times X plus 19), not the square of its average. The mean of X is 55, and its variance is 435. Set up that expectation.",
+          "bindings": {
+            "mean": "55",
+            "variance": "435",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*435+(5*55+19)**2",
+          "answer": "97311",
+          "target": "Bindings: mean=55; variance=435; scale=5; offset=19\nExpression: 5**2*435+(5*55+19)**2",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_05_0",
+          "category": "moment",
+          "identity": [
+            "moment",
+            55,
+            435,
+            5,
+            19
+          ],
+          "question": "A random variable X has mean 55 and variance 435. Find E[(5*X+19)^2].",
+          "bindings": {
+            "mean": "55",
+            "variance": "435",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*435+(5*55+19)**2",
+          "answer": "97311",
+          "target": "Bindings: mean=55; variance=435; scale=5; offset=19\nExpression: 5**2*435+(5*55+19)**2",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_05_1",
+          "category": "moment",
+          "identity": [
+            "moment",
+            62,
+            435,
+            5,
+            19
+          ],
+          "question": "A random variable X has mean 62 and variance 435. Find E[(5*X+19)^2].",
+          "bindings": {
+            "mean": "62",
+            "variance": "435",
+            "scale": "5",
+            "offset": "19"
+          },
+          "expression": "5**2*435+(5*62+19)**2",
+          "answer": "119116",
+          "target": "Bindings: mean=62; variance=435; scale=5; offset=19\nExpression: 5**2*435+(5*62+19)**2",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_06_0",
+          "category": "uniform_time",
+          "identity": [
+            "uniform_time",
+            56,
+            442
+          ],
+          "question": "A waiting time T is uniform from 0 to 56 minutes. Given that T exceeds 442 seconds, find its conditional mean in minutes.",
+          "bindings": {
+            "upper_minutes": "56",
+            "cutoff_minutes": "442/60"
+          },
+          "expression": "(56+442/60)/2",
+          "answer": "1901/60",
+          "target": "Bindings: upper_minutes=56; cutoff_minutes=442/60\nExpression: (56+442/60)/2",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_06_1",
+          "category": "uniform_time",
+          "identity": [
+            "uniform_time",
+            56,
+            442
+          ],
+          "question": "Only waits exceeding 442 seconds are retained. Before this selection, total waiting time is uniform on [0,56] minutes. What is the mean total duration, in minutes, of retained waits?",
+          "bindings": {
+            "upper_minutes": "56",
+            "cutoff_minutes": "442/60"
+          },
+          "expression": "(56+442/60)/2",
+          "answer": "1901/60",
+          "target": "Bindings: upper_minutes=56; cutoff_minutes=442/60\nExpression: (56+442/60)/2",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_07_0",
+          "category": "uniform_time",
+          "identity": [
+            "uniform_time",
+            56,
+            442
+          ],
+          "question": "A waiting time T is uniform from 0 to 56 minutes. Given that T exceeds 442 seconds, find its conditional mean in minutes.",
+          "bindings": {
+            "upper_minutes": "56",
+            "cutoff_minutes": "442/60"
+          },
+          "expression": "(56+442/60)/2",
+          "answer": "1901/60",
+          "target": "Bindings: upper_minutes=56; cutoff_minutes=442/60\nExpression: (56+442/60)/2",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_07_1",
+          "category": "uniform_time",
+          "identity": [
+            "uniform_time",
+            63,
+            442
+          ],
+          "question": "A waiting time T is uniform from 0 to 63 minutes. Given that T exceeds 442 seconds, find its conditional mean in minutes.",
+          "bindings": {
+            "upper_minutes": "63",
+            "cutoff_minutes": "442/60"
+          },
+          "expression": "(63+442/60)/2",
+          "answer": "2111/60",
+          "target": "Bindings: upper_minutes=63; cutoff_minutes=442/60\nExpression: (63+442/60)/2",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_08_0",
+          "category": "binomial",
+          "identity": [
+            "binomial",
+            7,
+            5,
+            57
+          ],
+          "question": "7 independent tests each have a true null hypothesis. Each test rejects with probability 57%. Find the probability that exactly 5 reject.",
+          "bindings": {
+            "n": "7",
+            "r": "5",
+            "reject_probability": "57/100"
+          },
+          "expression": "comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "answer": "23363100881253/100000000000000",
+          "target": "Bindings: n=7; r=5; reject_probability=57/100\nExpression: comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_08_1",
+          "category": "binomial",
+          "identity": [
+            "binomial",
+            7,
+            5,
+            57
+          ],
+          "question": "An experiment repeats 7 independent tests under true null hypotheses. A rejection occurs with probability 57/100 on each test. We count rejections and want the probability that the count equals 5.",
+          "bindings": {
+            "n": "7",
+            "r": "5",
+            "reject_probability": "57/100"
+          },
+          "expression": "comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "answer": "23363100881253/100000000000000",
+          "target": "Bindings: n=7; r=5; reject_probability=57/100\nExpression: comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_09_0",
+          "category": "binomial",
+          "identity": [
+            "binomial",
+            7,
+            5,
+            57
+          ],
+          "question": "7 independent tests each have a true null hypothesis. Each test rejects with probability 57%. Find the probability that exactly 5 reject.",
+          "bindings": {
+            "n": "7",
+            "r": "5",
+            "reject_probability": "57/100"
+          },
+          "expression": "comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "answer": "23363100881253/100000000000000",
+          "target": "Bindings: n=7; r=5; reject_probability=57/100\nExpression: comb(7,5)*(57/100)**5*(1-57/100)**(7-5)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_09_1",
+          "category": "binomial",
+          "identity": [
+            "binomial",
+            7,
+            5,
+            64
+          ],
+          "question": "7 independent tests each have a true null hypothesis. Each test rejects with probability 64%. Find the probability that exactly 5 reject.",
+          "bindings": {
+            "n": "7",
+            "r": "5",
+            "reject_probability": "64/100"
+          },
+          "expression": "comb(7,5)*(64/100)**5*(1-64/100)**(7-5)",
+          "answer": "1783627776/6103515625",
+          "target": "Bindings: n=7; r=5; reject_probability=64/100\nExpression: comb(7,5)*(64/100)**5*(1-64/100)**(7-5)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_10_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            38,
+            58
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 58%, and method B misses it with probability 38%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "58/100",
+            "miss_b": "38/100"
+          },
+          "expression": "(1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "answer": "649/1250",
+          "target": "Bindings: miss_a=58/100; miss_b=38/100\nExpression: (1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_10_1",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            38,
+            58
+          ],
+          "question": "For an existing defect, inspection A has miss probability 58/100, and independent inspection B has miss probability 38/100. What is the chance that one method detects and the other misses?",
+          "bindings": {
+            "miss_a": "58/100",
+            "miss_b": "38/100"
+          },
+          "expression": "(1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "answer": "649/1250",
+          "target": "Bindings: miss_a=58/100; miss_b=38/100\nExpression: (1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_11_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            38,
+            58
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 58%, and method B misses it with probability 38%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "58/100",
+            "miss_b": "38/100"
+          },
+          "expression": "(1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "answer": "649/1250",
+          "target": "Bindings: miss_a=58/100; miss_b=38/100\nExpression: (1-58/100)*(38/100)+(58/100)*(1-38/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_11_1",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            38,
+            65
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 65%, and method B misses it with probability 38%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "65/100",
+            "miss_b": "38/100"
+          },
+          "expression": "(1-65/100)*(38/100)+(65/100)*(1-38/100)",
+          "answer": "67/125",
+          "target": "Bindings: miss_a=65/100; miss_b=38/100\nExpression: (1-65/100)*(38/100)+(65/100)*(1-38/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_12_0",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            45,
+            59
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 59%, and method B misses it with probability 45%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "59/100",
+            "miss_b": "45/100"
+          },
+          "expression": "1-(59/100)*(45/100)",
+          "answer": "1469/2000",
+          "target": "Bindings: miss_a=59/100; miss_b=45/100\nExpression: 1-(59/100)*(45/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_12_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            45,
+            59
+          ],
+          "question": "For an existing defect, inspection A has miss probability 59/100, and independent inspection B has miss probability 45/100. What is the chance that one or both methods detect?",
+          "bindings": {
+            "miss_a": "59/100",
+            "miss_b": "45/100"
+          },
+          "expression": "1-(59/100)*(45/100)",
+          "answer": "1469/2000",
+          "target": "Bindings: miss_a=59/100; miss_b=45/100\nExpression: 1-(59/100)*(45/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_13_0",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            45,
+            59
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 59%, and method B misses it with probability 45%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "59/100",
+            "miss_b": "45/100"
+          },
+          "expression": "1-(59/100)*(45/100)",
+          "answer": "1469/2000",
+          "target": "Bindings: miss_a=59/100; miss_b=45/100\nExpression: 1-(59/100)*(45/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_13_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            45,
+            66
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 66%, and method B misses it with probability 45%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "66/100",
+            "miss_b": "45/100"
+          },
+          "expression": "1-(66/100)*(45/100)",
+          "answer": "703/1000",
+          "target": "Bindings: miss_a=66/100; miss_b=45/100\nExpression: 1-(66/100)*(45/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "group": "wording",
+      "questions": [
+        {
+          "id": "teacher_check_14_0",
+          "category": "interval",
+          "identity": [
+            "interval",
+            60,
+            530,
+            5
+          ],
+          "question": "A normal-theory confidence interval is [60, 530]. Holding its center, confidence level and population standard deviation fixed, multiply the sample size by 25. Find the new upper endpoint.",
+          "bindings": {
+            "lower": "60",
+            "upper": "530",
+            "width_divisor": "5"
+          },
+          "expression": "(60+530)/2+(530-60)/(2*5)",
+          "answer": "342",
+          "target": "Bindings: lower=60; upper=530; width_divisor=5\nExpression: (60+530)/2+(530-60)/(2*5)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_14_1",
+          "category": "interval",
+          "identity": [
+            "interval",
+            60,
+            530,
+            5
+          ],
+          "question": "Increase sample size by a factor of 25, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 60 to 530. Where is its upper endpoint after this change?",
+          "bindings": {
+            "lower": "60",
+            "upper": "530",
+            "width_divisor": "5"
+          },
+          "expression": "(60+530)/2+(530-60)/(2*5)",
+          "answer": "342",
+          "target": "Bindings: lower=60; upper=530; width_divisor=5\nExpression: (60+530)/2+(530-60)/(2*5)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "group": "parameter",
+      "questions": [
+        {
+          "id": "teacher_check_15_0",
+          "category": "interval",
+          "identity": [
+            "interval",
+            60,
+            530,
+            5
+          ],
+          "question": "A normal-theory confidence interval is [60, 530]. Holding its center, confidence level and population standard deviation fixed, multiply the sample size by 25. Find the new upper endpoint.",
+          "bindings": {
+            "lower": "60",
+            "upper": "530",
+            "width_divisor": "5"
+          },
+          "expression": "(60+530)/2+(530-60)/(2*5)",
+          "answer": "342",
+          "target": "Bindings: lower=60; upper=530; width_divisor=5\nExpression: (60+530)/2+(530-60)/(2*5)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_15_1",
+          "category": "interval",
+          "identity": [
+            "interval",
+            67,
+            537,
+            5
+          ],
+          "question": "A normal-theory confidence interval is [67, 537]. Holding its center, confidence level and population standard deviation fixed, multiply the sample size by 25. Find the new upper endpoint.",
+          "bindings": {
+            "lower": "67",
+            "upper": "537",
+            "width_divisor": "5"
+          },
+          "expression": "(67+537)/2+(537-67)/(2*5)",
+          "answer": "349",
+          "target": "Bindings: lower=67; upper=537; width_divisor=5\nExpression: (67+537)/2+(537-67)/(2*5)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "group": "unit",
+      "questions": [
+        {
+          "id": "teacher_check_16_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            67,
+            420
+          ],
+          "question": "A homogeneous Poisson arrival process averages 67 arrivals per minute. Find the variance of the arrival count during 420 seconds.",
+          "bindings": {
+            "rate_per_minute": "67",
+            "duration_minutes": "420/60"
+          },
+          "expression": "67*(420/60)",
+          "answer": "469",
+          "target": "Bindings: rate_per_minute=67; duration_minutes=420/60\nExpression: 67*(420/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_16_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            67,
+            420
+          ],
+          "question": "A homogeneous Poisson counter averages 67 events per minute. Find the count variance over 7 minutes.",
+          "bindings": {
+            "rate_per_minute": "67",
+            "duration_minutes": "7"
+          },
+          "expression": "67*7",
+          "answer": "469",
+          "target": "Bindings: rate_per_minute=67; duration_minutes=420/60\nExpression: 67*(420/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "group": "unit",
+      "questions": [
+        {
+          "id": "teacher_check_17_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            68,
+            480
+          ],
+          "question": "A homogeneous Poisson arrival process averages 68 arrivals per minute. Find the variance of the arrival count during 480 seconds.",
+          "bindings": {
+            "rate_per_minute": "68",
+            "duration_minutes": "480/60"
+          },
+          "expression": "68*(480/60)",
+          "answer": "544",
+          "target": "Bindings: rate_per_minute=68; duration_minutes=480/60\nExpression: 68*(480/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_17_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            68,
+            480
+          ],
+          "question": "A homogeneous Poisson counter averages 68 events per minute. Find the count variance over 8 minutes.",
+          "bindings": {
+            "rate_per_minute": "68",
+            "duration_minutes": "8"
+          },
+          "expression": "68*8",
+          "answer": "544",
+          "target": "Bindings: rate_per_minute=68; duration_minutes=480/60\nExpression: 68*(480/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "group": "unit",
+      "questions": [
+        {
+          "id": "teacher_check_18_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            69,
+            540
+          ],
+          "question": "A homogeneous Poisson arrival process averages 69 arrivals per minute. Find the variance of the arrival count during 540 seconds.",
+          "bindings": {
+            "rate_per_minute": "69",
+            "duration_minutes": "540/60"
+          },
+          "expression": "69*(540/60)",
+          "answer": "621",
+          "target": "Bindings: rate_per_minute=69; duration_minutes=540/60\nExpression: 69*(540/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_18_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            69,
+            540
+          ],
+          "question": "A homogeneous Poisson counter averages 69 events per minute. Find the count variance over 9 minutes.",
+          "bindings": {
+            "rate_per_minute": "69",
+            "duration_minutes": "9"
+          },
+          "expression": "69*9",
+          "answer": "621",
+          "target": "Bindings: rate_per_minute=69; duration_minutes=540/60\nExpression: 69*(540/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "group": "unit",
+      "questions": [
+        {
+          "id": "teacher_check_19_0",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            70,
+            600
+          ],
+          "question": "A homogeneous Poisson arrival process averages 70 arrivals per minute. Find the variance of the arrival count during 600 seconds.",
+          "bindings": {
+            "rate_per_minute": "70",
+            "duration_minutes": "600/60"
+          },
+          "expression": "70*(600/60)",
+          "answer": "700",
+          "target": "Bindings: rate_per_minute=70; duration_minutes=600/60\nExpression: 70*(600/60)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_19_1",
+          "category": "poisson_time",
+          "identity": [
+            "poisson_time",
+            70,
+            600
+          ],
+          "question": "A homogeneous Poisson counter averages 70 events per minute. Find the count variance over 10 minutes.",
+          "bindings": {
+            "rate_per_minute": "70",
+            "duration_minutes": "10"
+          },
+          "expression": "70*10",
+          "answer": "700",
+          "target": "Bindings: rate_per_minute=70; duration_minutes=600/60\nExpression: 70*(600/60)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "group": "event",
+      "questions": [
+        {
+          "id": "teacher_check_20_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            15,
+            61
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 61%, and method B misses it with probability 15%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "61/100",
+            "miss_b": "15/100"
+          },
+          "expression": "(1-61/100)*(15/100)+(61/100)*(1-15/100)",
+          "answer": "577/1000",
+          "target": "Bindings: miss_a=61/100; miss_b=15/100\nExpression: (1-61/100)*(15/100)+(61/100)*(1-15/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_20_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            15,
+            61
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 61%, and method B misses it with probability 15%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "61/100",
+            "miss_b": "15/100"
+          },
+          "expression": "1-(61/100)*(15/100)",
+          "answer": "1817/2000",
+          "target": "Bindings: miss_a=61/100; miss_b=15/100\nExpression: 1-(61/100)*(15/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "group": "event",
+      "questions": [
+        {
+          "id": "teacher_check_21_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            22,
+            62
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 62%, and method B misses it with probability 22%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "62/100",
+            "miss_b": "22/100"
+          },
+          "expression": "(1-62/100)*(22/100)+(62/100)*(1-22/100)",
+          "answer": "709/1250",
+          "target": "Bindings: miss_a=62/100; miss_b=22/100\nExpression: (1-62/100)*(22/100)+(62/100)*(1-22/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_21_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            22,
+            62
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 62%, and method B misses it with probability 22%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "62/100",
+            "miss_b": "22/100"
+          },
+          "expression": "1-(62/100)*(22/100)",
+          "answer": "2159/2500",
+          "target": "Bindings: miss_a=62/100; miss_b=22/100\nExpression: 1-(62/100)*(22/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "group": "event",
+      "questions": [
+        {
+          "id": "teacher_check_22_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            29,
+            63
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 63%, and method B misses it with probability 29%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "63/100",
+            "miss_b": "29/100"
+          },
+          "expression": "(1-63/100)*(29/100)+(63/100)*(1-29/100)",
+          "answer": "2773/5000",
+          "target": "Bindings: miss_a=63/100; miss_b=29/100\nExpression: (1-63/100)*(29/100)+(63/100)*(1-29/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_22_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            29,
+            63
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 63%, and method B misses it with probability 29%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "63/100",
+            "miss_b": "29/100"
+          },
+          "expression": "1-(63/100)*(29/100)",
+          "answer": "8173/10000",
+          "target": "Bindings: miss_a=63/100; miss_b=29/100\nExpression: 1-(63/100)*(29/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "group": "event",
+      "questions": [
+        {
+          "id": "teacher_check_23_0",
+          "category": "exactly_one",
+          "identity": [
+            "detection_pair",
+            36,
+            64
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 64%, and method B misses it with probability 36%. Find the probability that exactly one method detects the defect.",
+          "bindings": {
+            "miss_a": "64/100",
+            "miss_b": "36/100"
+          },
+          "expression": "(1-64/100)*(36/100)+(64/100)*(1-36/100)",
+          "answer": "337/625",
+          "target": "Bindings: miss_a=64/100; miss_b=36/100\nExpression: (1-64/100)*(36/100)+(64/100)*(1-36/100)",
+          "provenance": "procedural_reference"
+        },
+        {
+          "id": "teacher_check_23_1",
+          "category": "at_least_one",
+          "identity": [
+            "detection_pair",
+            36,
+            64
+          ],
+          "question": "Two independent methods inspect a defect. Method A misses it with probability 64%, and method B misses it with probability 36%. Find the probability that at least one method detects the defect.",
+          "bindings": {
+            "miss_a": "64/100",
+            "miss_b": "36/100"
+          },
+          "expression": "1-(64/100)*(36/100)",
+          "answer": "481/625",
+          "target": "Bindings: miss_a=64/100; miss_b=36/100\nExpression: 1-(64/100)*(36/100)",
+          "provenance": "procedural_reference"
+        }
+      ]
+    }
+  ],
+  "gate": {
+    "min_verified": 44,
+    "min_pairs": 20,
+    "min_group_fraction": 0.75
+  },
+  "policy": "48 independent prompts, one response each, no retries. Pending review does not pass. No test answers or references sent. Freeze before calls. No training on this diagnostic."
+}
