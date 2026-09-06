@@ -51,6 +51,6 @@ Retain **v15 as the general unaided candidate** and preserve **v16 as a rule-ass
 
 All **720 answers**, **392 finite adapter tensors**, **737 manifest files** and ZIP integrity verified. Adapter SHA-256: `117a009f72ebafe6e6baefef62a6b81e7bbcefbc902f7eb3d93f5e73f48d46d0`. Final ZIP: **371,440,108 bytes**, SHA-256 `494fd49d497ab1569578eb4983d22d90bd2721495bb1d683f46b3a26c385067f`. The ZIP includes the intermediate adapters as well as the final adapter.
 
-Kaggle Version 31 successfully preserves the completed training checkpoint. Final complete-output save is tracked in `MODEL_BACKUP_STATUS.json`; recover the final adapter from `3beethoven_stats_v0_16/adapter/adapter_model.safetensors`. Binary weights remain on Kaggle; GitHub preserves code, original teacher responses, results, review and recovery instructions. No independent fresh-session restore of v16 has been claimed.
+Kaggle Version 31 successfully preserves the completed training checkpoint. **Version 32 is Successful** and preserves the complete output with Always Save Output enabled; recover the final adapter from `3beethoven_stats_v0_16/adapter/adapter_model.safetensors`. Binary weights remain on Kaggle; GitHub preserves code, original teacher responses, results, review and recovery instructions. No independent fresh-session restore of v16 has been claimed.
 
 The browser progress connection ran out of memory during training; reconnecting confirmed Kaggle was still running. No training was restarted because of that browser failure.
