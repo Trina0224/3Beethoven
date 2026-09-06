@@ -8,43 +8,46 @@ The project is intentionally playful on the surface and rigorous underneath.
 
 ## Current experiment — 2026-09-06 PDT
 
-**v0.14 student response distillation is complete.** The goal is a correctly
-substituted numerical expression; an exact calculator handles arithmetic.
-126 verified teacher examples / 31 validation examples, initialized from v0.13,
-trained for 32 steps. Checkpoint selection used validation loss only.
+**v0.15 student training is complete: 44/64 correctly grounded formulations (68.8%).**
+The student emits a numerical expression; an exact calculator performs arithmetic.
+Training uses verified 70B responses, decomposed moment tasks, more weak-family
+practice and 32 replay examples. 200 train / 30 validation, 75 steps, checkpoint-75
+selected by validation loss only.
 
-| Same 64-question wording/parameter test | Vanilla 3B | v0.13 | v0.14 |
+| Same new 64-question test | Vanilla 3B | v0.14 | v0.15 |
 |---|---:|---:|---:|
-| Frozen automatic formulation score | 0/64 | 5/64 | 30/64 |
-| Supplemental semantic review | 8/64 | 8/64 | **33/64 (51.6%)** |
-| Old multiple-choice retention | 86/240 | 128/240 | 123/240 |
+| Frozen automatic score | 8/64 | 30/64 | 42/64 |
+| Supplemental semantic review | 8/64 | 30/64 | **44/64** |
+| Old multiple-choice retention | 86/240 | 123/240 | 127/240 |
 
-All models received identical prompts. Semantic review credits mathematically
-correct notation, complements, event sums and multiplication/division equivalence;
-it does not repair wrong formulas. Raw scores and every response remain available.
-The new student answers 25 more questions correctly than v0.13 (4.125 times as many).
-Improvements concentrate in binomial/event probabilities and confidence intervals.
-Second moments, affine Poisson variance and conditional waiting times remain weak;
-old-test retention dropped by 5/240. This is a limited-domain result, not broad reasoning.
+Paired outcomes: 14 newly correct, zero newly wrong, 30 correct in both versions.
+Two equivalent numerical expressions receive supplemental credit; all original
+scores and raw responses remain unchanged. Student prompts and graders are
+identical within this comparison. The test is a bounded eight-family statistics
+set with new parameters, not a general reasoning benchmark.
 
-The earlier v0.13 96/96 result used familiar templates and a two-line prompt;
-this test changes wording and uses one-line expressions. The two scores are not
-interchangeable. v0.13 was procedural SFT; v0.14 adds filtered independent 70B responses.
+**The targeted moment problem is NOT solved yet.** Both versions score 0/8 on
+second moments and affine Poisson variance, despite verified teacher targets.
+Poisson time and conditional total wait improve from 0/8 to 6/8 each. Binomial,
+exactly-one, at-least-one and interval formulations reach 8/8 each. Intermediate
+steps were taught but not separately tested, so the remaining bottleneck is unresolved.
 
-The independent teacher diagnostic remains 43/48 after semantic review and failed
-its gate. A new frozen diagnostic with general symbolic formula reminders passed
-46/48, with unchanged thresholds. Neither diagnostic was used as student training data.
+The initial multi-rule teacher prompt accepted 133/168 train and 23/32 validation
+candidates. A separately recorded focused-teaching revision corrected 42 of 44
+rejected candidates, with no numeric gold supplied. Total teacher cost US$0.01766836.
+This combines several curriculum changes and does not isolate a decomposition-only effect.
 
-**Weights and outputs: Kaggle Version 28, Successful.** 912 responses, 392 finite
-weight tensors and ZIP integrity verified. GitHub contains source, teacher targets,
-raw results and review; the binary adapter is preserved on Kaggle.
+**Kaggle Version 29: Successful, weights and outputs saved.** All 912 predictions,
+392 finite weight tensors and ZIP integrity were verified. GitHub contains source,
+teacher records, results and semantic review; binary weights are preserved on Kaggle.
 
-- [Current status and limitations](docs/STATS_CURRENT_STATUS.md)
-- [Training protocol](docs/STATS_V0_14_TRAINING_RUN.md)
-- [All 912 predictions and verification](docs/STATS_V0_14_RESULTS.json)
-- [Semantic review](docs/STATS_V0_14_SEMANTIC_REVIEW.json)
-- [Recovery instructions](docs/KAGGLE_RECOVERY.md)
-- [Historical v0.13 results](docs/STATS_V0_13_RESULTS.json)
+- [Current status and category results](docs/STATS_CURRENT_STATUS.md)
+- [Frozen protocol and teaching decisions](docs/STATS_V0_15_PROTOCOL.md)
+- [Full results and teacher supplements](docs/STATS_V0_15_RESULTS.json)
+- [Initial teacher responses](docs/STATS_V0_15_TEACHER_INITIAL.json)
+- [Semantic review](docs/STATS_V0_15_SEMANTIC_REVIEW.json)
+- [Weight recovery](docs/KAGGLE_RECOVERY.md)
+- [Previous v0.14 run](docs/STATS_V0_14_TRAINING_RUN.md)
 
 ## Core idea
 
