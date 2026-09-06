@@ -53,3 +53,13 @@ Keeping the student, benchmark, curriculum, and training recipe constant would i
 Teacher parameter count alone does not guarantee teacher quality. The project has already observed that a 70B model can be strong in one domain and unreliable in another. For that reason, **teacher competency must be measured before synthetic data generation begins**.
 
 This constraint is intentional: the public repository teaches a reproducible, legally cautious distillation workflow. Repeating the same workflow with a stronger authorized teacher is left to the reader.
+
+## Clarification checked against official terms (2026-09-06 UTC)
+
+The [individual Terms of Use](https://openai.com/policies/row-terms-of-use/), effective January 1, 2026, restrict using Output to develop competing models. They do not state a blanket exemption merely because a project is small, educational, or noncommercial.
+
+The [Services Agreement](https://openai.com/policies/services-agreement/), sections 3.3 and 16 definitions, contains specified exceptions for certain non-distributed classification/organization models and customization of models supplied through OpenAI's services. Those exceptions should not be assumed to cover this generative Llama project. Whether a particular project is competing requires attention to the applicable agreement and use; this document is not a legal determination that every third-party fine-tune is prohibited.
+
+For this repository, retain the explicit Llama-only training-target policy unless applicable permission is established. Do not describe OpenAI assistance with engineering or reporting as OpenAI-generated teacher targets; record actual provenance. No ChatGPT-generated answer explanations were added as student targets in v0.4.
+
+The present experiment also does not show that the 70B teacher is inadequate: on the same original-order 60-item holdout, the teacher scored 52/60 versus the untrained student's 21/60. The training set contained only 48 independent training questions across six narrow templates. Coverage, target weighting, and student optimization remain plausible limitations, not established single causes.
