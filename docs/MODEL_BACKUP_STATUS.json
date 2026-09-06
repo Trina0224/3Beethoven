@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-05 America/Los_Angeles",
+  "status_as_of": "2026-09-05 23:07 America/Los_Angeles",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -29,24 +29,30 @@
       }
     },
     "v10": {
-      "status": "second epoch running; epoch-1 checkpoint preserved",
-      "intermediate_saved_version": 16,
-      "script_version_id": 347632501,
-      "checkpoint_path": "3beethoven_stats_v0_10/checkpoints/checkpoint-65",
-      "saved_contents_verified_in_ui": [
-        "adapter_model.safetensors",
-        "adapter_config.json",
-        "optimizer.pt",
-        "rng_state.pth",
-        "scheduler.pt",
-        "scaler.pt",
-        "trainer_state.json",
-        "training_args.bin",
-        "tokenizer.json",
-        "tokenizer_config.json",
-        "chat_template.jinja"
+      "status": "completed and independently backed up",
+      "final_selected_model": true,
+      "saved_kaggle_versions": [
+        16,
+        17,
+        18
       ],
-      "final_selected_model": false
+      "final_version": 18,
+      "script_version_id": 347636958,
+      "selected_checkpoint": 130,
+      "adapter_sha256": "14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9",
+      "finite_tensors": 392,
+      "archive": {
+        "filename": "3beethoven_stats_v0_10.zip",
+        "bytes": 93104858,
+        "sha256": "470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677",
+        "independently_saved": true,
+        "downloaded_zip_crc_verified": true,
+        "downloaded_adapter_sha256_verified": true,
+        "exact_original_metadata": true
+      },
+      "gpu_session": "off, confirmed after final save",
+      "report": "docs/STATS_V0_10_REPORT.md",
+      "raw_results": "docs/STATS_V0_10_RESULTS.json"
     }
   },
   "limitations": [
