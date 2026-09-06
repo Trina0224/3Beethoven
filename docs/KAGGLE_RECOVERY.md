@@ -180,3 +180,10 @@ GitHub contains the corpus, code, results and recovery instructions. Weight bina
 
 
 An independent v0.9 binary backup subsequently succeeded: browser download events timed out, but both downloaded files arrived and matched the exact adapter SHA-256. `3beethoven_v0_9_weights_backup.zip` (90,115,646 bytes; SHA-256 `773cee2a8262ba7533af87aaeb18ae022b83a92b62dad144dd2ce72ebca08ec1`) was saved separately and contains the original weight bytes plus a clearly labeled reconstructed minimal loading config. It excludes the base model and optimizer state. Original tokenizer and metadata remain in saved Kaggle outputs. This independent backup is not a GitHub binary commit.
+
+
+## v0.10 completed — 2026-09-05 PDT
+
+Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
+
+Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
