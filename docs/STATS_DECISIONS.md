@@ -15,3 +15,9 @@ Decision:
 6. Save model archives in Kaggle and code/data/reports in GitHub; stop GPU after preservation.
 
 v0.5 remains the leading experimental candidate until new evidence warrants a change. Do not interpret supplied formulas or answers as independently solved test performance.
+
+## v0.8 clarification and v0.9 preparation
+
+Compact supplied-arithmetic strict accuracy is baseline 14/24 and v0.5 18/24 (format review 18/24 and 20/24). Longer original-step outputs yield 8/24 and 10/24 strict versus 2/24 and 7/24 under the earlier cap. Compact full problems yield 3/24 and 8/24; compact format is not universally better. The earlier broad interpretation of weak arithmetic must therefore be qualified: prompt/length conditions strongly affect results, while problem-to-formula translation remains weak. No teacher calls or weight updates were used in v0.8.
+
+Proceed with a fresh-base v0.9 targeted curriculum: 180 train, 24 validation, 48 parameter-disjoint test questions frozen before generation. All 204 calculations and seven shared Llama rules audited; original and reference-conditioned repairs retained. Preparation is saved in Kaggle version 13 (347615356). Training and same-run baseline/v0.5 comparisons began after 41 tests passed. Keep the predefined thresholds and report negative outcomes as faithfully as positive outcomes.
