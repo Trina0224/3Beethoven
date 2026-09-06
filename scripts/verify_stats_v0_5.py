@@ -18,7 +18,8 @@ def corpus():
         assert len(rows)==len(frozen[split])
         for r,q in zip(rows,frozen[split]):
             assert r['question_sha256']==digest(q)
-            cache=read_json(ROOT/'api_cache'/f"generate_{r['id']}_{r['accepted_attempt']}.json")
+            tag=r.get('target_cache_tag',f"generate_{r['id']}_{r['accepted_attempt']}")
+            cache=read_json(ROOT/'api_cache'/(tag+'.json'))
             target=parse_output(cache['text'])
             assert all(r[k]==target[k] for k in ('answer_letter','explanation','common_mistake'))
             assert r['answer_letter']==q['answer_letter']
