@@ -55,3 +55,10 @@ User raised a high probability of answer memorization for familiar decimals, wit
 Hybrid exact-arithmetic SFT plus prior teacher-response rehearsal produced a mixed outcome. Independently reviewed canonical arithmetic:43/60 to39/60; equivalent representations:23/60 to31/60; both representations correct:22/60 to27/60; fresh statistical transfer:16/48 to16/48; old MC:130/240 to133/240. These are matched comparisons on the same new questions, not the previous v0.10 benchmark. Primary gain and statistical-transfer goals failed; retain both models without blanket promotion of v0.11. The selected first-epoch checkpoint was chosen by validation before tests; all816 responses and392 finite adapter tensors were verified. Zero new teacher API calls.
 
 See [full reviewed report](STATS_V0_11_REPORT.md) and [raw responses and independent format audit](STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. Next useful pilot is explicitly decomposed GCD and digit/carry multiplication, not simply more examples of the same form.
+
+
+## v0.12 procedural arithmetic checkpoint — 2026-09-06 PDT
+
+The alternative-method pilot restarts from v0.10 and teaches explicit place-value multiplication, repeated multiplication for powers, Euclidean GCD, reduced fractions and full Type I/II statistical calculation chains. It uses 560 deterministic new examples plus 516 unchanged rehearsal sequences and zero teacher calls. Training completed in 270 optimizer steps; validation selected checkpoint135 with loss0.1543260962. Kaggle Quick Save version25 was confirmed Successful with output saving enabled.
+
+The full comparison had not finished when browser control restarted and lost its authenticated Kaggle session. v0.10's new strict baselines are arithmetic7/80, statistical transfer3/48 and old MC130/240. These low free-response baselines support the diagnosis that procedural calculation and output validity are distinct from retained option-selection performance. Do not claim v0.12 improvement until all three model summaries and independent format review are recovered. See [interim recovery record](STATS_V0_12_INTERIM.md).
