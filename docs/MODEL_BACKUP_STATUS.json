@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-06 05:58 PDT",
+  "status_as_of": "2026-09-06 07:15 PDT",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -9,6 +9,30 @@
     "recovery instructions"
   ],
   "models": {
+    "v16": {
+      "status": "training, evaluation and output backup complete; rule-assisted specialist candidate",
+      "promoted_as_general_replacement": false,
+      "saved_kaggle_versions": [31, 32],
+      "final_version": 32,
+      "final_version_status": "Successful",
+      "adapter_path": "3beethoven_stats_v0_16/adapter/adapter_model.safetensors",
+      "adapter_sha256": "117a009f72ebafe6e6baefef62a6b81e7bbcefbc902f7eb3d93f5e73f48d46d0",
+      "selected_checkpoint": "none/checkpoints/checkpoint-90",
+      "total_optimizer_steps": 150,
+      "finite_tensors": 392,
+      "verified_responses": 720,
+      "manifest_files": 737,
+      "restoration_verified": false,
+      "archive": {
+        "filename": "3beethoven_stats_v0_16.zip",
+        "bytes": 371440108,
+        "sha256": "494fd49d497ab1569578eb4983d22d90bd2721495bb1d683f46b3a26c385067f",
+        "crc_verified": true,
+        "contains_intermediate_adapters": true
+      },
+      "report": "docs/STATS_V0_16_REPORT.md",
+      "raw_results": "docs/STATS_V0_16_RESULTS.json"
+    },
     "v09": {
       "file": "adapter/adapter_model.safetensors",
       "bytes": 97307544,
