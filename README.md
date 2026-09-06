@@ -191,3 +191,10 @@ No-choice strict scores: 9/48, 11/48, 33/48; independent format review: 18/48, 1
 - [Model recovery and exact archive hashes](docs/KAGGLE_RECOVERY.md)
 
 This run used 467 teacher calls and US$0.024613645 in reported response costs. Recorded cumulative usage is 1,306 calls and US$0.075317545, not an account balance or invoice.
+
+
+## v0.10 completed — 2026-09-05 PDT
+
+Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](docs/STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
+
+Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
