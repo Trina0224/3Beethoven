@@ -1,5 +1,6 @@
 """Four bounded request workers, durable request ledger, teacher-only targets."""
 import json
+import re
 import threading
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
@@ -34,6 +35,21 @@ def valid_target(obj,item):
             for k,low,high in (('explanation',40,1200),('common_mistake',15,500))))
 
 
+def parse_output(raw):
+    cleaned=raw.strip()
+    prefix=re.match(r'^Answer:\s*([ABCD])\s*\n',cleaned)
+    if prefix:
+        body=cleaned[prefix.end():].strip()
+        if body.startswith('{'):
+            obj=json.loads(body)
+            if obj.get('answer_letter')!=prefix.group(1): raise ValueError('Conflicting answer prefix')
+            return obj
+        parts=re.split(r'\n(?:Common mistake|Common misconception):\s*',body,maxsplit=1,flags=re.I)
+        if len(parts)==2:
+            return dict(answer_letter=prefix.group(1),explanation=parts[0].strip(),common_mistake=parts[1].strip())
+    return parse_teacher(raw)
+
+
 def main():
     from kaggle_secrets import UserSecretsClient
     ROOT.mkdir(exist_ok=True)
@@ -66,11 +82,14 @@ def main():
             for attempt in range(3):
                 if stopping.is_set(): return None
                 system='Solve independently. Return only JSON string fields answer_letter, explanation, common_mistake. Explain the decisive calculation in 2-3 concise sentences. Describe a genuinely incorrect misconception explicitly as incorrect. Keep explanation under 900 characters and misconception under 300.'
-                user=prompt_for(item,'explain')
+                user=prompt_for(item,'explain').split('\n\nChoose A, B, C, or D')[0]+'\nReturn only the requested JSON object.'
                 if attempt:
                     user+='\nReference check: '+item['reference_reason']+' Correct choice: '+item['answer_letter']+'.\nReview feedback: '+feedback[:500]
-                raw=client.call(f"generate_{item['id']}_{attempt}",[dict(role='system',content=system),dict(role='user',content=user)],json_mode=True)
-                try: obj=parse_teacher(raw)
+                tag=f"generate_{item['id']}_{attempt}"
+                cached=read_json(ROOT/'api_cache'/(tag+'.json'))
+                # Existing paid responses retain their original request/provenance.
+                raw=cached['text'] if cached else client.call(tag,[dict(role='system',content=system),dict(role='user',content=user)],json_mode=True)
+                try: obj=parse_output(raw)
                 except (ValueError,TypeError):
                     feedback='Previous response was not the requested JSON schema.'; continue
                 if not valid_target(obj,item):
@@ -79,7 +98,7 @@ def main():
                 review_prompt=(prompt_for(item,'explain')+'\nReference: '+item['reference_reason']+
                     '\nCandidate answer: '+json.dumps(obj)+'\nCheck the answer, every calculation, and the misconception. Return JSON with valid (boolean), answer_letter, and reason. Mark valid false if any mathematical claim is wrong or a valid identity is called a mistake. Do not approve merely because the letter matches.')
                 review_raw=client.call(f"review_{item['id']}_{attempt}",[dict(role='user',content=review_prompt)],max_tokens=250,json_mode=True)
-                try: review=parse_teacher(review_raw)
+                try: review=parse_output(review_raw)
                 except (ValueError,TypeError): review=dict(valid=False,reason='Invalid review JSON')
                 save_json(ROOT/'reviews'/f"{item['id']}_{attempt}.json",review)
                 if review.get('valid') is True and review.get('answer_letter')==item['answer_letter']:
