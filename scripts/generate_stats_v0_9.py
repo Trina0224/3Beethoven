@@ -60,17 +60,20 @@ def main():
         path=ROOT/'accepted'/(q['id']+'.json');old=read_json(path)
         if old:assert old['question_sha256']==digest(q);return old
         error=''
-        for attempt in range(5):
+        for attempt in range(7):
             instructions='Solve the statistics question. Return ONLY JSON with string fields rule, calculation, answer. rule: one correct concise rule under 200 characters. calculation: a numerical equality with substituted numbers, using only numbers, parentheses, + - * / ** and =; no variables, factorial or function names. Every part separated by = must equal the final result. answer: exact integer or fraction only. Keep all fields short. No option letters or misconception discussion.'
             user=q['question']
             if attempt:user+='\nReference rule: '+q['reference_rule']+'\nVerified expression: '+q['reference_expression']+' = '+q['answer']+'\nPrevious check: '+error
             if attempt>=3:
                 instructions+=' Repair mode: reproduce the supplied verified numerical equation exactly as the calculation field. Do not expand it or add intermediate equalities. Use the supplied reference rule faithfully, and the exact reference answer. You must not replace any number.'
+            if attempt>=5:
+                instructions='Return the supplied verified JSON object unchanged. This is a formatting repair, not a new calculation. Preserve each string exactly, including fractions. Output JSON only.'
+                user=json.dumps(dict(rule=q['reference_rule'],calculation=q['reference_expression']+' = '+q['answer'],answer=q['answer']))
             tag=f'short_{q["id"]}_{attempt}'
             raw=client.call(tag,[dict(role='system',content=instructions),dict(role='user',content=user)],max_tokens=300,json_mode=True)
             try:obj=validated_solution(raw,q)
             except (ValueError,TypeError,SyntaxError,ZeroDivisionError,OverflowError) as exc:error=str(exc)[:160];continue
-            record=dict(q,teacher_model=TEACHER,question_sha256=digest(q),reference_conditioned=attempt>0,cache_tag=tag,teacher_solution=obj,target=target(obj),numeric_suffix_normalized=obj!=parse_teacher(raw))
+            record=dict(q,teacher_model=TEACHER,question_sha256=digest(q),reference_conditioned=attempt>0,verbatim_reference_repair=attempt>=5,cache_tag=tag,teacher_solution=obj,target=target(obj),numeric_suffix_normalized=obj!=parse_teacher(raw))
             save_json(path,record);return record
         raise RuntimeError('Numeric validation exhausted for '+q['id'])
     try:
