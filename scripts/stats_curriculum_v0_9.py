@@ -6,11 +6,11 @@ from stats_v0_3_common import digest
 TOPICS=('poisson','expectation','uniform','type_i','type_ii','confidence')
 
 def calculate(expr):
-    tree=ast.parse(expr.replace('^','**'),mode='eval')
+    tree=ast.parse(expr.replace('^','**').replace('×','*').replace('÷','/').replace('²','**2').strip(),mode='eval')
     if len(list(ast.walk(tree)))>80:raise ValueError('Expression too large')
     ops={ast.Add:operator.add,ast.Sub:operator.sub,ast.Mult:operator.mul,ast.Div:operator.truediv,ast.Pow:operator.pow}
     def walk(n):
-        if isinstance(n,ast.Constant) and isinstance(n.value,int) and abs(n.value)<100000:return F(n.value)
+        if isinstance(n,ast.Constant) and type(n.value) in (int,float) and abs(n.value)<100000:return F(str(n.value))
         if isinstance(n,ast.UnaryOp) and isinstance(n.op,ast.USub):return -walk(n.operand)
         if isinstance(n,ast.BinOp) and type(n.op) in ops:
             a,b=walk(n.left),walk(n.right)
