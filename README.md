@@ -90,7 +90,7 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Statistics pilot and v0.4 repair completed; retain v0.3 as the preferred experimental checkpoint.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
+**Statistics pilot through v0.5 completed. v0.5 is the leading statistics research candidate; v0.3 remains preserved for comparison and recovery.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
 
 | Checkpoint | Baseline | Trained v0.3 | Interpretation |
 |---|---:|---:|---|
@@ -114,10 +114,27 @@ The v0.4 repair reused the same teacher records with rotated letter targets. On 
 
 The v0.4 model archive is preserved in Kaggle version 7 (347590242). This repair added zero teacher calls. The evidence supports partial transfer with remaining position sensitivity and weak arithmetic generalization, not a claim that distillation failed or that the teacher is inadequate. A subsequent study should examine training coverage and target weighting with a separately frozen evaluation.
 
-## Expanded curriculum experiment
+## Expanded curriculum experiment — completed
 
-v0.5 is in progress with 180 training questions across 18 task families, 24 validation questions, and 36 frozen test questions. All concrete questions were frozen before teacher generation. The teacher, student and v0.3 training recipe are retained; this run expands curriculum coverage and increases training steps. The preferred completed experimental checkpoint remains v0.3 until new results warrant a change.
+v0.5 expanded to 180 training questions across 18 task families, 24 validation questions and 36 frozen test questions. All 204 teacher records were independently read before training; 27 records were revised by Llama to correct false or misleading explanations. Final student explanation targets remain Llama-only.
 
+| Same-run comparison | Baseline | v0.3 | v0.5 |
+|---|---:|---:|---:|
+| New 36 questions × four rotations | 40/144 (27.78%) | 52/144 (36.11%) | 72/144 (50.00%) |
+| New questions all four correct | 0/36 | 0/36 | 2/36 |
+| Old 60 questions × four rotations | 86/240 (35.83%) | 128/240 (53.33%) | 133/240 (55.42%) |
+| Old questions all four correct | 1/60 | 17/60 | 19/60 |
+
+All six new topic totals improved, but position sensitivity remains substantial. These are six parameterized test families, not 144 independent questions. The run increased curriculum coverage and training compute; it is not a compute-matched ablation. Training ran 135 steps, while validation selected the first-epoch checkpoint at step 45. Later validation losses worsened.
+
+The current v0.3 old-set result differs from historical 129/240 by one answer; the full report preserves and identifies the difference. Historical results above are not overwritten.
+
+- [Complete v0.5 report](docs/STATS_V0_5_RESULTS.md)
+- [All 1,152 model responses, runtime versions and logs](docs/STATS_V0_5_RESULTS.json)
+- [Teacher data audit and costs](docs/STATS_V0_5_DATA_AUDIT.md)
+- [Audited teacher records and provenance](docs/STATS_V0_5_TEACHER_DATA.json)
 - [Frozen v0.5 protocol](docs/STATS_V0_5_PROTOCOL.md)
 - [All frozen questions](docs/STATS_V0_5_FROZEN_QUESTIONS.json)
-- [Teacher generation and review](scripts/generate_stats_v0_5.py)
+- [Kaggle recovery instructions](docs/KAGGLE_RECOVERY.md)
+
+Kaggle version 8 (347596444) preserves the pre-training corpus; version 9 (347598932) preserves the complete model and verified ZIP. This run used 572 teacher calls and $0.037577505 in response-reported costs. Across recorded experiments: 726 calls and $0.044774470, not an account balance or invoice. Model archives remain on Kaggle; code and text results are in GitHub.
