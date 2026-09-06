@@ -58,7 +58,7 @@ This constraint is intentional: the public repository teaches a reproducible, le
 
 The [individual Terms of Use](https://openai.com/policies/row-terms-of-use/), effective January 1, 2026, restrict using Output to develop competing models. They do not state a blanket exemption merely because a project is small, educational, or noncommercial.
 
-The [Services Agreement](https://openai.com/policies/services-agreement/), sections 3.3 and 16 definitions, contains specified exceptions for certain non-distributed classification/organization models and customization of models supplied through OpenAI's services. Those exceptions should not be assumed to cover this generative Llama project. Whether a particular project is competing requires attention to the applicable agreement and use; this document is not a legal determination that every third-party fine-tune is prohibited.
+The [Services Agreement](https://openai.com/policies/services-agreement/), section 3.3 and the definition of Permitted Exception, contains specified exceptions for certain non-distributed classification/organization models and customization of models supplied through OpenAI's services. Those exceptions should not be assumed to cover this generative Llama project. Whether a particular project is competing requires attention to the applicable agreement and use; this document is not a legal determination that every third-party fine-tune is prohibited.
 
 For this repository, retain the explicit Llama-only training-target policy unless applicable permission is established. Do not describe OpenAI assistance with engineering or reporting as OpenAI-generated teacher targets; record actual provenance. No ChatGPT-generated answer explanations were added as student targets in v0.4.
 
