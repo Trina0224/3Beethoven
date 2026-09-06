@@ -21,7 +21,7 @@ class Client(TeacherClient):
 
 def validate(obj,q):
     if not all(isinstance(obj.get(k),str) for k in ('rule','calculation','answer')):raise ValueError('String fields required')
-    if not 15<=len(obj['rule'])<=240 or '\n' in obj['rule']:raise ValueError('Rule length/format')
+    if not 15<=len(obj['rule'])<=320 or '\n' in obj['rule']:raise ValueError('Rule length/format')
     if len(obj['calculation'])>240 or '\n' in obj['calculation']:raise ValueError('Calculation length/format')
     if F(obj['answer'])!=F(q['answer']):raise ValueError('Answer mismatch')
     parts=obj['calculation'].split('=')
