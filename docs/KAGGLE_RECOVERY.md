@@ -1,6 +1,18 @@
 # Recovering saved statistics experiments
 
-## Latest student: v0.14, saved Version 28
+## Latest student: v0.15, saved Version 29
+
+Restore `trinashih/3beethoven-v0-2/versions/29` with
+`kagglehub.notebook_output_download`, then locate
+`3beethoven_stats_v0_15/adapter/adapter_model.safetensors`.
+Verify SHA-256 `9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3`.
+ZIP `3beethoven_stats_v0_15.zip`: 93,892,056 bytes,
+SHA-256 `49b1e411edab050f0aae694b0b1b80181613bca5afacc8d79dd75abfe0eed097`.
+Version 29 was confirmed Successful with output saving enabled. The adapter needs
+the base model revision in its training protocol; it is not a standalone base model.
+
+
+## Previous student: v0.14, saved Version 28
 
 Version 28 was confirmed Successful with output saving enabled. Restore specifically
 `trinashih/3beethoven-v0-2/versions/28` using the existing `kagglehub.notebook_output_download`
