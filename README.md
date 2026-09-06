@@ -6,6 +6,29 @@
 
 The project is intentionally playful on the surface and rigorous underneath.
 
+## Current experiment — 2026-09-06 PDT
+
+**The active statistics pilot trains a 3B student to read a word problem and produce a correctly substituted, executable expression.** Formula choice, event interpretation, units and parameter bindings must be correct; an exact calculator performs the arithmetic. The classical-music project remains the original application, not a capability demonstrated by these statistics results. Logit distillation is deferred.
+
+| Evidence | Baseline | v0.10 | v0.13 |
+|---|---:|---:|---:|
+| v0.13 test: strict two-line interface | 0/96 | 0/96 | 96/96 |
+| Same answers: correct setup explicitly present, retrospective review | 18/96 | 39/96 | 96/96 |
+| Old multiple-choice retention, 60 questions × four rotations | 86/240 | 130/240 | 128/240 |
+
+The first two strict zeros are format rejections, not zero mathematical ability. The retrospective metric credits a correct setup even if later output contradicts it: 1 baseline and 12 v0.10 credited answers have such conflicts. It is not final tool-readiness accuracy. v0.13 used **procedural SFT, with no new teacher calls**; its test uses held-out parameters from familiar template families, so 96/96 does not establish broad word-problem generalization.
+
+**v0.14 teacher preparation finished; student training has not started.** Llama 3.3 70B answered 128 training and 32 validation candidates independently, with no supplied gold answers. All 160 were rejected by the strict interface gate; raw examples contain valid mathematics alongside missing labels, symbolic expressions and binding issues. Do not interpret this as 0% teacher reasoning accuracy. The 320 calls cost US$0.01482488 in API-reported usage. No automatic retry beyond the frozen cap is scheduled.
+
+Next gate: review and normalize representation without changing mathematical meaning; then assess the teacher on explicitly paired wording, parameter, unit and event perturbations before training the student. The existing 64-question v0.14 student test remains reserved, not teacher-generation material. No teacher perturbation pass has been established yet; agree and freeze its scoring criteria before evaluating it.
+
+- [Current status, limitations and next checks](docs/STATS_CURRENT_STATUS.md)
+- [v0.13 protocol](docs/STATS_V0_13_PROTOCOL.md), [288 raw answers](docs/STATS_V0_13_RESULTS.json), [format-independent review](docs/STATS_V0_13_FORMAT_INDEPENDENT_REVIEW.json)
+- [Teacher reliability review](docs/STATS_TEACHER_REVIEW_FOLLOWUP.md)
+- [v0.14 protocol](docs/STATS_V0_14_PROTOCOL.md), [raw teacher attempts](docs/STATS_V0_14_TEACHER_RAW.json)
+
+v0.13 weights and outputs were saved successfully in **Kaggle Version 26**. Source, scoring records and text results are on GitHub. Historical results below retain their original metrics and thresholds.
+
 ## Core idea
 
 ```text
@@ -90,7 +113,7 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Statistics pilot through v0.9 completed. Targeted v0.9 reaches 64.06% on its frozen test, exceeding twice baseline, but misses the rotation-robustness goal and regresses slightly on the older test. Preserve v0.5 as the broader comparison candidate.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
+**Historical checkpoint through v0.9.** Targeted v0.9 reached 64.06% on its frozen test, exceeding twice baseline, but missed the rotation-robustness goal and regressed slightly on the older test. At that checkpoint, v0.5 was retained as the broader comparison candidate. See the current experiment above for the subsequent formulation objective and v0.13/v0.14 status.
 
 | Checkpoint | Baseline | Trained v0.3 | Interpretation |
 |---|---:|---:|---|
@@ -204,4 +227,4 @@ Kaggle Quick Save version 18 (script version 347636958) is Successful and contai
 
 Hybrid exact-arithmetic SFT plus prior teacher-response rehearsal produced a mixed outcome. Independently reviewed canonical arithmetic:43/60 to39/60; equivalent representations:23/60 to31/60; both representations correct:22/60 to27/60; fresh statistical transfer:16/48 to16/48; old MC:130/240 to133/240. These are matched comparisons on the same new questions, not the previous v0.10 benchmark. Primary gain and statistical-transfer goals failed; retain both models without blanket promotion of v0.11. The selected first-epoch checkpoint was chosen by validation before tests; all816 responses and392 finite adapter tensors were verified. Zero new teacher API calls.
 
-See [full reviewed report](docs/STATS_V0_11_REPORT.md) and [raw responses and independent format audit](docs/STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. Next useful pilot is explicitly decomposed GCD and digit/carry multiplication, not simply more examples of the same form.
+See [full reviewed report](docs/STATS_V0_11_REPORT.md) and [raw responses and independent format audit](docs/STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. The arithmetic follow-up was pursued in v0.12; the current objective has since changed to correct formulation with arithmetic delegated to a tool. Historical arithmetic endpoints remain unchanged.
