@@ -2,8 +2,9 @@
 
 ## Latest trained candidate: v0.16
 
-Version 31 preserves completed training; use the final complete-output version recorded
-in `MODEL_BACKUP_STATUS.json` for all predictions and verification. Locate
+Version 31 preserves completed training. **Version 32 is Successful** and contains
+the complete predictions and verification; restore `trinashih/3beethoven-v0-2/versions/32`
+with `kagglehub.notebook_output_download`. Locate
 `3beethoven_stats_v0_16/adapter/adapter_model.safetensors` and verify SHA-256
 `117a009f72ebafe6e6baefef62a6b81e7bbcefbc902f7eb3d93f5e73f48d46d0`.
 Final ZIP `3beethoven_stats_v0_16.zip`: 371,440,108 bytes, SHA-256
