@@ -1,0 +1,917 @@
+{
+  "responses": [
+    {
+      "group": "wording",
+      "id": "teacher_check_00_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "22313/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "53 * (421 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 0,
+      "raw": "rate_per_minute = 53; duration_minutes = 421 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_00_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "22313/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "53 * (421 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 0,
+      "raw": "rate_per_minute = 53; duration_minutes = 421 / 60\nExpression: rate_per_minute * duration_minutes"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_01_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "22313/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "53 * (421 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 1,
+      "raw": "rate_per_minute = 53; duration_minutes = 421 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_01_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "421",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "60 * (421 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 1,
+      "raw": "rate_per_minute = 60; duration_minutes = 421 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_02_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1350",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "5 ** 2 * 54",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "Var(Y) = scale ** 2 * mean"
+      },
+      "pair_id": 2,
+      "raw": "mean = 54; scale = 5; offset = 19\nVar(Y) = scale ** 2 * mean"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_02_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "82171",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": false,
+        "normalized_expression": "(5 * 54 + 19) ** 2 - 5 ** 2 * 54",
+        "parse_notes": [],
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "review_required": false,
+        "selected_source": "(5 * 54 + 19) ** 2 - (5 ** 2) * 54"
+      },
+      "pair_id": 2,
+      "raw": "mean = 54; scale = 5; offset = 19\n(5 * 54 + 19) ** 2 - (5 ** 2) * 54"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_03_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1350",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "5 ** 2 * 54",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "Var(Y) = scale ** 2 * mean"
+      },
+      "pair_id": 3,
+      "raw": "mean = 54; scale = 5; offset = 19\nVar(Y) = scale ** 2 * mean"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_03_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1525",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "5 ** 2 * 61",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "Var(Y) = scale ** 2 * mean"
+      },
+      "pair_id": 3,
+      "raw": "mean = 61; scale = 5; offset = 19\nVar(Y) = scale ** 2 * mean"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_04_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "21686",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": false,
+        "normalized_expression": "5 ** 2 * 435 + 2 * 5 * 55 * 19 + 19 ** 2",
+        "parse_notes": [],
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "review_required": false,
+        "selected_source": "E[(5*X+19)^2] = (scale**2) * variance + (2 * scale * mean * offset) + (offset**2)"
+      },
+      "pair_id": 4,
+      "raw": "mean = 55; variance = 435; scale = 5; offset = 19\nE[(5*X+19)^2] = (scale**2) * variance + (2 * scale * mean * offset) + (offset**2)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_04_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "97311",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "5 ** 2 * 435 + (5 * 55 + 19) ** 2",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "E[(scale*X + offset)**2] = (scale**2)*variance + (scale*mean + offset)**2"
+      },
+      "pair_id": 4,
+      "raw": "mean=55; variance=435; scale=5; offset=19\nE[(scale*X + offset)**2] = (scale**2)*variance + (scale*mean + offset)**2"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_05_0",
+      "judged": {
+        "bindings_match_schema": false,
+        "computed": "21686",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": false,
+        "normalized_expression": "5 ** 2 * 435 + 2 * 5 * 19 * 55 + 19 ** 2",
+        "parse_notes": [],
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "review_required": false,
+        "selected_source": "E[(5*X+19)**2] = (5**2) * variance + (2 * 5 * 19 * mean) + 19**2"
+      },
+      "pair_id": 5,
+      "raw": "mean = 55; variance = 435; \nE[(5*X+19)**2] = (5**2) * variance + (2 * 5 * 19 * mean) + 19**2"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_05_1",
+      "judged": {
+        "bindings_match_schema": false,
+        "computed": "23016",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": false,
+        "normalized_expression": "5 ** 2 * 435 + 2 * 5 * 62 * 19 + 19 ** 2",
+        "parse_notes": [],
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "review_required": false,
+        "selected_source": "E[(5*X+19)**2] = (5**2)*variance + (2*5*62*19) + 19**2"
+      },
+      "pair_id": 5,
+      "raw": "mean = 62; variance = 435\nE[(5*X+19)**2] = (5**2)*variance + (2*5*62*19) + 19**2"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_06_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1901/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(56 + 442 / 60) / 2",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(upper_minutes + cutoff_minutes) / 2"
+      },
+      "pair_id": 6,
+      "raw": "upper_minutes=56; cutoff_minutes=442/60\n(upper_minutes + cutoff_minutes) / 2"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_06_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1901/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(56 ** 2 - (442 / 60) ** 2) / (2 * (56 - 442 / 60))",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(upper_minutes ** 2 - cutoff_minutes ** 2) / (2 * (upper_minutes - cutoff_minutes))"
+      },
+      "pair_id": 6,
+      "raw": "upper_minutes = 56; cutoff_minutes = 442 / 60\n(upper_minutes ** 2 - cutoff_minutes ** 2) / (2 * (upper_minutes - cutoff_minutes))"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_07_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1901/60",
+        "executable": true,
+        "format_exact": true,
+        "math_correct": true,
+        "normalized_expression": "(56 ** 2 - (442 / 60) ** 2) / (2 * (56 - 442 / 60))",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(upper_minutes**2 - cutoff_minutes**2) / (2 * (upper_minutes - cutoff_minutes))"
+      },
+      "pair_id": 7,
+      "raw": "Bindings: upper_minutes=56; cutoff_minutes=442/60\nExpression: (upper_minutes**2 - cutoff_minutes**2) / (2 * (upper_minutes - cutoff_minutes))"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_07_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "2111/60",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(63 + 442 / 60) / 2",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(63 + cutoff_minutes) / 2"
+      },
+      "pair_id": 7,
+      "raw": "upper_minutes = 63; cutoff_minutes = 442 / 60\n(63 + cutoff_minutes) / 2"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_08_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "23363100881253/100000000000000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "comb(7, 5) * (57 / 100) ** 5 * (1 - 57 / 100) ** (7 - 5)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "comb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+      },
+      "pair_id": 8,
+      "raw": "n = 7; r = 5; reject_probability = 57/100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_08_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "23363100881253/100000000000000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "comb(7, 5) * (57 / 100) ** 5 * (1 - 57 / 100) ** (7 - 5)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "comb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+      },
+      "pair_id": 8,
+      "raw": "n = 7; r = 5; reject_probability = 57/100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_09_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "23363100881253/100000000000000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "comb(7, 5) * (57 / 100) ** 5 * (1 - 57 / 100) ** (7 - 5)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "comb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+      },
+      "pair_id": 9,
+      "raw": "n = 7; r = 5; reject_probability = 57/100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_09_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1783627776/6103515625",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "comb(7, 5) * (64 / 100) ** 5 * (1 - 64 / 100) ** (7 - 5)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "comb(n, r) * (reject_probability)**r * (1 - reject_probability)**(n - r)"
+      },
+      "pair_id": 9,
+      "raw": "n = 7; r = 5; reject_probability = 64/100\nExpression: comb(n, r) * (reject_probability)**r * (1 - reject_probability)**(n - r)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_10_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "649/1250",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 58 / 100) * (38 / 100) + 58 / 100 * (1 - 38 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 10,
+      "raw": "miss_a=58/100; miss_b=38/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_10_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "649/1250",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 58 / 100) * (38 / 100) + 58 / 100 * (1 - 38 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 10,
+      "raw": "miss_a=58/100; miss_b=38/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_11_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "649/1250",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 58 / 100) * (38 / 100) + 58 / 100 * (1 - 38 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1 - miss_a) * miss_b + miss_a * (1 - miss_b)"
+      },
+      "pair_id": 11,
+      "raw": "miss_a = 58/100; miss_b = 38/100\n(1 - miss_a) * miss_b + miss_a * (1 - miss_b)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_11_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "67/125",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 65 / 100) * (38 / 100) + 65 / 100 * (1 - 38 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 11,
+      "raw": "miss_a=65/100; miss_b=38/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_12_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1469/2000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 59 / 100 * (45 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 12,
+      "raw": "miss_a=59/100; miss_b=45/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_12_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1469/2000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 59 / 100 * (45 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 12,
+      "raw": "miss_a=59/100; miss_b=45/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_13_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1469/2000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 59 / 100 * (45 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 13,
+      "raw": "miss_a=59/100; miss_b=45/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_13_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "703/1000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 66 / 100 * (45 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 13,
+      "raw": "miss_a=66/100; miss_b=45/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_14_0",
+      "judged": {
+        "bindings_match_schema": false,
+        "computed": "342",
+        "executable": true,
+        "format_exact": true,
+        "math_correct": null,
+        "normalized_expression": "295 + (530 - 295) / 5",
+        "parse_notes": [],
+        "reason": "Numerically equal but structure not yet verified; needs semantic review, not an automatic failure.",
+        "review_required": true,
+        "selected_source": "295 + (530 - 295) / sqrt(25)"
+      },
+      "pair_id": 14,
+      "raw": "Bindings: lower=60; upper=530; width_divisor=2*sqrt(25)\nExpression: 295 + (530 - 295) / sqrt(25)"
+    },
+    {
+      "group": "wording",
+      "id": "teacher_check_14_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "342",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(530 + 60) / 2 + (530 - 60) / (2 * 5)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(530 + 60) / 2 + (530 - 60) / (2 * 5)"
+      },
+      "pair_id": 14,
+      "raw": "lower = 60; upper = 530; width_divisor = 5\n(530 + 60) / 2 + (530 - 60) / (2 * 5)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_15_0",
+      "judged": {
+        "bindings_match_schema": false,
+        "computed": "342",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": null,
+        "normalized_expression": "295 + (295 - 60) / 5",
+        "parse_notes": [],
+        "reason": "Numerically equal but structure not yet verified; needs semantic review, not an automatic failure.",
+        "review_required": true,
+        "selected_source": "(295 + (295 - 60) / 5)"
+      },
+      "pair_id": 15,
+      "raw": "lower = 60; upper = 530; width_divisor = 2 * 25 \n(295 + (295 - 60) / 5)"
+    },
+    {
+      "group": "parameter",
+      "id": "teacher_check_15_1",
+      "judged": {
+        "bindings_match_schema": false,
+        "computed": "537",
+        "executable": true,
+        "format_exact": true,
+        "math_correct": false,
+        "normalized_expression": "302 + (537 - 302) / (2 * 25) * (2 * 25)",
+        "parse_notes": [],
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "review_required": false,
+        "selected_source": "302 + (537 - 302) / width_divisor * width_divisor"
+      },
+      "pair_id": 15,
+      "raw": "Bindings: lower=67; upper=537; width_divisor=2*25 \nExpression: 302 + (537 - 302) / width_divisor * width_divisor"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_16_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "469",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "67 * (420 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 16,
+      "raw": "rate_per_minute = 67; duration_minutes = 420 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_16_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "469",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "67 * 7",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 16,
+      "raw": "rate_per_minute = 67; duration_minutes = 7\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_17_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "544",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "68 * (480 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 17,
+      "raw": "rate_per_minute = 68; duration_minutes = 480 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_17_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "544",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "68 * 8",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 17,
+      "raw": "rate_per_minute = 68; duration_minutes = 8\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_18_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "621",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "69 * (540 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 18,
+      "raw": "rate_per_minute = 69; duration_minutes = 540 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_18_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "621",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "69 * 9",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 18,
+      "raw": "rate_per_minute = 69; duration_minutes = 9\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_19_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "700",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "70 * (600 / 60)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 19,
+      "raw": "rate_per_minute = 70; duration_minutes = 600 / 60\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "unit",
+      "id": "teacher_check_19_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "700",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "70 * 10",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "rate_per_minute * duration_minutes"
+      },
+      "pair_id": 19,
+      "raw": "rate_per_minute = 70; duration_minutes = 10\nrate_per_minute * duration_minutes"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_20_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "577/1000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 61 / 100) * (15 / 100) + 61 / 100 * (1 - 15 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1 - miss_a) * miss_b + miss_a * (1 - miss_b)"
+      },
+      "pair_id": 20,
+      "raw": "miss_a = 61/100; miss_b = 15/100\n(1 - miss_a) * miss_b + miss_a * (1 - miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_20_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "1817/2000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 61 / 100 * (15 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 20,
+      "raw": "miss_a=61/100; miss_b=15/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_21_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "709/1250",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 62 / 100) * (22 / 100) + 62 / 100 * (1 - 22 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 21,
+      "raw": "miss_a=62/100; miss_b=22/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_21_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "2159/2500",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 62 / 100 * (22 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 21,
+      "raw": "miss_a=62/100; miss_b=22/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_22_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "2773/5000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 63 / 100) * (29 / 100) + 63 / 100 * (1 - 29 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 22,
+      "raw": "miss_a=63/100; miss_b=29/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_22_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "8173/10000",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 63 / 100 * (29 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 22,
+      "raw": "miss_a=63/100; miss_b=29/100\n1 - (miss_a * miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_23_0",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "337/625",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "(1 - 64 / 100) * (36 / 100) + 64 / 100 * (1 - 36 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+      },
+      "pair_id": 23,
+      "raw": "miss_a=64/100; miss_b=36/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)"
+    },
+    {
+      "group": "event",
+      "id": "teacher_check_23_1",
+      "judged": {
+        "bindings_match_schema": true,
+        "computed": "481/625",
+        "executable": true,
+        "format_exact": false,
+        "math_correct": true,
+        "normalized_expression": "1 - 64 / 100 * (36 / 100)",
+        "parse_notes": [],
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "review_required": false,
+        "selected_source": "1 - (miss_a * miss_b)"
+      },
+      "pair_id": 23,
+      "raw": "miss_a=64/100; miss_b=36/100\n1 - (miss_a * miss_b)"
+    }
+  ],
+  "summary": {
+    "groups": {
+      "event": {
+        "n": 8,
+        "verified": 8
+      },
+      "parameter": {
+        "n": 16,
+        "verified": 12
+      },
+      "unit": {
+        "n": 8,
+        "verified": 8
+      },
+      "wording": {
+        "n": 16,
+        "verified": 13
+      }
+    },
+    "n": 48,
+    "pairs_total": 24,
+    "pairs_verified": 19,
+    "passed": false,
+    "protocol_sha256": "14bc722c03b772df8750dbb38c69e900b86fe88308a08f806933b4245b2f5852",
+    "usage": {
+      "attempted_calls": 48,
+      "reported_cost_usd": 0.001816105,
+      "responses": 48,
+      "responses_without_cost": 0
+    },
+    "verified": 41
+  },
+  "manual_review": {
+    "policy": "Supplemental semantic review; does not change frozen automatic gate or original judgments.",
+    "verified": [
+      {
+        "id": "teacher_check_14_0",
+        "reason": "295 is (60+530)/2; 530-295 is half-width. 295+(530-295)/5 correctly shrinks half-width. width_divisor binding is wrong but unused in selected expression."
+      },
+      {
+        "id": "teacher_check_15_0",
+        "reason": "295 is midpoint; 295-60 is half-width. 295+(295-60)/5 is the correct upper endpoint. width_divisor binding is wrong but unused."
+      }
+    ],
+    "verified_total": 43,
+    "incorrect_total": 5,
+    "pairs_verified": 20,
+    "gate_passed": false
+  }
+}
