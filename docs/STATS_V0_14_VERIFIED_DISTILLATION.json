@@ -1,0 +1,1419 @@
+{
+  "train": [
+    {
+      "source_id": "v14_train_poisson_time_000",
+      "question_sha256": "39a774f5d7b8ff8bcd503135434659f23bd64fe5dcdf889a0c31d36ae1efaf98",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 48 per minute. A recording lasts 203 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 48 * (203 / 60)",
+      "teacher_raw": "rate_per_minute=48; duration_minutes=203/60\n(48 * (203/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_001",
+      "question_sha256": "2ca67c6ca7f1628933b32d5e66ecea742ee044022cc87ce7b2b19a81a9dc7185",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 23 per minute. A recording lasts 541 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 23 * (541 / 60)",
+      "teacher_raw": "rate_per_minute=23; duration_minutes=541/60\n(23 * (541/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_002",
+      "question_sha256": "4e08960e2d8f99d42ec841c687509ca68795b68612becf019fb21eea365f01fa",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 23 per minute. A recording lasts 439 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 23 * (439 / 60)",
+      "teacher_raw": "rate_per_minute = 23; duration_minutes = 439 / 60\n( rate_per_minute * duration_minutes )",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_003",
+      "question_sha256": "10e61cb395ebdac2f03a08d265376fa0de97cf1996429068e38a7469697a7160",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 42 per minute. A recording lasts 328 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 42 * (328 / 60)",
+      "teacher_raw": "rate_per_minute=42; duration_minutes=328/60\n(42 * (328/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_004",
+      "question_sha256": "bc3b5681f99c2c1614da4db48a7aba6a726f906b9ed6a87b8b4d2b2df3ee751d",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 32 per minute. A recording lasts 371 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 32 * (371 / 60)",
+      "teacher_raw": "rate_per_minute=32; duration_minutes=371/60\n(32 * (371/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_005",
+      "question_sha256": "72716a8515abfa716892a5f2b0c6b6c6580d3df9414ffc4d307a4f8ac9cd6c38",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 36 per minute. A recording lasts 61 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 36 * (61 / 60)",
+      "teacher_raw": "rate_per_minute=36; duration_minutes=61/60\n(36 * (61/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_006",
+      "question_sha256": "4afef0bfa1907387439acb382054cfec099fae2d3ddb1432142d30a85a736a6c",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 42 per minute. A recording lasts 195 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 42 * (195 / 60)",
+      "teacher_raw": "rate_per_minute=42; duration_minutes=195/60\n(42 * (195/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_007",
+      "question_sha256": "fafc50e473bbf9f75fed9d2134d890f8ff0bff33f5e092572ebde809046da3f4",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 48 per minute. A recording lasts 263 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 48 * (263 / 60)",
+      "teacher_raw": "rate_per_minute=48; duration_minutes=263/60\n(48 * (263/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_008",
+      "question_sha256": "3ada1061a6e0d8295760fa68bfda212394861396e232e1a750733aa0c20508d4",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 23 per minute. A recording lasts 216 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 23 * (216 / 60)",
+      "teacher_raw": "rate_per_minute=23; duration_minutes=216/60\nrate_per_minute * duration_minutes",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_009",
+      "question_sha256": "7cc0bb01fe96023ca804ff6df3e0271fa9efedfe783713e50d52c8f3467aaefa",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 46 per minute. A recording lasts 83 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 46 * (83 / 60)",
+      "teacher_raw": "rate_per_minute=46; duration_minutes=83/60\n(46 * (83/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_010",
+      "question_sha256": "3b4b29246081e4772d90789718255f4a749f8e4165b36888ba4b8a49e5d63d93",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 26 per minute. A recording lasts 431 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 26 * (431 / 60)",
+      "teacher_raw": "rate_per_minute=26; duration_minutes=431/60\n(26 * (431/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_011",
+      "question_sha256": "f9164d0288dcce1e949b75fb797f9054947f6be2d43fea075fd3a1d5e03c5746",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 23 per minute. A recording lasts 147 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 23 * (147 / 60)",
+      "teacher_raw": "rate_per_minute=23; duration_minutes=147/60\n(23 * (147/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_012",
+      "question_sha256": "30cdb3f5d24ad71d40f895873ef69c34c49603d2061657ce5cada272b70e0791",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 25 per minute. A recording lasts 424 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 25 * (424 / 60)",
+      "teacher_raw": "rate_per_minute=25; duration_minutes=424/60\n(25 * (424/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_013",
+      "question_sha256": "8e55336ea289b93ebb1916c39aeb53ff43e7d061ec23fc2ef9481d4b67b0b4ba",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 42 per minute. A recording lasts 113 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 42 * (113 / 60)",
+      "teacher_raw": "rate_per_minute=42; duration_minutes=113/60\n(42 * (113/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_014",
+      "question_sha256": "2314db58ee125cd782fc2109d7b354ad05bfb90083756f25b076be6e74118d75",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 27 per minute. A recording lasts 258 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 27 * (258 / 60)",
+      "teacher_raw": "rate_per_minute=27; duration_minutes=258/60\n(27 * (258/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_time_015",
+      "question_sha256": "3a2775e2ce3007d6411123ca3f19ec7604357330a1ec22122a782f5fc0a78cb9",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 24 per minute. A recording lasts 566 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 566 / 60 * 24",
+      "teacher_raw": "rate_per_minute=24; duration_minutes=566/60\n(566/60)*24",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_000",
+      "question_sha256": "1e51dbf24933ffd2c69540bd1bd63d1a4404d0fc458325fcd7901ca6505650d3",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 47. It multiplies X by 4, then adds 18, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 4 ** 2 * 47",
+      "teacher_raw": "mean = 47; scale = 4; offset = 18\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_001",
+      "question_sha256": "db861ecd45252d4a4c40b786af5978ac362f744fdd405f735d2b2edaf8c5cb7d",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 34. It multiplies X by 6, then adds 2, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 34",
+      "teacher_raw": "mean = 34; scale = 6; offset = 2\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_002",
+      "question_sha256": "1b758d13d4e62c705cad96248a9523eb250938ef752d5448ed22e28ad9340461",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 39. It multiplies X by 4, then adds 16, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 4 ** 2 * 39",
+      "teacher_raw": "mean = 39; scale = 4; offset = 16\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_003",
+      "question_sha256": "79eacfe98cd2b593f0ecbd3053bcf11d1e0a68c850ca4755088ffc4e9431c680",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 28. It multiplies X by 5, then adds 16, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 5 ** 2 * 28",
+      "teacher_raw": "mean = 28; scale = 5; offset = 16\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_004",
+      "question_sha256": "4e83901a86676cdaad04f455e160a86e937b95b3158e218d3574901e6a9356ea",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 38. It multiplies X by 5, then adds 14, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 5 ** 2 * 38",
+      "teacher_raw": "mean = 38; scale = 5; offset = 14\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_005",
+      "question_sha256": "ae0590167af5e74315e7ea8efaa8602dc1b9927959275d2afd25c624cf3f8ce8",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 46. It multiplies X by 5, then adds 4, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 5 ** 2 * 46",
+      "teacher_raw": "mean = 46; scale = 5; offset = 4\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_006",
+      "question_sha256": "8aeabd84053fc551278b3cfb012e192d4dece14a4310674b489f983c34d274de",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 31. It multiplies X by 3, then adds 10, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 3 ** 2 * 31",
+      "teacher_raw": "mean = 31; scale = 3; offset = 10\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_007",
+      "question_sha256": "e211879d2d814e3dbb5c1cfed754b6dd2d8ab1809390f1d1f02331a6798696d2",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 41. It multiplies X by 7, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 7 ** 2 * 41",
+      "teacher_raw": "mean = 41; scale = 7; offset = 9\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_008",
+      "question_sha256": "012b6f8bca432e4d681252ad7a0ca2e9b68995afeff4d22dc0b67a0e7e5034c3",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 39. It multiplies X by 6, then adds 17, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 39",
+      "teacher_raw": "mean = 39; scale = 6; offset = 17\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_009",
+      "question_sha256": "d238062f60281b7666315fa7b2e737d61f0c60734f675616c3b2692933b89b04",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 29. It multiplies X by 5, then adds 8, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 5 ** 2 * 29",
+      "teacher_raw": "mean=29; scale=5; offset=8\nVariance of Y = (scale**2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_010",
+      "question_sha256": "e47457fc8df0da2fe855508b519ab415f14b4aeff02a946d6c02fbe35eb01954",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 35. It multiplies X by 4, then adds 12, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 4 ** 2 * 35",
+      "teacher_raw": "mean = 35; scale = 4; offset = 12\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_011",
+      "question_sha256": "54f9185bc60ff3dd90bf2dd642cc9f793c43edbaebf36c3657f1d0dce0ad535a",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 25. It multiplies X by 6, then adds 2, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 25",
+      "teacher_raw": "mean = 25; scale = 6; offset = 2\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_012",
+      "question_sha256": "ebfca3ee73f1e664c09511c66017831657a5d984a7746e99af3767373d4a30f7",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 29. It multiplies X by 7, then adds 16, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 7 ** 2 * 29",
+      "teacher_raw": "mean = 29; scale = 7; offset = 16\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_013",
+      "question_sha256": "0023be5993a5e6e5597fffa63836884cd35a7ded0eac1c032e3a201dda55dba4",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 29. It multiplies X by 6, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 29",
+      "teacher_raw": "mean = 29; scale = 6; offset = 9\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_014",
+      "question_sha256": "f7b1a3bfdc091ee5ca161bacf99cd20bef38047999214a3a407ab6787a707c72",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 29. It multiplies X by 3, then adds 12, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 3 ** 2 * 29",
+      "teacher_raw": "mean = 29; scale = 3; offset = 12\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_poisson_scaled_015",
+      "question_sha256": "880408c658447754b7344550ac1918e5bf2299cae89847c36f7d2dc38ef99691",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 41. It multiplies X by 6, then adds 3, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 41",
+      "teacher_raw": "mean = 41; scale = 6; offset = 3\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_000",
+      "question_sha256": "63be978df79bd964180a47909c6f41dc54f42a2cbc585f8cc98d057b4f2ae9e4",
+      "prompt": "X has mean 44 and variance 221. Multiply each observation by 7 and add 18 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (7 * 44 + 18) ** 2 + 7 ** 2 * 221",
+      "teacher_raw": "mean = 7 * 44 + 18; variance = 7 ** 2 * 221\nExpression: (7 * 44 + 18) ** 2 + 7 ** 2 * 221",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_001",
+      "question_sha256": "3332659211b38a5be4a270cb70cf82b0fd0454404ea8ac50bab33439365751f8",
+      "prompt": "X has mean 33 and variance 93. Multiply each observation by 5 and add 9 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (5 * 33 + 9) ** 2 + 5 ** 2 * 93",
+      "teacher_raw": "mean = 33; variance = 93; scale = 5; offset = 9\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_002",
+      "question_sha256": "f5d79199758761f59230be91c6bfb3065b509ce190543923df9a9c2e863ccf39",
+      "prompt": "X has mean 38 and variance 580. Multiply each observation by 4 and add 13 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 38 + 13) ** 2 + 4 ** 2 * 580",
+      "teacher_raw": "mean = 38; variance = 580; scale = 4; offset = 13\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_003",
+      "question_sha256": "422305d913eff1abef40a52f1fff9eab18a7452724f3894f66fac204446f673e",
+      "prompt": "X has mean 23 and variance 61. Multiply each observation by 2 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (2 * 23 + 17) ** 2 + 2 ** 2 * 61",
+      "teacher_raw": "mean = 23; variance = 61; scale = 2; offset = 17\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_004",
+      "question_sha256": "2e294b80f475d89f860292c897557e162e6e0732e537d84d3ff5ff29b84f0a9e",
+      "prompt": "X has mean 47 and variance 345. Multiply each observation by 4 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 47 + 17) ** 2 + 4 ** 2 * 345",
+      "teacher_raw": "mean = 4 * 47 + 17; variance = (4 ** 2) * 345\n(4 * 47 + 17) ** 2 + (4 ** 2) * 345",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_005",
+      "question_sha256": "b7b97871720ffff1e4c95ddf69ba639fb1a8fd9c39e75c6c3a6cc7e65000cb1f",
+      "prompt": "X has mean 48 and variance 210. Multiply each observation by 7 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (7 * 48 + 3) ** 2 + 7 ** 2 * 210",
+      "teacher_raw": "mean = 7 * 48 + 3; variance = 7 ** 2 * 210\n(7 * 48 + 3) ** 2 + 7 ** 2 * 210",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_006",
+      "question_sha256": "a9e5e28a9deab5ac1253681fd35e38df4476f0bbafdd281cc71913d6a255d078",
+      "prompt": "X has mean 47 and variance 92. Multiply each observation by 3 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (3 * 47 + 3) ** 2 + 3 ** 2 * 92",
+      "teacher_raw": "mean = 3 * 47 + 3; variance = (3 ** 2) * 92\nE[Y**2] = (3 * 47 + 3)**2 + (3 ** 2) * 92",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_007",
+      "question_sha256": "350ab5773bf8bc0f318d5b2e15f36da82d3384020aa5bb4e0e951ae3ca055505",
+      "prompt": "X has mean 47 and variance 105. Multiply each observation by 5 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (5 * 47 + 17) ** 2 + 5 ** 2 * 105",
+      "teacher_raw": "mean = 5 * 47 + 17; variance = (5 ** 2) * 105\n(5 * 47 + 17) ** 2 + (5 ** 2) * 105",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_008",
+      "question_sha256": "ade308ea1c56aad1bc625514547952c5cec89415f03029a677e7d906ce04cac2",
+      "prompt": "X has mean 47 and variance 583. Multiply each observation by 4 and add 8 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 47 + 8) ** 2 + 4 ** 2 * 583",
+      "teacher_raw": "mean = 4 * 47 + 8; variance = (4 ** 2) * 583\nExpression: (4 * 47 + 8) ** 2 + (4 ** 2) * 583",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_009",
+      "question_sha256": "3f7c71cb00fc73680c59f130d82eaec0f42aca451c1639fbfb799a73688d9c61",
+      "prompt": "X has mean 46 and variance 158. Multiply each observation by 3 and add 16 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 3 ** 2 * 158 + (3 * 46 + 16) ** 2",
+      "teacher_raw": "mean = 46; variance = 158; scale = 3; offset = 16\nE[Y**2] = (scale**2) * variance + (scale * mean + offset)**2",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_010",
+      "question_sha256": "ea4126d7ff9701ad59e1ea49eaaadc80a6d844e060bf9ea9d280319b5b9e24e5",
+      "prompt": "X has mean 39 and variance 428. Multiply each observation by 4 and add 9 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 39 + 9) ** 2 + 4 ** 2 * 428",
+      "teacher_raw": "mean = 39; variance = 428; scale = 4; offset = 9\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_011",
+      "question_sha256": "bee0c9db3876f890fec50a6d2412ada0ccbc3041a3819bb39ad5bd438b3f3a69",
+      "prompt": "X has mean 40 and variance 293. Multiply each observation by 4 and add 5 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 40 + 5) ** 2 + 293 * 4 ** 2",
+      "teacher_raw": "mean = 4 * 40 + 5; variance = 293 * (4 ** 2)\n(4 * 40 + 5) ** 2 + 293 * (4 ** 2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_012",
+      "question_sha256": "6081a4491cd558635b56db06532fa4a4946424b77b9b7c63bc3e85e7b6615295",
+      "prompt": "X has mean 44 and variance 228. Multiply each observation by 4 and add 2 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (4 * 44 + 2) ** 2 + 4 ** 2 * 228",
+      "teacher_raw": "mean = 44; variance = 228; scale = 4; offset = 2\n(4 * mean + offset) ** 2 + scale ** 2 * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_013",
+      "question_sha256": "dd9dfe56f48128399de38ade907731fbd5688289c6f786c6149000acdf26f8a0",
+      "prompt": "X has mean 32 and variance 205. Multiply each observation by 3 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (3 * 32 + 17) ** 2 + 3 ** 2 * 205",
+      "teacher_raw": "mean = 3 * 32 + 17; variance = 3 ** 2 * 205\nE[Y ** 2] = (3 * 32 + 17) ** 2 + 3 ** 2 * 205",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_014",
+      "question_sha256": "9cc7ba5f0268681b8f03b0a70e849003f375a99297f5b6ac9251770227066989",
+      "prompt": "X has mean 29 and variance 96. Multiply each observation by 2 and add 15 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 2 ** 2 * 96 + (2 * 29 + 15) ** 2",
+      "teacher_raw": "mean = 29; variance = 96; scale = 2; offset = 15\n((scale ** 2) * variance) + (scale * mean + offset) ** 2",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_moment_015",
+      "question_sha256": "808dfd346f8d6f97ae8557f64d739861a44702c8d765ce297c91759bd6fa9af8",
+      "prompt": "X has mean 47 and variance 474. Multiply each observation by 6 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 6 ** 2 * 474 + 2 * 6 * 47 * 3 + 3 ** 2 + 47 ** 2 * 6 ** 2",
+      "teacher_raw": "mean = 47; variance = 474; scale = 6; offset = 3\n(6**2) * variance + (2 * 6 * mean * offset) + offset**2 + mean**2 * 6**2",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_000",
+      "question_sha256": "2d6774ce6da351541daf69f4df18b69ea4bcb93cb278eef114e3779c88c6d575",
+      "prompt": "A wait is uniformly distributed between zero and 41 minutes. We learn the total wait is longer than 333 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (41 - 333 / 60) * ((41 ** 2 - (333 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=41; cutoff_minutes=333/60\n(1 / (upper_minutes - cutoff_minutes)) * ((upper_minutes ** 2 - cutoff_minutes ** 2) / 2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_001",
+      "question_sha256": "4669cd32a774732529ff9547cf82a4caba2e58e3c778d354440c39aa45aa68c0",
+      "prompt": "A wait is uniformly distributed between zero and 21 minutes. We learn the total wait is longer than 368 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (21 - 368 / 60) * ((21 ** 2 - (368 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=21; cutoff_minutes=368/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_002",
+      "question_sha256": "385ef2203788484fb540b7873c74af8d4a3170a49245946fa925ba718176744b",
+      "prompt": "A wait is uniformly distributed between zero and 44 minutes. We learn the total wait is longer than 589 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (44 ** 2 - (589 / 60) ** 2) / (2 * (44 - 589 / 60))",
+      "teacher_raw": "upper_minutes=44; cutoff_minutes=589/60\n(upper_minutes**2 - cutoff_minutes**2) / (2 * (upper_minutes - cutoff_minutes))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_003",
+      "question_sha256": "2105492880cb3a554cdc6dd12bd9d5bd3cd8e0c11fd23cf8dfc2686e16cc7d91",
+      "prompt": "A wait is uniformly distributed between zero and 39 minutes. We learn the total wait is longer than 198 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (39 - 198 / 60) * ((39 ** 2 - (198 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=39; cutoff_minutes=198/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_004",
+      "question_sha256": "74b5c4ea9dde909b613f22962fc805c3751233c19b0add1e74c15a38f8709579",
+      "prompt": "A wait is uniformly distributed between zero and 29 minutes. We learn the total wait is longer than 142 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (29 - 142 / 60) * ((29 ** 2 - (142 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=29; cutoff_minutes=142/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_005",
+      "question_sha256": "27c52f60d46fdf1000e5dcdf64408c0077563931afdeb617020174ab57411fdf",
+      "prompt": "A wait is uniformly distributed between zero and 42 minutes. We learn the total wait is longer than 117 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (42 - 117 / 60) * ((42 ** 2 - (117 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=42; cutoff_minutes=117/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_006",
+      "question_sha256": "0ebe8cb90fd050d14d1db59edcba3a446cd92a09241d449b6267fd800675fc90",
+      "prompt": "A wait is uniformly distributed between zero and 28 minutes. We learn the total wait is longer than 206 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (28 - 206 / 60) * ((28 ** 2 - (206 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=28; cutoff_minutes=206/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_007",
+      "question_sha256": "bef7d997e640319e42c66916c55e5b5ff5708a5e06b39093ecc98f754e7351e0",
+      "prompt": "A wait is uniformly distributed between zero and 39 minutes. We learn the total wait is longer than 440 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (39 - 440 / 60) * ((39 ** 2 - (440 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=39; cutoff_minutes=440/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_008",
+      "question_sha256": "00a7fce1bb099524265b82c2106df39d37ed294d52bc690b3a35b4b1d5a7612d",
+      "prompt": "A wait is uniformly distributed between zero and 47 minutes. We learn the total wait is longer than 523 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (47 - 523 / 60) * ((47 ** 2 - (523 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=47; cutoff_minutes=523/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_009",
+      "question_sha256": "0baca1d81f91cea740f7f6bed379991b8c644123d24e0826334bd657f61d20af",
+      "prompt": "A wait is uniformly distributed between zero and 22 minutes. We learn the total wait is longer than 210 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (22 - 210 / 60) * ((22 ** 2 - (210 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=22; cutoff_minutes=210/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_010",
+      "question_sha256": "64946df38b130076ae32e2e565705f6b8d93d31ce381d92ef8eb76ea48bae942",
+      "prompt": "A wait is uniformly distributed between zero and 27 minutes. We learn the total wait is longer than 133 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (27 - 133 / 60) * ((27 ** 2 - (133 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=27; cutoff_minutes=133/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_011",
+      "question_sha256": "2ae7a5a05efcf3f732e9676cd1e8380f3f10798bad1d984470077876a64c4081",
+      "prompt": "A wait is uniformly distributed between zero and 30 minutes. We learn the total wait is longer than 557 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (30 ** 2 - (557 / 60) ** 2) / (2 * (30 - 557 / 60))",
+      "teacher_raw": "upper_minutes=30; cutoff_minutes=557/60\n(30**2 - (557/60)**2) / (2 * (30 - 557/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_012",
+      "question_sha256": "0f38d03d3ad1744731a333e50f495bfb622ab32c5ebc1303b2ec866de01e0b4d",
+      "prompt": "A wait is uniformly distributed between zero and 41 minutes. We learn the total wait is longer than 442 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (41 - 442 / 60) * ((41 ** 2 - (442 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=41; cutoff_minutes=442/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_013",
+      "question_sha256": "5f0b54f3e501de11cc5d4ae8e620d5779ed86f094ebc3f39a949e0c1125a79ee",
+      "prompt": "A wait is uniformly distributed between zero and 29 minutes. We learn the total wait is longer than 425 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (29 - 425 / 60) * ((29 ** 2 - (425 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=29; cutoff_minutes=425/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_014",
+      "question_sha256": "d8022f062b43445b9396e827b9aa992ee1d75888ef9a88c07fd66045497a936b",
+      "prompt": "A wait is uniformly distributed between zero and 36 minutes. We learn the total wait is longer than 463 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (36 - 463 / 60) * ((36 ** 2 - (463 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=36; cutoff_minutes=463/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_uniform_time_015",
+      "question_sha256": "61100c8009e08ad023caa3fa7ee22c61a38b5b51a4303ba1287c349ae1613b6b",
+      "prompt": "A wait is uniformly distributed between zero and 44 minutes. We learn the total wait is longer than 156 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (44 - 156 / 60) * ((44 ** 2 - (156 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=44; cutoff_minutes=156/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_000",
+      "question_sha256": "aa07613cb64f0ec965209a62bccc9466f6833b57e4669f82e5e9bee440a0d433",
+      "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 39 percent of cases. Set up the chance of precisely 5 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(9, 5) * (39 / 100) ** 5 * (1 - 39 / 100) ** (9 - 5)",
+      "teacher_raw": "n = 9; r = 5; reject_probability = 39 / 100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_001",
+      "question_sha256": "4627fc1940a51f0efd1b9b5ec15b63e888a806cf844dcda4336db2823d27ccf1",
+      "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 35 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(5, 3) * (7 / 20) ** 3 * (1 - 7 / 20) ** (5 - 3)",
+      "teacher_raw": "n = 5; r = 3; reject_probability = 0.35\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_003",
+      "question_sha256": "46b4bd59889b876df11cf781420642cf0819df44ca7df76438b9320b5fc7b42c",
+      "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 23 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(4, 1) * (23 / 100) ** 1 * (1 - 23 / 100) ** (4 - 1)",
+      "teacher_raw": "n = 4; r = 1; reject_probability = 0.23\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_004",
+      "question_sha256": "9a0622e371a8831fdc2c980fa6d9c47b9a72abc93ff2d16b1ea6537dc6ccf7f1",
+      "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 25 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(7, 2) * (1 / 4) ** 2 * (1 - 1 / 4) ** (7 - 2)",
+      "teacher_raw": "n = 7; r = 2; reject_probability = 1/4\ncomb(n, r) * (reject_probability)**r * (1 - reject_probability)**(n - r)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_005",
+      "question_sha256": "e1260d0b21a7e6803a3dc2a6b0052ae9c96de974ede721ac5cab63f6731015f9",
+      "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 42 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(5, 1) * (21 / 50) ** 1 * (1 - 21 / 50) ** (5 - 1)",
+      "teacher_raw": "n = 5; r = 1; reject_probability = 0.42\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_006",
+      "question_sha256": "cdf98fce798c184a6bbb82ee9c9ce44c012f9617c29823f4e91321ab0e32a1d7",
+      "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 37 percent of cases. Set up the chance of precisely 4 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(7, 4) * (37 / 100) ** 4 * (1 - 37 / 100) ** (7 - 4)",
+      "teacher_raw": "n = 7; r = 4; reject_probability = 37 / 100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_007",
+      "question_sha256": "44c59e799781887299cefe54abfd6a58359994f8e3bd29a9d93bba2382f9df95",
+      "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 44 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(8, 1) * (11 / 25) ** 1 * (1 - 11 / 25) ** (8 - 1)",
+      "teacher_raw": "n = 8; r = 1; reject_probability = 0.44\ncomb(n, r) * (reject_probability) ** r * (1 - reject_probability) ** (n - r)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_008",
+      "question_sha256": "6d5e9e40e0f7ede99d719883e256fa4b7111ff30a7f38ee43bd6824f35a5885a",
+      "prompt": "All 6 null hypotheses are true. Their tests act independently and each falsely rejects in 37 percent of cases. Set up the chance of precisely 4 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(6, 4) * (37 / 100) ** 4 * (1 - 37 / 100) ** (6 - 4)",
+      "teacher_raw": "n=6; r=4; reject_probability=0.37\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_009",
+      "question_sha256": "801d003508c8bc5618468323fdeeec4922d1312f3d977e6f176b93155a1ae1d7",
+      "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 39 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(7, 1) * (39 / 100) ** 1 * (1 - 39 / 100) ** (7 - 1)",
+      "teacher_raw": "n=7; r=1; reject_probability=0.39\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_010",
+      "question_sha256": "04ef15ba53e557b315323cb7dda8d0a6219cd52ce5081782f768b2eabbc94c58",
+      "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 30 percent of cases. Set up the chance of precisely 6 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(8, 6) * (3 / 10) ** 6 * (1 - 3 / 10) ** (8 - 6)",
+      "teacher_raw": "n=8; r=6; reject_probability=0.3\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_011",
+      "question_sha256": "109a7443679bf89cfdeade8581fc47d0524e75f25bb9c4391dcc5998f9eb9a22",
+      "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 36 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(5, 3) * (36 / 100) ** 3 * (1 - 36 / 100) ** (5 - 3)",
+      "teacher_raw": "n = 5; r = 3; reject_probability = 36 / 100\ncomb(n, r) * (reject_probability) ** r * (1 - reject_probability) ** (n - r)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_012",
+      "question_sha256": "f0a3b34d7a987b61862dce1a15fbf03a63c30447a391a4e13edd2fa39383a265",
+      "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 46 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(9, 3) * (23 / 50) ** 3 * (1 - 23 / 50) ** (9 - 3)",
+      "teacher_raw": "n=9; r=3; reject_probability=0.46\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_013",
+      "question_sha256": "784a89f3e44f49c8e4570e380c1526ee2b8a1e0a9fad6bfa755c26bc14235002",
+      "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 31 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(5, 1) * (31 / 100) ** 1 * (1 - 31 / 100) ** (5 - 1)",
+      "teacher_raw": "n=5; r=1; reject_probability=31/100\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_014",
+      "question_sha256": "6c942d9eca51f2933504010f9f5e1a2e0d04fec6bf9b4aa2c84d176ec857e8bf",
+      "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 27 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(4, 1) * (27 / 100) ** 1 * (1 - 27 / 100) ** (4 - 1)",
+      "teacher_raw": "n = 4; r = 1; reject_probability = 0.27\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_binomial_015",
+      "question_sha256": "d7ae919c2f347beb4c38935370d3f2cb2d406686299a3ec9dbc87d2fd7f45c60",
+      "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 44 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(4, 2) * (11 / 25) ** 2 * (1 - 11 / 25) ** (4 - 2)",
+      "teacher_raw": "n=4; r=2; reject_probability=0.44\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_000",
+      "question_sha256": "3d46342ba1548b2deffb545c8b79ab6ebd1b47452ee039cf9a289abad40c7464",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 48% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 2 / 5) * (48 / 100) + 2 / 5 * (1 - 48 / 100)",
+      "teacher_raw": "miss_a=0.4; miss_b=48/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_001",
+      "question_sha256": "c083a7a54f76e4b7c02e632bc25f0c2e0f468405c1a578f2f4eb3b5e516bf977",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 29% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 38 / 100) * (29 / 100) + 38 / 100 * (1 - 29 / 100)",
+      "teacher_raw": "miss_a=38/100; miss_b=29/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_002",
+      "question_sha256": "669865716051a2fd8f4391da4a48fa3e7cfc98e42a079ced9afb1dc48f316faa",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 21% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 38 / 100) * (21 / 100) + 38 / 100 * (1 - 21 / 100)",
+      "teacher_raw": "miss_a=38/100; miss_b=21/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_003",
+      "question_sha256": "4caedd03e7d615a44b1c270bfd803483f1751c1c29a241e15d5310b1967f95ca",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 22% and 49% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 22 / 100) * (49 / 100) + 22 / 100 * (1 - 49 / 100)",
+      "teacher_raw": "miss_a=22/100; miss_b=49/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_004",
+      "question_sha256": "232092d51c95d0f2ae3ab8034bc448822e231b92186557a1e53c7ac1b5919d38",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 27% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 27 / 100) * (27 / 100) + 27 / 100 * (1 - 27 / 100)",
+      "teacher_raw": "miss_a=27/100; miss_b=27/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_005",
+      "question_sha256": "9c9f57085cb13350089bfd755e9d7e16498f774f67a58be96d99e2b355eabb1e",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 32% and 27% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 32 / 100) * (27 / 100) + 32 / 100 * (1 - 27 / 100)",
+      "teacher_raw": "miss_a=32/100; miss_b=27/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_006",
+      "question_sha256": "d40bcd40462bbb1f56dd7c6e7f9f517f1f89c27b9286bc38599bcb95629de9ac",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 28% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 28 / 100) * (12 / 100) + 28 / 100 * (1 - 12 / 100)",
+      "teacher_raw": "miss_a=28/100; miss_b=12/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_007",
+      "question_sha256": "afce86d0b4adc9c84e364d330dc2846ae08f95bff1a3f0c755fea44a4dc450b3",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 43% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 27 / 100) * (43 / 100) + 27 / 100 * (1 - 43 / 100)",
+      "teacher_raw": "miss_a=27/100; miss_b=43/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_008",
+      "question_sha256": "e4222ab9cb5b5939f5c2b0644081461407c6f519f5678a374da805e31939f765",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 47% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 19 / 50) * (47 / 100) + 19 / 50 * (1 - 47 / 100)",
+      "teacher_raw": "miss_a=0.38; miss_b=0.47\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_009",
+      "question_sha256": "628b6e6249a46307adb385cb0944322b6cbff02e2f55781ac76322e4235cd1c5",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 23% and 23% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 23 / 100) * (23 / 100) + 23 / 100 * (1 - 23 / 100)",
+      "teacher_raw": "miss_a=23/100; miss_b=23/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_010",
+      "question_sha256": "613d8723b70794481b01a407482a42c12f907cc43ac1d003aae625353e152c42",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 39% and 35% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 39 / 100) * (35 / 100) + 39 / 100 * (1 - 35 / 100)",
+      "teacher_raw": "miss_a=39/100; miss_b=35/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_011",
+      "question_sha256": "5b473de800113085060ef5b8c0bd36956163d835af3f8858b5d4b3a9b50f0a95",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 21% and 34% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 21 / 100) * (34 / 100) + 21 / 100 * (1 - 34 / 100)",
+      "teacher_raw": "miss_a=21/100; miss_b=34/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_012",
+      "question_sha256": "6993b8846dc8b9eb6918ef4fae94d15d541135ea827e3778f37b8b85b31e91eb",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 34% and 13% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 34 / 100) * (13 / 100) + 34 / 100 * (1 - 13 / 100)",
+      "teacher_raw": "miss_a=34/100; miss_b=13/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_013",
+      "question_sha256": "2c92e518f545613216fe085ca5f642f41653aaebfddb3d7ccef25e8222334165",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 44% and 13% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 11 / 25) * (13 / 100) + 11 / 25 * (1 - 13 / 100)",
+      "teacher_raw": "miss_a=0.44; miss_b=13/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_014",
+      "question_sha256": "7583552f55a4b343e5d27a384d6046fc895d27011d60709e8cf3dd3cc8af0e52",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 36% and 21% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 36 / 100) * (21 / 100) + 36 / 100 * (1 - 21 / 100)",
+      "teacher_raw": "miss_a=36/100; miss_b=21/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_exactly_one_015",
+      "question_sha256": "5bda4da21ca80d50ee71adf3b659c53731d403619b79bba4f6e8c6c3b8a03f76",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 24% and 21% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 24 / 100) * (21 / 100) + 24 / 100 * (1 - 21 / 100)",
+      "teacher_raw": "miss_a=24/100; miss_b=21/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_000",
+      "question_sha256": "afd063e8f6a9e631072a931920f4594d466b8259d18c57eab0ab831514ec4aff",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 45% and 28% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 45 / 100 * (28 / 100)",
+      "teacher_raw": "miss_a=45/100; miss_b=28/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_001",
+      "question_sha256": "97086b9c69ad0b171f639e501b29641e97a4ad098f6efe5e0aae9f0d7fb4789a",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 41% and 42% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 41 / 100 * (42 / 100)",
+      "teacher_raw": "miss_a=41/100; miss_b=42/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_002",
+      "question_sha256": "a841332405a5134bcf612b784c7a6b0b870e8551aaffefd6d562d671deb83be2",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 46% and 22% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 46 / 100 * (22 / 100)",
+      "teacher_raw": "miss_a=46/100; miss_b=22/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_003",
+      "question_sha256": "3e5369c2a52e15408781d308cb4c06c1e434133573c3a8647c5ce00f6a407d1f",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 37% and 46% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 37 / 100 * (46 / 100)",
+      "teacher_raw": "miss_a=37/100; miss_b=46/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_004",
+      "question_sha256": "5ed73a180e26232d9d4c10bc0335dd05ce506d982922a5487c23128f81c5e067",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 41% and 24% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 41 / 100 * (24 / 100)",
+      "teacher_raw": "miss_a=41/100; miss_b=24/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_005",
+      "question_sha256": "82cf8457fb77550d02bd808cfda7c6cd5a5dc93adaf1280297d3254ffb23fb0e",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 25% and 35% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 1 / 4 * (7 / 20)",
+      "teacher_raw": "miss_a=1/4; miss_b=7/20\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_006",
+      "question_sha256": "0af009b3104e784ce4622e5ab45675e0c4ab42401edd3493e99366efbf9cd229",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 22% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 27 / 100 * (22 / 100)",
+      "teacher_raw": "miss_a=27/100; miss_b=22/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_008",
+      "question_sha256": "4cd9ab6041a806a1a60fa4ecd964ccd42ba78781b52ee48e831d73f12fd8d5a8",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 14% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 38 / 100 * (14 / 100)",
+      "teacher_raw": "miss_a=38/100; miss_b=14/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_009",
+      "question_sha256": "313ea9c2b018b5681f7d7953bdd62949ac3374ca457a89d7a8ebc994a3ee19db",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 38% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 2 / 5 * (19 / 50)",
+      "teacher_raw": "miss_a=2/5; miss_b=19/50\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_010",
+      "question_sha256": "fe88f491ba0bc3bcdc941f3a00242f0b78a047451d9060c842a507da42e2644f",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 31% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 38 / 100 * (31 / 100)",
+      "teacher_raw": "miss_a=38/100; miss_b=31/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_011",
+      "question_sha256": "99cc53d36c3e0749a5160dde40f508cb969242e86c0a12ab439c8b05a85665bc",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 22% and 48% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 22 / 100 * (48 / 100)",
+      "teacher_raw": "miss_a=22/100; miss_b=48/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_012",
+      "question_sha256": "1907e397cef8a6129b820450ac7d289b6ee9dd575cb1c46a6117ef1e9facf247",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 46% and 28% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 46 / 100 * (28 / 100)",
+      "teacher_raw": "miss_a=46/100; miss_b=28/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_013",
+      "question_sha256": "ff973cf6ff4484f68d6ce7ff7a683734094c69c1eb8732f7acdff0b9abc5f273",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 32% and 44% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 32 / 100 * (44 / 100)",
+      "teacher_raw": "miss_a=32/100; miss_b=44/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_014",
+      "question_sha256": "147e36cee2413931d39625e5b952f2282cb023656bbb6d322c2edec980da9344",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 28% and 24% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 28 / 100 * (24 / 100)",
+      "teacher_raw": "miss_a=28/100; miss_b=24/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_at_least_one_015",
+      "question_sha256": "243358dd205484d575b32eff8c10597ab778b26e0f580515351059a390ad1654",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 28% and 13% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 28 / 100 * (13 / 100)",
+      "teacher_raw": "miss_a=28/100; miss_b=13/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_000",
+      "question_sha256": "065242bc67aa0b6f7715e0e148de52fd8e3e6b33cdd78606b39bb97e46dc8b98",
+      "prompt": "The endpoints of a normal-theory interval are 47 and 641. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (47 + 641) / 2 + (641 - 47) / 2 / 4",
+      "teacher_raw": "lower = (47 + 641) / 2 - (641 - 47) / 2 / 4; \nupper = (47 + 641) / 2 + (641 - 47) / 2 / 4",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_001",
+      "question_sha256": "958500e31944e7eabd44b9a5a8d8786085a40647a90c83e6bc0c3b94550c4361",
+      "prompt": "The endpoints of a normal-theory interval are 34 and 619. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (34 + 619) / 2 + (619 - 34) / 2 / 3",
+      "teacher_raw": "lower = (34 + 619) / 2 - (619 - 34) / 2 / 3; \nupper = (34 + 619) / 2 + (619 - 34) / 2 / 3",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_002",
+      "question_sha256": "ef0a41827c0a89a5d0d7940cf4158e15aa8fcaba2f7af4d761bc963f4221c44c",
+      "prompt": "The endpoints of a normal-theory interval are 44 and 504. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (44 + 504) / 2 + (504 - 44) / 2 / 3",
+      "teacher_raw": "lower = (44 + 504) / 2 - (504 - 44) / 2 / 3; \nupper = (44 + 504) / 2 + (504 - 44) / 2 / 3",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_003",
+      "question_sha256": "5be5263988e6c6368114d9e687ff49c7b6d23c7b3ea832a0e362ac3b1f3e90ad",
+      "prompt": "The endpoints of a normal-theory interval are 26 and 457. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (26 + 457) / 2 + (457 - 26) / 2 / 3",
+      "teacher_raw": "lower = (26 + 457) / 2 - (457 - 26) / 2 / 3; \nupper = (26 + 457) / 2 + (457 - 26) / 2 / 3",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_004",
+      "question_sha256": "5bf754721ed6336dcbadab8c2e8e77deae3764bd460ac3a7a78396e77afef4a5",
+      "prompt": "The endpoints of a normal-theory interval are 38 and 188. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (38 + 188) / 2 + (188 - 38) / (2 * 4)",
+      "teacher_raw": "lower = 38; upper = 188; width_divisor = 4\nupper = (38 + 188) / 2 + (188 - 38) / (2 * 4)",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_005",
+      "question_sha256": "ca71ee852ebd93f550d8a38c6a1c5877b5107b09bb37a78b1cd67a884ab7f722",
+      "prompt": "The endpoints of a normal-theory interval are 35 and 559. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (35 + 559) / 2 + (559 - 35) / 2 / 7",
+      "teacher_raw": "lower = 35; upper = 559\nupper = (35 + 559) / 2 + (559 - 35) / 2 / sqrt(49)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_006",
+      "question_sha256": "6df7be71e5d577ba87503464fd3c97fe2d106e0ac134ee6266e14e17e972183f",
+      "prompt": "The endpoints of a normal-theory interval are 29 and 504. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (29 + 504) / 2 + (504 - 29) / 2 / 3",
+      "teacher_raw": "lower = (29 + 504) / 2 - (504 - 29) / 2 / 3; \nupper = (29 + 504) / 2 + (504 - 29) / 2 / 3",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_007",
+      "question_sha256": "f15571d226af0846558a11e6c5a09247b9ee524cb696c84f0459c01706c6efdb",
+      "prompt": "The endpoints of a normal-theory interval are 46 and 389. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (46 + 389) / 2 + (389 - 46) / 2 / 5",
+      "teacher_raw": "lower = (46 + 389) / 2 - ((389 - 46) / 2) / sqrt(25)\nupper = (46 + 389) / 2 + ((389 - 46) / 2) / sqrt(25)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_008",
+      "question_sha256": "e334243d56eed19bc034622d97bdc677759a8aade3bd1cda48f7c07b9010c4bd",
+      "prompt": "The endpoints of a normal-theory interval are 48 and 163. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (48 + 163) / 2 + (163 - 48) / 2 / 3",
+      "teacher_raw": "lower = (48 + 163) / 2 - ((163 - 48) / 2) / 3; upper = (48 + 163) / 2 + ((163 - 48) / 2) / 3\nupper = (48 + 163) / 2 + ((163 - 48) / 2) / 3",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_009",
+      "question_sha256": "357b838dc7755d9e72e79d8f8336b86c9eb8200c644ef004e43a46722a217c43",
+      "prompt": "The endpoints of a normal-theory interval are 26 and 405. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (26 + 405) / 2 + (405 - 26) / 2 / 4",
+      "teacher_raw": "lower = (26 + 405) / 2 - ((405 - 26) / 2) / 4; upper = (26 + 405) / 2 + ((405 - 26) / 2) / 4\nupper = (26 + 405) / 2 + ((405 - 26) / 2) / 4",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_010",
+      "question_sha256": "0e181244a43a3bbde4e519ce8b29081f6dfe449c209c3c692379ec920145f8fa",
+      "prompt": "The endpoints of a normal-theory interval are 29 and 434. Its center, population standard deviation and confidence level will not change. A new sample has 4 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (29 + 434) / 2 + (434 - 29) / 2 / 2",
+      "teacher_raw": "lower = (29 + 434) / 2 - ((434 - 29) / 2) / 2; upper = (29 + 434) / 2 + ((434 - 29) / 2) / 2\nupper = (29 + 434) / 2 + ((434 - 29) / 2) / sqrt(4)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_011",
+      "question_sha256": "bd3cf30eddd1d2ed7b0f7254824ae2cb316dadd1e51f608adc888779fb4822bc",
+      "prompt": "The endpoints of a normal-theory interval are 40 and 366. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (40 + 366) / 2 + (366 - (40 + 366) / 2) / 5",
+      "teacher_raw": "lower = (40 + 366) / 2 - (366 - (40 + 366) / 2) / sqrt(25)\nupper = (40 + 366) / 2 + (366 - (40 + 366) / 2) / sqrt(25)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_012",
+      "question_sha256": "9d07592b89ec71643530dcadc9ce1a500b6182c35bbc3148ac55821b0f4c47bd",
+      "prompt": "The endpoints of a normal-theory interval are 23 and 161. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (23 + 161) / 2 + (161 - 23) / 2 / 6",
+      "teacher_raw": "lower = (23 + 161) / 2 - (161 - 23) / 2 / 6; upper = (23 + 161) / 2 + (161 - 23) / 2 / 6\nupper = (23 + 161) / 2 + (161 - 23) / 2 / sqrt(36)",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_013",
+      "question_sha256": "161db616095944135d2f29daecfcbef087ee047aed7fdaa2d3a0cd0ed1ff0c7b",
+      "prompt": "The endpoints of a normal-theory interval are 38 and 420. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (38 + 420) / 2 + (420 - 38) / 2 / 4",
+      "teacher_raw": "lower = 38; upper = 420\nupper = (38 + 420) / 2 + ((420 - 38) / 2) / sqrt(16)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_014",
+      "question_sha256": "0f57b7a19b52843378ca7201c473e06ba7686d50cba22f4a29e0c1991af98d8e",
+      "prompt": "The endpoints of a normal-theory interval are 24 and 385. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (24 + 385) / 2 + (385 - 24) / 2 / 5",
+      "teacher_raw": "lower = (24 + 385) / 2 - ((385 - 24) / 2) / sqrt(25)\nupper = (24 + 385) / 2 + ((385 - 24) / 2) / sqrt(25)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_train_interval_015",
+      "question_sha256": "073440d2707b67d78a48daa434015cd46a1c6e0900ff3c466db4e17d2c538bab",
+      "prompt": "The endpoints of a normal-theory interval are 36 and 418. Its center, population standard deviation and confidence level will not change. A new sample has 4 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (36 + 418) / 2 + (418 - (36 + 418) / 2) / 2",
+      "teacher_raw": "lower = 36; upper = 418; width_divisor = 2 \n(36 + 418) / 2 + (418 - (36 + 418) / 2) / 2",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    }
+  ],
+  "validation": [
+    {
+      "source_id": "v14_validation_poisson_time_000",
+      "question_sha256": "007242af80fc2ef3d7e8ed75021f5d1621d3a6ba69dc5678d11facec3edfc6be",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 24 per minute. A recording lasts 92 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 24 * (92 / 60)",
+      "teacher_raw": "rate_per_minute=24; duration_minutes=92/60\n(24 * (92/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_time_001",
+      "question_sha256": "75c46532057734239d38f09eb9788e7c1ef34b7ca97eb49dccac7ac277f2a11e",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 48 per minute. A recording lasts 229 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 48 * (229 / 60)",
+      "teacher_raw": "rate_per_minute=48; duration_minutes=229/60\n(48 * (229/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_time_002",
+      "question_sha256": "be7e2d0eab771bfd41ac87677b4a57b4e2d9ca874111a903195bb26de9644476",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 30 per minute. A recording lasts 371 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 30 * (371 / 60)",
+      "teacher_raw": "rate_per_minute=30; duration_minutes=371/60\n(30 * (371/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_time_003",
+      "question_sha256": "ff3f6eeaf719bdb938cd2ec817ea3a192845d43d747a2bcfc392a4f2b662dd5d",
+      "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 41 per minute. A recording lasts 69 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 41 * (69 / 60)",
+      "teacher_raw": "rate_per_minute=41; duration_minutes=69/60\n(41 * (69/60))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_scaled_000",
+      "question_sha256": "5e18f7243ac4664dd028a1de58bb992d93dd78f2b75a09f4b030241b51c57044",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 38. It multiplies X by 7, then adds 10, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 7 ** 2 * 38",
+      "teacher_raw": "mean=38; scale=7; offset=10\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_scaled_001",
+      "question_sha256": "44095637b806650de1fe4046e7186819f63f5f28a8a42eef1c571b19fc7dc69e",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 43. It multiplies X by 4, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 4 ** 2 * 43",
+      "teacher_raw": "mean = 43; scale = 4; offset = 9\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_scaled_002",
+      "question_sha256": "f9a030968d31bf7361350b7ca1696a0147ba5ecbc09ee695c0adbcc77f4aa9c8",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 21. It multiplies X by 7, then adds 11, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 7 ** 2 * 21",
+      "teacher_raw": "mean = 21; scale = 7; offset = 11\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_poisson_scaled_003",
+      "question_sha256": "bda25fac2bff985efb710a0d8994ca5c4f8eaa78a3c355226e38b41193a29d34",
+      "prompt": "A sensor first samples X from a Poisson distribution with mean 44. It multiplies X by 7, then adds 2, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 7 ** 2 * 44",
+      "teacher_raw": "mean = 44; scale = 7; offset = 2\nVariance of Y = (scale ** 2) * mean",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_moment_000",
+      "question_sha256": "bc691cd7c75ba960e3f1d75320c10da8d68872350ad8a86b15ee00f675dc7abe",
+      "prompt": "X has mean 24 and variance 573. Multiply each observation by 6 and add 10 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (6 * 24 + 10) ** 2 + 6 ** 2 * 573",
+      "teacher_raw": "mean = 24; variance = 573; scale = 6; offset = 10\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 1,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_moment_001",
+      "question_sha256": "b75fef002d63247000cea3474ae88393ca037ae320c182895071a51a738d0505",
+      "prompt": "X has mean 41 and variance 534. Multiply each observation by 3 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (3 * 41 + 17) ** 2 + 3 ** 2 * 534",
+      "teacher_raw": "mean = 41; variance = 534; scale = 3; offset = 17\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_moment_002",
+      "question_sha256": "ba5991c073050657b1a3998819345bd93b5d24abeb5f15a928cb1078b88576ce",
+      "prompt": "X has mean 32 and variance 275. Multiply each observation by 7 and add 17 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (7 * 32 + 17) ** 2 + 7 ** 2 * 275",
+      "teacher_raw": "mean = 7 * 32 + 17; variance = 7 ** 2 * 275\n(7 * 32 + 17) ** 2 + 7 ** 2 * 275",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_moment_003",
+      "question_sha256": "6ea3e0dd831c0fe46a4933df163219bf92701548ed7829bec7f3b57826701a2b",
+      "prompt": "X has mean 43 and variance 229. Multiply each observation by 6 and add 10 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (6 * 43 + 10) ** 2 + 6 ** 2 * 229",
+      "teacher_raw": "mean = 43; variance = 229; scale = 6; offset = 10\n((scale * mean + offset) ** 2) + (scale ** 2) * variance",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_uniform_time_000",
+      "question_sha256": "a7bf3b75b680aba1cc8e3b709d3431d83cb8cd58e5b63a861833cdaa344d9043",
+      "prompt": "A wait is uniformly distributed between zero and 37 minutes. We learn the total wait is longer than 290 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (37 - 290 / 60) * ((37 ** 2 - (290 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=37; cutoff_minutes=290/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_uniform_time_001",
+      "question_sha256": "e4ba287efb15cb442e15d9155feca3df27ed0ed23b86de2a3f4c0f2bcf6abcd6",
+      "prompt": "A wait is uniformly distributed between zero and 47 minutes. We learn the total wait is longer than 388 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (47 - 388 / 60) * ((47 ** 2 - (388 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=47; cutoff_minutes=388/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_uniform_time_002",
+      "question_sha256": "f242944aa7412775ddc7dfb6322f681112ece573869ef2be18aa87ddcf392e31",
+      "prompt": "A wait is uniformly distributed between zero and 37 minutes. We learn the total wait is longer than 475 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (37 - 475 / 60) * ((37 ** 2 - (475 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes = 37; cutoff_minutes = 475 / 60\n(1 / (upper_minutes - cutoff_minutes)) * ((upper_minutes ** 2 - cutoff_minutes ** 2) / 2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_uniform_time_003",
+      "question_sha256": "5133392e0107c6b275d1e84270fcdf8f5986c04aba223b18807851100e9eaa80",
+      "prompt": "A wait is uniformly distributed between zero and 48 minutes. We learn the total wait is longer than 333 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 / (48 - 333 / 60) * ((48 ** 2 - (333 / 60) ** 2) / 2)",
+      "teacher_raw": "upper_minutes=48; cutoff_minutes=333/60\n(1/(upper_minutes-cutoff_minutes))*((upper_minutes**2-cutoff_minutes**2)/2)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_binomial_000",
+      "question_sha256": "95b6297718c74982780eb6d19549cdd300e1dda1bfcb878b72ae73a8e0d16f7d",
+      "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 28 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(9, 1) * (7 / 25) ** 1 * (1 - 7 / 25) ** (9 - 1)",
+      "teacher_raw": "n = 9; r = 1; reject_probability = 0.28\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_binomial_001",
+      "question_sha256": "f5e3badbeb5c448e937cc04467091fd8baa97e5f3d35c976f5632bb5402640d3",
+      "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 43 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(8, 3) * (43 / 100) ** 3 * (1 - 43 / 100) ** (8 - 3)",
+      "teacher_raw": "n = 8; r = 3; reject_probability = 0.43\ncomb(8,3) * (0.43)**3 * (1-0.43)**(8-3)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_binomial_002",
+      "question_sha256": "b684ac62cb678387d6121fb0866f0f0cd42ff361335b7cff48e30870bfe53d5a",
+      "prompt": "All 6 null hypotheses are true. Their tests act independently and each falsely rejects in 26 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(6, 1) * (13 / 50) ** 1 * (1 - 13 / 50) ** (6 - 1)",
+      "teacher_raw": "n = 6; r = 1; reject_probability = 0.26\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_binomial_003",
+      "question_sha256": "938eb97233476f8f66db48d9bd69a3bebca06ff48fa9e1e9c3d2ca1eb2d20dd1",
+      "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 32 percent of cases. Set up the chance of precisely 6 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: comb(9, 6) * (32 / 100) ** 6 * (1 - 32 / 100) ** (9 - 6)",
+      "teacher_raw": "n = 9; r = 6; reject_probability = 32 / 100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_exactly_one_000",
+      "question_sha256": "bf4ddbc64bafba12a08c12a6358c99f68f27634749fc2cf54e650245dbd0869e",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 44% and 21% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 44 / 100) * (21 / 100) + 44 / 100 * (1 - 21 / 100)",
+      "teacher_raw": "miss_a=44/100; miss_b=21/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_exactly_one_001",
+      "question_sha256": "cba398f251f9a3ae3d85f1c3f26231fb0fa43840ca4ffa6f032b1e311d412ce1",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 2 / 5) * (3 / 25) + 2 / 5 * (1 - 3 / 25)",
+      "teacher_raw": "miss_a=0.4; miss_b=0.12\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_exactly_one_002",
+      "question_sha256": "7465b88a6c140b971c8cdfdb5fae00eba79b534ac48806f3b5b60f1e4d99d2fb",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 47% and 39% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 47 / 100) * (39 / 100) + 47 / 100 * (1 - 39 / 100)",
+      "teacher_raw": "miss_a=47/100; miss_b=39/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_exactly_one_003",
+      "question_sha256": "0e80c16424718dbd157d7ba600d6076ae4f218d98e34bce1bf4a07f3d011ffe3",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 31% and 14% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (1 - 31 / 100) * (14 / 100) + 31 / 100 * (1 - 14 / 100)",
+      "teacher_raw": "miss_a=31/100; miss_b=14/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_at_least_one_000",
+      "question_sha256": "867f331cda192feed19ef04c8715dc29072602a23589191eb58de3849b749890",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 22% and 37% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 22 / 100 * (37 / 100)",
+      "teacher_raw": "miss_a=22/100; miss_b=37/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_at_least_one_001",
+      "question_sha256": "aebaa4aee4354bfecd4415de31fa998acbfe9e8137d8f9aee6c25afe7aa8c459",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 42% and 38% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 42 / 100 * (38 / 100)",
+      "teacher_raw": "miss_a=42/100; miss_b=38/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_at_least_one_002",
+      "question_sha256": "e926110edcf8ab8eb16cfbcb6be3d2b2121e984b194478561de4b549d16d7832",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 23% and 32% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 23 / 100 * (32 / 100)",
+      "teacher_raw": "miss_a=23/100; miss_b=32/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_at_least_one_003",
+      "question_sha256": "062a94ad8e9992e8f744fb34ed45aa448536459c1bc058a9a703ad0225cf0980",
+      "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 41% and 28% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: 1 - 41 / 100 * (28 / 100)",
+      "teacher_raw": "miss_a=41/100; miss_b=28/100\n1 - (miss_a * miss_b)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_interval_001",
+      "question_sha256": "71fa27d4806bc1a1ca305588fd59770feff22446923ae33c85b30e4d1f5aded2",
+      "prompt": "The endpoints of a normal-theory interval are 35 and 492. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (35 + 492) / 2 + (492 - 35) / 2 / 3",
+      "teacher_raw": "lower = (35 + 492) / 2 - ((492 - 35) / 2) / 3; upper = (35 + 492) / 2 + ((492 - 35) / 2) / 3\nupper = (35 + 492) / 2 + ((492 - 35) / 2) / 3",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_interval_002",
+      "question_sha256": "3a7d3644e38fb9b78986ba517a9f89dea30f109d6e1143cc1e24bdfd0d3bd33c",
+      "prompt": "The endpoints of a normal-theory interval are 40 and 261. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (40 + 261) / 2 + (261 - 40) / 2 / 7",
+      "teacher_raw": "lower = (40 + 261) / 2 - ((261 - 40) / 2) / sqrt(49)\nupper = (40 + 261) / 2 + ((261 - 40) / 2) / sqrt(49)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    },
+    {
+      "source_id": "v14_validation_interval_003",
+      "question_sha256": "b98259e03a22684a8f8f5c29e50a53304cf5454215ea117277d9018bf738cc5a",
+      "prompt": "The endpoints of a normal-theory interval are 42 and 553. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "target": "Expression: (42 + 553) / 2 + (553 - 42) / 2 / 5",
+      "teacher_raw": "lower = (42 + 553) / 2 - ((553 - 42) / 2) / sqrt(25)\nupper = (42 + 553) / 2 + ((553 - 42) / 2) / sqrt(25)",
+      "selected_attempt": 0,
+      "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted"
+    }
+  ]
+}
