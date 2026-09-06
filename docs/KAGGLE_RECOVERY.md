@@ -203,3 +203,12 @@ Final Kaggle version 24 (script version ID 347652560) is Successful and supersed
 The final `3beethoven_stats_v0_11.zip` is 92,805,792 bytes, SHA-256 `3b34b0590d0f3e40a203c2b6dda299e12640e71e53c87dbd56ef5ca465fac348`. It contains the selected checkpoint-115 adapter, exact original metadata, data, results, source, final report and independent review (81 manifest files). Optimizer/checkpoint state remains in full Kaggle saved output. Selected adapter SHA-256: `9994b0eb73cf824791ffbeb81dd08a301bb08801e2c38f38829af3cfd8618541`.
 
 The final ZIP was independently downloaded and saved; archive hash, ZIP CRC and exact adapter hash were verified. The GPU editor explicitly showed `Draft Session off (run a cell to start)` after final preservation. GitHub contains code and full text results, not binary model weights. See [final report](STATS_V0_11_REPORT.md) and [backup status](MODEL_BACKUP_STATUS.json). Results are mixed; retain both v0.10 and v0.11 rather than treating v0.11 as an overall replacement.
+
+
+## Restore v0.12 selected weights and resume evaluation
+
+Kaggle Quick Save version 25 was confirmed Successful after v0.12 training and archive creation, while the frozen three-model evaluation was still running. Selected checkpoint135 had validation loss0.15432609617710114; the provisional verified-in-run ZIP size was92,802,432 bytes. No final ZIP SHA-256 or independent download is recorded yet.
+
+In a fresh Kaggle working directory, restore `kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/25')`. Copy its `3beethoven_stats_v0_10`, `3beethoven_stats_v0_11` and `3beethoven_stats_v0_12` directories into `/kaggle/working/` without overwriting newer files. Confirm `training_complete.json`, `training_protocol.json`, the selected `adapter/`, frozen questions and partial response checkpoint files are present. Then pull the repository and run `scripts/run_stats_v0_12.py`; the runner validates provenance, skips the completed training marker and saved responses, and continues missing responses.
+
+Version 25 is the selected-weight recovery checkpoint, not the final evaluated archive. After completion, run the verifier, preserve a new final Kaggle version and independently verify the downloaded ZIP before updating hashes or stopping the GPU. The exact observed state and partial baseline are in [STATS_V0_12_INTERIM.md](STATS_V0_12_INTERIM.md).
