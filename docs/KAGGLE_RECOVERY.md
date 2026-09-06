@@ -11,6 +11,8 @@ Use individual cells. Do not use Run All on the historical notebook: earlier cel
 | 7 | 347590242 | v0.4 adapter, reused teacher records, expanded targets, 1,008 responses and ZIP |
 | 8 | 347596444 | v0.5 audited 204-record corpus, original teacher calls and revisions |
 | 9 | 347598932 | v0.5 selected adapter, corpus, 1,152 responses, audit documents and verified ZIP |
+| 10 | 347602173 | v0.6 paired corpus, rejected abstract cards and teacher test |
+| 11 | 347605195 | v0.6 selected adapter, 1,296 responses, logs and verified ZIP |
 
 The latest output is not a cumulative copy of all older output files. A notebook input added without a pinned version can resolve to the latest version after a restart.
 
@@ -78,3 +80,36 @@ With the GitHub repository available at `/kaggle/working/3Beethoven`, run `scrip
 If rerunning the comparison runner is necessary, first preserve the restored working files, remove the version-9 input, and mount version 5 for the original v0.3 comparison adapter. `run_stats_v0_5.py` requires that original adapter hash and skips saved responses and completed training. Merely mounting the latest notebook output is insufficient. Do not rerun the finalizer just to inspect the original ZIP: updating provenance and source snapshots would intentionally create a different archive hash.
 
 Raw model responses, full logs, paired comparisons and reproduction differences are also available in [STATS_V0_5_RESULTS.json](STATS_V0_5_RESULTS.json). The model archive stays on Kaggle; it does not need to be regenerated to retrieve it.
+
+## Restore completed v0.6 without teacher calls
+
+Version 11 is confirmed Successful, its ZIP was present in saved output, and the GPU session was stopped. v0.6 did not improve fresh accuracy; v0.5 remains the leading experimental candidate. Recovery does not require another training run.
+
+Remove any existing input for this same notebook before requesting pinned version 11. In a fresh working directory:
+
+```python
+from pathlib import Path
+import hashlib, shutil, zipfile, kagglehub
+
+saved = Path(kagglehub.notebook_output_download(
+    "trinashih/3beethoven-v0-2/versions/11"
+))
+archive = Path("/kaggle/working/3beethoven_stats_v0_6.zip")
+source = saved / archive.name
+expected = "903d4cc86ea6ce97a47b5a7afbbb5abdef1667c256266d90ed816f1bb2844d5d"
+assert hashlib.sha256(source.read_bytes()).hexdigest() == expected
+shutil.copy2(source, archive)
+root = archive.with_suffix("")
+assert not root.exists(), "Use a fresh directory; do not mix an existing run"
+root.mkdir()
+with zipfile.ZipFile(archive) as z:
+    z.extractall(root)  # Exact verified archive above.
+```
+
+With the repository at `/kaggle/working/3Beethoven` and its verification dependencies installed, run `scripts/verify_stats_v0_6.py`. It verifies stored responses, finite tensors and archive checksums on CPU; it does not train, load the base model or query the teacher. The selected step-45 adapter is in `3beethoven_stats_v0_6/adapter/`. See the [complete result report](STATS_V0_6_RESULTS.md) for hashes and limitations.
+
+Do not run `generate_stats_v0_6.py`: its paid abstract-card entry point is retired because those cards failed audit. Do not rerun preparation simply to inspect saved results; absent caches, preparation can call the teacher. The saved archive already includes the completed paired corpus and API ledger.
+
+Only if the full comparison runner is needed: preserve the restored v0.6 working directory, remove the version-11 notebook input, and mount pinned version 9 for the required v0.5 comparison adapter. `run_stats_v0_6.py` checks its hash and skips completed results/training. The latest notebook output alone does not supply that control adapter. Preserve original archives rather than repacking them just to inspect results.
+
+Code and complete text results are in GitHub; the model ZIP remains in Kaggle version 11. Its source snapshot records the code used for the experiment; later GitHub changes add reporting and safer recovery without changing the selected adapter.
