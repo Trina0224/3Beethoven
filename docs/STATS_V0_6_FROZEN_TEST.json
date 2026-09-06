@@ -1,0 +1,633 @@
+{
+  "audit": {
+    "n": 48,
+    "scope": "New stories and parameters; known mathematical principles, internally authored, not unseen-skill or external-blind evaluation",
+    "sha256": "9798cdb9ab8281f45dbb7cd14219c365a6231a6b8eebbe43a46ea858f30b51e8"
+  },
+  "questions": [
+    {
+      "answer_letter": "B",
+      "category": "poisson",
+      "choices": [
+        "3",
+        "9",
+        "27",
+        "81"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_00",
+      "question": "A library scanner registers arrivals as a Poisson process with mean rate 3 per minute. Let N count arrivals during 3 minutes. What is Var(N)?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "poisson",
+      "choices": [
+        "16",
+        "8",
+        "21",
+        "4"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_01",
+      "question": "A museum counter X is Poisson with mean 4. A display shows S=2X+5, using the same count twice. What is Var(S)?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "poisson",
+      "choices": [
+        "5",
+        "45",
+        "225",
+        "15"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_02",
+      "question": "A library scanner registers arrivals as a Poisson process with mean rate 5 per minute. Let N count arrivals during 3 minutes. What is Var(N)?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "poisson",
+      "choices": [
+        "12",
+        "29",
+        "24",
+        "6"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_03",
+      "question": "A museum counter X is Poisson with mean 6. A display shows S=2X+5, using the same count twice. What is Var(S)?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "poisson",
+      "choices": [
+        "7",
+        "21",
+        "63",
+        "441"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_04",
+      "question": "A library scanner registers arrivals as a Poisson process with mean rate 7 per minute. Let N count arrivals during 3 minutes. What is Var(N)?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "poisson",
+      "choices": [
+        "32",
+        "16",
+        "37",
+        "8"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_05",
+      "question": "A museum counter X is Poisson with mean 8. A display shows S=2X+5, using the same count twice. What is Var(S)?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "poisson",
+      "choices": [
+        "9",
+        "81",
+        "729",
+        "27"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_06",
+      "question": "A library scanner registers arrivals as a Poisson process with mean rate 9 per minute. Let N count arrivals during 3 minutes. What is Var(N)?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "poisson",
+      "choices": [
+        "20",
+        "45",
+        "40",
+        "10"
+      ],
+      "family": "poisson_story_transfer",
+      "id": "v06_poisson_07",
+      "question": "A museum counter X is Poisson with mean 10. A display shows S=2X+5, using the same count twice. What is Var(S)?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "expectation",
+      "choices": [
+        "49",
+        "57",
+        "8",
+        "45"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_00",
+      "question": "A game score X has mean 3 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "expectation",
+      "choices": [
+        "89",
+        "81",
+        "8",
+        "73"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_01",
+      "question": "A game score X has mean 4 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "expectation",
+      "choices": [
+        "121",
+        "8",
+        "109",
+        "129"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_02",
+      "question": "A game score X has mean 5 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "expectation",
+      "choices": [
+        "169",
+        "8",
+        "177",
+        "153"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_03",
+      "question": "A game score X has mean 6 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "expectation",
+      "choices": [
+        "225",
+        "233",
+        "8",
+        "205"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_04",
+      "question": "A game score X has mean 7 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "expectation",
+      "choices": [
+        "297",
+        "289",
+        "8",
+        "265"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_05",
+      "question": "A game score X has mean 8 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "expectation",
+      "choices": [
+        "361",
+        "8",
+        "333",
+        "369"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_06",
+      "question": "A game score X has mean 9 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "expectation",
+      "choices": [
+        "441",
+        "8",
+        "449",
+        "409"
+      ],
+      "family": "expectation_story_transfer",
+      "id": "v06_expectation_07",
+      "question": "A game score X has mean 10 and variance 2. A scoreboard reports Y=2X+1. What is E[Y^2]?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "uniform",
+      "choices": [
+        "6",
+        "9",
+        "12",
+        "3"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_00",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 12 minutes. Given T>6, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "uniform",
+      "choices": [
+        "12",
+        "8",
+        "16",
+        "4"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_01",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 16 minutes. Given T>8, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "uniform",
+      "choices": [
+        "10",
+        "20",
+        "5",
+        "15"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_02",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 20 minutes. Given T>10, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "uniform",
+      "choices": [
+        "12",
+        "24",
+        "18",
+        "6"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_03",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 24 minutes. Given T>12, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "uniform",
+      "choices": [
+        "14",
+        "21",
+        "28",
+        "7"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_04",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 28 minutes. Given T>14, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "uniform",
+      "choices": [
+        "24",
+        "16",
+        "32",
+        "8"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_05",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 32 minutes. Given T>16, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "uniform",
+      "choices": [
+        "18",
+        "36",
+        "9",
+        "27"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_06",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 36 minutes. Given T>18, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "uniform",
+      "choices": [
+        "20",
+        "40",
+        "30",
+        "10"
+      ],
+      "family": "uniform_story_transfer",
+      "id": "v06_uniform_07",
+      "question": "A shuttle waiting time T is continuously uniform from 0 to 40 minutes. Given T>20, what is its conditional mean?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "type_i",
+      "choices": [
+        "1/400",
+        "57/8000",
+        "3/400",
+        "1/8000"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_00",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 1/20 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "type_i",
+      "choices": [
+        "27/1000",
+        "1/100",
+        "3/100",
+        "1/1000"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_01",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 1/10 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "type_i",
+      "choices": [
+        "9/400",
+        "27/400",
+        "27/8000",
+        "459/8000"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_02",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 3/20 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "type_i",
+      "choices": [
+        "1/25",
+        "3/25",
+        "12/125",
+        "1/125"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_03",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 1/5 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "type_i",
+      "choices": [
+        "1/16",
+        "9/64",
+        "3/16",
+        "1/64"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_04",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 1/4 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "type_i",
+      "choices": [
+        "189/1000",
+        "9/100",
+        "27/100",
+        "27/1000"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_05",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 3/10 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "type_i",
+      "choices": [
+        "49/400",
+        "147/400",
+        "343/8000",
+        "1911/8000"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_06",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 7/20 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "type_i",
+      "choices": [
+        "4/25",
+        "12/25",
+        "36/125",
+        "8/125"
+      ],
+      "family": "type_i_story_transfer",
+      "id": "v06_type_i_07",
+      "question": "Three independent laboratory alarms each falsely trigger with probability 2/5 when no fault exists. What is the probability exactly two alarms falsely trigger?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "type_ii",
+      "choices": [
+        "81/100",
+        "9/50",
+        "99/100",
+        "1/100"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_00",
+      "question": "Two independent inspection methods each miss an existing defect with probability 1/10. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "type_ii",
+      "choices": [
+        "51/200",
+        "289/400",
+        "391/400",
+        "9/400"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_01",
+      "question": "Two independent inspection methods each miss an existing defect with probability 3/20. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "type_ii",
+      "choices": [
+        "16/25",
+        "24/25",
+        "1/25",
+        "8/25"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_02",
+      "question": "Two independent inspection methods each miss an existing defect with probability 1/5. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "type_ii",
+      "choices": [
+        "9/16",
+        "15/16",
+        "3/8",
+        "1/16"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_03",
+      "question": "Two independent inspection methods each miss an existing defect with probability 1/4. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "type_ii",
+      "choices": [
+        "49/100",
+        "21/50",
+        "91/100",
+        "9/100"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_04",
+      "question": "Two independent inspection methods each miss an existing defect with probability 3/10. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "type_ii",
+      "choices": [
+        "91/200",
+        "169/400",
+        "351/400",
+        "49/400"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_05",
+      "question": "Two independent inspection methods each miss an existing defect with probability 7/20. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "type_ii",
+      "choices": [
+        "9/25",
+        "21/25",
+        "4/25",
+        "12/25"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_06",
+      "question": "Two independent inspection methods each miss an existing defect with probability 2/5. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "type_ii",
+      "choices": [
+        "121/400",
+        "319/400",
+        "99/200",
+        "81/400"
+      ],
+      "family": "type_ii_story_transfer",
+      "id": "v06_type_ii_07",
+      "question": "Two independent inspection methods each miss an existing defect with probability 9/20. What is the probability exactly one method detects the defect?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "confidence",
+      "choices": [
+        "42",
+        "38",
+        "40",
+        "36"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_00",
+      "question": "A survey reports a normal-theory mean interval [30,42]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "confidence",
+      "choices": [
+        "48",
+        "52",
+        "50",
+        "46"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_01",
+      "question": "A survey reports a normal-theory mean interval [40,52]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "confidence",
+      "choices": [
+        "62",
+        "60",
+        "56",
+        "58"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_02",
+      "question": "A survey reports a normal-theory mean interval [50,62]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "confidence",
+      "choices": [
+        "72",
+        "70",
+        "68",
+        "66"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_03",
+      "question": "A survey reports a normal-theory mean interval [60,72]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "B",
+      "category": "confidence",
+      "choices": [
+        "82",
+        "78",
+        "80",
+        "76"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_04",
+      "question": "A survey reports a normal-theory mean interval [70,82]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "A",
+      "category": "confidence",
+      "choices": [
+        "88",
+        "92",
+        "90",
+        "86"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_05",
+      "question": "A survey reports a normal-theory mean interval [80,92]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "D",
+      "category": "confidence",
+      "choices": [
+        "102",
+        "100",
+        "96",
+        "98"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_06",
+      "question": "A survey reports a normal-theory mean interval [90,102]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    },
+    {
+      "answer_letter": "C",
+      "category": "confidence",
+      "choices": [
+        "112",
+        "110",
+        "108",
+        "106"
+      ],
+      "family": "confidence_story_transfer",
+      "id": "v06_confidence_07",
+      "question": "A survey reports a normal-theory mean interval [100,112]. Keep its center, confidence level and population standard deviation fixed, but multiply sample size by 9. What is the new upper endpoint?"
+    }
+  ]
+}
