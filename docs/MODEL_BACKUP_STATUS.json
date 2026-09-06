@@ -55,9 +55,9 @@
       "raw_results": "docs/STATS_V0_10_RESULTS.json"
     },
     "v11": {
-      "status": "second epoch running; first epoch checkpoint saved",
+      "status": "training complete; selected model independently backed up; evaluation running",
       "intermediate_saved_version": 20,
-      "script_version_id": 347641282,
+      "script_version_id": 347642986,
       "checkpoint_path": "3beethoven_stats_v0_11/checkpoints/checkpoint-115",
       "saved_contents_verified_in_ui": [
         "adapter_model.safetensors",
@@ -72,7 +72,19 @@
         "tokenizer_config.json",
         "chat_template.jinja"
       ],
-      "final_selected_model": false
+      "final_selected_model": true,
+      "selected_checkpoint": 115,
+      "selected_saved_version": 21,
+      "adapter_sha256": "9994b0eb73cf824791ffbeb81dd08a301bb08801e2c38f38829af3cfd8618541",
+      "independent_backup": {
+        "filename": "3beethoven_stats_v0_11.zip",
+        "bytes": 92765434,
+        "sha256": "f4358cf73179df2f89cbbe4d1840b4e16211cc15a43cb766a7ebdf87baa77be6",
+        "saved": true,
+        "weight_bytes_verified": true,
+        "manifest_verified": true,
+        "includes_final_evaluation": false
+      }
     }
   },
   "limitations": [
