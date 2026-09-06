@@ -42,6 +42,9 @@ class ExpandedTests(unittest.TestCase):
         self.assertEqual(obj['explanation'],'Original explanation.')
         self.assertEqual(obj['common_mistake'],'Incorrectly changing the value.')
         with self.assertRaises(ValueError): parse_output('Answer: A\n{"answer_letter":"B"}')
+        corrected=parse_output('{"answer_letter":"B is incorrect, the correct answer is A","explanation":"Unchanged."}')
+        self.assertEqual(corrected['answer_letter'],'A')
+        self.assertEqual(corrected['explanation'],'Unchanged.')
 
     def test_parallel_reservations_cannot_exceed_cap(self):
         with tempfile.TemporaryDirectory() as directory:
