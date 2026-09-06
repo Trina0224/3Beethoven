@@ -159,3 +159,5 @@ with zipfile.ZipFile(archive) as z:
 ZIP bytes: 93,446,957. Adapter SHA256: `805a2170a805f6176aa3837857890b8c44fc8f854d16cbc3085ae220e5502c7c`. Selected checkpoint: step135. With repository scripts and verification dependencies installed, run `scripts/verify_stats_v0_9.py`: it verifies saved responses, finite tensors and the ZIP manifest on CPU, without training, base-model loading or teacher requests. Keep the original ZIP unchanged.
 
 The ZIP preserves raw strict results, teacher provenance, source and training state. The later independent format audit and narrative report are in [GitHub results JSON](STATS_V0_9_RESULTS.json) and [report](STATS_V0_9_RESULTS.md), also copied into the repository folder in saved output before final preservation; later GitHub reporting additions do not alter the ZIP. Do not regenerate data or train merely to recover the completed adapter.
+
+After version-14 output verification, the GPU session was stopped and the editor explicitly showed `Draft Session off (run a cell to start)`.
