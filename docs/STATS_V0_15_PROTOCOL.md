@@ -51,3 +51,14 @@ The frozen question digest is
 Success evidence is positive paired test improvement and gains in weak families,
 reported alongside retention. Do not tune on test outcomes or require another
 teacher aggregate gate after filtering every training target individually.
+
+## Preparation revision (before student training or test evaluation)
+
+Initial acceptance was 133/168 training and 23/32 validation, below the required
+validation minimum. Genuine errors included squared Poisson rates and interval
+endpoints anchored at the lower bound. Initial records are preserved unchanged.
+A separate focused-teaching pass makes at most ONE new response for each of the
+44 rejected candidates, using only that family's symbolic rule. No numeric gold
+answers are sent, scoring and test questions remain frozen, and initial pass rates
+are not replaced by supplemented rates. This is an explicit preparation revision,
+not an undeclared third retry under the original two-attempt protocol.
