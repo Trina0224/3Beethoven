@@ -1,0 +1,2226 @@
+[
+  {
+    "source_id": "v15_train_poisson_time_000",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 63 per minute. A recording lasts 383 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 63 * (383 / 60)",
+    "teacher_raw": "Expression: 63*(383/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_001",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 48 per minute. A recording lasts 521 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 48 * (521 / 60)",
+    "teacher_raw": "Expression: 48*(521/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_002",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 68 per minute. A recording lasts 473 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 68 * (473 / 60)",
+    "teacher_raw": "Expression: 68*(473/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_003",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 60 per minute. A recording lasts 579 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 60 * (579 / 60)",
+    "teacher_raw": "Expression: 60*(579/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_004",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 30 per minute. A recording lasts 439 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 30 * (439 / 60)",
+    "teacher_raw": "Expression: 30*(439/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_005",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 42 per minute. A recording lasts 168 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 42 * (168 / 60)",
+    "teacher_raw": "Expression: 42*(168/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_006",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 26 per minute. A recording lasts 396 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 26 * (396 / 60)",
+    "teacher_raw": "Expression: 26*(396/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_007",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 50 per minute. A recording lasts 203 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 50 * (203 / 60)",
+    "teacher_raw": "Expression: 50 * (203/60)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_008",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 65 per minute. A recording lasts 571 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 65 * (571 / 60)",
+    "teacher_raw": "Expression: 65 * (571/60)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_009",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 49 per minute. A recording lasts 69 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 49 * (69 / 60)",
+    "teacher_raw": "Expression: 49 * (69/60)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_010",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 16 per minute. A recording lasts 445 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 * (445 / 60)",
+    "teacher_raw": "Expression: 16*(445/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_011",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 12 per minute. A recording lasts 446 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 12 * (446 / 60)",
+    "teacher_raw": "Expression: 12*(446/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_012",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 66 per minute. A recording lasts 104 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 66 * (104 / 60)",
+    "teacher_raw": "Expression: 66*(104/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_013",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 13 per minute. A recording lasts 546 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 13 * (546 / 60)",
+    "teacher_raw": "Expression: 13 * (546 / 60)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_014",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 59 per minute. A recording lasts 585 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 59 * (585 / 60)",
+    "teacher_raw": "Expression: 59*(585/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_015",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 15 per minute. A recording lasts 92 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 15 * (92 / 60)",
+    "teacher_raw": "Expression: 15 * (92/60)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_016",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 54 per minute. A recording lasts 560 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 54 * (560 / 60)",
+    "teacher_raw": "Expression: 54*(560/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_017",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 27 per minute. A recording lasts 575 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 27 * (575 / 60)",
+    "teacher_raw": "Expression: 27*(575/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_018",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 25 per minute. A recording lasts 573 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 25 * (573 / 60)",
+    "teacher_raw": "Expression: 25*(573/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_019",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 51 per minute. A recording lasts 384 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 51 * (384 / 60)",
+    "teacher_raw": "Expression: 51 * (384 / 60)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_020",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 35 per minute. A recording lasts 103 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 35 * (103 / 60)",
+    "teacher_raw": "Expression: 35*(103/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_021",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 50 per minute. A recording lasts 127 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 50 * (127 / 60)",
+    "teacher_raw": "Expression: 50 * (127/60)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_022",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 15 per minute. A recording lasts 484 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 15 * (484 / 60)",
+    "teacher_raw": "Expression: 15*(484/60)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_time_023",
+    "prompt": "The arrivals at a counter follow a homogeneous Poisson process, averaging 65 per minute. A recording lasts 226 seconds. What is the variance of the number recorded?\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 65 * (226 / 60)",
+    "teacher_raw": "Expression: 65 * (226/60)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_time"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_000",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 52. It multiplies X by 4, then adds 2, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 52",
+    "teacher_raw": "Expression: 4**2*52",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_001",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 33. It multiplies X by 2, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 33",
+    "teacher_raw": "Expression: (2**2)*33",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_002",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 51. It multiplies X by 5, then adds 4, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 51",
+    "teacher_raw": "Expression: 5**2*51",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_003",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 33. It multiplies X by 3, then adds 5, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 33",
+    "teacher_raw": "Expression: 3**2*33",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_004",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 34. It multiplies X by 3, then adds 20, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 34",
+    "teacher_raw": "Expression: (3**2)*34",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_005",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 49. It multiplies X by 2, then adds 4, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 49",
+    "teacher_raw": "Expression: (2**2)*49",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_006",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 51. It multiplies X by 6, then adds 15, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 51",
+    "teacher_raw": "Expression: 6**2*51",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_007",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 55. It multiplies X by 6, then adds 12, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 55",
+    "teacher_raw": "Expression: 6**2*55",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_008",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 56. It multiplies X by 4, then adds 2, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 56",
+    "teacher_raw": "Expression: 4**2*56",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_009",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 50. It multiplies X by 3, then adds 20, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 50",
+    "teacher_raw": "Expression: 3**2*50",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_010",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 68. It multiplies X by 4, then adds 10, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 68",
+    "teacher_raw": "Expression: 4**2*68",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_011",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 67. It multiplies X by 3, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 67",
+    "teacher_raw": "Expression: 3**2*67",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_012",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 33. It multiplies X by 2, then adds 21, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 33",
+    "teacher_raw": "Expression: 2**2*33",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_013",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 68. It multiplies X by 5, then adds 3, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 68",
+    "teacher_raw": "Expression: 5**2*68",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_014",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 33. It multiplies X by 3, then adds 17, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 33",
+    "teacher_raw": "Expression: 3**2*33",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_015",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 12. It multiplies X by 3, then adds 4, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 12",
+    "teacher_raw": "Expression: (3**2)*12",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_016",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 36. It multiplies X by 3, then adds 12, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 36",
+    "teacher_raw": "Expression: (3**2)*36",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_017",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 36. It multiplies X by 6, then adds 4, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 36",
+    "teacher_raw": "Expression: 6**2*36",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_018",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 43. It multiplies X by 6, then adds 14, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 43",
+    "teacher_raw": "Expression: 6**2 * 43",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_019",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 28. It multiplies X by 2, then adds 11, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 28",
+    "teacher_raw": "Expression: (2**2)*28",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_020",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 68. It multiplies X by 6, then adds 14, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 68",
+    "teacher_raw": "Expression: 6**2 * 68",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_021",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 43. It multiplies X by 7, then adds 9, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 43",
+    "teacher_raw": "Expression: 7**2*43",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_022",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 17. It multiplies X by 2, then adds 22, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 17",
+    "teacher_raw": "Expression: (2**2)*17",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_poisson_scaled_023",
+    "prompt": "A sensor first samples X from a Poisson distribution with mean 12. It multiplies X by 2, then adds 8, producing Y. Set up the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 12",
+    "teacher_raw": "Expression: (2**2)*12",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "poisson_scaled"
+  },
+  {
+    "source_id": "v15_train_moment_000",
+    "prompt": "X has mean 20 and variance 147. Multiply each observation by 6 and add 10 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 147 + (6 * 20 + 10) ** 2",
+    "teacher_raw": "Expression: (6**2)*147 + (6*20 + 10)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_001",
+    "prompt": "X has mean 56 and variance 317. Multiply each observation by 2 and add 16 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 317 + (2 * 56 + 16) ** 2",
+    "teacher_raw": "Expression: (2**2)*317 + (2*56 + 16)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_002",
+    "prompt": "X has mean 40 and variance 517. Multiply each observation by 2 and add 9 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 517 + (2 * 40 + 9) ** 2",
+    "teacher_raw": "Expression: (2**2)*517 + (2*40 + 9)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_003",
+    "prompt": "X has mean 44 and variance 384. Multiply each observation by 7 and add 8 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 384 + (7 * 44 + 8) ** 2",
+    "teacher_raw": "Expression: (7**2)*(384)+(7*44+8)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_004",
+    "prompt": "X has mean 33 and variance 85. Multiply each observation by 2 and add 4 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 85 + (2 * 33 + 4) ** 2",
+    "teacher_raw": "Expression: (2**2)*85 + (2*33 + 4)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_005",
+    "prompt": "X has mean 30 and variance 160. Multiply each observation by 6 and add 18 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 160 + (6 * 30 + 18) ** 2",
+    "teacher_raw": "Expression: (6**2)*(160)+(6*30+18)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_006",
+    "prompt": "X has mean 43 and variance 596. Multiply each observation by 5 and add 22 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 596 + (5 * 43 + 22) ** 2",
+    "teacher_raw": "Expression: (5**2)*596 + (5*43 + 22)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_007",
+    "prompt": "X has mean 56 and variance 560. Multiply each observation by 6 and add 11 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 560 + (6 * 56 + 11) ** 2",
+    "teacher_raw": "Expression: (6**2)*560 + (6*56 + 11)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_008",
+    "prompt": "X has mean 41 and variance 68. Multiply each observation by 6 and add 23 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 68 + (6 * 41 + 23) ** 2",
+    "teacher_raw": "Expression: (6**2)*68 + (6*41 + 23)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_009",
+    "prompt": "X has mean 57 and variance 79. Multiply each observation by 5 and add 12 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 79 + (5 * 57 + 12) ** 2",
+    "teacher_raw": "Expression: (5**2)*79+(5*57+12)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_010",
+    "prompt": "X has mean 53 and variance 578. Multiply each observation by 7 and add 13 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 578 + (7 * 53 + 13) ** 2",
+    "teacher_raw": "Expression: (7**2)*(578)+(7*53+13)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_011",
+    "prompt": "X has mean 30 and variance 348. Multiply each observation by 5 and add 23 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 348 + (5 * 30 + 23) ** 2",
+    "teacher_raw": "Expression: (5**2)*348 + (5*30 + 23)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_012",
+    "prompt": "X has mean 41 and variance 118. Multiply each observation by 5 and add 2 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 5 ** 2 * 118 + (5 * 41 + 2) ** 2",
+    "teacher_raw": "Expression: (5**2)*118 + (5*41 + 2)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_013",
+    "prompt": "X has mean 61 and variance 386. Multiply each observation by 2 and add 11 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 386 + (2 * 61 + 11) ** 2",
+    "teacher_raw": "Expression: (2**2)*386+(2*61+11)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_014",
+    "prompt": "X has mean 25 and variance 524. Multiply each observation by 6 and add 22 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 524 + (6 * 25 + 22) ** 2",
+    "teacher_raw": "Expression: (6**2)*(524)+(6*25+22)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_015",
+    "prompt": "X has mean 23 and variance 432. Multiply each observation by 2 and add 4 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 ** 2 * 432 + (2 * 23 + 4) ** 2",
+    "teacher_raw": "Expression: (2**2)*432 + (2*23 + 4)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_016",
+    "prompt": "X has mean 23 and variance 561. Multiply each observation by 4 and add 15 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 561 + (4 * 23 + 15) ** 2",
+    "teacher_raw": "Expression: (4**2)*(561)+(4*23+15)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_017",
+    "prompt": "X has mean 20 and variance 248. Multiply each observation by 3 and add 23 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 248 + (3 * 20 + 23) ** 2",
+    "teacher_raw": "Expression: (3**2)*248 + (3*20 + 23)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_018",
+    "prompt": "X has mean 18 and variance 100. Multiply each observation by 4 and add 18 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 100 + (4 * 18 + 18) ** 2",
+    "teacher_raw": "Expression: (4**2)*100 + (4*18 + 18)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_019",
+    "prompt": "X has mean 49 and variance 496. Multiply each observation by 4 and add 10 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 496 + (4 * 49 + 10) ** 2",
+    "teacher_raw": "Expression: (4**2)*496+(4*49+10)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_020",
+    "prompt": "X has mean 48 and variance 269. Multiply each observation by 6 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 269 + (6 * 48 + 3) ** 2",
+    "teacher_raw": "Expression: (6**2)*269 + (6*48 + 3)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_021",
+    "prompt": "X has mean 45 and variance 504. Multiply each observation by 3 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 504 + (3 * 45 + 3) ** 2",
+    "teacher_raw": "Expression: (3**2)*504 + (3*45 + 3)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_022",
+    "prompt": "X has mean 24 and variance 388. Multiply each observation by 7 and add 13 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 388 + (7 * 24 + 13) ** 2",
+    "teacher_raw": "Expression: (7**2)*388 + (7*24 + 13)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_moment_023",
+    "prompt": "X has mean 66 and variance 417. Multiply each observation by 6 and add 3 to get Y. Find the expected square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 417 + (6 * 66 + 3) ** 2",
+    "teacher_raw": "Expression: (6**2)*417+(6*66+3)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "moment"
+  },
+  {
+    "source_id": "v15_train_uniform_time_000",
+    "prompt": "A wait is uniformly distributed between zero and 67 minutes. We learn the total wait is longer than 364 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (364 / 60 + 67) / 2",
+    "teacher_raw": "Expression: (364/60 + 67)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_001",
+    "prompt": "A wait is uniformly distributed between zero and 46 minutes. We learn the total wait is longer than 466 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (466 / 60 + 46) / 2",
+    "teacher_raw": "Expression: (466/60 + 46)/2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_002",
+    "prompt": "A wait is uniformly distributed between zero and 29 minutes. We learn the total wait is longer than 72 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (72 / 60 + 29) / 2",
+    "teacher_raw": "Expression: (72/60 + 29)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_003",
+    "prompt": "A wait is uniformly distributed between zero and 41 minutes. We learn the total wait is longer than 469 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (469 / 60 + 41) / 2",
+    "teacher_raw": "Expression: (469/60+41)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_004",
+    "prompt": "A wait is uniformly distributed between zero and 19 minutes. We learn the total wait is longer than 350 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (350 / 60 + 19) / 2",
+    "teacher_raw": "Expression: (350/60 + 19)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_005",
+    "prompt": "A wait is uniformly distributed between zero and 16 minutes. We learn the total wait is longer than 392 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (392 / 60 + 16) / 2",
+    "teacher_raw": "Expression: (392/60 + 16)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_006",
+    "prompt": "A wait is uniformly distributed between zero and 30 minutes. We learn the total wait is longer than 543 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (543 / 60 + 30) / 2",
+    "teacher_raw": "Expression: (543/60 + 30) / 2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_007",
+    "prompt": "A wait is uniformly distributed between zero and 55 minutes. We learn the total wait is longer than 494 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (494 / 60 + 55) / 2",
+    "teacher_raw": "Expression: (494/60 + 55)/2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_008",
+    "prompt": "A wait is uniformly distributed between zero and 13 minutes. We learn the total wait is longer than 74 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (74 / 60 + 13) / 2",
+    "teacher_raw": "Expression: (74/60 + 13)/2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_009",
+    "prompt": "A wait is uniformly distributed between zero and 25 minutes. We learn the total wait is longer than 551 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (551 / 60 + 25) / 2",
+    "teacher_raw": "Expression: (551/60 + 25)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_010",
+    "prompt": "A wait is uniformly distributed between zero and 45 minutes. We learn the total wait is longer than 117 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (117 / 60 + 45) / 2",
+    "teacher_raw": "Expression: (117/60 + 45)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_011",
+    "prompt": "A wait is uniformly distributed between zero and 18 minutes. We learn the total wait is longer than 180 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (180 / 60 + 18) / 2",
+    "teacher_raw": "Expression: (180/60 + 18)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_012",
+    "prompt": "A wait is uniformly distributed between zero and 63 minutes. We learn the total wait is longer than 118 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (118 / 60 + 63) / 2",
+    "teacher_raw": "Expression: (118/60+63)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_013",
+    "prompt": "A wait is uniformly distributed between zero and 67 minutes. We learn the total wait is longer than 164 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (164 / 60 + 67) / 2",
+    "teacher_raw": "Expression: (164/60 + 67)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_014",
+    "prompt": "A wait is uniformly distributed between zero and 42 minutes. We learn the total wait is longer than 254 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (254 / 60 + 42) / 2",
+    "teacher_raw": "Expression: (254/60 + 42)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_015",
+    "prompt": "A wait is uniformly distributed between zero and 21 minutes. We learn the total wait is longer than 259 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (259 / 60 + 21) / 2",
+    "teacher_raw": "Expression: (259/60 + 21)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_016",
+    "prompt": "A wait is uniformly distributed between zero and 13 minutes. We learn the total wait is longer than 82 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (82 / 60 + 13) / 2",
+    "teacher_raw": "Expression: (82/60 + 13)/2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_017",
+    "prompt": "A wait is uniformly distributed between zero and 27 minutes. We learn the total wait is longer than 126 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (126 / 60 + 27) / 2",
+    "teacher_raw": "Expression: (126/60 + 27)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_018",
+    "prompt": "A wait is uniformly distributed between zero and 24 minutes. We learn the total wait is longer than 100 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (100 / 60 + 24) / 2",
+    "teacher_raw": "Expression: (100/60 + 24) / 2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_019",
+    "prompt": "A wait is uniformly distributed between zero and 38 minutes. We learn the total wait is longer than 479 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (479 / 60 + 38) / 2",
+    "teacher_raw": "Expression: (479/60 + 38)/2",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_020",
+    "prompt": "A wait is uniformly distributed between zero and 63 minutes. We learn the total wait is longer than 486 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (486 / 60 + 63) / 2",
+    "teacher_raw": "Expression: (486/60 + 63)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_021",
+    "prompt": "A wait is uniformly distributed between zero and 21 minutes. We learn the total wait is longer than 594 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (594 / 60 + 21) / 2",
+    "teacher_raw": "Expression: (594/60 + 21)/2",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_022",
+    "prompt": "A wait is uniformly distributed between zero and 22 minutes. We learn the total wait is longer than 388 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (388 / 60 + 22) / 2",
+    "teacher_raw": "Expression: (388/60 + 22)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_uniform_time_023",
+    "prompt": "A wait is uniformly distributed between zero and 36 minutes. We learn the total wait is longer than 346 seconds. Set up the conditional expected TOTAL wait in minutes, not the remaining wait.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (346 / 60 + 36) / 2",
+    "teacher_raw": "Expression: (346/60 + 36)/2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "uniform_time"
+  },
+  {
+    "source_id": "v15_train_binomial_000",
+    "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 38 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(9, 3) * (19 / 50) ** 3 * (1 - 19 / 50) ** (9 - 3)",
+    "teacher_raw": "Expression: comb(9,3)*(0.38)**3*(1-0.38)**(9-3)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_001",
+    "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 50 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(5, 1) * (1 / 2) ** 1 * (1 / 2) ** 4",
+    "teacher_raw": "Expression: comb(5,1)*(1/2)**1*(1/2)**4",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_002",
+    "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 31 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(4, 1) * (31 / 100) ** 1 * (1 - 31 / 100) ** (4 - 1)",
+    "teacher_raw": "Expression: comb(4,1)*(0.31)**1*(1-0.31)**(4-1)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_003",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 32 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 2) * (8 / 25) ** 2 * (1 - 8 / 25) ** 5",
+    "teacher_raw": "Expression: comb(7,2)*(0.32)**2*(1-0.32)**5",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_004",
+    "prompt": "All 6 null hypotheses are true. Their tests act independently and each falsely rejects in 61 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(6, 1) * (61 / 100) ** 1 * (1 - 61 / 100) ** (6 - 1)",
+    "teacher_raw": "Expression: comb(6,1)*(0.61)**1*(1-0.61)**(6-1)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_005",
+    "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 58 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(4, 2) * (29 / 50) ** 2 * (1 - 29 / 50) ** 2",
+    "teacher_raw": "Expression: comb(4,2)*(0.58**2)*(1-0.58)**2",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_006",
+    "prompt": "All 6 null hypotheses are true. Their tests act independently and each falsely rejects in 57 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(6, 3) * (57 / 100) ** 3 * (1 - 57 / 100) ** 3",
+    "teacher_raw": "Expression: comb(6,3)*(0.57)**3*(1-0.57)**3",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_007",
+    "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 24 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(5, 2) * (6 / 25) ** 2 * (1 - 6 / 25) ** 3",
+    "teacher_raw": "Expression: comb(5,2)*(0.24**2)*(1-0.24)**3",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_008",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 29 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 1) * (29 / 100) ** 1 * (1 - 29 / 100) ** (7 - 1)",
+    "teacher_raw": "Expression: comb(7,1)*(0.29)**1*(1-0.29)**(7-1)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_009",
+    "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 48 percent of cases. Set up the chance of precisely 6 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(8, 6) * (12 / 25) ** 6 * (1 - 12 / 25) ** (8 - 6)",
+    "teacher_raw": "Expression: comb(8,6)*(0.48)**6*(1-0.48)**(8-6)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_010",
+    "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 22 percent of cases. Set up the chance of precisely 5 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(8, 5) * (11 / 50) ** 5 * (1 - 11 / 50) ** (8 - 5)",
+    "teacher_raw": "Expression: comb(8,5)*(0.22)**5*(1-0.22)**(8-5)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_binomial_011",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 29 percent of cases. Set up the chance of precisely 4 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 4) * (29 / 100) ** 4 * (1 - 29 / 100) ** (7 - 4)",
+    "teacher_raw": "Expression: comb(7,4)*(0.29)**4*(1-0.29)**(7-4)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_000",
+    "question_sha256": "aa07613cb64f0ec965209a62bccc9466f6833b57e4669f82e5e9bee440a0d433",
+    "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 39 percent of cases. Set up the chance of precisely 5 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(9, 5) * (39 / 100) ** 5 * (1 - 39 / 100) ** (9 - 5)",
+    "teacher_raw": "n = 9; r = 5; reject_probability = 39 / 100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_001",
+    "question_sha256": "4627fc1940a51f0efd1b9b5ec15b63e888a806cf844dcda4336db2823d27ccf1",
+    "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 35 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(5, 3) * (7 / 20) ** 3 * (1 - 7 / 20) ** (5 - 3)",
+    "teacher_raw": "n = 5; r = 3; reject_probability = 0.35\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_003",
+    "question_sha256": "46b4bd59889b876df11cf781420642cf0819df44ca7df76438b9320b5fc7b42c",
+    "prompt": "All 4 null hypotheses are true. Their tests act independently and each falsely rejects in 23 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(4, 1) * (23 / 100) ** 1 * (1 - 23 / 100) ** (4 - 1)",
+    "teacher_raw": "n = 4; r = 1; reject_probability = 0.23\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_004",
+    "question_sha256": "9a0622e371a8831fdc2c980fa6d9c47b9a72abc93ff2d16b1ea6537dc6ccf7f1",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 25 percent of cases. Set up the chance of precisely 2 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 2) * (1 / 4) ** 2 * (1 - 1 / 4) ** (7 - 2)",
+    "teacher_raw": "n = 7; r = 2; reject_probability = 1/4\ncomb(n, r) * (reject_probability)**r * (1 - reject_probability)**(n - r)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_005",
+    "question_sha256": "e1260d0b21a7e6803a3dc2a6b0052ae9c96de974ede721ac5cab63f6731015f9",
+    "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 42 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(5, 1) * (21 / 50) ** 1 * (1 - 21 / 50) ** (5 - 1)",
+    "teacher_raw": "n = 5; r = 1; reject_probability = 0.42\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_006",
+    "question_sha256": "cdf98fce798c184a6bbb82ee9c9ce44c012f9617c29823f4e91321ab0e32a1d7",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 37 percent of cases. Set up the chance of precisely 4 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 4) * (37 / 100) ** 4 * (1 - 37 / 100) ** (7 - 4)",
+    "teacher_raw": "n = 7; r = 4; reject_probability = 37 / 100\ncomb(n, r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_007",
+    "question_sha256": "44c59e799781887299cefe54abfd6a58359994f8e3bd29a9d93bba2382f9df95",
+    "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 44 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(8, 1) * (11 / 25) ** 1 * (1 - 11 / 25) ** (8 - 1)",
+    "teacher_raw": "n = 8; r = 1; reject_probability = 0.44\ncomb(n, r) * (reject_probability) ** r * (1 - reject_probability) ** (n - r)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_008",
+    "question_sha256": "6d5e9e40e0f7ede99d719883e256fa4b7111ff30a7f38ee43bd6824f35a5885a",
+    "prompt": "All 6 null hypotheses are true. Their tests act independently and each falsely rejects in 37 percent of cases. Set up the chance of precisely 4 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(6, 4) * (37 / 100) ** 4 * (1 - 37 / 100) ** (6 - 4)",
+    "teacher_raw": "n=6; r=4; reject_probability=0.37\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_009",
+    "question_sha256": "801d003508c8bc5618468323fdeeec4922d1312f3d977e6f176b93155a1ae1d7",
+    "prompt": "All 7 null hypotheses are true. Their tests act independently and each falsely rejects in 39 percent of cases. Set up the chance of precisely 1 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(7, 1) * (39 / 100) ** 1 * (1 - 39 / 100) ** (7 - 1)",
+    "teacher_raw": "n=7; r=1; reject_probability=0.39\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_010",
+    "question_sha256": "04ef15ba53e557b315323cb7dda8d0a6219cd52ce5081782f768b2eabbc94c58",
+    "prompt": "All 8 null hypotheses are true. Their tests act independently and each falsely rejects in 30 percent of cases. Set up the chance of precisely 6 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(8, 6) * (3 / 10) ** 6 * (1 - 3 / 10) ** (8 - 6)",
+    "teacher_raw": "n=8; r=6; reject_probability=0.3\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_011",
+    "question_sha256": "109a7443679bf89cfdeade8581fc47d0524e75f25bb9c4391dcc5998f9eb9a22",
+    "prompt": "All 5 null hypotheses are true. Their tests act independently and each falsely rejects in 36 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(5, 3) * (36 / 100) ** 3 * (1 - 36 / 100) ** (5 - 3)",
+    "teacher_raw": "n = 5; r = 3; reject_probability = 36 / 100\ncomb(n, r) * (reject_probability) ** r * (1 - reject_probability) ** (n - r)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v14_train_binomial_012",
+    "question_sha256": "f0a3b34d7a987b61862dce1a15fbf03a63c30447a391a4e13edd2fa39383a265",
+    "prompt": "All 9 null hypotheses are true. Their tests act independently and each falsely rejects in 46 percent of cases. Set up the chance of precisely 3 false rejections.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: comb(9, 3) * (23 / 50) ** 3 * (1 - 23 / 50) ** (9 - 3)",
+    "teacher_raw": "n=9; r=3; reject_probability=0.46\ncomb(n,r) * (reject_probability ** r) * ((1 - reject_probability) ** (n - r))",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "binomial"
+  },
+  {
+    "source_id": "v15_train_exactly_one_000",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 43% and 30% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 43 / 100) * (3 / 10) + 43 / 100 * (1 - 3 / 10)",
+    "teacher_raw": "Expression: (1-0.43)*0.3 + 0.43*(1-0.3)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_001",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 57% and 42% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 57 / 100) * (21 / 50) + 57 / 100 * (1 - 21 / 50)",
+    "teacher_raw": "Expression: (1-0.57)*0.42 + 0.57*(1-0.42)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_002",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 44% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 2 / 5) * (11 / 25) + 2 / 5 * (1 - 11 / 25)",
+    "teacher_raw": "Expression: (1-0.4)*0.44 + 0.4*(1-0.44)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_003",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 66% and 29% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 66 / 100) * (29 / 100) + (1 - 29 / 100) * (66 / 100)",
+    "teacher_raw": "Expression: (1-66/100)*(29/100)+(1-29/100)*(66/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_004",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 54% and 16% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 27 / 50) * (4 / 25) + 27 / 50 * (1 - 4 / 25)",
+    "teacher_raw": "Expression: (1-0.54)*0.16 + 0.54*(1-0.16)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_005",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 60% and 32% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 3 / 5) * (8 / 25) + 3 / 5 * (1 - 8 / 25)",
+    "teacher_raw": "Expression: (1-0.6)*0.32 + 0.6*(1-0.32)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_006",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 57% and 47% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 57 / 100) * (47 / 100) + 57 / 100 * (1 - 47 / 100)",
+    "teacher_raw": "Expression: (1-0.57)*0.47 + 0.57*(1-0.47)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_007",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 13% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 13 / 100) * (12 / 100) + 13 / 100 * (1 - 12 / 100)",
+    "teacher_raw": "Expression: (1-13/100)*(12/100)+(13/100)*(1-12/100)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_008",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 23% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 23 / 100) * (3 / 25) + 23 / 100 * (1 - 3 / 25)",
+    "teacher_raw": "Expression: (1-0.23)*0.12 + 0.23*(1-0.12)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_009",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 19% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 19 / 100) * (12 / 100) + (1 - 12 / 100) * (19 / 100)",
+    "teacher_raw": "Expression: (1-19/100)*(12/100) + (1-12/100)*(19/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_010",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 56% and 27% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 56 / 100) * (27 / 100) + 56 / 100 * (1 - 27 / 100)",
+    "teacher_raw": "Expression: (1-56/100)*(27/100) + (56/100)*(1-27/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_exactly_one_011",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 57% and 37% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 57 / 100) * (37 / 100) + 57 / 100 * (1 - 37 / 100)",
+    "teacher_raw": "Expression: (1-0.57)*0.37 + 0.57*(1-0.37)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_000",
+    "question_sha256": "3d46342ba1548b2deffb545c8b79ab6ebd1b47452ee039cf9a289abad40c7464",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 48% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 2 / 5) * (48 / 100) + 2 / 5 * (1 - 48 / 100)",
+    "teacher_raw": "miss_a=0.4; miss_b=48/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_001",
+    "question_sha256": "c083a7a54f76e4b7c02e632bc25f0c2e0f468405c1a578f2f4eb3b5e516bf977",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 29% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 38 / 100) * (29 / 100) + 38 / 100 * (1 - 29 / 100)",
+    "teacher_raw": "miss_a=38/100; miss_b=29/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_002",
+    "question_sha256": "669865716051a2fd8f4391da4a48fa3e7cfc98e42a079ced9afb1dc48f316faa",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 21% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 38 / 100) * (21 / 100) + 38 / 100 * (1 - 21 / 100)",
+    "teacher_raw": "miss_a=38/100; miss_b=21/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_003",
+    "question_sha256": "4caedd03e7d615a44b1c270bfd803483f1751c1c29a241e15d5310b1967f95ca",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 22% and 49% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 22 / 100) * (49 / 100) + 22 / 100 * (1 - 49 / 100)",
+    "teacher_raw": "miss_a=22/100; miss_b=49/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_004",
+    "question_sha256": "232092d51c95d0f2ae3ab8034bc448822e231b92186557a1e53c7ac1b5919d38",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 27% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 27 / 100) * (27 / 100) + 27 / 100 * (1 - 27 / 100)",
+    "teacher_raw": "miss_a=27/100; miss_b=27/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_005",
+    "question_sha256": "9c9f57085cb13350089bfd755e9d7e16498f774f67a58be96d99e2b355eabb1e",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 32% and 27% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 32 / 100) * (27 / 100) + 32 / 100 * (1 - 27 / 100)",
+    "teacher_raw": "miss_a=32/100; miss_b=27/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_006",
+    "question_sha256": "d40bcd40462bbb1f56dd7c6e7f9f517f1f89c27b9286bc38599bcb95629de9ac",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 28% and 12% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 28 / 100) * (12 / 100) + 28 / 100 * (1 - 12 / 100)",
+    "teacher_raw": "miss_a=28/100; miss_b=12/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_007",
+    "question_sha256": "afce86d0b4adc9c84e364d330dc2846ae08f95bff1a3f0c755fea44a4dc450b3",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 43% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 27 / 100) * (43 / 100) + 27 / 100 * (1 - 43 / 100)",
+    "teacher_raw": "miss_a=27/100; miss_b=43/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_008",
+    "question_sha256": "e4222ab9cb5b5939f5c2b0644081461407c6f519f5678a374da805e31939f765",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 47% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 19 / 50) * (47 / 100) + 19 / 50 * (1 - 47 / 100)",
+    "teacher_raw": "miss_a=0.38; miss_b=0.47\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_009",
+    "question_sha256": "628b6e6249a46307adb385cb0944322b6cbff02e2f55781ac76322e4235cd1c5",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 23% and 23% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 23 / 100) * (23 / 100) + 23 / 100 * (1 - 23 / 100)",
+    "teacher_raw": "miss_a=23/100; miss_b=23/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_010",
+    "question_sha256": "613d8723b70794481b01a407482a42c12f907cc43ac1d003aae625353e152c42",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 39% and 35% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 39 / 100) * (35 / 100) + 39 / 100 * (1 - 35 / 100)",
+    "teacher_raw": "miss_a=39/100; miss_b=35/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v14_train_exactly_one_011",
+    "question_sha256": "5b473de800113085060ef5b8c0bd36956163d835af3f8858b5d4b3a9b50f0a95",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 21% and 34% of cases respectively. Find the probability that one method detects and the other misses.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (1 - 21 / 100) * (34 / 100) + 21 / 100 * (1 - 34 / 100)",
+    "teacher_raw": "miss_a=21/100; miss_b=34/100\n(1-miss_a)*miss_b + miss_a*(1-miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "exactly_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_000",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 44% and 17% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 17 / 100 * (44 / 100)",
+    "teacher_raw": "Expression: 1 - (17/100) * (44/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_001",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 56% and 25% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 56 / 100 * (25 / 100)",
+    "teacher_raw": "Expression: 1 - (56/100) * (25/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_002",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 51% and 44% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 51 / 100 * (44 / 100)",
+    "teacher_raw": "Expression: 1 - (51/100) * (44/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_003",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 36% and 23% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 36 / 100 * (23 / 100)",
+    "teacher_raw": "Expression: 1 - (36/100) * (23/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_004",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 63% and 46% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 63 / 100 * (46 / 100)",
+    "teacher_raw": "Expression: 1 - (63/100) * (46/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_005",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 20% and 31% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 1 / 5 * (31 / 100)",
+    "teacher_raw": "Expression: 1 - (1/5) * (31/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_006",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 25% and 40% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 1 / 4 * (2 / 5)",
+    "teacher_raw": "Expression: 1 - (1/4) * (2/5)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_007",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 50% and 12% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 1 / 2 * (12 / 100)",
+    "teacher_raw": "Expression: 1 - (1/2) * (12/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_008",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 36% and 42% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 36 / 100 * (42 / 100)",
+    "teacher_raw": "Expression: 1 - (36/100) * (42/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_009",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 35% and 38% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 35 / 100 * (38 / 100)",
+    "teacher_raw": "Expression: 1 - (35/100) * (38/100)",
+    "selected_attempt": 1,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_010",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 20% and 18% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 1 / 5 * (9 / 50)",
+    "teacher_raw": "Expression: 1 - (1/5) * (9/50)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_at_least_one_011",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 57% and 39% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 57 / 100 * (39 / 100)",
+    "teacher_raw": "Expression: 1 - (57/100) * (39/100)",
+    "selected_attempt": 0,
+    "source": "rule-scaffolded 70B response",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_000",
+    "question_sha256": "afd063e8f6a9e631072a931920f4594d466b8259d18c57eab0ab831514ec4aff",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 45% and 28% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 45 / 100 * (28 / 100)",
+    "teacher_raw": "miss_a=45/100; miss_b=28/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_001",
+    "question_sha256": "97086b9c69ad0b171f639e501b29641e97a4ad098f6efe5e0aae9f0d7fb4789a",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 41% and 42% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 41 / 100 * (42 / 100)",
+    "teacher_raw": "miss_a=41/100; miss_b=42/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_002",
+    "question_sha256": "a841332405a5134bcf612b784c7a6b0b870e8551aaffefd6d562d671deb83be2",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 46% and 22% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 46 / 100 * (22 / 100)",
+    "teacher_raw": "miss_a=46/100; miss_b=22/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_003",
+    "question_sha256": "3e5369c2a52e15408781d308cb4c06c1e434133573c3a8647c5ce00f6a407d1f",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 37% and 46% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 37 / 100 * (46 / 100)",
+    "teacher_raw": "miss_a=37/100; miss_b=46/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_004",
+    "question_sha256": "5ed73a180e26232d9d4c10bc0335dd05ce506d982922a5487c23128f81c5e067",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 41% and 24% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 41 / 100 * (24 / 100)",
+    "teacher_raw": "miss_a=41/100; miss_b=24/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_005",
+    "question_sha256": "82cf8457fb77550d02bd808cfda7c6cd5a5dc93adaf1280297d3254ffb23fb0e",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 25% and 35% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 1 / 4 * (7 / 20)",
+    "teacher_raw": "miss_a=1/4; miss_b=7/20\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_006",
+    "question_sha256": "0af009b3104e784ce4622e5ab45675e0c4ab42401edd3493e99366efbf9cd229",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 27% and 22% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 27 / 100 * (22 / 100)",
+    "teacher_raw": "miss_a=27/100; miss_b=22/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_008",
+    "question_sha256": "4cd9ab6041a806a1a60fa4ecd964ccd42ba78781b52ee48e831d73f12fd8d5a8",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 14% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 38 / 100 * (14 / 100)",
+    "teacher_raw": "miss_a=38/100; miss_b=14/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_009",
+    "question_sha256": "313ea9c2b018b5681f7d7953bdd62949ac3374ca457a89d7a8ebc994a3ee19db",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 40% and 38% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 2 / 5 * (19 / 50)",
+    "teacher_raw": "miss_a=2/5; miss_b=19/50\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_010",
+    "question_sha256": "fe88f491ba0bc3bcdc941f3a00242f0b78a047451d9060c842a507da42e2644f",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 38% and 31% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 38 / 100 * (31 / 100)",
+    "teacher_raw": "miss_a=38/100; miss_b=31/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_011",
+    "question_sha256": "99cc53d36c3e0749a5160dde40f508cb969242e86c0a12ab439c8b05a85665bc",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 22% and 48% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 22 / 100 * (48 / 100)",
+    "teacher_raw": "miss_a=22/100; miss_b=48/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v14_train_at_least_one_012",
+    "question_sha256": "1907e397cef8a6129b820450ac7d289b6ee9dd575cb1c46a6117ef1e9facf247",
+    "prompt": "A defect is definitely present. Two independent inspections A and B miss it in 46% and 28% of cases respectively. Find the probability that one or both methods detect.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 1 - 46 / 100 * (28 / 100)",
+    "teacher_raw": "miss_a=46/100; miss_b=28/100\n1 - (miss_a * miss_b)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "at_least_one"
+  },
+  {
+    "source_id": "v15_train_interval_000",
+    "prompt": "The endpoints of a normal-theory interval are 63 and 378. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (63 + 378) / 2 + (378 - 63) / (2 * 5)",
+    "teacher_raw": "Expression: (63 + 378) / 2 + (378 - 63) / (2 * sqrt(25))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_001",
+    "prompt": "The endpoints of a normal-theory interval are 43 and 605. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (43 + 605) / 2 + (605 - 43) / (2 * 4)",
+    "teacher_raw": "Expression: (43+605)/2 + ((605-43)/(2*sqrt(16)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_002",
+    "prompt": "The endpoints of a normal-theory interval are 58 and 280. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (58 + 280) / 2 + (280 - 58) / (2 * 7)",
+    "teacher_raw": "Expression: (58 + 280) / 2 + (280 - 58) / (2 * sqrt(49))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_003",
+    "prompt": "The endpoints of a normal-theory interval are 62 and 304. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (62 + 304) / 2 + (304 - 62) / (2 * 5)",
+    "teacher_raw": "Expression: (62+304)/2 + (304-62)/(2*sqrt(25))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_004",
+    "prompt": "The endpoints of a normal-theory interval are 38 and 446. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (38 + 446) / 2 + (446 - 38) / (2 * 7)",
+    "teacher_raw": "Expression: (38 + 446) / 2 + ((446 - 38) / (2 * sqrt(49)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_005",
+    "prompt": "The endpoints of a normal-theory interval are 47 and 236. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (47 + 236) / 2 + (236 - 47) / (2 * 6)",
+    "teacher_raw": "Expression: (47 + 236) / 2 + ((236 - 47) / (2 * sqrt(36)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_006",
+    "prompt": "The endpoints of a normal-theory interval are 20 and 469. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (20 + 469) / 2 + (469 - 20) / (2 * 6)",
+    "teacher_raw": "Expression: (20 + 469) / 2 + ((469 - 20) / (2 * sqrt(36)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_007",
+    "prompt": "The endpoints of a normal-theory interval are 43 and 449. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (43 + 449) / 2 + (449 - 43) / (2 * 6)",
+    "teacher_raw": "Expression: (43 + 449) / 2 + (449 - 43) / (2 * sqrt(36))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_008",
+    "prompt": "The endpoints of a normal-theory interval are 64 and 161. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (64 + 161) / 2 + (161 - 64) / (2 * 7)",
+    "teacher_raw": "Expression: (64 + 161) / 2 + (161 - 64) / (2 * sqrt(49))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_009",
+    "prompt": "The endpoints of a normal-theory interval are 12 and 525. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (12 + 525) / 2 + (525 - 12) / 2 / 6",
+    "teacher_raw": "Expression: (12 + 525) / 2 + ((525 - 12) / 2) / sqrt(36)",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_010",
+    "prompt": "The endpoints of a normal-theory interval are 60 and 331. Its center, population standard deviation and confidence level will not change. A new sample has 36 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (60 + 331) / 2 + (331 - 60) / (2 * 6)",
+    "teacher_raw": "Expression: (60 + 331) / 2 + ((331 - 60) / (2 * sqrt(36)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v15_train_interval_011",
+    "prompt": "The endpoints of a normal-theory interval are 32 and 589. Its center, population standard deviation and confidence level will not change. A new sample has 4 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (32 + 589) / 2 + (589 - 32) / (2 * 2)",
+    "teacher_raw": "Expression: (32 + 589) / 2 + ((589 - 32) / (2 * sqrt(4)))",
+    "selected_attempt": "focused_0",
+    "source": "rule-scaffolded 70B response",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_000",
+    "question_sha256": "065242bc67aa0b6f7715e0e148de52fd8e3e6b33cdd78606b39bb97e46dc8b98",
+    "prompt": "The endpoints of a normal-theory interval are 47 and 641. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (47 + 641) / 2 + (641 - 47) / 2 / 4",
+    "teacher_raw": "lower = (47 + 641) / 2 - (641 - 47) / 2 / 4; \nupper = (47 + 641) / 2 + (641 - 47) / 2 / 4",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_001",
+    "question_sha256": "958500e31944e7eabd44b9a5a8d8786085a40647a90c83e6bc0c3b94550c4361",
+    "prompt": "The endpoints of a normal-theory interval are 34 and 619. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (34 + 619) / 2 + (619 - 34) / 2 / 3",
+    "teacher_raw": "lower = (34 + 619) / 2 - (619 - 34) / 2 / 3; \nupper = (34 + 619) / 2 + (619 - 34) / 2 / 3",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_002",
+    "question_sha256": "ef0a41827c0a89a5d0d7940cf4158e15aa8fcaba2f7af4d761bc963f4221c44c",
+    "prompt": "The endpoints of a normal-theory interval are 44 and 504. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (44 + 504) / 2 + (504 - 44) / 2 / 3",
+    "teacher_raw": "lower = (44 + 504) / 2 - (504 - 44) / 2 / 3; \nupper = (44 + 504) / 2 + (504 - 44) / 2 / 3",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_003",
+    "question_sha256": "5be5263988e6c6368114d9e687ff49c7b6d23c7b3ea832a0e362ac3b1f3e90ad",
+    "prompt": "The endpoints of a normal-theory interval are 26 and 457. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (26 + 457) / 2 + (457 - 26) / 2 / 3",
+    "teacher_raw": "lower = (26 + 457) / 2 - (457 - 26) / 2 / 3; \nupper = (26 + 457) / 2 + (457 - 26) / 2 / 3",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_004",
+    "question_sha256": "5bf754721ed6336dcbadab8c2e8e77deae3764bd460ac3a7a78396e77afef4a5",
+    "prompt": "The endpoints of a normal-theory interval are 38 and 188. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (38 + 188) / 2 + (188 - 38) / (2 * 4)",
+    "teacher_raw": "lower = 38; upper = 188; width_divisor = 4\nupper = (38 + 188) / 2 + (188 - 38) / (2 * 4)",
+    "selected_attempt": 1,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_005",
+    "question_sha256": "ca71ee852ebd93f550d8a38c6a1c5877b5107b09bb37a78b1cd67a884ab7f722",
+    "prompt": "The endpoints of a normal-theory interval are 35 and 559. Its center, population standard deviation and confidence level will not change. A new sample has 49 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (35 + 559) / 2 + (559 - 35) / 2 / 7",
+    "teacher_raw": "lower = 35; upper = 559\nupper = (35 + 559) / 2 + (559 - 35) / 2 / sqrt(49)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_006",
+    "question_sha256": "6df7be71e5d577ba87503464fd3c97fe2d106e0ac134ee6266e14e17e972183f",
+    "prompt": "The endpoints of a normal-theory interval are 29 and 504. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (29 + 504) / 2 + (504 - 29) / 2 / 3",
+    "teacher_raw": "lower = (29 + 504) / 2 - (504 - 29) / 2 / 3; \nupper = (29 + 504) / 2 + (504 - 29) / 2 / 3",
+    "selected_attempt": 1,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_007",
+    "question_sha256": "f15571d226af0846558a11e6c5a09247b9ee524cb696c84f0459c01706c6efdb",
+    "prompt": "The endpoints of a normal-theory interval are 46 and 389. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (46 + 389) / 2 + (389 - 46) / 2 / 5",
+    "teacher_raw": "lower = (46 + 389) / 2 - ((389 - 46) / 2) / sqrt(25)\nupper = (46 + 389) / 2 + ((389 - 46) / 2) / sqrt(25)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_008",
+    "question_sha256": "e334243d56eed19bc034622d97bdc677759a8aade3bd1cda48f7c07b9010c4bd",
+    "prompt": "The endpoints of a normal-theory interval are 48 and 163. Its center, population standard deviation and confidence level will not change. A new sample has 9 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (48 + 163) / 2 + (163 - 48) / 2 / 3",
+    "teacher_raw": "lower = (48 + 163) / 2 - ((163 - 48) / 2) / 3; upper = (48 + 163) / 2 + ((163 - 48) / 2) / 3\nupper = (48 + 163) / 2 + ((163 - 48) / 2) / 3",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_009",
+    "question_sha256": "357b838dc7755d9e72e79d8f8336b86c9eb8200c644ef004e43a46722a217c43",
+    "prompt": "The endpoints of a normal-theory interval are 26 and 405. Its center, population standard deviation and confidence level will not change. A new sample has 16 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (26 + 405) / 2 + (405 - 26) / 2 / 4",
+    "teacher_raw": "lower = (26 + 405) / 2 - ((405 - 26) / 2) / 4; upper = (26 + 405) / 2 + ((405 - 26) / 2) / 4\nupper = (26 + 405) / 2 + ((405 - 26) / 2) / 4",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_010",
+    "question_sha256": "0e181244a43a3bbde4e519ce8b29081f6dfe449c209c3c692379ec920145f8fa",
+    "prompt": "The endpoints of a normal-theory interval are 29 and 434. Its center, population standard deviation and confidence level will not change. A new sample has 4 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (29 + 434) / 2 + (434 - 29) / 2 / 2",
+    "teacher_raw": "lower = (29 + 434) / 2 - ((434 - 29) / 2) / 2; upper = (29 + 434) / 2 + ((434 - 29) / 2) / 2\nupper = (29 + 434) / 2 + ((434 - 29) / 2) / sqrt(4)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v14_train_interval_011",
+    "question_sha256": "bd3cf30eddd1d2ed7b0f7254824ae2cb316dadd1e51f608adc888779fb4822bc",
+    "prompt": "The endpoints of a normal-theory interval are 40 and 366. Its center, population standard deviation and confidence level will not change. A new sample has 25 times the old size. Set up the new upper endpoint.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: (40 + 366) / 2 + (366 - (40 + 366) / 2) / 5",
+    "teacher_raw": "lower = (40 + 366) / 2 - (366 - (40 + 366) / 2) / sqrt(25)\nupper = (40 + 366) / 2 + (366 - (40 + 366) / 2) / sqrt(25)",
+    "selected_attempt": 0,
+    "normalization": "AST expansion of teacher-owned assignments and decimal normalization; no reference bindings inserted",
+    "category": "interval"
+  },
+  {
+    "source_id": "v16_train_moment_000_mean",
+    "prompt": "X has mean 48 and variance 434. Y=3*X+11. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 * 48 + 11",
+    "teacher_raw": "Expression: 3*48+11",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_001_mean",
+    "prompt": "X has mean 48 and variance 363. A device multiplies X by 3, then adds 12 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 * 48 + 12",
+    "teacher_raw": "Expression: 3*48+12",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_002_mean",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X has mean 21 and variance 396. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 21 + 16",
+    "teacher_raw": "Expression: 4*21+16",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_003_mean",
+    "prompt": "X has mean 56 and variance 427. Y=7*X+8. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 * 56 + 8",
+    "teacher_raw": "Expression: 7*56+8",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_004_mean",
+    "prompt": "X has mean 52 and variance 531. A device multiplies X by 7, then adds 14 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 * 52 + 14",
+    "teacher_raw": "Expression: 7*52+14",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_005_mean",
+    "prompt": "Adding 20 after multiplying X by 3 gives Y. X has mean 50 and variance 542. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 * 50 + 20",
+    "teacher_raw": "Expression: 3*50+20",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_006_mean",
+    "prompt": "X has mean 47 and variance 224. Y=6*X+20. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 * 47 + 20",
+    "teacher_raw": "Expression: 6*47+20",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_007_mean",
+    "prompt": "X has mean 46 and variance 293. A device multiplies X by 2, then adds 11 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 * 46 + 11",
+    "teacher_raw": "Expression: 2*46+11",
+    "category": "moment_mean"
+  },
+  {
+    "source_id": "v16_train_moment_000_variance",
+    "prompt": "X has mean 48 and variance 434. Y=3*X+11. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 434",
+    "teacher_raw": "Expression: 3**2*434",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_001_variance",
+    "prompt": "X has mean 48 and variance 363. A device multiplies X by 3, then adds 12 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 363",
+    "teacher_raw": "Expression: 3**2*363",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_003_variance",
+    "prompt": "X has mean 56 and variance 427. Y=7*X+8. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 427",
+    "teacher_raw": "Expression: 7**2*427",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_004_variance",
+    "prompt": "X has mean 52 and variance 531. A device multiplies X by 7, then adds 14 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 531",
+    "teacher_raw": "Expression: 7**2*531",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_005_variance",
+    "prompt": "Adding 20 after multiplying X by 3 gives Y. X has mean 50 and variance 542. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 9 * 542",
+    "teacher_raw": "Expression: 9*542",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_006_variance",
+    "prompt": "X has mean 47 and variance 224. Y=6*X+20. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 224",
+    "teacher_raw": "Expression: 6**2*224",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_007_variance",
+    "prompt": "X has mean 46 and variance 293. A device multiplies X by 2, then adds 11 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 293",
+    "teacher_raw": "Expression: 4*293",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_008_variance",
+    "prompt": "Adding 18 after multiplying X by 3 gives Y. X has mean 24 and variance 487. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 487",
+    "teacher_raw": "Expression: 3**2*487",
+    "category": "moment_variance"
+  },
+  {
+    "source_id": "v16_train_moment_000_moment",
+    "prompt": "X has mean 48 and variance 434. Y=3*X+11. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 9 * 434 + (3 * 48 + 11) ** 2",
+    "teacher_raw": "Expression: 9*434+(3*48+11)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_001_moment",
+    "prompt": "X has mean 48 and variance 363. A device multiplies X by 3, then adds 12 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 363 + (3 * 48 + 12) ** 2",
+    "teacher_raw": "Expression: 3**2*363 + (3*48 + 12)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_002_moment",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X has mean 21 and variance 396. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 ** 2 + 2 * 16 * 4 * 21 + 4 ** 2 * (396 + 21 ** 2)",
+    "teacher_raw": "Expression: 16**2 + 2*16*4*21 + 4**2*(396 + 21**2)",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_003_moment",
+    "prompt": "X has mean 56 and variance 427. Y=7*X+8. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 427 + (7 * 56 + 8) ** 2",
+    "teacher_raw": "Expression: 7**2*427+(7*56+8)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_004_moment",
+    "prompt": "X has mean 52 and variance 531. A device multiplies X by 7, then adds 14 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7 ** 2 * 531 + (7 * 52 + 14) ** 2",
+    "teacher_raw": "Expression: 7**2*531+(7*52+14)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_005_moment",
+    "prompt": "Adding 20 after multiplying X by 3 gives Y. X has mean 50 and variance 542. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 9 * 542 + (3 * 50 + 20) ** 2",
+    "teacher_raw": "Expression: 9*542 + (3*50 + 20)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_006_moment",
+    "prompt": "X has mean 47 and variance 224. Y=6*X+20. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 36 * 224 + (6 * 47 + 20) ** 2",
+    "teacher_raw": "Expression: 36*224 + (6*47 + 20)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_007_moment",
+    "prompt": "X has mean 46 and variance 293. A device multiplies X by 2, then adds 11 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 293 + (2 * 46 + 11) ** 2",
+    "teacher_raw": "Expression: 4*293 + (2*46 + 11)**2",
+    "category": "moment_moment"
+  },
+  {
+    "source_id": "v16_train_moment_000_scale",
+    "prompt": "X has mean 48 and variance 434. Y=3*X+11. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3",
+    "teacher_raw": "Expression: 3",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_001_scale",
+    "prompt": "X has mean 48 and variance 363. A device multiplies X by 3, then adds 12 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3",
+    "teacher_raw": "Expression: 3",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_002_scale",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X has mean 21 and variance 396. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4",
+    "teacher_raw": "Expression: 4",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_003_scale",
+    "prompt": "X has mean 56 and variance 427. Y=7*X+8. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7",
+    "teacher_raw": "Expression: 7",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_004_scale",
+    "prompt": "X has mean 52 and variance 531. A device multiplies X by 7, then adds 14 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 7",
+    "teacher_raw": "Expression: 7",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_005_scale",
+    "prompt": "Adding 20 after multiplying X by 3 gives Y. X has mean 50 and variance 542. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3",
+    "teacher_raw": "Expression: 3",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_006_scale",
+    "prompt": "X has mean 47 and variance 224. Y=6*X+20. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6",
+    "teacher_raw": "Expression: 6",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_moment_007_scale",
+    "prompt": "X has mean 46 and variance 293. A device multiplies X by 2, then adds 11 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2",
+    "teacher_raw": "Expression: 2",
+    "category": "moment_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_000_mean",
+    "prompt": "X is a Poisson count with expectation 19. Y=2*X+6. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 * 19 + 6",
+    "teacher_raw": "Expression: 2*19+6",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_001_mean",
+    "prompt": "X is a Poisson count with expectation 55. A device multiplies X by 2, then adds 13 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 * 55 + 13",
+    "teacher_raw": "Expression: 2*55+13",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_002_mean",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X is a Poisson count with expectation 66. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 66 + 16",
+    "teacher_raw": "Expression: 4*66+16",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_003_mean",
+    "prompt": "X is a Poisson count with expectation 41. Y=4*X+8. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 41 + 8",
+    "teacher_raw": "Expression: 4*41+8",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_004_mean",
+    "prompt": "X is a Poisson count with expectation 48. A device multiplies X by 6, then adds 23 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 * 48 + 23",
+    "teacher_raw": "Expression: 6*48+23",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_005_mean",
+    "prompt": "Adding 10 after multiplying X by 2 gives Y. X is a Poisson count with expectation 44. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2 * 44 + 10",
+    "teacher_raw": "Expression: 2*44+10",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_006_mean",
+    "prompt": "X is a Poisson count with expectation 42. Y=4*X+4. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 42 + 4",
+    "teacher_raw": "Expression: 4*42+4",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_007_mean",
+    "prompt": "X is a Poisson count with expectation 49. A device multiplies X by 3, then adds 10 to obtain Y. Find the expected value of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 * 49 + 10",
+    "teacher_raw": "Expression: 3*49+10",
+    "category": "poisson_scaled_mean"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_000_variance",
+    "prompt": "X is a Poisson count with expectation 19. Y=2*X+6. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 19",
+    "teacher_raw": "Expression: 4*19",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_001_variance",
+    "prompt": "X is a Poisson count with expectation 55. A device multiplies X by 2, then adds 13 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 55",
+    "teacher_raw": "Expression: 4*55",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_002_variance",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X is a Poisson count with expectation 66. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 ** 2 * 66",
+    "teacher_raw": "Expression: 4**2*66",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_003_variance",
+    "prompt": "X is a Poisson count with expectation 41. Y=4*X+8. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 * 41",
+    "teacher_raw": "Expression: 16*41",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_004_variance",
+    "prompt": "X is a Poisson count with expectation 48. A device multiplies X by 6, then adds 23 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 48",
+    "teacher_raw": "Expression: 6**2*48",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_005_variance",
+    "prompt": "Adding 10 after multiplying X by 2 gives Y. X is a Poisson count with expectation 44. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 44",
+    "teacher_raw": "Expression: 4*44",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_006_variance",
+    "prompt": "X is a Poisson count with expectation 42. Y=4*X+4. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 * 42",
+    "teacher_raw": "Expression: 16*42",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_007_variance",
+    "prompt": "X is a Poisson count with expectation 49. A device multiplies X by 3, then adds 10 to obtain Y. Find the variance of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3 ** 2 * 49",
+    "teacher_raw": "Expression: 3**2*49",
+    "category": "poisson_scaled_variance"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_000_moment",
+    "prompt": "X is a Poisson count with expectation 19. Y=2*X+6. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 19 + (2 * 19 + 6) ** 2",
+    "teacher_raw": "Expression: 4*19 + (2*19 + 6)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_001_moment",
+    "prompt": "X is a Poisson count with expectation 55. A device multiplies X by 2, then adds 13 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 55 + (2 * 55 + 13) ** 2",
+    "teacher_raw": "Expression: 4*55 + (2*55 + 13)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_003_moment",
+    "prompt": "X is a Poisson count with expectation 41. Y=4*X+8. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 * 41 + (4 * 41 + 8) ** 2",
+    "teacher_raw": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! \nExpression: 16*41 + (4*41 + 8)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_004_moment",
+    "prompt": "X is a Poisson count with expectation 48. A device multiplies X by 6, then adds 23 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6 ** 2 * 48 + (6 * 48 + 23) ** 2",
+    "teacher_raw": "Expression: 6**2*48 + (6*48 + 23)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_005_moment",
+    "prompt": "Adding 10 after multiplying X by 2 gives Y. X is a Poisson count with expectation 44. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4 * 44 + (2 * 44 + 10) ** 2",
+    "teacher_raw": "Expression: 4*44 + (2*44 + 10)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_006_moment",
+    "prompt": "X is a Poisson count with expectation 42. Y=4*X+4. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 16 * 42 + (4 * 42 + 4) ** 2",
+    "teacher_raw": "Expression: 16*42 + (4*42 + 4)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_007_moment",
+    "prompt": "X is a Poisson count with expectation 49. A device multiplies X by 3, then adds 10 to obtain Y. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 9 * 49 + (3 * 49 + 10) ** 2",
+    "teacher_raw": "Expression: 9*49 + (3*49 + 10)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_008_moment",
+    "prompt": "Adding 3 after multiplying X by 3 gives Y. X is a Poisson count with expectation 20. Find the expectation of the square of Y.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 9 * 20 + (3 * 20 + 3) ** 2",
+    "teacher_raw": "Expression: 9*20 + (3*20 + 3)**2",
+    "category": "poisson_scaled_moment"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_000_scale",
+    "prompt": "X is a Poisson count with expectation 19. Y=2*X+6. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2",
+    "teacher_raw": "Expression: 2",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_001_scale",
+    "prompt": "X is a Poisson count with expectation 55. A device multiplies X by 2, then adds 13 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2",
+    "teacher_raw": "Expression: 2",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_002_scale",
+    "prompt": "Adding 16 after multiplying X by 4 gives Y. X is a Poisson count with expectation 66. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4",
+    "teacher_raw": "Expression: 4",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_003_scale",
+    "prompt": "X is a Poisson count with expectation 41. Y=4*X+8. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4",
+    "teacher_raw": "Expression: 4",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_004_scale",
+    "prompt": "X is a Poisson count with expectation 48. A device multiplies X by 6, then adds 23 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 6",
+    "teacher_raw": "Expression: 6",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_005_scale",
+    "prompt": "Adding 10 after multiplying X by 2 gives Y. X is a Poisson count with expectation 44. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 2",
+    "teacher_raw": "Expression: 2",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_006_scale",
+    "prompt": "X is a Poisson count with expectation 42. Y=4*X+4. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 4",
+    "teacher_raw": "Expression: 4",
+    "category": "poisson_scaled_scale"
+  },
+  {
+    "source_id": "v16_train_poisson_scaled_007_scale",
+    "prompt": "X is a Poisson count with expectation 49. A device multiplies X by 3, then adds 10 to obtain Y. Which number multiplies X to produce Y? Return that multiplier.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+    "target": "Expression: 3",
+    "teacher_raw": "Expression: 3",
+    "category": "poisson_scaled_scale"
+  }
+]

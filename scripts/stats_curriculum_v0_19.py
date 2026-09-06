@@ -26,7 +26,7 @@ def keys(t,p):
     return {'poisson_variance':[(a,),(a,m)],'scaled_variance':[(v,c,b),(a,c,b),(a,m,c,b)],'second_moment':[(a,),(a,v),(a,m)],'conditional_wait':[(u,k)]}[t]
 
 def build():
-    old=json.loads((DOCS/'STATS_V0_17_RESULTS.json').read_text())['training_rows']
+    old=json.loads((DOCS/'STATS_V0_19_REPLAY_SOURCE.json').read_text())
     old=[r for r in old if r['category'] in KINDS]
     assert len(old)==192 and all(sum(r['category']==k for r in old)==24 for k in KINDS)
     assert all(r.get('teacher_raw') for r in old)
