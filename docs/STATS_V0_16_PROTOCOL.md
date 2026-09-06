@@ -35,3 +35,7 @@ Evaluate v15 and v16 with identical no-hint prompts on the fresh 96, separately 
 Primary goal: improve the paired unaided total and show gains in both weak families. Working target: at least 8/12 correct in each weak family, with no more than three lost correct answers across the other six families. Missed targets will be reported without redefining them. Preserve automatic and supplemental semantic scores separately; review complete raw responses before conclusions.
 
 Verify all 720 predictions, 392 finite adapter tensors, file manifest and ZIP contents. Save weights/output on Kaggle and code, teacher records, reports and raw answers on GitHub. Stop GPU only after successful saved output. Do not stop after teacher preparation; continue through student training, evaluation, review and backup.
+
+## Completed result
+
+All three stages completed (30+30+90 steps), selected final-stage checkpoint-90 with validation loss 0.0092211971. Reviewed unaided 34/96→29/96, aided 11/24→22/24, old rotations 127/240→126/240. Both unaided weak-family thresholds and the non-target retention threshold were missed. Do not promote as a general replacement. Full data, deviations and interpretation are in `STATS_V0_16_REPORT.md`.
