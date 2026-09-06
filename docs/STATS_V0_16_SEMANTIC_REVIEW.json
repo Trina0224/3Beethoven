@@ -1,0 +1,2799 @@
+{
+  "policy": "Fully substituted setup is the project endpoint. Preserve auto grades. Arithmetic-only errors after a correct setup are separately flagged; wrong later reformulations are not repaired. No correctness from numerical coincidence alone.",
+  "summary": {
+    "v15": {
+      "unaided": {
+        "n": 96,
+        "automatic": 33,
+        "semantic_correct": 34,
+        "by_category": {
+          "at_least_one": {
+            "n": 12,
+            "correct": 12
+          },
+          "binomial": {
+            "n": 12,
+            "correct": 1
+          },
+          "exactly_one": {
+            "n": 12,
+            "correct": 8
+          },
+          "interval": {
+            "n": 12,
+            "correct": 0
+          },
+          "moment": {
+            "n": 12,
+            "correct": 0
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 1
+          },
+          "poisson_time": {
+            "n": 12,
+            "correct": 7
+          },
+          "uniform_time": {
+            "n": 12,
+            "correct": 5
+          }
+        }
+      },
+      "aided": {
+        "n": 24,
+        "automatic": 9,
+        "semantic_correct": 11,
+        "by_category": {
+          "moment": {
+            "n": 12,
+            "correct": 7
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 4
+          }
+        }
+      },
+      "retention": {
+        "n": 240,
+        "correct": 127,
+        "accuracy": 0.5291666666666667,
+        "invalid": 0,
+        "predicted_positions": {
+          "B": 45,
+          "A": 60,
+          "D": 86,
+          "C": 49
+        }
+      }
+    },
+    "v16": {
+      "unaided": {
+        "n": 96,
+        "automatic": 26,
+        "semantic_correct": 29,
+        "by_category": {
+          "at_least_one": {
+            "n": 12,
+            "correct": 8
+          },
+          "binomial": {
+            "n": 12,
+            "correct": 0
+          },
+          "exactly_one": {
+            "n": 12,
+            "correct": 5
+          },
+          "interval": {
+            "n": 12,
+            "correct": 0
+          },
+          "moment": {
+            "n": 12,
+            "correct": 3
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 4
+          },
+          "poisson_time": {
+            "n": 12,
+            "correct": 9
+          },
+          "uniform_time": {
+            "n": 12,
+            "correct": 0
+          }
+        }
+      },
+      "aided": {
+        "n": 24,
+        "automatic": 15,
+        "semantic_correct": 22,
+        "by_category": {
+          "moment": {
+            "n": 12,
+            "correct": 10
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 12
+          }
+        }
+      },
+      "retention": {
+        "n": 240,
+        "correct": 126,
+        "accuracy": 0.525,
+        "invalid": 0,
+        "predicted_positions": {
+          "B": 44,
+          "A": 57,
+          "D": 95,
+          "C": 44
+        }
+      }
+    }
+  },
+  "paired": {
+    "unaided": {
+      "newly_correct": 10,
+      "newly_wrong": 15,
+      "both_correct": 19
+    },
+    "aided": {
+      "newly_correct": 13,
+      "newly_wrong": 2,
+      "both_correct": 9
+    }
+  },
+  "decisions": [
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_000",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "ef39a6eb25aee58e6f8bb39e647bb03f5ee52f6599c24a959ff74c5ae9f3c365",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_001",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "263711b4f58b0d08ecd37fb0dc508ff1fbd20f5d4a7cd1f88fdb86bb1660293f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_002",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "101a1ee057125c9a9f9e927eb920be54a5f142656e251105460fa2242609afa8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_003",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "195075a8ace761ee4b818e0ad33c748a231aab749052777d0c8608ab576329a3",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_004",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "328452bf37998fcaf24eb08aff930bf47b440c75c8cc9ae7f93b8cc4e4260a6a",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_005",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "9408ae5ce278fa9f55b32d92fd2eb7721115c6929a181b7f9252cc5f5d3f27b3",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_006",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "358d1c131ec1a1fa1fbd5e342b58b571dbd59209c44f8d518fc66c3cc815e953",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_007",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "4ffd368d7dd8faab3243223f546709f64d642348dc6984a02b941a1bc309e7ff",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_008",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1ae333231b901ffde64adbbeb30e0e1e2f6ab4343be9548de37fb7d40b81afdd",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_009",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "eafd74d33ed5f314cec1d310e16c2ebe7e4a04b5c77a3725dae2ab3a77b40b39",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_010",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "d766a11e7ce781c02f7a423bc26545dc5c5bd9ecebf6ecda1a7e267ccca03512",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_011",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "cc3dab8b0b196bb004c65da6d4833059fcb9b1571a7f40ba6ffd2fe00049eaca",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "192ee553551dd381a9bff358dd1a4d9ff0141d45f37cb96dcb77ee90434f70f8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e4e5c9116e54b2d86b096e6be5f3e11e7432d96df539dc7bac9ec5816adf2e51",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "353a6c047d04e245ec157a850f1e61b95249d438bd58f2a5c5ee65229222fd23",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "89b49e24f6c6deee6cdd42925bee3b2135b4be595e905404e136129a8a8a6d51",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "740126b842f833b8cbcd9c60efb5b4995e85931041d8448f013260f63b030232",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c79685d0ee9947f7e24d88e45e98d6ee9b0ca8f93def9a7c9bf95100a288363c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_006",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "969defd3e97869b9a81b789d9d3c6f1528734947ef2f319236430d2fddad4dfe",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_007",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "266370eca786542e1cafc766ef9c1d05a8de715023d616a4b201c24594d3a156",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_008",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "0c01e72a27f67adb95707a9c5fefe14a9c2fa20eb8ee8d17953a2e49919708ee",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_009",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "2c5489a8d5288ac4dfe1db473b869787a394a99e127a09c91b50809a97e43432",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_010",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "775a0063963d7c6926ae62e8a6d9e5db2bd2ce2f1209e73767db3dace984b2a6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_011",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "95222cf6c280162fd7b9cccd4194d1f05fa1ab5d84dd71f53e21424a1c952484",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_000",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "5b65b7807ea8e285bdd722dd391d744075bc61116a780c27337ce4b1bd8b4742",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_001",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "7963bc8cd5149825381a653ab0bd3f3df3741980781c1d4ae588cd0841a0765b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_002",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "ee19ce363c7748e0d98b9ca8e303cf5d2fe5675ddb352623fa50839726b1497f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_003",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "25da2c0c976334dd79986d89b437e8415c6d5638f45044a66191c3f6ae311905",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_004",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "985f439523638a6833da0df04331aa71e511b114fc65b2730ea006016dd6ac5b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_005",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "2e37c63d88f7bba4ae6388317fac8b6c75caa34419244cf22dd940942833e4b0",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_006",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "0a73a0dbacdf9e600853a5f74c8174288d52280b2c4dd7e4bf1298a9a315e565",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_007",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e1e1d24992f867c45117416cf43b66d64be2a7bf0ffc4a30ed765ca16dc056d6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_008",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "cb33ce4c6c5fb00e9453ef587a2a4676ef35b8dd8e9cff3641f923ca39eb31b3",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_009",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4d6f05142873fc86dfff79d703d9fff6e3daa55cf0f86b34151a773041e068e5",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_010",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "bf727abdb874f40d7fc8a7773423cc648d8d666c0ee212f0e49eddc8e4593524",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_moment_011",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "7c16323f83c980432f3657640f3fbad1f8d46ecc183f3d807a18dad5e9b6b024",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_000",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f2a9585e84023360a0f326e842e1007fae95bb917f87ae2867d3923ae428176b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_001",
+      "category": "uniform_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "f979e58882f777b78215dac148e64ef8cf5340399576868056cece862e490ec8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_002",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1f788b31efa199d7907174420a63820f81b91e3670a5470b2c517ea3f9c8c910",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_003",
+      "category": "uniform_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "efac3571c873e48565c55626c235d424424175e727c72c77ea5892275c87890a",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_004",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "75880ccf96ddb8b029232a813e83363e3468b21b9a5da752175a6b56dde221d2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_005",
+      "category": "uniform_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1a35250f0917f8d7150ac734b9a5590bad6e00c57323d012e70fd48f0efe4229",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_006",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "a5b3770402d8c21aa16724c75ae9b29a1f73eab96861846dcb1a07ec79e19e82",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_007",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "982615f9597aec8f82e2ac89fc9e80bd2c46a6148fb8aecefd2204d056eeb71b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_008",
+      "category": "uniform_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "7c535e964b6a300a1291e755cdf2300d6f1e797eb4d7452774e3dfe803901c1f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_009",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "bba4dd21b7ff3c4ef01de68f9bb34172f0b62081bbc52e19563587fc13cc9a49",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_010",
+      "category": "uniform_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "bceca9691706f2ba34962af51a3522b71cb309e30ba67ddc914c4ba88f1eb5a6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_011",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f1a1f236b069fccf2530ab23695cea7870492bf4de7b88034749caed3b806616",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_000",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "7711943dec9139afec15cdf07ff02c6530db3ee6f4415e1975774124714bca84",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_001",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "fa1a7f3fbcc20cc2e1ea769332c080bddf25582f5f9cf5fd215eb458a1c98cb6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_002",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f8b18daf9a8d9fa57d6349320da097a08b09242e4c67284252a5e999b9baf375",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_003",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "1a12ab5ce44b3f2ed401821af4f693dc1b28efcf10f8bf657f0ee846324238d4",
+      "reason": "Correct fully substituted binomial setup written in prose, with consistent final answer.",
+      "flags": [
+        "Semantic formulation credit; choose notation is not executable by the current parser."
+      ]
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_004",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "b920d2282c908a8e53bb12e2b639c87a55089df5c86774d4e4fa4fddeac91cd8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_005",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "2b4ca84326fa3719cbb19b1dac559da72a07625217987c32894c519d85fab821",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_006",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c70e4b95d076337e51774dbffc71329b04a33e7276e3c076101142260e535070",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_007",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "2161949b08ef9bdd9c1bb2f33b7ebd141d956f701944271cc6aa58c11b094e90",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_008",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "761c379c9c4a5fae67c132ed5085ead6e46ae5eb822f86bc064c0ced21a1997c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_009",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "017d99d2f31ec755ef8496c35b332ce843f3a531c7fd9ce0253eec8a4f2b433b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_010",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f3da8cb09bcf6a66eded2737bd4f426ee7cb1117d99cc56b4631aad7abbaeb2f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_binomial_011",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "542f13117bb8d18dd59e30c3dcbe7bff96b3ccf2a7a209ff9eb898fbf4236808",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_000",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "9c5f22bf058068d17696195cca4518616274b7339157f0158ea7396f070105a3",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_001",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "2130a169e9cd2c675fb5371311ec2160c6f2ec71ce0b4994c128be05b2ceb93b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_002",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "874516ebde70f1ce667b1a5a4e13a82ab291d7ad0e89d7e5c50ab3d904e710b2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_003",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "224ca907a32337b6771e51ffcb8b102127c0e82a84705f221d285243aed5837b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_004",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "12afd5bb5676ee60af07adc92fe2f45895f0c74f311e5037b0e1a9cb3442068b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_005",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "b61bdd0effe3577de0dac6cfa01752b8277727d457804b6718635dea22ac1eff",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_006",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "dd21ac03747d51385a0c78ab41ff23f699cf37683002dc7040e0045e0071c377",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_007",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "96bbb0484fc127c043d2a1c802c216ff40d66f9fd141f513e73696888ec61131",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_008",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "009730efd6f3df91ededd3079c36f5d5fb58a8fc9d94ed2d659df46704da61a7",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_009",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "c8ccee0da50799976747b7363764b446f3e28ed8c851b91205c63980343f5498",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_010",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "fb697be60cb623a1e3005ba4bf02b8fda6b202ca72af7d16859103440234a816",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_011",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e015f47fc9af8dae0e2a9de6fe57875acbe952039f0d656990ab2aad15a22418",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_000",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "0c44c8d2bd5ebdd5fe956c56bf845c0b862f0f429624c0ac24bd0d2c016de2d7",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_001",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "a43be3bef8cf02e0111ac9949f97c63b3fe9db2e7f6c99ce9c9faedbf883f4c2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_002",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "c6650747d76391344427342085666c83527353373b6e774e23f7d8eee70e9c36",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_003",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "b096f08d21fa9e913f2f4f5fab738969a9ac45576f4584f87dc20a6fe51824f8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_004",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "62360a9d782ceb39b0cf2bcae903d78fa2bc054bf59e5f3d719a8b9aa9682723",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_005",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "5014e11e3a76643ccc97509e4518697261493ff65082032bd0ed611970809bf5",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_006",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "b8ecade9bb75bbd67128ffb8f08087cf4ac2583932dcd14838dc8b0a23f21139",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_007",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "cd790814b9aba75b4869f6caaf99d78c35e56a536f8ba3b5b0e180b0e3ab0904",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_008",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "8f83490bf1069270591b90a0869ace6f0a0e99b0f0222c25839af02a2bc12ed3",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_009",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "aaf47c0f960b6e6ca0607610657ba2d6d1f633f7d1c2b75dcb5bbf0e93a6bbf4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_010",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "3042ec79a86ce8d7a4a70d888c214376f885c97e1b198e470ca7dc11124f7429",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_011",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "4bcfc086ce462d07213509d1125f514cff26a57751fa7b54b72a54038b4dca7f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_000",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "736f6a377e3dc005c36f313f8a1fe8a00d86d924d4295883439939744e7b7207",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_001",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4260345f55efe1eef9130620e89eee0e495898204c7f8e66f1fb2503a211c42d",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_002",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "84e31dd107e783d7ff52970b792b19b13d174240ed8d1ded8afe10734699f0da",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_003",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1ad460244c709628b0b13d07ca8b1fe5adcc182ee25cdbdc28ca3c19824123cb",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_004",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "5809c887768399faae5d68f64db7320effe9eed814fa98483750dcb5791f0642",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_005",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "eec3e70b1e3b8b0927629624d362fef40afb26b685bcef4e642e2cbfc10d8364",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_006",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "0cc8c66e921f82ac633b7ec1919ed171b42fffc6f66dbc56ce28bfd832b0c9cc",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_007",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "d17af05edeedf6a52c319d6bb81d0b0ea19a62295d554f45125f491b4ad893d9",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_008",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "18f9284027e1903ee92684e94348feeb449b198259aff8037d1554efed29956a",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_009",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "15d5f08987dd19b4d10c7075db667af25806f95fd3c048f047b3c8ba331186ac",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_010",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "cabb6e7761dd24d627624866e0ffa4642b97ec2b42cfeec4410fc62f05d5b612",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "unaided",
+      "id": "v16_test_interval_011",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "17efca0e36886d0c030207b0c158826fe69c305ede848a053bb1b44713ae6319",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e6129546875a1a60e280f7268e5b2c9441ffec61f92a7399ad941a3fb6d28eba",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "cf6ff9c042ad09a44502a0cfd7e0cefbceded21b7f1a1097ee5e7a1119cdb0f1",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1065640806fbae0b7228cfe7abe5db0b8e375fafcd491ff5faea216bcb412c86",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "f509a4048d4d1b8b714ad6d0ce196b8493baf692be7faf060593024a13f16b00",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e7ebf6f0ddb1c46a8d11559882aa85c3b2b5812e77aa2005b8e3e50a4c7adaed",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c0fb310961ad5a1de49e3ad36eaa58e4705df0939dee83575b3a918209da99d7",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_006",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6ad05984fe3fd6dd2a655b9a9d7571f6130d0059c0ec7974832427e14f1ce65e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_007",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "66016d2f08af6eb56494fbc33ff0d85a6296b3cdcd46418764f3b004ec4c0d58",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_008",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "9ea2481edd213b447110bd367909ceeaabd5b5989d9ca752af11cb6435f2a486",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_009",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1c4aff76f49f8964af1facaac89da4eb1b2d1003aef4d0fadc63b716ed00f925",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_010",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "813d9a0dcc60f716515311e3b6e00ef8cbfcfcdb062e9a637ae8fe7a9de218f2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_011",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6a47f0eb05ebb0c4249b16d9558bc6277ec5455d64053e0f0fd8fcd117bcd404",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_000",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "346fa907171ef1b77c3d0c456ec26f37efa0bfeb86a5aa2e540f6357d6139ac8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_001",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "7eae81c36ea74d34141b32fe1c1c690666651a9d4352eb8bf94734de3ba0e3fc",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_002",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1d26a381920c024fde564fd6d5e2a09bcabf0c7e5d00daa194079dcd2e1139f4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_003",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "3016e835c9a774ff211ff239ed46a691a6afbda4efe00c7021135dcd06a12450",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_004",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c12c9aa86cc80d17fd92067b1f6945abd2063033dd3d3966065f91ce3c19e421",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_005",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "44eb720eaf23f39281a2a25c48f4422bba2f3a7682c2d033422ab0bcddafe53c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_006",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "816693707f2080b3aac4dcd7b0da194912e3e318082794a9c150fc80607fff52",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_007",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "817143e2fa5e592c8f9662c525f5f29df2a828564b91fe141b7113cf2449e160",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_008",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "0c4fbf3ea43572cee763ff0d5c3ac202d94708ddb7a6c2db8325c5cd11d588c4",
+      "reason": "Complete correct numerical formulation explicitly present; subsequent lines evaluate that formula. Project scores formulation separately from arithmetic.",
+      "flags": [
+        "Later addition is wrong by 100; not credited as a correct final numeric answer."
+      ]
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_009",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "397cd8e59dd48eaaa1766d6f07f4efdf509630ecd0e222b4d6cba60a82a40bde",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_010",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "3eb029e24a8c411756841b89543dd6f29e40569f442678e30b1a91ae07829fd8",
+      "reason": "Complete correct numerical formulation explicitly present; subsequent lines evaluate that formula. Project scores formulation separately from arithmetic.",
+      "flags": []
+    },
+    {
+      "model": "v15",
+      "condition": "aided",
+      "id": "v16_test_moment_011",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "75d14982f8062855f9229f3bbacf55a3b73a7018db9c20ce68d5ddbce15b87ef",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_000",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "ef39a6eb25aee58e6f8bb39e647bb03f5ee52f6599c24a959ff74c5ae9f3c365",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_001",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "bdfc633841ca1e919ae467a3675208d1cf09a0066eb816d20bc22b1c5c19b8d4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_002",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "dd2128c864fa3df53a6ad595be92e1df4151b1642757574ec5e4806eb6876597",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_003",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "7924d247ea0037bd6c16af90f7e128c81d76f0976ca2bb4acf693faeeb44f403",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_004",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "58d34b30f948036616f27a7df33e06e515f6c144721744b9224fed504b11f2aa",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_005",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "778e161d42c0e6a6dc2ddd47f2c22b157573de3f1d05624e3e54f9dd6257bc24",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_006",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "4dada0f6645ff4cc280debab19272b6dad5710ca4641829e173ba760962e54a9",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_007",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "131fca47b4865be4b0769d0bc8adc9ee7e8e7f5aedfbaa1ee1ccb6611ef9c61a",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_008",
+      "category": "poisson_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "11c52f8cba4f44b135ec199e0c347e13b6820df6d5c57ba3e2d4d21a5137c9fa",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_009",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "0d5536dff5e08789523b8ac1e197632f6e4dc9e391ff06de85c105883bcdc525",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_010",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "fd521eec91c2ec5eca73366f4aa922f83b0ae91c17fa23f958166a2c2df443db",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_time_011",
+      "category": "poisson_time",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "95cf95f8eb16cec3c8e930d3d5464802189a469c9eb97b78a047a443165affc1",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "0b7c2470574ea70c5681143e4289c5e95cdf911413c899d262e05692a87866df",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "cf6ff9c042ad09a44502a0cfd7e0cefbceded21b7f1a1097ee5e7a1119cdb0f1",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1065640806fbae0b7228cfe7abe5db0b8e375fafcd491ff5faea216bcb412c86",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "f509a4048d4d1b8b714ad6d0ce196b8493baf692be7faf060593024a13f16b00",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e7ebf6f0ddb1c46a8d11559882aa85c3b2b5812e77aa2005b8e3e50a4c7adaed",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c0fb310961ad5a1de49e3ad36eaa58e4705df0939dee83575b3a918209da99d7",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_006",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6ad05984fe3fd6dd2a655b9a9d7571f6130d0059c0ec7974832427e14f1ce65e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_007",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "66016d2f08af6eb56494fbc33ff0d85a6296b3cdcd46418764f3b004ec4c0d58",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_008",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "9ea2481edd213b447110bd367909ceeaabd5b5989d9ca752af11cb6435f2a486",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_009",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "0a51ca8c03bb77533582139c772e09dcf8b41d36239ffd46f8148e3da51f2c7e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_010",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "813d9a0dcc60f716515311e3b6e00ef8cbfcfcdb062e9a637ae8fe7a9de218f2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_poisson_scaled_011",
+      "category": "poisson_scaled",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6a47f0eb05ebb0c4249b16d9558bc6277ec5455d64053e0f0fd8fcd117bcd404",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_000",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "22e04575e84ee35e033b453ea21c5176642659662d98f8ee17d6fb51c1b544c4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_001",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "09166c78977d051e21a2e3700204645f1b0b6d863e3c1ab8177585ed4f7fc09e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_002",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "2da2dd1d2d3f5dcdb37f7a747bccce78509dacdd0bc18cacc7d4a9214e1a6712",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_003",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "43e354b1ffc113c9c08dac9ac476561ba83d8f813268c1e3e2804aa9237a126f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_004",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "60b3c1e304a1ede09b9c637fa6259d2c8b4d8768eb315cbc5bd0334dffc1ed57",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_005",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "3d87d2cfc31ea59c5173d92c2313f0f4b0e3ca0bbe81b9ecea4410673f67b9c7",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_006",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4e8624277c91a5c68beaa6f6899021b87bff68cb6e0c7bb2b18436943df7d300",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_007",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "45290dc2291867a88742983417effeb22050d42368661a283df8088d7de1816c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_008",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1b359d30bb399e85d50b3b1f1084d501dad77f9b9c7c55ed3d8bfbabd232bff0",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_009",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "438d3b97bc70070a77481483b6ff32dd0e4d60e55db838a79205fc81c1f4c976",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_010",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "94998c90a1715330ece4e95b5736d51b9a54cf555026cad97f8361049017418e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_moment_011",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "50b427826d69e87a95828881d26c78b55aa0c50da7eede739352071e11b89b8e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_000",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f5d876460685a8cc1f9bcc9663ed54f73d0ee2d039626ce73af2c9b0659b45c6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_001",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e8ef0e55c2ee29333d237021989c9ce631de71d8dc2f2c8b36c2e21a0703b72b",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_002",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "860802e984778aea347124c61218fffc2130ff71caea01f1bd236e7d6db7ee60",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_003",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c8785f62bd6b9ef76929b4f4478d3c6ac1c4c4988caa51f58aa0346e8f8dffd0",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_004",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e1bd8de763871d0c770cd53ac67ba0fd4723c14d9bb1aff271a61dac858ed794",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_005",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "ed56886f898ebfbdf649e6c5a78ceaa7ef8e0ea49dedf2cc0aff4bde1f517a89",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_006",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "5b4c08e22d453524e3eaaed621e7a8e3c600f5d4e2ef77804c0c313d9e81e906",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_007",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "22d2e8fd25f53b4d66e036ea921d528df4d3b7018d0530668c12273cc838e82d",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_008",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "736d2945bd122be000fdac2bc898c800352c57049dedd670f8af541af89fff50",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_009",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e008747a34a9b4067676662a507f22dd652a131f47bb0d1bbc7b419a9e352a39",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_010",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "3c73ed903b1fd68c20b413ea525fa794149b29204562c75446b599307b5b3651",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_uniform_time_011",
+      "category": "uniform_time",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "e65e5e11f4f0e9071a43cfc6aa7a5b0bd15506bf3295914171dcff1a92802237",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_000",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4fbee6ab8c5602c6463e171a5f083f6d6b45ccccbf4b8697e98ac39d25b587a2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_001",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "3d9f9b647314551460b28eaa70f8ade9822ab50d8c82de0582cea3e8dc223cce",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_002",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f68c45ce4077204199f1f710ee3c10e3aed65a86bd0b019ef2f70a3f2963812e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_003",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "ab1bd73d495fb23265dc3c2dd171432c6dcdd7adfae56e0bd69d6e9778db3aa4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_004",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "9b659ecaa5e33bd7504b19eec5c4d3ca6322f90c57278125eb6d7be1e6e0b737",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_005",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "cbc4ec8c901c784cd1a1c285820f291a8b761e1d2724584edfc514e34974faa9",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_006",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "23219713610d060eca90bfcc3c3d88d8c5953d0767cb3fc1a8ca4425bea7d26f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_007",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "d8ca589c7672922c7b1f41ae173d8c25048c656c92423b456439496920625d45",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_008",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6c8cd8eb55f97e2df93ef61270b8907383d622999bbbc0a32ce7d27b2ab250ec",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_009",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "914b6d48c8f3856b9c29ba50677038ee16904ba776684509bea84b0f28a49eba",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_010",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "c34541025107e5f9ee613c14b2f7eb21de435564ec5651fddc5860b11a2e3ed9",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_binomial_011",
+      "category": "binomial",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "d4ae9cfd40097fcdb682c5e972c92fb0b666d2db778a6f277c9fa0be1c903e99",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_000",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "2962a1dee0964d6124ae3db3b700e6c2f599e15ec988bac1d7e4bc75bec73833",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_001",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "4dc11f59d9873b488c55f6e460567fd61b0f644e4464bd84425934f865bbbb94",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_002",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "965e84c8a6f5d03e10684ab5ea975e65888a5f14cf82143801d15950d61a6a1d",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_003",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "bd3845030b40d8193d5c55590dd0fa0fac10f06fe730c6589bd4972f1f40bc07",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_004",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1880019d9d71f8633a45a7e51d7b0b66c21f606ee53057cf115b81c7ca3441ac",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_005",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f8d50be806e1060d12076366ad344558e7a948e0ad9ed40f0f060914a5154eb8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_006",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "a3d6b100fedea8ae2dcd0030dd3ffac2ae122ec12e3800a244d16aa8555891af",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_007",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "76948f414bd90f33f64724d22993dc8947e8ed2d20f1f712ba38169e040f0446",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_008",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "a7f3b31326a63446142b352f4b6fff66d29b603157504e13b364e0b70afc1417",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_009",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "96138d6e9252c2650dda485a9fe946f543614578616c09853c05e4ff455fbd3e",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_010",
+      "category": "exactly_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "2c942efa0e079df60a1fed97ec3a5726be99afaa03bdcc99ff82032a14b64971",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_exactly_one_011",
+      "category": "exactly_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f781c98c7b740220e58c9fab80d8254b2b9c7d160f2605811aa9ca1b092be5ef",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_000",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "f6337b378e1c0b61ec1307954ff3e6cfca4e72be2629127f0eda434147378509",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_001",
+      "category": "at_least_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "f7c5a57d55acb87e497ac8f89a1ffc7256a5903238e01f28cf321a69ae98163f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_002",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "de41ab97e79e69f44abec1fc52e26974428121da5b732a50959f84d3c3b6b553",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_003",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "ad1564bd25d5c918a0a297bd3cba95c0e96026e517e14499debba9061310b6e2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_004",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "d70d5a5ddf8627c062d75b6036b71020ab174b34fa77d67cdaaa9a3173b23f77",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_005",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "ee2eca862da5ed9146be21a8767c4376ccb4c7da73efd7b0951301f378e166ff",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_006",
+      "category": "at_least_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4a319d82b1da21e8033b000c45c50f38e8bbd2b3fb2e27402c49ba494d66a4d5",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_007",
+      "category": "at_least_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "35193f3dd20abdee0ba423ef557bf41ece8bf1201cbeaed3e262d27904e9af81",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_008",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1887a596fbba59f89241a8410b16574cd298d9caeb844f01b1aa38fdf29c33ed",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_009",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "8cb18f7c72d9b72a9924eddf8a3322d3377744f661b04c40e3f7c9e236633fa7",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_010",
+      "category": "at_least_one",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "a9976b5a7552103fb0a010910aebd78a21955e55cc5abbc0d72637ce657b4fb5",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_at_least_one_011",
+      "category": "at_least_one",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "1adbbb6f39a6d20818bd12ff02e467850d2d4125a28fbee83d98c443ea87e6aa",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_000",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "736f6a377e3dc005c36f313f8a1fe8a00d86d924d4295883439939744e7b7207",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_001",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "4260345f55efe1eef9130620e89eee0e495898204c7f8e66f1fb2503a211c42d",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_002",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "3e735882753373eb58ea7a914a1b17476889ced664752ef7abb7ac2fe827d64f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_003",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "591338db4f65145a597544cc5b6b45484b86bd374ef8a1367482e5abd00aa371",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_004",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "ead884adc749c055346c9916068898904e31237c55ee15619a5cba0b1f82bb40",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_005",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "5b583f970c514d09336f3b121575900615d141df278f299fba4ffa47e80728f6",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_006",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "0cc8c66e921f82ac633b7ec1919ed171b42fffc6f66dbc56ce28bfd832b0c9cc",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_007",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "d17af05edeedf6a52c319d6bb81d0b0ea19a62295d554f45125f491b4ad893d9",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_008",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6078ce9d4635e7b97417ba0d0af13309ab1fb94370c3c92cf993ca3c4e9e36c5",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_009",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "15d5f08987dd19b4d10c7075db667af25806f95fd3c048f047b3c8ba331186ac",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_010",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "cabb6e7761dd24d627624866e0ffa4642b97ec2b42cfeec4410fc62f05d5b612",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "unaided",
+      "id": "v16_test_interval_011",
+      "category": "interval",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "17efca0e36886d0c030207b0c158826fe69c305ede848a053bb1b44713ae6319",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_000",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "0b7c2470574ea70c5681143e4289c5e95cdf911413c899d262e05692a87866df",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_001",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "cf6ff9c042ad09a44502a0cfd7e0cefbceded21b7f1a1097ee5e7a1119cdb0f1",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_002",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "b0db2dda83f7a99a7ca72c3d31a0369deea4120e3bbd333de5b223aa4b970fb2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_003",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "f509a4048d4d1b8b714ad6d0ce196b8493baf692be7faf060593024a13f16b00",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_004",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "5efbc0bd70f05fd30714a97d0df0685210e75b805232a745163493cf5354acda",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_005",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "e229a86e340687987ad3d1a6cdda0c305b7976a54edb823475fcf1489a0e682d",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_006",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "520fc45e9a739f6cfa2992e581cc6b6c39eaf23044662c0003675ea39fd3744c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_007",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "66016d2f08af6eb56494fbc33ff0d85a6296b3cdcd46418764f3b004ec4c0d58",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_008",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "d30767cd034b0f83b70d89458dc8df8e5b2db6d4b3a908a9e31a11fc97f66cc2",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_009",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1c4aff76f49f8964af1facaac89da4eb1b2d1003aef4d0fadc63b716ed00f925",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_010",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "a10ca7751d653e9cc6b7f77fe55fc893d28cac6186dd0f35708ed8ecc7ba2bb8",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_poisson_scaled_011",
+      "category": "poisson_scaled",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "a47eb4021b1e01623b2c37f199eab9d3fa95693e44aed91d963dad0cc94f5c4f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_000",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "de8367f53296980d7825271430de06ffc6b3100a8e7451059c8f94b9de9b3c3a",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_001",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "6898ba80587595c318c363c1006f808fa0ad807fa72b56d95e194e43a1e7e68c",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_002",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "1d26a381920c024fde564fd6d5e2a09bcabf0c7e5d00daa194079dcd2e1139f4",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_003",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "ec206a7c539e7e64b0d96b6c373e40d0128766a32f06506496dcf647e69014b5",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_004",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "2c4bda82d2f23e7a427ab93bd23f6b652f5b7549003b7d083e74f65f60d209d2",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_005",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "3d87d2cfc31ea59c5173d92c2313f0f4b0e3ca0bbe81b9ecea4410673f67b9c7",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_006",
+      "category": "moment",
+      "automatic": true,
+      "semantic_correct": true,
+      "raw_sha256": "7bd4b88fef9130e8581160549aff18a4e7f7e78e7aea79e1364f5878ab15d58f",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_007",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "b6038a2f4fcd97268bcb33f2b37f78ed33ff910ab64f7c886e334b8a10a715af",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_008",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "6f29643e004395b500cd954537f178ae1aef5a2dbacc41ab2591b4b936663198",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_009",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "438d3b97bc70070a77481483b6ff32dd0e4d60e55db838a79205fc81c1f4c976",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_010",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": false,
+      "raw_sha256": "07d3d95f4001a9354aab0b9a2c2969482d74e7e0d53c3555821d25546af29bef",
+      "reason": "Original automatic grade retained.",
+      "flags": []
+    },
+    {
+      "model": "v16",
+      "condition": "aided",
+      "id": "v16_test_moment_011",
+      "category": "moment",
+      "automatic": false,
+      "semantic_correct": true,
+      "raw_sha256": "ea012355453d15d99853b13b021e519da813ae310bca4f405e7a5b4df18908ca",
+      "reason": "Scale square is evaluated correctly; remaining substituted formula and exact value verified.",
+      "flags": []
+    }
+  ]
+}
