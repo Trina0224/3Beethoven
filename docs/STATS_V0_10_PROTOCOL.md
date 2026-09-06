@@ -1,0 +1,15 @@
+# v0.10 frozen fraction-execution follow-up
+
+Authorized to continue within existing Kaggle GPU availability and teacher balance; user reports US$9.84 remaining. No new consent required for routine steps. Do not buy GPU capacity.
+
+Data: 96 train,16 validation,48 test, equal binomial and exactly-one-detection topics. Parameter probabilities use denominator40 across every split, with normalized rational parameter identities disjoint from every v0.9 split. SHA256 e36a89148716ecd05333d0232d1a8dfb61a3ab702e081c3107fc464e48671d72. Freeze before teacher generation and student inference. New instances of taught skills, not unseen-family transfer.
+
+Teacher: existing Llama3.3-70B. Generate four-to-eight exact equivalent numeric expressions, explicitly expanding powers/products/denominators/sums/reduction. First try without reference chain; repairs receive verified reference stages. Every equality checked with exact rational arithmetic, all112 final targets independently read before training. Preserve caches, references and repair provenance. Reuse independently audited Llama rule lines from v0.9. Teacher call cap400, response cap400tokens, input4000bytes and existing provider price ceilings. No ChatGPT-authored solution text is used as a student target.
+
+Student: continue saved v0.9 step135 adapter on pinned Llama3.2-3B base revision, NF4, same rank16 seven projections, dropout.05. One experimental model with detailed numeric targets plus retained original material: 96 new numerical targets, all180 v0.9 original MC and all180 v0.9 original numerical targets, plus60 v0.5 MC examples (first ten per topic). 516 sequences, effectivebatch8, lr2e-5,2epochs, warmup2,cosine,seed1010;129 or130 actual optimizer steps depending final partial batch handling must be recorded. Validation:16 new detailed targets plus48 retained v0.9 validation sequences. Select best validation loss; reload saved adapter before evaluation. This changes data coverage, rehearsal, and target detail together, not a clean format-only or compute-matched ablation.
+
+Same-session comparisons: baseline,v0.9,v0.10 on new48 questions × four MC rotations and48 compact numeric answers (same three-line prompt,max256tokens,greedy). Original-order teacher48 after training. Re-run both v0.9 andv0.10 on old60×four MC for same-session regression check. Total1200 student responses. Original v0.9 test now exposed, not new test.
+
+Primary fraction outcome: format-reviewed numeric accuracy must improve ≥8/48 over same-sessionv0.9 and reach≥24/48. Strict scores remain unchanged; explicit final numeric scalars only receive separate format credit, with every correction listed. Numeric tolerance max(1e-10,abs(gold)*1e-4). Secondary MC and all-four robustness. Retention gate: old MC no more than4/240 below same-sessionv0.9. Report each gate separately, preserve negative results, no additional tuning on exposed new test.
+
+Save model and raw outputs in Kaggle; code,corpus,audit,results,recovery in GitHub. Verify counts,raw scores,finite tensors,archive manifest and hashes before Quick Save with output; confirm Successful and files visible before GPU shutdown.
