@@ -43,3 +43,8 @@ Missing `bitsandbytes==0.50.2` blocks the frozen 4-bit training configuration. A
 Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
 
 Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
+
+
+## v0.11 started — 2026-09-05 PDT
+
+User raised a high probability of answer memorization for familiar decimals, without claiming the student learned nothing, and authorized continuation. Frozen experiment adds 400 exact-arithmetic examples to 516 unchanged rehearsal sequences. Canonical test60, equivalent variants60 (same groups), fresh statistical transfer48; v0.10 and v0.11 compared with exact scalar scoring. Earlier rehearsal final-answer collision check found zero among arithmetic test and transfer. No new teacher calls. Protocol and frozen data committed before execution; five integrity/scoring tests pass. Two epochs/230 optimizer steps; best checkpoint selected only by validation. See STATS_V0_11_PROTOCOL.md. Results pending; no success claim.
