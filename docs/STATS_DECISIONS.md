@@ -48,3 +48,10 @@ Kaggle Quick Save version 18 (script version 347636958) is Successful and contai
 ## v0.11 started — 2026-09-05 PDT
 
 User raised a high probability of answer memorization for familiar decimals, without claiming the student learned nothing, and authorized continuation. Frozen experiment adds 400 exact-arithmetic examples to 516 unchanged rehearsal sequences. Canonical test60, equivalent variants60 (same groups), fresh statistical transfer48; v0.10 and v0.11 compared with exact scalar scoring. Earlier rehearsal final-answer collision check found zero among arithmetic test and transfer. No new teacher calls. Protocol and frozen data committed before execution; five integrity/scoring tests pass. Two epochs/230 optimizer steps; best checkpoint selected only by validation. See STATS_V0_11_PROTOCOL.md. Results pending; no success claim.
+
+
+## v0.11 completed — 2026-09-06 PDT
+
+Hybrid exact-arithmetic SFT plus prior teacher-response rehearsal produced a mixed outcome. Independently reviewed canonical arithmetic:43/60 to39/60; equivalent representations:23/60 to31/60; both representations correct:22/60 to27/60; fresh statistical transfer:16/48 to16/48; old MC:130/240 to133/240. These are matched comparisons on the same new questions, not the previous v0.10 benchmark. Primary gain and statistical-transfer goals failed; retain both models without blanket promotion of v0.11. The selected first-epoch checkpoint was chosen by validation before tests; all816 responses and392 finite adapter tensors were verified. Zero new teacher API calls.
+
+See [full reviewed report](STATS_V0_11_REPORT.md) and [raw responses and independent format audit](STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. Next useful pilot is explicitly decomposed GCD and digit/carry multiplication, not simply more examples of the same form.
