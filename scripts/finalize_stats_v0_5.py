@@ -21,7 +21,7 @@ def main():
         finalization_source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=repo,text=True).strip(),
         prior_corpus_checkpoint=dict(kaggle_version=8,script_version_id=347596444),
         independent_review='Assistant read all 204 initial targets and all 27 final revisions before training; no further target edits after frozen training hashes',
-        final_targets='Llama-only, verified against exact cached responses')))
+        final_targets='Llama-only, verified against exact cached responses'))
     package(ROOT)
     verify()
 
