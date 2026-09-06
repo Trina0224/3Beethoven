@@ -22,3 +22,7 @@ Primary inherited targets: new MC accuracy >=60%, >=2×same-run baseline, and >=
 
 ## Preservation
 Code, corpus, audit and raw evaluation in GitHub; adapter/ZIP in Kaggle. Preserve negative results. Stop GPU after verified saved output. A better result on this aligned curriculum does not retroactively fix v0.6's failure on its different test.
+
+## Pre-training validation amendment
+
+Teacher responses sometimes contain correct symbolic derivations followed by a valid numerical chain. The renderer may remove only the leading symbolic prefix and make implicit numerical multiplication explicit. It retains the entire numerical suffix and checks every equality; it must never discard a false numerical intermediate. Original paid responses remain in the cache, and records mark numeric-suffix normalization. This is deterministic formatting/extraction of Llama text, not replacement with newly authored mathematical targets. Bounded reference-copy repair attempts are allowed within the same 500-call ledger; their reference-conditioning is preserved.
