@@ -1,0 +1,5300 @@
+{
+  "train": [
+    {
+      "id": "v09_train_poisson_000",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        8,
+        4,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 8. A display reads Y=4X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "128",
+        "32",
+        "133",
+        "13"
+      ],
+      "answer_letter": "A",
+      "answer": "128",
+      "reference_expression": "4**2*8",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_001",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        9,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 9. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "36",
+        "144",
+        "145",
+        "10"
+      ],
+      "answer_letter": "B",
+      "answer": "144",
+      "reference_expression": "4**2*9",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_002",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        9,
+        2,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 9. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "18",
+        "41",
+        "36",
+        "14"
+      ],
+      "answer_letter": "C",
+      "answer": "36",
+      "reference_expression": "2**2*9",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_003",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        2,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 2. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "8",
+        "33",
+        "3",
+        "32"
+      ],
+      "answer_letter": "D",
+      "answer": "32",
+      "reference_expression": "4**2*2",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_004",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        3,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 3. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "48",
+        "12",
+        "49",
+        "4"
+      ],
+      "answer_letter": "A",
+      "answer": "48",
+      "reference_expression": "4**2*3",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_005",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        3,
+        3,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 3. A display reads Y=3X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "9",
+        "27",
+        "28",
+        "4"
+      ],
+      "answer_letter": "B",
+      "answer": "27",
+      "reference_expression": "3**2*3",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_006",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        7,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 7. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "28",
+        "113",
+        "112",
+        "8"
+      ],
+      "answer_letter": "C",
+      "answer": "112",
+      "reference_expression": "4**2*7",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_007",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        5,
+        4,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 5 per minute. N is the total during 4 minutes. Find Var(N).",
+      "choices": [
+        "5",
+        "80",
+        "400",
+        "20"
+      ],
+      "answer_letter": "D",
+      "answer": "20",
+      "reference_expression": "5*4",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_008",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        9,
+        3,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 9. A display reads Y=3X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "81",
+        "27",
+        "82",
+        "10"
+      ],
+      "answer_letter": "A",
+      "answer": "81",
+      "reference_expression": "3**2*9",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_009",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        9,
+        4,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 9. A display reads Y=4X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "36",
+        "144",
+        "149",
+        "14"
+      ],
+      "answer_letter": "B",
+      "answer": "144",
+      "reference_expression": "4**2*9",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_010",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        8,
+        4,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 8 per minute. N is the total during 4 minutes. Find Var(N).",
+      "choices": [
+        "8",
+        "128",
+        "32",
+        "1024"
+      ],
+      "answer_letter": "C",
+      "answer": "32",
+      "reference_expression": "8*4",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_011",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        7,
+        2,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 7. A display reads Y=2X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "14",
+        "29",
+        "8",
+        "28"
+      ],
+      "answer_letter": "D",
+      "answer": "28",
+      "reference_expression": "2**2*7",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_012",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        5,
+        3,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 5 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "15",
+        "5",
+        "45",
+        "225"
+      ],
+      "answer_letter": "A",
+      "answer": "15",
+      "reference_expression": "5*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_013",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        7,
+        3,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 7. A display reads Y=3X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "21",
+        "63",
+        "68",
+        "12"
+      ],
+      "answer_letter": "B",
+      "answer": "63",
+      "reference_expression": "3**2*7",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_014",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        3,
+        4,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 3 per minute. N is the total during 4 minutes. Find Var(N).",
+      "choices": [
+        "3",
+        "48",
+        "12",
+        "144"
+      ],
+      "answer_letter": "C",
+      "answer": "12",
+      "reference_expression": "3*4",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_015",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 4. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "16",
+        "65",
+        "5",
+        "64"
+      ],
+      "answer_letter": "D",
+      "answer": "64",
+      "reference_expression": "4**2*4",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_016",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        8,
+        2,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 8. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "32",
+        "16",
+        "37",
+        "13"
+      ],
+      "answer_letter": "A",
+      "answer": "32",
+      "reference_expression": "2**2*8",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_017",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        9,
+        3,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 9 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "9",
+        "27",
+        "81",
+        "729"
+      ],
+      "answer_letter": "B",
+      "answer": "27",
+      "reference_expression": "9*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_018",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        8,
+        3,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 8 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "8",
+        "72",
+        "24",
+        "576"
+      ],
+      "answer_letter": "C",
+      "answer": "24",
+      "reference_expression": "8*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_019",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        5,
+        3,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 5. A display reads Y=3X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "15",
+        "46",
+        "6",
+        "45"
+      ],
+      "answer_letter": "D",
+      "answer": "45",
+      "reference_expression": "3**2*5",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_020",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        4,
+        2,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 4 per minute. N is the total during 2 minutes. Find Var(N).",
+      "choices": [
+        "8",
+        "4",
+        "16",
+        "64"
+      ],
+      "answer_letter": "A",
+      "answer": "8",
+      "reference_expression": "4*2",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_021",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        9,
+        2,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 9 per minute. N is the total during 2 minutes. Find Var(N).",
+      "choices": [
+        "9",
+        "18",
+        "36",
+        "324"
+      ],
+      "answer_letter": "B",
+      "answer": "18",
+      "reference_expression": "9*2",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_022",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        3,
+        2,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 3. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "6",
+        "17",
+        "12",
+        "8"
+      ],
+      "answer_letter": "C",
+      "answer": "12",
+      "reference_expression": "2**2*3",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_023",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        7,
+        3,
+        0
+      ],
+      "question": "A workshop counts arrivals from a Poisson process at rate 7 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "7",
+        "63",
+        "441",
+        "21"
+      ],
+      "answer_letter": "D",
+      "answer": "21",
+      "reference_expression": "7*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_train_poisson_024",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        7,
+        3,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 7. A display reads Y=3X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "63",
+        "21",
+        "64",
+        "8"
+      ],
+      "answer_letter": "A",
+      "answer": "63",
+      "reference_expression": "3**2*7",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_025",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        5,
+        2,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 5. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "10",
+        "20",
+        "25",
+        "1/100"
+      ],
+      "answer_letter": "B",
+      "answer": "20",
+      "reference_expression": "2**2*5",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_026",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        4,
+        2,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 4. A display reads Y=2X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "8",
+        "17",
+        "16",
+        "5"
+      ],
+      "answer_letter": "C",
+      "answer": "16",
+      "reference_expression": "2**2*4",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_027",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        8,
+        4,
+        1
+      ],
+      "question": "At a workshop, X is Poisson with mean 8. A display reads Y=4X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "32",
+        "129",
+        "9",
+        "128"
+      ],
+      "answer_letter": "D",
+      "answer": "128",
+      "reference_expression": "4**2*8",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_028",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        7,
+        4,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 7. A display reads Y=4X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "112",
+        "28",
+        "117",
+        "12"
+      ],
+      "answer_letter": "A",
+      "answer": "112",
+      "reference_expression": "4**2*7",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_poisson_029",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        2,
+        2,
+        5
+      ],
+      "question": "At a workshop, X is Poisson with mean 2. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "4",
+        "8",
+        "13",
+        "7"
+      ],
+      "answer_letter": "B",
+      "answer": "8",
+      "reference_expression": "2**2*2",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_train_expectation_030",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        1,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=6 and Var(X)=1. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "196",
+        "4",
+        "200",
+        "152"
+      ],
+      "answer_letter": "C",
+      "answer": "200",
+      "reference_expression": "2**2*1+(2*6+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_031",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        1,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=6 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "361",
+        "9",
+        "334",
+        "370"
+      ],
+      "answer_letter": "D",
+      "answer": "370",
+      "reference_expression": "3**2*1+(3*6+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_032",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        4,
+        2,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=4 and Var(X)=2. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "108",
+        "100",
+        "8",
+        "76"
+      ],
+      "answer_letter": "A",
+      "answer": "108",
+      "reference_expression": "2**2*2+(2*4+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_033",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        1,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=5 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "256",
+        "265",
+        "9",
+        "235"
+      ],
+      "answer_letter": "B",
+      "answer": "265",
+      "reference_expression": "3**2*1+(3*5+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_034",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        2,
+        4,
+        2,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=2 and Var(X)=4. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "25",
+        "16",
+        "41",
+        "33"
+      ],
+      "answer_letter": "C",
+      "answer": "41",
+      "reference_expression": "2**2*4+(2*2+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_035",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        7,
+        1,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=7 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "484",
+        "9",
+        "451",
+        "493"
+      ],
+      "answer_letter": "D",
+      "answer": "493",
+      "reference_expression": "3**2*1+(3*7+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_036",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        7,
+        3,
+        2,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=7 and Var(X)=3. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "237",
+        "225",
+        "12",
+        "209"
+      ],
+      "answer_letter": "A",
+      "answer": "237",
+      "reference_expression": "2**2*3+(2*7+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_037",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        1,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=3 and Var(X)=1. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "121",
+        "130",
+        "9",
+        "94"
+      ],
+      "answer_letter": "B",
+      "answer": "130",
+      "reference_expression": "3**2*1+(3*3+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_038",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        2,
+        1,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=2 and Var(X)=1. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "64",
+        "9",
+        "73",
+        "49"
+      ],
+      "answer_letter": "C",
+      "answer": "73",
+      "reference_expression": "3**2*1+(3*2+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_039",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        7,
+        3,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=7 and Var(X)=3. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "529",
+        "27",
+        "472",
+        "556"
+      ],
+      "answer_letter": "D",
+      "answer": "556",
+      "reference_expression": "3**2*3+(3*7+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_040",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        3,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=6 and Var(X)=3. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "388",
+        "361",
+        "27",
+        "352"
+      ],
+      "answer_letter": "A",
+      "answer": "388",
+      "reference_expression": "3**2*3+(3*6+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_041",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        3,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=6 and Var(X)=3. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "196",
+        "208",
+        "12",
+        "160"
+      ],
+      "answer_letter": "B",
+      "answer": "208",
+      "reference_expression": "2**2*3+(2*6+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_042",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=4 and Var(X)=3. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "81",
+        "12",
+        "93",
+        "77"
+      ],
+      "answer_letter": "C",
+      "answer": "93",
+      "reference_expression": "2**2*3+(2*4+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_043",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        3,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=3 and Var(X)=3. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "100",
+        "27",
+        "109",
+        "127"
+      ],
+      "answer_letter": "D",
+      "answer": "127",
+      "reference_expression": "3**2*3+(3*3+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_044",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        4,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=3 and Var(X)=4. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "157",
+        "121",
+        "36",
+        "1/100"
+      ],
+      "answer_letter": "A",
+      "answer": "157",
+      "reference_expression": "3**2*4+(3*3+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_045",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        3,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=8 and Var(X)=3. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "324",
+        "336",
+        "12",
+        "272"
+      ],
+      "answer_letter": "B",
+      "answer": "336",
+      "reference_expression": "2**2*3+(2*8+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_046",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        3,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=5 and Var(X)=3. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "144",
+        "12",
+        "156",
+        "116"
+      ],
+      "answer_letter": "C",
+      "answer": "156",
+      "reference_expression": "2**2*3+(2*5+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_047",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        1,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=8 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "625",
+        "9",
+        "586",
+        "634"
+      ],
+      "answer_letter": "D",
+      "answer": "634",
+      "reference_expression": "3**2*1+(3*8+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_048",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        4,
+        1,
+        2,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=4 and Var(X)=1. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "85",
+        "81",
+        "4",
+        "69"
+      ],
+      "answer_letter": "A",
+      "answer": "85",
+      "reference_expression": "2**2*1+(2*4+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_049",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        4,
+        1,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=4 and Var(X)=1. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "100",
+        "104",
+        "4",
+        "72"
+      ],
+      "answer_letter": "B",
+      "answer": "104",
+      "reference_expression": "2**2*1+(2*4+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_050",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        4,
+        2,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=8 and Var(X)=4. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "289",
+        "16",
+        "305",
+        "273"
+      ],
+      "answer_letter": "C",
+      "answer": "305",
+      "reference_expression": "2**2*4+(2*8+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_051",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        2,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=5 and Var(X)=2. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "144",
+        "8",
+        "112",
+        "152"
+      ],
+      "answer_letter": "D",
+      "answer": "152",
+      "reference_expression": "2**2*2+(2*5+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_052",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        9,
+        4,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=9 and Var(X)=4. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "820",
+        "784",
+        "36",
+        "766"
+      ],
+      "answer_letter": "A",
+      "answer": "820",
+      "reference_expression": "3**2*4+(3*9+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_053",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        2,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=3 and Var(X)=2. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "100",
+        "118",
+        "18",
+        "1/100"
+      ],
+      "answer_letter": "B",
+      "answer": "118",
+      "reference_expression": "3**2*2+(3*3+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_054",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        2,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=3 and Var(X)=2. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "64",
+        "8",
+        "72",
+        "48"
+      ],
+      "answer_letter": "C",
+      "answer": "72",
+      "reference_expression": "2**2*2+(2*3+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_055",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        4,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=5 and Var(X)=4. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "144",
+        "16",
+        "120",
+        "160"
+      ],
+      "answer_letter": "D",
+      "answer": "160",
+      "reference_expression": "2**2*4+(2*5+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_056",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        2,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=8 and Var(X)=2. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "694",
+        "676",
+        "18",
+        "598"
+      ],
+      "answer_letter": "A",
+      "answer": "694",
+      "reference_expression": "3**2*2+(3*8+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_057",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        1,
+        2,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=8 and Var(X)=1. Define Y=2X+2. Find E[Y^2].",
+      "choices": [
+        "324",
+        "328",
+        "4",
+        "264"
+      ],
+      "answer_letter": "B",
+      "answer": "328",
+      "reference_expression": "2**2*1+(2*8+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_058",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        2,
+        2,
+        3,
+        1
+      ],
+      "question": "A workshop measurement X has E[X]=2 and Var(X)=2. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "49",
+        "18",
+        "67",
+        "55"
+      ],
+      "answer_letter": "C",
+      "answer": "67",
+      "reference_expression": "3**2*2+(3*2+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_expectation_059",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        9,
+        2,
+        3,
+        2
+      ],
+      "question": "A workshop measurement X has E[X]=9 and Var(X)=2. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "841",
+        "18",
+        "751",
+        "859"
+      ],
+      "answer_letter": "D",
+      "answer": "859",
+      "reference_expression": "3**2*2+(3*9+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_train_uniform_060",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        7
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,30]. Given T>16, find E[T | T>16].",
+      "choices": [
+        "23",
+        "16",
+        "30",
+        "7"
+      ],
+      "answer_letter": "A",
+      "answer": "23",
+      "reference_expression": "(16+30)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_061",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        9
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,38]. Given T>20, find E[T | T>20].",
+      "choices": [
+        "20",
+        "29",
+        "38",
+        "9"
+      ],
+      "answer_letter": "B",
+      "answer": "29",
+      "reference_expression": "(20+38)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_062",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        9
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [5,41]. Given T>23, find E[T | T>23].",
+      "choices": [
+        "23",
+        "41",
+        "32",
+        "9"
+      ],
+      "answer_letter": "C",
+      "answer": "32",
+      "reference_expression": "(23+41)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_063",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [5,21]. Given T>13, find E[T | T>13].",
+      "choices": [
+        "13",
+        "21",
+        "4",
+        "17"
+      ],
+      "answer_letter": "D",
+      "answer": "17",
+      "reference_expression": "(13+21)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_064",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        7
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [4,32]. Given T>18, find E[T | T>18].",
+      "choices": [
+        "25",
+        "18",
+        "32",
+        "7"
+      ],
+      "answer_letter": "A",
+      "answer": "25",
+      "reference_expression": "(18+32)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_065",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        3,
+        8
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [3,35]. Given T>19, find E[T | T>19].",
+      "choices": [
+        "19",
+        "27",
+        "35",
+        "8"
+      ],
+      "answer_letter": "B",
+      "answer": "27",
+      "reference_expression": "(19+35)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_066",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        3,
+        6
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [3,27]. Given T>15, find E[T | T>15].",
+      "choices": [
+        "15",
+        "27",
+        "21",
+        "6"
+      ],
+      "answer_letter": "C",
+      "answer": "21",
+      "reference_expression": "(15+27)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_067",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        2
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [0,8]. Given T>4, find E[T | T>4].",
+      "choices": [
+        "4",
+        "8",
+        "2",
+        "6"
+      ],
+      "answer_letter": "D",
+      "answer": "6",
+      "reference_expression": "(4+8)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_068",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        8
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [0,32]. Given T>16, find E[T | T>16].",
+      "choices": [
+        "24",
+        "16",
+        "32",
+        "8"
+      ],
+      "answer_letter": "A",
+      "answer": "24",
+      "reference_expression": "(16+32)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_069",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        9
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [1,37]. Given T>19, find E[T | T>19].",
+      "choices": [
+        "19",
+        "28",
+        "37",
+        "9"
+      ],
+      "answer_letter": "B",
+      "answer": "28",
+      "reference_expression": "(19+37)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_070",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        6
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [4,28]. Given T>16, find E[T | T>16].",
+      "choices": [
+        "16",
+        "28",
+        "22",
+        "6"
+      ],
+      "answer_letter": "C",
+      "answer": "22",
+      "reference_expression": "(16+28)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_071",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        6
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,26]. Given T>14, find E[T | T>14].",
+      "choices": [
+        "14",
+        "26",
+        "6",
+        "20"
+      ],
+      "answer_letter": "D",
+      "answer": "20",
+      "reference_expression": "(14+26)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_072",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,18]. Given T>10, find E[T | T>10].",
+      "choices": [
+        "14",
+        "10",
+        "18",
+        "4"
+      ],
+      "answer_letter": "A",
+      "answer": "14",
+      "reference_expression": "(10+18)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_073",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        3
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,14]. Given T>8, find E[T | T>8].",
+      "choices": [
+        "8",
+        "11",
+        "14",
+        "3"
+      ],
+      "answer_letter": "B",
+      "answer": "11",
+      "reference_expression": "(8+14)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_074",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        6
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [5,29]. Given T>17, find E[T | T>17].",
+      "choices": [
+        "17",
+        "29",
+        "23",
+        "6"
+      ],
+      "answer_letter": "C",
+      "answer": "23",
+      "reference_expression": "(17+29)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_075",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        9
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [4,40]. Given T>22, find E[T | T>22].",
+      "choices": [
+        "22",
+        "40",
+        "9",
+        "31"
+      ],
+      "answer_letter": "D",
+      "answer": "31",
+      "reference_expression": "(22+40)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_076",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        3
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [1,13]. Given T>7, find E[T | T>7].",
+      "choices": [
+        "10",
+        "7",
+        "13",
+        "3"
+      ],
+      "answer_letter": "A",
+      "answer": "10",
+      "reference_expression": "(7+13)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_077",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [4,20]. Given T>12, find E[T | T>12].",
+      "choices": [
+        "12",
+        "16",
+        "20",
+        "4"
+      ],
+      "answer_letter": "B",
+      "answer": "16",
+      "reference_expression": "(12+20)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_078",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        8
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,34]. Given T>18, find E[T | T>18].",
+      "choices": [
+        "18",
+        "34",
+        "26",
+        "8"
+      ],
+      "answer_letter": "C",
+      "answer": "26",
+      "reference_expression": "(18+34)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_079",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        2
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [5,13]. Given T>9, find E[T | T>9].",
+      "choices": [
+        "9",
+        "13",
+        "2",
+        "11"
+      ],
+      "answer_letter": "D",
+      "answer": "11",
+      "reference_expression": "(9+13)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_080",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        7
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [0,28]. Given T>14, find E[T | T>14].",
+      "choices": [
+        "21",
+        "14",
+        "28",
+        "7"
+      ],
+      "answer_letter": "A",
+      "answer": "21",
+      "reference_expression": "(14+28)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_081",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [1,17]. Given T>9, find E[T | T>9].",
+      "choices": [
+        "9",
+        "13",
+        "17",
+        "4"
+      ],
+      "answer_letter": "B",
+      "answer": "13",
+      "reference_expression": "(9+17)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_082",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [0,16]. Given T>8, find E[T | T>8].",
+      "choices": [
+        "8",
+        "16",
+        "12",
+        "4"
+      ],
+      "answer_letter": "C",
+      "answer": "12",
+      "reference_expression": "(8+16)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_083",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        3,
+        4
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [3,19]. Given T>11, find E[T | T>11].",
+      "choices": [
+        "11",
+        "19",
+        "4",
+        "15"
+      ],
+      "answer_letter": "D",
+      "answer": "15",
+      "reference_expression": "(11+19)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_084",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        2
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [2,10]. Given T>6, find E[T | T>6].",
+      "choices": [
+        "8",
+        "6",
+        "10",
+        "2"
+      ],
+      "answer_letter": "A",
+      "answer": "8",
+      "reference_expression": "(6+10)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_085",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        9
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [0,36]. Given T>18, find E[T | T>18].",
+      "choices": [
+        "18",
+        "27",
+        "36",
+        "9"
+      ],
+      "answer_letter": "B",
+      "answer": "27",
+      "reference_expression": "(18+36)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_086",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        3,
+        5
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [3,23]. Given T>13, find E[T | T>13].",
+      "choices": [
+        "13",
+        "23",
+        "18",
+        "5"
+      ],
+      "answer_letter": "C",
+      "answer": "18",
+      "reference_expression": "(13+23)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_087",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        3
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [5,17]. Given T>11, find E[T | T>11].",
+      "choices": [
+        "11",
+        "17",
+        "3",
+        "14"
+      ],
+      "answer_letter": "D",
+      "answer": "14",
+      "reference_expression": "(11+17)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_088",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        6
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [1,25]. Given T>13, find E[T | T>13].",
+      "choices": [
+        "19",
+        "13",
+        "25",
+        "6"
+      ],
+      "answer_letter": "A",
+      "answer": "19",
+      "reference_expression": "(13+25)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_uniform_089",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        2
+      ],
+      "question": "A workshop waiting time T is continuously uniform on [4,12]. Given T>8, find E[T | T>8].",
+      "choices": [
+        "8",
+        "10",
+        "12",
+        "2"
+      ],
+      "answer_letter": "B",
+      "answer": "10",
+      "reference_expression": "(8+12)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_train_type_i_090",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        1,
+        9
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "131769/3200000",
+        "9/20",
+        "131769/640000",
+        "11/20"
+      ],
+      "answer_letter": "C",
+      "answer": "131769/640000",
+      "reference_expression": "5*(9/20)**1*(1-(9/20))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_091",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        4,
+        3
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "1377/3200000",
+        "3/20",
+        "17/20",
+        "1377/640000"
+      ],
+      "answer_letter": "D",
+      "answer": "1377/640000",
+      "reference_expression": "5*(3/20)**4*(1-(3/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_092",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        3,
+        3
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "7803/320000",
+        "7803/3200000",
+        "3/20",
+        "17/20"
+      ],
+      "answer_letter": "A",
+      "answer": "7803/320000",
+      "reference_expression": "10*(3/20)**3*(1-(3/20))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_093",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        3,
+        6
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "189/10000",
+        "189/2500",
+        "3/10",
+        "7/10"
+      ],
+      "answer_letter": "B",
+      "answer": "189/2500",
+      "reference_expression": "4*(3/10)**3*(1-(3/10))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_094",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        1,
+        1
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 1/20. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "6859/160000",
+        "1/20",
+        "6859/40000",
+        "19/20"
+      ],
+      "answer_letter": "C",
+      "answer": "6859/40000",
+      "reference_expression": "4*(1/20)**1*(1-(1/20))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_095",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        2,
+        9
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "1185921/64000000",
+        "9/20",
+        "11/20",
+        "3557763/12800000"
+      ],
+      "answer_letter": "D",
+      "answer": "3557763/12800000",
+      "reference_expression": "15*(9/20)**2*(1-(9/20))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_096",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        9
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "1948617/32000000",
+        "649539/64000000",
+        "9/20",
+        "11/20"
+      ],
+      "answer_letter": "A",
+      "answer": "1948617/32000000",
+      "reference_expression": "6*(9/20)**5*(1-(9/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_097",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        1,
+        6
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "50421/1000000",
+        "151263/500000",
+        "3/10",
+        "7/10"
+      ],
+      "answer_letter": "B",
+      "answer": "151263/500000",
+      "reference_expression": "6*(3/10)**1*(1-(3/10))**5",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_098",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        1,
+        5
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/4. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "243/4096",
+        "1/4",
+        "729/2048",
+        "3/4"
+      ],
+      "answer_letter": "C",
+      "answer": "729/2048",
+      "reference_expression": "6*(1/4)**1*(1-(1/4))**5",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_099",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        4,
+        1
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/20. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "361/64000000",
+        "1/20",
+        "19/20",
+        "1083/12800000"
+      ],
+      "answer_letter": "D",
+      "answer": "1083/12800000",
+      "reference_expression": "15*(1/20)**4*(1-(1/20))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_100",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        7
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "655473/32000000",
+        "218491/64000000",
+        "7/20",
+        "13/20"
+      ],
+      "answer_letter": "A",
+      "answer": "655473/32000000",
+      "reference_expression": "6*(7/20)**5*(1-(7/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_101",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        2,
+        7
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "1399489/64000000",
+        "4198467/12800000",
+        "7/20",
+        "13/20"
+      ],
+      "answer_letter": "B",
+      "answer": "4198467/12800000",
+      "reference_expression": "15*(7/20)**2*(1-(7/20))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_102",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        2
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/10. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "9/1000000",
+        "1/10",
+        "27/500000",
+        "9/10"
+      ],
+      "answer_letter": "C",
+      "answer": "27/500000",
+      "reference_expression": "6*(1/10)**5*(1-(1/10))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_103",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        4,
+        3
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "23409/64000000",
+        "3/20",
+        "17/20",
+        "70227/12800000"
+      ],
+      "answer_letter": "D",
+      "answer": "70227/12800000",
+      "reference_expression": "15*(3/20)**4*(1-(3/20))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_104",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        3,
+        7
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "753571/3200000",
+        "753571/64000000",
+        "7/20",
+        "13/20"
+      ],
+      "answer_letter": "A",
+      "answer": "753571/3200000",
+      "reference_expression": "20*(7/20)**3*(1-(7/20))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_105",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        2,
+        3
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "2601/160000",
+        "7803/80000",
+        "3/20",
+        "17/20"
+      ],
+      "answer_letter": "B",
+      "answer": "7803/80000",
+      "reference_expression": "6*(3/20)**2*(1-(3/20))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_106",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        4,
+        7
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "31213/3200000",
+        "7/20",
+        "31213/640000",
+        "13/20"
+      ],
+      "answer_letter": "C",
+      "answer": "31213/640000",
+      "reference_expression": "5*(7/20)**4*(1-(7/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_107",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        1,
+        5
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 1/4. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "27/256",
+        "1/4",
+        "3/4",
+        "27/64"
+      ],
+      "answer_letter": "D",
+      "answer": "27/64",
+      "reference_expression": "4*(1/4)**1*(1-(1/4))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_108",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        2,
+        8
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 2/5. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "216/625",
+        "108/3125",
+        "2/5",
+        "3/5"
+      ],
+      "answer_letter": "A",
+      "answer": "216/625",
+      "reference_expression": "10*(2/5)**2*(1-(2/5))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_109",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        2,
+        6
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "21609/1000000",
+        "64827/200000",
+        "3/10",
+        "7/10"
+      ],
+      "answer_letter": "B",
+      "answer": "64827/200000",
+      "reference_expression": "15*(3/10)**2*(1-(3/10))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_110",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        3,
+        2,
+        1
+      ],
+      "question": "A workshop runs 3 independent tests when every null hypothesis is true. Each rejects its null with probability 1/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "19/8000",
+        "1/20",
+        "57/8000",
+        "19/20"
+      ],
+      "answer_letter": "C",
+      "answer": "57/8000",
+      "reference_expression": "3*(1/20)**2*(1-(1/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_111",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        3,
+        7
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "4459/160000",
+        "7/20",
+        "13/20",
+        "4459/40000"
+      ],
+      "answer_letter": "D",
+      "answer": "4459/40000",
+      "reference_expression": "4*(7/20)**3*(1-(7/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_112",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        3,
+        3
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "459/40000",
+        "459/160000",
+        "3/20",
+        "17/20"
+      ],
+      "answer_letter": "A",
+      "answer": "459/40000",
+      "reference_expression": "4*(3/20)**3*(1-(3/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_113",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        2,
+        1
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 1/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "6859/3200000",
+        "6859/320000",
+        "1/20",
+        "19/20"
+      ],
+      "answer_letter": "B",
+      "answer": "6859/320000",
+      "reference_expression": "10*(1/20)**2*(1-(1/20))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_114",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        1,
+        3
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "4259571/64000000",
+        "3/20",
+        "12778713/32000000",
+        "17/20"
+      ],
+      "answer_letter": "C",
+      "answer": "12778713/32000000",
+      "reference_expression": "6*(3/20)**1*(1-(3/20))**5",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_115",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        2,
+        2
+      ],
+      "question": "A workshop runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 1/10. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "729/100000",
+        "1/10",
+        "9/10",
+        "729/10000"
+      ],
+      "answer_letter": "D",
+      "answer": "729/10000",
+      "reference_expression": "10*(1/10)**2*(1-(1/10))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_116",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        1
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/20. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "57/32000000",
+        "19/64000000",
+        "1/20",
+        "19/20"
+      ],
+      "answer_letter": "A",
+      "answer": "57/32000000",
+      "reference_expression": "6*(1/20)**5*(1-(1/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_117",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        4
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/5. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "4/15625",
+        "24/15625",
+        "1/5",
+        "4/5"
+      ],
+      "answer_letter": "B",
+      "answer": "24/15625",
+      "reference_expression": "6*(1/5)**5*(1-(1/5))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_118",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        1,
+        9
+      ],
+      "question": "A workshop runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "1449459/64000000",
+        "9/20",
+        "4348377/32000000",
+        "11/20"
+      ],
+      "answer_letter": "C",
+      "answer": "4348377/32000000",
+      "reference_expression": "6*(9/20)**1*(1-(9/20))**5",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_i_119",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        2,
+        6
+      ],
+      "question": "A workshop runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "441/10000",
+        "3/10",
+        "7/10",
+        "1323/5000"
+      ],
+      "answer_letter": "D",
+      "answer": "1323/5000",
+      "reference_expression": "6*(3/10)**2*(1-(3/10))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_train_type_ii_120",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/5 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "11/25",
+        "12/25",
+        "23/25",
+        "2/25"
+      ],
+      "answer_letter": "A",
+      "answer": "11/25",
+      "reference_expression": "(1-(1/5))*(2/5)+(1/5)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_121",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        5
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/10 and 1/4. What is the probability exactly one method detects it?",
+      "choices": [
+        "27/40",
+        "3/10",
+        "39/40",
+        "1/40"
+      ],
+      "answer_letter": "B",
+      "answer": "3/10",
+      "reference_expression": "(1-(1/10))*(1/4)+(1/10)*(1-(1/4))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_122",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        5
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 1/4. What is the probability exactly one method detects it?",
+      "choices": [
+        "57/80",
+        "79/80",
+        "11/40",
+        "1/80"
+      ],
+      "answer_letter": "C",
+      "answer": "11/40",
+      "reference_expression": "(1-(1/20))*(1/4)+(1/20)*(1-(1/4))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_123",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "57/100",
+        "49/50",
+        "1/50",
+        "41/100"
+      ],
+      "answer_letter": "D",
+      "answer": "41/100",
+      "reference_expression": "(1-(1/20))*(2/5)+(1/20)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_124",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        6,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/10 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "21/50",
+        "49/100",
+        "91/100",
+        "9/100"
+      ],
+      "answer_letter": "A",
+      "answer": "21/50",
+      "reference_expression": "(1-(3/10))*(3/10)+(3/10)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_125",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        5
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/5 and 1/4. What is the probability exactly one method detects it?",
+      "choices": [
+        "3/5",
+        "7/20",
+        "19/20",
+        "1/20"
+      ],
+      "answer_letter": "B",
+      "answer": "7/20",
+      "reference_expression": "(1-(1/5))*(1/4)+(1/5)*(1-(1/4))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_126",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        5,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/4 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "9/10",
+        "1/10",
+        "9/20",
+        "1/100"
+      ],
+      "answer_letter": "C",
+      "answer": "9/20",
+      "reference_expression": "(1-(1/4))*(2/5)+(1/4)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_127",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/5 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "13/25",
+        "93/100",
+        "7/100",
+        "41/100"
+      ],
+      "answer_letter": "D",
+      "answer": "41/100",
+      "reference_expression": "(1-(1/5))*(7/20)+(1/5)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_128",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/20 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "43/100",
+        "51/100",
+        "47/50",
+        "3/50"
+      ],
+      "answer_letter": "A",
+      "answer": "43/100",
+      "reference_expression": "(1-(3/20))*(2/5)+(3/20)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_129",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        8,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 2/5 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "9/25",
+        "12/25",
+        "21/25",
+        "4/25"
+      ],
+      "answer_letter": "B",
+      "answer": "12/25",
+      "reference_expression": "(1-(2/5))*(2/5)+(2/5)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_130",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        2
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/10 and 1/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "81/100",
+        "99/100",
+        "9/50",
+        "1/100"
+      ],
+      "answer_letter": "C",
+      "answer": "9/50",
+      "reference_expression": "(1-(1/10))*(1/10)+(1/10)*(1-(1/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_131",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        3
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/10 and 3/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "153/200",
+        "197/200",
+        "3/200",
+        "11/50"
+      ],
+      "answer_letter": "D",
+      "answer": "11/50",
+      "reference_expression": "(1-(1/10))*(3/20)+(1/10)*(1-(3/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_132",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        7,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 7/20 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "91/200",
+        "169/400",
+        "351/400",
+        "49/400"
+      ],
+      "answer_letter": "A",
+      "answer": "91/200",
+      "reference_expression": "(1-(7/20))*(7/20)+(7/20)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_133",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "133/200",
+        "8/25",
+        "197/200",
+        "3/200"
+      ],
+      "answer_letter": "B",
+      "answer": "8/25",
+      "reference_expression": "(1-(1/20))*(3/10)+(1/20)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_134",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/5 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "11/25",
+        "91/100",
+        "47/100",
+        "9/100"
+      ],
+      "answer_letter": "C",
+      "answer": "47/100",
+      "reference_expression": "(1-(1/5))*(9/20)+(1/5)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_135",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        3
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/20 and 3/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "289/400",
+        "391/400",
+        "9/400",
+        "51/200"
+      ],
+      "answer_letter": "D",
+      "answer": "51/200",
+      "reference_expression": "(1-(3/20))*(3/20)+(3/20)*(1-(3/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_136",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "91/200",
+        "209/400",
+        "391/400",
+        "9/400"
+      ],
+      "answer_letter": "A",
+      "answer": "91/200",
+      "reference_expression": "(1-(1/20))*(9/20)+(1/20)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_137",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        5,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/4 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "33/80",
+        "19/40",
+        "71/80",
+        "9/80"
+      ],
+      "answer_letter": "B",
+      "answer": "19/40",
+      "reference_expression": "(1-(1/4))*(9/20)+(1/4)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_138",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/20 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "119/200",
+        "191/200",
+        "9/25",
+        "9/200"
+      ],
+      "answer_letter": "C",
+      "answer": "9/25",
+      "reference_expression": "(1-(3/20))*(3/10)+(3/20)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_139",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        5,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/4 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "39/80",
+        "73/80",
+        "7/80",
+        "17/40"
+      ],
+      "answer_letter": "D",
+      "answer": "17/40",
+      "reference_expression": "(1-(1/4))*(7/20)+(1/4)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_140",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        1
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 1/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "19/200",
+        "361/400",
+        "399/400",
+        "1/400"
+      ],
+      "answer_letter": "A",
+      "answer": "19/200",
+      "reference_expression": "(1-(1/20))*(1/20)+(1/20)*(1-(1/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_141",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        7,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 7/20 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "143/400",
+        "97/200",
+        "337/400",
+        "63/400"
+      ],
+      "answer_letter": "B",
+      "answer": "97/200",
+      "reference_expression": "(1-(7/20))*(9/20)+(7/20)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_142",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        4
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/20 and 1/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "19/25",
+        "99/100",
+        "23/100",
+        "1/100"
+      ],
+      "answer_letter": "C",
+      "answer": "23/100",
+      "reference_expression": "(1-(1/20))*(1/5)+(1/20)*(1-(1/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_143",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/10 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "27/50",
+        "24/25",
+        "1/25",
+        "21/50"
+      ],
+      "answer_letter": "D",
+      "answer": "21/50",
+      "reference_expression": "(1-(1/10))*(2/5)+(1/10)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_144",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        5,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/4 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "2/5",
+        "21/40",
+        "37/40",
+        "3/40"
+      ],
+      "answer_letter": "A",
+      "answer": "2/5",
+      "reference_expression": "(1-(1/4))*(3/10)+(1/4)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_145",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 1/10 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "117/200",
+        "19/50",
+        "193/200",
+        "7/200"
+      ],
+      "answer_letter": "B",
+      "answer": "19/50",
+      "reference_expression": "(1-(1/10))*(7/20)+(1/10)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_146",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        9,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 9/20 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "121/400",
+        "319/400",
+        "99/200",
+        "81/400"
+      ],
+      "answer_letter": "C",
+      "answer": "99/200",
+      "reference_expression": "(1-(9/20))*(9/20)+(9/20)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_147",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        6,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/10 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "91/200",
+        "179/200",
+        "21/200",
+        "11/25"
+      ],
+      "answer_letter": "D",
+      "answer": "11/25",
+      "reference_expression": "(1-(3/10))*(7/20)+(3/10)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_148",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/20 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "93/200",
+        "187/400",
+        "373/400",
+        "27/400"
+      ],
+      "answer_letter": "A",
+      "answer": "93/200",
+      "reference_expression": "(1-(3/20))*(9/20)+(3/20)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_type_ii_149",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        4
+      ],
+      "question": "Two independent methods inspect an existing defect at a workshop. Their miss probabilities are 3/20 and 1/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "17/25",
+        "29/100",
+        "97/100",
+        "3/100"
+      ],
+      "answer_letter": "B",
+      "answer": "29/100",
+      "reference_expression": "(1-(3/20))*(1/5)+(3/20)*(1-(1/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_train_confidence_150",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        12,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [43,67]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "67",
+        "223/4",
+        "58",
+        "1072"
+      ],
+      "answer_letter": "C",
+      "answer": "58",
+      "reference_expression": "55+12/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_151",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        20,
+        3,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [17,23]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "23",
+        "61/3",
+        "207",
+        "21"
+      ],
+      "answer_letter": "D",
+      "answer": "21",
+      "reference_expression": "20+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_152",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        9,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [46,64]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "58",
+        "64",
+        "56",
+        "576"
+      ],
+      "answer_letter": "A",
+      "answer": "58",
+      "reference_expression": "55+9/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_153",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        50,
+        6,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [44,56]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "56",
+        "53",
+        "103/2",
+        "224"
+      ],
+      "answer_letter": "B",
+      "answer": "53",
+      "reference_expression": "50+6/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_154",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        45,
+        9,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [36,54]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "54",
+        "46",
+        "48",
+        "486"
+      ],
+      "answer_letter": "C",
+      "answer": "48",
+      "reference_expression": "45+9/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_155",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        60,
+        12,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [48,72]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "72",
+        "243/4",
+        "1152",
+        "63"
+      ],
+      "answer_letter": "D",
+      "answer": "63",
+      "reference_expression": "60+12/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_156",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        35,
+        6,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [29,41]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "73/2",
+        "41",
+        "283/8",
+        "656"
+      ],
+      "answer_letter": "A",
+      "answer": "73/2",
+      "reference_expression": "35+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_157",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        40,
+        6,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [34,46]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "46",
+        "83/2",
+        "323/8",
+        "736"
+      ],
+      "answer_letter": "B",
+      "answer": "83/2",
+      "reference_expression": "40+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_158",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        6,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [49,61]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "61",
+        "167/3",
+        "57",
+        "549"
+      ],
+      "answer_letter": "C",
+      "answer": "57",
+      "reference_expression": "55+6/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_159",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        3,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [27,33]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "33",
+        "483/16",
+        "528",
+        "123/4"
+      ],
+      "answer_letter": "D",
+      "answer": "123/4",
+      "reference_expression": "30+3/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_160",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        60,
+        3,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [57,63]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "123/2",
+        "63",
+        "243/4",
+        "252"
+      ],
+      "answer_letter": "A",
+      "answer": "123/2",
+      "reference_expression": "60+3/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_161",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        12,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [18,42]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "42",
+        "34",
+        "94/3",
+        "378"
+      ],
+      "answer_letter": "B",
+      "answer": "34",
+      "reference_expression": "30+12/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_162",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        40,
+        6,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [34,46]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "46",
+        "122/3",
+        "42",
+        "414"
+      ],
+      "answer_letter": "C",
+      "answer": "42",
+      "reference_expression": "40+6/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_163",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        9,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [21,39]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "39",
+        "129/4",
+        "156",
+        "69/2"
+      ],
+      "answer_letter": "D",
+      "answer": "69/2",
+      "reference_expression": "30+9/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_164",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        20,
+        6,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [14,26]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "43/2",
+        "26",
+        "163/8",
+        "416"
+      ],
+      "answer_letter": "A",
+      "answer": "43/2",
+      "reference_expression": "20+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_165",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        3,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [27,33]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "33",
+        "31",
+        "91/3",
+        "297"
+      ],
+      "answer_letter": "B",
+      "answer": "31",
+      "reference_expression": "30+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_166",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        6,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [49,61]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "61",
+        "443/8",
+        "113/2",
+        "976"
+      ],
+      "answer_letter": "C",
+      "answer": "113/2",
+      "reference_expression": "55+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_167",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        50,
+        9,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [41,59]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "59",
+        "51",
+        "531",
+        "53"
+      ],
+      "answer_letter": "D",
+      "answer": "53",
+      "reference_expression": "50+9/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_168",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        3,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [52,58]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "56",
+        "58",
+        "166/3",
+        "522"
+      ],
+      "answer_letter": "A",
+      "answer": "56",
+      "reference_expression": "55+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_169",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        6,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [24,36]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "36",
+        "33",
+        "63/2",
+        "144"
+      ],
+      "answer_letter": "B",
+      "answer": "33",
+      "reference_expression": "30+6/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_170",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        40,
+        9,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [31,49]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "49",
+        "649/16",
+        "169/4",
+        "784"
+      ],
+      "answer_letter": "C",
+      "answer": "169/4",
+      "reference_expression": "40+9/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_171",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        50,
+        9,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [41,59]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "59",
+        "809/16",
+        "944",
+        "209/4"
+      ],
+      "answer_letter": "D",
+      "answer": "209/4",
+      "reference_expression": "50+9/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_172",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        9,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [46,64]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "229/4",
+        "64",
+        "889/16",
+        "1024"
+      ],
+      "answer_letter": "A",
+      "answer": "229/4",
+      "reference_expression": "55+9/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_173",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        20,
+        9,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [11,29]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "29",
+        "89/4",
+        "329/16",
+        "464"
+      ],
+      "answer_letter": "B",
+      "answer": "89/4",
+      "reference_expression": "20+9/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_174",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        60,
+        3,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [57,63]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "63",
+        "181/3",
+        "61",
+        "567"
+      ],
+      "answer_letter": "C",
+      "answer": "61",
+      "reference_expression": "60+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_175",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        3,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [22,28]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "28",
+        "403/16",
+        "448",
+        "103/4"
+      ],
+      "answer_letter": "D",
+      "answer": "103/4",
+      "reference_expression": "25+3/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_176",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        6,
+        4
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [19,31]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "53/2",
+        "31",
+        "203/8",
+        "496"
+      ],
+      "answer_letter": "A",
+      "answer": "53/2",
+      "reference_expression": "25+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_177",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        55,
+        9,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [46,64]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "64",
+        "119/2",
+        "229/4",
+        "256"
+      ],
+      "answer_letter": "B",
+      "answer": "119/2",
+      "reference_expression": "55+9/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_178",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        50,
+        3,
+        3
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [47,53]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "53",
+        "151/3",
+        "51",
+        "477"
+      ],
+      "answer_letter": "C",
+      "answer": "51",
+      "reference_expression": "50+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_train_confidence_179",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        6,
+        2
+      ],
+      "question": "A workshop reports a normal-theory mean confidence interval [19,31]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "31",
+        "53/2",
+        "124",
+        "28"
+      ],
+      "answer_letter": "D",
+      "answer": "28",
+      "reference_expression": "25+6/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    }
+  ],
+  "validation": [
+    {
+      "id": "v09_validation_poisson_000",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        8,
+        3,
+        5
+      ],
+      "question": "At a exhibition, X is Poisson with mean 8. A display reads Y=3X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "72",
+        "24",
+        "77",
+        "13"
+      ],
+      "answer_letter": "A",
+      "answer": "72",
+      "reference_expression": "3**2*8",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_validation_poisson_001",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        8,
+        2,
+        0
+      ],
+      "question": "A exhibition counts arrivals from a Poisson process at rate 8 per minute. N is the total during 2 minutes. Find Var(N).",
+      "choices": [
+        "8",
+        "16",
+        "32",
+        "256"
+      ],
+      "answer_letter": "B",
+      "answer": "16",
+      "reference_expression": "8*2",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_validation_poisson_002",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        5,
+        3,
+        5
+      ],
+      "question": "At a exhibition, X is Poisson with mean 5. A display reads Y=3X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "15",
+        "50",
+        "45",
+        "10"
+      ],
+      "answer_letter": "C",
+      "answer": "45",
+      "reference_expression": "3**2*5",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_validation_poisson_003",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        6,
+        4,
+        5
+      ],
+      "question": "At a exhibition, X is Poisson with mean 6. A display reads Y=4X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "24",
+        "101",
+        "11",
+        "96"
+      ],
+      "answer_letter": "D",
+      "answer": "96",
+      "reference_expression": "4**2*6",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_validation_expectation_004",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        2,
+        2,
+        1
+      ],
+      "question": "A exhibition measurement X has E[X]=5 and Var(X)=2. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "129",
+        "121",
+        "8",
+        "109"
+      ],
+      "answer_letter": "A",
+      "answer": "129",
+      "reference_expression": "2**2*2+(2*5+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_validation_expectation_005",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        7,
+        1,
+        2,
+        1
+      ],
+      "question": "A exhibition measurement X has E[X]=7 and Var(X)=1. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "225",
+        "229",
+        "4",
+        "201"
+      ],
+      "answer_letter": "B",
+      "answer": "229",
+      "reference_expression": "2**2*1+(2*7+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_validation_expectation_006",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        2,
+        3,
+        1
+      ],
+      "question": "A exhibition measurement X has E[X]=5 and Var(X)=2. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "256",
+        "18",
+        "274",
+        "244"
+      ],
+      "answer_letter": "C",
+      "answer": "274",
+      "reference_expression": "3**2*2+(3*5+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_validation_expectation_007",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        5,
+        4,
+        3,
+        1
+      ],
+      "question": "A exhibition measurement X has E[X]=5 and Var(X)=4. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "256",
+        "36",
+        "262",
+        "292"
+      ],
+      "answer_letter": "D",
+      "answer": "292",
+      "reference_expression": "3**2*4+(3*5+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_validation_uniform_008",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        3
+      ],
+      "question": "A exhibition waiting time T is continuously uniform on [0,12]. Given T>6, find E[T | T>6].",
+      "choices": [
+        "9",
+        "6",
+        "12",
+        "3"
+      ],
+      "answer_letter": "A",
+      "answer": "9",
+      "reference_expression": "(6+12)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_validation_uniform_009",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        2,
+        5
+      ],
+      "question": "A exhibition waiting time T is continuously uniform on [2,22]. Given T>12, find E[T | T>12].",
+      "choices": [
+        "12",
+        "17",
+        "22",
+        "5"
+      ],
+      "answer_letter": "B",
+      "answer": "17",
+      "reference_expression": "(12+22)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_validation_uniform_010",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        5
+      ],
+      "question": "A exhibition waiting time T is continuously uniform on [0,20]. Given T>10, find E[T | T>10].",
+      "choices": [
+        "10",
+        "20",
+        "15",
+        "5"
+      ],
+      "answer_letter": "C",
+      "answer": "15",
+      "reference_expression": "(10+20)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_validation_uniform_011",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        8
+      ],
+      "question": "A exhibition waiting time T is continuously uniform on [4,36]. Given T>20, find E[T | T>20].",
+      "choices": [
+        "20",
+        "36",
+        "8",
+        "28"
+      ],
+      "answer_letter": "D",
+      "answer": "28",
+      "reference_expression": "(20+36)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_validation_type_i_012",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        3,
+        9
+      ],
+      "question": "A exhibition runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "8019/40000",
+        "8019/160000",
+        "9/20",
+        "11/20"
+      ],
+      "answer_letter": "A",
+      "answer": "8019/40000",
+      "reference_expression": "4*(9/20)**3*(1-(9/20))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_validation_type_i_013",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        2,
+        2
+      ],
+      "question": "A exhibition runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 1/10. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "81/10000",
+        "243/5000",
+        "1/10",
+        "9/10"
+      ],
+      "answer_letter": "B",
+      "answer": "243/5000",
+      "reference_expression": "6*(1/10)**2*(1-(1/10))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_validation_type_i_014",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        2,
+        7
+      ],
+      "question": "A exhibition runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 7/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "8281/160000",
+        "7/20",
+        "24843/80000",
+        "13/20"
+      ],
+      "answer_letter": "C",
+      "answer": "24843/80000",
+      "reference_expression": "6*(7/20)**2*(1-(7/20))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_validation_type_i_015",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        4,
+        1,
+        9
+      ],
+      "question": "A exhibition runs 4 independent tests when every null hypothesis is true. Each rejects its null with probability 9/20. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "11979/160000",
+        "9/20",
+        "11/20",
+        "11979/40000"
+      ],
+      "answer_letter": "D",
+      "answer": "11979/40000",
+      "reference_expression": "4*(9/20)**1*(1-(9/20))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_validation_type_ii_016",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a exhibition. Their miss probabilities are 1/10 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "23/50",
+        "99/200",
+        "191/200",
+        "9/200"
+      ],
+      "answer_letter": "A",
+      "answer": "23/50",
+      "reference_expression": "(1-(1/10))*(9/20)+(1/10)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_validation_type_ii_017",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        1,
+        3
+      ],
+      "question": "Two independent methods inspect an existing defect at a exhibition. Their miss probabilities are 1/20 and 3/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "323/400",
+        "37/200",
+        "397/400",
+        "3/400"
+      ],
+      "answer_letter": "B",
+      "answer": "37/200",
+      "reference_expression": "(1-(1/20))*(3/20)+(1/20)*(1-(3/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_validation_type_ii_018",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        8,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a exhibition. Their miss probabilities are 2/5 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "33/100",
+        "41/50",
+        "49/100",
+        "9/50"
+      ],
+      "answer_letter": "C",
+      "answer": "49/100",
+      "reference_expression": "(1-(2/5))*(9/20)+(2/5)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_validation_type_ii_019",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a exhibition. Their miss probabilities are 1/5 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "14/25",
+        "47/50",
+        "3/50",
+        "19/50"
+      ],
+      "answer_letter": "D",
+      "answer": "19/50",
+      "reference_expression": "(1-(1/5))*(3/10)+(1/5)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_validation_confidence_020",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        6,
+        3
+      ],
+      "question": "A exhibition reports a normal-theory mean confidence interval [19,31]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "27",
+        "31",
+        "77/3",
+        "279"
+      ],
+      "answer_letter": "A",
+      "answer": "27",
+      "reference_expression": "25+6/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_validation_confidence_021",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        35,
+        12,
+        4
+      ],
+      "question": "A exhibition reports a normal-theory mean confidence interval [23,47]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "47",
+        "38",
+        "143/4",
+        "752"
+      ],
+      "answer_letter": "B",
+      "answer": "38",
+      "reference_expression": "35+12/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_validation_confidence_022",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        12,
+        2
+      ],
+      "question": "A exhibition reports a normal-theory mean confidence interval [13,37]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "37",
+        "28",
+        "31",
+        "148"
+      ],
+      "answer_letter": "C",
+      "answer": "31",
+      "reference_expression": "25+12/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_validation_confidence_023",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        25,
+        3,
+        2
+      ],
+      "question": "A exhibition reports a normal-theory mean confidence interval [22,28]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "28",
+        "103/4",
+        "112",
+        "53/2"
+      ],
+      "answer_letter": "D",
+      "answer": "53/2",
+      "reference_expression": "25+3/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    }
+  ],
+  "test": [
+    {
+      "id": "v09_test_poisson_000",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        6,
+        3,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 6 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "18",
+        "6",
+        "54",
+        "324"
+      ],
+      "answer_letter": "A",
+      "answer": "18",
+      "reference_expression": "6*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_001",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        4,
+        3,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 4 per minute. N is the total during 3 minutes. Find Var(N).",
+      "choices": [
+        "4",
+        "12",
+        "36",
+        "144"
+      ],
+      "answer_letter": "B",
+      "answer": "12",
+      "reference_expression": "4*3",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_002",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        6,
+        2,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 6 per minute. N is the total during 2 minutes. Find Var(N).",
+      "choices": [
+        "6",
+        "24",
+        "12",
+        "144"
+      ],
+      "answer_letter": "C",
+      "answer": "12",
+      "reference_expression": "6*2",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_003",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        7,
+        4,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 7 per minute. N is the total during 4 minutes. Find Var(N).",
+      "choices": [
+        "7",
+        "112",
+        "784",
+        "28"
+      ],
+      "answer_letter": "D",
+      "answer": "28",
+      "reference_expression": "7*4",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_004",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        3,
+        2,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 3 per minute. N is the total during 2 minutes. Find Var(N).",
+      "choices": [
+        "6",
+        "3",
+        "12",
+        "36"
+      ],
+      "answer_letter": "A",
+      "answer": "6",
+      "reference_expression": "3*2",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_005",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        6,
+        2,
+        5
+      ],
+      "question": "At a research station, X is Poisson with mean 6. A display reads Y=2X+5, using that same random X. Find Var(Y).",
+      "choices": [
+        "12",
+        "24",
+        "29",
+        "11"
+      ],
+      "answer_letter": "B",
+      "answer": "24",
+      "reference_expression": "2**2*6",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_test_poisson_006",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        0,
+        9,
+        4,
+        0
+      ],
+      "question": "A research station counts arrivals from a Poisson process at rate 9 per minute. N is the total during 4 minutes. Find Var(N).",
+      "choices": [
+        "9",
+        "144",
+        "36",
+        "1296"
+      ],
+      "answer_letter": "C",
+      "answer": "36",
+      "reference_expression": "9*4",
+      "reference_rule": "A Poisson count has variance equal to rate times duration."
+    },
+    {
+      "id": "v09_test_poisson_007",
+      "category": "poisson",
+      "family": "poisson_targeted",
+      "parameters": [
+        1,
+        4,
+        3,
+        1
+      ],
+      "question": "At a research station, X is Poisson with mean 4. A display reads Y=3X+1, using that same random X. Find Var(Y).",
+      "choices": [
+        "12",
+        "37",
+        "5",
+        "36"
+      ],
+      "answer_letter": "D",
+      "answer": "36",
+      "reference_expression": "3**2*4",
+      "reference_rule": "Var(aX+b)=a^2 Var(X), and a Poisson variable has variance equal to its mean."
+    },
+    {
+      "id": "v09_test_expectation_008",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        1,
+        2,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=6 and Var(X)=1. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "173",
+        "169",
+        "4",
+        "149"
+      ],
+      "answer_letter": "A",
+      "answer": "173",
+      "reference_expression": "2**2*1+(2*6+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_009",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        2,
+        2,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=6 and Var(X)=2. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "169",
+        "177",
+        "8",
+        "153"
+      ],
+      "answer_letter": "B",
+      "answer": "177",
+      "reference_expression": "2**2*2+(2*6+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_010",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        1,
+        2,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=8 and Var(X)=1. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "289",
+        "4",
+        "293",
+        "261"
+      ],
+      "answer_letter": "C",
+      "answer": "293",
+      "reference_expression": "2**2*1+(2*8+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_011",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        6,
+        4,
+        3,
+        2
+      ],
+      "question": "A research station measurement X has E[X]=6 and Var(X)=4. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "400",
+        "36",
+        "364",
+        "436"
+      ],
+      "answer_letter": "D",
+      "answer": "436",
+      "reference_expression": "3**2*4+(3*6+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_012",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "question": "A research station measurement X has E[X]=3 and Var(X)=3. Define Y=3X+2. Find E[Y^2].",
+      "choices": [
+        "148",
+        "121",
+        "27",
+        "112"
+      ],
+      "answer_letter": "A",
+      "answer": "148",
+      "reference_expression": "3**2*3+(3*3+2)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_013",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        3,
+        1,
+        3,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=3 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "100",
+        "109",
+        "9",
+        "91"
+      ],
+      "answer_letter": "B",
+      "answer": "109",
+      "reference_expression": "3**2*1+(3*3+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_014",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        9,
+        1,
+        3,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=9 and Var(X)=1. Define Y=3X+1. Find E[Y^2].",
+      "choices": [
+        "784",
+        "9",
+        "793",
+        "739"
+      ],
+      "answer_letter": "C",
+      "answer": "793",
+      "reference_expression": "3**2*1+(3*9+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_expectation_015",
+      "category": "expectation",
+      "family": "expectation_targeted",
+      "parameters": [
+        8,
+        3,
+        2,
+        1
+      ],
+      "question": "A research station measurement X has E[X]=8 and Var(X)=3. Define Y=2X+1. Find E[Y^2].",
+      "choices": [
+        "289",
+        "12",
+        "269",
+        "301"
+      ],
+      "answer_letter": "D",
+      "answer": "301",
+      "reference_expression": "2**2*3+(2*8+1)**2",
+      "reference_rule": "E[Y^2]=Var(Y)+E[Y]^2, with Var(aX+b)=a^2 Var(X) and E[aX+b]=aE[X]+b."
+    },
+    {
+      "id": "v09_test_uniform_016",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        7
+      ],
+      "question": "A research station waiting time T is continuously uniform on [1,29]. Given T>15, find E[T | T>15].",
+      "choices": [
+        "22",
+        "15",
+        "29",
+        "7"
+      ],
+      "answer_letter": "A",
+      "answer": "22",
+      "reference_expression": "(15+29)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_017",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        8
+      ],
+      "question": "A research station waiting time T is continuously uniform on [5,37]. Given T>21, find E[T | T>21].",
+      "choices": [
+        "21",
+        "29",
+        "37",
+        "8"
+      ],
+      "answer_letter": "B",
+      "answer": "29",
+      "reference_expression": "(21+37)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_018",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        5
+      ],
+      "question": "A research station waiting time T is continuously uniform on [4,24]. Given T>14, find E[T | T>14].",
+      "choices": [
+        "14",
+        "24",
+        "19",
+        "5"
+      ],
+      "answer_letter": "C",
+      "answer": "19",
+      "reference_expression": "(14+24)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_019",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        0,
+        6
+      ],
+      "question": "A research station waiting time T is continuously uniform on [0,24]. Given T>12, find E[T | T>12].",
+      "choices": [
+        "12",
+        "24",
+        "6",
+        "18"
+      ],
+      "answer_letter": "D",
+      "answer": "18",
+      "reference_expression": "(12+24)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_020",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        5,
+        5
+      ],
+      "question": "A research station waiting time T is continuously uniform on [5,25]. Given T>15, find E[T | T>15].",
+      "choices": [
+        "20",
+        "15",
+        "25",
+        "5"
+      ],
+      "answer_letter": "A",
+      "answer": "20",
+      "reference_expression": "(15+25)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_021",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        3,
+        9
+      ],
+      "question": "A research station waiting time T is continuously uniform on [3,39]. Given T>21, find E[T | T>21].",
+      "choices": [
+        "21",
+        "30",
+        "39",
+        "9"
+      ],
+      "answer_letter": "B",
+      "answer": "30",
+      "reference_expression": "(21+39)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_022",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        1,
+        8
+      ],
+      "question": "A research station waiting time T is continuously uniform on [1,33]. Given T>17, find E[T | T>17].",
+      "choices": [
+        "17",
+        "33",
+        "25",
+        "8"
+      ],
+      "answer_letter": "C",
+      "answer": "25",
+      "reference_expression": "(17+33)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_uniform_023",
+      "category": "uniform",
+      "family": "uniform_targeted",
+      "parameters": [
+        4,
+        3
+      ],
+      "question": "A research station waiting time T is continuously uniform on [4,16]. Given T>10, find E[T | T>10].",
+      "choices": [
+        "10",
+        "16",
+        "3",
+        "13"
+      ],
+      "answer_letter": "D",
+      "answer": "13",
+      "reference_expression": "(10+16)/2",
+      "reference_rule": "Conditioning a continuous uniform variable above an interior threshold leaves a uniform interval from the threshold to the upper endpoint; its mean is their midpoint."
+    },
+    {
+      "id": "v09_test_type_i_024",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        1,
+        6
+      ],
+      "question": "A research station runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "7203/20000",
+        "7203/100000",
+        "3/10",
+        "7/10"
+      ],
+      "answer_letter": "A",
+      "answer": "7203/20000",
+      "reference_expression": "5*(3/10)**1*(1-(3/10))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_025",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        4,
+        6
+      ],
+      "question": "A research station runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 3/10. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "567/100000",
+        "567/20000",
+        "3/10",
+        "7/10"
+      ],
+      "answer_letter": "B",
+      "answer": "567/20000",
+      "reference_expression": "5*(3/10)**4*(1-(3/10))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_026",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        1,
+        5
+      ],
+      "question": "A research station runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 1/4. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "81/1024",
+        "1/4",
+        "405/1024",
+        "3/4"
+      ],
+      "answer_letter": "C",
+      "answer": "405/1024",
+      "reference_expression": "5*(1/4)**1*(1-(1/4))**4",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_027",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        3,
+        5
+      ],
+      "question": "A research station runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/4. What is the probability exactly 3 tests reject?",
+      "choices": [
+        "27/4096",
+        "1/4",
+        "3/4",
+        "135/1024"
+      ],
+      "answer_letter": "D",
+      "answer": "135/1024",
+      "reference_expression": "20*(1/4)**3*(1-(1/4))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_028",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        6,
+        5,
+        5
+      ],
+      "question": "A research station runs 6 independent tests when every null hypothesis is true. Each rejects its null with probability 1/4. What is the probability exactly 5 tests reject?",
+      "choices": [
+        "9/2048",
+        "3/4096",
+        "1/4",
+        "3/4"
+      ],
+      "answer_letter": "A",
+      "answer": "9/2048",
+      "reference_expression": "6*(1/4)**5*(1-(1/4))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_029",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        4,
+        8
+      ],
+      "question": "A research station runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 2/5. What is the probability exactly 4 tests reject?",
+      "choices": [
+        "48/3125",
+        "48/625",
+        "2/5",
+        "3/5"
+      ],
+      "answer_letter": "B",
+      "answer": "48/625",
+      "reference_expression": "5*(2/5)**4*(1-(2/5))**1",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_030",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        3,
+        1,
+        2
+      ],
+      "question": "A research station runs 3 independent tests when every null hypothesis is true. Each rejects its null with probability 1/10. What is the probability exactly 1 tests reject?",
+      "choices": [
+        "81/1000",
+        "1/10",
+        "243/1000",
+        "9/10"
+      ],
+      "answer_letter": "C",
+      "answer": "243/1000",
+      "reference_expression": "3*(1/10)**1*(1-(1/10))**2",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_i_031",
+      "category": "type_i",
+      "family": "type_i_targeted",
+      "parameters": [
+        5,
+        2,
+        3
+      ],
+      "question": "A research station runs 5 independent tests when every null hypothesis is true. Each rejects its null with probability 3/20. What is the probability exactly 2 tests reject?",
+      "choices": [
+        "44217/3200000",
+        "3/20",
+        "17/20",
+        "44217/320000"
+      ],
+      "answer_letter": "D",
+      "answer": "44217/320000",
+      "reference_expression": "10*(3/20)**2*(1-(3/20))**3",
+      "reference_rule": "The probability of exactly r successes in n independent trials is C(n,r)*p^r*(1-p)^(n-r)."
+    },
+    {
+      "id": "v09_test_type_ii_032",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        4
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 1/10 and 1/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "13/50",
+        "18/25",
+        "49/50",
+        "1/50"
+      ],
+      "answer_letter": "A",
+      "answer": "13/50",
+      "reference_expression": "(1-(1/10))*(1/5)+(1/10)*(1-(1/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_033",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        5
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 3/20 and 1/4. What is the probability exactly one method detects it?",
+      "choices": [
+        "51/80",
+        "13/40",
+        "77/80",
+        "3/80"
+      ],
+      "answer_letter": "B",
+      "answer": "13/40",
+      "reference_expression": "(1-(3/20))*(1/4)+(3/20)*(1-(1/4))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_034",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        2,
+        6
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 1/10 and 3/10. What is the probability exactly one method detects it?",
+      "choices": [
+        "63/100",
+        "97/100",
+        "17/50",
+        "3/100"
+      ],
+      "answer_letter": "C",
+      "answer": "17/50",
+      "reference_expression": "(1-(1/10))*(3/10)+(1/10)*(1-(3/10))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_035",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        6,
+        9
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 3/10 and 9/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "77/200",
+        "173/200",
+        "27/200",
+        "12/25"
+      ],
+      "answer_letter": "D",
+      "answer": "12/25",
+      "reference_expression": "(1-(3/10))*(9/20)+(3/10)*(1-(9/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_036",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        4,
+        4
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 1/5 and 1/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "8/25",
+        "16/25",
+        "24/25",
+        "1/25"
+      ],
+      "answer_letter": "A",
+      "answer": "8/25",
+      "reference_expression": "(1-(1/5))*(1/5)+(1/5)*(1-(1/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_037",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        7,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 7/20 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "39/100",
+        "47/100",
+        "43/50",
+        "7/50"
+      ],
+      "answer_letter": "B",
+      "answer": "47/100",
+      "reference_expression": "(1-(7/20))*(2/5)+(7/20)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_038",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        3,
+        7
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 3/20 and 7/20. What is the probability exactly one method detects it?",
+      "choices": [
+        "221/400",
+        "379/400",
+        "79/200",
+        "21/400"
+      ],
+      "answer_letter": "C",
+      "answer": "79/200",
+      "reference_expression": "(1-(3/20))*(7/20)+(3/20)*(1-(7/20))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_type_ii_039",
+      "category": "type_ii",
+      "family": "type_ii_targeted",
+      "parameters": [
+        6,
+        8
+      ],
+      "question": "Two independent methods inspect an existing defect at a research station. Their miss probabilities are 3/10 and 2/5. What is the probability exactly one method detects it?",
+      "choices": [
+        "21/50",
+        "22/25",
+        "3/25",
+        "23/50"
+      ],
+      "answer_letter": "D",
+      "answer": "23/50",
+      "reference_expression": "(1-(3/10))*(2/5)+(3/10)*(1-(2/5))",
+      "reference_rule": "Exactly one detection is the sum of the disjoint detect/miss and miss/detect probabilities; independence permits products."
+    },
+    {
+      "id": "v09_test_confidence_040",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        45,
+        9,
+        2
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [36,54]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 4. Find the new upper endpoint.",
+      "choices": [
+        "99/2",
+        "54",
+        "189/4",
+        "216"
+      ],
+      "answer_letter": "A",
+      "answer": "99/2",
+      "reference_expression": "45+9/2",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_041",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        60,
+        9,
+        4
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [51,69]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "69",
+        "249/4",
+        "969/16",
+        "1104"
+      ],
+      "answer_letter": "B",
+      "answer": "249/4",
+      "reference_expression": "60+9/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_042",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        60,
+        3,
+        4
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [57,63]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "63",
+        "963/16",
+        "243/4",
+        "1008"
+      ],
+      "answer_letter": "C",
+      "answer": "243/4",
+      "reference_expression": "60+3/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_043",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        30,
+        6,
+        4
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [24,36]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "36",
+        "243/8",
+        "576",
+        "63/2"
+      ],
+      "answer_letter": "D",
+      "answer": "63/2",
+      "reference_expression": "30+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_044",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        20,
+        12,
+        4
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [8,32]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "23",
+        "32",
+        "83/4",
+        "512"
+      ],
+      "answer_letter": "A",
+      "answer": "23",
+      "reference_expression": "20+12/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_045",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        40,
+        12,
+        3
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [28,52]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "52",
+        "44",
+        "124/3",
+        "468"
+      ],
+      "answer_letter": "B",
+      "answer": "44",
+      "reference_expression": "40+12/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_046",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        50,
+        6,
+        4
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [44,56]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 16. Find the new upper endpoint.",
+      "choices": [
+        "56",
+        "403/8",
+        "103/2",
+        "896"
+      ],
+      "answer_letter": "C",
+      "answer": "103/2",
+      "reference_expression": "50+6/4",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    },
+    {
+      "id": "v09_test_confidence_047",
+      "category": "confidence",
+      "family": "confidence_targeted",
+      "parameters": [
+        35,
+        3,
+        3
+      ],
+      "question": "A research station reports a normal-theory mean confidence interval [32,38]. Keep the center, confidence level and population standard deviation fixed; multiply sample size by 9. Find the new upper endpoint.",
+      "choices": [
+        "38",
+        "106/3",
+        "342",
+        "36"
+      ],
+      "answer_letter": "D",
+      "answer": "36",
+      "reference_expression": "35+3/3",
+      "reference_rule": "The center is fixed and half-width is inversely proportional to sqrt(sample size); add the new half-width to the center."
+    }
+  ]
+}
