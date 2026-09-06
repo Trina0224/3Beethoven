@@ -1,5 +1,8 @@
 # 3Beethoven
 
+> **Grader 已修正（2026-09-06）**：現有教師回答首次通過 151/160；兩次至少一次通過 157/160。320 筆中 302 正確、15 錯誤、3 待審。缺少標籤不再等於數學錯誤；原始嚴格分數保留為歷史紀錄。這不是獨立擾動測試或學生訓練結果。[重評方法與結果](docs/STATS_V0_14_GRADER_CORRECTION.md)。
+
+
 **A tiny local classical-music snob, distilled from a much larger Llama teacher.**
 
 3Beethoven is an experiment in **response distillation / synthetic-data distillation**. The goal is to use a large cloud-hosted Meta Llama model as a teacher, then train a much smaller local Llama student to become a focused classical-music specialist.
