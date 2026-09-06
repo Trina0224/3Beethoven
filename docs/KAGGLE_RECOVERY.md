@@ -15,6 +15,7 @@ Use individual cells. Do not use Run All on the historical notebook: earlier cel
 | 11 | 347605195 | v0.6 selected adapter, 1,296 responses, logs and verified ZIP |
 | 12 | 347608100 | Inference-only diagnostic, 576 responses and verified ZIP; no model weights |
 | 13 | 347615356 | v0.8 diagnostic and v0.9 audited preparation, caches and ZIPs; no v0.9 trained weights |
+| 14 | 347620387 | v0.9 selected adapter, 960 student responses, teacher caches, verified ZIP and v0.8 diagnostic |
 
 The latest output is not a cumulative copy of all older output files. A notebook input added without a pinned version can resolve to the latest version after a restart.
 
@@ -131,3 +132,30 @@ The [diagnostic report](STATS_DIAGNOSTIC_V0_7_RESULTS.md) and [full JSON with ex
 Version 13 output was verified to contain `3beethoven_stats_diagnostic_v0_8.zip` and `3beethoven_stats_v0_9.zip`. v0.8 ZIP SHA-256: `e0662dd2179965909f1463fa74888b4443289ff647cb705ed813d4e6bc296107` (19,500 bytes). v0.9 preparation is not a completed model. Its approved corpus is also preserved in GitHub with original rule and numerical-solution provenance.
 
 Do not rerun the v0.9 generator after applying audited rules: it can restore the original pre-audit rule lines. Restore the preparation archive and audit files instead. The runner validates their exact hashes and teacher-cache provenance before training. To resume it, preserve its working directory and mount pinned version 9 separately for the v0.5 control adapter, using the same input-conflict precautions above.
+
+## Restore completed v0.9
+
+Version 14 (347620387) is confirmed Successful; its saved output contains `3beethoven_stats_v0_9.zip` and the v0.8 diagnostic ZIP. [Open version 14 output](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=347620387). The current result is a targeted-skill improvement with a remaining robustness failure; keep the version-9 v0.5 control.
+
+Remove any existing same-notebook input before requesting pinned version 14. Recovery needs no new teacher calls:
+
+```python
+from pathlib import Path
+import hashlib, shutil, zipfile, kagglehub
+saved = Path(kagglehub.notebook_output_download(
+    "trinashih/3beethoven-v0-2/versions/14"
+))
+archive = Path("/kaggle/working/3beethoven_stats_v0_9.zip")
+source = saved / archive.name
+assert hashlib.sha256(source.read_bytes()).hexdigest() == "ddc3f29f1533acf037ad01077875650e7309ed81148cd3ec8cd20ef40865fdcc"
+shutil.copy2(source, archive)
+root = archive.with_suffix("")
+assert not root.exists(), "Use a fresh directory"
+root.mkdir()
+with zipfile.ZipFile(archive) as z:
+    z.extractall(root)  # Exact verified archive above.
+```
+
+ZIP bytes: 93,446,957. Adapter SHA256: `805a2170a805f6176aa3837857890b8c44fc8f854d16cbc3085ae220e5502c7c`. Selected checkpoint: step135. With repository scripts and verification dependencies installed, run `scripts/verify_stats_v0_9.py`: it verifies saved responses, finite tensors and the ZIP manifest on CPU, without training, base-model loading or teacher requests. Keep the original ZIP unchanged.
+
+The ZIP preserves raw strict results, teacher provenance, source and training state. The later independent format audit and narrative report are in [GitHub results JSON](STATS_V0_9_RESULTS.json) and [report](STATS_V0_9_RESULTS.md), also copied into the repository folder in saved output before final preservation; later GitHub reporting additions do not alter the ZIP. Do not regenerate data or train merely to recover the completed adapter.
