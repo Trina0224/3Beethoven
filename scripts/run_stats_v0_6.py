@@ -21,8 +21,11 @@ def examples(records):
     for r in records:
         for mode in ('letter','explain'):
             target=r['answer_letter'] if mode=='letter' else f"Answer: {r['answer_letter']}\n\nExplanation: {r['explanation']}\n\nCommon misconception: {r['common_mistake']}"
-            result.append(dict(source_id=r['id'],family=r['family'],mode=mode,
-                               prompt=prompt_for(r,mode),target=target))
+            prompt=prompt_for(r,mode)
+            if mode=='explain' and 'contrast_id' in r:
+                prompt+='\nFor comparison, also explain this related situation after solving the main question: '+r['contrast_question']
+                target+='\n\nContrasting calculation: '+r['contrast_explanation']
+            result.append(dict(source_id=r['id'],family=r['family'],mode=mode,prompt=prompt,target=target))
     return result
 
 
@@ -38,22 +41,9 @@ def main():
     data=original_questions(); data['test']=new_questions()
     train=read_json(ROOT/'train_records.json'); val=read_json(ROOT/'validation_records.json')
     old=read_json(Path(__file__).resolve().parent.parent/'docs'/'STATS_V0_5_TEACHER_DATA.json')
-    cards=read_json(ROOT/'lessons.json')
-    approval=read_json(ROOT/'audit_approved.json')
-    if not approval or approval['lessons_sha256']!=digest(cards): raise RuntimeError('Independent card audit is required')
-    assert len(train)==180 and val==old['validation']
-    by_family={c['family']:c for c in cards}
-    from stats_v0_3_common import parse_teacher
-    for c in cards:
-        raw=parse_teacher(read_json(ROOT/'api_cache'/(c['target_cache_tag']+'.json'))['text'])
-        review=parse_teacher(read_json(ROOT/'api_cache'/(c['review_cache_tag']+'.json'))['text'])
-        assert review.get('valid') is True
-        assert raw['lesson']==c['lesson'] and raw['contrast']==c['contrast']
-    for r,prior in zip(train,old['train']):
-        c=by_family[r['family']]
-        assert all(r[k]==prior[k] for k in ('id','question','choices','answer_letter','question_sha256'))
-        assert r['explanation']==c['lesson']+'\nWorked calculation: '+prior['explanation']
-        assert r['common_mistake']==c['contrast'] and r['teacher_model']==TEACHER
+    from prepare_stats_v0_6_pairs import assemble
+    assert train==assemble(old) and val==old['validation']
+    assert read_json(ROOT/'pairing_protocol.json')['train_sha256']==digest(train)
     assert read_json(ROOT/'test_questions.json')==data['test']
     (ROOT/'source').mkdir(exist_ok=True)
     protocol=dict(epochs=3,learning_rate=5e-5,seed=226,effective_batch=8,lora_r=16,lora_alpha=32,
