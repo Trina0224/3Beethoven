@@ -1,5 +1,5 @@
 """Short Llama solutions; independently checked numeric chains, durable costs."""
-import json,threading
+import json,threading,re
 from pathlib import Path
 from fractions import Fraction as F
 from concurrent.futures import ThreadPoolExecutor
@@ -33,6 +33,20 @@ def validate(obj,q):
 def target(obj):
     return 'Formula: '+obj['rule']+'\nCalculation: '+obj['calculation']+'\nAnswer: '+obj['answer']
 
+def validated_solution(raw,q):
+    obj=parse_teacher(raw)
+    try:return validate(obj,q)
+    except (ValueError,TypeError,SyntaxError,ZeroDivisionError,OverflowError):pass
+    # Keep the entire numerical suffix, never skip a false numeric equality.
+    # This extracts existing Llama arithmetic; it does not generate new math.
+    if not isinstance(obj.get('calculation'),str):return validate(obj,q)
+    parts=obj['calculation'].split('=')
+    start=next((i for i,s in enumerate(parts) if not re.search('[A-Za-z]',s)),len(parts))
+    suffix=' = '.join(s.strip() for s in parts[start:])
+    suffix=re.sub(r'(?<=\d)\s*\(', '*(',suffix)
+    suffix=re.sub(r'\)\s*(?=[\d(])', ')*',suffix)
+    return validate(dict(obj,calculation=suffix),q)
+
 def main():
     from kaggle_secrets import UserSecretsClient
     ROOT.mkdir(exist_ok=True);data=build()
@@ -54,9 +68,9 @@ def main():
                 instructions+=' Repair mode: reproduce the supplied verified numerical equation exactly as the calculation field. Do not expand it or add intermediate equalities. Use the supplied reference rule faithfully, and the exact reference answer. You must not replace any number.'
             tag=f'short_{q["id"]}_{attempt}'
             raw=client.call(tag,[dict(role='system',content=instructions),dict(role='user',content=user)],max_tokens=300,json_mode=True)
-            try:obj=validate(parse_teacher(raw),q)
+            try:obj=validated_solution(raw,q)
             except (ValueError,TypeError,SyntaxError,ZeroDivisionError,OverflowError) as exc:error=str(exc)[:160];continue
-            record=dict(q,teacher_model=TEACHER,question_sha256=digest(q),reference_conditioned=attempt>0,cache_tag=tag,teacher_solution=obj,target=target(obj))
+            record=dict(q,teacher_model=TEACHER,question_sha256=digest(q),reference_conditioned=attempt>0,cache_tag=tag,teacher_solution=obj,target=target(obj),numeric_suffix_normalized=obj!=parse_teacher(raw))
             save_json(path,record);return record
         raise RuntimeError('Numeric validation exhausted for '+q['id'])
     try:
