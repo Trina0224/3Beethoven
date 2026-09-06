@@ -83,3 +83,10 @@ reminders in this prompt/test condition, while losing other skills. Preserve tha
 complementarity; this experiment does not establish a successful consolidation or
 rule out other curricula, merge methods or routing. No test-time model selection,
 formula hints, new teacher generation, logits or RAG were introduced.
+
+
+## Motivation and expectation audit — 2026-09-06 PDT
+
+The user asked to preserve why each version was proposed, especially their recollection that reviewing v15–v17 led them to revisit logically related simple-to-complex teaching. Original pre-training v15/v16 protocols and the original v17/v18 protocols were retrieved from fixed Git commits. The earlier grounded formulation plan also explicitly mentioned stabilizing simpler layers before composition; subsequent decomposition and hint-fading curricula had not implemented v18's depth-gated schedule.
+
+[STATS_MOTIVATION_EXPECTATIONS.md](STATS_MOTIVATION_EXPECTATIONS.md) records the source audit, version motivations, expectations, implementation gap and an article paragraph. It explicitly distinguishes pre-experiment records from today's retrospective restatement. At writing, v18 training/validation was complete and primary tests were running. Do not treat the newly organized hypotheses as newly preregistered claims or infer an order advantage from curriculum improvement alone. Future versions must record motivation and expected/falsifying outcomes before execution, as added to PROJECT_SPEC.md.

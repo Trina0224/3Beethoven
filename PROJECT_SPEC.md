@@ -298,3 +298,10 @@ Initial target deliverables:
 The repo may be playful. The experiment must not be sloppy.
 
 **3Beethoven should be funny enough that people want to try it, and rigorous enough that an ML engineer can inspect the methodology without immediately finding an obvious hole.**
+
+
+## Motivation and expectations for future statistics versions
+
+Before generating data or starting a new version, record the triggering observation, why the change is proposed, the expected direction of change, what would weaken that expectation, the comparison/control, stopping and selection rules, and scope limitations. Commit that record before execution. Keep original expectations immutable; timestamp amendments and state what results were already visible. Append outcomes afterward rather than rewriting the original motivation.
+
+Researcher recollections and later narrative reconstruction must be labeled retrospective. The v15–v18 source audit, research narrative and reusable recording fields are in [STATS_MOTIVATION_EXPECTATIONS.md](docs/STATS_MOTIVATION_EXPECTATIONS.md).
