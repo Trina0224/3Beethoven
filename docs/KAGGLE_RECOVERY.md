@@ -14,6 +14,7 @@ Use individual cells. Do not use Run All on the historical notebook: earlier cel
 | 10 | 347602173 | v0.6 paired corpus, rejected abstract cards and teacher test |
 | 11 | 347605195 | v0.6 selected adapter, 1,296 responses, logs and verified ZIP |
 | 12 | 347608100 | Inference-only diagnostic, 576 responses and verified ZIP; no model weights |
+| 13 | 347615356 | v0.8 diagnostic and v0.9 audited preparation, caches and ZIPs; no v0.9 trained weights |
 
 The latest output is not a cumulative copy of all older output files. A notebook input added without a pinned version can resolve to the latest version after a restart.
 
@@ -124,3 +125,9 @@ Remove an existing same-notebook input before requesting `trinashih/3beethoven-v
 To reproduce inference, use `scripts/diagnose_stats_v0_7.py` with pinned version 9's v0.5 adapter after removing a conflicting same-notebook input. Version 12 has diagnostic data, not replacement weights. The script checkpoints answers and refuses protocol mismatches. Avoid Run All.
 
 The [diagnostic report](STATS_DIAGNOSTIC_V0_7_RESULTS.md) and [full JSON with explicit format review](STATS_DIAGNOSTIC_V0_7_RESULTS.json) are preserved in GitHub. Strict original scores remain unchanged; the report distinguishes formatting corrections from truncated calculations.
+
+## v0.8 diagnostic and v0.9 preparation
+
+Version 13 output was verified to contain `3beethoven_stats_diagnostic_v0_8.zip` and `3beethoven_stats_v0_9.zip`. v0.8 ZIP SHA-256: `e0662dd2179965909f1463fa74888b4443289ff647cb705ed813d4e6bc296107` (19,500 bytes). v0.9 preparation is not a completed model. Its approved corpus is also preserved in GitHub with original rule and numerical-solution provenance.
+
+Do not rerun the v0.9 generator after applying audited rules: it can restore the original pre-audit rule lines. Restore the preparation archive and audit files instead. The runner validates their exact hashes and teacher-cache provenance before training. To resume it, preserve its working directory and mount pinned version 9 separately for the v0.5 control adapter, using the same input-conflict precautions above.
