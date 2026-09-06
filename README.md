@@ -90,7 +90,7 @@ Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
 
 ## Status
 
-**Statistics pilot through v0.5 completed. v0.5 is the leading statistics research candidate; v0.3 remains preserved for comparison and recovery.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
+**Statistics pilot through v0.6 completed. v0.6 did not improve fresh-test accuracy; v0.5 remains the leading statistics research candidate; v0.3 remains preserved for comparison and recovery.** The classical-music specialist remains the overall project goal. The current statistics pilot tests the training/evaluation pipeline; it does not establish classical-music capability.
 
 | Checkpoint | Baseline | Trained v0.3 | Interpretation |
 |---|---:|---:|---|
@@ -138,3 +138,23 @@ The current v0.3 old-set result differs from historical 129/240 by one answer; t
 - [Kaggle recovery instructions](docs/KAGGLE_RECOVERY.md)
 
 Kaggle version 8 (347596444) preserves the pre-training corpus; version 9 (347598932) preserves the complete model and verified ZIP. This run used 572 teacher calls and $0.037577505 in response-reported costs. Across recorded experiments: 726 calls and $0.044774470, not an account balance or invoice. Model archives remain on Kaggle; code and text results are in GitHub.
+
+## Same questions, paired teaching — v0.6 completed
+
+v0.6 reused the audited v0.5 questions and paired related Llama explanations. Independently rejected abstract lesson cards were preserved but excluded from training. The frozen new test and success thresholds were unchanged.
+
+| Same-run comparison on the v0.6 test | Baseline | v0.5 | v0.6 |
+|---|---:|---:|---:|
+| New 48 questions × four rotations | 55/192 (28.65%) | 79/192 (41.15%) | 79/192 (41.15%) |
+| New questions all four correct | 0/48 | 10/48 | 9/48 |
+| Old 60 questions × four rotations | 86/240 (35.83%) | 133/240 (55.42%) | 140/240 (58.33%) |
+
+**No fresh-test gain; all three success thresholds were missed. v0.6 is not promoted.** These 48 questions differ from the v0.5 test above. The teacher scored 30/48 (62.50%) in original order; that is not a rotation average. Sequence count and optimizer schedule matched v0.5, but longer paired targets added tokens and repeated exposure, so this is not a compute-matched ablation.
+
+- [Complete v0.6 report](docs/STATS_V0_6_RESULTS.md)
+- [All 1,296 student responses, teacher answers and logs](docs/STATS_V0_6_RESULTS.json)
+- [Data audit and protocol deviation](docs/STATS_V0_6_DATA_AUDIT.md)
+- [Frozen protocol](docs/STATS_V0_6_PROTOCOL.md)
+- [Recovery instructions](docs/KAGGLE_RECOVERY.md)
+
+Kaggle version 10 (347602173) preserves preparation; version 11 (347605195) preserves the selected adapter and verified ZIP. This run added 113 teacher calls and $0.005929430 in response-reported costs. Cumulative recorded usage is 839 calls and $0.050703900, not an account balance or invoice. The GPU session was stopped after successful preservation.
