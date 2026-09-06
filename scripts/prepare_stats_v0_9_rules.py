@@ -18,9 +18,9 @@ def generate():
     from kaggle_secrets import UserSecretsClient
     client=Client(UserSecretsClient().get_secret('OPENROUTER_API_KEY'));rules={}
     for k,check in CHECKS.items():
-        tag='audited_rule_'+k
-        raw=client.call(tag,[dict(role='system',content='Return only JSON with one string field rule. Write one precise reusable mathematical rule, at most 220 characters. Include the requested formula and necessary variable meanings. Do not add examples or extra claims.'),dict(role='user',content=check)],max_tokens=200,json_mode=True)
-        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 15<=len(obj['rule'])<=240 and '\n' not in obj['rule']
+        tag='audited_rule_v2_'+k
+        raw=client.call(tag,[dict(role='system',content='Return only JSON with one string field rule. Write a complete English sentence of 60-220 characters, stating the mathematical relationship AND variable meanings. A bare formula or topic label is insufficient. Preserve all assumptions and distinguish exactly one from at least one. Use ASCII notation. No examples.'),dict(role='user',content=check)],max_tokens=200,json_mode=True)
+        obj=parse_teacher(raw);assert isinstance(obj.get('rule'),str) and 40<=len(obj['rule'])<=240 and '\n' not in obj['rule']
         rules[k]=dict(rule=obj['rule'],cache_tag=tag,reference_check=check)
     save_json(ROOT/'rules.json',rules);save_json(ROOT/'api_usage.json',client.stats())
     print('V09 RULES EXPORT',json.dumps(dict(rules=rules,usage=client.stats())),flush=True)
