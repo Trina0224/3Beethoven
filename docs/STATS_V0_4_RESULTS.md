@@ -80,4 +80,6 @@ The repair shifts answer behavior toward C (35/96 new responses and 86/240 old r
 - New benchmark SHA-256: `ff58995072c8f27322831c3f99d1ce474b2d76ff5ad8da765a68c731ae2cb547`.
 - Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`.
 
+The v0.4 archive is saved and verified in [Kaggle version 7](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=347590242&select=3beethoven_stats_v0_4.zip), with status Successful.
+
 The original v0.3 artifact remains in Kaggle version 5. Preserve v0.4 as a documented repair experiment; do not replace the preferred v0.3 checkpoint based on its small exposed-set gain. Further curriculum expansion should use newly validated Llama teacher responses and a separately frozen evaluation set.
