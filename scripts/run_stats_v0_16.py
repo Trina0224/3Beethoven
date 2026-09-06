@@ -8,6 +8,7 @@ import shutil
 from pathlib import Path
 from flight_run_stats_v0_3 import save_json as save,read_json as read,package,STUDENT
 from stats_curriculum_v0_16 import build,digest,prompt,score
+from review_teacher_v0_16 import teacher_score
 
 ROOT=Path('/kaggle/working/3beethoven_stats_v0_16')
 PREV=Path('/kaggle/working/3beethoven_stats_v0_15')
@@ -31,7 +32,7 @@ def examples(data,repo):
         for q in data[split]:
             r=rs[q['id']];assert r['question_sha256']==digest(q)
             for a in r['attempts']:
-                g=score(a['raw'],q)
+                g=teacher_score(a['raw'],q)
                 if g['correct']:
                     out[split].append(dict(q=q,target='Expression: '+g['normalized_expression'],teacher_raw=a['raw'],attempt=a['attempt']));break
     assert len(out['train'])>=180 and len(out['validation'])>=30
