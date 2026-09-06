@@ -29,8 +29,24 @@
       }
     },
     "v10": {
-      "status": "same-session evaluations running; no new trained weights yet",
-      "preparation_version": 15
+      "status": "second epoch running; epoch-1 checkpoint preserved",
+      "intermediate_saved_version": 16,
+      "script_version_id": 347632501,
+      "checkpoint_path": "3beethoven_stats_v0_10/checkpoints/checkpoint-65",
+      "saved_contents_verified_in_ui": [
+        "adapter_model.safetensors",
+        "adapter_config.json",
+        "optimizer.pt",
+        "rng_state.pth",
+        "scheduler.pt",
+        "scaler.pt",
+        "trainer_state.json",
+        "training_args.bin",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "chat_template.jinja"
+      ],
+      "final_selected_model": false
     }
   },
   "limitations": [
