@@ -37,4 +37,12 @@ included in training. No teacher formulas are supplied during student evaluation
 Pinned launch revision: `4288ab82109df631f92da3454f51ee5357d97ffe`.
 Kaggle T4 x2 environment; the established QLoRA runner uses GPU 0 only.
 Training, three-model evaluation, ZIP creation and tensor verification are chained
-in one cell. Results and final backup identifiers will be added after verification.
+in one cell. Verification completed; results follow below.
+
+## Completed result
+
+32 steps; selected checkpoint-32, validation loss 0.1135098785.
+Reviewed formulation: vanilla 8/64, v0.13 8/64, v0.14 33/64.
+Old retention: 86/240, 128/240, 123/240 respectively.
+Kaggle Version 28 Successful; full hashes and limitations are in
+[the current status](STATS_CURRENT_STATUS.md).
