@@ -46,7 +46,9 @@ def mix_adapters():
     from safetensors.torch import load_file,save_file
     c15=read(P15/'adapter/adapter_config.json');c16=read(P16/'adapter/adapter_config.json')
     for key in ('r','lora_alpha','target_modules','base_model_name_or_path','rank_pattern','alpha_pattern','use_rslora','use_dora','bias'):
-        assert c15.get(key)==c16.get(key),(key,c15.get(key),c16.get(key))
+        left,right=c15.get(key),c16.get(key)
+        if key=='target_modules':left,right=set(left),set(right)
+        assert left==right,(key,left,right)
     assert not c15.get('rank_pattern') and not c15.get('alpha_pattern') and not c15.get('use_rslora') and not c15.get('use_dora')
     assert c15.get('bias')=='none'
     a,b=load_file(str(P15/'adapter/adapter_model.safetensors')),load_file(str(P16/'adapter/adapter_model.safetensors'))
@@ -127,6 +129,7 @@ def main():
         candidates=['v15','mix_25','mix_50','mix_75','v16','train_8','train_16','train_32'],test_count=96,
         merge='Exact low-rank delta concatenation, double rank; no cross terms; no claim of unchanged memory',
         promotion='New-test improvement >= 6/96 over v15; at most 3 losses in six non-target families; old MC within 4/240. Report all endpoints separately.')
+    protocol=json.loads(json.dumps(protocol))
     prior=read(ROOT/'protocol.json');assert prior is None or prior==protocol
     save(ROOT/'protocol.json',protocol);save(ROOT/'frozen_questions.json',data)
     source=ROOT/'source';source.mkdir(exist_ok=True)
