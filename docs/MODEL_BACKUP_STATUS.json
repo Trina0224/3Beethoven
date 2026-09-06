@@ -1,0 +1,33 @@
+{
+  "status_as_of": "2026-09-05 America/Los_Angeles",
+  "github_weight_binary_committed": false,
+  "github_preserves": [
+    "teacher data",
+    "code",
+    "results",
+    "audit",
+    "recovery instructions"
+  ],
+  "models": {
+    "v09": {
+      "file": "adapter/adapter_model.safetensors",
+      "bytes": 97307544,
+      "sha256": "805a2170a805f6176aa3837857890b8c44fc8f854d16cbc3085ae220e5502c7c",
+      "saved_kaggle_versions": [
+        14,
+        15
+      ],
+      "restoration_verified": true,
+      "version15_path": "3beethoven_stats_v0_9/adapter/adapter_model.safetensors"
+    },
+    "v10": {
+      "status": "same-session evaluations running; no new trained weights yet",
+      "preparation_version": 15
+    }
+  },
+  "limitations": [
+    "Command-line git push lacks authenticated credentials.",
+    "Browser weight download attempts timed out.",
+    "A recovery manifest is not a binary weight backup."
+  ]
+}
