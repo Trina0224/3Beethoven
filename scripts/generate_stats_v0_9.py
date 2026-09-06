@@ -26,6 +26,7 @@ def validate(obj,q):
     if F(obj['answer'])!=F(q['answer']):raise ValueError('Answer mismatch')
     parts=obj['calculation'].split('=')
     if len(parts)<2 or len(parts)>5:raise ValueError('Need numerical equation with 2-5 equal parts')
+    if parts[0].strip()==obj['answer'].strip() or not any(op in parts[0] for op in ('+','-','*','/','^','×','÷')):raise ValueError('Show a substituted calculation, not just the answer twice')
     if not all(calculate(s)==F(q['answer']) for s in parts):raise ValueError('False numeric equation')
     return obj
 
