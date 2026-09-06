@@ -2,6 +2,8 @@
 
 ## Active statistics pilot addendum — 2026-09-06 PDT
 
+Latest completed run: v0.16, 150 steps with same-story contrasts and fading formula support. On the same new 96-question unaided test, reviewed v15/v16 scores are 34/29; with focused symbolic rules on 24 target-family questions they are 11/22. v16 is not promoted as a general replacement: retain v15 as the general candidate and preserve v16 for rule-assisted formulation. Low validation loss did not ensure broad transfer. See `docs/STATS_V0_16_REPORT.md`; prior v15 results below remain historical facts on their original test.
+
 The original classical-music specification below is retained as project history and application intent. The user-authorized active pilot now targets **correct mathematical formulation**: understand a word problem, identify the event and units, bind the correct numbers, and emit an executable expression. Final arithmetic is performed by a bounded exact calculator. Merely naming a formula or giving the right final number does not meet this objective.
 
 v0.15 training is complete: 200 training examples, 30 validation, 75 steps, selected checkpoint-75. On the same new 64-question test, vanilla/v0.14/v0.15 semantic counts are 8/30/44 (automatic 8/30/42). Poisson time and conditional wait improve, while second moments and affine Poisson variance remain 0/8. Teacher moment targets were verified, but student transfer remains unsolved. The run combines decomposition, more weak-family practice, focused symbolic teacher reminders and replay; it does not isolate any one factor. Preserve all failed teacher attempts and separate initial from supplemented acceptance. Reserve test questions from teacher generation and checkpoint selection. Weights are saved in Kaggle Version 29.
