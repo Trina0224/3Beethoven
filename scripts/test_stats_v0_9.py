@@ -1,6 +1,6 @@
 import unittest,itertools
 from fractions import Fraction as F
-from stats_curriculum_v0_9 import build,calculate
+from stats_curriculum_v0_9 import build,calculate,numeric_score
 from generate_stats_v0_9 import validate,validated_solution
 
 class ShortCalculationChecks(unittest.TestCase):
@@ -34,5 +34,10 @@ class ShortCalculationChecks(unittest.TestCase):
         self.assertEqual(validated_solution(json.dumps(good),q)['calculation'],'4*(2+4^2)+8*4+4 = 72+32+4 = 108')
         bad=dict(good,calculation='2**2*2+(2*4+2)**2 = 44 = 108')
         with self.assertRaises(ValueError):validated_solution(json.dumps(bad),q)
+
+    def test_small_probability_scoring(self):
+        self.assertTrue(numeric_score('Answer: 57/32000000','57/32000000')[1])
+        self.assertFalse(numeric_score('Answer: 0','57/32000000')[1])
+        self.assertFalse(numeric_score('Answer: 0.000001','57/32000000')[1])
 
 if __name__=='__main__':unittest.main()
