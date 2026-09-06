@@ -63,13 +63,18 @@ def main():
                     +'\nReference: '+item['reference_reason']+' Correct choice: '+item['answer_letter']
                     +'\nIndependent content audit feedback: '+feedback
                     +'\nRevise the explanation and common mistake. Check every arithmetic equality.')
-                raw=client.call(tag,[
+                cached_recovery = ident == 'train_expectation_2_03'
+                if cached_recovery:
+                    # This earlier paid response contains correct prose and an
+                    # explicit corrected label; preserve and review it verbatim.
+                    tag='generate_train_expectation_2_03_2'
+                raw=read_json(ROOT/'api_cache'/(tag+'.json'))['text'] if cached_recovery else client.call(tag,[
                     dict(role='system',content='Return only JSON string fields answer_letter, explanation, common_mistake. Explain the correct calculation in 2 concise sentences (at least 40 characters). Name a genuinely wrong misconception (at least 15 characters). Never label a valid identity as incorrect.'),
                     dict(role='user',content=user)],json_mode=True)
                 try: target=parse_output(raw)
                 except (ValueError,TypeError): continue
                 if not valid_target(target,item): continue
-                review_tag=f'review_content_{ident}_{attempt}'
+                review_tag=f'review_content_{ident}_{attempt}' if not cached_recovery else 'review_content_recovered_expectation_2_03'
                 review_raw=client.call(review_tag,[
                     dict(role='system',content='Check every calculation and misconception. Return only JSON valid (boolean), answer_letter, reason (one sentence under 160 characters). A correct letter is insufficient. Reject false identities and valid methods mislabeled as wrong.'),
                     dict(role='user',content=user+'\nCandidate: '+json.dumps(target))],max_tokens=250,json_mode=True)
