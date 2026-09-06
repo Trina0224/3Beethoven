@@ -62,7 +62,11 @@ def main():
     result=dict(summary=summary,histories=histories,outputs=outputs,pending_semantic_review=pending,environment=environment,
                 verification=dict(responses=sum(len(v) for v in outputs.values()),matched_training_exposures=len(exposure),weights=weights,stage_checkpoints=checkpoints,
                                   truncated=sum(r['hit_token_limit'] for rows in outputs.values() for r in rows)))
-    save(ROOT/'verified_results.json',result);package(ROOT)
+    save(ROOT/'verified_results.json',result)
+    if (ROOT/'review_credits.json').exists():
+        from review_stats_v0_18 import main as review_main
+        review_main()
+    package(ROOT)
     manifest=read(ROOT/'manifest.json')
     for r in manifest:
         p=ROOT/r['path'];assert p.stat().st_size==r['bytes'] and sha(p)==r['sha256']
@@ -75,4 +79,7 @@ def main():
     save(ROOT.parent/'v18_backup_receipt.json',receipt)
     print('V18 VERIFIED',dict(**result['verification'],pending_review=len(pending),archive=receipt),flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    from transfer_stats_v0_18 import main as transfer_main
+    transfer_main()
+    main()

@@ -39,6 +39,14 @@ def main():
               f"Verified {result['verification']['responses']} generated responses, {len(result['verification']['stage_checkpoints'])} full curriculum epoch checkpoints, and {len(result['verification']['weights'])} boundary adapters. Truncated responses: {result['verification']['truncated']}. Initially pending response-level reviews across validation and test: {len(result['pending_semantic_review'])}; explicit semantic credits: {len(review['credits']) if review else 0}.",'',
               'Two baseline depth-2 validation responses correctly factor the Poisson second moment as mean*(mean+1). The supplemental baseline depth-2 count is 14/16, versus frozen automatic 12/16. This correction does not alter any stage transition.','',
               'Full optimizer/RNG checkpoints are preserved in Kaggle output. The compact ZIP contains stage/control boundary adapters, data, source, histories and results; it excludes full optimizer checkpoints. Final archive hash and saved Kaggle version are recorded in MODEL_BACKUP_STATUS.json. A fresh-session restoration of new v18 weights is not claimed.','']
+    transfer=read(ROOT/'transfer_results.json')
+    if transfer:
+        lines+=['## Historical eight-family transfer diagnostic','',transfer['protocol'],'',
+                '| Candidate | Automatic /96 | Pending | Affine second moment /12 | Scaled Poisson variance /12 |',
+                '|---|---:|---:|---:|---:|']
+        for name,m in transfer['metrics'].items():
+            lines.append(f"| {name} | {m['correct']} | {m['pending']} | {m['by_category']['moment']} | {m['by_category']['poisson_scaled']} |")
+        lines+=['','These are the same historical questions and prompt as v17. The 96 v15 responses were revalidated and reused; 192 responses from final curriculum/control were newly generated. They are additional to the primary experiment response count above. This diagnostic does not affect model selection. Raw per-family results are in STATS_V0_18_TRANSFER_RESULTS.json. Old MC retention is not remeasured.','']
     (ROOT/'report.md').write_text('\n'.join(lines))
     print('V18 REPORT WRITTEN',flush=True)
 
