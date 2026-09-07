@@ -10,8 +10,10 @@ ROOT = Path('/kaggle/working/3beethoven_first_batch_teacher')
 PRIOR_CALLS, PRIOR_COST = 110, 0.00806302
 def call(root,key,tag,msgs):
     request = {'model':MODEL,'messages':msgs,'temperature':0,'max_tokens':400,
-               'response_format':{'type':'json_object'},'provider':{'only':['deepinfra'],'allow_fallbacks':False,
+               'provider':{'only':['deepinfra'],'allow_fallbacks':False,
                'require_parameters':True,'enforce_distillable_text':True,'max_price':{'prompt':1,'completion':2,'request':0}}}
+    if 'No JSON.' not in msgs[0]['content']:
+        request['response_format']={'type':'json_object'}
     signature = digest(request)
     cache,ledger = root/'api_cache'/(tag+'.json'),root/'api_ledger.jsonl'
     prior = read_json(cache)
@@ -70,11 +72,12 @@ def messages(request, pending, retry=False):
     if retry:
         system += ' Previous output was rejected. Recheck units, requested quantity, and every expression; supply all requested IDs.'
     if request['archetype']=='interval':
-        system = ('Return only compact JSON with answers array; each item has question_id and expression strings. '
+        system = ('Return exactly one line: Expression: <fully substituted arithmetic expression>. No JSON. '
                   'For old endpoints L,U and sample-size multiplier k, use this general formula for the NEW UPPER endpoint: '
                   '(L+U)/2 + (U-L)/(2*sqrt(k)). The center is (L+U)/2, not L or U. '
                   'Substitute the given numbers, keeping arithmetic unevaluated. Use **0.5 for sqrt. '
                   'No variables, no explanation, no echoed question. This is the upper endpoint, not the new interval width.')
+        return [{'role':'system','content':system},{'role':'user','content':request['questions'][0]['question']}]
     elif request['archetype']=='poisson_process':
         system += (' For rate r per minute and duration t seconds, mean m=r*(t/60). '
                    'Count variance=m, count second moment=m+m**2. Substitute the FULL numerical m in both places; '
@@ -88,7 +91,11 @@ def ingest(record, raw, qlookup, attempt, finish='stop'):
     try:
         if finish != 'stop':
             raise ValueError('Truncated or non-stop output')
-        items, repair = parse(raw, set(qlookup))
+        if len(qlookup)==1 and re.fullmatch(r'Expression:\s*[^\n]+',raw.strip()):
+            items=[{'question_id':next(iter(qlookup)), 'expression':raw.strip().split(':',1)[1].strip()}]
+            repair='single_question_expression_line_transport'
+        else:
+            items, repair = parse(raw, set(qlookup))
         a['transport_repair'] = repair
         for item in items:
             qid, expression = item['question_id'], item['expression'].strip()
@@ -145,7 +152,7 @@ def main():
                 if record['request_sha256'] != digest(r):
                     raise RuntimeError('Request drift')
                 new_attempts = sum(isinstance(a['attempt'],int) for a in record['attempts'])
-                for attempt in range(new_attempts,3):
+                for attempt in range(new_attempts,4 if r['archetype']=='interval' else 3):
                     pending = set(qs)-set(record['accepted'])
                     if not pending:
                         break

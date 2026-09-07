@@ -78,9 +78,8 @@ def build_verified(stories):
 
 
 def acceptance_report(stories, scope):
-    selected = [s for s in stories if scope == "full" or any(
-        r["story_id"] == s["story_id"] and r["pilot_batch"] for r in build()[1]
-    )]
+    pilot_ids = {r['story_id'] for r in build()[1] if r['pilot_batch']} if scope != 'full' else set()
+    selected = [s for s in stories if scope == "full" or s['story_id'] in pilot_ids]
     planned_archetype = {}
     accepted_archetype = {}
     planned_category = {}
