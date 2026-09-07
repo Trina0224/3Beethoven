@@ -13,6 +13,9 @@ def main():
  from stats_v0_3_common import parse_answer
  source=INPUT/'3beethoven_seed_replication';ROOT.mkdir(exist_ok=True)
  all_results=json.loads((source/'all_results.json').read_text())
+ receipt=INPUT/'seed_replication_backup_receipt.json'
+ assert receipt.is_file(), 'Training backup receipt is required'
+ shutil.copy2(receipt,ROOT/receipt.name)
  anchor=json.loads((INPUT/'seed_repo/docs/STATS_PERMANENT_ANCHOR_V1.json').read_text())
  expected={(r['id'],r['shift']):r['expected'] for r in anchor['mc']['rotations']}
  token=UserSecretsClient().get_secret('HF_TOKEN');summary={}

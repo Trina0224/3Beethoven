@@ -14,6 +14,7 @@ def main():
  frozen=build();results=[];pending=[];count=0
  def reviewed(run,file,r):
   key=(run,file,r['id']);judgment=credits.get(key)
+  if judgment:assert judgment['raw_sha256']==hashlib.sha256(r['raw'].encode()).hexdigest()
   if r.get('review_required') and not judgment:pending.append(dict(run=run,file=file,**r))
   return bool(r['correct'] or (judgment and judgment['credit']))
  for family in ('v15','v19'):
@@ -39,6 +40,8 @@ def main():
    results.append(out)
  def stats(xs):return dict(values=xs,mean=statistics.mean(xs),sample_sd=statistics.stdev(xs),min=min(xs),max=max(xs))
  aggregates={family:{'scores':{k:stats([r['reviewed'][k] for r in results if r['family']==family]) for k in results[0]['reviewed']},'variants':{k:stats([r['by_variant'][k] for r in results if r['family']==family]) for k in results[0]['by_variant']}} for family in ('v15','v19')}
+ for family in aggregates:
+  aggregates[family]['by_family']={split:{category:stats([r['by_family'][split][category] for r in results if r['family']==family]) for category in results[0]['by_family'][split]} for split in results[0]['by_family']}
  summary=dict(runs=results,aggregates=aggregates,verified_anchor_responses=count,pending=pending,review_count=len(reviews),scope='Three retrainings conditional on each fixed parent; no between-parent replication; exposed benchmarks; SD across runs, not item sampling SE.')
  (REPO/'docs/STATS_SEED_REPLICATION_SUMMARY.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
  (REPO/'docs/STATS_SEED_REPLICATION_RESULTS.json.gz.b64').write_text(base64.b64encode(gzip.compress(json.dumps(data).encode())).decode()+'\n')
