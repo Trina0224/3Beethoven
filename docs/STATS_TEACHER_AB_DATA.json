@@ -1,0 +1,550 @@
+{
+  "seed": 210907,
+  "role": "development_only",
+  "questions": [
+    {
+      "id": "teacher_ab_poisson_process_00",
+      "story_id": "consolidation_development_poisson_process_000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 68 per minute. During a 347-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "68",
+        "duration_minutes": "347/60"
+      },
+      "expression": "68*(347/60)",
+      "answer": "5899/15",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "68",
+        "duration": "347/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_01",
+      "story_id": "consolidation_development_poisson_process_1000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 28 per minute. During a 695-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "28",
+        "duration_minutes": "695/60"
+      },
+      "expression": "28*(695/60)",
+      "answer": "973/3",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "28",
+        "duration": "695/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_02",
+      "story_id": "consolidation_development_poisson_process_2000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 18 per minute. During a 231-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "18",
+        "duration_minutes": "231/60"
+      },
+      "expression": "18*(231/60)",
+      "answer": "693/10",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "18",
+        "duration": "231/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_03",
+      "story_id": "consolidation_development_poisson_process_3000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 16 per minute. During a 408-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "16",
+        "duration_minutes": "408/60"
+      },
+      "expression": "16*(408/60)",
+      "answer": "544/5",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "16",
+        "duration": "408/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_04",
+      "story_id": "consolidation_development_poisson_process_4000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 45 per minute. During a 351-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "45",
+        "duration_minutes": "351/60"
+      },
+      "expression": "45*(351/60)",
+      "answer": "1053/4",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "45",
+        "duration": "351/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_05",
+      "story_id": "consolidation_development_poisson_process_5000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 47 per minute. During a 443-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "47",
+        "duration_minutes": "443/60"
+      },
+      "expression": "47*(443/60)",
+      "answer": "20821/60",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "47",
+        "duration": "443/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_06",
+      "story_id": "consolidation_development_poisson_process_6000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 54 per minute. During a 320-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "54",
+        "duration_minutes": "320/60"
+      },
+      "expression": "54*(320/60)",
+      "answer": "288",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "54",
+        "duration": "320/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_poisson_process_07",
+      "story_id": "consolidation_development_poisson_process_7000",
+      "category": "poisson_time",
+      "question": "Arrivals at a service counter form a homogeneous Poisson process at 42 per minute. During a 677-second observation, what is the variance of the arrival count?",
+      "bindings": {
+        "rate_per_minute": "42",
+        "duration_minutes": "677/60"
+      },
+      "expression": "42*(677/60)",
+      "answer": "4739/10",
+      "conceptual_rules": [
+        "convert seconds to minutes",
+        "Poisson variance equals its mean"
+      ],
+      "confused_with": "rate times seconds without conversion",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "process",
+        "target": "variance",
+        "rate": "42",
+        "duration": "677/60"
+      },
+      "development_family": "poisson_process"
+    },
+    {
+      "id": "teacher_ab_interval_00",
+      "story_id": "consolidation_development_interval_000",
+      "category": "interval",
+      "question": "A normal-theory interval is [25, 177]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "25",
+        "upper": "177",
+        "width_divisor": "3"
+      },
+      "expression": "(25+177)/2+(177-25)/(2*3)",
+      "answer": "379/3",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_01",
+      "story_id": "consolidation_development_interval_1000",
+      "category": "interval",
+      "question": "A normal-theory interval is [57, 175]. Sample size is multiplied by 16; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "57",
+        "upper": "175",
+        "width_divisor": "4"
+      },
+      "expression": "(57+175)/2+(175-57)/(2*4)",
+      "answer": "523/4",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_02",
+      "story_id": "consolidation_development_interval_2000",
+      "category": "interval",
+      "question": "A normal-theory interval is [61, 194]. Sample size is multiplied by 25; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "61",
+        "upper": "194",
+        "width_divisor": "5"
+      },
+      "expression": "(61+194)/2+(194-61)/(2*5)",
+      "answer": "704/5",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_03",
+      "story_id": "consolidation_development_interval_3000",
+      "category": "interval",
+      "question": "A normal-theory interval is [124, 302]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "124",
+        "upper": "302",
+        "width_divisor": "3"
+      },
+      "expression": "(124+302)/2+(302-124)/(2*3)",
+      "answer": "728/3",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_04",
+      "story_id": "consolidation_development_interval_4000",
+      "category": "interval",
+      "question": "A normal-theory interval is [34, 223]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "34",
+        "upper": "223",
+        "width_divisor": "2"
+      },
+      "expression": "(34+223)/2+(223-34)/(2*2)",
+      "answer": "703/4",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_05",
+      "story_id": "consolidation_development_interval_5000",
+      "category": "interval",
+      "question": "A normal-theory interval is [86, 210]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "86",
+        "upper": "210",
+        "width_divisor": "2"
+      },
+      "expression": "(86+210)/2+(210-86)/(2*2)",
+      "answer": "179",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_06",
+      "story_id": "consolidation_development_interval_6000",
+      "category": "interval",
+      "question": "A normal-theory interval is [126, 223]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "126",
+        "upper": "223",
+        "width_divisor": "7"
+      },
+      "expression": "(126+223)/2+(223-126)/(2*7)",
+      "answer": "1270/7",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_interval_07",
+      "story_id": "consolidation_development_interval_7000",
+      "category": "interval",
+      "question": "A normal-theory interval is [21, 188]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
+      "bindings": {
+        "lower": "21",
+        "upper": "188",
+        "width_divisor": "2"
+      },
+      "expression": "(21+188)/2+(188-21)/(2*2)",
+      "answer": "585/4",
+      "conceptual_rules": [
+        "preserve center",
+        "standard error shrinks by square-root sample-size factor"
+      ],
+      "confused_with": "dividing the endpoint",
+      "provenance": "development_only; not training or final evaluation",
+      "development_family": "interval"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_00",
+      "story_id": "consolidation_development_affine_poisson_000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 54, and Y=2*X+11. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "2**2*54+(2*54+11)**2",
+      "answer": "14377",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "54",
+        "scale": "2",
+        "offset": "11"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_01",
+      "story_id": "consolidation_development_affine_poisson_1000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 78, and Y=4*X+26. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "4**2*78+(4*78+26)**2",
+      "answer": "115492",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "78",
+        "scale": "4",
+        "offset": "26"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_02",
+      "story_id": "consolidation_development_affine_poisson_2000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 55, and Y=7*X+6. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "7**2*55+(7*55+6)**2",
+      "answer": "155576",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "55",
+        "scale": "7",
+        "offset": "6"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_03",
+      "story_id": "consolidation_development_affine_poisson_3000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 59, and Y=6*X+23. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "6**2*59+(6*59+23)**2",
+      "answer": "144253",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "59",
+        "scale": "6",
+        "offset": "23"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_04",
+      "story_id": "consolidation_development_affine_poisson_4000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 37, and Y=2*X+15. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "2**2*37+(2*37+15)**2",
+      "answer": "8069",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "37",
+        "scale": "2",
+        "offset": "15"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_05",
+      "story_id": "consolidation_development_affine_poisson_5000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 26, and Y=3*X+28. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "3**2*26+(3*26+28)**2",
+      "answer": "11470",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "26",
+        "scale": "3",
+        "offset": "28"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_06",
+      "story_id": "consolidation_development_affine_poisson_6000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 90, and Y=5*X+24. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "5**2*90+(5*90+24)**2",
+      "answer": "226926",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "90",
+        "scale": "5",
+        "offset": "24"
+      },
+      "development_family": "affine_poisson"
+    },
+    {
+      "id": "teacher_ab_affine_poisson_07",
+      "story_id": "consolidation_development_affine_poisson_7000",
+      "category": "poisson_scaled_moment",
+      "question": "X is Poisson with mean 73, and Y=3*X+26. Set up E[Y**2].",
+      "bindings": {},
+      "expression": "3**2*73+(3*73+26)**2",
+      "answer": "60682",
+      "conceptual_rules": [
+        "variance of affine transform",
+        "second moment is variance plus squared mean"
+      ],
+      "confused_with": "squared mean without variance",
+      "provenance": "development_only; not training or final evaluation",
+      "semantics": {
+        "kind": "poisson",
+        "target": "second_moment",
+        "mean": "73",
+        "scale": "3",
+        "offset": "26"
+      },
+      "development_family": "affine_poisson"
+    }
+  ]
+}
