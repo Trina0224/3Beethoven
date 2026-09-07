@@ -8,6 +8,7 @@ evaluator, after all four selected checkpoints exist.
 import argparse
 import gc
 import hashlib
+import importlib.metadata
 import json
 import math
 import os
@@ -23,6 +24,7 @@ from stats_consolidation_pilot import build as build_candidate, digest, assert_e
 from stats_consolidation_grader import score, grader_fingerprint
 from stats_curriculum_v0_13 import KINDS
 from stats_training_accounting import invocation_loss
+from stats_baseline_contract import NUMERICAL_PREPARATION, baseline_manifest, validate_baseline_manifest
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_ROOT = Path("/kaggle/working/3beethoven_stats_consolidation")
@@ -237,6 +239,7 @@ def main():
         "token_accounting": token_counts,
         "teacher_scope": required_scope,
         "promotion_eligible": not args.pilot_student,
+        "numerical_preparation": NUMERICAL_PREPARATION,
     }
     save_immutable_contract(output / "contract.json", contract)
     save(output / "training_order.json", train_rows)
@@ -266,15 +269,23 @@ def main():
     validation_steps = sorted({step for step in (12, 24, actual_max) if step <= actual_max})
 
     baseline_path = args.output_root / "v15_selection_baseline.json"
+    baseline_manifest_path = args.output_root / "v15_selection_baseline_contract.json"
+    baseline_context = {key: contract[key] for key in (
+        'v15_baseline_adapter_sha256', 'base_revision', 'selection_matrix_sha256', 'grader_fingerprint')}
+    baseline_context['environment'] = {name: importlib.metadata.version(name) for name in
+        ('torch', 'transformers', 'peft', 'bitsandbytes', 'accelerate', 'datasets')}
     baseline_rows = args.output_root / "v15_selection_rows"
     baseline = read(baseline_path)
+    if baseline is not None:
+        validate_baseline_manifest(baseline, read(baseline_manifest_path), baseline_context)
     if baseline is None:
         del model; gc.collect(); torch.cuda.empty_cache()
         base_model = AutoModelForCausalLM.from_pretrained(
             STUDENT, revision=BASE_REVISION, token=token, device_map={"": 0}, torch_dtype=torch.float16,
             quantization_config=BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4",
                                                    bnb_4bit_compute_dtype=torch.float16, bnb_4bit_use_double_quant=True))
-        base_model = PeftModel.from_pretrained(base_model, v15)
+        base_model = prepare_model_for_kbit_training(base_model, gradient_checkpointing_kwargs={"use_reentrant": False})
+        base_model = PeftModel.from_pretrained(base_model, v15, is_trainable=True)
         baseline = {}
         for name, questions in suites.items():
             evaluate(base_model, tokenizer, questions, baseline_rows / (name + ".json"))
@@ -282,6 +293,7 @@ def main():
         if sum(item["pending"] for item in baseline.values()):
             raise RuntimeError("v15 selection baseline has unresolved semantic scoring")
         save(baseline_path, baseline)
+        save(baseline_manifest_path, baseline_manifest(baseline, baseline_context))
         del base_model; gc.collect(); torch.cuda.empty_cache()
         # Re-enter once so model construction and immutable contract recovery use one path.
         raise RuntimeError("v15 baseline completed; restart this command to begin training")
