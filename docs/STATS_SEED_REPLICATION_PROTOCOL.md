@@ -15,3 +15,5 @@
 
 
 執行修正：Version 39 在訓練前因來源仍掛載 Version 38 而停止，沒有更新。來源盤點確認 Version 29 同時包含原 v14、v15 adapter 及 v15 的 train/validation examples。改直接掛載 Version 29，以提交的程式與凍結題目補上後續版本來源；不變更訓練設定。
+
+正式輸入補充：Version 40 也在訓練前停止；確認動態掛載只改了互動 session，正式輸入仍指向舊版本。改將 Version 29 的兩個父模型與 v15 教材、已提交後續程式／凍結題目保存為完整準備輸出，再由短入口 `kaggle_seed_replication_formal.py` 執行。這是保存／掛載修正，不是新增模型版本或結果導向調參。
