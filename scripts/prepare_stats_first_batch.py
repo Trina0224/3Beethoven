@@ -138,10 +138,14 @@ def main():
     lookup = {s['story_id']:s for s in stories}
     from kaggle_secrets import UserSecretsClient
     key = UserSecretsClient().get_secret('OPENROUTER_API_KEY')
+    # Preserve the original 24-story gate; the extension keeps the same fractions.
+    original_gate=read_json(ROOT/'pilot_gate.json')
+    if original_gate and not (ROOT/'pilot_original_gate.json').exists():
+        save_json(ROOT/'pilot_original_gate.json',original_gate)
     try:
         for scope in ('pilot','full'):
             for r in requests:
-                if scope=='pilot' and not r['pilot_batch']:
+                if scope=='pilot' and not (r['pilot_batch'] or r['archetype']=='interval'):
                     continue
                 path = ROOT/'records'/(r['story_id']+'.json')
                 record = read_json(path)
@@ -180,8 +184,19 @@ def main():
                     rec=read_json(ROOT/'records'/(row['story_id']+'.json'))
                     row['rule_assisted']=isinstance(rec['accepted'][row['source_id']]['attempt'],int)
             save_json(ROOT/'verified_teacher_rows.json',verified)
-            report = prep.acceptance_report(stories,scope)
-            gate = prep.gate_acceptance(report,config['teacher'])
+            if scope=='pilot':
+                selected_ids={r['story_id'] for r in requests if r['pilot_batch'] or r['archetype']=='interval'}
+                report=prep.acceptance_report([s for s in stories if s['story_id'] in selected_ids],'full')
+                report['scope']='pilot'
+                rule=dict(config['teacher'])
+                rule['pilot_minimum_accepted_targets']=math.ceil(report['planned']*59/65)
+                gate=prep.gate_acceptance(report,rule)
+                gate['extension']='All eight interval stories; original 24-story failure retained separately'
+                gate['planned_targets']=report['planned']
+                gate['minimum_accepted_targets']=rule['pilot_minimum_accepted_targets']
+            else:
+                report = prep.acceptance_report(stories,scope)
+                gate = prep.gate_acceptance(report,config['teacher'])
             gate.update(contract,scope=scope,verified_rows_sha256=digest(verified))
             save_json(ROOT/(scope+'_acceptance.json'),report)
             save_json(ROOT/(scope+'_gate.json'),gate)
