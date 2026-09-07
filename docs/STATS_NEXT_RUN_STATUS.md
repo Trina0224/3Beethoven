@@ -1,3 +1,13 @@
+<!-- FIRST_STUDENT_AUDIT_LIVE_BEGIN -->
+最新：2026-09-07 PDT，第一批離線異常診斷完成，詳見 [STATS_FIRST_STUDENT_AUDIT.md](STATS_FIRST_STUDENT_AUDIT.md) 與 JSON 證據。
+
+- 兩個 seed 的 259 筆答案監督、資料順序 hash、parent hash、最後權重 hash 與全部驗證歷程已核對；replay 占 supervised tokens 76.9%，無漏遮罩或答案截斷。
+- 31415 step24→33 是 14 道舊題由對變錯、1 道變對；退步集中區間 6、等待 5、Poisson 時間 3，都是原始列式錯誤。最後一段仍規劃了 11 筆正確區間 replay。
+- 已修正未來 runner/collector 的續跑 loss 回報分母，保留 raw 與新增步數；不改訓練或選點。原最後 loss 0.03034／0.02627 對應本段平均約 0.11125／0.09632。3 項測試通過；歷史結果未覆寫。
+- 尚未證明退步的根因；沒有做續跑與不中斷數值控制，不能宣稱已排除所有管線問題。
+- 下一段先做固定權重重載重現＋保存 replay 題對照；方案在診斷報告，尚未開跑。本段沒有新增教師／GPU／訓練，維持原 v15。
+<!-- FIRST_STUDENT_AUDIT_LIVE_END -->
+
 <!-- FIRST_STUDENT_LIVE_BEGIN -->
 第一批已完成（2026-09-07）：filtered-pilot 診斷批次，67 筆新教材＋192 筆 replay。兩個 seed 均完成 33 updates、epoch 1.0；所有待判定項已複核，沒有全門檻過關點，不升級取代原 v15。
 
