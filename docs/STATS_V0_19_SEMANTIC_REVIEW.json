@@ -1,0 +1,244 @@
+{
+  "decisions": [
+    {
+      "file": "v15_old_validation.json",
+      "id": "v17_validation_interval_003",
+      "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+      "raw_sha256": "3de5af421b40ec150b4660193c2750620f1e74c2dd8bd593c83469048a59947f",
+      "reference": "(55+129)/2+(129-55)/(2*2)",
+      "credit": true,
+      "reason": "2*2=4，分母已計算但區間中點與半寬縮放正確。"
+    },
+    {
+      "file": "v15_old_test.json",
+      "id": "v19_old_test_binomial_006",
+      "raw": "Expression: comb(9, 5) * (6 / 10) ** 5 * (4 / 10) ** (9 - 5)",
+      "raw_sha256": "270e47e2b91f03c254824b891077bc4b7ba53fe1727dc997d6edbe6d56f060b4",
+      "reference": "comb(9,5)*(60/100)**5*(1-60/100)**(9-5)",
+      "credit": true,
+      "reason": "60/100=6/10，1-60/100=4/10，二項組合數及次方皆正確。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_poisson_time_000",
+      "raw": "Expression: 33 / 60 ** 160",
+      "raw_sha256": "3acf3e003c3dc3f0c6ab11002faacc603331e56453c8a4ee383dcd504426df25",
+      "reference": "33*(160/60)",
+      "credit": false,
+      "reason": "將秒數錯當指數，並非速率乘時間。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_poisson_time_001",
+      "raw": "Expression: 43 / 60 ** 246",
+      "raw_sha256": "6de68db65c0310c40a74beb60852d4ec92cf0e40f69f3cfb9f2bbe109654298c",
+      "reference": "43*(246/60)",
+      "credit": false,
+      "reason": "將秒數錯當指數，並非速率乘時間。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_poisson_time_011",
+      "raw": "Expression: 40 / 60 ** 62",
+      "raw_sha256": "f4e49c7b3694eab6595724abcc0ca19851b125cefdb16bf20cf623f7147dc5e7",
+      "reference": "40*(62/60)",
+      "credit": false,
+      "reason": "將秒數錯當指數，並非速率乘時間。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_000",
+      "raw": "Expression: (7*X+20)**2",
+      "raw_sha256": "cc9fb7f3a6c7a114dc97ce652d82dce6dc4b97e5ea367fc3ed8e422969596ba5",
+      "reference": "7**2*285+(7*57+20)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_001",
+      "raw": "Expression: (6 * X + 21) ** 2",
+      "raw_sha256": "88bb10e7665707a0cfaea5247abc7531acdb101b728b259d43b3cbc93af4c50a",
+      "reference": "6**2*334+(6*42+21)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_002",
+      "raw": "Expression: (6 * X + 16) ** 2",
+      "raw_sha256": "5ed6e8716e9254620e332bb7922443d5ef54ee1780f4b7ac9138de2947c06429",
+      "reference": "6**2*201+(6*27+16)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_003",
+      "raw": "Expression: (7*X+15)**2",
+      "raw_sha256": "898b175ce7cef5301c9fb9861f013b10b9e41035664a201c16b629ef2182107e",
+      "reference": "7**2*226+(7*29+15)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_004",
+      "raw": "Expression: (2 * X + 11) ** 2",
+      "raw_sha256": "5a2c9714ee21691849609c87961eab7c86ccb2aa7b6a80e8566eafefd5b36259",
+      "reference": "2**2*476+(2*39+11)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_005",
+      "raw": "Expression: (6 * X + 23) ** 2",
+      "raw_sha256": "e3e7316ab49508d47e83ace882f494d4e30993b6baffd5c5b5d9bf3051856dea",
+      "reference": "6**2*129+(6*37+23)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_008",
+      "raw": "Expression: (3*X+9)**2",
+      "raw_sha256": "d59c4bca489ae0d07a581bfc1d78b27e2d99c48bd6b1bf621865c30a20cc07e1",
+      "reference": "3**2*63+(3*48+9)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_010",
+      "raw": "Expression: (7*X+9)**2",
+      "raw_sha256": "f46d1d4a26082352e8f9310db42f011c15f4ca3e506f1002b4815010b4e0294f",
+      "reference": "7**2*518+(7*12+9)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1_old_test.json",
+      "id": "v19_old_test_moment_011",
+      "raw": "Expression: (6 * X + 8) ** 2",
+      "raw_sha256": "36b62409e1bbc91595f412072a87568052dcc0d79d1503a0dceaa615fe657fcb",
+      "reference": "6**2*246+(6*20+8)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_poisson_scaled_004",
+      "raw": "Expression: 5 * X + 17",
+      "raw_sha256": "ded90d66d688462bfc17f640a67f325b8038216bde962eedd3b1ec690fe59028",
+      "reference": "5**2*24",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_moment_001",
+      "raw": "Expression: (3*X+11)**2",
+      "raw_sha256": "0d742be1ee79927086d61cf8260b1871759bac5c52b9e3b20847b7d4505df163",
+      "reference": "3**2*191+(3*25+11)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_moment_002",
+      "raw": "Expression: (2 * X + 17) ** 2",
+      "raw_sha256": "0c92a6b6a458a2fa5f81bb1f488782ff1f98ac22515bd96ce7494a62e26029ba",
+      "reference": "2**2*83+(2*19+17)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_moment_003",
+      "raw": "Expression: (2 * X + 4) ** 2",
+      "raw_sha256": "949bfe3c7993b4c3a0ddb876c56d3b27f7350c58d9f8a1198f37cacda7551bd5",
+      "reference": "2**2*90+(2*65+4)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_moment_004",
+      "raw": "Expression: (7*X+19)**2",
+      "raw_sha256": "83319236c4ed396f4400837699c46b077f9e85c0a6efb3091fd31fd30d8fe3df",
+      "reference": "7**2*573+(7*26+19)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_moment_005",
+      "raw": "Expression: (2 * X + 7) ** 2",
+      "raw_sha256": "6627fb554cfc8527d5e2b4727a3512fc50b752310a392df6e6d359790f63a225",
+      "reference": "2**2*212+(2*27+7)**2",
+      "credit": false,
+      "reason": "仍有未知隨機變數 X，未列出所求數值期望或變異數算式。"
+    },
+    {
+      "file": "epoch_1/old_validation.json",
+      "id": "v17_validation_interval_000",
+      "raw": "Expression: (48 + (395 - 48) / 3) / 3 * 3 + (395 - 48) / 3",
+      "raw_sha256": "dfe57f6e9c16c9e1e6ed18e85533d6fbeff4745433c8cfc6c49850a326f4c95c",
+      "reference": "(48+395)/2+(395-48)/(2*3)",
+      "credit": true,
+      "reason": "本題縮放除數為 3；原式化簡為下界+2*(上界-下界)/3，與中點+(上界-下界)/6 恆等。多餘除乘相消，不修補答案；不代表任意縮放均已學會。"
+    }
+  ],
+  "metrics": {
+    "v15_new_validation.json": {
+      "n": 48,
+      "automatic": 38,
+      "reviewed_correct": 38,
+      "pending": 0
+    },
+    "v15_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed_correct": 72,
+      "pending": 0
+    },
+    "v15_old_validation.json": {
+      "n": 48,
+      "automatic": 32,
+      "reviewed_correct": 33,
+      "pending": 0
+    },
+    "v15_old_test.json": {
+      "n": 96,
+      "automatic": 58,
+      "reviewed_correct": 59,
+      "pending": 0
+    },
+    "epoch_1_new_test.json": {
+      "n": 96,
+      "automatic": 96,
+      "reviewed_correct": 96,
+      "pending": 0
+    },
+    "epoch_1_old_test.json": {
+      "n": 96,
+      "automatic": 56,
+      "reviewed_correct": 56,
+      "pending": 0
+    },
+    "epoch_1/old_validation.json": {
+      "n": 48,
+      "automatic": 27,
+      "reviewed_correct": 28,
+      "pending": 0
+    },
+    "epoch_1/new_validation.json": {
+      "n": 48,
+      "automatic": 47,
+      "reviewed_correct": 47,
+      "pending": 0
+    }
+  },
+  "note": "Supplemental semantic review; original scores and retention stopping remain immutable."
+}

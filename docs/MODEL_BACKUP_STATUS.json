@@ -226,6 +226,23 @@
     "Browser download events timed out but files arrived and exact weight hashes were verified.",
     "A recovery manifest is not a binary weight backup; the separately saved ZIP contains actual weights.",
     "v0.12 version 25 preserves selected weights, but final evaluation and an independent binary download remain pending after browser-control authentication was lost."
-  ]
+  ],
+  "v19_completed": {
+    "kaggle_version": 37,
+    "script_version_id": 347835631,
+    "status": "Successful",
+    "receipt": {
+      "bytes": 92882255,
+      "sha256": "f941a6fa958282507d9cc36990aecbb04d681415b202c283c4ecc0a689105a9f",
+      "crc_verified": true,
+      "adapter_hashes": {
+        "epoch_1/adapter/adapter_model.safetensors": "9fe491ee18bd6e0b9da03ab0fa6b991d583cf6041364f4a742e00fd9f7f75a18"
+      }
+    },
+    "verified_responses": 576,
+    "review": "docs/STATS_V0_19_SEMANTIC_REVIEW.json",
+    "promotion": false,
+    "full_checkpoints": "Kaggle directory output; excluded from compact ZIP",
+    "fresh_inference_restore_verified": false
+  }
 }
-

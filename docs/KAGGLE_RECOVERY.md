@@ -282,3 +282,8 @@ Version 25 is the selected-weight recovery checkpoint, not the final evaluated a
 ## v19 formal recovery
 
 The initial detached interactive run was interrupted and no v19 checkpoint was found in the new session or mounted Version 36 output. Do not count it as completed. Version 37 is submitted as Save & Run All, using `scripts/kaggle_v0_19_entrypoint.py` synchronously. It mounts the saved 3Beethoven-v0.2 output and restores the hash-checked v15 adapter, installs the recorded training dependencies, then runs training, evaluation and output verification. Final Successful status is still pending. No scientific protocol changes; this is execution recovery.
+
+
+## v19 完成後追加
+
+正式 Version 37 Successful；第一輪觸發保留門檻。新概念 72→96/96，舊技能複核 59→56/96，恰有一個事件 10→1/12；不升級。所有待確認答案已複核，完整結果與備份見 [完成報告](STATS_V0_19_REPORT.md)。原預期與停止規則不回改。

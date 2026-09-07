@@ -6,13 +6,11 @@
 
 The project is intentionally playful on the surface and rigorous underneath.
 
-## Current experiment — v0.19 running
+## Current experiment — v0.19 completed and saved
 
-v0.18 training and semantic review are complete. On the new chain test, v15 / staged / shuffled score 76 / 96 / 96 out of 96. On the historical eight-family test, reviewed scores are 64 / 36 / 44. Neither new adapter is promoted. Retaining simpler new-course problems did not preserve all earlier skills.
+Kaggle Version 37 is Successful. Training stopped after one epoch / 60 updates at the preregistered retention gate. Same-test reviewed v15 / v19: new chains **72/96 / 96/96**; historical skill families **59/96 / 56/96**. Exactly-one event performance falls from 10/12 to 1/12, so v19 is not promoted. All 21 pending answers have been reviewed. Zero new teacher calls.
 
-The authorized v19 follow-up starts from v15 and jointly trains all eight historical skills with the new concept chains. Its motivation, expected outcome, retention gates and stopping rules are recorded before execution in the [v19 protocol](docs/STATS_V0_19_PROTOCOL.md). This is historical teacher-response replay plus procedural supervision, with no new teacher calls. The Kaggle pipeline started at 2026-09-06 16:44 PDT, beginning with v15 validation. No v19 result is available yet. Final v18 Kaggle preservation remains to be confirmed.
-
-[Current status](docs/STATS_CURRENT_STATUS.md) · [v18 reviewed transfer](docs/STATS_V0_18_TRANSFER_REVIEW.md) · [Research motivations](docs/STATS_MOTIVATION_EXPECTATIONS.md)
+[Full report and recovery](docs/STATS_V0_19_REPORT.md) · [Current status](docs/STATS_CURRENT_STATUS.md) · [Research motivations](docs/STATS_MOTIVATION_EXPECTATIONS.md)
 
 ## Previous experiment — v0.17 completed, 2026-09-06 PDT
 

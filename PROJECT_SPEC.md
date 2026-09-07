@@ -2,9 +2,11 @@
 
 ## Active statistics pilot addendum — 2026-09-06 PDT
 
-Latest evaluated run: **v0.18**. New-chain reviewed v15/staged/shuffled scores: 76/96, 96/96, 96/96. Historical eight-family reviewed scores: 64/96, 36/96, 44/96. No promotion. All 35 pending transfer responses reviewed; 26 receive mathematical equivalence credit. Final full Kaggle preservation is not yet confirmed.
+Latest completed run: **v0.19**, saved as Successful Kaggle Version 37. Reviewed same-test v15/v19: chains 72/96 and 96/96; old skills 59/96 and 56/96. Exactly-one falls 10/12 to 1/12; no promotion. See docs/STATS_V0_19_REPORT.md. All pending answers reviewed.
 
-Authorized next run: **v0.19**, full eight-family historical teacher replay plus v18 procedural chain supervision from exact v15. Record the hypothesis and retention/selection gates before training; see [v19 protocol](docs/STATS_V0_19_PROTOCOL.md). New teacher calls remain zero; logit KD remains deferred. This repair does not isolate a replay-only causal effect.
+Historical evaluated run: **v0.18**. New-chain reviewed v15/staged/shuffled scores: 76/96, 96/96, 96/96. Historical eight-family reviewed scores: 64/96, 36/96, 44/96. No promotion. All 35 pending transfer responses reviewed; 26 receive mathematical equivalence credit. Final full Kaggle preservation is not yet confirmed.
+
+Previously authorized, now completed: **v0.19**, full eight-family historical teacher replay plus v18 procedural chain supervision from exact v15. Record the hypothesis and retention/selection gates before training; see [v19 protocol](docs/STATS_V0_19_PROTOCOL.md). New teacher calls remain zero; logit KD remains deferred. This repair does not isolate a replay-only causal effect.
 
 Previous completed run: **v0.17**. Exact v15/v16 mixtures and conservative retraining were evaluated using validation-only candidate selection. On the same new 96-question unaided test, v15/v16/25%-v16-mixture/retrained-step8 score 64/57/65/64. The selected student's old MC remains 127/240. Neither approach meets the promotion target; keep v15 as general candidate and preserve complementary v16 capability. v16's second-moment and affine-Poisson-variance scores are 9/12 and 12/12 in this new prompt/test condition. This does not isolate prompting from question differences. Training completed 32 steps on 256 accepted historical teacher responses; no new teacher calls. See `docs/STATS_V0_17_REPORT.md`.
 
