@@ -1,5 +1,5 @@
 """First student batch: independently checked teacher outputs, resumable ledger."""
-import argparse, json, math, re
+import argparse, json, math, re, time
 from pathlib import Path
 from stats_consolidation_pilot import build, digest, TEACHER_MODEL as MODEL, assert_execution_released
 from stats_consolidation_grader import score, grader_fingerprint
@@ -25,12 +25,29 @@ def call(root,key,tag,msgs):
     history = read_jsonl(ledger)
     starts = [r['tag'] for r in history if r['event']=='started']
     done = [r for r in history if r['event']=='response']
-    if set(starts)-{r['tag'] for r in done}:
+    terminal={}
+    for r in history:
+        terminal[r['tag']]=r['event'] in ('response','http_error')
+    if any(not finished for finished in terminal.values()):
         raise RuntimeError('Unresolved attempt; refusing duplicate billing')
+    failures=[r for r in history if r['event']=='http_error']
+    if any(r['status']!=429 for r in failures):
+        raise RuntimeError('Non-rate-limit HTTP error needs review')
+    own_failures=[r for r in failures if r['tag']==tag]
+    if len(own_failures)>1:
+        raise RuntimeError('Repeated rate limit for this request; stop rather than loop')
+    if own_failures:
+        wait_until=own_failures[-1].get('retry_at',time.time()+60)
+        delay=max(0,wait_until-time.time())
+        if delay>60:
+            raise RuntimeError('Provider requests a longer pause; retry later')
+        if delay:
+            print('RATE_LIMIT_BACKOFF',round(delay),flush=True)
+            time.sleep(delay)
     costs = [r['usage'].get('cost') for r in done]
     if any(type(c) not in (int,float) or not math.isfinite(c) or c<0 for c in costs):
         raise RuntimeError('Invalid or missing cost')
-    if len(starts)>=192 or PRIOR_CALLS+len(starts)>=302 or PRIOR_COST+sum(costs)+0.01>3.0:
+    if len(starts)>=192 or PRIOR_CALLS+len(starts)>=302 or PRIOR_COST+sum(costs)+0.01*(1+len(failures))>3.0:
         raise RuntimeError('Spending/call cap reached')
     if sum(len(m['content'].encode()) for m in msgs)>4000:
         raise RuntimeError('Prompt byte cap reached')
@@ -41,7 +58,10 @@ def call(root,key,tag,msgs):
     except requests.RequestException:
         raise RuntimeError('Network failure; no automatic retry') from None
     if response.status_code!=200:
-        append(ledger,dict(event='http_error',tag=tag,status=response.status_code))
+        retry_after=response.headers.get('Retry-After','60')
+        try: retry_after=max(60,float(retry_after))
+        except ValueError: retry_after=60
+        append(ledger,dict(event='http_error',tag=tag,status=response.status_code,retry_at=time.time()+retry_after))
         raise RuntimeError(f'HTTP {response.status_code}; no automatic retry; response body omitted')
     body=response.json()
     choice=body.get('choices',[{}])[0]
