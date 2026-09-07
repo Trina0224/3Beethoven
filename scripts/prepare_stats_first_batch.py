@@ -69,6 +69,16 @@ def messages(request, pending, retry=False):
               'These are general rules; substitute the numbers yourself.')
     if retry:
         system += ' Previous output was rejected. Recheck units, requested quantity, and every expression; supply all requested IDs.'
+    if request['archetype']=='interval':
+        system = ('Return only compact JSON with answers array; each item has question_id and expression strings. '
+                  'For old endpoints L,U and sample-size multiplier k, use this general formula for the NEW UPPER endpoint: '
+                  '(L+U)/2 + (U-L)/(2*sqrt(k)). The center is (L+U)/2, not L or U. '
+                  'Substitute the given numbers, keeping arithmetic unevaluated. Use **0.5 for sqrt. '
+                  'No variables, no explanation, no echoed question. This is the upper endpoint, not the new interval width.')
+    elif request['archetype']=='poisson_process':
+        system += (' For rate r per minute and duration t seconds, mean m=r*(t/60). '
+                   'Count variance=m, count second moment=m+m**2. Substitute the FULL numerical m in both places; '
+                   'do not output Var(X), m or any symbols. Convert either rate or duration, never both.')
     user = {'questions':[q for q in request['questions'] if q['question_id'] in pending]}
     return [{'role':'system','content':system},{'role':'user','content':json.dumps(user,separators=(',',':'))}]
 
@@ -135,7 +145,7 @@ def main():
                 if record['request_sha256'] != digest(r):
                     raise RuntimeError('Request drift')
                 new_attempts = sum(isinstance(a['attempt'],int) for a in record['attempts'])
-                for attempt in range(new_attempts,2):
+                for attempt in range(new_attempts,3):
                     pending = set(qs)-set(record['accepted'])
                     if not pending:
                         break
