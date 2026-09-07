@@ -277,3 +277,8 @@ Kaggle Quick Save version 25 was confirmed Successful after v0.12 training and a
 In a fresh Kaggle working directory, restore `kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/25')`. Copy its `3beethoven_stats_v0_10`, `3beethoven_stats_v0_11` and `3beethoven_stats_v0_12` directories into `/kaggle/working/` without overwriting newer files. Confirm `training_complete.json`, `training_protocol.json`, the selected `adapter/`, frozen questions and partial response checkpoint files are present. Then pull the repository and run `scripts/run_stats_v0_12.py`; the runner validates provenance, skips the completed training marker and saved responses, and continues missing responses.
 
 Version 25 is the selected-weight recovery checkpoint, not the final evaluated archive. After completion, run the verifier, preserve a new final Kaggle version and independently verify the downloaded ZIP before updating hashes or stopping the GPU. The exact observed state and partial baseline are in [STATS_V0_12_INTERIM.md](STATS_V0_12_INTERIM.md).
+
+
+## v19 formal recovery
+
+The initial detached interactive run was interrupted and no v19 checkpoint was found in the new session or mounted Version 36 output. Do not count it as completed. Version 37 is submitted as Save & Run All, using `scripts/kaggle_v0_19_entrypoint.py` synchronously. It mounts the saved 3Beethoven-v0.2 output and restores the hash-checked v15 adapter, installs the recorded training dependencies, then runs training, evaluation and output verification. Final Successful status is still pending. No scientific protocol changes; this is execution recovery.

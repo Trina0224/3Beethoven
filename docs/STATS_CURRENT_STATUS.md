@@ -1,5 +1,12 @@
 # 目前狀態：v19 已啟動 — 2026-09-06 PDT
 
+## 執行修正：互動工作階段中斷後改正式任務
+
+2026-09-06 PDT：先前互動背景程序中斷，恢復後未找到 v19 checkpoint；只有新舊驗證各 48 題完成的觀察紀錄，不能當作 v19 訓練完成。這是執行／保存問題，不是模型效果證據。
+
+已提交 Kaggle **Version 37 — Save & Run All (Commit)**，狀態 Running。同步入口 `scripts/kaggle_v0_19_entrypoint.py` 從保存的 Version 36 輸入恢復來源與 v15，完成訓練、同場測試、逐題重評、權重有限值檢查與 ZIP CRC/hash，最後由正式執行保存輸出。此時尚未宣稱 Successful；訓練協定與資料未修改。
+
+
 v18 訓練、測試與待確認答案複核已完成。新概念 96 題：v15 76、分階段 96、打亂 96；歷史八類 96 題：v15 64、分階段 36、打亂 44。兩個新版都不升級；新題滿分沒有轉成廣泛保留。
 
 [完整舊題複核](STATS_V0_18_TRANSFER_REVIEW.md) · [逐題判定](STATS_V0_18_TRANSFER_SEMANTIC_REVIEW.json)
