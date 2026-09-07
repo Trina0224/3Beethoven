@@ -63,12 +63,9 @@ def main():
  import torch
  assert torch.__version__.split('+')[0]=='2.10.0'
  import kagglehub
- saved=Path(kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/37'))
+ saved=Path('/kaggle/input/notebooks/trinashih/3beethoven-v0-2')
  for v,h in [(15,'9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3'),(14,'c7def77757fefaaf41db6938500159795a47503dac54d72d79113de47a3239a5')]:
   name=f'3beethoven_stats_v0_{v}';candidates=[p for p in saved.rglob(name) if (p/'adapter/adapter_model.safetensors').exists()]
-  if not candidates:
-   old=Path(kagglehub.notebook_output_download('trinashih/3beethoven-v0-2/versions/28'))
-   candidates=[p for p in old.rglob(name) if (p/'adapter/adapter_model.safetensors').exists()]
   assert candidates,f'Missing v{v}'
   src=min(candidates,key=lambda p:len(p.parts));assert sha(src/'adapter/adapter_model.safetensors')==h
   dst=Path('/kaggle/working')/name;shutil.copytree(src/'adapter',dst/'adapter',dirs_exist_ok=True)
