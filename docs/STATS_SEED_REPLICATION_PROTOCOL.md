@@ -17,3 +17,5 @@
 執行修正：Version 39 在訓練前因來源仍掛載 Version 38 而停止，沒有更新。來源盤點確認 Version 29 同時包含原 v14、v15 adapter 及 v15 的 train/validation examples。改直接掛載 Version 29，以提交的程式與凍結題目補上後續版本來源；不變更訓練設定。
 
 正式輸入補充：Version 40 也在訓練前停止；確認動態掛載只改了互動 session，正式輸入仍指向舊版本。改將 Version 29 的兩個父模型與 v15 教材、已提交後續程式／凍結題目保存為完整準備輸出，再由短入口 `kaggle_seed_replication_formal.py` 執行。這是保存／掛載修正，不是新增模型版本或結果導向調參。
+
+推論一致性補充（Version 42 開始載入模型、尚未看到任何 seed 評分時記錄）：原 v15 runner 的 MC 評估經 `prepare_model_for_kbit_training` 載入，v19 固定權重評估不經該步驟。此步驟可能改變非量化張量 dtype。三次 v15 內部比較仍一致，但跨組永久 MC 要在六次訓練完成後，以相同直接 PeftModel 推論載入方式補跑三份 v15 MC；保留原 runner MC，另列一致載入的錨點結果。這不涉及重新訓練、種子選擇或修改評分規則。
