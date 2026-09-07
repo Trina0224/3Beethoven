@@ -1,0 +1,111 @@
+{
+  "kaggle_version": 42,
+  "script_version_id": 347852579,
+  "provisional": true,
+  "semantic_review_complete": false,
+  "mc_loading_harmonization_pending": true,
+  "runs": [
+    {
+      "family": "v15",
+      "seed": 1919,
+      "adapter_sha256": "da061826d3cf3a7aa4ff667bb8b7e7b13b4d0f06ea9014c59cb696efb722cd78",
+      "finite_tensors": 392,
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_1919/checkpoints/checkpoint-75",
+        "best_validation_loss": 0.059541888535022736,
+        "training_loss": 0.07458710650602976
+      },
+      "automatic": {
+        "anchor_old_test": {
+          "n": 96,
+          "correct": 51,
+          "pending": 1
+        },
+        "anchor_new_test": {
+          "n": 96,
+          "correct": 61,
+          "pending": 0
+        },
+        "perturbation": {
+          "n": 88,
+          "correct": 51,
+          "pending": 0
+        },
+        "anchor_mc": {
+          "n": 240,
+          "correct": 127,
+          "pending": 0
+        }
+      }
+    },
+    {
+      "family": "v15",
+      "seed": 2027,
+      "adapter_sha256": "16f34085ade761aa4b018d2c33c6e19d2e1f7845643a7b729cb492f0c63bc342",
+      "finite_tensors": 392,
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_2027/checkpoints/checkpoint-50",
+        "best_validation_loss": 0.05688030645251274,
+        "training_loss": 0.07116824915011724
+      },
+      "automatic": {
+        "anchor_old_test": {
+          "n": 96,
+          "correct": 53,
+          "pending": 2
+        },
+        "anchor_new_test": {
+          "n": 96,
+          "correct": 72,
+          "pending": 0
+        },
+        "perturbation": {
+          "n": 88,
+          "correct": 59,
+          "pending": 1
+        },
+        "anchor_mc": {
+          "n": 240,
+          "correct": 125,
+          "pending": 0
+        }
+      }
+    },
+    {
+      "family": "v15",
+      "seed": 31415,
+      "adapter_sha256": "20bd319a29ff561b853ae80edd70395f27eea6d4b90ed666a67e6bcc97d885f6",
+      "finite_tensors": 392,
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_31415/checkpoints/checkpoint-25",
+        "best_validation_loss": 0.06012219563126564,
+        "training_loss": 0.06954589545726776
+      },
+      "automatic": {
+        "anchor_old_test": {
+          "n": 96,
+          "correct": 47,
+          "pending": 2
+        },
+        "anchor_new_test": {
+          "n": 96,
+          "correct": 72,
+          "pending": 0
+        },
+        "perturbation": {
+          "n": 88,
+          "correct": 55,
+          "pending": 3
+        },
+        "anchor_mc": {
+          "n": 240,
+          "correct": 126,
+          "pending": 0
+        }
+      }
+    }
+  ]
+}
