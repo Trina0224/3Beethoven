@@ -78,7 +78,8 @@ def messages(request, pending, retry=False):
                   'The center is the average of the two old endpoints. The old half-width is half their difference. '
                   'The new half-width is the old half-width divided by the square root of the sample-size multiplier. '
                   'The new upper endpoint is center plus NEW half-width. Use sqrt() for square roots. '
-                  'Substitute all numbers; no variables, prose, explanation or question echo. Keep the whole response under 180 tokens.')
+                  'Substitute all numbers; keep arithmetic unevaluated, especially division; never round. '
+                  'No variables, prose, explanation or question echo. Keep the whole response under 180 tokens.')
     elif request['archetype']=='poisson_process':
         system += (' For rate r per minute and duration t seconds, mean m=r*(t/60). '
                    'Count variance=m, count second moment=m+m**2. Substitute the FULL numerical m in both places; '
