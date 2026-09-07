@@ -1,7 +1,7 @@
 import unittest
 
 from stats_consolidation_pilot import build
-from stats_curriculum_v0_19 import score
+from stats_consolidation_grader import score
 
 
 class ConsolidationGraderTests(unittest.TestCase):
@@ -48,6 +48,12 @@ class ConsolidationGraderTests(unittest.TestCase):
         result = score('Expression: __import__("os").system("false")', self.one("moment"))
         self.assertFalse(result["executable"])
         self.assertIsNone(result["math_correct"])
+
+    def test_primary_credit_and_format_are_separate(self):
+        q = self.one("moment")
+        result = score("Some prose\nExpression: " + q["expression"], q)
+        self.assertTrue(result["primary_correct"])
+        self.assertFalse(result["strict_one_line_expression"])
 
 
 if __name__ == "__main__":

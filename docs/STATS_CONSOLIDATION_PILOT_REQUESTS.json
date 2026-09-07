@@ -9,11 +9,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_000_00",
-        "question": "A service counter receives arrivals at 60 per minute. During a 645-second observation, what is the variance of the arrival count?"
+        "question": "Arrivals at a service counter form a homogeneous Poisson process at 60 per minute. During a 645-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_000_01",
-        "question": "At the same counter, X is the count during 645 seconds. Set up E[X**2]."
+        "question": "Arrivals form a homogeneous Poisson process at 60 per minute. X is the count during 645 seconds. Set up E[X**2]."
       }
     ],
     "response_schema": {
@@ -39,11 +39,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_001_00",
-        "question": "Conditions first: A service counter receives arrivals at 17 per minute. During a 523-second observation, what is the variance of the arrival count?"
+        "question": "Conditions first: Arrivals at a service counter form a homogeneous Poisson process at 17 per minute. During a 523-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_001_01",
-        "question": "Conditions first: At the same counter, X is the count during 523 seconds. Set up E[X**2]."
+        "question": "Conditions first: Arrivals form a homogeneous Poisson process at 17 per minute. X is the count during 523 seconds. Set up E[X**2]."
       }
     ],
     "response_schema": {
@@ -69,11 +69,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_002_00",
-        "question": "During a 713-second observation, what is the variance of the arrival count?. Given: A service counter receives arrivals at 21 per minute."
+        "question": "During a 713-second observation, what is the variance of the arrival count?. Given: Arrivals at a service counter form a homogeneous Poisson process at 21 per minute."
       },
       {
         "question_id": "consolidation_train_poisson_process_002_01",
-        "question": "Set up E[X**2]. Given: At the same counter, X is the count during 713 seconds."
+        "question": "Set up E[X**2]. Given: Arrivals form a homogeneous Poisson process at 21 per minute. X is the count during 713 seconds."
       }
     ],
     "response_schema": {
@@ -99,11 +99,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_003_00",
-        "question": "During an operations review, a service counter receives arrivals at 40 per minute. During a 367-second observation, what is the variance of the arrival count?"
+        "question": "An analyst records this operating condition: Arrivals at a service counter form a homogeneous Poisson process at 40 per minute. During a 367-second observation, determine the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_003_01",
-        "question": "During an operations review, at the same counter, X is the count during 367 seconds. Set up E[X**2]."
+        "question": "An analyst records this operating condition: Arrivals form a homogeneous Poisson process at 40 per minute. X is the count during 367 seconds. Give one numerical expression for E[X**2]."
       }
     ],
     "response_schema": {
@@ -129,11 +129,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_004_00",
-        "question": "Write a symbolic numerical setup for this situation. A service counter receives arrivals at 49 per minute. During a 496-second observation, what is the variance of the arrival count?"
+        "question": "Arrivals at a service counter form a homogeneous Poisson process at 49 per minute. During a 496-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_004_01",
-        "question": "Write a symbolic numerical setup for this situation. At the same counter, X is the count during 496 seconds. Set up E[X**2]."
+        "question": "Arrivals form a homogeneous Poisson process at 49 per minute. X is the count during 496 seconds. Set up E[X**2]."
       }
     ],
     "response_schema": {
@@ -159,11 +159,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_005_00",
-        "question": "A service counter receives arrivals at 38 per minute. During a 576-second observation, what is the variance of the arrival count? Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Arrivals at a service counter form a homogeneous Poisson process at 38 per minute. During a 576-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_005_01",
-        "question": "At the same counter, X is the count during 576 seconds. Set up E[X**2]. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Arrivals form a homogeneous Poisson process at 38 per minute. X is the count during 576 seconds. Set up E[X**2]."
       }
     ],
     "response_schema": {
@@ -189,11 +189,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_006_00",
-        "question": "A service counter receives arrivals at 34 per minute. During a 140-second observation, what is the variance of the arrival count?"
+        "question": "During a 140-second observation, what is the variance of the arrival count?. Given: Arrivals at a service counter form a homogeneous Poisson process at 34 per minute."
       },
       {
         "question_id": "consolidation_train_poisson_process_006_01",
-        "question": "At the same counter, X is the count during 140 seconds. Set up E[X**2]."
+        "question": "Set up E[X**2]. Given: Arrivals form a homogeneous Poisson process at 34 per minute. X is the count during 140 seconds."
       }
     ],
     "response_schema": {
@@ -219,11 +219,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_007_00",
-        "question": "Conditions first: A service counter receives arrivals at 66 per minute. During a 306-second observation, what is the variance of the arrival count?"
+        "question": "An analyst records this operating condition: Arrivals at a service counter form a homogeneous Poisson process at 66 per minute. During a 306-second observation, determine the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_007_01",
-        "question": "Conditions first: At the same counter, X is the count during 306 seconds. Set up E[X**2]."
+        "question": "An analyst records this operating condition: Arrivals form a homogeneous Poisson process at 66 per minute. X is the count during 306 seconds. Give one numerical expression for E[X**2]."
       }
     ],
     "response_schema": {
@@ -249,11 +249,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_poisson_process_008_00",
-        "question": "During a 351-second observation, what is the variance of the arrival count?. Given: A service counter receives arrivals at 63 per minute."
+        "question": "Arrivals at a service counter form a homogeneous Poisson process at 63 per minute. During a 351-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_train_poisson_process_008_01",
-        "question": "Set up E[X**2]. Given: At the same counter, X is the count during 351 seconds."
+        "question": "Arrivals form a homogeneous Poisson process at 63 per minute. X is the count during 351 seconds. Set up E[X**2]."
       }
     ],
     "response_schema": {
@@ -279,11 +279,11 @@
     "questions": [
       {
         "question_id": "consolidation_validation_poisson_process_009_00",
-        "question": "During an operations review, a service counter receives arrivals at 54 per minute. During a 461-second observation, what is the variance of the arrival count?"
+        "question": "Requested result: During a 461-second observation, what is the variance of the arrival count?. Conditions: Arrivals at a service counter form a homogeneous Poisson process at 54 per minute."
       },
       {
         "question_id": "consolidation_validation_poisson_process_009_01",
-        "question": "During an operations review, at the same counter, X is the count during 461 seconds. Set up E[X**2]."
+        "question": "Requested result: Set up E[X**2]. Conditions: Arrivals form a homogeneous Poisson process at 54 per minute. X is the count during 461 seconds."
       }
     ],
     "response_schema": {
@@ -309,11 +309,11 @@
     "questions": [
       {
         "question_id": "consolidation_validation_poisson_process_010_00",
-        "question": "Write a symbolic numerical setup for this situation. A service counter receives arrivals at 20 per minute. During a 574-second observation, what is the variance of the arrival count?"
+        "question": "Write one executable expression using only these data. Arrivals at a service counter form a homogeneous Poisson process at 20 per minute. During a 574-second observation, what is the variance of the arrival count?"
       },
       {
         "question_id": "consolidation_validation_poisson_process_010_01",
-        "question": "Write a symbolic numerical setup for this situation. At the same counter, X is the count during 574 seconds. Set up E[X**2]."
+        "question": "Write one executable expression using only these data. Arrivals form a homogeneous Poisson process at 20 per minute. X is the count during 574 seconds. Represent E[X**2]."
       }
     ],
     "response_schema": {
@@ -339,11 +339,11 @@
     "questions": [
       {
         "question_id": "consolidation_validation_poisson_process_011_00",
-        "question": "A service counter receives arrivals at 62 per minute. During a 288-second observation, what is the variance of the arrival count? Keep every stated unit explicit in the expression."
+        "question": "Requested result: During a 288-second observation, what is the variance of the arrival count?. Conditions: Arrivals at a service counter form a homogeneous Poisson process at 62 per minute."
       },
       {
         "question_id": "consolidation_validation_poisson_process_011_01",
-        "question": "At the same counter, X is the count during 288 seconds. Set up E[X**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[X**2]. Conditions: Arrivals form a homogeneous Poisson process at 62 per minute. X is the count during 288 seconds."
       }
     ],
     "response_schema": {
@@ -369,15 +369,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_000_00",
-        "question": "X is Poisson with mean 48. A display reports Y=2*X+17. Set up E[Y]."
+        "question": "X is Poisson with mean 48, and Y=2*X+17. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_000_01",
-        "question": "For that display Y=2*X+17, set up Var(Y)."
+        "question": "X is Poisson with mean 48, and Y=2*X+17. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_000_02",
-        "question": "For the same Y=2*X+17, set up E[Y**2]."
+        "question": "X is Poisson with mean 48, and Y=2*X+17. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -407,15 +407,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_001_00",
-        "question": "Conditions first: X is Poisson with mean 47. A display reports Y=6*X+27. Set up E[Y]."
+        "question": "Conditions first: X is Poisson with mean 47, and Y=6*X+27. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_001_01",
-        "question": "Conditions first: For that display Y=6*X+27, set up Var(Y)."
+        "question": "Conditions first: X is Poisson with mean 47, and Y=6*X+27. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_001_02",
-        "question": "Conditions first: For the same Y=6*X+27, set up E[Y**2]."
+        "question": "Conditions first: X is Poisson with mean 47, and Y=6*X+27. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -445,15 +445,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_002_00",
-        "question": "Set up E[Y]. Given: X is Poisson with mean 79. A display reports Y=3*X+5."
+        "question": "Set up E[Y]. Given: X is Poisson with mean 79, and Y=3*X+5."
       },
       {
         "question_id": "consolidation_train_affine_poisson_002_01",
-        "question": "Requested quantity first. Given: For that display Y=3*X+5, set up Var(Y)."
+        "question": "Set up Var(Y). Given: X is Poisson with mean 79, and Y=3*X+5."
       },
       {
         "question_id": "consolidation_train_affine_poisson_002_02",
-        "question": "Requested quantity first. Given: For the same Y=3*X+5, set up E[Y**2]."
+        "question": "Set up E[Y**2]. Given: X is Poisson with mean 79, and Y=3*X+5."
       }
     ],
     "response_schema": {
@@ -483,15 +483,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_003_00",
-        "question": "During an operations review, x is Poisson with mean 83. A display reports Y=5*X+25. Set up E[Y]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 83, and Y=5*X+25. Give one numerical expression for E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_003_01",
-        "question": "During an operations review, for that display Y=5*X+25, set up Var(Y)."
+        "question": "An analyst records this operating condition: X is Poisson with mean 83, and Y=5*X+25. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_003_02",
-        "question": "During an operations review, for the same Y=5*X+25, set up E[Y**2]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 83, and Y=5*X+25. Give one numerical expression for E[Y**2]."
       }
     ],
     "response_schema": {
@@ -521,15 +521,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_004_00",
-        "question": "Write a symbolic numerical setup for this situation. X is Poisson with mean 47. A display reports Y=3*X+9. Set up E[Y]."
+        "question": "X is Poisson with mean 47, and Y=3*X+9. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_004_01",
-        "question": "Write a symbolic numerical setup for this situation. For that display Y=3*X+9, set up Var(Y)."
+        "question": "X is Poisson with mean 47, and Y=3*X+9. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_004_02",
-        "question": "Write a symbolic numerical setup for this situation. For the same Y=3*X+9, set up E[Y**2]."
+        "question": "X is Poisson with mean 47, and Y=3*X+9. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -559,15 +559,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_005_00",
-        "question": "X is Poisson with mean 85. A display reports Y=2*X+12. Set up E[Y]. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X is Poisson with mean 85, and Y=2*X+12. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_005_01",
-        "question": "For that display Y=2*X+12, set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X is Poisson with mean 85, and Y=2*X+12. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_005_02",
-        "question": "For the same Y=2*X+12, set up E[Y**2]. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X is Poisson with mean 85, and Y=2*X+12. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -597,15 +597,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_006_00",
-        "question": "X is Poisson with mean 74. A display reports Y=7*X+9. Set up E[Y]."
+        "question": "Set up E[Y]. Given: X is Poisson with mean 74, and Y=7*X+9."
       },
       {
         "question_id": "consolidation_train_affine_poisson_006_01",
-        "question": "For that display Y=7*X+9, set up Var(Y)."
+        "question": "Set up Var(Y). Given: X is Poisson with mean 74, and Y=7*X+9."
       },
       {
         "question_id": "consolidation_train_affine_poisson_006_02",
-        "question": "For the same Y=7*X+9, set up E[Y**2]."
+        "question": "Set up E[Y**2]. Given: X is Poisson with mean 74, and Y=7*X+9."
       }
     ],
     "response_schema": {
@@ -635,15 +635,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_007_00",
-        "question": "Conditions first: X is Poisson with mean 27. A display reports Y=4*X+16. Set up E[Y]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 27, and Y=4*X+16. Give one numerical expression for E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_007_01",
-        "question": "Conditions first: For that display Y=4*X+16, set up Var(Y)."
+        "question": "An analyst records this operating condition: X is Poisson with mean 27, and Y=4*X+16. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_007_02",
-        "question": "Conditions first: For the same Y=4*X+16, set up E[Y**2]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 27, and Y=4*X+16. Give one numerical expression for E[Y**2]."
       }
     ],
     "response_schema": {
@@ -673,15 +673,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_affine_poisson_008_00",
-        "question": "Set up E[Y]. Given: X is Poisson with mean 60. A display reports Y=4*X+27."
+        "question": "X is Poisson with mean 60, and Y=4*X+27. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_affine_poisson_008_01",
-        "question": "Requested quantity first. Given: For that display Y=4*X+27, set up Var(Y)."
+        "question": "X is Poisson with mean 60, and Y=4*X+27. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_affine_poisson_008_02",
-        "question": "Requested quantity first. Given: For the same Y=4*X+27, set up E[Y**2]."
+        "question": "X is Poisson with mean 60, and Y=4*X+27. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -711,15 +711,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_affine_poisson_009_00",
-        "question": "During an operations review, x is Poisson with mean 62. A display reports Y=2*X+9. Set up E[Y]."
+        "question": "Requested result: Set up E[Y]. Conditions: X is Poisson with mean 62, and Y=2*X+9."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_009_01",
-        "question": "During an operations review, for that display Y=2*X+9, set up Var(Y)."
+        "question": "Requested result: Set up Var(Y). Conditions: X is Poisson with mean 62, and Y=2*X+9."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_009_02",
-        "question": "During an operations review, for the same Y=2*X+9, set up E[Y**2]."
+        "question": "Requested result: Set up E[Y**2]. Conditions: X is Poisson with mean 62, and Y=2*X+9."
       }
     ],
     "response_schema": {
@@ -749,15 +749,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_affine_poisson_010_00",
-        "question": "Write a symbolic numerical setup for this situation. X is Poisson with mean 78. A display reports Y=6*X+6. Set up E[Y]."
+        "question": "Write one executable expression using only these data. X is Poisson with mean 78, and Y=6*X+6. Represent E[Y]."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_010_01",
-        "question": "Write a symbolic numerical setup for this situation. For that display Y=6*X+6, set up Var(Y)."
+        "question": "Write one executable expression using only these data. X is Poisson with mean 78, and Y=6*X+6. Represent Var(Y)."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_010_02",
-        "question": "Write a symbolic numerical setup for this situation. For the same Y=6*X+6, set up E[Y**2]."
+        "question": "Write one executable expression using only these data. X is Poisson with mean 78, and Y=6*X+6. Represent E[Y**2]."
       }
     ],
     "response_schema": {
@@ -787,15 +787,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_affine_poisson_011_00",
-        "question": "X is Poisson with mean 63. A display reports Y=3*X+17. Set up E[Y]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[Y]. Conditions: X is Poisson with mean 63, and Y=3*X+17."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_011_01",
-        "question": "For that display Y=3*X+17, set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up Var(Y). Conditions: X is Poisson with mean 63, and Y=3*X+17."
       },
       {
         "question_id": "consolidation_validation_affine_poisson_011_02",
-        "question": "For the same Y=3*X+17, set up E[Y**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[Y**2]. Conditions: X is Poisson with mean 63, and Y=3*X+17."
       }
     ],
     "response_schema": {
@@ -939,15 +939,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_003_00",
-        "question": "During an operations review, x has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up E[Y]."
+        "question": "An analyst records this operating condition: X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Give one numerical expression for E[Y]."
       },
       {
         "question_id": "consolidation_train_general_moment_003_01",
-        "question": "During an operations review, x has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up Var(Y)."
+        "question": "An analyst records this operating condition: X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_general_moment_003_02",
-        "question": "During an operations review, x has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up E[Y**2]."
+        "question": "An analyst records this operating condition: X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Give one numerical expression for E[Y**2]."
       }
     ],
     "response_schema": {
@@ -977,15 +977,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_004_00",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y]."
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_general_moment_004_01",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up Var(Y)."
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_general_moment_004_02",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y**2]."
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -1015,15 +1015,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_005_00",
-        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y]. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_general_moment_005_01",
-        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_general_moment_005_02",
-        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y**2]. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -1053,15 +1053,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_006_00",
-        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up E[Y]."
+        "question": "Set up E[Y]. Given: X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2."
       },
       {
         "question_id": "consolidation_train_general_moment_006_01",
-        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up Var(Y)."
+        "question": "Set up Var(Y). Given: X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2."
       },
       {
         "question_id": "consolidation_train_general_moment_006_02",
-        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up E[Y**2]."
+        "question": "Set up E[Y**2]. Given: X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2."
       }
     ],
     "response_schema": {
@@ -1091,15 +1091,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_007_00",
-        "question": "Conditions first: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up E[Y]."
+        "question": "An analyst records this operating condition: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Give one numerical expression for E[Y]."
       },
       {
         "question_id": "consolidation_train_general_moment_007_01",
-        "question": "Conditions first: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up Var(Y)."
+        "question": "An analyst records this operating condition: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_general_moment_007_02",
-        "question": "Conditions first: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up E[Y**2]."
+        "question": "An analyst records this operating condition: X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Give one numerical expression for E[Y**2]."
       }
     ],
     "response_schema": {
@@ -1129,15 +1129,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_general_moment_008_00",
-        "question": "Set up E[Y]. Given: X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3."
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up E[Y]."
       },
       {
         "question_id": "consolidation_train_general_moment_008_01",
-        "question": "Set up Var(Y). Given: X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3."
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up Var(Y)."
       },
       {
         "question_id": "consolidation_train_general_moment_008_02",
-        "question": "Set up E[Y**2]. Given: X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3."
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up E[Y**2]."
       }
     ],
     "response_schema": {
@@ -1167,15 +1167,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_general_moment_009_00",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y]."
+        "question": "Requested result: Set up E[Y]. Conditions: X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14."
       },
       {
         "question_id": "consolidation_validation_general_moment_009_01",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up Var(Y)."
+        "question": "Requested result: Set up Var(Y). Conditions: X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14."
       },
       {
         "question_id": "consolidation_validation_general_moment_009_02",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y**2]."
+        "question": "Requested result: Set up E[Y**2]. Conditions: X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14."
       }
     ],
     "response_schema": {
@@ -1205,15 +1205,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_general_moment_010_00",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up E[Y]."
+        "question": "Write one executable expression using only these data. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Represent E[Y]."
       },
       {
         "question_id": "consolidation_validation_general_moment_010_01",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up Var(Y)."
+        "question": "Write one executable expression using only these data. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Represent Var(Y)."
       },
       {
         "question_id": "consolidation_validation_general_moment_010_02",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up E[Y**2]."
+        "question": "Write one executable expression using only these data. X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Represent E[Y**2]."
       }
     ],
     "response_schema": {
@@ -1243,15 +1243,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_general_moment_011_00",
-        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up E[Y]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[Y]. Conditions: X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7."
       },
       {
         "question_id": "consolidation_validation_general_moment_011_01",
-        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up Var(Y). Conditions: X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7."
       },
       {
         "question_id": "consolidation_validation_general_moment_011_02",
-        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up E[Y**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[Y**2]. Conditions: X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7."
       }
     ],
     "response_schema": {
@@ -1285,7 +1285,7 @@
       },
       {
         "question_id": "consolidation_train_uniform_wait_000_01",
-        "question": "For the same wait, set up the expected additional wait after 71 seconds have elapsed."
+        "question": "A total wait T is uniform from 0 to 87 minutes. Given that T>71 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1315,7 +1315,7 @@
       },
       {
         "question_id": "consolidation_train_uniform_wait_001_01",
-        "question": "Conditions first: For the same wait, set up the expected additional wait after 625 seconds have elapsed."
+        "question": "Conditions first: A total wait T is uniform from 0 to 26 minutes. Given that T>625 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1345,7 +1345,7 @@
       },
       {
         "question_id": "consolidation_train_uniform_wait_002_01",
-        "question": "Requested quantity first. Given: For the same wait, set up the expected additional wait after 907 seconds have elapsed."
+        "question": "Given that T>907 seconds, set up the conditional mean of the total wait T in minutes. Given: A total wait T is uniform from 0 to 61 minutes."
       }
     ],
     "response_schema": {
@@ -1371,11 +1371,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_uniform_wait_003_00",
-        "question": "During an operations review, a total wait T is uniform from 0 to 76 minutes. After already waiting 872 seconds, find E[T | T>872 seconds] in minutes."
+        "question": "An analyst records this operating condition: A total wait T is uniform from 0 to 76 minutes. After already waiting 872 seconds, find E[T | T>872 seconds] in minutes."
       },
       {
         "question_id": "consolidation_train_uniform_wait_003_01",
-        "question": "During an operations review, for the same wait, set up the expected additional wait after 872 seconds have elapsed."
+        "question": "An analyst records this operating condition: A total wait T is uniform from 0 to 76 minutes. Given that T>872 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1401,11 +1401,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_uniform_wait_004_00",
-        "question": "Write a symbolic numerical setup for this situation. A total wait T is uniform from 0 to 79 minutes. After already waiting 989 seconds, find E[T | T>989 seconds] in minutes."
+        "question": "A total wait T is uniform from 0 to 79 minutes. After already waiting 989 seconds, find E[T | T>989 seconds] in minutes."
       },
       {
         "question_id": "consolidation_train_uniform_wait_004_01",
-        "question": "Write a symbolic numerical setup for this situation. For the same wait, set up the expected additional wait after 989 seconds have elapsed."
+        "question": "A total wait T is uniform from 0 to 79 minutes. Given that T>989 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1431,11 +1431,11 @@
     "questions": [
       {
         "question_id": "consolidation_train_uniform_wait_005_00",
-        "question": "A total wait T is uniform from 0 to 83 minutes. After already waiting 240 seconds, find E[T | T>240 seconds] in minutes. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A total wait T is uniform from 0 to 83 minutes. After already waiting 240 seconds, find E[T | T>240 seconds] in minutes."
       },
       {
         "question_id": "consolidation_train_uniform_wait_005_01",
-        "question": "For the same wait, set up the expected additional wait after 240 seconds have elapsed. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A total wait T is uniform from 0 to 83 minutes. Given that T>240 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1461,11 +1461,11 @@
     "questions": [
       {
         "question_id": "consolidation_validation_uniform_wait_006_00",
-        "question": "A total wait T is uniform from 0 to 61 minutes. After already waiting 186 seconds, find E[T | T>186 seconds] in minutes."
+        "question": "Write one executable expression using only these data. A total wait T is uniform from 0 to 61 minutes. After already waiting 186 seconds, represent E[T | T>186 seconds] in minutes."
       },
       {
         "question_id": "consolidation_validation_uniform_wait_006_01",
-        "question": "For the same wait, set up the expected additional wait after 186 seconds have elapsed."
+        "question": "Write one executable expression using only these data. A total wait T is uniform from 0 to 61 minutes. Given that T>186 seconds, set up the conditional mean of the total wait T in minutes."
       }
     ],
     "response_schema": {
@@ -1491,11 +1491,11 @@
     "questions": [
       {
         "question_id": "consolidation_validation_uniform_wait_007_00",
-        "question": "Conditions first: A total wait T is uniform from 0 to 86 minutes. After already waiting 268 seconds, find E[T | T>268 seconds] in minutes."
+        "question": "Requested result: After already waiting 268 seconds, find E[T | T>268 seconds] in minutes. Conditions: A total wait T is uniform from 0 to 86 minutes."
       },
       {
         "question_id": "consolidation_validation_uniform_wait_007_01",
-        "question": "Conditions first: For the same wait, set up the expected additional wait after 268 seconds have elapsed."
+        "question": "Requested result: Given that T>268 seconds, set up the conditional mean of the total wait T in minutes. Conditions: A total wait T is uniform from 0 to 86 minutes."
       }
     ],
     "response_schema": {
@@ -1587,7 +1587,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_binomial_003_00",
-        "question": "During an operations review, among 11 independent quality checks, each flags with probability 27%. Set up the probability that exactly 3 checks flag."
+        "question": "An analyst records this operating condition: Among 11 independent quality checks, each flags with probability 27%. Give one numerical expression for the probability that exactly 3 checks flag."
       }
     ],
     "response_schema": {
@@ -1609,7 +1609,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_binomial_004_00",
-        "question": "Write a symbolic numerical setup for this situation. Among 9 independent quality checks, each flags with probability 53%. Set up the probability that exactly 1 checks flag."
+        "question": "Among 9 independent quality checks, each flags with probability 53%. Set up the probability that exactly 1 checks flag."
       }
     ],
     "response_schema": {
@@ -1631,7 +1631,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_binomial_005_00",
-        "question": "Among 7 independent quality checks, each flags with probability 30%. Set up the probability that exactly 1 checks flag. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Among 7 independent quality checks, each flags with probability 30%. Set up the probability that exactly 1 checks flag."
       }
     ],
     "response_schema": {
@@ -1653,7 +1653,7 @@
     "questions": [
       {
         "question_id": "consolidation_validation_binomial_006_00",
-        "question": "Among 8 independent quality checks, each flags with probability 29%. Set up the probability that exactly 4 checks flag."
+        "question": "Write one executable expression using only these data. Among 8 independent quality checks, each flags with probability 29%. Represent the probability that exactly 4 checks flag."
       }
     ],
     "response_schema": {
@@ -1675,7 +1675,7 @@
     "questions": [
       {
         "question_id": "consolidation_validation_binomial_007_00",
-        "question": "Conditions first: Among 7 independent quality checks, each flags with probability 14%. Set up the probability that exactly 1 checks flag."
+        "question": "Requested result: Set up the probability that exactly 1 checks flag. Conditions: Among 7 independent quality checks, each flags with probability 14%."
       }
     ],
     "response_schema": {
@@ -1697,23 +1697,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_000_00",
-        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that exactly one alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 71% and 20%. Set up the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_000_01",
-        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that at least one alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 71% and 20%. Set up the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_000_02",
-        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that both alarms activate."
+        "question": "Independent alarms A and B activate with probabilities 71% and 20%. Set up the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_000_03",
-        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that neither alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 71% and 20%. Set up the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_000_04",
-        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that the two alarms have the same activation state."
+        "question": "Independent alarms A and B activate with probabilities 71% and 20%. Set up the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -1805,23 +1805,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_002_00",
-        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 21/100 and 11/100."
+        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 21% and 11%."
       },
       {
         "question_id": "consolidation_train_detection_events_002_01",
-        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 21/100 and 11/100."
+        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 21% and 11%."
       },
       {
         "question_id": "consolidation_train_detection_events_002_02",
-        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 21/100 and 11/100."
+        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 21% and 11%."
       },
       {
         "question_id": "consolidation_train_detection_events_002_03",
-        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 21/100 and 11/100."
+        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 21% and 11%."
       },
       {
         "question_id": "consolidation_train_detection_events_002_04",
-        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 21/100 and 11/100."
+        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 21% and 11%."
       }
     ],
     "response_schema": {
@@ -1859,23 +1859,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_003_00",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that exactly one alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 70/97 and 48/97. Give one numerical expression for the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_003_01",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that at least one alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 70/97 and 48/97. Give one numerical expression for the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_003_02",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that both alarms activate."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 70/97 and 48/97. Give one numerical expression for the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_003_03",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that neither alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 70/97 and 48/97. Give one numerical expression for the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_003_04",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that the two alarms have the same activation state."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 70/97 and 48/97. Give one numerical expression for the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -1913,23 +1913,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_004_00",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that exactly one alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 22% and 17%. Set up the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_004_01",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that at least one alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 22% and 17%. Set up the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_004_02",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that both alarms activate."
+        "question": "Independent alarms A and B activate with probabilities 22% and 17%. Set up the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_004_03",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that neither alarm activates."
+        "question": "Independent alarms A and B activate with probabilities 22% and 17%. Set up the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_004_04",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that the two alarms have the same activation state."
+        "question": "Independent alarms A and B activate with probabilities 22% and 17%. Set up the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -1967,23 +1967,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_005_00",
-        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that exactly one alarm activates. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_005_01",
-        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that at least one alarm activates. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_005_02",
-        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that both alarms activate. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_005_03",
-        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that neither alarm activates. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_005_04",
-        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that the two alarms have the same activation state. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2021,23 +2021,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_006_00",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that exactly one alarm activates."
+        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 62% and 54%."
       },
       {
         "question_id": "consolidation_train_detection_events_006_01",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that at least one alarm activates."
+        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 62% and 54%."
       },
       {
         "question_id": "consolidation_train_detection_events_006_02",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that both alarms activate."
+        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 62% and 54%."
       },
       {
         "question_id": "consolidation_train_detection_events_006_03",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that neither alarm activates."
+        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 62% and 54%."
       },
       {
         "question_id": "consolidation_train_detection_events_006_04",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that the two alarms have the same activation state."
+        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 62% and 54%."
       }
     ],
     "response_schema": {
@@ -2075,23 +2075,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_007_00",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that exactly one alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 46/97 and 84/97. Give one numerical expression for the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_007_01",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that at least one alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 46/97 and 84/97. Give one numerical expression for the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_007_02",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that both alarms activate."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 46/97 and 84/97. Give one numerical expression for the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_007_03",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that neither alarm activates."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 46/97 and 84/97. Give one numerical expression for the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_007_04",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that the two alarms have the same activation state."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 46/97 and 84/97. Give one numerical expression for the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2129,23 +2129,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_008_00",
-        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 64/100 and 57/100."
+        "question": "Independent alarms A and B activate with probabilities 64% and 57%. Set up the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_008_01",
-        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 64/100 and 57/100."
+        "question": "Independent alarms A and B activate with probabilities 64% and 57%. Set up the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_008_02",
-        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 64/100 and 57/100."
+        "question": "Independent alarms A and B activate with probabilities 64% and 57%. Set up the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_008_03",
-        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 64/100 and 57/100."
+        "question": "Independent alarms A and B activate with probabilities 64% and 57%. Set up the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_008_04",
-        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 64/100 and 57/100."
+        "question": "Independent alarms A and B activate with probabilities 64% and 57%. Set up the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2183,23 +2183,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_009_00",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that exactly one alarm activates."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_009_01",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that at least one alarm activates."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_009_02",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that both alarms activate."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_009_03",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that neither alarm activates."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_009_04",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that the two alarms have the same activation state."
+        "question": "Conditions first: Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2237,23 +2237,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_010_00",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that exactly one alarm activates."
+        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 53% and 29%."
       },
       {
         "question_id": "consolidation_train_detection_events_010_01",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that at least one alarm activates."
+        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 53% and 29%."
       },
       {
         "question_id": "consolidation_train_detection_events_010_02",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that both alarms activate."
+        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 53% and 29%."
       },
       {
         "question_id": "consolidation_train_detection_events_010_03",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that neither alarm activates."
+        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 53% and 29%."
       },
       {
         "question_id": "consolidation_train_detection_events_010_04",
-        "question": "Write a symbolic numerical setup for this situation. Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that the two alarms have the same activation state."
+        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 53% and 29%."
       }
     ],
     "response_schema": {
@@ -2291,23 +2291,23 @@
     "questions": [
       {
         "question_id": "consolidation_train_detection_events_011_00",
-        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that exactly one alarm activates. Keep every stated unit explicit in the expression."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 82/97 and 67/97. Give one numerical expression for the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_011_01",
-        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that at least one alarm activates. Keep every stated unit explicit in the expression."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 82/97 and 67/97. Give one numerical expression for the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_011_02",
-        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that both alarms activate. Keep every stated unit explicit in the expression."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 82/97 and 67/97. Give one numerical expression for the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_train_detection_events_011_03",
-        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that neither alarm activates. Keep every stated unit explicit in the expression."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 82/97 and 67/97. Give one numerical expression for the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_train_detection_events_011_04",
-        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that the two alarms have the same activation state. Keep every stated unit explicit in the expression."
+        "question": "An analyst records this operating condition: Independent alarms A and B activate with probabilities 82/97 and 67/97. Give one numerical expression for the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2345,23 +2345,23 @@
     "questions": [
       {
         "question_id": "consolidation_validation_detection_events_012_00",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that exactly one alarm activates."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 62% and 28%. Represent the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_012_01",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that at least one alarm activates."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 62% and 28%. Represent the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_012_02",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that both alarms activate."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 62% and 28%. Represent the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_validation_detection_events_012_03",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that neither alarm activates."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 62% and 28%. Represent the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_012_04",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that the two alarms have the same activation state."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 62% and 28%. Represent the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2399,23 +2399,23 @@
     "questions": [
       {
         "question_id": "consolidation_validation_detection_events_013_00",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that exactly one alarm activates."
+        "question": "Requested result: Set up the probability that exactly one alarm activates. Conditions: Independent alarms A and B activate with probabilities 81/97 and 87/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_013_01",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that at least one alarm activates."
+        "question": "Requested result: Set up the probability that at least one alarm activates. Conditions: Independent alarms A and B activate with probabilities 81/97 and 87/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_013_02",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that both alarms activate."
+        "question": "Requested result: Set up the probability that both alarms activate. Conditions: Independent alarms A and B activate with probabilities 81/97 and 87/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_013_03",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that neither alarm activates."
+        "question": "Requested result: Set up the probability that neither alarm activates. Conditions: Independent alarms A and B activate with probabilities 81/97 and 87/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_013_04",
-        "question": "Conditions first: Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that the two alarms have the same activation state."
+        "question": "Requested result: Set up the probability that the two alarms have the same activation state. Conditions: Independent alarms A and B activate with probabilities 81/97 and 87/97."
       }
     ],
     "response_schema": {
@@ -2453,23 +2453,23 @@
     "questions": [
       {
         "question_id": "consolidation_validation_detection_events_014_00",
-        "question": "Set up the probability that exactly one alarm activates. Given: Independent alarms A and B activate with probabilities 49/100 and 21/100."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 49% and 21%. Represent the probability that exactly one alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_014_01",
-        "question": "Set up the probability that at least one alarm activates. Given: Independent alarms A and B activate with probabilities 49/100 and 21/100."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 49% and 21%. Represent the probability that at least one alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_014_02",
-        "question": "Set up the probability that both alarms activate. Given: Independent alarms A and B activate with probabilities 49/100 and 21/100."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 49% and 21%. Represent the probability that both alarms activate."
       },
       {
         "question_id": "consolidation_validation_detection_events_014_03",
-        "question": "Set up the probability that neither alarm activates. Given: Independent alarms A and B activate with probabilities 49/100 and 21/100."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 49% and 21%. Represent the probability that neither alarm activates."
       },
       {
         "question_id": "consolidation_validation_detection_events_014_04",
-        "question": "Set up the probability that the two alarms have the same activation state. Given: Independent alarms A and B activate with probabilities 49/100 and 21/100."
+        "question": "Write one executable expression using only these data. Independent alarms A and B activate with probabilities 49% and 21%. Represent the probability that the two alarms have the same activation state."
       }
     ],
     "response_schema": {
@@ -2507,23 +2507,23 @@
     "questions": [
       {
         "question_id": "consolidation_validation_detection_events_015_00",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that exactly one alarm activates."
+        "question": "Requested result: Set up the probability that exactly one alarm activates. Conditions: Independent alarms A and B activate with probabilities 51/97 and 83/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_015_01",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that at least one alarm activates."
+        "question": "Requested result: Set up the probability that at least one alarm activates. Conditions: Independent alarms A and B activate with probabilities 51/97 and 83/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_015_02",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that both alarms activate."
+        "question": "Requested result: Set up the probability that both alarms activate. Conditions: Independent alarms A and B activate with probabilities 51/97 and 83/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_015_03",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that neither alarm activates."
+        "question": "Requested result: Set up the probability that neither alarm activates. Conditions: Independent alarms A and B activate with probabilities 51/97 and 83/97."
       },
       {
         "question_id": "consolidation_validation_detection_events_015_04",
-        "question": "During an operations review, independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that the two alarms have the same activation state."
+        "question": "Requested result: Set up the probability that the two alarms have the same activation state. Conditions: Independent alarms A and B activate with probabilities 51/97 and 83/97."
       }
     ],
     "response_schema": {
@@ -2627,7 +2627,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_interval_003_00",
-        "question": "During an operations review, a normal-theory interval is [81, 262]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+        "question": "An analyst records this operating condition: A normal-theory interval is [81, 262]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Give one numerical expression for the new upper endpoint."
       }
     ],
     "response_schema": {
@@ -2649,7 +2649,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_interval_004_00",
-        "question": "Write a symbolic numerical setup for this situation. A normal-theory interval is [44, 171]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+        "question": "A normal-theory interval is [44, 171]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
       }
     ],
     "response_schema": {
@@ -2671,7 +2671,7 @@
     "questions": [
       {
         "question_id": "consolidation_train_interval_005_00",
-        "question": "A normal-theory interval is [45, 193]. Sample size is multiplied by 25; center, confidence level and population deviation stay fixed. Set up the new upper endpoint. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A normal-theory interval is [45, 193]. Sample size is multiplied by 25; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
       }
     ],
     "response_schema": {
@@ -2693,7 +2693,7 @@
     "questions": [
       {
         "question_id": "consolidation_validation_interval_006_00",
-        "question": "A normal-theory interval is [41, 85]. Sample size is multiplied by 36; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+        "question": "Write one executable expression using only these data. A normal-theory interval is [41, 85]. Sample size is multiplied by 36; center, confidence level and population deviation stay fixed. Represent the new upper endpoint."
       }
     ],
     "response_schema": {
@@ -2715,7 +2715,7 @@
     "questions": [
       {
         "question_id": "consolidation_validation_interval_007_00",
-        "question": "Conditions first: A normal-theory interval is [64, 107]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+        "question": "Requested result: Set up the new upper endpoint. Conditions: A normal-theory interval is [64, 107]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed."
       }
     ],
     "response_schema": {
@@ -2851,15 +2851,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_poisson_variance_003_00",
-        "question": "During an operations review, a Poisson count X has mean 19. Set up Var(X)."
+        "question": "An analyst records this operating condition: A Poisson count X has mean 19. Give one numerical expression for Var(X)."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_003_01",
-        "question": "During an operations review, a Poisson process runs at 19 per minute for 13 minutes. Set up the count variance."
+        "question": "An analyst records this operating condition: A Poisson process runs at 19 per minute for 13 minutes. Give one numerical expression for the count variance."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_003_02",
-        "question": "During an operations review, a Poisson process runs at 19 per minute for 148 seconds. Set up the count variance."
+        "question": "An analyst records this operating condition: A Poisson process runs at 19 per minute for 148 seconds. Give one numerical expression for the count variance."
       }
     ],
     "response_schema": {
@@ -2889,15 +2889,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_poisson_variance_004_00",
-        "question": "Write a symbolic numerical setup for this situation. A Poisson count X has mean 71. Set up Var(X)."
+        "question": "A Poisson count X has mean 71. Set up Var(X)."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_004_01",
-        "question": "Write a symbolic numerical setup for this situation. A Poisson process runs at 71 per minute for 11 minutes. Set up the count variance."
+        "question": "A Poisson process runs at 71 per minute for 11 minutes. Set up the count variance."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_004_02",
-        "question": "Write a symbolic numerical setup for this situation. A Poisson process runs at 71 per minute for 741 seconds. Set up the count variance."
+        "question": "A Poisson process runs at 71 per minute for 741 seconds. Set up the count variance."
       }
     ],
     "response_schema": {
@@ -2927,15 +2927,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_poisson_variance_005_00",
-        "question": "A Poisson count X has mean 45. Set up Var(X). Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A Poisson count X has mean 45. Set up Var(X)."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_005_01",
-        "question": "A Poisson process runs at 45 per minute for 6 minutes. Set up the count variance. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A Poisson process runs at 45 per minute for 6 minutes. Set up the count variance."
       },
       {
         "question_id": "consolidation_train_chain_poisson_variance_005_02",
-        "question": "A Poisson process runs at 45 per minute for 330 seconds. Set up the count variance. Keep every stated unit explicit in the expression."
+        "question": "Conditions first: A Poisson process runs at 45 per minute for 330 seconds. Set up the count variance."
       }
     ],
     "response_schema": {
@@ -2965,15 +2965,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_poisson_variance_006_00",
-        "question": "A Poisson count X has mean 23. Set up Var(X)."
+        "question": "Write one executable expression using only these data. A Poisson count X has mean 23. Represent Var(X)."
       },
       {
         "question_id": "consolidation_validation_chain_poisson_variance_006_01",
-        "question": "A Poisson process runs at 23 per minute for 9 minutes. Set up the count variance."
+        "question": "Write one executable expression using only these data. A Poisson process runs at 23 per minute for 9 minutes. Represent the count variance."
       },
       {
         "question_id": "consolidation_validation_chain_poisson_variance_006_02",
-        "question": "A Poisson process runs at 23 per minute for 358 seconds. Set up the count variance."
+        "question": "Write one executable expression using only these data. A Poisson process runs at 23 per minute for 358 seconds. Represent the count variance."
       }
     ],
     "response_schema": {
@@ -3003,15 +3003,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_poisson_variance_007_00",
-        "question": "Conditions first: A Poisson count X has mean 48. Set up Var(X)."
+        "question": "Requested result: Set up Var(X). Conditions: A Poisson count X has mean 48."
       },
       {
         "question_id": "consolidation_validation_chain_poisson_variance_007_01",
-        "question": "Conditions first: A Poisson process runs at 48 per minute for 3 minutes. Set up the count variance."
+        "question": "Requested result: Set up the count variance. Conditions: A Poisson process runs at 48 per minute for 3 minutes."
       },
       {
         "question_id": "consolidation_validation_chain_poisson_variance_007_02",
-        "question": "Conditions first: A Poisson process runs at 48 per minute for 628 seconds. Set up the count variance."
+        "question": "Requested result: Set up the count variance. Conditions: A Poisson process runs at 48 per minute for 628 seconds."
       }
     ],
     "response_schema": {
@@ -3155,15 +3155,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_scaled_variance_003_00",
-        "question": "During an operations review, x has variance 207; Y=4*X+11. Set up Var(Y)."
+        "question": "An analyst records this operating condition: X has variance 207; Y=4*X+11. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_chain_scaled_variance_003_01",
-        "question": "During an operations review, x is Poisson with mean 78; Y=4*X+11. Set up Var(Y)."
+        "question": "An analyst records this operating condition: X is Poisson with mean 78; Y=4*X+11. Give one numerical expression for Var(Y)."
       },
       {
         "question_id": "consolidation_train_chain_scaled_variance_003_02",
-        "question": "During an operations review, a Poisson process runs at 78 per minute for 4 minutes. X is its count and Y=4*X+11. Set up Var(Y)."
+        "question": "An analyst records this operating condition: A Poisson process runs at 78 per minute for 4 minutes. X is its count and Y=4*X+11. Give one numerical expression for Var(Y)."
       }
     ],
     "response_schema": {
@@ -3193,15 +3193,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_scaled_variance_004_00",
-        "question": "Write a symbolic numerical setup for this situation. X has variance 19; Y=3*X+14. Set up Var(Y)."
+        "question": "Write one executable expression using only these data. X has variance 19; Y=3*X+14. Represent Var(Y)."
       },
       {
         "question_id": "consolidation_validation_chain_scaled_variance_004_01",
-        "question": "Write a symbolic numerical setup for this situation. X is Poisson with mean 23; Y=3*X+14. Set up Var(Y)."
+        "question": "Write one executable expression using only these data. X is Poisson with mean 23; Y=3*X+14. Represent Var(Y)."
       },
       {
         "question_id": "consolidation_validation_chain_scaled_variance_004_02",
-        "question": "Write a symbolic numerical setup for this situation. A Poisson process runs at 23 per minute for 8 minutes. X is its count and Y=3*X+14. Set up Var(Y)."
+        "question": "Write one executable expression using only these data. A Poisson process runs at 23 per minute for 8 minutes. X is its count and Y=3*X+14. Represent Var(Y)."
       }
     ],
     "response_schema": {
@@ -3231,15 +3231,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_scaled_variance_005_00",
-        "question": "X has variance 222; Y=2*X+5. Set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up Var(Y). Conditions: X has variance 222; Y=2*X+5."
       },
       {
         "question_id": "consolidation_validation_chain_scaled_variance_005_01",
-        "question": "X is Poisson with mean 80; Y=2*X+5. Set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up Var(Y). Conditions: X is Poisson with mean 80; Y=2*X+5."
       },
       {
         "question_id": "consolidation_validation_chain_scaled_variance_005_02",
-        "question": "A Poisson process runs at 80 per minute for 5 minutes. X is its count and Y=2*X+5. Set up Var(Y). Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up Var(Y). Conditions: A Poisson process runs at 80 per minute for 5 minutes. X is its count and Y=2*X+5."
       }
     ],
     "response_schema": {
@@ -3383,15 +3383,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_second_moment_003_00",
-        "question": "During an operations review, x has mean 39 and variance 198. Set up E[X**2]."
+        "question": "An analyst records this operating condition: X has mean 39 and variance 198. Give one numerical expression for E[X**2]."
       },
       {
         "question_id": "consolidation_train_chain_second_moment_003_01",
-        "question": "During an operations review, x is Poisson with mean 39. Set up E[X**2]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 39. Give one numerical expression for E[X**2]."
       },
       {
         "question_id": "consolidation_train_chain_second_moment_003_02",
-        "question": "During an operations review, a Poisson process runs at 39 per minute for 10 minutes. X is the total count. Set up E[X**2]."
+        "question": "An analyst records this operating condition: A Poisson process runs at 39 per minute for 10 minutes. X is the total count. Give one numerical expression for E[X**2]."
       }
     ],
     "response_schema": {
@@ -3421,15 +3421,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_second_moment_004_00",
-        "question": "Write a symbolic numerical setup for this situation. X has mean 82 and variance 295. Set up E[X**2]."
+        "question": "Write one executable expression using only these data. X has mean 82 and variance 295. Represent E[X**2]."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_004_01",
-        "question": "Write a symbolic numerical setup for this situation. X is Poisson with mean 82. Set up E[X**2]."
+        "question": "Write one executable expression using only these data. X is Poisson with mean 82. Represent E[X**2]."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_004_02",
-        "question": "Write a symbolic numerical setup for this situation. A Poisson process runs at 82 per minute for 8 minutes. X is the total count. Set up E[X**2]."
+        "question": "Write one executable expression using only these data. A Poisson process runs at 82 per minute for 8 minutes. X is the total count. Represent E[X**2]."
       }
     ],
     "response_schema": {
@@ -3459,15 +3459,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_second_moment_005_00",
-        "question": "X has mean 72 and variance 83. Set up E[X**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[X**2]. Conditions: X has mean 72 and variance 83."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_005_01",
-        "question": "X is Poisson with mean 72. Set up E[X**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[X**2]. Conditions: X is Poisson with mean 72."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_005_02",
-        "question": "A Poisson process runs at 72 per minute for 5 minutes. X is the total count. Set up E[X**2]. Keep every stated unit explicit in the expression."
+        "question": "Requested result: Set up E[X**2]. Conditions: A Poisson process runs at 72 per minute for 5 minutes. X is the total count."
       }
     ],
     "response_schema": {

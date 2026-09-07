@@ -1,5 +1,5 @@
 {
-  "status": "blueprint_only_no_concrete_questions",
+  "status": "superseded_by_STATS_CONSOLIDATION_HOLDOUT.json",
   "owner": "future_separate_evaluation_builder",
   "forbidden_inputs": [
     "STATS_CONSOLIDATION_PILOT_REQUESTS.json",

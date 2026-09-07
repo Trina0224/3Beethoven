@@ -1,38 +1,36 @@
 # 統計蒸餾下一輪狀態
 
-更新：2026-09-07 02:42 PDT（America/Los_Angeles）。
+更新：2026-09-07 04:20 PDT（America/Los_Angeles）。
 
-**現行狀態：開跑包審核要求修正。研究規則已定案，程式／資料尚未符合；請先讀 [審核與執行決議](STATS_CONSOLIDATION_REVIEW.md)。以下舊交付清單為當時的準備成果，不代表驗收完成。**
+**現行狀態：離線修正與 readiness 已完成；尚未呼叫教師、尚未啟動 GPU。下一步是 24-story 付費教師 pilot。**
 
-| 項目 | 狀態 | 位置／結果 |
+| 階段 | 狀態 | 固定結果／門檻 |
 |---|---|---|
-| 全案方向 | 已完成 | `STATS_PROJECT_REVIEW_2026_09_07.md` |
-| 工作包一 | 已提交草案，審核要求修正 | `STATS_CONSOLIDATION_REVIEW.md` |
-| 96 情境參數組 | 待修單題條件、假設、表述與分割 | 71 train／25 validation；268 targets |
-| 教師 pilot／完整生成 | 尚未開始 | 程式在決策檔凍結前拒絕付費呼叫 |
-| 兩起點×兩 seed 訓練 | 尚未開始 | 程式在協議與驗證矩陣凍結前拒絕 GPU 訓練 |
-| 新獨立測試 | 僅完成藍圖 | 尚未產生具體題目 |
-| 高階模型決策 | 已完成 | 規模保留；pilot 59/65；一輪最多 49 步；112 題相對基準選點；24 題教師對照 |
+| 高階審核 | 已完成 | `STATS_CONSOLIDATION_REVIEW.md` |
+| 96 情境參數組 | 已修正並凍結 | 71 train／25 validation；198／70 targets；每題可獨立作答 |
+| 教師 pilot | 尚未開始 | 24 stories／65 targets；至少 59/65，且各 archetype 至少 80%；最多 48 calls／US$0.50 |
+| 教師 full | 尚未開始 | pilot 通過才允許；各 category 至少 80%；教材累計最多 192 calls |
+| 四次訓練 | 尚未開始 | fresh base 與原 v15，各 seeds 2027／31415；一次曝光、最多 49 updates |
+| checkpoint 選點 | 已凍結 | 12、24、最後一步；48 舊＋48 組合＋16 事件；pending 不放行 |
+| 最終 holdout | 已生成並凍結 | 96 舊＋96 組合＋96 事件＝288；另有永久 MC 240 responses |
+| 教師對照 | 已固定、尚未送出 | holdout 中 24 題；教材封存後才呼叫；不得回填訓練 |
+| 最終保存 | 程式已備妥 | 每 run 驗證 adapter tensors、manifest、SHA-256、ZIP |
 
-## 已完成檔案
+## 本次修正
 
-- `scripts/stats_consolidation_pilot.py`：可重現故事、先分割、教師請求與選點矩陣。
-- `scripts/prepare_stats_consolidation_teacher.py`：可恢復、兩次嘗試、call／cost gate、raw／拒收保存；本輪只跑過 `--scope validate-only`。
-- `scripts/run_stats_consolidation_compare.py`：四個 run 共用的一次執行器；新 LoRA／原 v15 雙起點、線上首次通過即停、恢復與隔離保存。
-- `scripts/test_stats_consolidation_pilot.py`、`scripts/test_stats_consolidation_grader.py`：10 項離線測試全數通過。
-- `docs/STATS_CONSOLIDATION_CANDIDATE_STORIES.json`：96 故事、268 個可獨立計算的參考目標。
-- `docs/STATS_CONSOLIDATION_PILOT_REQUESTS.json`：不含參考答案的教師請求草案；最大 request 1,856 bytes。
-- `docs/STATS_CONSOLIDATION_COVERAGE.json`：概念與分割計數。
-- `docs/STATS_CONSOLIDATION_SELECTION_VALIDATION.json`：91 題 checkpoint 選點矩陣，未凍結。
-- `docs/STATS_CONSOLIDATION_HOLDOUT_BLUEPRINT.json`：獨立測試規格，沒有具體題目。
-- `docs/STATS_CONSOLIDATION_DECISION_DRAFT.json`：所有執行參數與待定項目；狀態仍為 draft。
+- 44 道依賴前文的子題改成自足 prompt；教師單題重試也有完整條件。
+- 12 組到達題補上 homogeneous Poisson process 假設。
+- `v18_conditional_wait` 維持條件下的**總等待時間**，不再偷換成剩餘等待時間。
+- 訓練與驗證使用不同表述家族；分母 100 的事件在文字中實際使用百分比。
+- selection 改為同場原 v15 相對保留門檻；事件改用四個不同故事。
+- 新 grader 隔離歷史版本，分開記錄數學正確、可執行、嚴格格式；任何 pending 先停。
+- immutable contract 在開跑前即包含 parent、資料、grader、selection 與 token hash；採 `SequentialSampler`，只跑一個 epoch，不循環補足步數。
+- 教師採持久 ledger；每次請求先預留 US$0.01，pilot 未過不能進 full。
 
-## 驗證紀錄
+## Readiness 證據
 
-- `python stats_consolidation_pilot.py`：成功，固定產出 96 stories／268 questions／24-story pilot。
-- `python prepare_stats_consolidation_teacher.py --scope validate-only`：成功；24 pilot stories、最大 request 1,856 bytes，零 API call。
-- `python -m unittest test_stats_consolidation_pilot.py test_stats_consolidation_grader.py`：10/10 通過。
-- `python -m py_compile ...`：三個新執行腳本通過。
-- 以 draft 決策檔嘗試訓練入口：如預期在載入 GPU／教師資料前停止，錯誤為 `Protocol remains a draft; GPU training is blocked`。
+- `STATS_CONSOLIDATION_READINESS.json`：`ready_for_paid_pilot`，9/9 檢查通過；teacher calls 0、GPU runs 0。
+- 21 項離線測試通過，涵蓋自足 prompt、Poisson 假設、等待時間目標、split／parameter 衝突、112 題選點、pending gate、pilot/full gate、contract 恢復、288 題 holdout、教師子集與最終升級門檻。
+- 固定 SHA-256：candidate stories `4bfe7995...f9d52`；selection `d752d4a9...a0a9`；holdout `c5515b35...43df`；teacher benchmark `af13bdde...50c9`。
 
-下一個動作：中階模型依 `STATS_CONSOLIDATION_REVIEW.md` 修正並驗收，保存 readiness 證據後凍結執行設定；按現有授權執行 pilot。pilot／逐類接受門檻通過後繼續全批、四次訓練、測試與保存。一般工程修正不需再次交回高階模型；需要改研究規則、pilot 品質不過或四次結果完成才交回。
+執行順序：教師 pilot → gate → full corpus → gate → v15 同場 selection baseline → 兩起點×兩 seed → 288＋MC 最終評估 → 24 題教師對照 → ZIP／雜湊保存。只有 pilot 品質迫使修改研究規則，或四次結果完成時，才交回高階模型決策。

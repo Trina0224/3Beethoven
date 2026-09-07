@@ -1,5 +1,5 @@
 {
-  "status": "candidate_not_frozen",
+  "status": "frozen_for_execution",
   "seed": 210021,
   "teacher_model": "meta-llama/llama-3.3-70b-instruct",
   "story_count": 96,

@@ -31,10 +31,10 @@ ARCHETYPES = (
     ("chain_scaled_variance", 6, 2),
     ("chain_second_moment", 6, 2),
 )
-SURFACES = (
-    "direct_definition", "conditions_first", "quantity_first",
-    "operational_story", "symbolic_story", "unit_emphasis",
+TRAIN_SURFACES = (
+    "direct_definition", "conditions_first", "quantity_first", "operational_story",
 )
+VALIDATION_SURFACES = ("validation_compact", "validation_reverse")
 
 
 def digest(value):
@@ -71,42 +71,50 @@ def apply_surface(text, style):
             return sentences[-1].rstrip(".") + ". Given: " + ". ".join(sentences[:-1]).rstrip(".") + "."
         return "Requested quantity first. Given: " + text
     if style == "operational_story":
-        return "During an operations review, " + text[0].lower() + text[1:]
-    if style == "symbolic_story":
-        return "Write a symbolic numerical setup for this situation. " + text
-    if style == "unit_emphasis":
-        return text + " Keep every stated unit explicit in the expression."
+        return ("An analyst records this operating condition: " + text
+                .replace("Set up", "Give one numerical expression for")
+                .replace("what is", "determine"))
+    if style == "validation_compact":
+        return ("Write one executable expression using only these data. " + text
+                .replace("Set up", "Represent")
+                .replace("find", "represent"))
+    if style == "validation_reverse":
+        if len(sentences) > 1:
+            return "Requested result: " + sentences[-1].rstrip(".") + ". Conditions: " + ". ".join(sentences[:-1]).rstrip(".") + "."
+        return "Requested result: " + text
     raise ValueError(style)
 
 
 def bundle(archetype, split, i, rng):
     story_id = f"consolidation_{split}_{archetype}_{i:03d}"
-    style = SURFACES[i % len(SURFACES)]
+    surfaces = VALIDATION_SURFACES if split == "validation" else TRAIN_SURFACES
+    style = surfaces[i % len(surfaces)]
     number_form = "integers"
     qs = []
     if archetype == "poisson_process":
         rate, seconds, scale = rng.randrange(12, 70), rng.randrange(71, 719), rng.randrange(2, 8)
         mean = f"{rate}*({seconds}/60)"
         qs.append(question(story_id, "poisson_time", 0,
-            f"A service counter receives arrivals at {rate} per minute. During a {seconds}-second observation, what is the variance of the arrival count?",
+            f"Arrivals at a service counter form a homogeneous Poisson process at {rate} per minute. During a {seconds}-second observation, what is the variance of the arrival count?",
             mean, {"rate_per_minute": str(rate), "duration_minutes": f"{seconds}/60"},
             ["convert seconds to minutes", "Poisson variance equals its mean"], "rate times seconds without conversion"))
         qs.append(question(story_id, "v18_second_moment", 1,
-            f"At the same counter, X is the count during {seconds} seconds. Set up E[X**2].",
+            f"Arrivals form a homogeneous Poisson process at {rate} per minute. X is the count during {seconds} seconds. Set up E[X**2].",
             f"({mean})+({mean})**2", {},
             ["Poisson variance equals its mean", "second moment is variance plus squared mean"], "variance alone"))
     elif archetype == "affine_poisson":
         lam, scale, offset = rng.randrange(11, 91), rng.randrange(2, 8), rng.randrange(3, 29)
+        context = f"X is Poisson with mean {lam}, and Y={scale}*X+{offset}."
         qs.extend([
             question(story_id, "poisson_scaled_mean", 0,
-                f"X is Poisson with mean {lam}. A display reports Y={scale}*X+{offset}. Set up E[Y].",
+                context + " Set up E[Y].",
                 f"{scale}*{lam}+{offset}", {}, ["affine expectation"], "variance scaling"),
             question(story_id, "poisson_scaled", 1,
-                f"For that display Y={scale}*X+{offset}, set up Var(Y).",
+                context + " Set up Var(Y).",
                 f"{scale}**2*{lam}", {"mean": str(lam), "scale": str(scale), "offset": str(offset)},
                 ["Poisson variance equals mean", "constant offset has zero variance", "variance scales by the square"], "scale rather than squared scale"),
             question(story_id, "poisson_scaled_moment", 2,
-                f"For the same Y={scale}*X+{offset}, set up E[Y**2].",
+                context + " Set up E[Y**2].",
                 f"{scale}**2*{lam}+({scale}*{lam}+{offset})**2", {},
                 ["variance of affine transform", "second moment is variance plus squared mean"], "squared mean without variance"),
         ])
@@ -133,8 +141,8 @@ def bundle(archetype, split, i, rng):
                 f"({cutoff}+{upper})/2", {"upper_minutes": str(upper), "cutoff_minutes": cutoff},
                 ["convert seconds to minutes", "truncate uniform support", "mean is midpoint"], "remaining rather than total wait"),
             question(story_id, "v18_conditional_wait", 1,
-                f"For the same wait, set up the expected additional wait after {seconds} seconds have elapsed.",
-                f"({upper}-{cutoff})/2", {}, ["conditional total mean", "subtract elapsed time"], "conditional total wait"),
+                f"A total wait T is uniform from 0 to {upper} minutes. Given that T>{seconds} seconds, set up the conditional mean of the total wait T in minutes.",
+                f"({cutoff}+{upper})/2", {}, ["convert seconds to minutes", "conditional total mean"], "remaining wait after the cutoff"),
         ])
     elif archetype == "binomial":
         number_form = "percent"
@@ -151,7 +159,9 @@ def bundle(archetype, split, i, rng):
             pb = rng.randrange(9, 89)
         number_form = "percent_denominator_100" if den == 100 else "nondecimal_fraction_denominator_97"
         p, q = f"({pa}/{den})", f"({pb}/{den})"
-        stem = f"Independent alarms A and B activate with probabilities {pa}/{den} and {pb}/{den}."
+        stem = (f"Independent alarms A and B activate with probabilities {pa}% and {pb}%."
+                if den == 100 else
+                f"Independent alarms A and B activate with probabilities {pa}/{den} and {pb}/{den}.")
         items = (
             ("exactly_one", "exactly one alarm activates", f"{p}*(1-{q})+(1-{p})*{q}", "the alarms agree"),
             ("at_least_one", "at least one alarm activates", f"1-(1-{p})*(1-{q})", "both alarms"),
@@ -211,7 +221,8 @@ def bundle(archetype, split, i, rng):
         "split": split,
         "surface_style": style,
         "number_form": number_form,
-        "source": "consolidation_candidate_v1",
+        "source": "consolidation_candidate_v2_review_repaired",
+        "parameter_signature": digest([(q["category"], q["expression"]) for q in qs]),
         "questions": qs,
     }
 
@@ -247,14 +258,16 @@ def build():
             "response_schema": {"answers": answer_schema},
         })
     owners = {}
+    parameter_owners = {}
     for s in stories:
         assert owners.setdefault(s["lineage_id"], s["split"]) == s["split"]
+        assert parameter_owners.setdefault((s["archetype"], s["parameter_signature"]), s["split"]) == s["split"]
         assert len({q["id"] for q in s["questions"]}) == len(s["questions"])
     counts = Counter(q["category"] for s in stories for q in s["questions"])
     split_counts = {split: Counter(q["category"] for s in stories if s["split"] == split for q in s["questions"])
                     for split in ("train", "validation")}
     coverage = {
-        "status": "candidate_not_frozen",
+        "status": "frozen_for_execution",
         "seed": SEED,
         "teacher_model": TEACHER_MODEL,
         "story_count": len(stories),
@@ -277,7 +290,7 @@ def build():
         ],
     }
     holdout = {
-        "status": "blueprint_only_no_concrete_questions",
+        "status": "superseded_by_STATS_CONSOLIDATION_HOLDOUT.json",
         "owner": "future_separate_evaluation_builder",
         "forbidden_inputs": ["STATS_CONSOLIDATION_PILOT_REQUESTS.json", "teacher generation prompts", "teacher retry prompts"],
         "planned_counts": {"historical_eight": "8 categories x 12 = 96", "combination_four": "4 categories x 24 = 96", "event_four": "4 categories x 24 = 96", "permanent_mc": "60 questions x 4 rotations = 240 responses"},
@@ -288,20 +301,24 @@ def build():
 
 
 def selection_validation(stories):
-    """Small fixed matrix for frequent checkpoint selection; never uses test rows."""
+    """Fixed 112-question matrix for checkpoint selection; never uses test rows."""
     old = json.loads((DOCS / "STATS_V0_19_FROZEN_QUESTIONS.json").read_text())
     event = json.loads((DOCS / "STATS_V0_20_FROZEN_QUESTIONS.json").read_text())
     suites = {}
-    suites["old"] = [q for category in KINDS for q in [x for x in old["old_validation"] if x["category"] == category][:4]]
+    suites["old"] = list(old["old_validation"])
     chain_categories = ("v18_poisson_variance", "v18_scaled_variance", "v18_second_moment", "v18_conditional_wait")
-    suites["chain"] = [q for category in chain_categories for q in [x for x in old["new_validation"] if x["category"] == category][:6]]
-    event_categories = ("exactly_one", "both", "neither", "same")
-    suites["event"] = [q for category in event_categories for q in [x for x in event["validation"] if x["category"] == category][:4]]
-    candidate_pool = [q for s in stories if s["split"] == "validation" for q in s["questions"]]
-    categories = sorted({q["category"] for q in candidate_pool})
-    suites["candidate"] = [next(q for q in candidate_pool if q["category"] == category) for category in categories]
-    assert {k: len(v) for k, v in suites.items()} == {"old": 32, "chain": 24, "event": 16, "candidate": 19}
-    return {"status": "candidate_not_frozen", "role": "checkpoint_selection_only",
+    suites["chain"] = list(old["new_validation"])
+    event_story_ids = []
+    for q in event["validation"]:
+        story_id = q["story_id"]
+        if story_id not in event_story_ids:
+            event_story_ids.append(story_id)
+    chosen = set(event_story_ids[:4])
+    suites["event"] = [q for q in event["validation"]
+                       if q["story_id"] in chosen and q["id"].endswith("_s0")]
+    assert {k: len(v) for k, v in suites.items()} == {"old": 48, "chain": 48, "event": 16}
+    assert len({q["story_id"] for q in suites["event"]}) == 4
+    return {"status": "frozen_for_execution", "role": "checkpoint_selection_only",
             "source": "validation splits only; no test rows", "suites": suites}
 
 

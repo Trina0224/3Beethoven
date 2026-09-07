@@ -9,25 +9,27 @@ import threading
 from pathlib import Path
 
 from flight_run_stats_v0_3 import TeacherClient, package, read_json, save_json
-from stats_curriculum_v0_19 import score
 from stats_consolidation_pilot import DOCS, TEACHER_MODEL, build, digest
+from stats_consolidation_grader import score
 
 ROOT = Path("/kaggle/working/3beethoven_stats_consolidation_teacher")
 DECISION = DOCS / "STATS_CONSOLIDATION_DECISION_DRAFT.json"
 
 
 class BudgetedClient(TeacherClient):
-    def __init__(self, key, max_calls, cost_cap):
+    def __init__(self, key, max_calls, cost_cap, reserve_per_call):
         ROOT.mkdir(parents=True, exist_ok=True)
         super().__init__(ROOT, key, max_calls)
         self.cost_cap = cost_cap
+        self.reserve_per_call = reserve_per_call
         self.lock = threading.Lock()
 
     def call(self, tag, *args, **kwargs):
         with self.lock:
             cached = (self.root / "api_cache" / (tag + ".json")).exists()
             usage = self.stats()
-            if not cached and (usage["reported_cost_usd"] >= self.cost_cap or usage["responses_without_cost"]):
+            if not cached and (usage["reported_cost_usd"] + self.reserve_per_call > self.cost_cap
+                               or usage["responses_without_cost"]):
                 raise RuntimeError("Teacher cost gate reached or a completed response has no reported cost")
         return super().call(tag, *args, **kwargs)
 
@@ -80,15 +82,57 @@ def build_verified(stories):
                 "target": "Expression: " + item["normalized_expression"],
                 "teacher_raw": item["teacher_expression"], "teacher_model": TEACHER_MODEL,
                 "question_sha256": digest(q), "validation": item["judged"],
+                "teacher_raw_sha256": digest(item["teacher_expression"]),
                 "reference_conditioned": False,
             })
     return rows
 
 
+def acceptance_report(stories, scope):
+    selected = [s for s in stories if scope == "full" or any(
+        r["story_id"] == s["story_id"] and r["pilot_batch"] for r in build()[1]
+    )]
+    planned_archetype = {}
+    accepted_archetype = {}
+    planned_category = {}
+    accepted_category = {}
+    pending_ids = []
+    for story in selected:
+        record = read_json(ROOT / "records" / (story["story_id"] + ".json"), {})
+        accepted = record.get("accepted", {})
+        planned_archetype[story["archetype"]] = planned_archetype.get(story["archetype"], 0) + len(story["questions"])
+        accepted_archetype[story["archetype"]] = accepted_archetype.get(story["archetype"], 0) + len(accepted)
+        for q in story["questions"]:
+            planned_category[q["category"]] = planned_category.get(q["category"], 0) + 1
+            accepted_category[q["category"]] = accepted_category.get(q["category"], 0) + int(q["id"] in accepted)
+            if q["id"] not in accepted:
+                pending_ids.append(q["id"])
+    return {"scope": scope, "planned": sum(planned_archetype.values()),
+            "accepted": sum(accepted_archetype.values()), "pending_ids": pending_ids,
+            "planned_by_archetype": planned_archetype, "accepted_by_archetype": accepted_archetype,
+            "planned_by_category": planned_category, "accepted_by_category": accepted_category}
+
+
+def gate_acceptance(report, teacher):
+    import math
+    checks = {}
+    if report["scope"] == "pilot":
+        checks["total"] = report["accepted"] >= teacher["pilot_minimum_accepted_targets"]
+        checks.update({"archetype:" + key: report["accepted_by_archetype"].get(key, 0) >= math.ceil(value * 0.8)
+                       for key, value in report["planned_by_archetype"].items()})
+    else:
+        checks.update({"category:" + key: report["accepted_by_category"].get(key, 0) >= math.ceil(value * 0.8)
+                       for key, value in report["planned_by_category"].items()})
+    return {"passed": all(checks.values()), "checks": checks,
+            "unresolved_count": len(report["pending_ids"])}
+
+
 def validate_only():
     stories, requests, coverage, holdout = build()
     assert len(stories) == len(requests) == 96 and coverage["pilot_story_count"] == 24
-    assert holdout["status"] == "blueprint_only_no_concrete_questions"
+    assert holdout["status"] == "superseded_by_STATS_CONSOLIDATION_HOLDOUT.json"
+    sealed = read_json(DOCS / "STATS_CONSOLIDATION_HOLDOUT.json")
+    assert sealed["metadata"]["status"] == "sealed_before_paid_pilot"
     for request in requests:
         pending = {q["question_id"] for q in request["questions"]}
         messages = request_messages(request, pending)
@@ -114,13 +158,24 @@ def main():
     max_calls = teacher["pilot_max_calls"] if args.scope == "pilot" else teacher["full_max_calls"]
     cost_cap = teacher["pilot_cost_cap_usd"] if args.scope == "pilot" else teacher["full_total_cost_cap_usd"]
     from kaggle_secrets import UserSecretsClient
-    client = BudgetedClient(UserSecretsClient().get_secret("OPENROUTER_API_KEY"), max_calls, cost_cap)
+    if args.scope == "full":
+        pilot_gate = read_json(ROOT / "pilot_gate.json", {})
+        if not pilot_gate.get("passed"):
+            raise RuntimeError("Full generation requires a persisted passing pilot gate")
+    client = BudgetedClient(UserSecretsClient().get_secret("OPENROUTER_API_KEY"), max_calls, cost_cap,
+                            teacher["reserved_cost_per_call_usd"])
     stories, requests, coverage, _ = build()
     story_lookup = {s["story_id"]: s for s in stories}
     selected = [r for r in requests if args.scope == "full" or r["pilot_batch"]]
-    save_json(ROOT / "run_contract.json", {"scope": args.scope, "decision_sha256": digest(decision),
+    contract_path = ROOT / ("run_contract_" + args.scope + ".json")
+    contract = {"scope": args.scope, "decision_sha256": digest(decision),
               "request_sha256": digest(requests), "teacher_model": TEACHER_MODEL,
-              "max_calls": max_calls, "cost_cap_usd": cost_cap})
+              "max_calls": max_calls, "cost_cap_usd": cost_cap,
+              "reserved_cost_per_call_usd": teacher["reserved_cost_per_call_usd"]}
+    prior_contract = read_json(contract_path)
+    if prior_contract and prior_contract != contract:
+        raise RuntimeError("Existing teacher contract differs")
+    save_json(contract_path, contract)
     try:
         for position, request in enumerate(selected, 1):
             path = ROOT / "records" / (request["story_id"] + ".json")
@@ -152,9 +207,15 @@ def main():
             print("TEACHER", position, "/", len(selected), request["story_id"], len(record["accepted"]), "/", len(qlookup), json.dumps(client.stats()), flush=True)
         verified = build_verified(stories)
         save_json(ROOT / "verified_teacher_rows.json", verified)
+        report = acceptance_report(stories, args.scope)
+        gate = gate_acceptance(report, teacher)
+        save_json(ROOT / (args.scope + "_acceptance.json"), report)
+        save_json(ROOT / (args.scope + "_gate.json"), gate)
         save_json(ROOT / "summary.json", {"scope": args.scope, "coverage_sha256": digest(coverage),
                   "accepted": {k: len(v) for k, v in verified.items()}, "usage": client.stats(),
-                  "teacher_model": TEACHER_MODEL, "reference_conditioned": False})
+                  "teacher_model": TEACHER_MODEL, "reference_conditioned": False, "gate": gate})
+        if not gate["passed"]:
+            raise RuntimeError(args.scope + " teacher acceptance gate failed; evidence preserved")
     finally:
         save_json(ROOT / "api_usage.json", client.stats())
         package(ROOT)

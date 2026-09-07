@@ -1,0 +1,25 @@
+{
+  "status": "ready_for_paid_pilot",
+  "checks": {
+    "generated_files_reproducible": true,
+    "protocol_frozen": true,
+    "selection_frozen": true,
+    "selection_112": true,
+    "holdout_288": true,
+    "teacher_benchmark_24": true,
+    "teacher_validate_only": true,
+    "train_does_not_import_holdout": true,
+    "teacher_does_not_import_holdout": true
+  },
+  "hashes": {
+    "stories": "4bfe7995fc8164558069d3e9d1b7f5c014db845b1df08fae41538624571f9d52",
+    "requests": "be6191d782c01a5b182f5f900fdab0a66e78643c1cac7462a840adb38fee9492",
+    "coverage": "c16301b5316928fc7d0b08286b6e7950ba86a74afe44f392f35acdfba7ac01d0",
+    "selection": "d752d4a97a082234984853ba3d54034b636bec1ec9aba93734c5cf933b6aa0a9",
+    "holdout": "c5515b35ff5ee0a5abf7c283c8cab55e08ee2e0e45a0105766865d744ac343df",
+    "benchmark": "af13bdde32a67851f7de224ca49bd9bbb2de0dd1e51dafcdb77414e2d8f250c9"
+  },
+  "teacher_calls": 0,
+  "gpu_runs": 0,
+  "next": "paid teacher pilot; full generation only if pilot gate passes"
+}

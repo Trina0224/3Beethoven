@@ -1,5 +1,5 @@
 {
-  "status": "candidate_not_frozen",
+  "status": "frozen_for_execution",
   "role": "checkpoint_selection_only",
   "source": "validation splits only; no test rows",
   "suites": {
@@ -70,6 +70,40 @@
         },
         "expression": "47*(520/60)",
         "answer": "1222/3",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_poisson_time_004",
+        "category": "poisson_time",
+        "identity": [
+          "poisson_time",
+          53,
+          430
+        ],
+        "question": "Count all arrivals in a 430-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 53 per minute. Set up the count variance.",
+        "bindings": {
+          "rate_per_minute": "53",
+          "duration_minutes": "430/60"
+        },
+        "expression": "53*(430/60)",
+        "answer": "2279/6",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_poisson_time_005",
+        "category": "poisson_time",
+        "identity": [
+          "poisson_time",
+          42,
+          493
+        ],
+        "question": "Count all arrivals in a 493-second observation window. The count comes from a homogeneous Poisson arrival process whose mean rate is 42 per minute. Set up the count variance.",
+        "bindings": {
+          "rate_per_minute": "42",
+          "duration_minutes": "493/60"
+        },
+        "expression": "42*(493/60)",
+        "answer": "3451/10",
         "provenance": "procedural_reference"
       },
       {
@@ -146,6 +180,44 @@
         },
         "expression": "2**2*24",
         "answer": "96",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_poisson_scaled_004",
+        "category": "poisson_scaled",
+        "identity": [
+          "poisson_scaled",
+          24,
+          5,
+          17
+        ],
+        "question": "Adding 17 after multiplying a Poisson count X by 5 gives the displayed value. X has expectation 24. What variance does this display have?",
+        "bindings": {
+          "mean": "24",
+          "scale": "5",
+          "offset": "17"
+        },
+        "expression": "5**2*24",
+        "answer": "600",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_poisson_scaled_005",
+        "category": "poisson_scaled",
+        "identity": [
+          "poisson_scaled",
+          44,
+          3,
+          3
+        ],
+        "question": "Adding 3 after multiplying a Poisson count X by 3 gives the displayed value. X has expectation 44. What variance does this display have?",
+        "bindings": {
+          "mean": "44",
+          "scale": "3",
+          "offset": "3"
+        },
+        "expression": "3**2*44",
+        "answer": "396",
         "provenance": "procedural_reference"
       },
       {
@@ -233,6 +305,48 @@
         "provenance": "procedural_reference"
       },
       {
+        "id": "v17_validation_moment_004",
+        "category": "moment",
+        "identity": [
+          "moment",
+          26,
+          573,
+          7,
+          19
+        ],
+        "question": "The quantity to average is the square of (7 times X plus 19), not the square of its average. The mean of X is 26, and its variance is 573. Set up that expectation.",
+        "bindings": {
+          "mean": "26",
+          "variance": "573",
+          "scale": "7",
+          "offset": "19"
+        },
+        "expression": "7**2*573+(7*26+19)**2",
+        "answer": "68478",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_moment_005",
+        "category": "moment",
+        "identity": [
+          "moment",
+          27,
+          212,
+          2,
+          7
+        ],
+        "question": "The quantity to average is the square of (2 times X plus 7), not the square of its average. The mean of X is 27, and its variance is 212. Set up that expectation.",
+        "bindings": {
+          "mean": "27",
+          "variance": "212",
+          "scale": "2",
+          "offset": "7"
+        },
+        "expression": "2**2*212+(2*27+7)**2",
+        "answer": "4569",
+        "provenance": "procedural_reference"
+      },
+      {
         "id": "v17_validation_uniform_time_000",
         "category": "uniform_time",
         "identity": [
@@ -298,6 +412,40 @@
         },
         "expression": "(33+597/60)/2",
         "answer": "859/40",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_uniform_time_004",
+        "category": "uniform_time",
+        "identity": [
+          "uniform_time",
+          51,
+          331
+        ],
+        "question": "Only waits exceeding 331 seconds are retained. Before this selection, total waiting time is uniform on [0,51] minutes. What is the mean total duration, in minutes, of retained waits?",
+        "bindings": {
+          "upper_minutes": "51",
+          "cutoff_minutes": "331/60"
+        },
+        "expression": "(51+331/60)/2",
+        "answer": "3391/120",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_uniform_time_005",
+        "category": "uniform_time",
+        "identity": [
+          "uniform_time",
+          20,
+          549
+        ],
+        "question": "Only waits exceeding 549 seconds are retained. Before this selection, total waiting time is uniform on [0,20] minutes. What is the mean total duration, in minutes, of retained waits?",
+        "bindings": {
+          "upper_minutes": "20",
+          "cutoff_minutes": "549/60"
+        },
+        "expression": "(20+549/60)/2",
+        "answer": "583/40",
         "provenance": "procedural_reference"
       },
       {
@@ -377,6 +525,44 @@
         "provenance": "procedural_reference"
       },
       {
+        "id": "v17_validation_binomial_004",
+        "category": "binomial",
+        "identity": [
+          "binomial",
+          8,
+          5,
+          42
+        ],
+        "question": "An experiment repeats 8 independent tests under true null hypotheses. A rejection occurs with probability 42/100 on each test. We count rejections and want the probability that the count equals 5.",
+        "bindings": {
+          "n": "8",
+          "r": "5",
+          "reject_probability": "42/100"
+        },
+        "expression": "comb(8,5)*(42/100)**5*(1-42/100)**(8-5)",
+        "answer": "697249975023/4882812500000",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_binomial_005",
+        "category": "binomial",
+        "identity": [
+          "binomial",
+          5,
+          2,
+          64
+        ],
+        "question": "An experiment repeats 5 independent tests under true null hypotheses. A rejection occurs with probability 64/100 on each test. We count rejections and want the probability that the count equals 2.",
+        "bindings": {
+          "n": "5",
+          "r": "2",
+          "reject_probability": "64/100"
+        },
+        "expression": "comb(5,2)*(64/100)**2*(1-64/100)**(5-2)",
+        "answer": "373248/1953125",
+        "provenance": "procedural_reference"
+      },
+      {
         "id": "v17_validation_exactly_one_000",
         "category": "exactly_one",
         "identity": [
@@ -445,6 +631,40 @@
         "provenance": "procedural_reference"
       },
       {
+        "id": "v17_validation_exactly_one_004",
+        "category": "exactly_one",
+        "identity": [
+          "detection_pair",
+          43,
+          63
+        ],
+        "question": "For an existing defect, inspection A has miss probability 63/100, and independent inspection B has miss probability 43/100. What is the chance that one method detects and the other misses?",
+        "bindings": {
+          "miss_a": "63/100",
+          "miss_b": "43/100"
+        },
+        "expression": "(1-63/100)*(43/100)+(63/100)*(1-43/100)",
+        "answer": "2591/5000",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_exactly_one_005",
+        "category": "exactly_one",
+        "identity": [
+          "detection_pair",
+          38,
+          41
+        ],
+        "question": "For an existing defect, inspection A has miss probability 38/100, and independent inspection B has miss probability 41/100. What is the chance that one method detects and the other misses?",
+        "bindings": {
+          "miss_a": "38/100",
+          "miss_b": "41/100"
+        },
+        "expression": "(1-38/100)*(41/100)+(38/100)*(1-41/100)",
+        "answer": "299/625",
+        "provenance": "procedural_reference"
+      },
+      {
         "id": "v17_validation_at_least_one_000",
         "category": "at_least_one",
         "identity": [
@@ -510,6 +730,40 @@
         },
         "expression": "1-(22/100)*(30/100)",
         "answer": "467/500",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_at_least_one_004",
+        "category": "at_least_one",
+        "identity": [
+          "detection_pair",
+          27,
+          34
+        ],
+        "question": "For an existing defect, inspection A has miss probability 27/100, and independent inspection B has miss probability 34/100. What is the chance that one or both methods detect?",
+        "bindings": {
+          "miss_a": "27/100",
+          "miss_b": "34/100"
+        },
+        "expression": "1-(27/100)*(34/100)",
+        "answer": "4541/5000",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_at_least_one_005",
+        "category": "at_least_one",
+        "identity": [
+          "detection_pair",
+          15,
+          16
+        ],
+        "question": "For an existing defect, inspection A has miss probability 16/100, and independent inspection B has miss probability 15/100. What is the chance that one or both methods detect?",
+        "bindings": {
+          "miss_a": "16/100",
+          "miss_b": "15/100"
+        },
+        "expression": "1-(16/100)*(15/100)",
+        "answer": "122/125",
         "provenance": "procedural_reference"
       },
       {
@@ -586,6 +840,44 @@
         },
         "expression": "(55+129)/2+(129-55)/(2*2)",
         "answer": "221/2",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_interval_004",
+        "category": "interval",
+        "identity": [
+          "interval",
+          27,
+          231,
+          4
+        ],
+        "question": "Increase sample size by a factor of 16, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 27 to 231. Where is its upper endpoint after this change?",
+        "bindings": {
+          "lower": "27",
+          "upper": "231",
+          "width_divisor": "4"
+        },
+        "expression": "(27+231)/2+(231-27)/(2*4)",
+        "answer": "309/2",
+        "provenance": "procedural_reference"
+      },
+      {
+        "id": "v17_validation_interval_005",
+        "category": "interval",
+        "identity": [
+          "interval",
+          41,
+          455,
+          5
+        ],
+        "question": "Increase sample size by a factor of 25, leaving confidence level, population standard deviation and interval center unchanged. The original normal-theory interval runs from 41 to 455. Where is its upper endpoint after this change?",
+        "bindings": {
+          "lower": "41",
+          "upper": "455",
+          "width_divisor": "5"
+        },
+        "expression": "(41+455)/2+(455-41)/(2*5)",
+        "answer": "1447/5",
         "provenance": "procedural_reference"
       }
     ],
@@ -747,6 +1039,162 @@
         "target": "Expression: 91*(150/60)"
       },
       {
+        "id": "v18_validation_poisson_variance_002_d1",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 1,
+        "story_id": "v18_validation_poisson_variance_002",
+        "parameters": [
+          92,
+          3,
+          8,
+          27,
+          187,
+          51,
+          12
+        ],
+        "question": "X is a Poisson count with mean 92. Find Var(X).",
+        "bindings": {},
+        "expression": "92",
+        "answer": "92",
+        "conceptual_rules": [
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 92"
+      },
+      {
+        "id": "v18_validation_poisson_variance_002_d2",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 2,
+        "story_id": "v18_validation_poisson_variance_002",
+        "parameters": [
+          92,
+          3,
+          8,
+          27,
+          187,
+          51,
+          12
+        ],
+        "question": "A homogeneous Poisson process has rate 92 arrivals per minute. Find the count variance over 3 minutes.",
+        "bindings": {},
+        "expression": "92*3",
+        "answer": "276",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 92*3"
+      },
+      {
+        "id": "v18_validation_poisson_variance_002_d3",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 3,
+        "story_id": "v18_validation_poisson_variance_002",
+        "parameters": [
+          92,
+          3,
+          8,
+          27,
+          187,
+          51,
+          12
+        ],
+        "question": "A homogeneous Poisson process has rate 92 arrivals per minute. Find the count variance over 210 seconds.",
+        "bindings": {},
+        "expression": "92*(210/60)",
+        "answer": "322",
+        "conceptual_rules": [
+          "seconds to minutes",
+          "rate and duration to count mean",
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 92*(210/60)"
+      },
+      {
+        "id": "v18_validation_poisson_variance_003_d1",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 1,
+        "story_id": "v18_validation_poisson_variance_003",
+        "parameters": [
+          39,
+          11,
+          8,
+          3,
+          168,
+          37,
+          16
+        ],
+        "question": "X is a Poisson count with mean 39. Find Var(X).",
+        "bindings": {},
+        "expression": "39",
+        "answer": "39",
+        "conceptual_rules": [
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 39"
+      },
+      {
+        "id": "v18_validation_poisson_variance_003_d2",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 2,
+        "story_id": "v18_validation_poisson_variance_003",
+        "parameters": [
+          39,
+          11,
+          8,
+          3,
+          168,
+          37,
+          16
+        ],
+        "question": "A homogeneous Poisson process has rate 39 arrivals per minute. Find the count variance over 11 minutes.",
+        "bindings": {},
+        "expression": "39*11",
+        "answer": "429",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 39*11"
+      },
+      {
+        "id": "v18_validation_poisson_variance_003_d3",
+        "category": "v18_poisson_variance",
+        "track": "poisson_variance",
+        "depth": 3,
+        "story_id": "v18_validation_poisson_variance_003",
+        "parameters": [
+          39,
+          11,
+          8,
+          3,
+          168,
+          37,
+          16
+        ],
+        "question": "A homogeneous Poisson process has rate 39 arrivals per minute. Find the count variance over 690 seconds.",
+        "bindings": {},
+        "expression": "39*(690/60)",
+        "answer": "897/2",
+        "conceptual_rules": [
+          "seconds to minutes",
+          "rate and duration to count mean",
+          "Poisson mean to variance"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 39*(690/60)"
+      },
+      {
         "id": "v18_validation_scaled_variance_000_d1",
         "category": "v18_scaled_variance",
         "track": "scaled_variance",
@@ -901,6 +1349,162 @@
         ],
         "provenance": "procedural_reference; no teacher call",
         "target": "Expression: 5**2*(26*8)"
+      },
+      {
+        "id": "v18_validation_scaled_variance_002_d1",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 1,
+        "story_id": "v18_validation_scaled_variance_002",
+        "parameters": [
+          23,
+          2,
+          3,
+          25,
+          137,
+          59,
+          16
+        ],
+        "question": "X has variance 137. Y=3*X+25. Find Var(Y).",
+        "bindings": {},
+        "expression": "3**2*137",
+        "answer": "1233",
+        "conceptual_rules": [
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 3**2*137"
+      },
+      {
+        "id": "v18_validation_scaled_variance_002_d2",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 2,
+        "story_id": "v18_validation_scaled_variance_002",
+        "parameters": [
+          23,
+          2,
+          3,
+          25,
+          137,
+          59,
+          16
+        ],
+        "question": "X is Poisson with mean 23. Y=3*X+25. Find Var(Y).",
+        "bindings": {},
+        "expression": "3**2*23",
+        "answer": "207",
+        "conceptual_rules": [
+          "Poisson mean to variance",
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 3**2*23"
+      },
+      {
+        "id": "v18_validation_scaled_variance_002_d3",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 3,
+        "story_id": "v18_validation_scaled_variance_002",
+        "parameters": [
+          23,
+          2,
+          3,
+          25,
+          137,
+          59,
+          16
+        ],
+        "question": "A homogeneous Poisson process has rate 23 arrivals per minute. X counts arrivals over 2 minutes. Y=3*X+25. Find Var(Y).",
+        "bindings": {},
+        "expression": "3**2*(23*2)",
+        "answer": "414",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance",
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 3**2*(23*2)"
+      },
+      {
+        "id": "v18_validation_scaled_variance_003_d1",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 1,
+        "story_id": "v18_validation_scaled_variance_003",
+        "parameters": [
+          42,
+          6,
+          8,
+          3,
+          264,
+          52,
+          16
+        ],
+        "question": "X has variance 264. Y=8*X+3. Find Var(Y).",
+        "bindings": {},
+        "expression": "8**2*264",
+        "answer": "16896",
+        "conceptual_rules": [
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 8**2*264"
+      },
+      {
+        "id": "v18_validation_scaled_variance_003_d2",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 2,
+        "story_id": "v18_validation_scaled_variance_003",
+        "parameters": [
+          42,
+          6,
+          8,
+          3,
+          264,
+          52,
+          16
+        ],
+        "question": "X is Poisson with mean 42. Y=8*X+3. Find Var(Y).",
+        "bindings": {},
+        "expression": "8**2*42",
+        "answer": "2688",
+        "conceptual_rules": [
+          "Poisson mean to variance",
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 8**2*42"
+      },
+      {
+        "id": "v18_validation_scaled_variance_003_d3",
+        "category": "v18_scaled_variance",
+        "track": "scaled_variance",
+        "depth": 3,
+        "story_id": "v18_validation_scaled_variance_003",
+        "parameters": [
+          42,
+          6,
+          8,
+          3,
+          264,
+          52,
+          16
+        ],
+        "question": "A homogeneous Poisson process has rate 42 arrivals per minute. X counts arrivals over 6 minutes. Y=8*X+3. Find Var(Y).",
+        "bindings": {},
+        "expression": "8**2*(42*6)",
+        "answer": "16128",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance",
+          "affine variance transformation"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 8**2*(42*6)"
       },
       {
         "id": "v18_validation_second_moment_000_d1",
@@ -1059,6 +1663,162 @@
         "target": "Expression: (39*12)+(39*12)**2"
       },
       {
+        "id": "v18_validation_second_moment_002_d1",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 1,
+        "story_id": "v18_validation_second_moment_002",
+        "parameters": [
+          13,
+          13,
+          4,
+          21,
+          23,
+          71,
+          7
+        ],
+        "question": "X has mean 13 and variance 23. Find E[X**2].",
+        "bindings": {},
+        "expression": "23+13**2",
+        "answer": "192",
+        "conceptual_rules": [
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 23+13**2"
+      },
+      {
+        "id": "v18_validation_second_moment_002_d2",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 2,
+        "story_id": "v18_validation_second_moment_002",
+        "parameters": [
+          13,
+          13,
+          4,
+          21,
+          23,
+          71,
+          7
+        ],
+        "question": "X is Poisson with mean 13. Find E[X**2].",
+        "bindings": {},
+        "expression": "13+13**2",
+        "answer": "182",
+        "conceptual_rules": [
+          "Poisson mean to variance",
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 13+13**2"
+      },
+      {
+        "id": "v18_validation_second_moment_002_d3",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 3,
+        "story_id": "v18_validation_second_moment_002",
+        "parameters": [
+          13,
+          13,
+          4,
+          21,
+          23,
+          71,
+          7
+        ],
+        "question": "A homogeneous Poisson process has rate 13 arrivals per minute. X counts arrivals over 13 minutes. Find E[X**2].",
+        "bindings": {},
+        "expression": "(13*13)+(13*13)**2",
+        "answer": "28730",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance",
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (13*13)+(13*13)**2"
+      },
+      {
+        "id": "v18_validation_second_moment_003_d1",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 1,
+        "story_id": "v18_validation_second_moment_003",
+        "parameters": [
+          65,
+          8,
+          7,
+          23,
+          116,
+          51,
+          16
+        ],
+        "question": "X has mean 65 and variance 116. Find E[X**2].",
+        "bindings": {},
+        "expression": "116+65**2",
+        "answer": "4341",
+        "conceptual_rules": [
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 116+65**2"
+      },
+      {
+        "id": "v18_validation_second_moment_003_d2",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 2,
+        "story_id": "v18_validation_second_moment_003",
+        "parameters": [
+          65,
+          8,
+          7,
+          23,
+          116,
+          51,
+          16
+        ],
+        "question": "X is Poisson with mean 65. Find E[X**2].",
+        "bindings": {},
+        "expression": "65+65**2",
+        "answer": "4290",
+        "conceptual_rules": [
+          "Poisson mean to variance",
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: 65+65**2"
+      },
+      {
+        "id": "v18_validation_second_moment_003_d3",
+        "category": "v18_second_moment",
+        "track": "second_moment",
+        "depth": 3,
+        "story_id": "v18_validation_second_moment_003",
+        "parameters": [
+          65,
+          8,
+          7,
+          23,
+          116,
+          51,
+          16
+        ],
+        "question": "A homogeneous Poisson process has rate 65 arrivals per minute. X counts arrivals over 8 minutes. Find E[X**2].",
+        "bindings": {},
+        "expression": "(65*8)+(65*8)**2",
+        "answer": "270920",
+        "conceptual_rules": [
+          "rate and duration to count mean",
+          "Poisson mean to variance",
+          "mean and variance to second moment"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (65*8)+(65*8)**2"
+      },
+      {
         "id": "v18_validation_conditional_wait_000_d1",
         "category": "v18_conditional_wait",
         "track": "conditional_wait",
@@ -1213,6 +1973,162 @@
         ],
         "provenance": "procedural_reference; no teacher call",
         "target": "Expression: (990/60+63)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_002_d1",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 1,
+        "story_id": "v18_validation_conditional_wait_002",
+        "parameters": [
+          65,
+          3,
+          3,
+          26,
+          23,
+          33,
+          16
+        ],
+        "question": "T is uniform on [16, 33] minutes. Find E[T] in minutes.",
+        "bindings": {},
+        "expression": "(16+33)/2",
+        "answer": "49/2",
+        "conceptual_rules": [
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (16+33)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_002_d2",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 2,
+        "story_id": "v18_validation_conditional_wait_002",
+        "parameters": [
+          65,
+          3,
+          3,
+          26,
+          23,
+          33,
+          16
+        ],
+        "question": "T is uniform on [0, 33] minutes. Given T>16 minutes, find its conditional total mean in minutes.",
+        "bindings": {},
+        "expression": "(16+33)/2",
+        "answer": "49/2",
+        "conceptual_rules": [
+          "conditioning uniform support",
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (16+33)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_002_d3",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 3,
+        "story_id": "v18_validation_conditional_wait_002",
+        "parameters": [
+          65,
+          3,
+          3,
+          26,
+          23,
+          33,
+          16
+        ],
+        "question": "T is uniform on [0, 33] minutes. Given T>990 seconds, find its conditional total mean in minutes.",
+        "bindings": {},
+        "expression": "(990/60+33)/2",
+        "answer": "99/4",
+        "conceptual_rules": [
+          "seconds to minutes",
+          "conditioning uniform support",
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (990/60+33)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_003_d1",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 1,
+        "story_id": "v18_validation_conditional_wait_003",
+        "parameters": [
+          76,
+          3,
+          5,
+          14,
+          43,
+          24,
+          6
+        ],
+        "question": "T is uniform on [6, 24] minutes. Find E[T] in minutes.",
+        "bindings": {},
+        "expression": "(6+24)/2",
+        "answer": "15",
+        "conceptual_rules": [
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (6+24)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_003_d2",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 2,
+        "story_id": "v18_validation_conditional_wait_003",
+        "parameters": [
+          76,
+          3,
+          5,
+          14,
+          43,
+          24,
+          6
+        ],
+        "question": "T is uniform on [0, 24] minutes. Given T>6 minutes, find its conditional total mean in minutes.",
+        "bindings": {},
+        "expression": "(6+24)/2",
+        "answer": "15",
+        "conceptual_rules": [
+          "conditioning uniform support",
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (6+24)/2"
+      },
+      {
+        "id": "v18_validation_conditional_wait_003_d3",
+        "category": "v18_conditional_wait",
+        "track": "conditional_wait",
+        "depth": 3,
+        "story_id": "v18_validation_conditional_wait_003",
+        "parameters": [
+          76,
+          3,
+          5,
+          14,
+          43,
+          24,
+          6
+        ],
+        "question": "T is uniform on [0, 24] minutes. Given T>390 seconds, find its conditional total mean in minutes.",
+        "bindings": {},
+        "expression": "(390/60+24)/2",
+        "answer": "61/4",
+        "conceptual_rules": [
+          "seconds to minutes",
+          "conditioning uniform support",
+          "uniform bounds to mean"
+        ],
+        "provenance": "procedural_reference; no teacher call",
+        "target": "Expression: (390/60+24)/2"
       }
     ],
     "event": [
@@ -1233,54 +2149,6 @@
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "v20_validation_000_exactly_one_s1",
-        "category": "exactly_one",
-        "story_id": "v20_validation_000",
-        "parameters": [
-          23,
-          44,
-          101
-        ],
-        "question": "Switch B activates with probability 44/101; switch A activates with probability 23/101. Their activations are independent. Find the probability that one activates and the other does not.",
-        "bindings": {},
-        "expression": "(23/101)*(1-(44/101))+(1-(23/101))*(44/101)",
-        "answer": "4743/10201",
-        "target": "Expression: (23/101)*(1-(44/101))+(1-(23/101))*(44/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_001_exactly_one_s0",
-        "category": "exactly_one",
-        "story_id": "v20_validation_001",
-        "parameters": [
-          12,
-          65,
-          101
-        ],
-        "question": "Two independent switches A and B activate with probabilities 12/101 and 65/101, respectively. Find the probability that exactly one activates.",
-        "bindings": {},
-        "expression": "(12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
-        "answer": "6217/10201",
-        "target": "Expression: (12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_001_exactly_one_s1",
-        "category": "exactly_one",
-        "story_id": "v20_validation_001",
-        "parameters": [
-          12,
-          65,
-          101
-        ],
-        "question": "Switch B activates with probability 65/101; switch A activates with probability 12/101. Their activations are independent. Find the probability that one activates and the other does not.",
-        "bindings": {},
-        "expression": "(12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
-        "answer": "6217/10201",
-        "target": "Expression: (12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
         "id": "v20_validation_000_both_s0",
         "category": "both",
         "story_id": "v20_validation_000",
@@ -1294,54 +2162,6 @@
         "expression": "(23/101)*(44/101)",
         "answer": "1012/10201",
         "target": "Expression: (23/101)*(44/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_000_both_s1",
-        "category": "both",
-        "story_id": "v20_validation_000",
-        "parameters": [
-          23,
-          44,
-          101
-        ],
-        "question": "Switch B activates with probability 44/101; switch A activates with probability 23/101. Their activations are independent. Find the probability that the two activate together.",
-        "bindings": {},
-        "expression": "(23/101)*(44/101)",
-        "answer": "1012/10201",
-        "target": "Expression: (23/101)*(44/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_001_both_s0",
-        "category": "both",
-        "story_id": "v20_validation_001",
-        "parameters": [
-          12,
-          65,
-          101
-        ],
-        "question": "Two independent switches A and B activate with probabilities 12/101 and 65/101, respectively. Find the probability that both activate.",
-        "bindings": {},
-        "expression": "(12/101)*(65/101)",
-        "answer": "780/10201",
-        "target": "Expression: (12/101)*(65/101)",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_001_both_s1",
-        "category": "both",
-        "story_id": "v20_validation_001",
-        "parameters": [
-          12,
-          65,
-          101
-        ],
-        "question": "Switch B activates with probability 65/101; switch A activates with probability 12/101. Their activations are independent. Find the probability that the two activate together.",
-        "bindings": {},
-        "expression": "(12/101)*(65/101)",
-        "answer": "780/10201",
-        "target": "Expression: (12/101)*(65/101)",
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
@@ -1361,19 +2181,51 @@
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "v20_validation_000_neither_s1",
-        "category": "neither",
+        "id": "v20_validation_000_same_s0",
+        "category": "same",
         "story_id": "v20_validation_000",
         "parameters": [
           23,
           44,
           101
         ],
-        "question": "Switch B activates with probability 44/101; switch A activates with probability 23/101. Their activations are independent. Find the probability that the two both remain inactive.",
+        "question": "Two independent switches A and B activate with probabilities 23/101 and 44/101, respectively. Find the probability that both activate or neither activates.",
         "bindings": {},
-        "expression": "(1-(23/101))*(1-(44/101))",
-        "answer": "4446/10201",
-        "target": "Expression: (1-(23/101))*(1-(44/101))",
+        "expression": "(23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
+        "answer": "5458/10201",
+        "target": "Expression: (23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
+        "provenance": "procedural_reference; zero teacher calls"
+      },
+      {
+        "id": "v20_validation_001_exactly_one_s0",
+        "category": "exactly_one",
+        "story_id": "v20_validation_001",
+        "parameters": [
+          12,
+          65,
+          101
+        ],
+        "question": "Two independent switches A and B activate with probabilities 12/101 and 65/101, respectively. Find the probability that exactly one activates.",
+        "bindings": {},
+        "expression": "(12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
+        "answer": "6217/10201",
+        "target": "Expression: (12/101)*(1-(65/101))+(1-(12/101))*(65/101)",
+        "provenance": "procedural_reference; zero teacher calls"
+      },
+      {
+        "id": "v20_validation_001_both_s0",
+        "category": "both",
+        "story_id": "v20_validation_001",
+        "parameters": [
+          12,
+          65,
+          101
+        ],
+        "question": "Two independent switches A and B activate with probabilities 12/101 and 65/101, respectively. Find the probability that both activate.",
+        "bindings": {},
+        "expression": "(12/101)*(65/101)",
+        "answer": "780/10201",
+        "target": "Expression: (12/101)*(65/101)",
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
@@ -1393,54 +2245,6 @@
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "v20_validation_001_neither_s1",
-        "category": "neither",
-        "story_id": "v20_validation_001",
-        "parameters": [
-          12,
-          65,
-          101
-        ],
-        "question": "Switch B activates with probability 65/101; switch A activates with probability 12/101. Their activations are independent. Find the probability that the two both remain inactive.",
-        "bindings": {},
-        "expression": "(1-(12/101))*(1-(65/101))",
-        "answer": "3204/10201",
-        "target": "Expression: (1-(12/101))*(1-(65/101))",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_000_same_s0",
-        "category": "same",
-        "story_id": "v20_validation_000",
-        "parameters": [
-          23,
-          44,
-          101
-        ],
-        "question": "Two independent switches A and B activate with probabilities 23/101 and 44/101, respectively. Find the probability that both activate or neither activates.",
-        "bindings": {},
-        "expression": "(23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
-        "answer": "5458/10201",
-        "target": "Expression: (23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
-        "id": "v20_validation_000_same_s1",
-        "category": "same",
-        "story_id": "v20_validation_000",
-        "parameters": [
-          23,
-          44,
-          101
-        ],
-        "question": "Switch B activates with probability 44/101; switch A activates with probability 23/101. Their activations are independent. Find the probability that the two have matching activation states.",
-        "bindings": {},
-        "expression": "(23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
-        "answer": "5458/10201",
-        "target": "Expression: (23/101)*(44/101)+(1-(23/101))*(1-(44/101))",
-        "provenance": "procedural_reference; zero teacher calls"
-      },
-      {
         "id": "v20_validation_001_same_s0",
         "category": "same",
         "story_id": "v20_validation_001",
@@ -1457,328 +2261,132 @@
         "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "v20_validation_001_same_s1",
-        "category": "same",
-        "story_id": "v20_validation_001",
+        "id": "v20_validation_002_exactly_one_s0",
+        "category": "exactly_one",
+        "story_id": "v20_validation_002",
         "parameters": [
-          12,
-          65,
+          38,
+          73,
           101
         ],
-        "question": "Switch B activates with probability 65/101; switch A activates with probability 12/101. Their activations are independent. Find the probability that the two have matching activation states.",
+        "question": "Two independent switches A and B activate with probabilities 38/101 and 73/101, respectively. Find the probability that exactly one activates.",
         "bindings": {},
-        "expression": "(12/101)*(65/101)+(1-(12/101))*(1-(65/101))",
-        "answer": "3984/10201",
-        "target": "Expression: (12/101)*(65/101)+(1-(12/101))*(1-(65/101))",
+        "expression": "(38/101)*(1-(73/101))+(1-(38/101))*(73/101)",
+        "answer": "5663/10201",
+        "target": "Expression: (38/101)*(1-(73/101))+(1-(38/101))*(73/101)",
         "provenance": "procedural_reference; zero teacher calls"
-      }
-    ],
-    "candidate": [
-      {
-        "id": "consolidation_validation_detection_events_012_01",
-        "story_id": "consolidation_validation_detection_events_012",
-        "category": "at_least_one",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that at least one alarm activates.",
-        "bindings": {},
-        "expression": "1-(1-(62/100))*(1-(28/100))",
-        "answer": "454/625",
-        "conceptual_rules": [
-          "enumerate independent joint outcomes",
-          "at_least_one"
-        ],
-        "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
       },
       {
-        "id": "consolidation_validation_binomial_006_00",
-        "story_id": "consolidation_validation_binomial_006",
-        "category": "binomial",
-        "question": "Among 8 independent quality checks, each flags with probability 29%. Set up the probability that exactly 4 checks flag.",
-        "bindings": {
-          "n": "8",
-          "r": "4",
-          "reject_probability": "29/100"
-        },
-        "expression": "comb(8,4)*(29/100)**4*(1-29/100)**(8-4)",
-        "answer": "125812394045527/1000000000000000",
-        "conceptual_rules": [
-          "choose the flagged checks",
-          "multiply success and failure probabilities"
-        ],
-        "confused_with": "omitting the combination count",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_detection_events_012_02",
-        "story_id": "consolidation_validation_detection_events_012",
+        "id": "v20_validation_002_both_s0",
         "category": "both",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that both alarms activate.",
+        "story_id": "v20_validation_002",
+        "parameters": [
+          38,
+          73,
+          101
+        ],
+        "question": "Two independent switches A and B activate with probabilities 38/101 and 73/101, respectively. Find the probability that both activate.",
         "bindings": {},
-        "expression": "(62/100)*(28/100)",
-        "answer": "217/1250",
-        "conceptual_rules": [
-          "enumerate independent joint outcomes",
-          "both"
-        ],
-        "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "expression": "(38/101)*(73/101)",
+        "answer": "2774/10201",
+        "target": "Expression: (38/101)*(73/101)",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_detection_events_012_00",
-        "story_id": "consolidation_validation_detection_events_012",
-        "category": "exactly_one",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that exactly one alarm activates.",
-        "bindings": {},
-        "expression": "(62/100)*(1-(28/100))+(1-(62/100))*(28/100)",
-        "answer": "691/1250",
-        "conceptual_rules": [
-          "enumerate independent joint outcomes",
-          "exactly_one"
-        ],
-        "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_interval_006_00",
-        "story_id": "consolidation_validation_interval_006",
-        "category": "interval",
-        "question": "A normal-theory interval is [41, 85]. Sample size is multiplied by 36; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.",
-        "bindings": {
-          "lower": "41",
-          "upper": "85",
-          "width_divisor": "6"
-        },
-        "expression": "(41+85)/2+(85-41)/(2*6)",
-        "answer": "200/3",
-        "conceptual_rules": [
-          "preserve center",
-          "standard error shrinks by square-root sample-size factor"
-        ],
-        "confused_with": "dividing the endpoint",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_general_moment_009_02",
-        "story_id": "consolidation_validation_general_moment_009",
-        "category": "moment",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y**2].",
-        "bindings": {
-          "mean": "45",
-          "variance": "201",
-          "scale": "2",
-          "offset": "14"
-        },
-        "expression": "2**2*201+(2*45+14)**2",
-        "answer": "11620",
-        "conceptual_rules": [
-          "affine variance",
-          "affine mean",
-          "second moment is variance plus squared mean"
-        ],
-        "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_general_moment_009_00",
-        "story_id": "consolidation_validation_general_moment_009",
-        "category": "moment_mean",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y].",
-        "bindings": {},
-        "expression": "2*45+14",
-        "answer": "104",
-        "conceptual_rules": [
-          "affine expectation"
-        ],
-        "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_general_moment_009_01",
-        "story_id": "consolidation_validation_general_moment_009",
-        "category": "moment_variance",
-        "question": "During an operations review, x has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up Var(Y).",
-        "bindings": {},
-        "expression": "2**2*201",
-        "answer": "804",
-        "conceptual_rules": [
-          "affine variance"
-        ],
-        "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_detection_events_012_03",
-        "story_id": "consolidation_validation_detection_events_012",
+        "id": "v20_validation_002_neither_s0",
         "category": "neither",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that neither alarm activates.",
+        "story_id": "v20_validation_002",
+        "parameters": [
+          38,
+          73,
+          101
+        ],
+        "question": "Two independent switches A and B activate with probabilities 38/101 and 73/101, respectively. Find the probability that neither activates.",
         "bindings": {},
-        "expression": "(1-(62/100))*(1-(28/100))",
-        "answer": "171/625",
-        "conceptual_rules": [
-          "enumerate independent joint outcomes",
-          "neither"
-        ],
-        "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "expression": "(1-(38/101))*(1-(73/101))",
+        "answer": "1764/10201",
+        "target": "Expression: (1-(38/101))*(1-(73/101))",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_affine_poisson_009_01",
-        "story_id": "consolidation_validation_affine_poisson_009",
-        "category": "poisson_scaled",
-        "question": "During an operations review, for that display Y=2*X+9, set up Var(Y).",
-        "bindings": {
-          "mean": "62",
-          "scale": "2",
-          "offset": "9"
-        },
-        "expression": "2**2*62",
-        "answer": "248",
-        "conceptual_rules": [
-          "Poisson variance equals mean",
-          "constant offset has zero variance",
-          "variance scales by the square"
-        ],
-        "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_affine_poisson_009_00",
-        "story_id": "consolidation_validation_affine_poisson_009",
-        "category": "poisson_scaled_mean",
-        "question": "During an operations review, x is Poisson with mean 62. A display reports Y=2*X+9. Set up E[Y].",
-        "bindings": {},
-        "expression": "2*62+9",
-        "answer": "133",
-        "conceptual_rules": [
-          "affine expectation"
-        ],
-        "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_affine_poisson_009_02",
-        "story_id": "consolidation_validation_affine_poisson_009",
-        "category": "poisson_scaled_moment",
-        "question": "During an operations review, for the same Y=2*X+9, set up E[Y**2].",
-        "bindings": {},
-        "expression": "2**2*62+(2*62+9)**2",
-        "answer": "17937",
-        "conceptual_rules": [
-          "variance of affine transform",
-          "second moment is variance plus squared mean"
-        ],
-        "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_poisson_process_009_00",
-        "story_id": "consolidation_validation_poisson_process_009",
-        "category": "poisson_time",
-        "question": "During an operations review, a service counter receives arrivals at 54 per minute. During a 461-second observation, what is the variance of the arrival count?",
-        "bindings": {
-          "rate_per_minute": "54",
-          "duration_minutes": "461/60"
-        },
-        "expression": "54*(461/60)",
-        "answer": "4149/10",
-        "conceptual_rules": [
-          "convert seconds to minutes",
-          "Poisson variance equals its mean"
-        ],
-        "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_detection_events_012_04",
-        "story_id": "consolidation_validation_detection_events_012",
+        "id": "v20_validation_002_same_s0",
         "category": "same",
-        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that the two alarms have the same activation state.",
-        "bindings": {},
-        "expression": "(62/100)*(28/100)+(1-(62/100))*(1-(28/100))",
-        "answer": "559/1250",
-        "conceptual_rules": [
-          "enumerate independent joint outcomes",
-          "same"
+        "story_id": "v20_validation_002",
+        "parameters": [
+          38,
+          73,
+          101
         ],
-        "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "question": "Two independent switches A and B activate with probabilities 38/101 and 73/101, respectively. Find the probability that both activate or neither activates.",
+        "bindings": {},
+        "expression": "(38/101)*(73/101)+(1-(38/101))*(1-(73/101))",
+        "answer": "4538/10201",
+        "target": "Expression: (38/101)*(73/101)+(1-(38/101))*(1-(73/101))",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_uniform_wait_006_00",
-        "story_id": "consolidation_validation_uniform_wait_006",
-        "category": "uniform_time",
-        "question": "A total wait T is uniform from 0 to 61 minutes. After already waiting 186 seconds, find E[T | T>186 seconds] in minutes.",
-        "bindings": {
-          "upper_minutes": "61",
-          "cutoff_minutes": "186/60"
-        },
-        "expression": "(186/60+61)/2",
-        "answer": "641/20",
-        "conceptual_rules": [
-          "convert seconds to minutes",
-          "truncate uniform support",
-          "mean is midpoint"
+        "id": "v20_validation_003_exactly_one_s0",
+        "category": "exactly_one",
+        "story_id": "v20_validation_003",
+        "parameters": [
+          36,
+          62,
+          101
         ],
-        "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "question": "Two independent switches A and B activate with probabilities 36/101 and 62/101, respectively. Find the probability that exactly one activates.",
+        "bindings": {},
+        "expression": "(36/101)*(1-(62/101))+(1-(36/101))*(62/101)",
+        "answer": "5434/10201",
+        "target": "Expression: (36/101)*(1-(62/101))+(1-(36/101))*(62/101)",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_uniform_wait_006_01",
-        "story_id": "consolidation_validation_uniform_wait_006",
-        "category": "v18_conditional_wait",
-        "question": "For the same wait, set up the expected additional wait after 186 seconds have elapsed.",
-        "bindings": {},
-        "expression": "(61-186/60)/2",
-        "answer": "579/20",
-        "conceptual_rules": [
-          "conditional total mean",
-          "subtract elapsed time"
+        "id": "v20_validation_003_both_s0",
+        "category": "both",
+        "story_id": "v20_validation_003",
+        "parameters": [
+          36,
+          62,
+          101
         ],
-        "confused_with": "conditional total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "question": "Two independent switches A and B activate with probabilities 36/101 and 62/101, respectively. Find the probability that both activate.",
+        "bindings": {},
+        "expression": "(36/101)*(62/101)",
+        "answer": "2232/10201",
+        "target": "Expression: (36/101)*(62/101)",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_chain_poisson_variance_006_00",
-        "story_id": "consolidation_validation_chain_poisson_variance_006",
-        "category": "v18_poisson_variance",
-        "question": "A Poisson count X has mean 23. Set up Var(X).",
-        "bindings": {},
-        "expression": "23",
-        "answer": "23",
-        "conceptual_rules": [
-          "Poisson variance"
+        "id": "v20_validation_003_neither_s0",
+        "category": "neither",
+        "story_id": "v20_validation_003",
+        "parameters": [
+          36,
+          62,
+          101
         ],
-        "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "question": "Two independent switches A and B activate with probabilities 36/101 and 62/101, respectively. Find the probability that neither activates.",
+        "bindings": {},
+        "expression": "(1-(36/101))*(1-(62/101))",
+        "answer": "2535/10201",
+        "target": "Expression: (1-(36/101))*(1-(62/101))",
+        "provenance": "procedural_reference; zero teacher calls"
       },
       {
-        "id": "consolidation_validation_chain_scaled_variance_004_00",
-        "story_id": "consolidation_validation_chain_scaled_variance_004",
-        "category": "v18_scaled_variance",
-        "question": "Write a symbolic numerical setup for this situation. X has variance 19; Y=3*X+14. Set up Var(Y).",
-        "bindings": {},
-        "expression": "3**2*19",
-        "answer": "171",
-        "conceptual_rules": [
-          "affine variance"
+        "id": "v20_validation_003_same_s0",
+        "category": "same",
+        "story_id": "v20_validation_003",
+        "parameters": [
+          36,
+          62,
+          101
         ],
-        "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
-      },
-      {
-        "id": "consolidation_validation_poisson_process_009_01",
-        "story_id": "consolidation_validation_poisson_process_009",
-        "category": "v18_second_moment",
-        "question": "During an operations review, at the same counter, X is the count during 461 seconds. Set up E[X**2].",
+        "question": "Two independent switches A and B activate with probabilities 36/101 and 62/101, respectively. Find the probability that both activate or neither activates.",
         "bindings": {},
-        "expression": "(54*(461/60))+(54*(461/60))**2",
-        "answer": "17255691/100",
-        "conceptual_rules": [
-          "Poisson variance equals its mean",
-          "second moment is variance plus squared mean"
-        ],
-        "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "expression": "(36/101)*(62/101)+(1-(36/101))*(1-(62/101))",
+        "answer": "4767/10201",
+        "target": "Expression: (36/101)*(62/101)+(1-(36/101))*(1-(62/101))",
+        "provenance": "procedural_reference; zero teacher calls"
       }
     ]
   }

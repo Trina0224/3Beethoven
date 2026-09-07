@@ -1,0 +1,480 @@
+[
+  {
+    "id": "consolidation_holdout_old_poisson_time_000",
+    "category": "poisson_time",
+    "identity": [
+      "poisson_time",
+      101,
+      1842
+    ],
+    "question": "A call center is modeled by a homogeneous Poisson process with rate 101 per minute. Over 1842 seconds, represent the count variance.",
+    "bindings": {
+      "rate_per_minute": "101",
+      "duration_minutes": "1842/60"
+    },
+    "expression": "101*(1842/60)",
+    "answer": "31007/10",
+    "target": "Bindings: rate_per_minute=101; duration_minutes=1842/60\nExpression: 101*(1842/60)",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_poisson_scaled_000",
+    "category": "poisson_scaled",
+    "identity": [
+      "poisson_scaled",
+      136,
+      6,
+      42
+    ],
+    "question": "A latent count X is Poisson with mean 136. The reported score is 6*X+42. Give Var(score) as one numerical expression.",
+    "bindings": {
+      "mean": "136",
+      "scale": "6",
+      "offset": "42"
+    },
+    "expression": "6**2*136",
+    "answer": "4896",
+    "target": "Bindings: mean=136; scale=6; offset=42\nExpression: 6**2*136",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_moment_000",
+    "category": "moment",
+    "identity": [
+      "moment",
+      157,
+      1831,
+      5,
+      7
+    ],
+    "question": "A calibrated reading is 5*X+7, where E[X]=157 and Var(X)=1831. Represent the reading's second moment.",
+    "bindings": {
+      "mean": "157",
+      "variance": "1831",
+      "scale": "5",
+      "offset": "7"
+    },
+    "expression": "5**2*1831+(5*157+7)**2",
+    "answer": "673039",
+    "target": "Bindings: mean=157; variance=1831; scale=5; offset=7\nExpression: 5**2*1831+(5*157+7)**2",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_uniform_time_000",
+    "category": "uniform_time",
+    "identity": [
+      "uniform_time",
+      150,
+      2196
+    ],
+    "question": "A shuttle's total wait T is uniform between 0 and 150 minutes. Conditional on T exceeding 2196 seconds, represent E[T] in minutes.",
+    "bindings": {
+      "upper_minutes": "150",
+      "cutoff_minutes": "2196/60"
+    },
+    "expression": "(150+2196/60)/2",
+    "answer": "933/10",
+    "target": "Bindings: upper_minutes=150; cutoff_minutes=2196/60\nExpression: (150+2196/60)/2",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_binomial_000",
+    "category": "binomial",
+    "identity": [
+      "binomial",
+      6,
+      4,
+      118
+    ],
+    "question": "A device performs 6 independent checks, each positive with probability 118 percent. Represent the probability of exactly 4 positives.",
+    "bindings": {
+      "n": "6",
+      "r": "4",
+      "reject_probability": "118/100"
+    },
+    "expression": "comb(6,4)*(118/100)**4*(1-118/100)**(6-4)",
+    "answer": "2944518723/3125000000",
+    "target": "Bindings: n=6; r=4; reject_probability=118/100\nExpression: comb(6,4)*(118/100)**4*(1-118/100)**(6-4)",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_exactly_one_000",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      20,
+      181
+    ],
+    "question": "Independent scanners A and B miss a flaw with probabilities 181% and 20%. Give the probability that exactly one scanner finds the flaw.",
+    "bindings": {
+      "miss_a": "181/100",
+      "miss_b": "20/100"
+    },
+    "expression": "(1-181/100)*(20/100)+(181/100)*(1-20/100)",
+    "answer": "643/500",
+    "target": "Bindings: miss_a=181/100; miss_b=20/100\nExpression: (1-181/100)*(20/100)+(181/100)*(1-20/100)",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_at_least_one_000",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      20,
+      181
+    ],
+    "question": "Independent scanners A and B miss a flaw with probabilities 181% and 20%. Give the probability that one or both scanners find the flaw.",
+    "bindings": {
+      "miss_a": "181/100",
+      "miss_b": "20/100"
+    },
+    "expression": "1-(181/100)*(20/100)",
+    "answer": "319/500",
+    "target": "Bindings: miss_a=181/100; miss_b=20/100\nExpression: 1-(181/100)*(20/100)",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_old_interval_000",
+    "category": "interval",
+    "identity": [
+      "interval",
+      201,
+      1953,
+      7
+    ],
+    "question": "An interval has endpoints 201 and 1953. Multiplying sample size by 49 preserves its center and divides its half-width by 7. Represent the revised upper endpoint.",
+    "bindings": {
+      "lower": "201",
+      "upper": "1953",
+      "width_divisor": "7"
+    },
+    "expression": "(201+1953)/2+(1953-201)/(2*7)",
+    "answer": "8415/7",
+    "target": "Bindings: lower=201; upper=1953; width_divisor=7\nExpression: (201+1953)/2+(1953-201)/(2*7)",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_chain_poisson_variance_000_d1",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "consolidation_holdout_chain_poisson_variance_000",
+    "parameters": [
+      141,
+      31,
+      5,
+      30,
+      395,
+      129,
+      60
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: X is a Poisson count with mean 141. represent Var(X).",
+    "bindings": {},
+    "expression": "141",
+    "answer": "141",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 141"
+  },
+  {
+    "id": "consolidation_holdout_chain_poisson_variance_000_d2",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "consolidation_holdout_chain_poisson_variance_000",
+    "parameters": [
+      141,
+      31,
+      5,
+      30,
+      395,
+      129,
+      60
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: Calls follow a homogeneous Poisson process has rate 141 arrivals per minute. represent the count variance over 31 minutes.",
+    "bindings": {},
+    "expression": "141*31",
+    "answer": "4371",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 141*31"
+  },
+  {
+    "id": "consolidation_holdout_chain_scaled_variance_000_d1",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "consolidation_holdout_chain_scaled_variance_000",
+    "parameters": [
+      179,
+      38,
+      5,
+      40,
+      897,
+      224,
+      28
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: X has variance 897. Y=5*X+40. represent Var(Y).",
+    "bindings": {},
+    "expression": "5**2*897",
+    "answer": "22425",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 5**2*897"
+  },
+  {
+    "id": "consolidation_holdout_chain_scaled_variance_000_d2",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "consolidation_holdout_chain_scaled_variance_000",
+    "parameters": [
+      179,
+      38,
+      5,
+      40,
+      897,
+      224,
+      28
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: X is Poisson with mean 179. Y=5*X+40. represent Var(Y).",
+    "bindings": {},
+    "expression": "5**2*179",
+    "answer": "4475",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 5**2*179"
+  },
+  {
+    "id": "consolidation_holdout_chain_second_moment_000_d1",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "consolidation_holdout_chain_second_moment_000",
+    "parameters": [
+      163,
+      26,
+      2,
+      33,
+      693,
+      141,
+      60
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: X has mean 163 and variance 693. represent E[X**2].",
+    "bindings": {},
+    "expression": "693+163**2",
+    "answer": "27262",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 693+163**2"
+  },
+  {
+    "id": "consolidation_holdout_chain_second_moment_000_d2",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "consolidation_holdout_chain_second_moment_000",
+    "parameters": [
+      163,
+      26,
+      2,
+      33,
+      693,
+      141,
+      60
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: X is Poisson with mean 163. represent E[X**2].",
+    "bindings": {},
+    "expression": "163+163**2",
+    "answer": "26732",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: 163+163**2"
+  },
+  {
+    "id": "consolidation_holdout_chain_conditional_wait_000_d1",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "consolidation_holdout_chain_conditional_wait_000",
+    "parameters": [
+      115,
+      26,
+      3,
+      29,
+      527,
+      235,
+      39
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: T is uniform on [39, 235] minutes. represent E[T] in minutes.",
+    "bindings": {},
+    "expression": "(39+235)/2",
+    "answer": "137",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: (39+235)/2"
+  },
+  {
+    "id": "consolidation_holdout_chain_conditional_wait_000_d2",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "consolidation_holdout_chain_conditional_wait_000",
+    "parameters": [
+      115,
+      26,
+      3,
+      29,
+      527,
+      235,
+      39
+    ],
+    "question": "Evaluation-only scenario. Express the requested quantity from the supplied assumptions: T is uniform on [0, 235] minutes. Given T>39 minutes, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(39+235)/2",
+    "answer": "137",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "sealed_programmatic_holdout; never_teacher_training",
+    "target": "Expression: (39+235)/2"
+  },
+  {
+    "id": "consolidation_holdout_event_000_exactly_one",
+    "story_id": "consolidation_holdout_event_000",
+    "category": "exactly_one",
+    "question": "Two independent binary signals turn on with probabilities 85/101 and 58/101. Represent the probability that exactly one signal is on.",
+    "bindings": {},
+    "expression": "(85/101)*(1-58/101)+(1-85/101)*(58/101)",
+    "answer": "4583/10201",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "exactly_one"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_001_exactly_one",
+    "story_id": "consolidation_holdout_event_001",
+    "category": "exactly_one",
+    "question": "Two independent binary signals turn on with probabilities 12/103 and 66/103. Represent the probability that exactly one signal is on.",
+    "bindings": {},
+    "expression": "(12/103)*(1-66/103)+(1-12/103)*(66/103)",
+    "answer": "6450/10609",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "exactly_one"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_000_both",
+    "story_id": "consolidation_holdout_event_000",
+    "category": "both",
+    "question": "Two independent binary signals turn on with probabilities 85/101 and 58/101. Represent the probability that both signals are on.",
+    "bindings": {},
+    "expression": "(85/101)*(58/101)",
+    "answer": "4930/10201",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "both"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_001_both",
+    "story_id": "consolidation_holdout_event_001",
+    "category": "both",
+    "question": "Two independent binary signals turn on with probabilities 12/103 and 66/103. Represent the probability that both signals are on.",
+    "bindings": {},
+    "expression": "(12/103)*(66/103)",
+    "answer": "792/10609",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "both"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_000_neither",
+    "story_id": "consolidation_holdout_event_000",
+    "category": "neither",
+    "question": "Two independent binary signals turn on with probabilities 85/101 and 58/101. Represent the probability that both signals are off.",
+    "bindings": {},
+    "expression": "(1-85/101)*(1-58/101)",
+    "answer": "688/10201",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "neither"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_001_neither",
+    "story_id": "consolidation_holdout_event_001",
+    "category": "neither",
+    "question": "Two independent binary signals turn on with probabilities 12/103 and 66/103. Represent the probability that both signals are off.",
+    "bindings": {},
+    "expression": "(1-12/103)*(1-66/103)",
+    "answer": "3367/10609",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "neither"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_000_same",
+    "story_id": "consolidation_holdout_event_000",
+    "category": "same",
+    "question": "Two independent binary signals turn on with probabilities 85/101 and 58/101. Represent the probability that the signals match.",
+    "bindings": {},
+    "expression": "(85/101)*(58/101)+(1-85/101)*(1-58/101)",
+    "answer": "5618/10201",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "same"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  },
+  {
+    "id": "consolidation_holdout_event_001_same",
+    "story_id": "consolidation_holdout_event_001",
+    "category": "same",
+    "question": "Two independent binary signals turn on with probabilities 12/103 and 66/103. Represent the probability that the signals match.",
+    "bindings": {},
+    "expression": "(12/103)*(66/103)+(1-12/103)*(1-66/103)",
+    "answer": "4159/10609",
+    "conceptual_rules": [
+      "enumerate independent outcomes",
+      "same"
+    ],
+    "confused_with": "a different event",
+    "provenance": "sealed_programmatic_holdout; never_teacher_training"
+  }
+]

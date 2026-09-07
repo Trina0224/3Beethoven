@@ -1,5 +1,5 @@
 {
-  "protocol_status": "changes_requested",
+  "protocol_status": "frozen_for_execution",
   "experiment_name": "stats_consolidation_two_start_comparison",
   "teacher": {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -28,6 +28,7 @@
     ],
     "unresolved_scoring_allowed": false,
     "reserve_worst_case_next_call_before_sending": true,
+    "reserved_cost_per_call_usd": 0.01,
     "full_requires_pilot_pass": true
   },
   "training": {
@@ -106,7 +107,7 @@
     "max_updates": 48
   },
   "validation_gate": {
-    "status": "implementation_required",
+    "status": "frozen_for_execution",
     "baseline": "original_v15_same_questions_same_grader",
     "all_pending_resolved_before_decision": true,
     "suites": {
@@ -134,7 +135,7 @@
     "primary_credit": "math_correct and executable"
   },
   "promotion_gate": {
-    "status": "implementation_required",
+    "status": "frozen_for_execution",
     "both_seeds_must_pass_validation": true,
     "baseline": "original_v15_same_questions_same_grader",
     "old": {
@@ -178,5 +179,12 @@
     "teacher_pilot_full_budget_gates",
     "per_row_provenance_and_hashes",
     "final_evaluator_zip_and_weight_manifest"
-  ]
+  ],
+  "implementation_status": {
+    "status": "completed_and_offline_verified",
+    "readiness_evidence": "docs/STATS_CONSOLIDATION_READINESS.json",
+    "offline_tests_passed": 21,
+    "teacher_calls_at_freeze": 0,
+    "gpu_runs_at_freeze": 0
+  }
 }

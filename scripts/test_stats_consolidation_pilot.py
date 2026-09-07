@@ -17,12 +17,15 @@ class ConsolidationPilotTests(unittest.TestCase):
         self.assertEqual(sum(r["pilot_batch"] for r in self.requests), 24)
         self.assertEqual(Counter(s["split"] for s in self.stories), {"train": 71, "validation": 25})
         owners = {}
+        parameter_owners = {}
         for story in self.stories:
             self.assertEqual(owners.setdefault(story["lineage_id"], story["split"]), story["split"])
+            key = (story["archetype"], story["parameter_signature"])
+            self.assertEqual(parameter_owners.setdefault(key, story["split"]), story["split"])
         markers = {"conditions_first": "Conditions first:", "quantity_first": "Given:",
-                   "operational_story": "During an operations review,",
-                   "symbolic_story": "Write a symbolic numerical setup",
-                   "unit_emphasis": "Keep every stated unit explicit"}
+                   "operational_story": "An analyst records this operating condition:",
+                   "validation_compact": "Write one executable expression",
+                   "validation_reverse": "Requested result:"}
         for style, marker in markers.items():
             self.assertTrue(all(marker in q["question"] for s in self.stories if s["surface_style"] == style for q in s["questions"]))
 
@@ -36,7 +39,8 @@ class ConsolidationPilotTests(unittest.TestCase):
     def test_compact_selection_matrix_uses_validation_only(self):
         matrix = selection_validation(self.stories)
         self.assertEqual({k: len(v) for k, v in matrix["suites"].items()},
-                         {"old": 32, "chain": 24, "event": 16, "candidate": 19})
+                         {"old": 48, "chain": 48, "event": 16})
+        self.assertEqual(len({q["story_id"] for q in matrix["suites"]["event"]}), 4)
         for rows in matrix["suites"].values():
             self.assertTrue(all("_test_" not in q["id"] for q in rows))
 
@@ -48,13 +52,33 @@ class ConsolidationPilotTests(unittest.TestCase):
                 self.assertTrue(judged["executable"], q["id"])
                 self.assertIs(judged["math_correct"], True, q["id"])
 
+    def test_every_question_is_self_contained_and_keeps_original_target(self):
+        forbidden = ("same counter", "same wait", "same y=", "that display")
+        for story in self.stories:
+            for q in story["questions"]:
+                lowered = q["question"].lower()
+                self.assertFalse(any(fragment in lowered for fragment in forbidden), q["id"])
+                if story["archetype"] == "poisson_process":
+                    self.assertIn("poisson", lowered, q["id"])
+                if q["category"] == "v18_conditional_wait":
+                    self.assertIn("total wait", lowered, q["id"])
+                    self.assertNotIn("additional wait", lowered, q["id"])
+
+    def test_train_and_validation_surface_families_are_disjoint(self):
+        train = {s["surface_style"] for s in self.stories if s["split"] == "train"}
+        validation = {s["surface_style"] for s in self.stories if s["split"] == "validation"}
+        self.assertGreaterEqual(len(train), 2)
+        self.assertGreaterEqual(len(validation), 2)
+        self.assertTrue(train.isdisjoint(validation))
+
     def test_event_reference_by_outcome_enumeration(self):
         event_stories = [s for s in self.stories if s["archetype"] == "detection_events"]
         for story in event_stories:
             questions = {q["category"]: q for q in story["questions"]}
             first = questions["both"]["question"].split("probabilities ", 1)[1].split(".", 1)[0]
             left, right = first.split(" and ")
-            p, q = F(left), F(right)
+            p = F(left.rstrip("%")) / 100 if "%" in left else F(left)
+            q = F(right.rstrip("%")) / 100 if "%" in right else F(right)
             probs = {(a, b): (p if a else 1-p) * (q if b else 1-q) for a in (0, 1) for b in (0, 1)}
             predicates = {"exactly_one": lambda a,b: a != b, "both": lambda a,b: a and b,
                           "neither": lambda a,b: not a and not b, "same": lambda a,b: a == b}
