@@ -19,6 +19,12 @@ class ConsolidationPilotTests(unittest.TestCase):
         owners = {}
         for story in self.stories:
             self.assertEqual(owners.setdefault(story["lineage_id"], story["split"]), story["split"])
+        markers = {"conditions_first": "Conditions first:", "quantity_first": "Given:",
+                   "operational_story": "During an operations review,",
+                   "symbolic_story": "Write a symbolic numerical setup",
+                   "unit_emphasis": "Keep every stated unit explicit"}
+        for style, marker in markers.items():
+            self.assertTrue(all(marker in q["question"] for s in self.stories if s["surface_style"] == style for q in s["questions"]))
 
     def test_teacher_requests_contain_no_reference(self):
         forbidden = {"answer", "expression", "bindings", "reference"}

@@ -19,7 +19,7 @@
 - `scripts/run_stats_consolidation_compare.py`：四個 run 共用的一次執行器；新 LoRA／原 v15 雙起點、線上首次通過即停、恢復與隔離保存。
 - `scripts/test_stats_consolidation_pilot.py`、`scripts/test_stats_consolidation_grader.py`：10 項離線測試全數通過。
 - `docs/STATS_CONSOLIDATION_CANDIDATE_STORIES.json`：96 故事、268 個可獨立計算的參考目標。
-- `docs/STATS_CONSOLIDATION_PILOT_REQUESTS.json`：不含參考答案的教師請求草案；最大 request 1,646 bytes。
+- `docs/STATS_CONSOLIDATION_PILOT_REQUESTS.json`：不含參考答案的教師請求草案；最大 request 1,856 bytes。
 - `docs/STATS_CONSOLIDATION_COVERAGE.json`：概念與分割計數。
 - `docs/STATS_CONSOLIDATION_SELECTION_VALIDATION.json`：91 題 checkpoint 選點矩陣，未凍結。
 - `docs/STATS_CONSOLIDATION_HOLDOUT_BLUEPRINT.json`：獨立測試規格，沒有具體題目。
@@ -28,7 +28,7 @@
 ## 驗證紀錄
 
 - `python stats_consolidation_pilot.py`：成功，固定產出 96 stories／268 questions／24-story pilot。
-- `python prepare_stats_consolidation_teacher.py --scope validate-only`：成功；24 pilot stories、最大 request 1,646 bytes，零 API call。
+- `python prepare_stats_consolidation_teacher.py --scope validate-only`：成功；24 pilot stories、最大 request 1,856 bytes，零 API call。
 - `python -m unittest test_stats_consolidation_pilot.py test_stats_consolidation_grader.py`：10/10 通過。
 - `python -m py_compile ...`：三個新執行腳本通過。
 - 以 draft 決策檔嘗試訓練入口：如預期在載入 GPU／教師資料前停止，錯誤為 `Protocol remains a draft; GPU training is blocked`。

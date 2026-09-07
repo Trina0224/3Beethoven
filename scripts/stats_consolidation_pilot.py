@@ -35,7 +35,6 @@ SURFACES = (
     "direct_definition", "conditions_first", "quantity_first",
     "operational_story", "symbolic_story", "unit_emphasis",
 )
-NUMBER_FORMS = ("integers", "percent", "fraction", "mixed_units")
 
 
 def digest(value):
@@ -61,10 +60,29 @@ def question(story_id, category, index, text, expression, bindings, rules, confu
     return q
 
 
+def apply_surface(text, style):
+    sentences = [part.strip() for part in text.split(". ") if part.strip()]
+    if style == "direct_definition":
+        return text
+    if style == "conditions_first":
+        return "Conditions first: " + text
+    if style == "quantity_first":
+        if len(sentences) > 1:
+            return sentences[-1].rstrip(".") + ". Given: " + ". ".join(sentences[:-1]).rstrip(".") + "."
+        return "Requested quantity first. Given: " + text
+    if style == "operational_story":
+        return "During an operations review, " + text[0].lower() + text[1:]
+    if style == "symbolic_story":
+        return "Write a symbolic numerical setup for this situation. " + text
+    if style == "unit_emphasis":
+        return text + " Keep every stated unit explicit in the expression."
+    raise ValueError(style)
+
+
 def bundle(archetype, split, i, rng):
     story_id = f"consolidation_{split}_{archetype}_{i:03d}"
     style = SURFACES[i % len(SURFACES)]
-    number_form = NUMBER_FORMS[(i + len(archetype)) % len(NUMBER_FORMS)]
+    number_form = "integers"
     qs = []
     if archetype == "poisson_process":
         rate, seconds, scale = rng.randrange(12, 70), rng.randrange(71, 719), rng.randrange(2, 8)
@@ -106,6 +124,7 @@ def bundle(archetype, split, i, rng):
                 ["affine variance", "affine mean", "second moment is variance plus squared mean"], "squared mean without variance"),
         ])
     elif archetype == "uniform_wait":
+        number_form = "mixed_seconds_and_minutes"
         upper, seconds = rng.randrange(22, 90), rng.randrange(61, 1000)
         cutoff = f"{seconds}/60"
         qs.extend([
@@ -118,6 +137,7 @@ def bundle(archetype, split, i, rng):
                 f"({upper}-{cutoff})/2", {}, ["conditional total mean", "subtract elapsed time"], "conditional total wait"),
         ])
     elif archetype == "binomial":
+        number_form = "percent"
         n, r, pct = rng.randrange(5, 13), rng.randrange(1, 5), rng.randrange(8, 61)
         r = min(r, n - 1)
         qs.append(question(story_id, "binomial", 0,
@@ -129,6 +149,7 @@ def bundle(archetype, split, i, rng):
         pa, pb, den = rng.randrange(8, 88), rng.randrange(9, 89), (100 if i % 2 == 0 else 97)
         while pb == pa:
             pb = rng.randrange(9, 89)
+        number_form = "percent_denominator_100" if den == 100 else "nondecimal_fraction_denominator_97"
         p, q = f"({pa}/{den})", f"({pb}/{den})"
         stem = f"Independent alarms A and B activate with probabilities {pa}/{den} and {pb}/{den}."
         items = (
@@ -150,6 +171,7 @@ def bundle(archetype, split, i, rng):
             {"lower": str(lower), "upper": str(upper), "width_divisor": str(divisor)},
             ["preserve center", "standard error shrinks by square-root sample-size factor"], "dividing the endpoint"))
     elif archetype == "chain_poisson_variance":
+        number_form = "mixed_seconds_and_minutes"
         rate, minutes, seconds = rng.randrange(13, 90), rng.randrange(2, 15), rng.randrange(61, 800)
         specs = (
             ("A Poisson count X has mean {r}. Set up Var(X).".format(r=rate), str(rate)),
@@ -180,6 +202,8 @@ def bundle(archetype, split, i, rng):
             qs.append(question(story_id, "v18_second_moment", j, text, expr, {}, ["second moment"] * (j + 1), "variance or squared mean alone"))
     else:
         raise ValueError(archetype)
+    for q in qs:
+        q["question"] = apply_surface(q["question"], style)
     return {
         "story_id": story_id,
         "lineage_id": f"consolidation_{archetype}_{i:03d}",
