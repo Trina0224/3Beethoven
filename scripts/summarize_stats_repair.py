@@ -10,7 +10,7 @@ def main():
  out={'controls':{},'repairs':{},'pending':[],'teacher_calls':0,'independent_test_executed':False}
  for name in ('v15','step24','step33'):
   out['controls'][name]={}
-  prior=previous/'v15_selection_rows' if name=='v15' else previous/'original_v15_continued_lora_seed_31415'/name
+  prior=previous/'v15_selection_rows' if name=='v15' else previous/'original_v15_continued_lora_seed_31415'/name.replace('step','step_')
   for suite in ('old','chain','event','replay'):
    f=a.root/'control'/name/f'{suite}.json'
    if not f.exists():continue
