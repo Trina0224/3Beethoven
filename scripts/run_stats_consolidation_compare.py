@@ -22,6 +22,7 @@ from stats_consolidation_eval import evaluate
 from stats_consolidation_pilot import build as build_candidate, digest, assert_execution_released
 from stats_consolidation_grader import score, grader_fingerprint
 from stats_curriculum_v0_13 import KINDS
+from stats_training_accounting import invocation_loss
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_ROOT = Path("/kaggle/working/3beethoven_stats_consolidation")
@@ -211,6 +212,7 @@ def main():
     from peft import LoraConfig, PeftModel, get_peft_model, prepare_model_for_kbit_training
     from transformers import (AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig,
                               Trainer, TrainerCallback, TrainingArguments, set_seed)
+    from transformers import __version__ as trainer_version
     from torch.utils.data import SequentialSampler
     from flight_run_stats_v0_1 import CausalCollator
     if torch.cuda.device_count() != 1:
@@ -354,7 +356,11 @@ def main():
     trainer = OrderedTrainer(model=model, args=args_train, train_dataset=dataset(train_rows, tokenizer),
                       data_collator=CausalCollator(tokenizer), callbacks=[callback])
     checkpoints = sorted((output / "checkpoints").glob("checkpoint-*"), key=lambda p: int(p.name.split("-")[-1]))
+    invocation_start = read(checkpoints[-1] / "trainer_state.json")["global_step"] if checkpoints else 0
     result = trainer.train(resume_from_checkpoint=str(checkpoints[-1]) if checkpoints else None)
+    # The frozen 5.0.0 Trainer reports this invocation's loss sum divided by
+    # cumulative steps. This correction changes reporting, never the training.
+    loss_record = invocation_loss(result.training_loss, invocation_start, trainer.state.global_step, trainer_version)
     history = read(output / "validation_history.json", [])
     passed = next((r for r in history if r["gate"]["passed"]), None)
     pending = any(r["metrics"][name]["pending"] for r in history for name in r["metrics"])
@@ -364,7 +370,7 @@ def main():
     save(output / "selection.json", selection)
     save(output / "training_complete.json", {"global_steps": trainer.state.global_step,
          "actual_max_updates": actual_max, "available_one_pass_updates": available_updates,
-         "training_loss": result.training_loss, "selection": selection, "token_accounting": token_counts,
+         **loss_record, "selection": selection, "token_accounting": token_counts,
          "note": "Independent holdout and permanent MC await the four-run frozen evaluator."})
     selected_step = selection["selected_step"] or selection["diagnostic_step"]
     adapter_file = output / f"step_{selected_step}" / "adapter" / "adapter_model.safetensors"
