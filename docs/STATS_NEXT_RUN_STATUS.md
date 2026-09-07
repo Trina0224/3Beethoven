@@ -1,7 +1,14 @@
 <!-- REPAIR_EXECUTION_LIVE_BEGIN -->
-2026-09-07 PDT：使用者要求繼續實際解決，固定權重控制與條件式低 LR 修復正在 Kaggle draft 執行。入口 `/kaggle/working/stats_repair`，掛載 Version53；程式與修復定案固定於 `190261726e2c09799dddc144f1e95babc6a191a2`。
+最新：2026-09-07 15:00 PDT（America/Los_Angeles）。本輪固定權重控制、低 LR 修復及封存**全部完成，GPU 已關閉**。報告：[STATS_REPAIR_REPORT.md](STATS_REPAIR_REPORT.md)；機器結果：[STATS_REPAIR_RESULTS.json](STATS_REPAIR_RESULTS.json)；下載定位：[STATS_REPAIR_DOWNLOAD.json](STATS_REPAIR_DOWNLOAD.json)。
 
-先完成原 v15／31415 step24／step33 的 336 次既有選點原答重現及 216 次教材診斷；只有 336 原答完全一致才允許新更新。低 LR 修復採原樣 259 筆、同兩 seed、LR 5e-6、一遍最多各33步、原驗證門檻；記錄實際 microbatch input/label SHA。driver 會在未知語義 pending 時停下待處理，不等於整體完成。先讀 `driver.log`、`control/CONTROL_RESULTS.json`、`low_lr/*/validation_history.json`，避免重跑已完成階段。控制與試驗尚未完成，不宣稱修復成功。協議：STATS_REPAIR_EXECUTION_PROTOCOL.md、STATS_LOW_LR_REPAIR_PROTOCOL.md、STATS_LOW_LR_REPAIR_DECISION.json。
+- 兩個 seed 各完成 33 updates；LR 5e-6，同 67 新＋192 replay，12／24／33 的六個 checkpoint 都未通過原門檻。原 v15 維持首選。2027 最後舊 28/48、組合 38/48、事件 14/16；31415 為 29/48、38/48、12/16。語義 pending 為 0。
+- 原 v15／原批 31415 step24／step33 的 336/336 個選點原答重現；三者教材原題皆 72/72。另事前登記的 prepared-parent 對照 112/112 原答相同。這些對照不等於獨立泛化測試，也沒有隔離說法與參數的影響。
+- 實際 518/518 microbatch 的 input、labels、順序及 token 數驗證通過；各 seed 5,516 supervised tokens。續跑 loss 正確記錄 raw 與新增 21 步的分母；仍未做 resume／不中斷的數值等價控制。
+- 已修正**未來** baseline／student 的數值準備一致性，並禁止混用缺契約、不同權重／題集／grader／環境或改過分數的基準快取。三項測試通過，commit `423157eaf793a0d98051799d80a6a493caa5ce98`。新比較需新 output root；本輪重現用保存的凍結 `repo/`，不能套新 runner 覆寫歷史結果。
+- Kaggle V54／`348070778` 已顯示 Quick version complete。小型 ZIP 189,903,038 bytes；從保存版本重新下載後 SHA、CRC 與 464 個檔案 hash 全部通過。完整 outputs 保留所有中間 adapter 與 optimizer checkpoints，portable ZIP 含两份最後診斷 adapter。
+- 本輪 0 新教師呼叫、66 optimizer updates，沒有獨立 holdout／永久 MC。完整教師 gate 及四次比較仍未完成。較小 LR 未建立跨 seed 穩定保留；未見題保留問題尚未解決，不能說模型能力已修復。
+
+下一輪若繼續，先讀上述報告的剩餘限制與固定配置；不要重跑已完成控制／修復，不要把已曝光選點原題回填訓練。以下區塊全是較早歷史，不代表仍有工作在執行。
 <!-- REPAIR_EXECUTION_LIVE_END -->
 
 <!-- FIRST_STUDENT_AUDIT_LIVE_BEGIN -->
