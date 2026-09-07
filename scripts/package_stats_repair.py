@@ -12,6 +12,9 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     root = args.root
+    if (root / 'PREPARED_PARENT_CONTROL_PROTOCOL.md').exists():
+        supplemental = json.loads((root / 'prepared_parent/COMPLETE.json').read_text())
+        assert supplemental['complete'] and supplemental['pending'] == 0
     trace = json.loads((root / 'ACTUAL_TRACE_VERIFIED.json').read_text())
     selected = {}
     for seed in (2027, 31415):
