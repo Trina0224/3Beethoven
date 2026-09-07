@@ -1,3 +1,9 @@
+<!-- REPAIR_EXECUTION_LIVE_BEGIN -->
+2026-09-07 PDT：使用者要求繼續實際解決，固定權重控制與條件式低 LR 修復正在 Kaggle draft 執行。入口 `/kaggle/working/stats_repair`，掛載 Version53；程式與修復定案固定於 `190261726e2c09799dddc144f1e95babc6a191a2`。
+
+先完成原 v15／31415 step24／step33 的 336 次既有選點原答重現及 216 次教材診斷；只有 336 原答完全一致才允許新更新。低 LR 修復採原樣 259 筆、同兩 seed、LR 5e-6、一遍最多各33步、原驗證門檻；記錄實際 microbatch input/label SHA。driver 會在未知語義 pending 時停下待處理，不等於整體完成。先讀 `driver.log`、`control/CONTROL_RESULTS.json`、`low_lr/*/validation_history.json`，避免重跑已完成階段。控制與試驗尚未完成，不宣稱修復成功。協議：STATS_REPAIR_EXECUTION_PROTOCOL.md、STATS_LOW_LR_REPAIR_PROTOCOL.md、STATS_LOW_LR_REPAIR_DECISION.json。
+<!-- REPAIR_EXECUTION_LIVE_END -->
+
 <!-- FIRST_STUDENT_AUDIT_LIVE_BEGIN -->
 最新：2026-09-07 PDT，第一批離線異常診斷完成，詳見 [STATS_FIRST_STUDENT_AUDIT.md](STATS_FIRST_STUDENT_AUDIT.md) 與 JSON 證據。
 
