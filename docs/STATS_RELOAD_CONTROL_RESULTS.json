@@ -1,0 +1,384 @@
+{
+  "status": "completed",
+  "teacher_calls": 0,
+  "training_updates": 0,
+  "selection_raw_reproduction": "336/336",
+  "controls": {
+    "step24": {
+      "chain": {
+        "categories": {
+          "v18_conditional_wait": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_poisson_variance": {
+            "correct": 10,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_scaled_variance": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_second_moment": {
+            "correct": 7,
+            "n": 12,
+            "pending": 0
+          }
+        },
+        "correct": 41,
+        "n": 48,
+        "same_raw": 48
+      },
+      "event": {
+        "categories": {
+          "both": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 3,
+            "n": 4,
+            "pending": 0
+          },
+          "neither": {
+            "correct": 0,
+            "n": 4,
+            "pending": 0
+          },
+          "same": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          }
+        },
+        "correct": 11,
+        "n": 16,
+        "same_raw": 16
+      },
+      "old": {
+        "categories": {
+          "at_least_one": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "binomial": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "interval": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "moment": {
+            "correct": 0,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_scaled": {
+            "correct": 2,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 3,
+            "n": 6,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          }
+        },
+        "correct": 35,
+        "n": 48,
+        "same_raw": 48
+      },
+      "replay": {
+        "categories": {
+          "interval": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          }
+        },
+        "correct": 72,
+        "n": 72,
+        "same_raw": null
+      }
+    },
+    "step33": {
+      "chain": {
+        "categories": {
+          "v18_conditional_wait": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_poisson_variance": {
+            "correct": 9,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_scaled_variance": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_second_moment": {
+            "correct": 8,
+            "n": 12,
+            "pending": 0
+          }
+        },
+        "correct": 41,
+        "n": 48,
+        "same_raw": 48
+      },
+      "event": {
+        "categories": {
+          "both": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 3,
+            "n": 4,
+            "pending": 0
+          },
+          "neither": {
+            "correct": 0,
+            "n": 4,
+            "pending": 0
+          },
+          "same": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          }
+        },
+        "correct": 11,
+        "n": 16,
+        "same_raw": 16
+      },
+      "old": {
+        "categories": {
+          "at_least_one": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "binomial": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "interval": {
+            "correct": 0,
+            "n": 6,
+            "pending": 0
+          },
+          "moment": {
+            "correct": 0,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_scaled": {
+            "correct": 3,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 0,
+            "n": 6,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 1,
+            "n": 6,
+            "pending": 0
+          }
+        },
+        "correct": 22,
+        "n": 48,
+        "same_raw": 48
+      },
+      "replay": {
+        "categories": {
+          "interval": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          }
+        },
+        "correct": 72,
+        "n": 72,
+        "same_raw": null
+      }
+    },
+    "v15": {
+      "chain": {
+        "categories": {
+          "v18_conditional_wait": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_poisson_variance": {
+            "correct": 12,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_scaled_variance": {
+            "correct": 8,
+            "n": 12,
+            "pending": 0
+          },
+          "v18_second_moment": {
+            "correct": 6,
+            "n": 12,
+            "pending": 0
+          }
+        },
+        "correct": 38,
+        "n": 48,
+        "same_raw": 48
+      },
+      "event": {
+        "categories": {
+          "both": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 3,
+            "n": 4,
+            "pending": 0
+          },
+          "neither": {
+            "correct": 1,
+            "n": 4,
+            "pending": 0
+          },
+          "same": {
+            "correct": 4,
+            "n": 4,
+            "pending": 0
+          }
+        },
+        "correct": 12,
+        "n": 16,
+        "same_raw": 16
+      },
+      "old": {
+        "categories": {
+          "at_least_one": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "binomial": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "exactly_one": {
+            "correct": 5,
+            "n": 6,
+            "pending": 0
+          },
+          "interval": {
+            "correct": 6,
+            "n": 6,
+            "pending": 0
+          },
+          "moment": {
+            "correct": 0,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_scaled": {
+            "correct": 3,
+            "n": 6,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 4,
+            "n": 6,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 4,
+            "n": 6,
+            "pending": 0
+          }
+        },
+        "correct": 34,
+        "n": 48,
+        "same_raw": 48
+      },
+      "replay": {
+        "categories": {
+          "interval": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "poisson_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          },
+          "uniform_time": {
+            "correct": 24,
+            "n": 24,
+            "pending": 0
+          }
+        },
+        "correct": 72,
+        "n": 72,
+        "same_raw": null
+      }
+    }
+  },
+  "interpretation": "All three checkpoints fit the 72 replay questions; regression is on other formulations in this diagnostic. This does not establish a single causal mechanism."
+}
