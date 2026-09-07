@@ -1,3 +1,9 @@
+<!-- MULTIVIEW_EXECUTION_LIVE_BEGIN -->
+## Latest checkpoint — 2026-09-07 16:39 PDT
+
+Multiview curriculum and runner are frozen and locally validated:516 unique rows,2seeds×65 planned updates,48 crossed diagnostic tasks. **No new training or baseline/probe generation occurred.** Automatic approval review blocked restoring existing private weights/teacher/review data within the same Kaggle notebook and requires explicit current approval despite recovered prior authorization. GPU is being stopped. See [STATS_MULTIVIEW_STATUS.md](STATS_MULTIVIEW_STATUS.md) for exact approval scope and safe resumption. Do not mistake partial Kaggle setup files for a runnable experiment. V54 low-LR repair below remains the latest completed training result.
+<!-- MULTIVIEW_EXECUTION_LIVE_END -->
+
 <!-- REPAIR_EXECUTION_LIVE_BEGIN -->
 最新：2026-09-07 15:00 PDT（America/Los_Angeles）。本輪固定權重控制、低 LR 修復及封存**全部完成，GPU 已關閉**。報告：[STATS_REPAIR_REPORT.md](STATS_REPAIR_REPORT.md)；機器結果：[STATS_REPAIR_RESULTS.json](STATS_REPAIR_RESULTS.json)；下載定位：[STATS_REPAIR_DOWNLOAD.json](STATS_REPAIR_DOWNLOAD.json)。
 
