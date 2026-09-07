@@ -1,0 +1,2442 @@
+[
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d1_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "X is a Poisson count with mean 48. Find Var(X).",
+    "bindings": {},
+    "expression": "48",
+    "answer": "48",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d1_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "The expected value of a Poisson-distributed count X is 48. Report the variance of this count.",
+    "bindings": {},
+    "expression": "48",
+    "answer": "48",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d1_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      480,
+      30,
+      7,
+      14,
+      7700,
+      880,
+      120
+    ],
+    "question": "X is a Poisson count with mean 480. Find Var(X).",
+    "bindings": {},
+    "expression": "480",
+    "answer": "480",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 480",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d1_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "X is a Poisson count with mean 53. Find Var(X).",
+    "bindings": {},
+    "expression": "53",
+    "answer": "53",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d1_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "The expected value of a Poisson-distributed count X is 53. Report the variance of this count.",
+    "bindings": {},
+    "expression": "53",
+    "answer": "53",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d1_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 1,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      530,
+      20,
+      5,
+      7,
+      11900,
+      810,
+      140
+    ],
+    "question": "X is a Poisson count with mean 530. Find Var(X).",
+    "bindings": {},
+    "expression": "530",
+    "answer": "530",
+    "conceptual_rules": [
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 530",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d2_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "A homogeneous Poisson process has rate 48 arrivals per minute. Find the count variance over 3 minutes.",
+    "bindings": {},
+    "expression": "48*3",
+    "answer": "144",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48*3",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d2_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "Consider a 3-minute observation. Events follow a homogeneous Poisson process at 48 per minute. Report the variance of the number observed.",
+    "bindings": {},
+    "expression": "48*3",
+    "answer": "144",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48*3",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d2_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      480,
+      30,
+      7,
+      14,
+      7700,
+      880,
+      120
+    ],
+    "question": "A homogeneous Poisson process has rate 480 arrivals per minute. Find the count variance over 30 minutes.",
+    "bindings": {},
+    "expression": "480*30",
+    "answer": "14400",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 480*30",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d2_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "A homogeneous Poisson process has rate 53 arrivals per minute. Find the count variance over 2 minutes.",
+    "bindings": {},
+    "expression": "53*2",
+    "answer": "106",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53*2",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d2_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "Consider a 2-minute observation. Events follow a homogeneous Poisson process at 53 per minute. Report the variance of the number observed.",
+    "bindings": {},
+    "expression": "53*2",
+    "answer": "106",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53*2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d2_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 2,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      530,
+      20,
+      5,
+      7,
+      11900,
+      810,
+      140
+    ],
+    "question": "A homogeneous Poisson process has rate 530 arrivals per minute. Find the count variance over 20 minutes.",
+    "bindings": {},
+    "expression": "530*20",
+    "answer": "10600",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 530*20",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d3_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "A homogeneous Poisson process has rate 48 arrivals per minute. Find the count variance over 210 seconds.",
+    "bindings": {},
+    "expression": "48*(210/60)",
+    "answer": "168",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48*(210/60)",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d3_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      48,
+      3,
+      7,
+      14,
+      77,
+      88,
+      12
+    ],
+    "question": "The observation lasts 210 seconds. Events follow a homogeneous Poisson process at 48 per minute. Report the variance of the number observed.",
+    "bindings": {},
+    "expression": "48*(210/60)",
+    "answer": "168",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 48*(210/60)",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_000_d3_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_000",
+    "parameters": [
+      480,
+      30,
+      7,
+      14,
+      7700,
+      880,
+      120
+    ],
+    "question": "A homogeneous Poisson process has rate 480 arrivals per minute. Find the count variance over 1830 seconds.",
+    "bindings": {},
+    "expression": "480*(1830/60)",
+    "answer": "14640",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 480*(1830/60)",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d3_original",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "A homogeneous Poisson process has rate 53 arrivals per minute. Find the count variance over 150 seconds.",
+    "bindings": {},
+    "expression": "53*(150/60)",
+    "answer": "265/2",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53*(150/60)",
+    "variant": "original",
+    "pair_id": "v19_test_poisson_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d3_paraphrase",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      53,
+      2,
+      5,
+      7,
+      119,
+      81,
+      14
+    ],
+    "question": "The observation lasts 150 seconds. Events follow a homogeneous Poisson process at 53 per minute. Report the variance of the number observed.",
+    "bindings": {},
+    "expression": "53*(150/60)",
+    "answer": "265/2",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 53*(150/60)",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_poisson_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_poisson_variance_001_d3_magnitude",
+    "category": "v18_poisson_variance",
+    "track": "poisson_variance",
+    "depth": 3,
+    "story_id": "v19_test_poisson_variance_001",
+    "parameters": [
+      530,
+      20,
+      5,
+      7,
+      11900,
+      810,
+      140
+    ],
+    "question": "A homogeneous Poisson process has rate 530 arrivals per minute. Find the count variance over 1230 seconds.",
+    "bindings": {},
+    "expression": "530*(1230/60)",
+    "answer": "10865",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "rate and duration to count mean",
+      "Poisson mean to variance"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 530*(1230/60)",
+    "variant": "magnitude",
+    "pair_id": "v19_test_poisson_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d1_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "X has variance 216. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*216",
+    "answer": "1944",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*216",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d1_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "Report the variance of Y. Define Y by multiplying X by 3 and then adding 10; the variance of X is 216.",
+    "bindings": {},
+    "expression": "3**2*216",
+    "answer": "1944",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*216",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d1_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      820,
+      120,
+      3,
+      10,
+      21600,
+      330,
+      100
+    ],
+    "question": "X has variance 21600. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*21600",
+    "answer": "194400",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*21600",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d1_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "X has variance 45. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*45",
+    "answer": "1125",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*45",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d1_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "Report the variance of Y. Define Y by multiplying X by 5 and then adding 12; the variance of X is 45.",
+    "bindings": {},
+    "expression": "5**2*45",
+    "answer": "1125",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*45",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d1_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 1,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      540,
+      140,
+      5,
+      12,
+      4500,
+      440,
+      130
+    ],
+    "question": "X has variance 4500. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*4500",
+    "answer": "112500",
+    "conceptual_rules": [
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*4500",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d2_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "X is Poisson with mean 82. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*82",
+    "answer": "738",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*82",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d2_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "Report the variance of Y. Define Y by multiplying X by 3 and then adding 10; X is a Poisson count whose expectation is 82.",
+    "bindings": {},
+    "expression": "3**2*82",
+    "answer": "738",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*82",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d2_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      820,
+      120,
+      3,
+      10,
+      21600,
+      330,
+      100
+    ],
+    "question": "X is Poisson with mean 820. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*820",
+    "answer": "7380",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*820",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d2_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "X is Poisson with mean 54. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*54",
+    "answer": "1350",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*54",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d2_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "Report the variance of Y. Define Y by multiplying X by 5 and then adding 12; X is a Poisson count whose expectation is 54.",
+    "bindings": {},
+    "expression": "5**2*54",
+    "answer": "1350",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*54",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d2_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 2,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      540,
+      140,
+      5,
+      12,
+      4500,
+      440,
+      130
+    ],
+    "question": "X is Poisson with mean 540. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*540",
+    "answer": "13500",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*540",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d3_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "A homogeneous Poisson process has rate 82 arrivals per minute. X counts arrivals over 12 minutes. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*(82*12)",
+    "answer": "8856",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*(82*12)",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d3_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      82,
+      12,
+      3,
+      10,
+      216,
+      33,
+      10
+    ],
+    "question": "Report the variance of Y, where Y=3*X+10. X counts events during 12 minutes; these events follow a homogeneous Poisson process at 82 per minute.",
+    "bindings": {},
+    "expression": "3**2*(82*12)",
+    "answer": "8856",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*(82*12)",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_000_d3_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_000",
+    "parameters": [
+      820,
+      120,
+      3,
+      10,
+      21600,
+      330,
+      100
+    ],
+    "question": "A homogeneous Poisson process has rate 820 arrivals per minute. X counts arrivals over 120 minutes. Y=3*X+10. Find Var(Y).",
+    "bindings": {},
+    "expression": "3**2*(820*120)",
+    "answer": "885600",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 3**2*(820*120)",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d3_original",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "A homogeneous Poisson process has rate 54 arrivals per minute. X counts arrivals over 14 minutes. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*(54*14)",
+    "answer": "18900",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*(54*14)",
+    "variant": "original",
+    "pair_id": "v19_test_scaled_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d3_paraphrase",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      54,
+      14,
+      5,
+      12,
+      45,
+      44,
+      13
+    ],
+    "question": "Report the variance of Y, where Y=5*X+12. X counts events during 14 minutes; these events follow a homogeneous Poisson process at 54 per minute.",
+    "bindings": {},
+    "expression": "5**2*(54*14)",
+    "answer": "18900",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*(54*14)",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_scaled_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_scaled_variance_001_d3_magnitude",
+    "category": "v18_scaled_variance",
+    "track": "scaled_variance",
+    "depth": 3,
+    "story_id": "v19_test_scaled_variance_001",
+    "parameters": [
+      540,
+      140,
+      5,
+      12,
+      4500,
+      440,
+      130
+    ],
+    "question": "A homogeneous Poisson process has rate 540 arrivals per minute. X counts arrivals over 140 minutes. Y=5*X+12. Find Var(Y).",
+    "bindings": {},
+    "expression": "5**2*(540*140)",
+    "answer": "1890000",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "affine variance transformation"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 5**2*(540*140)",
+    "variant": "magnitude",
+    "pair_id": "v19_test_scaled_variance_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d1_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "X has mean 83 and variance 194. Find E[X**2].",
+    "bindings": {},
+    "expression": "194+83**2",
+    "answer": "7083",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 194+83**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d1_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "Report the expected value of the square of X. Its variance is 194, and its mean is 83.",
+    "bindings": {},
+    "expression": "194+83**2",
+    "answer": "7083",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 194+83**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d1_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      830,
+      130,
+      3,
+      17,
+      19400,
+      690,
+      30
+    ],
+    "question": "X has mean 830 and variance 19400. Find E[X**2].",
+    "bindings": {},
+    "expression": "19400+830**2",
+    "answer": "708300",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 19400+830**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d1_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "X has mean 66 and variance 123. Find E[X**2].",
+    "bindings": {},
+    "expression": "123+66**2",
+    "answer": "4479",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 123+66**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d1_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "Report the expected value of the square of X. Its variance is 123, and its mean is 66.",
+    "bindings": {},
+    "expression": "123+66**2",
+    "answer": "4479",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 123+66**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d1_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 1,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      660,
+      110,
+      6,
+      9,
+      12300,
+      540,
+      160
+    ],
+    "question": "X has mean 660 and variance 12300. Find E[X**2].",
+    "bindings": {},
+    "expression": "12300+660**2",
+    "answer": "447900",
+    "conceptual_rules": [
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 12300+660**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d2_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "X is Poisson with mean 83. Find E[X**2].",
+    "bindings": {},
+    "expression": "83+83**2",
+    "answer": "6972",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 83+83**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d2_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 83.",
+    "bindings": {},
+    "expression": "83+83**2",
+    "answer": "6972",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 83+83**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d2_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      830,
+      130,
+      3,
+      17,
+      19400,
+      690,
+      30
+    ],
+    "question": "X is Poisson with mean 830. Find E[X**2].",
+    "bindings": {},
+    "expression": "830+830**2",
+    "answer": "689730",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 830+830**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d2_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "X is Poisson with mean 66. Find E[X**2].",
+    "bindings": {},
+    "expression": "66+66**2",
+    "answer": "4422",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 66+66**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d2_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 66.",
+    "bindings": {},
+    "expression": "66+66**2",
+    "answer": "4422",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 66+66**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d2_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 2,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      660,
+      110,
+      6,
+      9,
+      12300,
+      540,
+      160
+    ],
+    "question": "X is Poisson with mean 660. Find E[X**2].",
+    "bindings": {},
+    "expression": "660+660**2",
+    "answer": "436260",
+    "conceptual_rules": [
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: 660+660**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d3_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "A homogeneous Poisson process has rate 83 arrivals per minute. X counts arrivals over 13 minutes. Find E[X**2].",
+    "bindings": {},
+    "expression": "(83*13)+(83*13)**2",
+    "answer": "1165320",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (83*13)+(83*13)**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d3_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      83,
+      13,
+      3,
+      17,
+      194,
+      69,
+      3
+    ],
+    "question": "Report the expected value of X squared. X counts events over 13 minutes, from a homogeneous Poisson process at 83 events per minute.",
+    "bindings": {},
+    "expression": "(83*13)+(83*13)**2",
+    "answer": "1165320",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (83*13)+(83*13)**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_000_d3_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_000",
+    "parameters": [
+      830,
+      130,
+      3,
+      17,
+      19400,
+      690,
+      30
+    ],
+    "question": "A homogeneous Poisson process has rate 830 arrivals per minute. X counts arrivals over 130 minutes. Find E[X**2].",
+    "bindings": {},
+    "expression": "(830*130)+(830*130)**2",
+    "answer": "11642517900",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (830*130)+(830*130)**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d3_original",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "A homogeneous Poisson process has rate 66 arrivals per minute. X counts arrivals over 11 minutes. Find E[X**2].",
+    "bindings": {},
+    "expression": "(66*11)+(66*11)**2",
+    "answer": "527802",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (66*11)+(66*11)**2",
+    "variant": "original",
+    "pair_id": "v19_test_second_moment_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d3_paraphrase",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      66,
+      11,
+      6,
+      9,
+      123,
+      54,
+      16
+    ],
+    "question": "Report the expected value of X squared. X counts events over 11 minutes, from a homogeneous Poisson process at 66 events per minute.",
+    "bindings": {},
+    "expression": "(66*11)+(66*11)**2",
+    "answer": "527802",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (66*11)+(66*11)**2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_second_moment_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_second_moment_001_d3_magnitude",
+    "category": "v18_second_moment",
+    "track": "second_moment",
+    "depth": 3,
+    "story_id": "v19_test_second_moment_001",
+    "parameters": [
+      660,
+      110,
+      6,
+      9,
+      12300,
+      540,
+      160
+    ],
+    "question": "A homogeneous Poisson process has rate 660 arrivals per minute. X counts arrivals over 110 minutes. Find E[X**2].",
+    "bindings": {},
+    "expression": "(660*110)+(660*110)**2",
+    "answer": "5270832600",
+    "conceptual_rules": [
+      "rate and duration to count mean",
+      "Poisson mean to variance",
+      "mean and variance to second moment"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (660*110)+(660*110)**2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_second_moment_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d1_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "T is uniform on [11, 51] minutes. Find E[T] in minutes.",
+    "bindings": {},
+    "expression": "(11+51)/2",
+    "answer": "31",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (11+51)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d1_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "Report the average total duration T, in minutes. T has a continuous uniform distribution with lower bound 11 minutes and upper bound 51 minutes.",
+    "bindings": {},
+    "expression": "(11+51)/2",
+    "answer": "31",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (11+51)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d1_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      660,
+      100,
+      4,
+      22,
+      24100,
+      510,
+      110
+    ],
+    "question": "T is uniform on [110, 510] minutes. Find E[T] in minutes.",
+    "bindings": {},
+    "expression": "(110+510)/2",
+    "answer": "310",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (110+510)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_000_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d1_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "T is uniform on [4, 28] minutes. Find E[T] in minutes.",
+    "bindings": {},
+    "expression": "(4+28)/2",
+    "answer": "16",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (4+28)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d1_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "Report the average total duration T, in minutes. T has a continuous uniform distribution with lower bound 4 minutes and upper bound 28 minutes.",
+    "bindings": {},
+    "expression": "(4+28)/2",
+    "answer": "16",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (4+28)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d1_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 1,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      930,
+      140,
+      6,
+      7,
+      10500,
+      280,
+      40
+    ],
+    "question": "T is uniform on [40, 280] minutes. Find E[T] in minutes.",
+    "bindings": {},
+    "expression": "(40+280)/2",
+    "answer": "160",
+    "conceptual_rules": [
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (40+280)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_001_d1",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d2_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "T is uniform on [0, 51] minutes. Given T>11 minutes, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(11+51)/2",
+    "answer": "31",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (11+51)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d2_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "You know T has already exceeded 11 minutes. Before this information, T was uniform between 0 and 51 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+    "bindings": {},
+    "expression": "(11+51)/2",
+    "answer": "31",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (11+51)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d2_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      660,
+      100,
+      4,
+      22,
+      24100,
+      510,
+      110
+    ],
+    "question": "T is uniform on [0, 510] minutes. Given T>110 minutes, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(110+510)/2",
+    "answer": "310",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (110+510)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_000_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d2_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "T is uniform on [0, 28] minutes. Given T>4 minutes, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(4+28)/2",
+    "answer": "16",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (4+28)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d2_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "You know T has already exceeded 4 minutes. Before this information, T was uniform between 0 and 28 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+    "bindings": {},
+    "expression": "(4+28)/2",
+    "answer": "16",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (4+28)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d2_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 2,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      930,
+      140,
+      6,
+      7,
+      10500,
+      280,
+      40
+    ],
+    "question": "T is uniform on [0, 280] minutes. Given T>40 minutes, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(40+280)/2",
+    "answer": "160",
+    "conceptual_rules": [
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (40+280)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_001_d2",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d3_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "T is uniform on [0, 51] minutes. Given T>690 seconds, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(690/60+51)/2",
+    "answer": "125/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (690/60+51)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d3_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      66,
+      10,
+      4,
+      22,
+      241,
+      51,
+      11
+    ],
+    "question": "You know T has already exceeded 690 seconds. Before this information, T was uniform between 0 and 51 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+    "bindings": {},
+    "expression": "(690/60+51)/2",
+    "answer": "125/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (690/60+51)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_000_d3_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_000",
+    "parameters": [
+      660,
+      100,
+      4,
+      22,
+      24100,
+      510,
+      110
+    ],
+    "question": "T is uniform on [0, 510] minutes. Given T>6630 seconds, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(6630/60+510)/2",
+    "answer": "1241/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (6630/60+510)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_000_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d3_original",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "T is uniform on [0, 28] minutes. Given T>270 seconds, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(270/60+28)/2",
+    "answer": "65/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (270/60+28)/2",
+    "variant": "original",
+    "pair_id": "v19_test_conditional_wait_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d3_paraphrase",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      93,
+      14,
+      6,
+      7,
+      105,
+      28,
+      4
+    ],
+    "question": "You know T has already exceeded 270 seconds. Before this information, T was uniform between 0 and 28 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+    "bindings": {},
+    "expression": "(270/60+28)/2",
+    "answer": "65/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (270/60+28)/2",
+    "variant": "paraphrase",
+    "pair_id": "v19_test_conditional_wait_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_test_conditional_wait_001_d3_magnitude",
+    "category": "v18_conditional_wait",
+    "track": "conditional_wait",
+    "depth": 3,
+    "story_id": "v19_test_conditional_wait_001",
+    "parameters": [
+      930,
+      140,
+      6,
+      7,
+      10500,
+      280,
+      40
+    ],
+    "question": "T is uniform on [0, 280] minutes. Given T>2430 seconds, find its conditional total mean in minutes.",
+    "bindings": {},
+    "expression": "(2430/60+280)/2",
+    "answer": "641/4",
+    "conceptual_rules": [
+      "seconds to minutes",
+      "conditioning uniform support",
+      "uniform bounds to mean"
+    ],
+    "provenance": "procedural_reference; no teacher call",
+    "target": "Expression: (2430/60+280)/2",
+    "variant": "magnitude",
+    "pair_id": "v19_test_conditional_wait_001_d3",
+    "probe": "concept"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_000_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      15,
+      34
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 15/100; the probability that B misses it is 34/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "15/100",
+      "miss_b": "34/100"
+    },
+    "expression": "(1-15/100)*(34/100)+(15/100)*(1-34/100)",
+    "answer": "97/250",
+    "target": "Bindings: miss_a=15/100; miss_b=34/100\nExpression: (1-15/100)*(34/100)+(15/100)*(1-34/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_000",
+    "story_id": "v19_old_test_exactly_one_000"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_000_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      15,
+      34
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 15/100; the probability that B misses it is 34/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "15/100",
+      "miss_b": "34/100"
+    },
+    "expression": "1-(15/100)*(34/100)",
+    "answer": "949/1000",
+    "target": "Bindings: miss_a=15/100; miss_b=34/100\nExpression: (1-15/100)*(34/100)+(15/100)*(1-34/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_000",
+    "story_id": "v19_old_test_exactly_one_000"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_001_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      31,
+      40
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 40/100; the probability that B misses it is 31/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "40/100",
+      "miss_b": "31/100"
+    },
+    "expression": "(1-40/100)*(31/100)+(40/100)*(1-31/100)",
+    "answer": "231/500",
+    "target": "Bindings: miss_a=40/100; miss_b=31/100\nExpression: (1-40/100)*(31/100)+(40/100)*(1-31/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_001",
+    "story_id": "v19_old_test_exactly_one_001"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_001_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      31,
+      40
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 40/100; the probability that B misses it is 31/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "40/100",
+      "miss_b": "31/100"
+    },
+    "expression": "1-(40/100)*(31/100)",
+    "answer": "219/250",
+    "target": "Bindings: miss_a=40/100; miss_b=31/100\nExpression: (1-40/100)*(31/100)+(40/100)*(1-31/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_001",
+    "story_id": "v19_old_test_exactly_one_001"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_002_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      14,
+      53
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 53/100; the probability that B misses it is 14/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "53/100",
+      "miss_b": "14/100"
+    },
+    "expression": "(1-53/100)*(14/100)+(53/100)*(1-14/100)",
+    "answer": "326/625",
+    "target": "Bindings: miss_a=53/100; miss_b=14/100\nExpression: (1-53/100)*(14/100)+(53/100)*(1-14/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_002",
+    "story_id": "v19_old_test_exactly_one_002"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_002_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      14,
+      53
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 53/100; the probability that B misses it is 14/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "53/100",
+      "miss_b": "14/100"
+    },
+    "expression": "1-(53/100)*(14/100)",
+    "answer": "4629/5000",
+    "target": "Bindings: miss_a=53/100; miss_b=14/100\nExpression: (1-53/100)*(14/100)+(53/100)*(1-14/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_002",
+    "story_id": "v19_old_test_exactly_one_002"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_003_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      14,
+      67
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 67/100; the probability that B misses it is 14/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "67/100",
+      "miss_b": "14/100"
+    },
+    "expression": "(1-67/100)*(14/100)+(67/100)*(1-14/100)",
+    "answer": "389/625",
+    "target": "Bindings: miss_a=67/100; miss_b=14/100\nExpression: (1-67/100)*(14/100)+(67/100)*(1-14/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_003",
+    "story_id": "v19_old_test_exactly_one_003"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_003_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      14,
+      67
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 67/100; the probability that B misses it is 14/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "67/100",
+      "miss_b": "14/100"
+    },
+    "expression": "1-(67/100)*(14/100)",
+    "answer": "4531/5000",
+    "target": "Bindings: miss_a=67/100; miss_b=14/100\nExpression: (1-67/100)*(14/100)+(67/100)*(1-14/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_003",
+    "story_id": "v19_old_test_exactly_one_003"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_004_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      11,
+      23
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 23/100; the probability that B misses it is 11/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "23/100",
+      "miss_b": "11/100"
+    },
+    "expression": "(1-23/100)*(11/100)+(23/100)*(1-11/100)",
+    "answer": "1447/5000",
+    "target": "Bindings: miss_a=23/100; miss_b=11/100\nExpression: (1-23/100)*(11/100)+(23/100)*(1-11/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_004",
+    "story_id": "v19_old_test_exactly_one_004"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_004_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      11,
+      23
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 23/100; the probability that B misses it is 11/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "23/100",
+      "miss_b": "11/100"
+    },
+    "expression": "1-(23/100)*(11/100)",
+    "answer": "9747/10000",
+    "target": "Bindings: miss_a=23/100; miss_b=11/100\nExpression: (1-23/100)*(11/100)+(23/100)*(1-11/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_004",
+    "story_id": "v19_old_test_exactly_one_004"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_005_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      40,
+      65
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 65/100; the probability that B misses it is 40/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "65/100",
+      "miss_b": "40/100"
+    },
+    "expression": "(1-65/100)*(40/100)+(65/100)*(1-40/100)",
+    "answer": "53/100",
+    "target": "Bindings: miss_a=65/100; miss_b=40/100\nExpression: (1-65/100)*(40/100)+(65/100)*(1-40/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_005",
+    "story_id": "v19_old_test_exactly_one_005"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_005_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      40,
+      65
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 65/100; the probability that B misses it is 40/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "65/100",
+      "miss_b": "40/100"
+    },
+    "expression": "1-(65/100)*(40/100)",
+    "answer": "37/50",
+    "target": "Bindings: miss_a=65/100; miss_b=40/100\nExpression: (1-65/100)*(40/100)+(65/100)*(1-40/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_005",
+    "story_id": "v19_old_test_exactly_one_005"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_006_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      18,
+      28
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 18/100; the probability that B misses it is 28/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "18/100",
+      "miss_b": "28/100"
+    },
+    "expression": "(1-18/100)*(28/100)+(18/100)*(1-28/100)",
+    "answer": "449/1250",
+    "target": "Bindings: miss_a=18/100; miss_b=28/100\nExpression: (1-18/100)*(28/100)+(18/100)*(1-28/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_006",
+    "story_id": "v19_old_test_exactly_one_006"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_006_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      18,
+      28
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 18/100; the probability that B misses it is 28/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "18/100",
+      "miss_b": "28/100"
+    },
+    "expression": "1-(18/100)*(28/100)",
+    "answer": "1187/1250",
+    "target": "Bindings: miss_a=18/100; miss_b=28/100\nExpression: (1-18/100)*(28/100)+(18/100)*(1-28/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_006",
+    "story_id": "v19_old_test_exactly_one_006"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_007_exactly_one",
+    "category": "exactly_one",
+    "identity": [
+      "detection_pair",
+      35,
+      66
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 66/100; the probability that B misses it is 35/100. Find the probability that exactly one method detects the defect.",
+    "bindings": {
+      "miss_a": "66/100",
+      "miss_b": "35/100"
+    },
+    "expression": "(1-66/100)*(35/100)+(66/100)*(1-35/100)",
+    "answer": "137/250",
+    "target": "Bindings: miss_a=66/100; miss_b=35/100\nExpression: (1-66/100)*(35/100)+(66/100)*(1-35/100)",
+    "provenance": "procedural_reference",
+    "variant": "exactly_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_007",
+    "story_id": "v19_old_test_exactly_one_007"
+  },
+  {
+    "id": "analysis_v19_old_test_exactly_one_007_at_least_one",
+    "category": "at_least_one",
+    "identity": [
+      "detection_pair",
+      35,
+      66
+    ],
+    "question": "Two independent methods inspect the same defect. The probability that A misses it is 66/100; the probability that B misses it is 35/100. Find the probability that at least one method detects the defect.",
+    "bindings": {
+      "miss_a": "66/100",
+      "miss_b": "35/100"
+    },
+    "expression": "1-(66/100)*(35/100)",
+    "answer": "769/1000",
+    "target": "Bindings: miss_a=66/100; miss_b=35/100\nExpression: (1-66/100)*(35/100)+(66/100)*(1-35/100)",
+    "provenance": "procedural_reference",
+    "variant": "at_least_one",
+    "probe": "event_contrast",
+    "pair_id": "v19_old_test_exactly_one_007",
+    "story_id": "v19_old_test_exactly_one_007"
+  }
+]
