@@ -1,6 +1,6 @@
 {
   "protocol_status": "frozen_for_execution",
-  "execution_authorization": "offline_repairs_only",
+  "execution_authorization": "paid_execution_released",
   "repair_revision": "consolidation-data-v3-domain-repair",
   "experiment_name": "stats_consolidation_two_start_comparison",
   "teacher": {
@@ -16,7 +16,7 @@
     "full_total_cost_cap_usd": 3.0,
     "stop_if_cost_missing": true,
     "benchmark_max_calls": 24,
-    "total_max_calls_including_benchmark": 216,
+    "total_max_calls_including_benchmark": 326,
     "total_cost_cap_usd_including_benchmark": 3.0,
     "pilot_minimum_accepted_targets": 59,
     "pilot_planned_targets": 65,
@@ -192,5 +192,20 @@
     "holdout_replaced_due_to_invalid_probabilities": 36,
     "teacher_calls_at_freeze": 0,
     "gpu_runs_at_freeze": 0
+  },
+  "first_batch": {
+    "starts": [
+      "original_v15_continued_lora"
+    ],
+    "seeds": [
+      2027,
+      31415
+    ],
+    "teacher_prior_calls": 110,
+    "teacher_prior_cost_usd": 0.00806302,
+    "teacher_new_call_cap": 192,
+    "teacher_symbolic_rule_assistance": true,
+    "authorization": "User requests autonomous completion through first student batch; routine cleaning authorized.",
+    "protocol": "docs/STATS_FIRST_BATCH_PROTOCOL.md"
   }
 }

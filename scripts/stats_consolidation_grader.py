@@ -14,7 +14,7 @@ from stats_curriculum_v0_19 import score as historical_score
 from formulation_grader import parse_expression, shape
 from stats_consolidation_semantics import spec_for, validate_question
 
-GRADER_VERSION = "stats-consolidation-v2-reviewed-equivalences"
+GRADER_VERSION = "stats-consolidation-v3-reviewed-partial-folds"
 
 
 def grader_fingerprint():
@@ -65,6 +65,10 @@ def equivalent_references(q):
         lo, hi, k = ("("+s[x]+")" for x in ("lower", "upper", "divisor"))
         refs += [f"{hi}-({hi}-{lo})/2+({hi}-{lo})/(2*{k})",
                  f"({lo}+{hi})/2+(({hi}-{lo})/2)/{k}"]
+        center = number((F(s['lower'])+F(s['upper']))/2)
+        half = number((F(s['upper'])-F(s['lower']))/2)
+        refs += [f"{center}+{half}/{k}", f"{center}+({hi}-{lo})/(2*{k})",
+                 f"({lo}+{hi})/2+{half}/{k}", f"{center}+({hi}-{center})/{k}"]
     if s["kind"] == "process" and s["target"] == "second_moment":
         rate, duration = "("+s["rate"]+")", "("+s["duration"]+")"
         refs += [f"{rate}*{duration}*(1+{rate}*{duration})"]
@@ -88,6 +92,12 @@ def equivalent_references(q):
                 f"({number(scale)}**2)*({number(variance)}+{number(mean)}**2)"
                 f"+2*{number(scale)}*{number(offset)}*{number(mean)}+{number(offset)}**2",
             ]
+            refs += [f"{number(scale*scale)}*{number(variance)}+({number(scale)}*{number(mean)}+{number(offset)})**2"]
+            for cross in (f"2*{number(scale)}*{number(offset)}*{number(mean)}",
+                          f"{number(2*scale)}*{number(offset)}*{number(mean)}",
+                          f"{number(2*scale*offset)}*{number(mean)}"):
+                for square in (f"{number(offset)}**2", number(offset*offset)):
+                    refs += [f"{number(scale*scale)}*({number(variance)}+{number(mean)}**2)+{cross}+{square}"]
     return refs
 
 

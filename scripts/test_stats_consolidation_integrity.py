@@ -136,8 +136,11 @@ class IntegrityTests(unittest.TestCase):
     def test_config_blocks_paid_calls_without_changing_research_thresholds(self):
         config = json.loads((Path(__file__).resolve().parents[1]/"docs/STATS_CONSOLIDATION_DECISION_DRAFT.json").read_text())
         self.assertEqual(config["teacher"]["pilot_minimum_accepted_targets"], 59)
+        config["execution_authorization"] = "offline_repairs_only"
         with self.assertRaisesRegex(RuntimeError, "Offline repairs"):
             assert_execution_released(config)
+        config["execution_authorization"] = "paid_execution_released"
+        assert_execution_released(config)
 
     def test_offline_regrade_uses_raw_and_never_overwrites_source(self):
         from regrade_stats_consolidation_pilot import audit
