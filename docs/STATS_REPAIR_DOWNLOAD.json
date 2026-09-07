@@ -1,0 +1,27 @@
+{
+  "version": 54,
+  "script_version_id": 348070778,
+  "output_url": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348070778",
+  "download_page": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348070778&select=3beethoven_stats_repair_download.zip",
+  "filename": "3beethoven_stats_repair_download.zip",
+  "bytes": 189903038,
+  "sha256": "7231c56856f3f44b3acb6a7b650d1b305eb2e1b2261f98c4b8a7c4cb75990de5",
+  "notebook_status_observed": "Quick version complete",
+  "downloaded_from_saved_version": true,
+  "downloaded_zip_crc_verified": true,
+  "downloaded_manifest_files_verified": 464,
+  "session_stopped": true,
+  "teacher_calls": 0,
+  "total_optimizer_updates": 66,
+  "passing_checkpoints": 0,
+  "preferred_model": "original_v15",
+  "results_commit": "1547f09128ddd64cf7704ad415a359beb49fabbb",
+  "report_commit": "d11f56343ee6651e5f34ba1aaa215b552fde7c16",
+  "future_pipeline_fix_commit": "423157eaf793a0d98051799d80a6a493caa5ce98",
+  "notes": [
+    "All intermediate adapters and optimizer checkpoints remain in full V54 outputs.",
+    "Portable ZIP contains final diagnostic adapters, all selection answers, control answers, observed training traces and source code.",
+    "Frozen executed source in repo/ is separate from future pipeline fixes in post_run_pipeline_fix/.",
+    "No independent holdout or permanent MC was executed."
+  ]
+}
