@@ -12,12 +12,13 @@ from stats_consolidation_grader import score
 from stats_consolidation_pilot import DOCS, build as build_candidate, digest, question
 from stats_curriculum_v0_13 import KINDS, make as old_make
 from stats_curriculum_v0_18 import TRACKS, make as chain_make
+from stats_consolidation_semantics import task_key, validate_question
 
 SEED = 210288
 
 
 def prior_material():
-    expressions, answers, identities, chain_keys = set(), set(), set(), set()
+    expressions, tasks, identities, chain_keys = set(), set(), set(), set()
     for path in sorted(DOCS.glob("STATS_V0_*_FROZEN_QUESTIONS.json")):
         data = json.loads(path.read_text())
         for rows in data.values():
@@ -27,16 +28,25 @@ def prior_material():
                 if isinstance(q, dict):
                     if q.get("expression"):
                         expressions.add(q["expression"])
-                    if q.get("answer") is not None:
-                        answers.add(str(q["answer"]))
+                    try:
+                        tasks.add(task_key(q))
+                    except (ValueError, KeyError):
+                        pass  # Older, unrelated formats still have expression/ID blocking.
                     if q.get("identity"):
                         identities.add(tuple(q["identity"]))
                     if q.get("track") and q.get("parameters"):
                         chain_keys.add((q["track"], tuple(q["parameters"])))
     for story in build_candidate()[0]:
         expressions.update(q["expression"] for q in story["questions"])
-        answers.update(str(q["answer"]) for q in story["questions"])
-    return expressions, answers, identities, chain_keys
+        tasks.update(task_key(q) for q in story["questions"])
+    return expressions, tasks, identities, chain_keys
+
+
+def sample_old_parameters(kind, rng):
+    # The first slot means a rate for some families, a percentage for others.
+    # Never expand a percentage past 100 to manufacture numeric novelty.
+    first = rng.randrange(1, 100) if kind in ("binomial", "exactly_one", "at_least_one") else rng.randrange(101, 230)
+    return [first, rng.randrange(1201, 3600), rng.randrange(2, 12), rng.randrange(2, 43)]
 
 
 def reword_old(q):
@@ -66,7 +76,7 @@ def reword_chain(q):
 
 def build():
     rng = random.Random(SEED)
-    blocked_expr, blocked_answer, blocked_identity, blocked_chain = prior_material()
+    blocked_expr, blocked_tasks, blocked_identity, blocked_chain = prior_material()
     old, chain, event = [], [], []
 
     detection_params = []
@@ -77,20 +87,21 @@ def build():
                 q = old_make(kind, p, "holdout", i)
             else:
                 for _ in range(100000):
-                    p = [rng.randrange(101, 230), rng.randrange(1201, 3600), rng.randrange(2, 12), rng.randrange(2, 43)]
+                    p = sample_old_parameters(kind, rng)
                     q = old_make(kind, p, "holdout", i)
+                    validate_question(q)
                     identity = tuple(q["identity"])
                     probes = [q]
                     if kind == "exactly_one":
                         probes.append(old_make("at_least_one", p, "holdout", i))
                     if (identity not in blocked_identity and
-                            not any(x["expression"] in blocked_expr or str(x["answer"]) in blocked_answer for x in probes)):
+                            not any(x["expression"] in blocked_expr or task_key(x) in blocked_tasks for x in probes)):
                         break
                 else:
                     raise RuntimeError("old holdout identity space exhausted")
                 if kind == "exactly_one":
                     detection_params.append(p)
-            blocked_identity.add(tuple(q["identity"])); blocked_expr.add(q["expression"]); blocked_answer.add(str(q["answer"]))
+            blocked_identity.add(tuple(q["identity"])); blocked_expr.add(q["expression"]); blocked_tasks.add(task_key(q))
             q["id"] = f"consolidation_holdout_old_{kind}_{i:03d}"
             q["question"] = reword_old(q)
             q["provenance"] = "sealed_programmatic_holdout; never_teacher_training"
@@ -103,13 +114,13 @@ def build():
                      rng.randrange(3, 45), rng.randrange(341, 900), rng.randrange(111, 260), rng.randrange(24, 70)]
                 probe = [chain_make(track, depth, p, "holdout", i) for depth in (1, 2, 3)]
                 if ((track, tuple(p)) not in blocked_chain and
-                        not any(q["expression"] in blocked_expr or str(q["answer"]) in blocked_answer for q in probe)):
+                        not any(q["expression"] in blocked_expr or task_key(q) in blocked_tasks for q in probe)):
                     break
             else:
                 raise RuntimeError("chain holdout parameter space exhausted")
             blocked_chain.add((track, tuple(p)))
             for q in probe:
-                blocked_expr.add(q["expression"]); blocked_answer.add(str(q["answer"]))
+                blocked_expr.add(q["expression"]); blocked_tasks.add(task_key(q))
                 q["id"] = q["id"].replace("v18_holdout_", "consolidation_holdout_chain_")
                 q["story_id"] = q["story_id"].replace("v18_holdout_", "consolidation_holdout_chain_")
                 q["question"] = reword_chain(q)
@@ -127,9 +138,11 @@ def build():
                     "neither": f"(1-{pa}/{den})*(1-{pb}/{den})",
                     "same": f"({pa}/{den})*({pb}/{den})+(1-{pa}/{den})*(1-{pb}/{den})",
                 }
-                candidate_answers = {category: calculate(value) for category, value in expressions.items()}
+                event_specs = {category: {"id": "probe", "category": category,
+                    "semantics": dict(kind="events", target=category, p=f"{pa}/{den}", p_b=f"{pb}/{den}")}
+                    for category in expressions}
                 if (not any(value in blocked_expr for value in expressions.values()) and
-                        not any(str(value) in blocked_answer for value in candidate_answers.values())):
+                        not any(task_key(q) in blocked_tasks for q in event_specs.values())):
                     break
         story_id = f"consolidation_holdout_event_{i:03d}"
         asks = {"exactly_one": "exactly one signal is on", "both": "both signals are on",
@@ -139,13 +152,15 @@ def build():
                          f"Two independent binary signals turn on with probabilities {pa}/{den} and {pb}/{den}. Represent the probability that {asks[category]}.",
                          expressions[category], {}, ["enumerate independent outcomes", category], "a different event")
             q["id"] = f"{story_id}_{category}"
+            q["semantics"] = event_specs[category]["semantics"]
             q["provenance"] = "sealed_programmatic_holdout; never_teacher_training"
-            blocked_expr.add(q["expression"]); blocked_answer.add(str(q["answer"])); event.append(q)
+            blocked_expr.add(q["expression"]); blocked_tasks.add(task_key(q)); event.append(q)
 
     suites = {"old": old, "chain": chain, "event": event}
     assert {key: len(rows) for key, rows in suites.items()} == {"old": 96, "chain": 96, "event": 96}
     for rows in suites.values():
         for q in rows:
+            validate_question(q)
             assert calculate(q["expression"]) == q["answer"]
             assert score("Expression: " + q["expression"], q)["primary_correct"]
     benchmark = ([next(q for q in old if q["category"] == kind) for kind in KINDS]
@@ -153,7 +168,10 @@ def build():
                  + [q for category in ("exactly_one", "both", "neither", "same")
                     for q in [x for x in event if x["category"] == category][:2]])
     assert len(benchmark) == 24 and len({q["id"] for q in benchmark}) == 24
-    metadata = {"status": "sealed_before_paid_pilot", "seed": SEED,
+    metadata = {"status": "sealed_after_domain_repair_before_model_evaluation", "seed": SEED,
+                "data_revision": "consolidation-holdout-v2-domain-repair",
+                "supersedes_invalid_holdout_sha256": "c5515b35ff5ee0a5abf7c283c8cab55e08ee2e0e45a0105766865d744ac343df",
+                "novelty_rule": "effective subtask identity, not scalar-answer uniqueness",
                 "counts": {key: len(value) for key, value in suites.items()},
                 "candidate_corpus_sha256": digest(build_candidate()[0]),
                 "teacher_benchmark_rule": "old 1/category; chain 2/category; event 2/category",

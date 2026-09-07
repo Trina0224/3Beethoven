@@ -1,8 +1,32 @@
 # 統計蒸餾下一輪狀態
 
-更新：2026-09-07 05:45 PDT（America/Los_Angeles）。
+更新：2026-09-07 04:28 PDT（America/Los_Angeles）。
 
-**現行狀態：教師 pilot 已完成但 gate 失敗；full 與 GPU 均未啟動。這是交回高階模型的研究決策點。**
+**現行狀態：資料與判分的離線修正完成；舊 pilot 尚待完整原答重判，付費呼叫與 GPU 執行鎖定。先前「開跑包完成／ready」的結論撤回；下方 pilot 分數是歷史自動接受數，不是教師正確率。**
+
+## 本次修正與驗收（未增加教師呼叫）
+
+- 原 288 題 holdout 有 36 道非法機率題；根因是用 `101..229` 的共用參數作百分比。現在按題型取樣合法機率，重建 288 題及其中 24 題教師對照；版本及雜湊已更新。舊檔仍可從 commit `d425717` 取回，不修改歷史 v15–v20 成績。
+- 新增獨立 Fraction oracle：由分布／有效參數計算期望值，而非把參考式送進同一個計算器自我認證。檢查機率及文字百分比、二項整數條件、變異數非負、Poisson rate／時間、uniform 條件可成立、區間端點與參考值。
+- 去重以每個子題的有效參數為準，包括等價時間單位；忽略與所求量無關的 offset。兩個非 pilot 情境重抽；24 個 pilot request 完全不變，可重用原始回答作離線診斷。
+- 另抓到選點題 `v17_validation_poisson_scaled_001` 與 replay 的 `3**2*67` 重複；僅在本輪矩陣替換為 `v15_validation_poisson_scaled_000`。112 題規模、類別配額及整數門檻不變，未使用 test 題。
+- grader v2 承認經檢核的 `comb(n,1)=n`、一次方、uniform「已等時間＋剩餘時間均值」與 interval 等價式；仍拒絕錯誤單位、剩餘等待取代總等待、未代入變數及只給最後數字。歷史 grader 檔案未改。
+- 新 readiness 實際驗證含 replay 的 860 筆題目，合法性錯誤與跨分割有效子題重疊皆為 0；42 項離線測試通過。重跑 readiness 保留既有 38 calls／費用／42/65，不再歸零或變成付費開跑就緒。
+- 新舊 grader／資料 gate 不可混用，待複核項不得放行；本次 `execution_authorization=offline_repairs_only`。原 pilot 的 23 個拒收目標尚未在完整來源紀錄上重判，不能宣稱修正後分數或 pilot 已通過。
+
+下一步只需用已保存的 Version 49 `records/` 作離線重判，不必重新問老師：
+
+```bash
+python scripts/regrade_stats_consolidation_pilot.py \
+  --source-root /path/to/extracted/3beethoven_stats_consolidation_teacher \
+  --output /path/outside/source/pilot_regrade_v2.json
+```
+
+此命令不寫來源檔、不呼叫網路、不產生可放行的訓練 gate；有變更的 request 會標示不可重用。原 42/65 的歷史證據在 Kaggle Version 49 與下方表格。
+
+限制：修正的是已確認的出題／分割／判分錯誤，不等於已證明自然語言語義全部無誤或跨句式泛化。教材仍是參數化模板；既有順序是故事內排列、故事間混合 replay，不能稱為完整的全體 1→2→3 課程。本次沒有追加教材、改 teacher prompt、改 replay 比例或更動兩起點×兩 seed 研究設計。
+
+## 歷史 pilot 與先前修正紀錄（由上方現行狀態取代）
 
 | 階段 | 狀態 | 固定結果／門檻 |
 |---|---|---|

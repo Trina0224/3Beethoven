@@ -19,7 +19,8 @@ from flight_run_stats_v0_3 import STUDENT, package, read_json as read, save_json
 from run_stats_v0_4 import BASE_REVISION, dataset
 from run_stats_v0_17 import HASHES
 from stats_consolidation_eval import evaluate
-from stats_consolidation_pilot import build as build_candidate, digest
+from stats_consolidation_pilot import build as build_candidate, digest, assert_execution_released
+from stats_consolidation_grader import score, grader_fingerprint
 from stats_curriculum_v0_13 import KINDS
 
 REPO = Path(__file__).resolve().parents[1]
@@ -75,6 +76,7 @@ def gate_result(all_metrics, baseline, gate):
 
 
 def validate_decision(config):
+    assert_execution_released(config)
     if config.get("protocol_status") != "frozen_for_execution":
         raise RuntimeError("Protocol remains a draft; GPU training is blocked")
     training = config["training"]
@@ -126,6 +128,11 @@ def validate_verified_rows(verified, candidate_stories):
                 raise RuntimeError("Teacher row split or question hash drift")
             if row.get("reference_conditioned") or not row.get("teacher_raw") or not row.get("teacher_raw_sha256"):
                 raise RuntimeError("Teacher row provenance is incomplete")
+            if digest(row["teacher_raw"]) != row["teacher_raw_sha256"]:
+                raise RuntimeError("Teacher raw hash drift")
+            current = score("Expression: " + row["teacher_raw"], q)
+            if not current["primary_correct"] or row["target"] != "Expression: " + current["normalized_expression"]:
+                raise RuntimeError("Teacher target disagrees with freshly validated raw answer")
             judged = row.get("validation", {})
             if not (judged.get("math_correct") is True and judged.get("executable") is True):
                 raise RuntimeError("Unverified teacher row")
@@ -171,8 +178,15 @@ def main():
     verified = read(args.teacher_rows)
     if not verified:
         raise RuntimeError("Verified teacher rows are missing")
-    if not read(args.teacher_gate, {}).get("passed"):
+    teacher_gate = read(args.teacher_gate, {})
+    if not teacher_gate.get("passed"):
         raise RuntimeError("A persisted passing full teacher gate is required")
+    if (teacher_gate.get("grader_fingerprint") != grader_fingerprint()
+            or teacher_gate.get("verified_rows_sha256") != digest(verified)
+            or teacher_gate.get("decision_sha256") != digest(config)
+            or teacher_gate.get("request_sha256") != digest(build_candidate()[1])
+            or teacher_gate.get("scope") != "full"):
+        raise RuntimeError("Teacher gate belongs to a different data/grader contract")
     candidate_stories = build_candidate()[0]
     validate_verified_rows(verified, candidate_stories)
     train_rows = training_rows(verified, args.seed)
@@ -201,6 +215,7 @@ def main():
         "teacher_rows_sha256": file_sha(args.teacher_rows), "training_rows_sha256": digest(train_rows),
         "selection_matrix_sha256": file_sha(REPO / "docs/STATS_CONSOLIDATION_SELECTION_VALIDATION.json"),
         "grader_sha256": file_sha(REPO / "scripts/stats_consolidation_grader.py"),
+        "grader_fingerprint": grader_fingerprint(),
         "training_rows": len(train_rows), "new_teacher_rows": len(verified["train"]),
         "historical_replay_rows": 192, "base_revision": BASE_REVISION,
         "v15_baseline_adapter_sha256": file_sha(v15 / "adapter_model.safetensors"),

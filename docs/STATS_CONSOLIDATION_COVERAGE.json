@@ -1,4 +1,5 @@
 {
+  "data_revision": "consolidation-data-v3-domain-repair",
   "status": "frozen_for_execution",
   "seed": 210021,
   "teacher_model": "meta-llama/llama-3.3-70b-instruct",

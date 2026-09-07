@@ -6,7 +6,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "92c767fbc2e1364595a3e2ba733152277c4bb0515710701f3811fa41333b5afb",
     "questions": [
       {
@@ -25,7 +25,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "60",
+          "duration": "645/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_000_01",
@@ -40,7 +46,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "60",
+          "duration": "645/60"
+        }
       }
     ]
   },
@@ -51,7 +63,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "bf66b620a75495bced9cd5a304566229f30c06e12baafed1e9a15f0a17e58ee8",
     "questions": [
       {
@@ -70,7 +82,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "17",
+          "duration": "523/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_001_01",
@@ -85,7 +103,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "17",
+          "duration": "523/60"
+        }
       }
     ]
   },
@@ -96,7 +120,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "2557f0bc623d7783726b22057ee831f62e1dfcc141737f2a22e8ed8c64306e04",
     "questions": [
       {
@@ -115,7 +139,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "21",
+          "duration": "713/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_002_01",
@@ -130,7 +160,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "21",
+          "duration": "713/60"
+        }
       }
     ]
   },
@@ -141,7 +177,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "02e95d6fbf334b9ac41671802189f5951a1d0c0dec6559b120dafb3d72d07207",
     "questions": [
       {
@@ -160,7 +196,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "40",
+          "duration": "367/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_003_01",
@@ -175,7 +217,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "40",
+          "duration": "367/60"
+        }
       }
     ]
   },
@@ -186,7 +234,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "be696a425a7b5bbc5aa3235a7f356f88161018df7a01e429e9ae24051cb84eb7",
     "questions": [
       {
@@ -205,7 +253,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "49",
+          "duration": "496/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_004_01",
@@ -220,7 +274,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "49",
+          "duration": "496/60"
+        }
       }
     ]
   },
@@ -231,7 +291,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "bd61ee6b43f406320a30ede9a1631065192df3de39f9f57d28fd5b8642c485e1",
     "questions": [
       {
@@ -250,7 +310,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "38",
+          "duration": "576/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_005_01",
@@ -265,7 +331,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "38",
+          "duration": "576/60"
+        }
       }
     ]
   },
@@ -276,7 +348,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "f5d4c8c5fee0d2a50e2312c19c4fa6b54877cd5bf7cebe05b6e5eec875dbdcb4",
     "questions": [
       {
@@ -295,7 +367,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "34",
+          "duration": "140/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_006_01",
@@ -310,7 +388,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "34",
+          "duration": "140/60"
+        }
       }
     ]
   },
@@ -321,7 +405,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "d1872cbaf43e9c5bbd116da25ba8cd0306c579a3479d83a83a5962299e41a7aa",
     "questions": [
       {
@@ -340,7 +424,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "66",
+          "duration": "306/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_007_01",
@@ -355,7 +445,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "66",
+          "duration": "306/60"
+        }
       }
     ]
   },
@@ -366,7 +462,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "ed86b7b41f5cc1695968cad126805c79f22f73f6450f97b76e3b80099ed14b67",
     "questions": [
       {
@@ -385,7 +481,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "63",
+          "duration": "351/60"
+        }
       },
       {
         "id": "consolidation_train_poisson_process_008_01",
@@ -400,7 +502,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "63",
+          "duration": "351/60"
+        }
       }
     ]
   },
@@ -411,7 +519,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "2f75a7f6352ac6f7128a305d531caae2d30abef9f12832816d70c38c2ec08b92",
     "questions": [
       {
@@ -430,7 +538,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "54",
+          "duration": "461/60"
+        }
       },
       {
         "id": "consolidation_validation_poisson_process_009_01",
@@ -445,7 +559,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "54",
+          "duration": "461/60"
+        }
       }
     ]
   },
@@ -456,7 +576,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "089ee105584c91f2459bd8708d8b314b994fb21ee744596035b272b9170cc50d",
     "questions": [
       {
@@ -475,7 +595,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "20",
+          "duration": "574/60"
+        }
       },
       {
         "id": "consolidation_validation_poisson_process_010_01",
@@ -490,7 +616,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "20",
+          "duration": "574/60"
+        }
       }
     ]
   },
@@ -501,7 +633,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "928e8717d61721d73f752c2ae5d9652fb046667e7be77af64b2056401c1a3842",
     "questions": [
       {
@@ -520,7 +652,13 @@
           "Poisson variance equals its mean"
         ],
         "confused_with": "rate times seconds without conversion",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "62",
+          "duration": "288/60"
+        }
       },
       {
         "id": "consolidation_validation_poisson_process_011_01",
@@ -535,7 +673,13 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "variance alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "62",
+          "duration": "288/60"
+        }
       }
     ]
   },
@@ -546,7 +690,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8dbf49ee34c430a5c9ac40a6d4bc05f65a3081cb148cfe16e111877a8bf76b2d",
     "questions": [
       {
@@ -561,7 +705,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "48",
+          "scale": "2",
+          "offset": "17"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_000_01",
@@ -581,7 +732,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "48",
+          "scale": "2",
+          "offset": "17"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_000_02",
@@ -596,7 +754,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "48",
+          "scale": "2",
+          "offset": "17"
+        }
       }
     ]
   },
@@ -607,7 +772,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "3b7c45f3167dfa16b360c364e9784539e31ff1b8500d047a11146cd04fa52916",
     "questions": [
       {
@@ -622,7 +787,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "47",
+          "scale": "6",
+          "offset": "27"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_001_01",
@@ -642,7 +814,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "47",
+          "scale": "6",
+          "offset": "27"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_001_02",
@@ -657,7 +836,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "47",
+          "scale": "6",
+          "offset": "27"
+        }
       }
     ]
   },
@@ -668,7 +854,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "af9558098f5f066cea9ae62414f9ced93284d41b71110e1cff1469eeb882a489",
     "questions": [
       {
@@ -683,7 +869,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "79",
+          "scale": "3",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_002_01",
@@ -703,7 +896,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "79",
+          "scale": "3",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_002_02",
@@ -718,7 +918,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "79",
+          "scale": "3",
+          "offset": "5"
+        }
       }
     ]
   },
@@ -729,7 +936,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "73c045c282b03bc1ff57f68dbd1f05c7aed7b61d18ad7663f1cfc259ec1bcfa6",
     "questions": [
       {
@@ -744,7 +951,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "83",
+          "scale": "5",
+          "offset": "25"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_003_01",
@@ -764,7 +978,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "83",
+          "scale": "5",
+          "offset": "25"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_003_02",
@@ -779,7 +1000,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "83",
+          "scale": "5",
+          "offset": "25"
+        }
       }
     ]
   },
@@ -790,7 +1018,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "655393b8dc3d45bd10d13bfbe78abe302da6fc1002e88d5dba0abca8ca4d4a65",
     "questions": [
       {
@@ -805,7 +1033,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "47",
+          "scale": "3",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_004_01",
@@ -825,7 +1060,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "47",
+          "scale": "3",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_004_02",
@@ -840,7 +1082,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "47",
+          "scale": "3",
+          "offset": "9"
+        }
       }
     ]
   },
@@ -851,7 +1100,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "3f15fe5bbe16297039fafbdad17f1ba9b2ee3ab39802584627043fe44b1c47d7",
     "questions": [
       {
@@ -866,7 +1115,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "85",
+          "scale": "2",
+          "offset": "12"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_005_01",
@@ -886,7 +1142,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "85",
+          "scale": "2",
+          "offset": "12"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_005_02",
@@ -901,7 +1164,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "85",
+          "scale": "2",
+          "offset": "12"
+        }
       }
     ]
   },
@@ -912,7 +1182,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "92e9fa8ef563cbc096721195c2631cc20ce41162193a124dbf653e5bca5c0eb3",
     "questions": [
       {
@@ -927,7 +1197,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "74",
+          "scale": "7",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_006_01",
@@ -947,7 +1224,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "74",
+          "scale": "7",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_006_02",
@@ -962,7 +1246,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "74",
+          "scale": "7",
+          "offset": "9"
+        }
       }
     ]
   },
@@ -973,7 +1264,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "d6d9010e7c303ca44d4fd8f91008fc686de88766dfccf8fb63dd7ef9ac15040d",
     "questions": [
       {
@@ -988,7 +1279,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "27",
+          "scale": "4",
+          "offset": "16"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_007_01",
@@ -1008,7 +1306,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "27",
+          "scale": "4",
+          "offset": "16"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_007_02",
@@ -1023,7 +1328,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "27",
+          "scale": "4",
+          "offset": "16"
+        }
       }
     ]
   },
@@ -1034,7 +1346,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "7383cb486987481cae2998b932f9f9a792dfb6d016f2762e33713fb06610719a",
     "questions": [
       {
@@ -1049,7 +1361,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "60",
+          "scale": "4",
+          "offset": "27"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_008_01",
@@ -1069,7 +1388,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "60",
+          "scale": "4",
+          "offset": "27"
+        }
       },
       {
         "id": "consolidation_train_affine_poisson_008_02",
@@ -1084,7 +1410,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "60",
+          "scale": "4",
+          "offset": "27"
+        }
       }
     ]
   },
@@ -1095,7 +1428,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "a51d9183b7a8ffa08d819ff4de7c0fe1778bbf628a572e0ae1b7ac55d223aa04",
     "questions": [
       {
@@ -1110,7 +1443,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "62",
+          "scale": "2",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_009_01",
@@ -1130,7 +1470,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "62",
+          "scale": "2",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_009_02",
@@ -1145,7 +1492,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "62",
+          "scale": "2",
+          "offset": "9"
+        }
       }
     ]
   },
@@ -1156,7 +1510,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "a461911db11be50a511dc21e101f2d83f8a775d8bd02851708d945d03ebc66fc",
     "questions": [
       {
@@ -1171,7 +1525,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "78",
+          "scale": "6",
+          "offset": "6"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_010_01",
@@ -1191,7 +1552,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "78",
+          "scale": "6",
+          "offset": "6"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_010_02",
@@ -1206,7 +1574,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "78",
+          "scale": "6",
+          "offset": "6"
+        }
       }
     ]
   },
@@ -1217,7 +1592,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "eb23cdef0e8bacccbd160baddbb68da7e83b1ecb14ee898a90fc50301ab17fa5",
     "questions": [
       {
@@ -1232,7 +1607,14 @@
           "affine expectation"
         ],
         "confused_with": "variance scaling",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "mean",
+          "mean": "63",
+          "scale": "3",
+          "offset": "17"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_011_01",
@@ -1252,7 +1634,14 @@
           "variance scales by the square"
         ],
         "confused_with": "scale rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "63",
+          "scale": "3",
+          "offset": "17"
+        }
       },
       {
         "id": "consolidation_validation_affine_poisson_011_02",
@@ -1267,7 +1656,14 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "63",
+          "scale": "3",
+          "offset": "17"
+        }
       }
     ]
   },
@@ -1278,7 +1674,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "08c97607a51ccb1a0cab42dd103dfa4463ddea372f519ae279d15d58ddabe89d",
     "questions": [
       {
@@ -1293,7 +1689,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "51",
+          "variance": "156",
+          "scale": "2",
+          "offset": "13"
+        }
       },
       {
         "id": "consolidation_train_general_moment_000_01",
@@ -1307,7 +1711,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "51",
+          "variance": "156",
+          "scale": "2",
+          "offset": "13"
+        }
       },
       {
         "id": "consolidation_train_general_moment_000_02",
@@ -1328,7 +1740,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "51",
+          "variance": "156",
+          "scale": "2",
+          "offset": "13"
+        }
       }
     ]
   },
@@ -1339,7 +1759,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "2bc0bb31c8b6516b772aafab1ba91c0be40c17c50676281519c6e47127230162",
     "questions": [
       {
@@ -1354,7 +1774,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "32",
+          "variance": "76",
+          "scale": "7",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_train_general_moment_001_01",
@@ -1368,7 +1796,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "32",
+          "variance": "76",
+          "scale": "7",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_train_general_moment_001_02",
@@ -1389,7 +1825,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "32",
+          "variance": "76",
+          "scale": "7",
+          "offset": "5"
+        }
       }
     ]
   },
@@ -1400,7 +1844,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "6598e1acbbb6f9cbe64d1d564106b360baafd6cc0a9140f2e34f0843f1a6c943",
     "questions": [
       {
@@ -1415,7 +1859,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "58",
+          "variance": "125",
+          "scale": "6",
+          "offset": "20"
+        }
       },
       {
         "id": "consolidation_train_general_moment_002_01",
@@ -1429,7 +1881,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "58",
+          "variance": "125",
+          "scale": "6",
+          "offset": "20"
+        }
       },
       {
         "id": "consolidation_train_general_moment_002_02",
@@ -1450,7 +1910,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "58",
+          "variance": "125",
+          "scale": "6",
+          "offset": "20"
+        }
       }
     ]
   },
@@ -1461,7 +1929,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "5dd28b2df1626539478a7a52443eb6bf24e1627d00cec21e46f6011c1ef812fc",
     "questions": [
       {
@@ -1476,7 +1944,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "26",
+          "variance": "102",
+          "scale": "2",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_general_moment_003_01",
@@ -1490,7 +1966,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "26",
+          "variance": "102",
+          "scale": "2",
+          "offset": "9"
+        }
       },
       {
         "id": "consolidation_train_general_moment_003_02",
@@ -1511,7 +1995,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "26",
+          "variance": "102",
+          "scale": "2",
+          "offset": "9"
+        }
       }
     ]
   },
@@ -1522,7 +2014,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "931fa70a75b6e044cbc88d5e8b4a59715ccf7e4dec7a41edb38888b543028304",
     "questions": [
       {
@@ -1537,7 +2029,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "35",
+          "variance": "154",
+          "scale": "2",
+          "offset": "24"
+        }
       },
       {
         "id": "consolidation_train_general_moment_004_01",
@@ -1551,7 +2051,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "35",
+          "variance": "154",
+          "scale": "2",
+          "offset": "24"
+        }
       },
       {
         "id": "consolidation_train_general_moment_004_02",
@@ -1572,7 +2080,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "35",
+          "variance": "154",
+          "scale": "2",
+          "offset": "24"
+        }
       }
     ]
   },
@@ -1583,7 +2099,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "635b8ae95ac2e85bf3515337bbb1d2dc628d75996f671bd2fb214d924a200e54",
     "questions": [
       {
@@ -1598,7 +2114,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "30",
+          "variance": "186",
+          "scale": "7",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_general_moment_005_01",
@@ -1612,7 +2136,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "30",
+          "variance": "186",
+          "scale": "7",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_general_moment_005_02",
@@ -1633,7 +2165,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "30",
+          "variance": "186",
+          "scale": "7",
+          "offset": "3"
+        }
       }
     ]
   },
@@ -1644,7 +2184,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "228c9b2a21e1644b4b1564f362c81d161beb9d49a8220f6560c7f03c310956d8",
     "questions": [
       {
@@ -1659,7 +2199,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "23",
+          "variance": "254",
+          "scale": "7",
+          "offset": "2"
+        }
       },
       {
         "id": "consolidation_train_general_moment_006_01",
@@ -1673,7 +2221,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "23",
+          "variance": "254",
+          "scale": "7",
+          "offset": "2"
+        }
       },
       {
         "id": "consolidation_train_general_moment_006_02",
@@ -1694,7 +2250,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "23",
+          "variance": "254",
+          "scale": "7",
+          "offset": "2"
+        }
       }
     ]
   },
@@ -1705,7 +2269,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "ae19de26e2c28a6904f5e340735b84bdac44b1f1c1e7a48eb27520f79782c1bb",
     "questions": [
       {
@@ -1720,7 +2284,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "59",
+          "variance": "171",
+          "scale": "2",
+          "offset": "8"
+        }
       },
       {
         "id": "consolidation_train_general_moment_007_01",
@@ -1734,7 +2306,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "59",
+          "variance": "171",
+          "scale": "2",
+          "offset": "8"
+        }
       },
       {
         "id": "consolidation_train_general_moment_007_02",
@@ -1755,7 +2335,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "59",
+          "variance": "171",
+          "scale": "2",
+          "offset": "8"
+        }
       }
     ]
   },
@@ -1766,7 +2354,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "6765187087596f8c3cccda1ded2e6e2e40fe362c20a3048558da0ab772851a08",
     "questions": [
       {
@@ -1781,7 +2369,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "23",
+          "variance": "235",
+          "scale": "7",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_general_moment_008_01",
@@ -1795,7 +2391,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "23",
+          "variance": "235",
+          "scale": "7",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_general_moment_008_02",
@@ -1816,7 +2420,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "23",
+          "variance": "235",
+          "scale": "7",
+          "offset": "3"
+        }
       }
     ]
   },
@@ -1827,7 +2439,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "0c0a0241409f80bb31e2b32882dbd7e8ca81190fc1f394693d6ac3f6bd721ac5",
     "questions": [
       {
@@ -1842,7 +2454,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "45",
+          "variance": "201",
+          "scale": "2",
+          "offset": "14"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_009_01",
@@ -1856,7 +2476,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "45",
+          "variance": "201",
+          "scale": "2",
+          "offset": "14"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_009_02",
@@ -1877,7 +2505,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "45",
+          "variance": "201",
+          "scale": "2",
+          "offset": "14"
+        }
       }
     ]
   },
@@ -1888,7 +2524,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "f7049709cde262688c02e087e0c79b22bb6e964b21600c6c186b292710bb3f84",
     "questions": [
       {
@@ -1903,7 +2539,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "18",
+          "variance": "265",
+          "scale": "5",
+          "offset": "24"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_010_01",
@@ -1917,7 +2561,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "18",
+          "variance": "265",
+          "scale": "5",
+          "offset": "24"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_010_02",
@@ -1938,7 +2590,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "18",
+          "variance": "265",
+          "scale": "5",
+          "offset": "24"
+        }
       }
     ]
   },
@@ -1949,7 +2609,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "fd17281c78340ca5f8fe8f03c4715e4dcc4b8361dc77e7a81001cc0bc0996808",
     "questions": [
       {
@@ -1964,7 +2624,15 @@
           "affine expectation"
         ],
         "confused_with": "variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "mean",
+          "mean": "69",
+          "variance": "123",
+          "scale": "5",
+          "offset": "7"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_011_01",
@@ -1978,7 +2646,15 @@
           "affine variance"
         ],
         "confused_with": "including the offset",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "mean": "69",
+          "variance": "123",
+          "scale": "5",
+          "offset": "7"
+        }
       },
       {
         "id": "consolidation_validation_general_moment_011_02",
@@ -1999,7 +2675,15 @@
           "second moment is variance plus squared mean"
         ],
         "confused_with": "squared mean without variance",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "69",
+          "variance": "123",
+          "scale": "5",
+          "offset": "7"
+        }
       }
     ]
   },
@@ -2010,7 +2694,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "04df9d8a8905b7afb6743d09a6dab8dcff410d864761b0bc19d57d6e8492d155",
     "questions": [
       {
@@ -2030,7 +2714,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "87",
+          "cutoff": "71/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_000_01",
@@ -2045,7 +2736,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "87",
+          "cutoff": "71/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2056,7 +2754,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8eef671d61da6be8345f1b7c594093514793d5b2aeccc25bc7e15b3a1909b66d",
     "questions": [
       {
@@ -2076,7 +2774,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "26",
+          "cutoff": "625/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_001_01",
@@ -2091,7 +2796,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "26",
+          "cutoff": "625/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2102,7 +2814,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "10fcde4fee5d6391de95db50c4922145306040198e5f4db68685f010bda93af9",
     "questions": [
       {
@@ -2122,7 +2834,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "61",
+          "cutoff": "907/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_002_01",
@@ -2137,7 +2856,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "61",
+          "cutoff": "907/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2148,7 +2874,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "14c7d680e37829a2d6ab71d4f08940ea9597e54ff3cf19e38efde09e4e8fb1b8",
     "questions": [
       {
@@ -2168,7 +2894,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "76",
+          "cutoff": "872/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_003_01",
@@ -2183,7 +2916,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "76",
+          "cutoff": "872/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2194,7 +2934,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "fb95838f4e5d17589dc21ab3864a67decba10b056303ea24cc2233d383049c95",
     "questions": [
       {
@@ -2214,7 +2954,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "79",
+          "cutoff": "989/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_004_01",
@@ -2229,7 +2976,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "79",
+          "cutoff": "989/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2240,7 +2994,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "57672efd6f57bb9189a920e409893ecca272c4f4b934809fa5d1e9c450a7a479",
     "questions": [
       {
@@ -2260,7 +3014,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "83",
+          "cutoff": "240/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_train_uniform_wait_005_01",
@@ -2275,7 +3036,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "83",
+          "cutoff": "240/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2286,7 +3054,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "07ee39a272ee760b6be13b52d166e2115a1e8e04fc0de04ead617d7519ca5713",
     "questions": [
       {
@@ -2306,7 +3074,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "61",
+          "cutoff": "186/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_validation_uniform_wait_006_01",
@@ -2321,7 +3096,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "61",
+          "cutoff": "186/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2332,7 +3114,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "ddc25e49f46f23c9d5b1d7fb0943e54e868132f03c4fa1da6be0f3827961a463",
     "questions": [
       {
@@ -2352,7 +3134,14 @@
           "mean is midpoint"
         ],
         "confused_with": "remaining rather than total wait",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "86",
+          "cutoff": "268/60",
+          "conditional": true
+        }
       },
       {
         "id": "consolidation_validation_uniform_wait_007_01",
@@ -2367,7 +3156,14 @@
           "conditional total mean"
         ],
         "confused_with": "remaining wait after the cutoff",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "uniform",
+          "lower": "0",
+          "upper": "86",
+          "cutoff": "268/60",
+          "conditional": true
+        }
       }
     ]
   },
@@ -2378,7 +3174,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "d209acbd7d4703cc2d192cefa1507e37ae0d2dd4a1299439407f3ed366637607",
     "questions": [
       {
@@ -2409,7 +3205,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8f4c54999abf7a8ff4f3111bd489e0828e400a8ec4e133dc630f7dd7f6477900",
     "questions": [
       {
@@ -2440,7 +3236,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "61785b5cc1cc620a8a8a7a55372257a5cda2f95f2514fa1ede884b935341669a",
     "questions": [
       {
@@ -2471,7 +3267,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "deaccc1879653408d84828f6635507c6f985c64d45d4fd459b04b002047431f7",
     "questions": [
       {
@@ -2502,7 +3298,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "b074321961689c1c0829337de376316f1f0699f5c3716faec80192b7c2ba25ab",
     "questions": [
       {
@@ -2533,7 +3329,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "5d6a8719ff2c5ea32131a54c7448fc7c3e684c107910db22784aba320e839071",
     "questions": [
       {
@@ -2564,7 +3360,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "bddbabc812b5b2866fc4154ada63fba91ddab10c8a7b5d91dec52611fd24d783",
     "questions": [
       {
@@ -2595,7 +3391,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "percent",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8d1eae700ab54b7b613b611850699cfb6315230f9c1d692fd109bcb01b97b1fa",
     "questions": [
       {
@@ -2626,7 +3422,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "2abaad9790850d9c4f1af17673a10b24982bde46a1c209e758b6982533dca3cc",
     "questions": [
       {
@@ -2642,7 +3438,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "71/100",
+          "p_b": "20/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_000_01",
@@ -2657,7 +3459,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "71/100",
+          "p_b": "20/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_000_02",
@@ -2672,7 +3480,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "71/100",
+          "p_b": "20/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_000_03",
@@ -2687,7 +3501,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "71/100",
+          "p_b": "20/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_000_04",
@@ -2702,7 +3522,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "71/100",
+          "p_b": "20/100"
+        }
       }
     ]
   },
@@ -2713,7 +3539,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "88817d1edbba916dce33dd7485c1ad26b7e3693c954997d536462989c52da465",
     "questions": [
       {
@@ -2729,7 +3555,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "28/97",
+          "p_b": "82/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_001_01",
@@ -2744,7 +3576,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "28/97",
+          "p_b": "82/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_001_02",
@@ -2759,7 +3597,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "28/97",
+          "p_b": "82/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_001_03",
@@ -2774,7 +3618,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "28/97",
+          "p_b": "82/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_001_04",
@@ -2789,7 +3639,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "28/97",
+          "p_b": "82/97"
+        }
       }
     ]
   },
@@ -2800,7 +3656,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "67db164d919e4ff8b85d1e6a13598ecbc490bfb3c0508864f5b268e3508164a6",
     "questions": [
       {
@@ -2816,7 +3672,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "21/100",
+          "p_b": "11/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_002_01",
@@ -2831,7 +3693,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "21/100",
+          "p_b": "11/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_002_02",
@@ -2846,7 +3714,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "21/100",
+          "p_b": "11/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_002_03",
@@ -2861,7 +3735,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "21/100",
+          "p_b": "11/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_002_04",
@@ -2876,7 +3756,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "21/100",
+          "p_b": "11/100"
+        }
       }
     ]
   },
@@ -2887,7 +3773,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "dfacf92246a5b3289629149cf9c90ba24dde0eb15347e54ceccce1d003a091de",
     "questions": [
       {
@@ -2903,7 +3789,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "70/97",
+          "p_b": "48/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_003_01",
@@ -2918,7 +3810,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "70/97",
+          "p_b": "48/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_003_02",
@@ -2933,7 +3831,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "70/97",
+          "p_b": "48/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_003_03",
@@ -2948,7 +3852,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "70/97",
+          "p_b": "48/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_003_04",
@@ -2963,7 +3873,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "70/97",
+          "p_b": "48/97"
+        }
       }
     ]
   },
@@ -2974,7 +3890,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "3ce74d6e6357ada8f9785891bb2180845285d594ee2601be59fa73a745c0cad6",
     "questions": [
       {
@@ -2990,7 +3906,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "22/100",
+          "p_b": "17/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_004_01",
@@ -3005,7 +3927,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "22/100",
+          "p_b": "17/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_004_02",
@@ -3020,7 +3948,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "22/100",
+          "p_b": "17/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_004_03",
@@ -3035,7 +3969,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "22/100",
+          "p_b": "17/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_004_04",
@@ -3050,7 +3990,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "22/100",
+          "p_b": "17/100"
+        }
       }
     ]
   },
@@ -3061,7 +4007,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "c2aac9041043965be85cb262bbc1d83cc257d4e62250f795df5f3acecb2b12b2",
     "questions": [
       {
@@ -3077,7 +4023,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "24/97",
+          "p_b": "13/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_005_01",
@@ -3092,7 +4044,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "24/97",
+          "p_b": "13/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_005_02",
@@ -3107,7 +4065,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "24/97",
+          "p_b": "13/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_005_03",
@@ -3122,7 +4086,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "24/97",
+          "p_b": "13/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_005_04",
@@ -3137,7 +4107,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "24/97",
+          "p_b": "13/97"
+        }
       }
     ]
   },
@@ -3148,7 +4124,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "f0b2404999698bd1fc7e64e8ba75fc23233ff9230b0660efdd7aa0f1a06e3901",
     "questions": [
       {
@@ -3164,7 +4140,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "62/100",
+          "p_b": "54/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_006_01",
@@ -3179,7 +4161,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "62/100",
+          "p_b": "54/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_006_02",
@@ -3194,7 +4182,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "62/100",
+          "p_b": "54/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_006_03",
@@ -3209,7 +4203,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "62/100",
+          "p_b": "54/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_006_04",
@@ -3224,7 +4224,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "62/100",
+          "p_b": "54/100"
+        }
       }
     ]
   },
@@ -3235,7 +4241,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "a91efc57e217905ff400decdbb1f9934154e3f7eff960734871267667e54fd11",
     "questions": [
       {
@@ -3251,7 +4257,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "46/97",
+          "p_b": "84/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_007_01",
@@ -3266,7 +4278,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "46/97",
+          "p_b": "84/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_007_02",
@@ -3281,7 +4299,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "46/97",
+          "p_b": "84/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_007_03",
@@ -3296,7 +4320,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "46/97",
+          "p_b": "84/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_007_04",
@@ -3311,7 +4341,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "46/97",
+          "p_b": "84/97"
+        }
       }
     ]
   },
@@ -3322,7 +4358,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "20c2af3fc0131d91a37fc154274a38d064917f8865612b5becd1c4e588366fb5",
     "questions": [
       {
@@ -3338,7 +4374,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "64/100",
+          "p_b": "57/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_008_01",
@@ -3353,7 +4395,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "64/100",
+          "p_b": "57/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_008_02",
@@ -3368,7 +4416,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "64/100",
+          "p_b": "57/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_008_03",
@@ -3383,7 +4437,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "64/100",
+          "p_b": "57/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_008_04",
@@ -3398,7 +4458,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "64/100",
+          "p_b": "57/100"
+        }
       }
     ]
   },
@@ -3409,7 +4475,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "339ad394570beb0cdf730e226013e04374f378d64376e1277032aefd51cfe570",
     "questions": [
       {
@@ -3425,7 +4491,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "68/97",
+          "p_b": "52/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_009_01",
@@ -3440,7 +4512,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "68/97",
+          "p_b": "52/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_009_02",
@@ -3455,7 +4533,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "68/97",
+          "p_b": "52/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_009_03",
@@ -3470,7 +4554,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "68/97",
+          "p_b": "52/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_009_04",
@@ -3485,7 +4575,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "68/97",
+          "p_b": "52/97"
+        }
       }
     ]
   },
@@ -3496,7 +4592,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "98b18a111941501969388322e566be0a0af49c050730d050160bd1f6556bbeff",
     "questions": [
       {
@@ -3512,7 +4608,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "53/100",
+          "p_b": "29/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_010_01",
@@ -3527,7 +4629,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "53/100",
+          "p_b": "29/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_010_02",
@@ -3542,7 +4650,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "53/100",
+          "p_b": "29/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_010_03",
@@ -3557,7 +4671,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "53/100",
+          "p_b": "29/100"
+        }
       },
       {
         "id": "consolidation_train_detection_events_010_04",
@@ -3572,7 +4692,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "53/100",
+          "p_b": "29/100"
+        }
       }
     ]
   },
@@ -3583,7 +4709,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "fa12ff22883d38db26c1525177b704e806f2e86b7de59b5493a6426b1881a143",
     "questions": [
       {
@@ -3599,7 +4725,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "82/97",
+          "p_b": "67/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_011_01",
@@ -3614,7 +4746,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "82/97",
+          "p_b": "67/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_011_02",
@@ -3629,7 +4767,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "82/97",
+          "p_b": "67/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_011_03",
@@ -3644,7 +4788,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "82/97",
+          "p_b": "67/97"
+        }
       },
       {
         "id": "consolidation_train_detection_events_011_04",
@@ -3659,7 +4809,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "82/97",
+          "p_b": "67/97"
+        }
       }
     ]
   },
@@ -3670,7 +4826,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "2a0d443a897dfd226c0bf7c03356550d682322ca05fb5d5c648b7dad8460fe24",
     "questions": [
       {
@@ -3686,7 +4842,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "62/100",
+          "p_b": "28/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_012_01",
@@ -3701,7 +4863,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "62/100",
+          "p_b": "28/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_012_02",
@@ -3716,7 +4884,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "62/100",
+          "p_b": "28/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_012_03",
@@ -3731,7 +4905,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "62/100",
+          "p_b": "28/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_012_04",
@@ -3746,7 +4926,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "62/100",
+          "p_b": "28/100"
+        }
       }
     ]
   },
@@ -3757,7 +4943,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "351f6d2bee284fc56f5c96afa5b35876bc34dc70ef6ad8e3db81be5e72dd66eb",
     "questions": [
       {
@@ -3773,7 +4959,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "81/97",
+          "p_b": "87/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_013_01",
@@ -3788,7 +4980,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "81/97",
+          "p_b": "87/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_013_02",
@@ -3803,7 +5001,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "81/97",
+          "p_b": "87/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_013_03",
@@ -3818,7 +5022,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "81/97",
+          "p_b": "87/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_013_04",
@@ -3833,7 +5043,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "81/97",
+          "p_b": "87/97"
+        }
       }
     ]
   },
@@ -3844,7 +5060,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "percent_denominator_100",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "055e3cc673a01c96b3933a6108ea2a0e13dd826d0b1cb351efdb5b7e7dcc9d2a",
     "questions": [
       {
@@ -3860,7 +5076,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "49/100",
+          "p_b": "21/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_014_01",
@@ -3875,7 +5097,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "49/100",
+          "p_b": "21/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_014_02",
@@ -3890,7 +5118,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "49/100",
+          "p_b": "21/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_014_03",
@@ -3905,7 +5139,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "49/100",
+          "p_b": "21/100"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_014_04",
@@ -3920,7 +5160,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "49/100",
+          "p_b": "21/100"
+        }
       }
     ]
   },
@@ -3931,7 +5177,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "nondecimal_fraction_denominator_97",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8e5e1e3885a7fae2a6a700d6bdae2f8ee28ecc841bb176cb90161695476522cc",
     "questions": [
       {
@@ -3947,7 +5193,13 @@
           "exactly_one"
         ],
         "confused_with": "the alarms agree",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "exactly_one",
+          "p": "51/97",
+          "p_b": "83/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_015_01",
@@ -3962,7 +5214,13 @@
           "at_least_one"
         ],
         "confused_with": "both alarms",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "at_least_one",
+          "p": "51/97",
+          "p_b": "83/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_015_02",
@@ -3977,7 +5235,13 @@
           "both"
         ],
         "confused_with": "at least one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "both",
+          "p": "51/97",
+          "p_b": "83/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_015_03",
@@ -3992,7 +5256,13 @@
           "neither"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "neither",
+          "p": "51/97",
+          "p_b": "83/97"
+        }
       },
       {
         "id": "consolidation_validation_detection_events_015_04",
@@ -4007,7 +5277,13 @@
           "same"
         ],
         "confused_with": "exactly one alarm",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "events",
+          "target": "same",
+          "p": "51/97",
+          "p_b": "83/97"
+        }
       }
     ]
   },
@@ -4018,7 +5294,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "4416f5837365d9250c31004eb057b11b6d6c735f34f4ce1bc673352af18233d9",
     "questions": [
       {
@@ -4049,7 +5325,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "51d0e34acb103ce68a0c872f20e1c4ea1520346c87a6c44d8cfc5b33d85e79ee",
     "questions": [
       {
@@ -4080,7 +5356,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "341819cde4e71ed2bdb8d46bd31b0aff3ca05a95e4243daa2a0d56e4805628ac",
     "questions": [
       {
@@ -4111,7 +5387,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "0db3850cffde23f598565a2166e58b75b4047741e933a842c2ce77861c9487b7",
     "questions": [
       {
@@ -4142,7 +5418,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "1f546ce55b75f3c18cb50022c5ea9e0261f218160c30b3c97e03be4c81f63be1",
     "questions": [
       {
@@ -4173,7 +5449,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "b42fc167803cd68234cef860b5257ae961288b7c66462e2f66b2c9eb9b03f94a",
     "questions": [
       {
@@ -4204,7 +5480,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "f9199f8c8982a54923caa208e49d5d2943fc7c96063046b288614fcceb3744fd",
     "questions": [
       {
@@ -4235,7 +5511,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8c77b284f95e9a6df8d9be846e59c05d7710d742eb9ba271fb04870358f5ce40",
     "questions": [
       {
@@ -4266,7 +5542,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "e2d0c7279567b600fba7909cf3c478425c0b459e93d107538667cad94c3b48c0",
     "questions": [
       {
@@ -4281,7 +5557,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "19"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_000_01",
@@ -4296,7 +5577,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "19",
+          "duration": "6"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_000_02",
@@ -4312,7 +5599,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "19",
+          "duration": "308/60"
+        }
       }
     ]
   },
@@ -4323,7 +5616,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "7bc53320b839b3f0d7eea0d295797e367da2cc863fbda2275db72f142464a118",
     "questions": [
       {
@@ -4338,7 +5631,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "62"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_001_01",
@@ -4353,7 +5651,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "62",
+          "duration": "12"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_001_02",
@@ -4369,7 +5673,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "62",
+          "duration": "716/60"
+        }
       }
     ]
   },
@@ -4380,7 +5690,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "0007e82b805bed324d54e822b9ce1379eaf0102c941411ef2116fd1b9f7cfa0c",
     "questions": [
       {
@@ -4395,7 +5705,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "56"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_002_01",
@@ -4410,7 +5725,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "56",
+          "duration": "8"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_002_02",
@@ -4426,7 +5747,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "56",
+          "duration": "691/60"
+        }
       }
     ]
   },
@@ -4437,7 +5764,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "6a66e06ccc75ef3ce51e685d1701123dc7b2c1f6b248ac475332ddb581b97044",
     "questions": [
       {
@@ -4452,7 +5779,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "19"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_003_01",
@@ -4467,7 +5799,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "19",
+          "duration": "13"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_003_02",
@@ -4483,7 +5821,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "19",
+          "duration": "148/60"
+        }
       }
     ]
   },
@@ -4494,7 +5838,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "63090165238aeebe6fd545bfedbd3a67bbdc60bb1a5786f2f1e90fe03ba7cba3",
     "questions": [
       {
@@ -4509,7 +5853,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "71"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_004_01",
@@ -4524,7 +5873,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "71",
+          "duration": "11"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_004_02",
@@ -4540,7 +5895,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "71",
+          "duration": "741/60"
+        }
       }
     ]
   },
@@ -4551,7 +5912,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "7db9d33f62876781fcd447a88b3748a7f2c5d2941cfd3561961ceafae8fc0f10",
     "questions": [
       {
@@ -4566,7 +5927,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "45"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_005_01",
@@ -4581,7 +5947,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "45",
+          "duration": "6"
+        }
       },
       {
         "id": "consolidation_train_chain_poisson_variance_005_02",
@@ -4597,7 +5969,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "45",
+          "duration": "330/60"
+        }
       }
     ]
   },
@@ -4608,7 +5986,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "50e68f9d23ee5a6bd900ab2996726edb3465a54e9bcd3d738897ee018a869c23",
     "questions": [
       {
@@ -4623,7 +6001,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "23"
+        }
       },
       {
         "id": "consolidation_validation_chain_poisson_variance_006_01",
@@ -4638,7 +6021,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "23",
+          "duration": "9"
+        }
       },
       {
         "id": "consolidation_validation_chain_poisson_variance_006_02",
@@ -4654,7 +6043,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "23",
+          "duration": "358/60"
+        }
       }
     ]
   },
@@ -4665,7 +6060,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "mixed_seconds_and_minutes",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "bdd823f9ef8edc37b81f553d95a9fe02d5791ec361936d20d7c1b40bd307256c",
     "questions": [
       {
@@ -4680,7 +6075,12 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "48"
+        }
       },
       {
         "id": "consolidation_validation_chain_poisson_variance_007_01",
@@ -4695,7 +6095,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "48",
+          "duration": "3"
+        }
       },
       {
         "id": "consolidation_validation_chain_poisson_variance_007_02",
@@ -4711,7 +6117,13 @@
           "Poisson variance"
         ],
         "confused_with": "wrong duration unit",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "48",
+          "duration": "628/60"
+        }
       }
     ]
   },
@@ -4722,7 +6134,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "8488c690aaf15bab0cfde454c3939966f63bf96f6982484d567c984127a026ed",
     "questions": [
       {
@@ -4737,7 +6149,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "202",
+          "scale": "5",
+          "offset": "10"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_000_01",
@@ -4752,7 +6171,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "63",
+          "scale": "5",
+          "offset": "10"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_000_02",
@@ -4768,7 +6194,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "63",
+          "duration": "4",
+          "scale": "5",
+          "offset": "10"
+        }
       }
     ]
   },
@@ -4779,7 +6213,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "9a96f91e1084a490fa1bb7cd082d2b332584e3da144ea67eb3361ddddf8b3629",
     "questions": [
       {
@@ -4794,7 +6228,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "94",
+          "scale": "5",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_001_01",
@@ -4809,7 +6250,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "28",
+          "scale": "5",
+          "offset": "3"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_001_02",
@@ -4825,7 +6273,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "28",
+          "duration": "11",
+          "scale": "5",
+          "offset": "3"
+        }
       }
     ]
   },
@@ -4836,7 +6292,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "60a84cbc637ce67e50543fb39e8e40207c2612b77237801e95217d25ed1d3ae6",
     "questions": [
       {
@@ -4851,7 +6307,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "78",
+          "scale": "5",
+          "offset": "10"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_002_01",
@@ -4866,7 +6329,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "68",
+          "scale": "5",
+          "offset": "10"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_002_02",
@@ -4882,7 +6352,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "68",
+          "duration": "2",
+          "scale": "5",
+          "offset": "10"
+        }
       }
     ]
   },
@@ -4893,7 +6371,7 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "a934bacbce3dfc204aabfb1081068d294c65ced05d589b00efbe2ed67ea76768",
     "questions": [
       {
@@ -4908,7 +6386,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "207",
+          "scale": "4",
+          "offset": "11"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_003_01",
@@ -4923,7 +6408,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "78",
+          "scale": "4",
+          "offset": "11"
+        }
       },
       {
         "id": "consolidation_train_chain_scaled_variance_003_02",
@@ -4939,7 +6431,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "78",
+          "duration": "4",
+          "scale": "4",
+          "offset": "11"
+        }
       }
     ]
   },
@@ -4950,7 +6450,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "5e59b1546fd54c63bbedb9579ce2a4a809fb1b65cd2f57cca98bf407a148db99",
     "questions": [
       {
@@ -4965,7 +6465,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "19",
+          "scale": "3",
+          "offset": "14"
+        }
       },
       {
         "id": "consolidation_validation_chain_scaled_variance_004_01",
@@ -4980,7 +6487,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "23",
+          "scale": "3",
+          "offset": "14"
+        }
       },
       {
         "id": "consolidation_validation_chain_scaled_variance_004_02",
@@ -4996,7 +6510,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "23",
+          "duration": "8",
+          "scale": "3",
+          "offset": "14"
+        }
       }
     ]
   },
@@ -5007,7 +6529,7 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "67d522007637ab2c93faec5763aabc9b6fea9aaac33e2450c76994eb378de4e2",
     "questions": [
       {
@@ -5022,7 +6544,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "variance",
+          "variance": "222",
+          "scale": "2",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_validation_chain_scaled_variance_005_01",
@@ -5037,7 +6566,14 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "variance",
+          "mean": "80",
+          "scale": "2",
+          "offset": "5"
+        }
       },
       {
         "id": "consolidation_validation_chain_scaled_variance_005_02",
@@ -5053,7 +6589,15 @@
           "affine variance"
         ],
         "confused_with": "linear rather than squared scale",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "variance",
+          "rate": "80",
+          "duration": "5",
+          "scale": "2",
+          "offset": "5"
+        }
       }
     ]
   },
@@ -5064,7 +6608,7 @@
     "split": "train",
     "surface_style": "direct_definition",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "dc9d6fd34103854023ef7b8b82236be55b91f36a5fdb63f0429b622d997f888d",
     "questions": [
       {
@@ -5079,7 +6623,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "56",
+          "variance": "255"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_000_01",
@@ -5094,7 +6644,12 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "56"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_000_02",
@@ -5110,7 +6665,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "56",
+          "duration": "3"
+        }
       }
     ]
   },
@@ -5121,7 +6682,7 @@
     "split": "train",
     "surface_style": "conditions_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "7edade1734ace55519b93c438495d7d4019010d68f85b2953cc0d21d554915d0",
     "questions": [
       {
@@ -5136,7 +6697,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "38",
+          "variance": "98"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_001_01",
@@ -5151,7 +6718,12 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "38"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_001_02",
@@ -5167,7 +6739,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "38",
+          "duration": "5"
+        }
       }
     ]
   },
@@ -5178,7 +6756,7 @@
     "split": "train",
     "surface_style": "quantity_first",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "76f64e87a52f9c2366b54ea9ed20801a8003265aa52bb5e42d81fc697cf89186",
     "questions": [
       {
@@ -5193,7 +6771,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "72",
+          "variance": "249"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_002_01",
@@ -5208,7 +6792,12 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "72"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_002_02",
@@ -5224,7 +6813,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "72",
+          "duration": "3"
+        }
       }
     ]
   },
@@ -5235,53 +6830,70 @@
     "split": "train",
     "surface_style": "operational_story",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
-    "parameter_signature": "f5d65745e5e2b321d011c74062ccbf843021cb7124cff46a40a8aafea0ac262c",
+    "source": "consolidation-data-v3-domain-repair",
+    "parameter_signature": "88e1f4afaa4ecacb2bd0a181f7347d3429c56598e17bee758bf9803c25239419",
     "questions": [
       {
         "id": "consolidation_train_chain_second_moment_003_00",
         "story_id": "consolidation_train_chain_second_moment_003",
         "category": "v18_second_moment",
-        "question": "An analyst records this operating condition: X has mean 39 and variance 198. Give one numerical expression for E[X**2].",
+        "question": "An analyst records this operating condition: X has mean 48 and variance 175. Give one numerical expression for E[X**2].",
         "bindings": {},
-        "expression": "198+39**2",
-        "answer": "1719",
+        "expression": "175+48**2",
+        "answer": "2479",
         "conceptual_rules": [
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "48",
+          "variance": "175"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_003_01",
         "story_id": "consolidation_train_chain_second_moment_003",
         "category": "v18_second_moment",
-        "question": "An analyst records this operating condition: X is Poisson with mean 39. Give one numerical expression for E[X**2].",
+        "question": "An analyst records this operating condition: X is Poisson with mean 48. Give one numerical expression for E[X**2].",
         "bindings": {},
-        "expression": "39+39**2",
-        "answer": "1560",
+        "expression": "48+48**2",
+        "answer": "2352",
         "conceptual_rules": [
           "second moment",
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "48"
+        }
       },
       {
         "id": "consolidation_train_chain_second_moment_003_02",
         "story_id": "consolidation_train_chain_second_moment_003",
         "category": "v18_second_moment",
-        "question": "An analyst records this operating condition: A Poisson process runs at 39 per minute for 10 minutes. X is the total count. Give one numerical expression for E[X**2].",
+        "question": "An analyst records this operating condition: A Poisson process runs at 48 per minute for 10 minutes. X is the total count. Give one numerical expression for E[X**2].",
         "bindings": {},
-        "expression": "(39*10)+(39*10)**2",
-        "answer": "152490",
+        "expression": "(48*10)+(48*10)**2",
+        "answer": "230880",
         "conceptual_rules": [
           "second moment",
           "second moment",
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "48",
+          "duration": "10"
+        }
       }
     ]
   },
@@ -5292,7 +6904,7 @@
     "split": "validation",
     "surface_style": "validation_compact",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
+    "source": "consolidation-data-v3-domain-repair",
     "parameter_signature": "17f1d90c923609faff0535bbd7e1fe46fcf2338b7b95b1bf19f6fa4bc0ba6c35",
     "questions": [
       {
@@ -5307,7 +6919,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "82",
+          "variance": "295"
+        }
       },
       {
         "id": "consolidation_validation_chain_second_moment_004_01",
@@ -5322,7 +6940,12 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "82"
+        }
       },
       {
         "id": "consolidation_validation_chain_second_moment_004_02",
@@ -5338,7 +6961,13 @@
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "82",
+          "duration": "8"
+        }
       }
     ]
   },
@@ -5349,53 +6978,70 @@
     "split": "validation",
     "surface_style": "validation_reverse",
     "number_form": "integers",
-    "source": "consolidation_candidate_v2_review_repaired",
-    "parameter_signature": "f24b721712bd5ca804f56fb4e12f142a97f669203d189456dbca9eb3ec5ac2a5",
+    "source": "consolidation-data-v3-domain-repair",
+    "parameter_signature": "160867f0e4339cb32079edf353dbc3f26bcf59e7c3cc3e9c76aaa7e1e91c9df9",
     "questions": [
       {
         "id": "consolidation_validation_chain_second_moment_005_00",
         "story_id": "consolidation_validation_chain_second_moment_005",
         "category": "v18_second_moment",
-        "question": "Requested result: Set up E[X**2]. Conditions: X has mean 72 and variance 83.",
+        "question": "Requested result: Set up E[X**2]. Conditions: X has mean 88 and variance 124.",
         "bindings": {},
-        "expression": "83+72**2",
-        "answer": "5267",
+        "expression": "124+88**2",
+        "answer": "7868",
         "conceptual_rules": [
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "moments",
+          "target": "second_moment",
+          "mean": "88",
+          "variance": "124"
+        }
       },
       {
         "id": "consolidation_validation_chain_second_moment_005_01",
         "story_id": "consolidation_validation_chain_second_moment_005",
         "category": "v18_second_moment",
-        "question": "Requested result: Set up E[X**2]. Conditions: X is Poisson with mean 72.",
+        "question": "Requested result: Set up E[X**2]. Conditions: X is Poisson with mean 88.",
         "bindings": {},
-        "expression": "72+72**2",
-        "answer": "5256",
+        "expression": "88+88**2",
+        "answer": "7832",
         "conceptual_rules": [
           "second moment",
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "poisson",
+          "target": "second_moment",
+          "mean": "88"
+        }
       },
       {
         "id": "consolidation_validation_chain_second_moment_005_02",
         "story_id": "consolidation_validation_chain_second_moment_005",
         "category": "v18_second_moment",
-        "question": "Requested result: Set up E[X**2]. Conditions: A Poisson process runs at 72 per minute for 5 minutes. X is the total count.",
+        "question": "Requested result: Set up E[X**2]. Conditions: A Poisson process runs at 88 per minute for 5 minutes. X is the total count.",
         "bindings": {},
-        "expression": "(72*5)+(72*5)**2",
-        "answer": "129960",
+        "expression": "(88*5)+(88*5)**2",
+        "answer": "194040",
         "conceptual_rules": [
           "second moment",
           "second moment",
           "second moment"
         ],
         "confused_with": "variance or squared mean alone",
-        "provenance": "independent_programmatic_reference; teacher_has_not_been_called"
+        "provenance": "independent_programmatic_reference; teacher_has_not_been_called",
+        "semantics": {
+          "kind": "process",
+          "target": "second_moment",
+          "rate": "88",
+          "duration": "5"
+        }
       }
     ]
   }

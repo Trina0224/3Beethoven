@@ -1,6 +1,6 @@
 """Resumable greedy evaluator using the isolated consolidation grader."""
 from flight_run_stats_v0_3 import read_json, save_json
-from stats_consolidation_grader import score
+from stats_consolidation_grader import score, grader_fingerprint
 from stats_curriculum_v0_18 import prompt
 from stats_consolidation_pilot import digest
 
@@ -18,6 +18,8 @@ def evaluate(model, tokenizer, questions, path, max_new_tokens=160):
         rescored = score(row["raw"], q)
         if row["raw_sha256"] != rescored["raw_sha256"]:
             raise RuntimeError("Cached raw response hash drift")
+        if row.get("grader_fingerprint") != grader_fingerprint():
+            raise RuntimeError("Cached grader contract drift; regrade offline before reusing metrics")
     done = {r["id"] for r in rows}
     was_training, old_cache = model.training, model.config.use_cache
     model.eval(); model.config.use_cache = True
@@ -35,9 +37,9 @@ def evaluate(model, tokenizer, questions, path, max_new_tokens=160):
         rows.append({"id": q["id"], "story_id": q.get("story_id"), "category": q["category"],
                      "depth": q.get("depth"), "question_sha256": digest(q), "prompt": user_prompt,
                      "raw": raw, "generated_tokens": len(generated),
+                     "grader_fingerprint": grader_fingerprint(),
                      "hit_token_limit": len(generated) == max_new_tokens, **score(raw, q)})
         save_json(path, rows)
     model.config.use_cache = old_cache
     model.train(was_training)
     return rows
-

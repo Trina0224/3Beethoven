@@ -14,11 +14,20 @@ from pathlib import Path
 from exact_calculator import calculate
 from formulation_grader import grade
 from stats_curriculum_v0_13 import KINDS
+from stats_consolidation_semantics import validate_question, task_key, assert_disjoint
 
 REPO = Path(__file__).resolve().parents[1]
 DOCS = REPO / "docs"
 SEED = 210021
 TEACHER_MODEL = "meta-llama/llama-3.3-70b-instruct"
+DATA_REVISION = "consolidation-data-v3-domain-repair"
+
+
+def assert_execution_released(decision):
+    if decision.get("execution_authorization") != "paid_execution_released":
+        raise RuntimeError("Offline repairs only: paid calls and GPU execution remain blocked")
+
+
 ARCHETYPES = (
     ("poisson_process", 12, 3),
     ("affine_poisson", 12, 3),
@@ -39,6 +48,19 @@ VALIDATION_SURFACES = ("validation_compact", "validation_reverse")
 
 def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
+
+
+def historical_replay_questions():
+    replay = json.loads((DOCS / "STATS_V0_19_REPLAY_SOURCE.json").read_text())
+    ids = {r["source_id"] for r in replay if r["category"] in KINDS}
+    lookup = {}
+    for path in sorted(DOCS.glob("STATS_V0_*_FROZEN_QUESTIONS.json")):
+        for rows in json.loads(path.read_text()).values():
+            if isinstance(rows, list):
+                lookup.update({q["id"]: q for q in rows if isinstance(q, dict) and q.get("id") in ids})
+    if len(ids) != 192 or ids - lookup.keys():
+        raise ValueError("Historical replay provenance lookup is incomplete")
+    return [lookup[qid] for qid in sorted(ids)]
 
 
 def question(story_id, category, index, text, expression, bindings, rules, confused_with):
@@ -212,8 +234,38 @@ def bundle(archetype, split, i, rng):
             qs.append(question(story_id, "v18_second_moment", j, text, expr, {}, ["second moment"] * (j + 1), "variance or squared mean alone"))
     else:
         raise ValueError(archetype)
-    for q in qs:
+    for j, q in enumerate(qs):
+        target = {"poisson_scaled_mean": "mean", "moment_mean": "mean",
+                  "poisson_scaled_moment": "second_moment", "moment": "second_moment",
+                  "v18_second_moment": "second_moment"}.get(q["category"], "variance")
+        if archetype == "poisson_process":
+            spec = dict(kind="process", target=target, rate=str(rate), duration=f"{seconds}/60")
+        elif archetype == "affine_poisson":
+            spec = dict(kind="poisson", target=target, mean=str(lam), scale=str(scale), offset=str(offset))
+        elif archetype == "general_moment":
+            spec = dict(kind="moments", target=target, mean=str(mean), variance=str(var), scale=str(scale), offset=str(offset))
+        elif archetype == "uniform_wait":
+            spec = dict(kind="uniform", lower="0", upper=str(upper), cutoff=cutoff, conditional=True)
+        elif archetype == "detection_events":
+            spec = dict(kind="events", target=q["category"], p=f"{pa}/{den}", p_b=f"{pb}/{den}")
+        elif archetype == "chain_poisson_variance":
+            spec = (dict(kind="poisson", target=target, mean=str(rate)) if j == 0 else
+                    dict(kind="process", target=target, rate=str(rate), duration=str(minutes) if j == 1 else f"{seconds}/60"))
+        elif archetype == "chain_scaled_variance":
+            spec = (dict(kind="moments", target=target, variance=str(var)) if j == 0 else
+                    dict(kind="poisson", target=target, mean=str(lam)) if j == 1 else
+                    dict(kind="process", target=target, rate=str(lam), duration=str(minutes)))
+            spec.update(scale=str(scale), offset=str(offset))
+        elif archetype == "chain_second_moment":
+            spec = (dict(kind="moments", target=target, mean=str(mean), variance=str(var)) if j == 0 else
+                    dict(kind="poisson", target=target, mean=str(mean)) if j == 1 else
+                    dict(kind="process", target=target, rate=str(mean), duration=str(minutes)))
+        else:
+            spec = None  # Existing explicit bindings cover interval/binomial.
+        if spec is not None:
+            q["semantics"] = spec
         q["question"] = apply_surface(q["question"], style)
+        validate_question(q)
     return {
         "story_id": story_id,
         "lineage_id": f"consolidation_{archetype}_{i:03d}",
@@ -221,7 +273,7 @@ def bundle(archetype, split, i, rng):
         "split": split,
         "surface_style": style,
         "number_form": number_form,
-        "source": "consolidation_candidate_v2_review_repaired",
+        "source": DATA_REVISION,
         "parameter_signature": digest([(q["category"], q["expression"]) for q in qs]),
         "questions": qs,
     }
@@ -234,6 +286,29 @@ def build():
         for i in range(total):
             split = "validation" if i >= total - validation_count else "train"
             stories.append(bundle(archetype, split, i, rng))
+    # Whole-story signatures miss primitive subtasks (e.g. Poisson mean 72).
+    # Preserve initial draws; only resample a colliding story using a separate
+    # deterministic RNG, so one repair does not perturb all later pilot inputs.
+    selected = selection_validation(stories)["suites"]
+    selection_keys = {task_key(q) for rows in selected.values() for q in rows}
+    repair_rng = random.Random(SEED + 1)
+    owners = {task_key(q): "train" for q in historical_replay_questions()}
+    for split in ("train", "validation"):
+        for position, story in enumerate(stories):
+            if story["split"] != split:
+                continue
+            for attempt in range(10000):
+                keys = {task_key(q) for q in story["questions"]}
+                if (not any(key in owners and owners[key] != split for key in keys)
+                        and not (split == "train" and keys & selection_keys)):
+                    break
+                story = bundle(story["archetype"], split, int(story["story_id"].rsplit("_", 1)[1]), repair_rng)
+            else:
+                raise RuntimeError("Subtask identity space exhausted")
+            stories[position] = story
+            owners.update({key: split for key in keys})
+    assert_disjoint({"train": historical_replay_questions() + [q for s in stories if s["split"] == "train" for q in s["questions"]],
+                     "validation": [q for s in stories if s["split"] == "validation" for q in s["questions"]]})
     pilot_ids = []
     by_arch = defaultdict(list)
     for s in stories:
@@ -267,6 +342,7 @@ def build():
     split_counts = {split: Counter(q["category"] for s in stories if s["split"] == split for q in s["questions"])
                     for split in ("train", "validation")}
     coverage = {
+        "data_revision": DATA_REVISION,
         "status": "frozen_for_execution",
         "seed": SEED,
         "teacher_model": TEACHER_MODEL,
@@ -295,7 +371,7 @@ def build():
         "forbidden_inputs": ["STATS_CONSOLIDATION_PILOT_REQUESTS.json", "teacher generation prompts", "teacher retry prompts"],
         "planned_counts": {"historical_eight": "8 categories x 12 = 96", "combination_four": "4 categories x 24 = 96", "event_four": "4 categories x 24 = 96", "permanent_mc": "60 questions x 4 rotations = 240 responses"},
         "reserved_axes": ["unseen story domains", "unseen wording families", "condition reordering", "seconds/minutes and fractional minutes", "percent/fraction probability", "different denominators", "confusable requested quantities"],
-        "leakage_rule": "No story, lineage, parameter tuple, wording family or concrete answer may enter teacher generation or training.",
+        "leakage_rule": "Block effective semantic subtasks across splits, including unit-equivalent parameters. Equal scalar answers alone are not leakage; surface labels do not prove new wording families.",
     }
     return stories, requests, coverage, holdout
 
@@ -316,10 +392,33 @@ def selection_validation(stories):
     chosen = set(event_story_ids[:4])
     suites["event"] = [q for q in event["validation"]
                        if q["story_id"] in chosen and q["id"].endswith("_s0")]
+    # A historical validation ID is not sufficient: its effective variance
+    # subtask may match replay despite a different, irrelevant offset.
+    replay_keys = {task_key(q) for q in historical_replay_questions()}
+    selected_keys = {task_key(q) for rows in suites.values() for q in rows}
+    replacements = []
+    reserve = []
+    for version in (15, 14, 13, 16, 17):
+        data = json.loads((DOCS / f"STATS_V0_{version}_FROZEN_QUESTIONS.json").read_text())
+        reserve.extend(q for q in data.get("validation", []) if q["category"] in KINDS)
+    for i, q in enumerate(suites["old"]):
+        if task_key(q) not in replay_keys:
+            continue
+        alternate = next((x for x in reserve if x["category"] == q["category"]
+                          and task_key(x) not in replay_keys | selected_keys), None)
+        if alternate is None:
+            raise ValueError("No unused historical validation subtask for " + q["category"])
+        suites["old"][i] = alternate
+        selected_keys.add(task_key(alternate))
+        replacements.append({"removed_id": q["id"], "replacement_id": alternate["id"],
+                             "reason": "effective subtask duplicates historical replay"})
+    assert_disjoint({"replay": historical_replay_questions(),
+                     "selection": [q for rows in suites.values() for q in rows]})
     assert {k: len(v) for k, v in suites.items()} == {"old": 48, "chain": 48, "event": 16}
     assert len({q["story_id"] for q in suites["event"]}) == 4
     return {"status": "frozen_for_execution", "role": "checkpoint_selection_only",
-            "source": "validation splits only; no test rows", "suites": suites}
+            "source": "validation splits only; no test rows", "suites": suites,
+            "repair_replacements": replacements}
 
 
 def main():

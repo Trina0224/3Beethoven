@@ -3383,15 +3383,15 @@
     "questions": [
       {
         "question_id": "consolidation_train_chain_second_moment_003_00",
-        "question": "An analyst records this operating condition: X has mean 39 and variance 198. Give one numerical expression for E[X**2]."
+        "question": "An analyst records this operating condition: X has mean 48 and variance 175. Give one numerical expression for E[X**2]."
       },
       {
         "question_id": "consolidation_train_chain_second_moment_003_01",
-        "question": "An analyst records this operating condition: X is Poisson with mean 39. Give one numerical expression for E[X**2]."
+        "question": "An analyst records this operating condition: X is Poisson with mean 48. Give one numerical expression for E[X**2]."
       },
       {
         "question_id": "consolidation_train_chain_second_moment_003_02",
-        "question": "An analyst records this operating condition: A Poisson process runs at 39 per minute for 10 minutes. X is the total count. Give one numerical expression for E[X**2]."
+        "question": "An analyst records this operating condition: A Poisson process runs at 48 per minute for 10 minutes. X is the total count. Give one numerical expression for E[X**2]."
       }
     ],
     "response_schema": {
@@ -3459,15 +3459,15 @@
     "questions": [
       {
         "question_id": "consolidation_validation_chain_second_moment_005_00",
-        "question": "Requested result: Set up E[X**2]. Conditions: X has mean 72 and variance 83."
+        "question": "Requested result: Set up E[X**2]. Conditions: X has mean 88 and variance 124."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_005_01",
-        "question": "Requested result: Set up E[X**2]. Conditions: X is Poisson with mean 72."
+        "question": "Requested result: Set up E[X**2]. Conditions: X is Poisson with mean 88."
       },
       {
         "question_id": "consolidation_validation_chain_second_moment_005_02",
-        "question": "Requested result: Set up E[X**2]. Conditions: A Poisson process runs at 72 per minute for 5 minutes. X is the total count."
+        "question": "Requested result: Set up E[X**2]. Conditions: A Poisson process runs at 88 per minute for 5 minutes. X is the total count."
       }
     ],
     "response_schema": {

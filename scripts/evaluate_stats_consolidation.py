@@ -10,7 +10,7 @@ from flight_run_stats_v0_3 import STUDENT, package, read_json, save_json
 from run_stats_consolidation_compare import file_sha, locate_v15, suite_metrics
 from run_stats_v0_4 import BASE_REVISION, evaluate as evaluate_mc
 from stats_consolidation_eval import evaluate
-from stats_consolidation_pilot import digest
+from stats_consolidation_pilot import digest, assert_execution_released
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -42,6 +42,7 @@ def main():
     parser.add_argument("--v15-root", type=Path, default=Path("/kaggle/input"))
     args = parser.parse_args()
     decision = read_json(REPO / "docs/STATS_CONSOLIDATION_DECISION_DRAFT.json")
+    assert_execution_released(decision)
     if decision.get("protocol_status") != "frozen_for_execution" or decision["promotion_gate"].get("status") != "frozen_for_execution":
         raise RuntimeError("Final evaluation protocol is not frozen")
     holdout = read_json(REPO / "docs/STATS_CONSOLIDATION_HOLDOUT.json")

@@ -21,5 +21,5 @@
     "different denominators",
     "confusable requested quantities"
   ],
-  "leakage_rule": "No story, lineage, parameter tuple, wording family or concrete answer may enter teacher generation or training."
+  "leakage_rule": "Block effective semantic subtasks across splits, including unit-equivalent parameters. Equal scalar answers alone are not leakage; surface labels do not prove new wording families."
 }

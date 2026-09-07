@@ -1,5 +1,7 @@
 {
   "protocol_status": "frozen_for_execution",
+  "execution_authorization": "offline_repairs_only",
+  "repair_revision": "consolidation-data-v3-domain-repair",
   "experiment_name": "stats_consolidation_two_start_comparison",
   "teacher": {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -181,9 +183,13 @@
     "final_evaluator_zip_and_weight_manifest"
   ],
   "implementation_status": {
-    "status": "completed_and_offline_verified",
+    "status": "offline_repair_verified_pilot_regrade_required",
     "readiness_evidence": "docs/STATS_CONSOLIDATION_READINESS.json",
-    "offline_tests_passed": 21,
+    "offline_tests_passed": 42,
+    "paid_execution_ready": false,
+    "legacy_pilot": "Version 49, 42/65 auto-accepted, 38 calls; not rescored in full",
+    "repaired_subtask_split_scope": "new corpus plus actual 192-row replay, selection and holdout",
+    "holdout_replaced_due_to_invalid_probabilities": 36,
     "teacher_calls_at_freeze": 0,
     "gpu_runs_at_freeze": 0
   }

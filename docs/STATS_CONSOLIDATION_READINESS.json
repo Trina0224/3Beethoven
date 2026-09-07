@@ -1,5 +1,5 @@
 {
-  "status": "pilot_failed_research_decision_required",
+  "status": "offline_repair_verified_pilot_regrade_required",
   "checks": {
     "generated_files_reproducible": true,
     "protocol_frozen": true,
@@ -9,15 +9,29 @@
     "teacher_benchmark_24": true,
     "teacher_validate_only": true,
     "train_does_not_import_holdout": true,
-    "teacher_does_not_import_holdout": true
+    "teacher_does_not_import_holdout": true,
+    "independent_domain_oracle": true,
+    "effective_subtasks_disjoint_including_replay": true,
+    "offline_test_suite": true
   },
   "hashes": {
-    "stories": "4bfe7995fc8164558069d3e9d1b7f5c014db845b1df08fae41538624571f9d52",
-    "requests": "be6191d782c01a5b182f5f900fdab0a66e78643c1cac7462a840adb38fee9492",
-    "coverage": "c16301b5316928fc7d0b08286b6e7950ba86a74afe44f392f35acdfba7ac01d0",
-    "selection": "d752d4a97a082234984853ba3d54034b636bec1ec9aba93734c5cf933b6aa0a9",
-    "holdout": "c5515b35ff5ee0a5abf7c283c8cab55e08ee2e0e45a0105766865d744ac343df",
-    "benchmark": "af13bdde32a67851f7de224ca49bd9bbb2de0dd1e51dafcdb77414e2d8f250c9"
+    "stories": "87f6a75ebf39a6547d30b4f3e74f0e059e490f9e2a214b713356522e48a6061e",
+    "requests": "830d0483986a573cc20a95a76c3e3dcdd40e94d8cb7eaea83e491f4a17d0897c",
+    "coverage": "8adcee3b0a3385ef6c5ca61047649c1cc42083252d039826aea7572d38e3cd26",
+    "selection": "10e7e2228cc7396e76e1283482a855fa5e62b4c1cd9e53848c258b183d221c89",
+    "holdout": "c30e1cf15e972b4f178bd6a5d402ed9a1da6d745dc01049534b12abd5dab7183",
+    "benchmark": "9fdeea63ca4e3cb0b1cf906f624be91adfa80ebe164cbed92efa3fb818d95133"
+  },
+  "grader_fingerprint": "612e1e80a61410cdf63a728c323dfeec6212c0aab10de76f111e375f674357e0",
+  "domain_audit": {
+    "questions_checked_including_replay": 860,
+    "invalid_questions": 0,
+    "cross_split_subtask_collisions": 0
+  },
+  "offline_test_run": {
+    "returncode": 0,
+    "tests_run": 42,
+    "command": "python -m unittest discover -s scripts -p 'test_stats_consolidation*.py'"
   },
   "teacher_calls": 38,
   "gpu_runs": 0,
@@ -29,7 +43,10 @@
     "minimum_targets": 59,
     "reported_cost_usd": 0.00402078,
     "gate_passed": false,
-    "full_started": false
+    "full_started": false,
+    "role": "legacy_v1_evidence_not_current_execution_gate"
   },
-  "next": "semantic classification of 23 rejected targets; high-level decision before changing grader or teacher prompt"
+  "pilot_regrade_status": "not_executed_on_complete_source_records",
+  "paid_execution_ready": false,
+  "next": "Read-only regrade of preserved Version 49 records; no new calls or GPU authorized by this repair"
 }

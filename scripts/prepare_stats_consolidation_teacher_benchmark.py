@@ -5,21 +5,28 @@ from pathlib import Path
 from flight_run_stats_v0_3 import read_json, save_json, package
 from prepare_stats_consolidation_teacher import (BudgetedClient, DECISION, ROOT,
                                                   request_messages, parse_answers)
-from stats_consolidation_grader import score
-from stats_consolidation_pilot import TEACHER_MODEL, digest
+from stats_consolidation_grader import score, grader_fingerprint
+from stats_consolidation_pilot import TEACHER_MODEL, digest, assert_execution_released, build
+from stats_consolidation_semantics import validate_question
 
 REPO = Path(__file__).resolve().parents[1]
 
 
 def main():
     decision = read_json(DECISION)
+    assert_execution_released(decision)
     if decision.get("protocol_status") != "frozen_for_execution":
         raise RuntimeError("Protocol is not frozen")
-    if not read_json(ROOT / "full_gate.json", {}).get("passed"):
+    full_gate = read_json(ROOT / "full_gate.json", {})
+    if (not full_gate.get("passed") or full_gate.get("grader_fingerprint") != grader_fingerprint()
+            or full_gate.get("request_sha256") != digest(build()[1])
+            or full_gate.get("decision_sha256") != digest(decision)):
         raise RuntimeError("Teacher corpus must be sealed behind a passing full gate")
     questions = read_json(REPO / "docs/STATS_CONSOLIDATION_TEACHER_BENCHMARK.json")
     if len(questions) != 24:
         raise RuntimeError("Teacher benchmark is not the frozen 24-question subset")
+    for q in questions:
+        validate_question(q)
     from kaggle_secrets import UserSecretsClient
     rule = decision["teacher"]
     client = BudgetedClient(UserSecretsClient().get_secret("OPENROUTER_API_KEY"),
@@ -27,6 +34,7 @@ def main():
                             rule["total_cost_cap_usd_including_benchmark"],
                             rule["reserved_cost_per_call_usd"])
     contract = {"teacher_model": TEACHER_MODEL, "decision_sha256": digest(decision),
+                "grader_fingerprint": grader_fingerprint(),
                 "benchmark_sha256": digest(questions), "corpus_sha256": digest(read_json(ROOT / "verified_teacher_rows.json"))}
     prior = read_json(ROOT / "teacher_benchmark_contract.json")
     if prior and prior != contract:

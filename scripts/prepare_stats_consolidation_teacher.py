@@ -9,8 +9,8 @@ import threading
 from pathlib import Path
 
 from flight_run_stats_v0_3 import TeacherClient, package, read_json, save_json
-from stats_consolidation_pilot import DOCS, TEACHER_MODEL, build, digest
-from stats_consolidation_grader import score
+from stats_consolidation_pilot import DOCS, TEACHER_MODEL, build, digest, assert_execution_released
+from stats_consolidation_grader import score, outcome, grader_fingerprint
 
 ROOT = Path("/kaggle/working/3beethoven_stats_consolidation_teacher")
 DECISION = DOCS / "STATS_CONSOLIDATION_DECISION_DRAFT.json"
@@ -97,6 +97,8 @@ def acceptance_report(stories, scope):
     planned_category = {}
     accepted_category = {}
     pending_ids = []
+    unresolved_ids = []
+    outcomes = {}
     for story in selected:
         record = read_json(ROOT / "records" / (story["story_id"] + ".json"), {})
         accepted = record.get("accepted", {})
@@ -107,15 +109,26 @@ def acceptance_report(stories, scope):
             accepted_category[q["category"]] = accepted_category.get(q["category"], 0) + int(q["id"] in accepted)
             if q["id"] not in accepted:
                 pending_ids.append(q["id"])
+                parsed = next((a.get("parsed", {}) for a in reversed(record.get("attempts", []))
+                               if a.get("parsed") and q["id"] in a["parsed"]), {})
+                if q["id"] in parsed:
+                    judged = score("Expression: " + parsed[q["id"]], q)
+                    outcomes[q["id"]] = outcome(judged)
+                    if judged["review_required"]:
+                        unresolved_ids.append(q["id"])
+                else:
+                    outcomes[q["id"]] = "missing_answer"
+                    unresolved_ids.append(q["id"])
     return {"scope": scope, "planned": sum(planned_archetype.values()),
             "accepted": sum(accepted_archetype.values()), "pending_ids": pending_ids,
             "planned_by_archetype": planned_archetype, "accepted_by_archetype": accepted_archetype,
-            "planned_by_category": planned_category, "accepted_by_category": accepted_category}
+            "planned_by_category": planned_category, "accepted_by_category": accepted_category,
+            "unresolved_ids": unresolved_ids, "rejected_outcomes": outcomes}
 
 
 def gate_acceptance(report, teacher):
     import math
-    checks = {}
+    checks = {"no_unresolved_scoring": not report.get("unresolved_ids", report["pending_ids"])}
     if report["scope"] == "pilot":
         checks["total"] = report["accepted"] >= teacher["pilot_minimum_accepted_targets"]
         checks.update({"archetype:" + key: report["accepted_by_archetype"].get(key, 0) >= math.ceil(value * 0.8)
@@ -124,7 +137,8 @@ def gate_acceptance(report, teacher):
         checks.update({"category:" + key: report["accepted_by_category"].get(key, 0) >= math.ceil(value * 0.8)
                        for key, value in report["planned_by_category"].items()})
     return {"passed": all(checks.values()), "checks": checks,
-            "unresolved_count": len(report["pending_ids"])}
+            "unresolved_count": len(report.get("unresolved_ids", report["pending_ids"])),
+            "not_accepted_count": len(report["pending_ids"])}
 
 
 def validate_only():
@@ -132,7 +146,7 @@ def validate_only():
     assert len(stories) == len(requests) == 96 and coverage["pilot_story_count"] == 24
     assert holdout["status"] == "superseded_by_STATS_CONSOLIDATION_HOLDOUT.json"
     sealed = read_json(DOCS / "STATS_CONSOLIDATION_HOLDOUT.json")
-    assert sealed["metadata"]["status"] == "sealed_before_paid_pilot"
+    assert sealed["metadata"]["status"] == "sealed_after_domain_repair_before_model_evaluation"
     for request in requests:
         pending = {q["question_id"] for q in request["questions"]}
         messages = request_messages(request, pending)
@@ -150,6 +164,7 @@ def main():
     if args.scope == "validate-only":
         print(json.dumps(check)); return
     decision = read_json(DECISION)
+    assert_execution_released(decision)
     if decision.get("protocol_status") != "frozen_for_execution":
         raise RuntimeError("Decision file is not frozen_for_execution; paid teacher calls are blocked")
     teacher = decision["teacher"]
@@ -160,7 +175,9 @@ def main():
     from kaggle_secrets import UserSecretsClient
     if args.scope == "full":
         pilot_gate = read_json(ROOT / "pilot_gate.json", {})
-        if not pilot_gate.get("passed"):
+        if (not pilot_gate.get("passed") or pilot_gate.get("grader_fingerprint") != grader_fingerprint()
+                or pilot_gate.get("request_sha256") != digest(build()[1])
+                or pilot_gate.get("decision_sha256") != digest(decision)):
             raise RuntimeError("Full generation requires a persisted passing pilot gate")
     client = BudgetedClient(UserSecretsClient().get_secret("OPENROUTER_API_KEY"), max_calls, cost_cap,
                             teacher["reserved_cost_per_call_usd"])
@@ -170,6 +187,7 @@ def main():
     contract_path = ROOT / ("run_contract_" + args.scope + ".json")
     contract = {"scope": args.scope, "decision_sha256": digest(decision),
               "request_sha256": digest(requests), "teacher_model": TEACHER_MODEL,
+              "grader_fingerprint": grader_fingerprint(),
               "max_calls": max_calls, "cost_cap_usd": cost_cap,
               "reserved_cost_per_call_usd": teacher["reserved_cost_per_call_usd"]}
     prior_contract = read_json(contract_path)
@@ -190,7 +208,7 @@ def main():
                     break
                 raw = client.call(request["story_id"] + f"_attempt_{attempt}", request_messages(request, pending),
                                   max_tokens=teacher["max_tokens_per_story"], json_mode=True)
-                attempt_record = {"attempt": attempt, "raw": raw, "parsed": None, "error": None}
+                attempt_record = {"attempt": attempt, "raw": raw, "parsed": None, "error": None, "judgements": {}}
                 try:
                     parsed = parse_answers(raw)
                     attempt_record["parsed"] = parsed
@@ -198,6 +216,7 @@ def main():
                         if qid not in parsed:
                             continue
                         judged = score("Expression: " + parsed[qid], qlookup[qid])
+                        attempt_record["judgements"][qid] = judged
                         if judged["math_correct"] is True and judged["executable"]:
                             record["accepted"][qid] = {"teacher_expression": parsed[qid], "normalized_expression": judged["normalized_expression"], "judged": judged, "attempt": attempt}
                 except (ValueError, json.JSONDecodeError) as exc:
@@ -209,6 +228,9 @@ def main():
         save_json(ROOT / "verified_teacher_rows.json", verified)
         report = acceptance_report(stories, args.scope)
         gate = gate_acceptance(report, teacher)
+        gate.update(grader_fingerprint=grader_fingerprint(), request_sha256=digest(requests),
+                    decision_sha256=digest(decision), scope=args.scope,
+                    verified_rows_sha256=digest(verified))
         save_json(ROOT / (args.scope + "_acceptance.json"), report)
         save_json(ROOT / (args.scope + "_gate.json"), gate)
         save_json(ROOT / "summary.json", {"scope": args.scope, "coverage_sha256": digest(coverage),

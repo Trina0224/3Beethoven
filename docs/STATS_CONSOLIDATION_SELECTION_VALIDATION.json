@@ -126,22 +126,23 @@
         "provenance": "procedural_reference"
       },
       {
-        "id": "v17_validation_poisson_scaled_001",
+        "id": "v15_validation_poisson_scaled_000",
         "category": "poisson_scaled",
         "identity": [
           "poisson_scaled",
-          67,
+          18,
           3,
-          19
+          10
         ],
-        "question": "Adding 19 after multiplying a Poisson count X by 3 gives the displayed value. X has expectation 67. What variance does this display have?",
+        "question": "A sensor first samples X from a Poisson distribution with mean 18. It multiplies X by 3, then adds 10, producing Y. Set up the variance of Y.",
         "bindings": {
-          "mean": "67",
+          "mean": "18",
           "scale": "3",
-          "offset": "19"
+          "offset": "10"
         },
-        "expression": "3**2*67",
-        "answer": "603",
+        "expression": "3**2*18",
+        "answer": "162",
+        "target": "Bindings: mean=18; scale=3; offset=10\nExpression: 3**2*18",
         "provenance": "procedural_reference"
       },
       {
@@ -2389,5 +2390,12 @@
         "provenance": "procedural_reference; zero teacher calls"
       }
     ]
-  }
+  },
+  "repair_replacements": [
+    {
+      "removed_id": "v17_validation_poisson_scaled_001",
+      "replacement_id": "v15_validation_poisson_scaled_000",
+      "reason": "effective subtask duplicates historical replay"
+    }
+  ]
 }

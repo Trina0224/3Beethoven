@@ -49,10 +49,14 @@ class ProtocolGateTests(unittest.TestCase):
     def test_pilot_archetype_floor_and_full_category_floor(self):
         teacher = self.config["teacher"]
         pilot = {"scope": "pilot", "accepted": 59, "pending_ids": ["x"] * 6,
+                 "unresolved_ids": [],
                  "planned_by_archetype": {"a": 5, "b": 10},
                  "accepted_by_archetype": {"a": 4, "b": 8},
                  "planned_by_category": {}, "accepted_by_category": {}}
         self.assertTrue(gate_acceptance(pilot, teacher)["passed"])
+        pilot["unresolved_ids"] = ["needs_semantic_review"]
+        self.assertFalse(gate_acceptance(pilot, teacher)["passed"])
+        pilot["unresolved_ids"] = []
         pilot["accepted_by_archetype"]["a"] = 3
         self.assertFalse(gate_acceptance(pilot, teacher)["passed"])
         full = {"scope": "full", "accepted": 0, "pending_ids": [],
