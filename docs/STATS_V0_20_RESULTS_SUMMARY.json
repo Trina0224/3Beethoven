@@ -1,0 +1,514 @@
+{
+  "status": "completed; no promotion; retain original v15",
+  "models": {
+    "parent": {
+      "event_test": {
+        "n": 96,
+        "correct": 40,
+        "by_category": {
+          "both": {
+            "n": 24,
+            "correct": 22
+          },
+          "exactly_one": {
+            "n": 24,
+            "correct": 0
+          },
+          "neither": {
+            "n": 24,
+            "correct": 0
+          },
+          "same": {
+            "n": 24,
+            "correct": 18
+          }
+        },
+        "original_pending": 17,
+        "unresolved": 0
+      },
+      "old_test": {
+        "n": 96,
+        "correct": 59,
+        "by_category": {
+          "at_least_one": {
+            "n": 12,
+            "correct": 12
+          },
+          "binomial": {
+            "n": 12,
+            "correct": 12
+          },
+          "exactly_one": {
+            "n": 12,
+            "correct": 10
+          },
+          "interval": {
+            "n": 12,
+            "correct": 9
+          },
+          "moment": {
+            "n": 12,
+            "correct": 0
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 1
+          },
+          "poisson_time": {
+            "n": 12,
+            "correct": 7
+          },
+          "uniform_time": {
+            "n": 12,
+            "correct": 8
+          }
+        },
+        "original_pending": 1,
+        "unresolved": 0
+      },
+      "new_test": {
+        "n": 96,
+        "correct": 72,
+        "by_category": {
+          "v18_conditional_wait": {
+            "n": 24,
+            "correct": 24
+          },
+          "v18_poisson_variance": {
+            "n": 24,
+            "correct": 22
+          },
+          "v18_scaled_variance": {
+            "n": 24,
+            "correct": 16
+          },
+          "v18_second_moment": {
+            "n": 24,
+            "correct": 10
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "mc": {
+        "n": 240,
+        "correct": 126,
+        "by_category": {
+          "confidence": {
+            "n": 40,
+            "correct": 15
+          },
+          "expectation": {
+            "n": 40,
+            "correct": 16
+          },
+          "poisson": {
+            "n": 40,
+            "correct": 19
+          },
+          "type_i": {
+            "n": 40,
+            "correct": 28
+          },
+          "type_ii": {
+            "n": 40,
+            "correct": 34
+          },
+          "uniform": {
+            "n": 40,
+            "correct": 14
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      }
+    },
+    "seed_2027": {
+      "event_test": {
+        "n": 96,
+        "correct": 94,
+        "by_category": {
+          "both": {
+            "n": 24,
+            "correct": 24
+          },
+          "exactly_one": {
+            "n": 24,
+            "correct": 22
+          },
+          "neither": {
+            "n": 24,
+            "correct": 24
+          },
+          "same": {
+            "n": 24,
+            "correct": 24
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "old_test": {
+        "n": 96,
+        "correct": 57,
+        "by_category": {
+          "at_least_one": {
+            "n": 12,
+            "correct": 12
+          },
+          "binomial": {
+            "n": 12,
+            "correct": 12
+          },
+          "exactly_one": {
+            "n": 12,
+            "correct": 10
+          },
+          "interval": {
+            "n": 12,
+            "correct": 11
+          },
+          "moment": {
+            "n": 12,
+            "correct": 0
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 2
+          },
+          "poisson_time": {
+            "n": 12,
+            "correct": 4
+          },
+          "uniform_time": {
+            "n": 12,
+            "correct": 6
+          }
+        },
+        "original_pending": 13,
+        "unresolved": 0
+      },
+      "new_test": {
+        "n": 96,
+        "correct": 53,
+        "by_category": {
+          "v18_conditional_wait": {
+            "n": 24,
+            "correct": 24
+          },
+          "v18_poisson_variance": {
+            "n": 24,
+            "correct": 13
+          },
+          "v18_scaled_variance": {
+            "n": 24,
+            "correct": 16
+          },
+          "v18_second_moment": {
+            "n": 24,
+            "correct": 0
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "mc": {
+        "n": 240,
+        "correct": 128,
+        "by_category": {
+          "confidence": {
+            "n": 40,
+            "correct": 14
+          },
+          "expectation": {
+            "n": 40,
+            "correct": 16
+          },
+          "poisson": {
+            "n": 40,
+            "correct": 19
+          },
+          "type_i": {
+            "n": 40,
+            "correct": 31
+          },
+          "type_ii": {
+            "n": 40,
+            "correct": 34
+          },
+          "uniform": {
+            "n": 40,
+            "correct": 14
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "automatic_gate": {
+        "validation_pass": true,
+        "event_exactly_one": true,
+        "event_total": true,
+        "old_total": true,
+        "old_families": false,
+        "mc": true
+      },
+      "reviewed_gate": {
+        "validation_pass": true,
+        "event_exactly_one": true,
+        "event_total": true,
+        "old_total": true,
+        "old_families": false,
+        "mc": true
+      }
+    },
+    "seed_31415": {
+      "event_test": {
+        "n": 96,
+        "correct": 83,
+        "by_category": {
+          "both": {
+            "n": 24,
+            "correct": 13
+          },
+          "exactly_one": {
+            "n": 24,
+            "correct": 22
+          },
+          "neither": {
+            "n": 24,
+            "correct": 24
+          },
+          "same": {
+            "n": 24,
+            "correct": 24
+          }
+        },
+        "original_pending": 1,
+        "unresolved": 0
+      },
+      "old_test": {
+        "n": 96,
+        "correct": 54,
+        "by_category": {
+          "at_least_one": {
+            "n": 12,
+            "correct": 12
+          },
+          "binomial": {
+            "n": 12,
+            "correct": 12
+          },
+          "exactly_one": {
+            "n": 12,
+            "correct": 9
+          },
+          "interval": {
+            "n": 12,
+            "correct": 3
+          },
+          "moment": {
+            "n": 12,
+            "correct": 0
+          },
+          "poisson_scaled": {
+            "n": 12,
+            "correct": 1
+          },
+          "poisson_time": {
+            "n": 12,
+            "correct": 12
+          },
+          "uniform_time": {
+            "n": 12,
+            "correct": 5
+          }
+        },
+        "original_pending": 9,
+        "unresolved": 0
+      },
+      "new_test": {
+        "n": 96,
+        "correct": 61,
+        "by_category": {
+          "v18_conditional_wait": {
+            "n": 24,
+            "correct": 24
+          },
+          "v18_poisson_variance": {
+            "n": 24,
+            "correct": 16
+          },
+          "v18_scaled_variance": {
+            "n": 24,
+            "correct": 16
+          },
+          "v18_second_moment": {
+            "n": 24,
+            "correct": 5
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "mc": {
+        "n": 240,
+        "correct": 128,
+        "by_category": {
+          "confidence": {
+            "n": 40,
+            "correct": 15
+          },
+          "expectation": {
+            "n": 40,
+            "correct": 16
+          },
+          "poisson": {
+            "n": 40,
+            "correct": 19
+          },
+          "type_i": {
+            "n": 40,
+            "correct": 30
+          },
+          "type_ii": {
+            "n": 40,
+            "correct": 34
+          },
+          "uniform": {
+            "n": 40,
+            "correct": 14
+          }
+        },
+        "original_pending": 0,
+        "unresolved": 0
+      },
+      "automatic_gate": {
+        "validation_pass": true,
+        "event_exactly_one": true,
+        "event_total": true,
+        "old_total": true,
+        "old_families": false,
+        "mc": true
+      },
+      "reviewed_gate": {
+        "validation_pass": false,
+        "event_exactly_one": true,
+        "event_total": true,
+        "old_total": false,
+        "old_families": false,
+        "mc": true
+      }
+    }
+  },
+  "paired_changes": {
+    "old_pairs": {
+      "seed_2027": {
+        "gains": 5,
+        "losses": 7,
+        "lost_ids": [
+          "v19_old_test_poisson_time_002",
+          "v19_old_test_poisson_time_005",
+          "v19_old_test_poisson_time_008",
+          "v19_old_test_uniform_time_000",
+          "v19_old_test_uniform_time_004",
+          "v19_old_test_uniform_time_010",
+          "v19_old_test_exactly_one_007"
+        ]
+      },
+      "seed_31415": {
+        "gains": 8,
+        "losses": 13,
+        "lost_ids": [
+          "v19_old_test_poisson_scaled_007",
+          "v19_old_test_uniform_time_000",
+          "v19_old_test_uniform_time_002",
+          "v19_old_test_uniform_time_010",
+          "v19_old_test_exactly_one_007",
+          "v19_old_test_exactly_one_009",
+          "v19_old_test_exactly_one_010",
+          "v19_old_test_interval_000",
+          "v19_old_test_interval_001",
+          "v19_old_test_interval_003",
+          "v19_old_test_interval_005",
+          "v19_old_test_interval_008",
+          "v19_old_test_interval_010"
+        ]
+      }
+    },
+    "new_pairs": {
+      "seed_2027": {
+        "gains": 0,
+        "losses": 19,
+        "lost_ids": [
+          "v19_test_poisson_variance_000_d1",
+          "v19_test_poisson_variance_000_d3",
+          "v19_test_poisson_variance_001_d3",
+          "v19_test_poisson_variance_002_d3",
+          "v19_test_poisson_variance_003_d3",
+          "v19_test_poisson_variance_005_d3",
+          "v19_test_poisson_variance_006_d3",
+          "v19_test_poisson_variance_007_d2",
+          "v19_test_poisson_variance_007_d3",
+          "v19_test_second_moment_000_d1",
+          "v19_test_second_moment_000_d2",
+          "v19_test_second_moment_001_d1",
+          "v19_test_second_moment_002_d1",
+          "v19_test_second_moment_002_d2",
+          "v19_test_second_moment_003_d2",
+          "v19_test_second_moment_005_d1",
+          "v19_test_second_moment_006_d1",
+          "v19_test_second_moment_006_d2",
+          "v19_test_second_moment_007_d1"
+        ]
+      },
+      "seed_31415": {
+        "gains": 1,
+        "losses": 12,
+        "lost_ids": [
+          "v19_test_poisson_variance_000_d3",
+          "v19_test_poisson_variance_001_d3",
+          "v19_test_poisson_variance_002_d3",
+          "v19_test_poisson_variance_003_d3",
+          "v19_test_poisson_variance_005_d3",
+          "v19_test_poisson_variance_006_d3",
+          "v19_test_poisson_variance_007_d3",
+          "v19_test_second_moment_000_d2",
+          "v19_test_second_moment_001_d1",
+          "v19_test_second_moment_002_d1",
+          "v19_test_second_moment_003_d2",
+          "v19_test_second_moment_005_d1"
+        ]
+      }
+    }
+  },
+  "shared_new_test_losses": [
+    "v19_test_poisson_variance_000_d3",
+    "v19_test_poisson_variance_001_d3",
+    "v19_test_poisson_variance_002_d3",
+    "v19_test_poisson_variance_003_d3",
+    "v19_test_poisson_variance_005_d3",
+    "v19_test_poisson_variance_006_d3",
+    "v19_test_poisson_variance_007_d3",
+    "v19_test_second_moment_000_d2",
+    "v19_test_second_moment_001_d1",
+    "v19_test_second_moment_002_d1",
+    "v19_test_second_moment_003_d2",
+    "v19_test_second_moment_005_d1"
+  ],
+  "validation_audit": {
+    "parent_old_validation": {
+      "automatic": 32,
+      "reviewed": 33,
+      "interval_automatic": 5,
+      "interval_reviewed": 6
+    },
+    "seed_2027_step48": "passes both automatic and reviewed retention gate",
+    "seed_31415_step24": "passes original automatic gate; fails reviewed interval threshold: 4 < 6-1",
+    "seed_31415_step48": "passes reviewed retention gate but was not test-selected; no post-test reselection"
+  },
+  "review_count": 66,
+  "review_corrected": 3,
+  "unresolved": 0,
+  "selection_unchanged": true,
+  "teacher_calls": 0
+}

@@ -1,0 +1,596 @@
+[
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_000_neither_s2",
+    "raw": "Expression: (1 - 34 / 101) ** (101 - 31)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_001_neither_s2",
+    "raw": "Expression: (1 - 9 / 101) ** (101 - 66)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_003_neither_s2",
+    "raw": "Expression: (1 - 72 / 101) ** (101 - 32)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_005_neither_s2",
+    "raw": "Expression: (1 - 26 / 101) ** (101 - 7)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_006_neither_s2",
+    "raw": "Expression: (1 - 74 / 101) ** (101 - 21)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_007_neither_s2",
+    "raw": "Expression: (1 - 83 / 101) ** (101 - 14)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_008_neither_s2",
+    "raw": "Expression: (1 - 93 / 101) ** (101 - 26)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_009_neither_s2",
+    "raw": "Expression: (1 - 52 / 101) ** (101 - 35)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_010_neither_s2",
+    "raw": "Expression: (1 - 26 / 101) ** (101 - 13)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_011_neither_s2",
+    "raw": "Expression: (1 - 43 / 101) ** (101 - 23)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_013_neither_s2",
+    "raw": "Expression: (1 - 69 / 101) ** (101 - 11)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_014_neither_s2",
+    "raw": "Expression: (1 - 57 / 101) ** (101 - 5)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_017_neither_s2",
+    "raw": "Expression: (1 - 52 / 101) ** (101 - 52)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_019_neither_s2",
+    "raw": "Expression: (1 - 94 / 101) ** (101 - 66)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_020_neither_s2",
+    "raw": "Expression: (1 - 35 / 101) ** (101 - 5)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_021_neither_s2",
+    "raw": "Expression: (1 - 43 / 101) ** (101 - 5)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "event_test",
+    "id": "v20_test_022_neither_s2",
+    "raw": "Expression: (1 - 84 / 101) ** (101 - 55)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "把兩個補事件機率的乘積誤寫成次方，並將機率分子當作次數；不是等價式。"
+  },
+  {
+    "model": "parent",
+    "split": "old_test",
+    "id": "v19_old_test_binomial_006",
+    "raw": "Expression: comb(9, 5) * (6 / 10) ** 5 * (4 / 10) ** (9 - 5)",
+    "original_correct": false,
+    "reviewed_correct": true,
+    "reason": "二項式結構完整；4/10 等於 1-6/10，失敗次數 9-5 保留，屬補事件機率等價寫法。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_poisson_time_002",
+    "raw": "Expression: 29 / 60 ** 568",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "正確為率乘秒數再除60；原式把秒數放在指數，數學結構與數值皆錯。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_poisson_time_005",
+    "raw": "Expression: 29 / 60 ** 558",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "正確為率乘秒數再除60；原式把秒數放在指數，數學結構與數值皆錯。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_poisson_time_008",
+    "raw": "Expression: 31 / 30 ** 173",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "正確為率乘秒數再除60；原式把秒數放在指數，數學結構與數值皆錯。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_000",
+    "raw": "Expression: (7 * X + 20) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_001",
+    "raw": "Expression: (6 * X + 21) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_002",
+    "raw": "Expression: (6 * X + 16) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_003",
+    "raw": "Expression: (7 * X + 15) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_004",
+    "raw": "Expression: (2 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_005",
+    "raw": "Expression: (6 * X + 23) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_007",
+    "raw": "Expression: (4 * X + 7) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_008",
+    "raw": "Expression: (3 * X + 9) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_010",
+    "raw": "Expression: (7 * X + 9) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "old_test",
+    "id": "v19_old_test_moment_011",
+    "raw": "Expression: (6 * X + 8) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "event_test",
+    "id": "v20_test_014_both_s2",
+    "raw": "Expression: (5/101)*(57/101)-(5/101)*(5/101)*(57/101)+(5/101)*(5/101)*(57/101)",
+    "original_correct": false,
+    "reviewed_correct": true,
+    "reason": "原式為pq-p²q+p²q，後兩項恆等相消，留下兩事件皆發生的pq；無修補。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_000",
+    "raw": "Expression: (7 * X + 20) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_001",
+    "raw": "Expression: (6 * X + 21) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_002",
+    "raw": "Expression: (6 * X + 16) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_003",
+    "raw": "Expression: (7 * X + 15) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_004",
+    "raw": "Expression: (2 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_005",
+    "raw": "Expression: (6 * X + 23) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_008",
+    "raw": "Expression: (3 * X + 9) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_010",
+    "raw": "Expression: (7 * X + 9) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "old_test",
+    "id": "v19_old_test_moment_011",
+    "raw": "Expression: (6 * X + 8) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "parent",
+    "split": "old_validation.json",
+    "id": "v17_validation_interval_003",
+    "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+    "original_correct": false,
+    "reviewed_correct": true,
+    "reason": "樣本數乘4使半寬除2；原半寬為(129-55)/2，故新半寬(129-55)/4。原式正確，無修補。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_001",
+    "raw": "Expression: (3 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_002",
+    "raw": "Expression: (2 * X + 17) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_003",
+    "raw": "Expression: (2 * X + 4) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_004",
+    "raw": "Expression: (7 * X + 19) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_005",
+    "raw": "Expression: (2 * X + 7) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_000",
+    "raw": "Expression: (5 * X + 2) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_001",
+    "raw": "Expression: (3 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_002",
+    "raw": "Expression: (2 * X + 17) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_003",
+    "raw": "Expression: (2 * X + 4) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_004",
+    "raw": "Expression: (7 * X + 19) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_2027",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_005",
+    "raw": "Expression: (2 * X + 7) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_000",
+    "raw": "Expression: (5 * X + 2) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_001",
+    "raw": "Expression: (3 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_002",
+    "raw": "Expression: (2 * X + 17) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_003",
+    "raw": "Expression: (2 * X + 4) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_004",
+    "raw": "Expression: (7 * X + 19) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_24/old_validation.json",
+    "id": "v17_validation_moment_005",
+    "raw": "Expression: (2 * X + 7) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_000",
+    "raw": "Expression: (5 * X + 2) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_001",
+    "raw": "Expression: (3 * X + 11) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_002",
+    "raw": "Expression: (2 * X + 17) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_003",
+    "raw": "Expression: (2 * X + 4) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_004",
+    "raw": "Expression: (7 * X + 19) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_moment_005",
+    "raw": "Expression: (2 * X + 7) ** 2",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "仍含未知隨機變數X，只寫出平方量，未求期望且未代入均值與變異數；維持錯誤。"
+  },
+  {
+    "model": "seed_31415",
+    "split": "step_48/old_validation.json",
+    "id": "v17_validation_exactly_one_003",
+    "raw": "Expression: (1-(15/100))*(43/100)+(1-(43/100))(15/100)",
+    "original_correct": false,
+    "reviewed_correct": false,
+    "reason": "可辨識恰有一個的兩分支，但第二項缺乘號，非指定可執行數值語法；不插入運算子修補，不加分。"
+  }
+]
