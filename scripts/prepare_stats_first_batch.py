@@ -3,6 +3,7 @@ import argparse, json, math, re
 from pathlib import Path
 from stats_consolidation_pilot import build, digest, TEACHER_MODEL as MODEL, assert_execution_released
 from stats_consolidation_grader import score, grader_fingerprint
+from formulation_grader import parse_expression
 from stats_teacher_envelope import parse_answers
 from flight_run_stats_v0_3 import read_json, save_json, read_jsonl, append, package
 import prepare_stats_consolidation_teacher as prep
@@ -72,12 +73,12 @@ def messages(request, pending, retry=False):
     if retry:
         system += ' Previous output was rejected. Recheck units, requested quantity, and every expression; supply all requested IDs.'
     if request['archetype']=='interval':
-        system = ('Return exactly one line: Expression: <fully substituted arithmetic expression>. No JSON. '
-                  'For old endpoints L,U and sample-size multiplier k, use this general formula for the NEW UPPER endpoint: '
-                  '(L+U)/2 + (U-L)/(2*sqrt(k)). The center is (L+U)/2, not L or U. '
-                  'Substitute the given numbers, keeping arithmetic unevaluated. Use **0.5 for sqrt. '
-                  'No variables, no explanation, no echoed question. This is the upper endpoint, not the new interval width.')
-        return [{'role':'system','content':system},{'role':'user','content':request['questions'][0]['question']}]
+        system = ('Return only compact JSON with center, old_half_width, new_half_width strings and an answers array '
+                  'containing question_id and expression strings. Use these intermediate fields as your entire working. '
+                  'The center is the average of the two old endpoints. The old half-width is half their difference. '
+                  'The new half-width is the old half-width divided by the square root of the sample-size multiplier. '
+                  'The new upper endpoint is center plus NEW half-width. Use sqrt() for square roots. '
+                  'Substitute all numbers; no variables, prose, explanation or question echo. Keep the whole response under 180 tokens.')
     elif request['archetype']=='poisson_process':
         system += (' For rate r per minute and duration t seconds, mean m=r*(t/60). '
                    'Count variance=m, count second moment=m+m**2. Substitute the FULL numerical m in both places; '
@@ -94,6 +95,10 @@ def ingest(record, raw, qlookup, attempt, finish='stop'):
         if len(qlookup)==1 and re.fullmatch(r'Expression:\s*[^\n]+',raw.strip()):
             items=[{'question_id':next(iter(qlookup)), 'expression':raw.strip().split(':',1)[1].strip()}]
             repair='single_question_expression_line_transport'
+        elif len(qlookup)==1 and '\n' not in raw.strip() and not raw.strip().startswith('{'):
+            parse_expression(raw.strip(), {})
+            items=[{'question_id':next(iter(qlookup)), 'expression':raw.strip()}]
+            repair='single_question_bare_expression_transport'
         else:
             items, repair = parse(raw, set(qlookup))
         a['transport_repair'] = repair
@@ -152,7 +157,14 @@ def main():
                 if record['request_sha256'] != digest(r):
                     raise RuntimeError('Request drift')
                 new_attempts = sum(isinstance(a['attempt'],int) for a in record['attempts'])
-                for attempt in range(new_attempts,4 if r['archetype']=='interval' else 3):
+                # Reparse existing original strings after a transport-only extension.
+                if r['archetype']=='interval':
+                    snapshot=list(record['attempts'])
+                    for a in snapshot:
+                        if a.get('attempt')==3 and not a.get('parsed'):
+                            ingest(record,a['raw'],qs,'transport_review_3',a['finish_reason'])
+                    save_json(path,record)
+                for attempt in range(new_attempts,5 if r['archetype']=='interval' else 3):
                     pending = set(qs)-set(record['accepted'])
                     if not pending:
                         break
