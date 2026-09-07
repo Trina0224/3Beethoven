@@ -28,3 +28,23 @@
 訓練權重及各輪 checkpoint：Kaggle Version 42（347852579），Successful，8055 秒。MC 校正及全量逐題結果：Version 43（347877473），已保存並從新 CPU 工作階段讀回。Compact ZIP 1,507,467,761 bytes，CRC 通過，SHA-256 `9a81a9445754ee17e66c521e3596716f9a755106f86d6d06eba286ff953acb03`。完整 tokenizer 保留於 Kaggle；報告資料匯出只排除大型 tokenizer 內容。
 
 [逐 seed 摘要](STATS_SEED_REPLICATION_SUMMARY.json) · [逐題複核](STATS_SEED_REPLICATION_SEMANTIC_REVIEW.json) · [配對分析](STATS_SEED_REPLICATION_ADDITIONAL_SUMMARY.json) · [備份證明](STATS_SEED_REPLICATION_BACKUP_RECEIPT.json) · [事前預期](STATS_SEED_REPLICATION_PROTOCOL.md)
+
+## exactly_one 三 seed 錯誤模式比對
+
+直接使用保存回答，零新推論／訓練。以下分類已逐式檢查並以精確有理數驗證。
+
+| 原句式 12 題 | 1919 | 2027 | 31415 |
+|---|---:|---:|---:|
+| 正確 | 1 | 7 | 4 |
+| 只算 A 偵測、B 漏掉，漏另一分支 | 8 | 4 | 1 |
+| 算成兩者都漏掉 | 3 | 0 | 3 |
+| 算成兩者結果相同（XNOR） | 0 | 0 | 1 |
+| XOR 結構正確，但代錯機率 | 0 | 1 | 3 |
+
+例如 2027 把 B 的 31/100 改成 4/5；31415 對同題改成 4/13。這類錯誤應與漏分支分開。第 010 題三次都只算 A 偵測、B 漏掉，為共同失效例。
+
+換成明說「exactly one method detects」的 8 題，1919 有 6 題 XNOR、2 題算成 B 漏掉而不管 A；2027 與 31415 都是 8 題 XNOR。正確應為 (1-a)b+a(1-b)，XNOR 卻寫 ab+(1-a)(1-b)，其中 a、b 是漏檢率。三次改寫均 0/8。原固定 v15 在同一組改寫也是 8 題 XNOR、0/8，這項弱點在 v19 前就存在。
+
+判斷：不是三種互不相關的隨機壞法，也不是完全一致的單一新副作用；是既有事件語意弱點，疊加 seed 影響的分支遺漏／數字綁定錯誤。共同錯誤支持優先檢查事件對照教材與句式覆蓋，但無法由這份觀察認定「只有改 replay 比例才有效」。增加有代表性的驗證題可減少選到失效模型，卻不能保證修好三個候選都會犯的改寫錯誤。尚未執行比例對照或新增驗證選點實驗，不能宣稱任一修法已有效。
+
+[逐題分類、原回答與參考式](STATS_SEED_EXACTLY_ONE_COMPARISON.json)
