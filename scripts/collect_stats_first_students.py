@@ -92,6 +92,14 @@ def main():
     for seed,r in result['runs'].items():
         m=r['metrics'];step=r['selection']['selected_step'] or r['selection']['diagnostic_step']
         text.append(f"| {seed} | {step} | {m['old']['correct']} | {m['chain']['correct']} | {m['event']['correct']} | {'通過' if r['gate']['passed'] else '未通過'} |")
+    text += ['', '各檢查點（相同 112 題；人工複核後）：', '',
+             '| seed | 步數 | 舊技能 /48 | 組合題 /48 | 事件 /16 | 未過門檻 |',
+             '|---|---:|---:|---:|---:|---|']
+    for seed,r in result['runs'].items():
+        for record in r['history']:
+            m=record['metrics']
+            failed=', '.join(k for k,v in record['gate']['checks'].items() if not v)
+            text.append(f"| {seed} | {record['step']} | {m['old']['correct']} | {m['chain']['correct']} | {m['event']['correct']} | {failed or '無'} |")
     text += ['', '這些是選點驗證結果，不能當作獨立測試成績。完整教材 gate 未通過，fresh-base 對照及完整四次比較未完成。',
              '', '下載包包含兩個 seed 最早過關（或最後診斷）的完整 adapter、底模 revision、權重 SHA-256、原始驗證回答與訓練資料順序。其他階段權重保存在 Kaggle 完整輸出。']
     report='\n'.join(text)+'\n'
