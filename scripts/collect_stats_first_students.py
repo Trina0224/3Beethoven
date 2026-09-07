@@ -68,7 +68,10 @@ def main():
             shutil.copy2(folder/f'step_{step}'/(suite+'.json'),destination/(suite+'.json'))
         selected=next(r for r in history if r['step']==step)
         result['runs'][str(seed)]=dict(steps=complete['global_steps'],selection=selection,
-             final_invocation_training_loss=complete.get('training_loss'),metrics=selected['metrics'],gate=selected['gate'],
+             final_invocation_training_loss=(complete.get('training_loss') if complete.get('training_loss_scope') else None),
+             raw_trainer_training_loss=complete.get('raw_trainer_training_loss',complete.get('training_loss')),
+             training_loss_scope=complete.get('training_loss_scope','legacy_uncorrected_resume_denominator'),
+             metrics=selected['metrics'],gate=selected['gate'],
              history=history,weights=manifest)
     shutil.copytree(root/'teacher',portable/'teacher',dirs_exist_ok=True)
     shutil.copytree(root/'v15_selection_rows',portable/'v15_selection_rows',dirs_exist_ok=True)
