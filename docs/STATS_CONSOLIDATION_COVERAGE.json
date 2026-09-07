@@ -1,0 +1,121 @@
+{
+  "status": "candidate_not_frozen",
+  "seed": 210021,
+  "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+  "story_count": 96,
+  "question_count": 268,
+  "pilot_story_count": 24,
+  "stories_by_split": {
+    "train": 71,
+    "validation": 25
+  },
+  "questions_by_category": {
+    "poisson_time": 12,
+    "v18_second_moment": 30,
+    "poisson_scaled_mean": 12,
+    "poisson_scaled": 12,
+    "poisson_scaled_moment": 12,
+    "moment_mean": 12,
+    "moment_variance": 12,
+    "moment": 12,
+    "uniform_time": 8,
+    "v18_conditional_wait": 8,
+    "binomial": 8,
+    "exactly_one": 16,
+    "at_least_one": 16,
+    "both": 16,
+    "neither": 16,
+    "same": 16,
+    "interval": 8,
+    "v18_poisson_variance": 24,
+    "v18_scaled_variance": 18
+  },
+  "questions_by_split_and_category": {
+    "train": {
+      "poisson_time": 9,
+      "v18_second_moment": 21,
+      "poisson_scaled_mean": 9,
+      "poisson_scaled": 9,
+      "poisson_scaled_moment": 9,
+      "moment_mean": 9,
+      "moment_variance": 9,
+      "moment": 9,
+      "uniform_time": 6,
+      "v18_conditional_wait": 6,
+      "binomial": 6,
+      "exactly_one": 12,
+      "at_least_one": 12,
+      "both": 12,
+      "neither": 12,
+      "same": 12,
+      "interval": 6,
+      "v18_poisson_variance": 18,
+      "v18_scaled_variance": 12
+    },
+    "validation": {
+      "poisson_time": 3,
+      "v18_second_moment": 9,
+      "poisson_scaled_mean": 3,
+      "poisson_scaled": 3,
+      "poisson_scaled_moment": 3,
+      "moment_mean": 3,
+      "moment_variance": 3,
+      "moment": 3,
+      "uniform_time": 2,
+      "v18_conditional_wait": 2,
+      "binomial": 2,
+      "exactly_one": 4,
+      "at_least_one": 4,
+      "both": 4,
+      "neither": 4,
+      "same": 4,
+      "interval": 2,
+      "v18_poisson_variance": 6,
+      "v18_scaled_variance": 6
+    }
+  },
+  "coverage_axes": [
+    "concept",
+    "story lineage",
+    "surface style",
+    "number form",
+    "unit",
+    "condition order",
+    "confusable requested quantity"
+  ],
+  "category_groups": {
+    "historical_eight": [
+      "poisson_time",
+      "poisson_scaled",
+      "moment",
+      "uniform_time",
+      "binomial",
+      "exactly_one",
+      "at_least_one",
+      "interval"
+    ],
+    "combination_four": [
+      "v18_poisson_variance",
+      "v18_scaled_variance",
+      "v18_second_moment",
+      "v18_conditional_wait"
+    ],
+    "event_four": [
+      "exactly_one",
+      "both",
+      "neither",
+      "same"
+    ],
+    "supporting_contrasts": [
+      "poisson_scaled_mean",
+      "poisson_scaled_moment",
+      "moment_mean",
+      "moment_variance"
+    ]
+  },
+  "notes": [
+    "Counts are target responses, not independent stories.",
+    "Train and validation lineages are disjoint before any teacher call.",
+    "Concrete new holdout questions are owned by a separate future builder and are absent from teacher requests."
+  ]
+}

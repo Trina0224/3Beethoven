@@ -1,0 +1,3490 @@
+[
+  {
+    "story_id": "consolidation_train_poisson_process_000",
+    "lineage_id": "consolidation_poisson_process_000",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_000_00",
+        "question": "A service counter receives arrivals at 60 per minute. During a 645-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_000_01",
+        "question": "At the same counter, X is the count during 645 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_000_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_001",
+    "lineage_id": "consolidation_poisson_process_001",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_001_00",
+        "question": "A service counter receives arrivals at 17 per minute. During a 523-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_001_01",
+        "question": "At the same counter, X is the count during 523 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_001_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_002",
+    "lineage_id": "consolidation_poisson_process_002",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_002_00",
+        "question": "A service counter receives arrivals at 21 per minute. During a 713-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_002_01",
+        "question": "At the same counter, X is the count during 713 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_002_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_003",
+    "lineage_id": "consolidation_poisson_process_003",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_003_00",
+        "question": "A service counter receives arrivals at 40 per minute. During a 367-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_003_01",
+        "question": "At the same counter, X is the count during 367 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_003_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_004",
+    "lineage_id": "consolidation_poisson_process_004",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_004_00",
+        "question": "A service counter receives arrivals at 49 per minute. During a 496-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_004_01",
+        "question": "At the same counter, X is the count during 496 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_004_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_005",
+    "lineage_id": "consolidation_poisson_process_005",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_005_00",
+        "question": "A service counter receives arrivals at 38 per minute. During a 576-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_005_01",
+        "question": "At the same counter, X is the count during 576 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_005_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_006",
+    "lineage_id": "consolidation_poisson_process_006",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_006_00",
+        "question": "A service counter receives arrivals at 34 per minute. During a 140-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_006_01",
+        "question": "At the same counter, X is the count during 140 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_006_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_007",
+    "lineage_id": "consolidation_poisson_process_007",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_007_00",
+        "question": "A service counter receives arrivals at 66 per minute. During a 306-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_007_01",
+        "question": "At the same counter, X is the count during 306 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_007_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_poisson_process_008",
+    "lineage_id": "consolidation_poisson_process_008",
+    "split": "train",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_poisson_process_008_00",
+        "question": "A service counter receives arrivals at 63 per minute. During a 351-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_train_poisson_process_008_01",
+        "question": "At the same counter, X is the count during 351 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_poisson_process_008_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_poisson_process_008_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_poisson_process_009",
+    "lineage_id": "consolidation_poisson_process_009",
+    "split": "validation",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_poisson_process_009_00",
+        "question": "A service counter receives arrivals at 54 per minute. During a 461-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_validation_poisson_process_009_01",
+        "question": "At the same counter, X is the count during 461 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_poisson_process_009_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_poisson_process_009_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_poisson_process_010",
+    "lineage_id": "consolidation_poisson_process_010",
+    "split": "validation",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_poisson_process_010_00",
+        "question": "A service counter receives arrivals at 20 per minute. During a 574-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_validation_poisson_process_010_01",
+        "question": "At the same counter, X is the count during 574 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_poisson_process_010_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_poisson_process_010_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_poisson_process_011",
+    "lineage_id": "consolidation_poisson_process_011",
+    "split": "validation",
+    "archetype": "poisson_process",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_poisson_process_011_00",
+        "question": "A service counter receives arrivals at 62 per minute. During a 288-second observation, what is the variance of the arrival count?"
+      },
+      {
+        "question_id": "consolidation_validation_poisson_process_011_01",
+        "question": "At the same counter, X is the count during 288 seconds. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_poisson_process_011_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_poisson_process_011_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_000",
+    "lineage_id": "consolidation_affine_poisson_000",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_000_00",
+        "question": "X is Poisson with mean 48. A display reports Y=2*X+17. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_000_01",
+        "question": "For that display Y=2*X+17, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_000_02",
+        "question": "For the same Y=2*X+17, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_000_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_001",
+    "lineage_id": "consolidation_affine_poisson_001",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_001_00",
+        "question": "X is Poisson with mean 47. A display reports Y=6*X+27. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_001_01",
+        "question": "For that display Y=6*X+27, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_001_02",
+        "question": "For the same Y=6*X+27, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_001_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_002",
+    "lineage_id": "consolidation_affine_poisson_002",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_002_00",
+        "question": "X is Poisson with mean 79. A display reports Y=3*X+5. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_002_01",
+        "question": "For that display Y=3*X+5, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_002_02",
+        "question": "For the same Y=3*X+5, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_002_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_003",
+    "lineage_id": "consolidation_affine_poisson_003",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_003_00",
+        "question": "X is Poisson with mean 83. A display reports Y=5*X+25. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_003_01",
+        "question": "For that display Y=5*X+25, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_003_02",
+        "question": "For the same Y=5*X+25, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_003_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_004",
+    "lineage_id": "consolidation_affine_poisson_004",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_004_00",
+        "question": "X is Poisson with mean 47. A display reports Y=3*X+9. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_004_01",
+        "question": "For that display Y=3*X+9, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_004_02",
+        "question": "For the same Y=3*X+9, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_004_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_005",
+    "lineage_id": "consolidation_affine_poisson_005",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_005_00",
+        "question": "X is Poisson with mean 85. A display reports Y=2*X+12. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_005_01",
+        "question": "For that display Y=2*X+12, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_005_02",
+        "question": "For the same Y=2*X+12, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_005_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_006",
+    "lineage_id": "consolidation_affine_poisson_006",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_006_00",
+        "question": "X is Poisson with mean 74. A display reports Y=7*X+9. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_006_01",
+        "question": "For that display Y=7*X+9, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_006_02",
+        "question": "For the same Y=7*X+9, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_006_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_006_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_007",
+    "lineage_id": "consolidation_affine_poisson_007",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_007_00",
+        "question": "X is Poisson with mean 27. A display reports Y=4*X+16. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_007_01",
+        "question": "For that display Y=4*X+16, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_007_02",
+        "question": "For the same Y=4*X+16, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_007_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_007_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_affine_poisson_008",
+    "lineage_id": "consolidation_affine_poisson_008",
+    "split": "train",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_affine_poisson_008_00",
+        "question": "X is Poisson with mean 60. A display reports Y=4*X+27. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_008_01",
+        "question": "For that display Y=4*X+27, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_affine_poisson_008_02",
+        "question": "For the same Y=4*X+27, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_affine_poisson_008_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_008_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_affine_poisson_008_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_affine_poisson_009",
+    "lineage_id": "consolidation_affine_poisson_009",
+    "split": "validation",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_affine_poisson_009_00",
+        "question": "X is Poisson with mean 62. A display reports Y=2*X+9. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_009_01",
+        "question": "For that display Y=2*X+9, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_009_02",
+        "question": "For the same Y=2*X+9, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_affine_poisson_009_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_009_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_009_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_affine_poisson_010",
+    "lineage_id": "consolidation_affine_poisson_010",
+    "split": "validation",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_affine_poisson_010_00",
+        "question": "X is Poisson with mean 78. A display reports Y=6*X+6. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_010_01",
+        "question": "For that display Y=6*X+6, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_010_02",
+        "question": "For the same Y=6*X+6, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_affine_poisson_010_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_010_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_010_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_affine_poisson_011",
+    "lineage_id": "consolidation_affine_poisson_011",
+    "split": "validation",
+    "archetype": "affine_poisson",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_affine_poisson_011_00",
+        "question": "X is Poisson with mean 63. A display reports Y=3*X+17. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_011_01",
+        "question": "For that display Y=3*X+17, set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_affine_poisson_011_02",
+        "question": "For the same Y=3*X+17, set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_affine_poisson_011_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_011_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_affine_poisson_011_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_000",
+    "lineage_id": "consolidation_general_moment_000",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_000_00",
+        "question": "X has mean 51 and variance 156. Measurements are transformed to Y=2*X+13. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_000_01",
+        "question": "X has mean 51 and variance 156. Measurements are transformed to Y=2*X+13. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_000_02",
+        "question": "X has mean 51 and variance 156. Measurements are transformed to Y=2*X+13. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_000_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_001",
+    "lineage_id": "consolidation_general_moment_001",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_001_00",
+        "question": "X has mean 32 and variance 76. Measurements are transformed to Y=7*X+5. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_001_01",
+        "question": "X has mean 32 and variance 76. Measurements are transformed to Y=7*X+5. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_001_02",
+        "question": "X has mean 32 and variance 76. Measurements are transformed to Y=7*X+5. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_001_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_002",
+    "lineage_id": "consolidation_general_moment_002",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_002_00",
+        "question": "X has mean 58 and variance 125. Measurements are transformed to Y=6*X+20. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_002_01",
+        "question": "X has mean 58 and variance 125. Measurements are transformed to Y=6*X+20. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_002_02",
+        "question": "X has mean 58 and variance 125. Measurements are transformed to Y=6*X+20. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_002_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_003",
+    "lineage_id": "consolidation_general_moment_003",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_003_00",
+        "question": "X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_003_01",
+        "question": "X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_003_02",
+        "question": "X has mean 26 and variance 102. Measurements are transformed to Y=2*X+9. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_003_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_004",
+    "lineage_id": "consolidation_general_moment_004",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_004_00",
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_004_01",
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_004_02",
+        "question": "X has mean 35 and variance 154. Measurements are transformed to Y=2*X+24. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_004_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_005",
+    "lineage_id": "consolidation_general_moment_005",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_005_00",
+        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_005_01",
+        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_005_02",
+        "question": "X has mean 30 and variance 186. Measurements are transformed to Y=7*X+3. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_005_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_006",
+    "lineage_id": "consolidation_general_moment_006",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_006_00",
+        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_006_01",
+        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_006_02",
+        "question": "X has mean 23 and variance 254. Measurements are transformed to Y=7*X+2. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_006_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_006_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_007",
+    "lineage_id": "consolidation_general_moment_007",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_007_00",
+        "question": "X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_007_01",
+        "question": "X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_007_02",
+        "question": "X has mean 59 and variance 171. Measurements are transformed to Y=2*X+8. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_007_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_007_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_general_moment_008",
+    "lineage_id": "consolidation_general_moment_008",
+    "split": "train",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_general_moment_008_00",
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_008_01",
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_general_moment_008_02",
+        "question": "X has mean 23 and variance 235. Measurements are transformed to Y=7*X+3. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_general_moment_008_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_008_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_general_moment_008_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_general_moment_009",
+    "lineage_id": "consolidation_general_moment_009",
+    "split": "validation",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_general_moment_009_00",
+        "question": "X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_009_01",
+        "question": "X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_009_02",
+        "question": "X has mean 45 and variance 201. Measurements are transformed to Y=2*X+14. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_general_moment_009_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_009_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_009_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_general_moment_010",
+    "lineage_id": "consolidation_general_moment_010",
+    "split": "validation",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_general_moment_010_00",
+        "question": "X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_010_01",
+        "question": "X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_010_02",
+        "question": "X has mean 18 and variance 265. Measurements are transformed to Y=5*X+24. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_general_moment_010_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_010_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_010_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_general_moment_011",
+    "lineage_id": "consolidation_general_moment_011",
+    "split": "validation",
+    "archetype": "general_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_general_moment_011_00",
+        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up E[Y]."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_011_01",
+        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_general_moment_011_02",
+        "question": "X has mean 69 and variance 123. Measurements are transformed to Y=5*X+7. Set up E[Y**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_general_moment_011_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_011_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_general_moment_011_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_000",
+    "lineage_id": "consolidation_uniform_wait_000",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_000_00",
+        "question": "A total wait T is uniform from 0 to 87 minutes. After already waiting 71 seconds, find E[T | T>71 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_000_01",
+        "question": "For the same wait, set up the expected additional wait after 71 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_000_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_001",
+    "lineage_id": "consolidation_uniform_wait_001",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_001_00",
+        "question": "A total wait T is uniform from 0 to 26 minutes. After already waiting 625 seconds, find E[T | T>625 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_001_01",
+        "question": "For the same wait, set up the expected additional wait after 625 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_001_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_002",
+    "lineage_id": "consolidation_uniform_wait_002",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_002_00",
+        "question": "A total wait T is uniform from 0 to 61 minutes. After already waiting 907 seconds, find E[T | T>907 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_002_01",
+        "question": "For the same wait, set up the expected additional wait after 907 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_002_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_003",
+    "lineage_id": "consolidation_uniform_wait_003",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_003_00",
+        "question": "A total wait T is uniform from 0 to 76 minutes. After already waiting 872 seconds, find E[T | T>872 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_003_01",
+        "question": "For the same wait, set up the expected additional wait after 872 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_003_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_004",
+    "lineage_id": "consolidation_uniform_wait_004",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_004_00",
+        "question": "A total wait T is uniform from 0 to 79 minutes. After already waiting 989 seconds, find E[T | T>989 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_004_01",
+        "question": "For the same wait, set up the expected additional wait after 989 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_004_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_uniform_wait_005",
+    "lineage_id": "consolidation_uniform_wait_005",
+    "split": "train",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_uniform_wait_005_00",
+        "question": "A total wait T is uniform from 0 to 83 minutes. After already waiting 240 seconds, find E[T | T>240 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_train_uniform_wait_005_01",
+        "question": "For the same wait, set up the expected additional wait after 240 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_uniform_wait_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_uniform_wait_005_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_uniform_wait_006",
+    "lineage_id": "consolidation_uniform_wait_006",
+    "split": "validation",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_uniform_wait_006_00",
+        "question": "A total wait T is uniform from 0 to 61 minutes. After already waiting 186 seconds, find E[T | T>186 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_validation_uniform_wait_006_01",
+        "question": "For the same wait, set up the expected additional wait after 186 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_uniform_wait_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_uniform_wait_006_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_uniform_wait_007",
+    "lineage_id": "consolidation_uniform_wait_007",
+    "split": "validation",
+    "archetype": "uniform_wait",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_uniform_wait_007_00",
+        "question": "A total wait T is uniform from 0 to 86 minutes. After already waiting 268 seconds, find E[T | T>268 seconds] in minutes."
+      },
+      {
+        "question_id": "consolidation_validation_uniform_wait_007_01",
+        "question": "For the same wait, set up the expected additional wait after 268 seconds have elapsed."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_uniform_wait_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_uniform_wait_007_01",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_000",
+    "lineage_id": "consolidation_binomial_000",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_000_00",
+        "question": "Among 9 independent quality checks, each flags with probability 18%. Set up the probability that exactly 1 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_000_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_001",
+    "lineage_id": "consolidation_binomial_001",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_001_00",
+        "question": "Among 5 independent quality checks, each flags with probability 10%. Set up the probability that exactly 4 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_001_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_002",
+    "lineage_id": "consolidation_binomial_002",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_002_00",
+        "question": "Among 5 independent quality checks, each flags with probability 33%. Set up the probability that exactly 1 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_002_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_003",
+    "lineage_id": "consolidation_binomial_003",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_003_00",
+        "question": "Among 11 independent quality checks, each flags with probability 27%. Set up the probability that exactly 3 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_003_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_004",
+    "lineage_id": "consolidation_binomial_004",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_004_00",
+        "question": "Among 9 independent quality checks, each flags with probability 53%. Set up the probability that exactly 1 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_004_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_binomial_005",
+    "lineage_id": "consolidation_binomial_005",
+    "split": "train",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_binomial_005_00",
+        "question": "Among 7 independent quality checks, each flags with probability 30%. Set up the probability that exactly 1 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_binomial_005_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_binomial_006",
+    "lineage_id": "consolidation_binomial_006",
+    "split": "validation",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_binomial_006_00",
+        "question": "Among 8 independent quality checks, each flags with probability 29%. Set up the probability that exactly 4 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_binomial_006_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_binomial_007",
+    "lineage_id": "consolidation_binomial_007",
+    "split": "validation",
+    "archetype": "binomial",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_binomial_007_00",
+        "question": "Among 7 independent quality checks, each flags with probability 14%. Set up the probability that exactly 1 checks flag."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_binomial_007_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_000",
+    "lineage_id": "consolidation_detection_events_000",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_000_00",
+        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_000_01",
+        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_000_02",
+        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_000_03",
+        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_000_04",
+        "question": "Independent alarms A and B activate with probabilities 71/100 and 20/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_000_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_000_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_000_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_001",
+    "lineage_id": "consolidation_detection_events_001",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_001_00",
+        "question": "Independent alarms A and B activate with probabilities 28/97 and 82/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_001_01",
+        "question": "Independent alarms A and B activate with probabilities 28/97 and 82/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_001_02",
+        "question": "Independent alarms A and B activate with probabilities 28/97 and 82/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_001_03",
+        "question": "Independent alarms A and B activate with probabilities 28/97 and 82/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_001_04",
+        "question": "Independent alarms A and B activate with probabilities 28/97 and 82/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_001_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_001_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_001_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_002",
+    "lineage_id": "consolidation_detection_events_002",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_002_00",
+        "question": "Independent alarms A and B activate with probabilities 21/100 and 11/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_002_01",
+        "question": "Independent alarms A and B activate with probabilities 21/100 and 11/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_002_02",
+        "question": "Independent alarms A and B activate with probabilities 21/100 and 11/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_002_03",
+        "question": "Independent alarms A and B activate with probabilities 21/100 and 11/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_002_04",
+        "question": "Independent alarms A and B activate with probabilities 21/100 and 11/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_002_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_002_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_002_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_003",
+    "lineage_id": "consolidation_detection_events_003",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_003_00",
+        "question": "Independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_003_01",
+        "question": "Independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_003_02",
+        "question": "Independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_003_03",
+        "question": "Independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_003_04",
+        "question": "Independent alarms A and B activate with probabilities 70/97 and 48/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_003_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_003_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_003_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_004",
+    "lineage_id": "consolidation_detection_events_004",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_004_00",
+        "question": "Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_004_01",
+        "question": "Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_004_02",
+        "question": "Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_004_03",
+        "question": "Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_004_04",
+        "question": "Independent alarms A and B activate with probabilities 22/100 and 17/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_004_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_004_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_004_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_005",
+    "lineage_id": "consolidation_detection_events_005",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_005_00",
+        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_005_01",
+        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_005_02",
+        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_005_03",
+        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_005_04",
+        "question": "Independent alarms A and B activate with probabilities 24/97 and 13/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_005_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_005_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_005_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_006",
+    "lineage_id": "consolidation_detection_events_006",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_006_00",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_006_01",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_006_02",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_006_03",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_006_04",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 54/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_006_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_006_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_006_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_006_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_007",
+    "lineage_id": "consolidation_detection_events_007",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_007_00",
+        "question": "Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_007_01",
+        "question": "Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_007_02",
+        "question": "Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_007_03",
+        "question": "Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_007_04",
+        "question": "Independent alarms A and B activate with probabilities 46/97 and 84/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_007_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_007_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_007_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_007_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_008",
+    "lineage_id": "consolidation_detection_events_008",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_008_00",
+        "question": "Independent alarms A and B activate with probabilities 64/100 and 57/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_008_01",
+        "question": "Independent alarms A and B activate with probabilities 64/100 and 57/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_008_02",
+        "question": "Independent alarms A and B activate with probabilities 64/100 and 57/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_008_03",
+        "question": "Independent alarms A and B activate with probabilities 64/100 and 57/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_008_04",
+        "question": "Independent alarms A and B activate with probabilities 64/100 and 57/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_008_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_008_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_008_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_008_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_008_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_009",
+    "lineage_id": "consolidation_detection_events_009",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_009_00",
+        "question": "Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_009_01",
+        "question": "Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_009_02",
+        "question": "Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_009_03",
+        "question": "Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_009_04",
+        "question": "Independent alarms A and B activate with probabilities 68/97 and 52/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_009_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_009_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_009_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_009_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_009_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_010",
+    "lineage_id": "consolidation_detection_events_010",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_010_00",
+        "question": "Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_010_01",
+        "question": "Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_010_02",
+        "question": "Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_010_03",
+        "question": "Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_010_04",
+        "question": "Independent alarms A and B activate with probabilities 53/100 and 29/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_010_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_010_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_010_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_010_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_010_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_detection_events_011",
+    "lineage_id": "consolidation_detection_events_011",
+    "split": "train",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_detection_events_011_00",
+        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_011_01",
+        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_011_02",
+        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_011_03",
+        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_train_detection_events_011_04",
+        "question": "Independent alarms A and B activate with probabilities 82/97 and 67/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_detection_events_011_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_011_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_011_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_011_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_detection_events_011_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_detection_events_012",
+    "lineage_id": "consolidation_detection_events_012",
+    "split": "validation",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_detection_events_012_00",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_012_01",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_012_02",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_012_03",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_012_04",
+        "question": "Independent alarms A and B activate with probabilities 62/100 and 28/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_detection_events_012_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_012_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_012_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_012_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_012_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_detection_events_013",
+    "lineage_id": "consolidation_detection_events_013",
+    "split": "validation",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_detection_events_013_00",
+        "question": "Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_013_01",
+        "question": "Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_013_02",
+        "question": "Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_013_03",
+        "question": "Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_013_04",
+        "question": "Independent alarms A and B activate with probabilities 81/97 and 87/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_detection_events_013_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_013_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_013_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_013_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_013_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_detection_events_014",
+    "lineage_id": "consolidation_detection_events_014",
+    "split": "validation",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_detection_events_014_00",
+        "question": "Independent alarms A and B activate with probabilities 49/100 and 21/100. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_014_01",
+        "question": "Independent alarms A and B activate with probabilities 49/100 and 21/100. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_014_02",
+        "question": "Independent alarms A and B activate with probabilities 49/100 and 21/100. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_014_03",
+        "question": "Independent alarms A and B activate with probabilities 49/100 and 21/100. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_014_04",
+        "question": "Independent alarms A and B activate with probabilities 49/100 and 21/100. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_detection_events_014_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_014_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_014_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_014_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_014_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_detection_events_015",
+    "lineage_id": "consolidation_detection_events_015",
+    "split": "validation",
+    "archetype": "detection_events",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_detection_events_015_00",
+        "question": "Independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that exactly one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_015_01",
+        "question": "Independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that at least one alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_015_02",
+        "question": "Independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that both alarms activate."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_015_03",
+        "question": "Independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that neither alarm activates."
+      },
+      {
+        "question_id": "consolidation_validation_detection_events_015_04",
+        "question": "Independent alarms A and B activate with probabilities 51/97 and 83/97. Set up the probability that the two alarms have the same activation state."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_detection_events_015_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_015_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_015_02",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_015_03",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_detection_events_015_04",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_000",
+    "lineage_id": "consolidation_interval_000",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_000_00",
+        "question": "A normal-theory interval is [86, 208]. Sample size is multiplied by 16; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_000_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_001",
+    "lineage_id": "consolidation_interval_001",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_001_00",
+        "question": "A normal-theory interval is [40, 151]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_001_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_002",
+    "lineage_id": "consolidation_interval_002",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_002_00",
+        "question": "A normal-theory interval is [22, 177]. Sample size is multiplied by 36; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_002_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_003",
+    "lineage_id": "consolidation_interval_003",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_003_00",
+        "question": "A normal-theory interval is [81, 262]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_003_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_004",
+    "lineage_id": "consolidation_interval_004",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_004_00",
+        "question": "A normal-theory interval is [44, 171]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_004_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_interval_005",
+    "lineage_id": "consolidation_interval_005",
+    "split": "train",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_interval_005_00",
+        "question": "A normal-theory interval is [45, 193]. Sample size is multiplied by 25; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_interval_005_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_interval_006",
+    "lineage_id": "consolidation_interval_006",
+    "split": "validation",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_interval_006_00",
+        "question": "A normal-theory interval is [41, 85]. Sample size is multiplied by 36; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_interval_006_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_interval_007",
+    "lineage_id": "consolidation_interval_007",
+    "split": "validation",
+    "archetype": "interval",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_interval_007_00",
+        "question": "A normal-theory interval is [64, 107]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed. Set up the new upper endpoint."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_interval_007_00",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_000",
+    "lineage_id": "consolidation_chain_poisson_variance_000",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_000_00",
+        "question": "A Poisson count X has mean 19. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_000_01",
+        "question": "A Poisson process runs at 19 per minute for 6 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_000_02",
+        "question": "A Poisson process runs at 19 per minute for 308 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_000_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_001",
+    "lineage_id": "consolidation_chain_poisson_variance_001",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_001_00",
+        "question": "A Poisson count X has mean 62. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_001_01",
+        "question": "A Poisson process runs at 62 per minute for 12 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_001_02",
+        "question": "A Poisson process runs at 62 per minute for 716 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_001_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_002",
+    "lineage_id": "consolidation_chain_poisson_variance_002",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_002_00",
+        "question": "A Poisson count X has mean 56. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_002_01",
+        "question": "A Poisson process runs at 56 per minute for 8 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_002_02",
+        "question": "A Poisson process runs at 56 per minute for 691 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_002_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_003",
+    "lineage_id": "consolidation_chain_poisson_variance_003",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_003_00",
+        "question": "A Poisson count X has mean 19. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_003_01",
+        "question": "A Poisson process runs at 19 per minute for 13 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_003_02",
+        "question": "A Poisson process runs at 19 per minute for 148 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_003_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_004",
+    "lineage_id": "consolidation_chain_poisson_variance_004",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_004_00",
+        "question": "A Poisson count X has mean 71. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_004_01",
+        "question": "A Poisson process runs at 71 per minute for 11 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_004_02",
+        "question": "A Poisson process runs at 71 per minute for 741 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_004_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_poisson_variance_005",
+    "lineage_id": "consolidation_chain_poisson_variance_005",
+    "split": "train",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_005_00",
+        "question": "A Poisson count X has mean 45. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_005_01",
+        "question": "A Poisson process runs at 45 per minute for 6 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_train_chain_poisson_variance_005_02",
+        "question": "A Poisson process runs at 45 per minute for 330 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_poisson_variance_005_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_poisson_variance_006",
+    "lineage_id": "consolidation_chain_poisson_variance_006",
+    "split": "validation",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_006_00",
+        "question": "A Poisson count X has mean 23. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_006_01",
+        "question": "A Poisson process runs at 23 per minute for 9 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_006_02",
+        "question": "A Poisson process runs at 23 per minute for 358 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_006_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_006_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_006_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_poisson_variance_007",
+    "lineage_id": "consolidation_chain_poisson_variance_007",
+    "split": "validation",
+    "archetype": "chain_poisson_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_007_00",
+        "question": "A Poisson count X has mean 48. Set up Var(X)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_007_01",
+        "question": "A Poisson process runs at 48 per minute for 3 minutes. Set up the count variance."
+      },
+      {
+        "question_id": "consolidation_validation_chain_poisson_variance_007_02",
+        "question": "A Poisson process runs at 48 per minute for 628 seconds. Set up the count variance."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_007_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_007_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_poisson_variance_007_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_scaled_variance_000",
+    "lineage_id": "consolidation_chain_scaled_variance_000",
+    "split": "train",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_000_00",
+        "question": "X has variance 202; Y=5*X+10. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_000_01",
+        "question": "X is Poisson with mean 63; Y=5*X+10. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_000_02",
+        "question": "A Poisson process runs at 63 per minute for 4 minutes. X is its count and Y=5*X+10. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_000_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_scaled_variance_001",
+    "lineage_id": "consolidation_chain_scaled_variance_001",
+    "split": "train",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_001_00",
+        "question": "X has variance 94; Y=5*X+3. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_001_01",
+        "question": "X is Poisson with mean 28; Y=5*X+3. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_001_02",
+        "question": "A Poisson process runs at 28 per minute for 11 minutes. X is its count and Y=5*X+3. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_001_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_scaled_variance_002",
+    "lineage_id": "consolidation_chain_scaled_variance_002",
+    "split": "train",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_002_00",
+        "question": "X has variance 78; Y=5*X+10. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_002_01",
+        "question": "X is Poisson with mean 68; Y=5*X+10. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_002_02",
+        "question": "A Poisson process runs at 68 per minute for 2 minutes. X is its count and Y=5*X+10. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_002_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_scaled_variance_003",
+    "lineage_id": "consolidation_chain_scaled_variance_003",
+    "split": "train",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_003_00",
+        "question": "X has variance 207; Y=4*X+11. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_003_01",
+        "question": "X is Poisson with mean 78; Y=4*X+11. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_train_chain_scaled_variance_003_02",
+        "question": "A Poisson process runs at 78 per minute for 4 minutes. X is its count and Y=4*X+11. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_scaled_variance_003_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_scaled_variance_004",
+    "lineage_id": "consolidation_chain_scaled_variance_004",
+    "split": "validation",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_004_00",
+        "question": "X has variance 19; Y=3*X+14. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_004_01",
+        "question": "X is Poisson with mean 23; Y=3*X+14. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_004_02",
+        "question": "A Poisson process runs at 23 per minute for 8 minutes. X is its count and Y=3*X+14. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_004_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_scaled_variance_005",
+    "lineage_id": "consolidation_chain_scaled_variance_005",
+    "split": "validation",
+    "archetype": "chain_scaled_variance",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_005_00",
+        "question": "X has variance 222; Y=2*X+5. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_005_01",
+        "question": "X is Poisson with mean 80; Y=2*X+5. Set up Var(Y)."
+      },
+      {
+        "question_id": "consolidation_validation_chain_scaled_variance_005_02",
+        "question": "A Poisson process runs at 80 per minute for 5 minutes. X is its count and Y=2*X+5. Set up Var(Y)."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_scaled_variance_005_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_second_moment_000",
+    "lineage_id": "consolidation_chain_second_moment_000",
+    "split": "train",
+    "archetype": "chain_second_moment",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_second_moment_000_00",
+        "question": "X has mean 56 and variance 255. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_000_01",
+        "question": "X is Poisson with mean 56. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_000_02",
+        "question": "A Poisson process runs at 56 per minute for 3 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_second_moment_000_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_000_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_000_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_second_moment_001",
+    "lineage_id": "consolidation_chain_second_moment_001",
+    "split": "train",
+    "archetype": "chain_second_moment",
+    "pilot_batch": true,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_second_moment_001_00",
+        "question": "X has mean 38 and variance 98. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_001_01",
+        "question": "X is Poisson with mean 38. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_001_02",
+        "question": "A Poisson process runs at 38 per minute for 5 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_second_moment_001_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_001_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_001_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_second_moment_002",
+    "lineage_id": "consolidation_chain_second_moment_002",
+    "split": "train",
+    "archetype": "chain_second_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_second_moment_002_00",
+        "question": "X has mean 72 and variance 249. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_002_01",
+        "question": "X is Poisson with mean 72. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_002_02",
+        "question": "A Poisson process runs at 72 per minute for 3 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_second_moment_002_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_002_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_002_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_train_chain_second_moment_003",
+    "lineage_id": "consolidation_chain_second_moment_003",
+    "split": "train",
+    "archetype": "chain_second_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_train_chain_second_moment_003_00",
+        "question": "X has mean 39 and variance 198. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_003_01",
+        "question": "X is Poisson with mean 39. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_train_chain_second_moment_003_02",
+        "question": "A Poisson process runs at 39 per minute for 10 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_train_chain_second_moment_003_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_003_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_train_chain_second_moment_003_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_second_moment_004",
+    "lineage_id": "consolidation_chain_second_moment_004",
+    "split": "validation",
+    "archetype": "chain_second_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_second_moment_004_00",
+        "question": "X has mean 82 and variance 295. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_validation_chain_second_moment_004_01",
+        "question": "X is Poisson with mean 82. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_validation_chain_second_moment_004_02",
+        "question": "A Poisson process runs at 82 per minute for 8 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_second_moment_004_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_second_moment_004_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_second_moment_004_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  },
+  {
+    "story_id": "consolidation_validation_chain_second_moment_005",
+    "lineage_id": "consolidation_chain_second_moment_005",
+    "split": "validation",
+    "archetype": "chain_second_moment",
+    "pilot_batch": false,
+    "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+    "questions": [
+      {
+        "question_id": "consolidation_validation_chain_second_moment_005_00",
+        "question": "X has mean 72 and variance 83. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_validation_chain_second_moment_005_01",
+        "question": "X is Poisson with mean 72. Set up E[X**2]."
+      },
+      {
+        "question_id": "consolidation_validation_chain_second_moment_005_02",
+        "question": "A Poisson process runs at 72 per minute for 5 minutes. X is the total count. Set up E[X**2]."
+      }
+    ],
+    "response_schema": {
+      "answers": [
+        {
+          "question_id": "consolidation_validation_chain_second_moment_005_00",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_second_moment_005_01",
+          "expression": "<fully substituted expression>"
+        },
+        {
+          "question_id": "consolidation_validation_chain_second_moment_005_02",
+          "expression": "<fully substituted expression>"
+        }
+      ]
+    }
+  }
+]

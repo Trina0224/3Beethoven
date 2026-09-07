@@ -1,0 +1,77 @@
+{
+  "protocol_status": "draft_requires_high_level_review",
+  "experiment_name": "stats_consolidation_two_start_comparison",
+  "teacher": {
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "temperature": 0,
+    "max_tokens_per_story": 400,
+    "max_attempts_per_story": 2,
+    "pilot_story_count": 24,
+    "pilot_max_calls": 48,
+    "pilot_cost_cap_usd": 0.5,
+    "full_story_count": 96,
+    "full_max_calls": 192,
+    "full_total_cost_cap_usd": 3.0,
+    "stop_if_cost_missing": true
+  },
+  "training": {
+    "starts": ["fresh_base_new_lora", "original_v15_continued_lora"],
+    "seeds": [2027, 31415],
+    "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+    "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "v15_adapter_sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
+    "historical_teacher_replay_rows": 192,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 2e-5,
+    "lr_scheduler_type": "constant",
+    "warmup_steps": 0,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "validation_every_updates": 12,
+    "max_updates": 48,
+    "max_new_tokens": 160,
+    "max_sequence_tokens": 768
+  },
+  "validation_gate": {
+    "status": "proposed_requires_decision",
+    "rule": "All suite-specific category minimum rates and candidate-validation overall rate pass at the same checkpoint.",
+    "minimum_rate_by_suite_category": {
+      "old:poisson_time": 0.5,
+      "old:poisson_scaled": 0.5,
+      "old:moment": 0.5,
+      "old:uniform_time": 0.5833333333,
+      "old:binomial": 0.9166666667,
+      "old:exactly_one": 0.75,
+      "old:at_least_one": 0.9166666667,
+      "old:interval": 0.6666666667,
+      "chain:v18_poisson_variance": 0.8333333333,
+      "chain:v18_scaled_variance": 0.5833333333,
+      "chain:v18_second_moment": 0.5,
+      "chain:v18_conditional_wait": 0.9166666667,
+      "event:exactly_one": 0.75,
+      "event:both": 0.8333333333,
+      "event:neither": 0.75,
+      "event:same": 0.75
+    },
+    "candidate_validation_overall_minimum_rate": 0.75
+  },
+  "promotion_gate": {
+    "permanent_mc_minimum": 122,
+    "evaluate_only_after_validation_selects_checkpoint": true,
+    "failure_does_not_trigger_checkpoint_reselection": true
+  },
+  "selection": {
+    "first_checkpoint_passing_all_validation_gates_stops_training": true,
+    "independent_test_used_for_selection": false,
+    "extend_if_no_checkpoint_passes": false,
+    "extra_seed_if_only_one_seed_passes": false
+  },
+  "unresolved_for_high_level_model": [
+    "Approve or change the teacher pilot and full-run cost caps.",
+    "Approve 96 candidate stories and the balance of 268 new target responses plus 192 historical replay rows.",
+    "Approve the 48-update cap and validation every 12 updates after reviewing actual accepted-row token counts.",
+    "Approve or change each category validation floor and the permanent-MC floor.",
+    "Approve the separate holdout blueprint before concrete holdout questions are frozen."
+  ]
+}

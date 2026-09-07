@@ -1,0 +1,25 @@
+{
+  "status": "blueprint_only_no_concrete_questions",
+  "owner": "future_separate_evaluation_builder",
+  "forbidden_inputs": [
+    "STATS_CONSOLIDATION_PILOT_REQUESTS.json",
+    "teacher generation prompts",
+    "teacher retry prompts"
+  ],
+  "planned_counts": {
+    "historical_eight": "8 categories x 12 = 96",
+    "combination_four": "4 categories x 24 = 96",
+    "event_four": "4 categories x 24 = 96",
+    "permanent_mc": "60 questions x 4 rotations = 240 responses"
+  },
+  "reserved_axes": [
+    "unseen story domains",
+    "unseen wording families",
+    "condition reordering",
+    "seconds/minutes and fractional minutes",
+    "percent/fraction probability",
+    "different denominators",
+    "confusable requested quantities"
+  ],
+  "leakage_rule": "No story, lineage, parameter tuple, wording family or concrete answer may enter teacher generation or training."
+}
