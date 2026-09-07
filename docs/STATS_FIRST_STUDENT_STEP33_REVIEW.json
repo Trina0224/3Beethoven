@@ -1,0 +1,35 @@
+{
+  "scope": "filtered_pilot_student",
+  "step": 33,
+  "grading_change": false,
+  "reviews": [
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_001",
+      "raw_sha256": "d0a28369821a50f5bdbadabdce5dd0fc9aa9704756a0c6df1c36b611e646f2d9",
+      "correct": false,
+      "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_003",
+      "raw_sha256": "6665bc0ae5f4ce1b9846d15437bb52e7743604136b8065f7cb4bb4ff7ebec6ab",
+      "correct": false,
+      "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_004",
+      "raw_sha256": "a3025da6c5daed0c58d1d87f2faa8de89b401baec25c3ab522eaa9dbdac262d1",
+      "correct": false,
+      "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_005",
+      "raw_sha256": "04fa105cb72db0e250339337be6396b338d258b139bf57926c133349fcb10f80",
+      "correct": false,
+      "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+    }
+  ]
+}
