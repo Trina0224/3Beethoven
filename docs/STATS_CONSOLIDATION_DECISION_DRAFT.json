@@ -1,5 +1,5 @@
 {
-  "protocol_status": "draft_requires_high_level_review",
+  "protocol_status": "changes_requested",
   "experiment_name": "stats_consolidation_two_start_comparison",
   "teacher": {
     "model": "meta-llama/llama-3.3-70b-instruct",
@@ -12,54 +12,52 @@
     "full_story_count": 96,
     "full_max_calls": 192,
     "full_total_cost_cap_usd": 3.0,
-    "stop_if_cost_missing": true
+    "stop_if_cost_missing": true,
+    "benchmark_max_calls": 24,
+    "total_max_calls_including_benchmark": 216,
+    "total_cost_cap_usd_including_benchmark": 3.0,
+    "pilot_minimum_accepted_targets": 59,
+    "pilot_planned_targets": 65,
+    "pilot_minimum_fraction_by_archetype": [
+      4,
+      5
+    ],
+    "full_minimum_fraction_by_target_category": [
+      4,
+      5
+    ],
+    "unresolved_scoring_allowed": false,
+    "reserve_worst_case_next_call_before_sending": true,
+    "full_requires_pilot_pass": true
   },
   "training": {
-    "starts": ["fresh_base_new_lora", "original_v15_continued_lora"],
-    "seeds": [2027, 31415],
+    "starts": [
+      "fresh_base_new_lora",
+      "original_v15_continued_lora"
+    ],
+    "seeds": [
+      2027,
+      31415
+    ],
     "base_model": "meta-llama/Llama-3.2-3B-Instruct",
     "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
     "v15_adapter_sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
     "historical_teacher_replay_rows": 192,
     "gradient_accumulation_steps": 8,
-    "learning_rate": 2e-5,
+    "learning_rate": 2e-05,
     "lr_scheduler_type": "constant",
     "warmup_steps": 0,
     "lora_r": 16,
     "lora_alpha": 32,
     "lora_dropout": 0.05,
-    "validation_every_updates": 12,
-    "max_updates": 48,
+    "max_updates": 49,
     "max_new_tokens": 160,
-    "max_sequence_tokens": 768
-  },
-  "validation_gate": {
-    "status": "proposed_requires_decision",
-    "rule": "All suite-specific category minimum rates and candidate-validation overall rate pass at the same checkpoint.",
-    "minimum_rate_by_suite_category": {
-      "old:poisson_time": 0.5,
-      "old:poisson_scaled": 0.5,
-      "old:moment": 0.5,
-      "old:uniform_time": 0.5833333333,
-      "old:binomial": 0.9166666667,
-      "old:exactly_one": 0.75,
-      "old:at_least_one": 0.9166666667,
-      "old:interval": 0.6666666667,
-      "chain:v18_poisson_variance": 0.8333333333,
-      "chain:v18_scaled_variance": 0.5833333333,
-      "chain:v18_second_moment": 0.5,
-      "chain:v18_conditional_wait": 0.9166666667,
-      "event:exactly_one": 0.75,
-      "event:both": 0.8333333333,
-      "event:neither": 0.75,
-      "event:same": 0.75
-    },
-    "candidate_validation_overall_minimum_rate": 0.75
-  },
-  "promotion_gate": {
-    "permanent_mc_minimum": 122,
-    "evaluate_only_after_validation_selects_checkpoint": true,
-    "failure_does_not_trigger_checkpoint_reselection": true
+    "max_sequence_tokens": 768,
+    "one_pass_only": true,
+    "actual_updates_rule": "ceil(accepted_training_rows / 8), capped at 49; never repeat rows to fill updates",
+    "validation_checkpoints_rule": "12, 24, and final actual step, deduplicated and within budget",
+    "sampler": "explicit ordered sampler; actual sampled order must match manifest",
+    "token_budget_rule": "one pass over common accepted corpus; count input and supervised tokens; same sequence plan for both starts"
   },
   "selection": {
     "first_checkpoint_passing_all_validation_gates_stops_training": true,
@@ -67,11 +65,118 @@
     "extend_if_no_checkpoint_passes": false,
     "extra_seed_if_only_one_seed_passes": false
   },
-  "unresolved_for_high_level_model": [
-    "Approve or change the teacher pilot and full-run cost caps.",
-    "Approve 96 candidate stories and the balance of 268 new target responses plus 192 historical replay rows.",
-    "Approve the 48-update cap and validation every 12 updates after reviewing actual accepted-row token counts.",
-    "Approve or change each category validation floor and the permanent-MC floor.",
-    "Approve the separate holdout blueprint before concrete holdout questions are frozen."
+  "unresolved_for_high_level_model": [],
+  "review": {
+    "document": "docs/STATS_CONSOLIDATION_REVIEW.md",
+    "reviewed_commit": "19f2f505b9efcd3819d5aafb86c3b71bb5bdc7a8",
+    "decision": "research_rules_decided_implementation_not_ready",
+    "readiness_evidence_required": true,
+    "status_strings_alone_do_not_satisfy_readiness": true
+  },
+  "superseded_draft": {
+    "validation_gate": {
+      "status": "proposed_requires_decision",
+      "rule": "All suite-specific category minimum rates and candidate-validation overall rate pass at the same checkpoint.",
+      "minimum_rate_by_suite_category": {
+        "old:poisson_time": 0.5,
+        "old:poisson_scaled": 0.5,
+        "old:moment": 0.5,
+        "old:uniform_time": 0.5833333333,
+        "old:binomial": 0.9166666667,
+        "old:exactly_one": 0.75,
+        "old:at_least_one": 0.9166666667,
+        "old:interval": 0.6666666667,
+        "chain:v18_poisson_variance": 0.8333333333,
+        "chain:v18_scaled_variance": 0.5833333333,
+        "chain:v18_second_moment": 0.5,
+        "chain:v18_conditional_wait": 0.9166666667,
+        "event:exactly_one": 0.75,
+        "event:both": 0.8333333333,
+        "event:neither": 0.75,
+        "event:same": 0.75
+      },
+      "candidate_validation_overall_minimum_rate": 0.75
+    },
+    "promotion_gate": {
+      "permanent_mc_minimum": 122,
+      "evaluate_only_after_validation_selects_checkpoint": true,
+      "failure_does_not_trigger_checkpoint_reselection": true
+    },
+    "validation_every_updates": 12,
+    "max_updates": 48
+  },
+  "validation_gate": {
+    "status": "implementation_required",
+    "baseline": "original_v15_same_questions_same_grader",
+    "all_pending_resolved_before_decision": true,
+    "suites": {
+      "old": {
+        "n": 48,
+        "per_category_n": 6,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1
+      },
+      "chain": {
+        "n": 48,
+        "per_category_n": 12,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1,
+        "allowed_depth3_loss_per_category": 0
+      },
+      "event": {
+        "n": 16,
+        "independent_stories": 4,
+        "minimum_correct_per_category": 3,
+        "minimum_correct_total": 14
+      }
+    },
+    "floor_rule": "max(0,baseline_correct-allowed_loss)",
+    "primary_credit": "math_correct and executable"
+  },
+  "promotion_gate": {
+    "status": "implementation_required",
+    "both_seeds_must_pass_validation": true,
+    "baseline": "original_v15_same_questions_same_grader",
+    "old": {
+      "n": 96,
+      "allowed_total_loss": 4,
+      "allowed_per_category_loss": 2
+    },
+    "chain": {
+      "n": 96,
+      "allowed_total_loss": 4,
+      "allowed_per_category_loss": 2
+    },
+    "event": {
+      "n": 96,
+      "minimum_correct_total": 72,
+      "minimum_gain_total": 8,
+      "exactly_one_n": 24,
+      "exactly_one_minimum_correct": 18,
+      "exactly_one_minimum_gain": 4
+    },
+    "mc": {
+      "responses": 240,
+      "independent_questions": 60,
+      "allowed_total_loss": 4,
+      "selection_metric": false
+    },
+    "ceiling_rule": "If required event gain exceeds headroom, report unattainable gate; do not change criteria after results",
+    "failure_does_not_trigger_checkpoint_reselection": true
+  },
+  "required_implementation_before_execution": [
+    "self_contained_student_and_retry_prompts",
+    "explicit_poisson_assumptions",
+    "conditional_total_wait_scope",
+    "real_wording_and_numeric_coverage",
+    "lineage_and_parameter_split_checks",
+    "frozen_holdout_and_teacher_subset",
+    "same_runtime_v15_validation_baseline",
+    "reviewed_grader_and_pending_gate",
+    "immutable_contract_and_verified_resume",
+    "actual_sampler_and_token_accounting",
+    "teacher_pilot_full_budget_gates",
+    "per_row_provenance_and_hashes",
+    "final_evaluator_zip_and_weight_manifest"
   ]
 }

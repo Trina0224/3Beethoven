@@ -1,16 +1,18 @@
 # 統計蒸餾下一輪狀態
 
-更新：2026-09-07 02:25 PDT（America/Los_Angeles）。
+更新：2026-09-07 02:42 PDT（America/Los_Angeles）。
+
+**現行狀態：開跑包審核要求修正。研究規則已定案，程式／資料尚未符合；請先讀 [審核與執行決議](STATS_CONSOLIDATION_REVIEW.md)。以下舊交付清單為當時的準備成果，不代表驗收完成。**
 
 | 項目 | 狀態 | 位置／結果 |
 |---|---|---|
 | 全案方向 | 已完成 | `STATS_PROJECT_REVIEW_2026_09_07.md` |
-| 工作包一 | 已完成 | `STATS_CONSOLIDATION_LAUNCH_PLAN.md` |
-| 96 故事候選與分割 | 已完成、未凍結 | 71 train／25 validation；268 targets |
+| 工作包一 | 已提交草案，審核要求修正 | `STATS_CONSOLIDATION_REVIEW.md` |
+| 96 情境參數組 | 待修單題條件、假設、表述與分割 | 71 train／25 validation；268 targets |
 | 教師 pilot／完整生成 | 尚未開始 | 程式在決策檔凍結前拒絕付費呼叫 |
 | 兩起點×兩 seed 訓練 | 尚未開始 | 程式在協議與驗證矩陣凍結前拒絕 GPU 訓練 |
 | 新獨立測試 | 僅完成藍圖 | 尚未產生具體題目 |
-| 高階模型決策 | 待處理 | 教材比例、成本與 pilot gate、更新預算、逐類門檻、holdout／教師對照 |
+| 高階模型決策 | 已完成 | 規模保留；pilot 59/65；一輪最多 49 步；112 題相對基準選點；24 題教師對照 |
 
 ## 已完成檔案
 
@@ -33,4 +35,4 @@
 - `python -m py_compile ...`：三個新執行腳本通過。
 - 以 draft 決策檔嘗試訓練入口：如預期在載入 GPU／教師資料前停止，錯誤為 `Protocol remains a draft; GPU training is blocked`。
 
-下一個動作：交由高階模型只審核 `STATS_CONSOLIDATION_LAUNCH_PLAN.md` 與決策 JSON 的五項決策。批准並凍結後，中階模型依 `STATS_EXECUTION_HANDOFF.md` 工作包二完成教師生成、四次訓練、測試及保存。
+下一個動作：中階模型依 `STATS_CONSOLIDATION_REVIEW.md` 修正並驗收，保存 readiness 證據後凍結執行設定；按現有授權執行 pilot。pilot／逐類接受門檻通過後繼續全批、四次訓練、測試與保存。一般工程修正不需再次交回高階模型；需要改研究規則、pilot 品質不過或四次結果完成才交回。
