@@ -24,7 +24,7 @@ def main():
  ROOT.mkdir(exist_ok=True);folder=ROOT/f'seed_{seed}';folder.mkdir(exist_ok=True)
  data=read(REPO/'docs/STATS_V0_20_FROZEN_QUESTIONS.json');assert digest(data)==DATA_SHA and data==build()
  # Only a matching saved original parent is allowed, never a replicated adapter.
- parents=[p.parent for p in Path('/kaggle/input').rglob('adapter_model.safetensors') if p.parent.parent.name=='3beethoven_stats_v0_15' and sha(p)==HASHES[15]]
+ parents=[p.parent for p in Path(os.environ.get('V20_PARENT_ROOT','/kaggle/input')).rglob('adapter_model.safetensors') if p.parent.parent.name=='3beethoven_stats_v0_15' and sha(p)==HASHES[15]]
  assert parents,'Mount saved Version 42 output containing original v15'
  parent=parents[0];token=UserSecretsClient().get_secret('HF_TOKEN');tok=AutoTokenizer.from_pretrained(parent)
  def load(path,training=False):
