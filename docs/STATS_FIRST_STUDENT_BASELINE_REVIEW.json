@@ -1,0 +1,16 @@
+{
+  "stage": "same-runtime baseline; before any first-student training updates",
+  "grader_changed": false,
+  "rows": [
+    {
+      "suite": "old",
+      "id": "v17_validation_interval_003",
+      "raw": "Expression: (55 + 129) / 2 + (129 - 55) / 4",
+      "raw_sha256": "3de5af421b40ec150b4660193c2750620f1e74c2dd8bd593c83469048a59947f",
+      "reference": "(55+129)/2+(129-55)/(2*2)",
+      "exact_value": "221/2",
+      "correct": true,
+      "reason": "The denominator 2*2 is folded to 4; center and shrinking half-width are both preserved. Exact value also agrees. This is a structural identity, not answer-only credit."
+    }
+  ]
+}
