@@ -1,0 +1,29 @@
+{
+  "scope": "filtered_pilot_student",
+  "step": 24,
+  "grading_change": false,
+  "prior_review_commit": "58bc97b4fcc8be08e33a968d7c5a46f2ab86bdb4",
+  "reviews": [
+    {
+      "correct": false,
+      "id": "v17_validation_poisson_time_001",
+      "raw_sha256": "d0a28369821a50f5bdbadabdce5dd0fc9aa9704756a0c6df1c36b611e646f2d9",
+      "reason": "19/60**107 is not 19*107/60. Exponent replaces multiplication; reject without repairing answer.",
+      "seed": 2027
+    },
+    {
+      "correct": false,
+      "id": "v17_validation_poisson_time_003",
+      "raw_sha256": "6665bc0ae5f4ce1b9846d15437bb52e7743604136b8065f7cb4bb4ff7ebec6ab",
+      "reason": "47/60**520 is not 47*520/60. Exponent replaces multiplication; reject without repairing answer.",
+      "seed": 31415
+    },
+    {
+      "correct": false,
+      "id": "v17_validation_poisson_time_005",
+      "raw_sha256": "04fa105cb72db0e250339337be6396b338d258b139bf57926c133349fcb10f80",
+      "reason": "42/60**493 is not 42*493/60. Exponent replaces multiplication; reject without repairing answer.",
+      "seed": 31415
+    }
+  ]
+}
