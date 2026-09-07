@@ -1,0 +1,427 @@
+{
+  "files": {
+    "v19_seed_2027/epoch_1_old_test.json": {
+      "n": 96,
+      "automatic": 56,
+      "reviewed": 56,
+      "pending": 0
+    },
+    "v19_seed_2027/v15_old_validation.json": {
+      "n": 48,
+      "automatic": 32,
+      "reviewed": 33,
+      "pending": 0
+    },
+    "v19_seed_2027/epoch_1_new_test.json": {
+      "n": 96,
+      "automatic": 95,
+      "reviewed": 95,
+      "pending": 0
+    },
+    "v19_seed_2027/v15_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed": 72,
+      "pending": 0
+    },
+    "v19_seed_2027/v15_new_validation.json": {
+      "n": 48,
+      "automatic": 38,
+      "reviewed": 38,
+      "pending": 0
+    },
+    "v19_seed_2027/v15_old_test.json": {
+      "n": 96,
+      "automatic": 58,
+      "reviewed": 59,
+      "pending": 0
+    },
+    "v19_seed_2027/anchor_mc.json": {
+      "n": 240,
+      "automatic": 127,
+      "reviewed": 127,
+      "pending": 0
+    },
+    "v19_seed_2027/perturbation.json": {
+      "n": 88,
+      "automatic": 71,
+      "reviewed": 71,
+      "pending": 0
+    },
+    "v19_seed_2027/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 56,
+      "reviewed": 56,
+      "pending": 0
+    },
+    "v19_seed_2027/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 95,
+      "reviewed": 95,
+      "pending": 0
+    },
+    "v19_seed_1919/epoch_1_old_test.json": {
+      "n": 96,
+      "automatic": 56,
+      "reviewed": 56,
+      "pending": 0
+    },
+    "v19_seed_1919/v15_old_validation.json": {
+      "n": 48,
+      "automatic": 32,
+      "reviewed": 33,
+      "pending": 0
+    },
+    "v19_seed_1919/epoch_1_new_test.json": {
+      "n": 96,
+      "automatic": 96,
+      "reviewed": 96,
+      "pending": 0
+    },
+    "v19_seed_1919/v15_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed": 72,
+      "pending": 0
+    },
+    "v19_seed_1919/v15_new_validation.json": {
+      "n": 48,
+      "automatic": 38,
+      "reviewed": 38,
+      "pending": 0
+    },
+    "v19_seed_1919/v15_old_test.json": {
+      "n": 96,
+      "automatic": 58,
+      "reviewed": 59,
+      "pending": 0
+    },
+    "v19_seed_1919/anchor_mc.json": {
+      "n": 240,
+      "automatic": 127,
+      "reviewed": 127,
+      "pending": 0
+    },
+    "v19_seed_1919/perturbation.json": {
+      "n": 88,
+      "automatic": 71,
+      "reviewed": 71,
+      "pending": 0
+    },
+    "v19_seed_1919/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 56,
+      "reviewed": 56,
+      "pending": 0
+    },
+    "v19_seed_1919/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 96,
+      "reviewed": 96,
+      "pending": 0
+    },
+    "v15_seed_2027/v15_old.json": {
+      "n": 240,
+      "automatic": 125,
+      "reviewed": 125,
+      "pending": 0
+    },
+    "v15_seed_2027/anchor_mc.json": {
+      "n": 240,
+      "automatic": 125,
+      "reviewed": 125,
+      "pending": 0
+    },
+    "v15_seed_2027/perturbation.json": {
+      "n": 88,
+      "automatic": 59,
+      "reviewed": 59,
+      "pending": 0
+    },
+    "v15_seed_2027/v15_formulation.json": {
+      "n": 64,
+      "automatic": 36,
+      "reviewed": 36,
+      "pending": 0
+    },
+    "v15_seed_2027/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 53,
+      "reviewed": 55,
+      "pending": 0
+    },
+    "v15_seed_2027/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed": 72,
+      "pending": 0
+    },
+    "v15_seed_1919/v15_old.json": {
+      "n": 240,
+      "automatic": 127,
+      "reviewed": 127,
+      "pending": 0
+    },
+    "v15_seed_1919/anchor_mc.json": {
+      "n": 240,
+      "automatic": 127,
+      "reviewed": 127,
+      "pending": 0
+    },
+    "v15_seed_1919/perturbation.json": {
+      "n": 88,
+      "automatic": 51,
+      "reviewed": 51,
+      "pending": 0
+    },
+    "v15_seed_1919/v15_formulation.json": {
+      "n": 64,
+      "automatic": 37,
+      "reviewed": 38,
+      "pending": 0
+    },
+    "v15_seed_1919/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 51,
+      "reviewed": 52,
+      "pending": 0
+    },
+    "v15_seed_1919/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 61,
+      "reviewed": 61,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_1_old_test.json": {
+      "n": 96,
+      "automatic": 47,
+      "reviewed": 48,
+      "pending": 0
+    },
+    "v19_seed_31415/v15_old_validation.json": {
+      "n": 48,
+      "automatic": 32,
+      "reviewed": 33,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_1_new_test.json": {
+      "n": 96,
+      "automatic": 96,
+      "reviewed": 96,
+      "pending": 0
+    },
+    "v19_seed_31415/v15_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed": 72,
+      "pending": 0
+    },
+    "v19_seed_31415/v15_new_validation.json": {
+      "n": 48,
+      "automatic": 38,
+      "reviewed": 38,
+      "pending": 0
+    },
+    "v19_seed_31415/v15_old_test.json": {
+      "n": 96,
+      "automatic": 58,
+      "reviewed": 59,
+      "pending": 0
+    },
+    "v19_seed_31415/anchor_mc.json": {
+      "n": 240,
+      "automatic": 128,
+      "reviewed": 128,
+      "pending": 0
+    },
+    "v19_seed_31415/perturbation.json": {
+      "n": 88,
+      "automatic": 69,
+      "reviewed": 70,
+      "pending": 0
+    },
+    "v19_seed_31415/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 47,
+      "reviewed": 48,
+      "pending": 0
+    },
+    "v19_seed_31415/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 96,
+      "reviewed": 96,
+      "pending": 0
+    },
+    "v15_seed_31415/v15_old.json": {
+      "n": 240,
+      "automatic": 126,
+      "reviewed": 126,
+      "pending": 0
+    },
+    "v15_seed_31415/anchor_mc.json": {
+      "n": 240,
+      "automatic": 126,
+      "reviewed": 126,
+      "pending": 0
+    },
+    "v15_seed_31415/perturbation.json": {
+      "n": 88,
+      "automatic": 55,
+      "reviewed": 55,
+      "pending": 0
+    },
+    "v15_seed_31415/v15_formulation.json": {
+      "n": 64,
+      "automatic": 33,
+      "reviewed": 34,
+      "pending": 0
+    },
+    "v15_seed_31415/anchor_old_test.json": {
+      "n": 96,
+      "automatic": 47,
+      "reviewed": 49,
+      "pending": 0
+    },
+    "v15_seed_31415/anchor_new_test.json": {
+      "n": 96,
+      "automatic": 72,
+      "reviewed": 72,
+      "pending": 0
+    },
+    "v19_seed_2027/epoch_1/old_validation.json": {
+      "n": 48,
+      "automatic": 37,
+      "reviewed": 37,
+      "pending": 0
+    },
+    "v19_seed_2027/epoch_1/new_validation.json": {
+      "n": 48,
+      "automatic": 48,
+      "reviewed": 48,
+      "pending": 0
+    },
+    "v19_seed_2027/epoch_2/old_validation.json": {
+      "n": 48,
+      "automatic": 32,
+      "reviewed": 32,
+      "pending": 0
+    },
+    "v19_seed_2027/epoch_2/new_validation.json": {
+      "n": 48,
+      "automatic": 48,
+      "reviewed": 48,
+      "pending": 0
+    },
+    "v19_seed_1919/epoch_1/old_validation.json": {
+      "n": 48,
+      "automatic": 27,
+      "reviewed": 28,
+      "pending": 0
+    },
+    "v19_seed_1919/epoch_1/new_validation.json": {
+      "n": 48,
+      "automatic": 47,
+      "reviewed": 47,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_1/old_validation.json": {
+      "n": 48,
+      "automatic": 31,
+      "reviewed": 31,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_1/new_validation.json": {
+      "n": 48,
+      "automatic": 47,
+      "reviewed": 47,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_2/old_validation.json": {
+      "n": 48,
+      "automatic": 34,
+      "reviewed": 34,
+      "pending": 0
+    },
+    "v19_seed_31415/epoch_2/new_validation.json": {
+      "n": 48,
+      "automatic": 47,
+      "reviewed": 47,
+      "pending": 0
+    },
+    "v15_seed_1919/anchor_mc_original_runner.json": {
+      "n": 240,
+      "automatic": 127,
+      "reviewed": 127,
+      "pending": 0
+    },
+    "v15_seed_2027/anchor_mc_original_runner.json": {
+      "n": 240,
+      "automatic": 125,
+      "reviewed": 125,
+      "pending": 0
+    },
+    "v15_seed_31415/anchor_mc_original_runner.json": {
+      "n": 240,
+      "automatic": 126,
+      "reviewed": 126,
+      "pending": 0
+    }
+  },
+  "pairs": {
+    "v19_seed_1919": {
+      "old_test": {
+        "parent": 59,
+        "candidate": 56,
+        "gains": 12,
+        "losses": 15,
+        "discordant": 27,
+        "exact_mcnemar_two_sided": 0.7011080384254456
+      },
+      "new_test": {
+        "parent": 72,
+        "candidate": 96,
+        "gains": 24,
+        "losses": 0,
+        "discordant": 24,
+        "exact_mcnemar_two_sided": 1.1920928955078125e-07
+      }
+    },
+    "v19_seed_2027": {
+      "old_test": {
+        "parent": 59,
+        "candidate": 56,
+        "gains": 4,
+        "losses": 7,
+        "discordant": 11,
+        "exact_mcnemar_two_sided": 0.548828125
+      },
+      "new_test": {
+        "parent": 72,
+        "candidate": 95,
+        "gains": 23,
+        "losses": 0,
+        "discordant": 23,
+        "exact_mcnemar_two_sided": 2.384185791015625e-07
+      }
+    },
+    "v19_seed_31415": {
+      "old_test": {
+        "parent": 59,
+        "candidate": 48,
+        "gains": 4,
+        "losses": 15,
+        "discordant": 19,
+        "exact_mcnemar_two_sided": 0.0192108154296875
+      },
+      "new_test": {
+        "parent": 72,
+        "candidate": 96,
+        "gains": 24,
+        "losses": 0,
+        "discordant": 24,
+        "exact_mcnemar_two_sided": 1.1920928955078125e-07
+      }
+    }
+  },
+  "note": "Exploratory paired question comparisons on exposed fixed sets; no multiplicity correction; do not pool repeated parent responses or rotated MC as independent questions."
+}

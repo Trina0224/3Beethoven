@@ -1,0 +1,32 @@
+{
+  "backup_receipt": {
+    "bytes": 1507467761,
+    "sha256": "9a81a9445754ee17e66c521e3596716f9a755106f86d6d06eba286ff953acb03",
+    "crc_verified": true,
+    "optimizer_checkpoints": "preserved in formal output; excluded from compact zip"
+  },
+  "mc_provenance": {
+    "training_updates": 0,
+    "teacher_calls": 0,
+    "reason": "Use direct PeftModel inference consistently; original v15 runner prepares kbit model during its own MC evaluation",
+    "original_training_output_preserved": true
+  },
+  "omitted_tokenizer_metadata": {
+    "v19_seed_2027/epoch_1/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v19_seed_2027/epoch_1/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v19_seed_2027/epoch_2/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v19_seed_2027/epoch_2/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v19_seed_1919/epoch_1/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v19_seed_1919/epoch_1/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v15_seed_2027/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v15_seed_2027/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v15_seed_1919/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v15_seed_1919/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v19_seed_31415/epoch_1/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v19_seed_31415/epoch_1/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v19_seed_31415/epoch_2/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v19_seed_31415/epoch_2/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a",
+    "v15_seed_31415/adapter/tokenizer_config.json": "5751e14b1413fca025acbaecc108250d739b4c0a22c2e5b66a1f619afebd30a3",
+    "v15_seed_31415/adapter/tokenizer.json": "dc6096121cb71fd49c04ce4e6be8676e0b3d485bafbead8a6afc6163f265f53a"
+  }
+}

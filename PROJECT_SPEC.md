@@ -1,5 +1,7 @@
 # 3Beethoven Project Specification
 
+Latest: six training-seed runs, harmonized MC, and all pending-answer reviews are complete. See [final results](docs/STATS_SEED_REPLICATION_REPORT.md). No new training is running. Earlier unexecuted-status paragraphs below are historical.
+
 ## Active statistics pilot addendum — 2026-09-06 PDT
 
 Latest completed analysis: **Kaggle Version 38**, Successful, 656 fixed-weight responses, zero new training or teacher calls. v19 scores 24/24 on original and magnitude probes, but 15/24 on paraphrases; v15 scores 18/24, 19/24, and 6/24 respectively. Same-runtime permanent MC is 126/240 vs 127/240. No promotion; training seed replication remains unexecuted. See [analysis report](docs/STATS_V19_ANALYSIS_REPORT.md).

@@ -1,0 +1,1190 @@
+{
+  "runs": [
+    {
+      "family": "v15",
+      "seed": 1919,
+      "automatic": {
+        "anchor_old_test": 51,
+        "anchor_new_test": 61,
+        "perturbation": 51,
+        "mc": 127
+      },
+      "reviewed": {
+        "anchor_old_test": 52,
+        "anchor_new_test": 61,
+        "perturbation": 51,
+        "mc": 127,
+        "mc_all_four": 20
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 12,
+          "binomial": 12,
+          "exactly_one": 10,
+          "interval": 3,
+          "moment": 0,
+          "poisson_scaled": 5,
+          "poisson_time": 5,
+          "uniform_time": 5
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 17,
+          "v18_scaled_variance": 16,
+          "v18_second_moment": 4
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 3,
+          "v18_conditional_wait": 17,
+          "v18_poisson_variance": 11,
+          "v18_scaled_variance": 10,
+          "v18_second_moment": 2
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 3,
+        "magnitude": 17,
+        "original": 14,
+        "paraphrase": 9
+      },
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_1919/checkpoints/checkpoint-75",
+        "best_validation_loss": 0.059541888535022736,
+        "training_loss": 0.07458710650602976
+      },
+      "adapter_sha256": "da061826d3cf3a7aa4ff667bb8b7e7b13b4d0f06ea9014c59cb696efb722cd78",
+      "selection": {
+        "rule": "validation loss",
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_1919/checkpoints/checkpoint-75"
+      }
+    },
+    {
+      "family": "v15",
+      "seed": 2027,
+      "automatic": {
+        "anchor_old_test": 53,
+        "anchor_new_test": 72,
+        "perturbation": 59,
+        "mc": 125
+      },
+      "reviewed": {
+        "anchor_old_test": 55,
+        "anchor_new_test": 72,
+        "perturbation": 59,
+        "mc": 125,
+        "mc_all_four": 19
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 12,
+          "binomial": 12,
+          "exactly_one": 11,
+          "interval": 6,
+          "moment": 0,
+          "poisson_scaled": 2,
+          "poisson_time": 7,
+          "uniform_time": 5
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 20,
+          "v18_scaled_variance": 16,
+          "v18_second_moment": 12
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 0,
+          "v18_conditional_wait": 17,
+          "v18_poisson_variance": 16,
+          "v18_scaled_variance": 10,
+          "v18_second_moment": 8
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 0,
+        "magnitude": 20,
+        "original": 19,
+        "paraphrase": 12
+      },
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_2027/checkpoints/checkpoint-50",
+        "best_validation_loss": 0.05688030645251274,
+        "training_loss": 0.07116824915011724
+      },
+      "adapter_sha256": "16f34085ade761aa4b018d2c33c6e19d2e1f7845643a7b729cb492f0c63bc342",
+      "selection": {
+        "rule": "validation loss",
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_2027/checkpoints/checkpoint-50"
+      }
+    },
+    {
+      "family": "v15",
+      "seed": 31415,
+      "automatic": {
+        "anchor_old_test": 47,
+        "anchor_new_test": 72,
+        "perturbation": 55,
+        "mc": 126
+      },
+      "reviewed": {
+        "anchor_old_test": 49,
+        "anchor_new_test": 72,
+        "perturbation": 55,
+        "mc": 126,
+        "mc_all_four": 19
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 11,
+          "binomial": 12,
+          "exactly_one": 7,
+          "interval": 7,
+          "moment": 0,
+          "poisson_scaled": 1,
+          "poisson_time": 1,
+          "uniform_time": 10
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 21,
+          "v18_scaled_variance": 16,
+          "v18_second_moment": 11
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 0,
+          "v18_conditional_wait": 17,
+          "v18_poisson_variance": 15,
+          "v18_scaled_variance": 9,
+          "v18_second_moment": 6
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 0,
+        "magnitude": 19,
+        "original": 18,
+        "paraphrase": 10
+      },
+      "training": {
+        "steps": 75,
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_31415/checkpoints/checkpoint-25",
+        "best_validation_loss": 0.06012219563126564,
+        "training_loss": 0.06954589545726776
+      },
+      "adapter_sha256": "20bd319a29ff561b853ae80edd70395f27eea6d4b90ed666a67e6bcc97d885f6",
+      "selection": {
+        "rule": "validation loss",
+        "best_checkpoint": "/kaggle/working/3beethoven_seed_replication/v15_seed_31415/checkpoints/checkpoint-25"
+      }
+    },
+    {
+      "family": "v19",
+      "seed": 1919,
+      "automatic": {
+        "anchor_old_test": 56,
+        "anchor_new_test": 96,
+        "perturbation": 71,
+        "mc": 127
+      },
+      "reviewed": {
+        "anchor_old_test": 56,
+        "anchor_new_test": 96,
+        "perturbation": 71,
+        "mc": 127,
+        "mc_all_four": 20
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 12,
+          "binomial": 12,
+          "exactly_one": 1,
+          "interval": 6,
+          "moment": 0,
+          "poisson_scaled": 6,
+          "poisson_time": 8,
+          "uniform_time": 11
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 24,
+          "v18_scaled_variance": 24,
+          "v18_second_moment": 24
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 0,
+          "v18_conditional_wait": 16,
+          "v18_poisson_variance": 17,
+          "v18_scaled_variance": 16,
+          "v18_second_moment": 14
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 0,
+        "magnitude": 24,
+        "original": 24,
+        "paraphrase": 15
+      },
+      "training": {
+        "steps": 60,
+        "loss": 0.11378367245197296,
+        "logs": [
+          {
+            "loss": 0.32043205897013344,
+            "grad_norm": 2.016740322113037,
+            "learning_rate": 2e-05,
+            "epoch": 0.25,
+            "step": 15
+          },
+          {
+            "loss": 0.07267712752024333,
+            "grad_norm": 0.6272928714752197,
+            "learning_rate": 2e-05,
+            "epoch": 0.5,
+            "step": 30
+          },
+          {
+            "loss": 0.031410396099090576,
+            "grad_norm": 2.2835795879364014,
+            "learning_rate": 2e-05,
+            "epoch": 0.75,
+            "step": 45
+          },
+          {
+            "loss": 0.03061510721842448,
+            "grad_norm": 2.333562135696411,
+            "learning_rate": 2e-05,
+            "epoch": 1.0,
+            "step": 60
+          },
+          {
+            "train_runtime": 408.9284,
+            "train_samples_per_second": 4.695,
+            "train_steps_per_second": 0.587,
+            "total_flos": 1008371277318144.0,
+            "train_loss": 0.11378367245197296,
+            "epoch": 1.0,
+            "step": 60
+          }
+        ]
+      },
+      "adapter_sha256": "9fe491ee18bd6e0b9da03ab0fa6b991d583cf6041364f4a742e00fd9f7f75a18",
+      "selection": {
+        "selected_epoch": null,
+        "diagnostic_epoch": 1,
+        "rule": "Validation only; no candidate passing retention keeps v15."
+      }
+    },
+    {
+      "family": "v19",
+      "seed": 2027,
+      "automatic": {
+        "anchor_old_test": 56,
+        "anchor_new_test": 95,
+        "perturbation": 71,
+        "mc": 127
+      },
+      "reviewed": {
+        "anchor_old_test": 56,
+        "anchor_new_test": 95,
+        "perturbation": 71,
+        "mc": 127,
+        "mc_all_four": 19
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 12,
+          "binomial": 12,
+          "exactly_one": 7,
+          "interval": 8,
+          "moment": 0,
+          "poisson_scaled": 1,
+          "poisson_time": 9,
+          "uniform_time": 7
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 24,
+          "v18_scaled_variance": 24,
+          "v18_second_moment": 23
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 0,
+          "v18_conditional_wait": 16,
+          "v18_poisson_variance": 18,
+          "v18_scaled_variance": 15,
+          "v18_second_moment": 14
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 0,
+        "magnitude": 24,
+        "original": 24,
+        "paraphrase": 15
+      },
+      "training": {
+        "steps": 120,
+        "loss": 0.05192171546320121,
+        "logs": [
+          {
+            "loss": 0.2738039016723633,
+            "grad_norm": 1.606123924255371,
+            "learning_rate": 2e-05,
+            "epoch": 0.25,
+            "step": 15
+          },
+          {
+            "loss": 0.04633891185124715,
+            "grad_norm": 0.7889960408210754,
+            "learning_rate": 2e-05,
+            "epoch": 0.5,
+            "step": 30
+          },
+          {
+            "loss": 0.020006094376246134,
+            "grad_norm": 2.0184712409973145,
+            "learning_rate": 2e-05,
+            "epoch": 0.75,
+            "step": 45
+          },
+          {
+            "loss": 0.027385898431142173,
+            "grad_norm": 0.05485164374113083,
+            "learning_rate": 2e-05,
+            "epoch": 1.0,
+            "step": 60
+          },
+          {
+            "loss": 0.006999422113100688,
+            "grad_norm": 0.32272252440452576,
+            "learning_rate": 2e-05,
+            "epoch": 1.25,
+            "step": 75
+          },
+          {
+            "loss": 0.008882821599642435,
+            "grad_norm": 0.9060942530632019,
+            "learning_rate": 2e-05,
+            "epoch": 1.5,
+            "step": 90
+          },
+          {
+            "loss": 0.013907818992932638,
+            "grad_norm": 0.04950733855366707,
+            "learning_rate": 2e-05,
+            "epoch": 1.75,
+            "step": 105
+          },
+          {
+            "loss": 0.01804885466893514,
+            "grad_norm": 0.008132604882121086,
+            "learning_rate": 2e-05,
+            "epoch": 2.0,
+            "step": 120
+          },
+          {
+            "train_runtime": 828.6519,
+            "train_samples_per_second": 2.317,
+            "train_steps_per_second": 0.29,
+            "total_flos": 2016742554636288.0,
+            "train_loss": 0.05192171546320121,
+            "epoch": 2.0,
+            "step": 120
+          }
+        ]
+      },
+      "adapter_sha256": "c0e22e186bc33265ca1bb9cb3145f46929edc48342ae21ddd934580d28bb57f1",
+      "selection": {
+        "selected_epoch": 1,
+        "diagnostic_epoch": null,
+        "rule": "Validation only; no candidate passing retention keeps v15."
+      }
+    },
+    {
+      "family": "v19",
+      "seed": 31415,
+      "automatic": {
+        "anchor_old_test": 47,
+        "anchor_new_test": 96,
+        "perturbation": 69,
+        "mc": 128
+      },
+      "reviewed": {
+        "anchor_old_test": 48,
+        "anchor_new_test": 96,
+        "perturbation": 70,
+        "mc": 128,
+        "mc_all_four": 20
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": 12,
+          "binomial": 12,
+          "exactly_one": 4,
+          "interval": 9,
+          "moment": 0,
+          "poisson_scaled": 1,
+          "poisson_time": 6,
+          "uniform_time": 4
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": 24,
+          "v18_poisson_variance": 24,
+          "v18_scaled_variance": 24,
+          "v18_second_moment": 24
+        },
+        "perturbation": {
+          "at_least_one": 8,
+          "exactly_one": 0,
+          "v18_conditional_wait": 16,
+          "v18_poisson_variance": 17,
+          "v18_scaled_variance": 15,
+          "v18_second_moment": 14
+        }
+      },
+      "by_variant": {
+        "at_least_one": 8,
+        "exactly_one": 0,
+        "magnitude": 24,
+        "original": 24,
+        "paraphrase": 14
+      },
+      "training": {
+        "steps": 120,
+        "loss": 0.051851900604863964,
+        "logs": [
+          {
+            "loss": 0.267998472849528,
+            "grad_norm": 2.0479328632354736,
+            "learning_rate": 2e-05,
+            "epoch": 0.25,
+            "step": 15
+          },
+          {
+            "loss": 0.04173174699147542,
+            "grad_norm": 0.347135990858078,
+            "learning_rate": 2e-05,
+            "epoch": 0.5,
+            "step": 30
+          },
+          {
+            "loss": 0.03097976843516032,
+            "grad_norm": 1.5517256259918213,
+            "learning_rate": 2e-05,
+            "epoch": 0.75,
+            "step": 45
+          },
+          {
+            "loss": 0.02544132669766744,
+            "grad_norm": 1.9317657947540283,
+            "learning_rate": 2e-05,
+            "epoch": 1.0,
+            "step": 60
+          },
+          {
+            "loss": 0.007479847470919291,
+            "grad_norm": 0.01392008550465107,
+            "learning_rate": 2e-05,
+            "epoch": 1.25,
+            "step": 75
+          },
+          {
+            "loss": 0.014740021030108134,
+            "grad_norm": 2.426642417907715,
+            "learning_rate": 2e-05,
+            "epoch": 1.5,
+            "step": 90
+          },
+          {
+            "loss": 0.0042160724600156145,
+            "grad_norm": 0.07948904484510422,
+            "learning_rate": 2e-05,
+            "epoch": 1.75,
+            "step": 105
+          },
+          {
+            "loss": 0.022227948904037474,
+            "grad_norm": 0.010656454600393772,
+            "learning_rate": 2e-05,
+            "epoch": 2.0,
+            "step": 120
+          },
+          {
+            "train_runtime": 825.0055,
+            "train_samples_per_second": 2.327,
+            "train_steps_per_second": 0.291,
+            "total_flos": 2016742554636288.0,
+            "train_loss": 0.051851900604863964,
+            "epoch": 2.0,
+            "step": 120
+          }
+        ]
+      },
+      "adapter_sha256": "94374a2c80cdf9220296ff9dfcf026169a6a22f4383afff3bf5744570687ef77",
+      "selection": {
+        "selected_epoch": 1,
+        "diagnostic_epoch": null,
+        "rule": "Validation only; no candidate passing retention keeps v15."
+      }
+    }
+  ],
+  "aggregates": {
+    "v15": {
+      "scores": {
+        "anchor_old_test": {
+          "values": [
+            52,
+            55,
+            49
+          ],
+          "mean": 52,
+          "sample_sd": 3.0,
+          "min": 49,
+          "max": 55
+        },
+        "anchor_new_test": {
+          "values": [
+            61,
+            72,
+            72
+          ],
+          "mean": 68.33333333333333,
+          "sample_sd": 6.3508529610858835,
+          "min": 61,
+          "max": 72
+        },
+        "perturbation": {
+          "values": [
+            51,
+            59,
+            55
+          ],
+          "mean": 55,
+          "sample_sd": 4.0,
+          "min": 51,
+          "max": 59
+        },
+        "mc": {
+          "values": [
+            127,
+            125,
+            126
+          ],
+          "mean": 126,
+          "sample_sd": 1.0,
+          "min": 125,
+          "max": 127
+        },
+        "mc_all_four": {
+          "values": [
+            20,
+            19,
+            19
+          ],
+          "mean": 19.333333333333332,
+          "sample_sd": 0.5773502691896257,
+          "min": 19,
+          "max": 20
+        }
+      },
+      "variants": {
+        "at_least_one": {
+          "values": [
+            8,
+            8,
+            8
+          ],
+          "mean": 8,
+          "sample_sd": 0.0,
+          "min": 8,
+          "max": 8
+        },
+        "exactly_one": {
+          "values": [
+            3,
+            0,
+            0
+          ],
+          "mean": 1,
+          "sample_sd": 1.7320508075688772,
+          "min": 0,
+          "max": 3
+        },
+        "magnitude": {
+          "values": [
+            17,
+            20,
+            19
+          ],
+          "mean": 18.666666666666668,
+          "sample_sd": 1.5275252316519468,
+          "min": 17,
+          "max": 20
+        },
+        "original": {
+          "values": [
+            14,
+            19,
+            18
+          ],
+          "mean": 17,
+          "sample_sd": 2.6457513110645907,
+          "min": 14,
+          "max": 19
+        },
+        "paraphrase": {
+          "values": [
+            9,
+            12,
+            10
+          ],
+          "mean": 10.333333333333334,
+          "sample_sd": 1.5275252316519468,
+          "min": 9,
+          "max": 12
+        }
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": {
+            "values": [
+              12,
+              12,
+              11
+            ],
+            "mean": 11.666666666666666,
+            "sample_sd": 0.5773502691896257,
+            "min": 11,
+            "max": 12
+          },
+          "binomial": {
+            "values": [
+              12,
+              12,
+              12
+            ],
+            "mean": 12,
+            "sample_sd": 0.0,
+            "min": 12,
+            "max": 12
+          },
+          "exactly_one": {
+            "values": [
+              10,
+              11,
+              7
+            ],
+            "mean": 9.333333333333334,
+            "sample_sd": 2.0816659994661326,
+            "min": 7,
+            "max": 11
+          },
+          "interval": {
+            "values": [
+              3,
+              6,
+              7
+            ],
+            "mean": 5.333333333333333,
+            "sample_sd": 2.0816659994661326,
+            "min": 3,
+            "max": 7
+          },
+          "moment": {
+            "values": [
+              0,
+              0,
+              0
+            ],
+            "mean": 0,
+            "sample_sd": 0.0,
+            "min": 0,
+            "max": 0
+          },
+          "poisson_scaled": {
+            "values": [
+              5,
+              2,
+              1
+            ],
+            "mean": 2.6666666666666665,
+            "sample_sd": 2.0816659994661326,
+            "min": 1,
+            "max": 5
+          },
+          "poisson_time": {
+            "values": [
+              5,
+              7,
+              1
+            ],
+            "mean": 4.333333333333333,
+            "sample_sd": 3.0550504633038935,
+            "min": 1,
+            "max": 7
+          },
+          "uniform_time": {
+            "values": [
+              5,
+              5,
+              10
+            ],
+            "mean": 6.666666666666667,
+            "sample_sd": 2.8867513459481287,
+            "min": 5,
+            "max": 10
+          }
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": {
+            "values": [
+              24,
+              24,
+              24
+            ],
+            "mean": 24,
+            "sample_sd": 0.0,
+            "min": 24,
+            "max": 24
+          },
+          "v18_poisson_variance": {
+            "values": [
+              17,
+              20,
+              21
+            ],
+            "mean": 19.333333333333332,
+            "sample_sd": 2.0816659994661326,
+            "min": 17,
+            "max": 21
+          },
+          "v18_scaled_variance": {
+            "values": [
+              16,
+              16,
+              16
+            ],
+            "mean": 16,
+            "sample_sd": 0.0,
+            "min": 16,
+            "max": 16
+          },
+          "v18_second_moment": {
+            "values": [
+              4,
+              12,
+              11
+            ],
+            "mean": 9,
+            "sample_sd": 4.358898943540674,
+            "min": 4,
+            "max": 12
+          }
+        },
+        "perturbation": {
+          "at_least_one": {
+            "values": [
+              8,
+              8,
+              8
+            ],
+            "mean": 8,
+            "sample_sd": 0.0,
+            "min": 8,
+            "max": 8
+          },
+          "exactly_one": {
+            "values": [
+              3,
+              0,
+              0
+            ],
+            "mean": 1,
+            "sample_sd": 1.7320508075688772,
+            "min": 0,
+            "max": 3
+          },
+          "v18_conditional_wait": {
+            "values": [
+              17,
+              17,
+              17
+            ],
+            "mean": 17,
+            "sample_sd": 0.0,
+            "min": 17,
+            "max": 17
+          },
+          "v18_poisson_variance": {
+            "values": [
+              11,
+              16,
+              15
+            ],
+            "mean": 14,
+            "sample_sd": 2.6457513110645907,
+            "min": 11,
+            "max": 16
+          },
+          "v18_scaled_variance": {
+            "values": [
+              10,
+              10,
+              9
+            ],
+            "mean": 9.666666666666666,
+            "sample_sd": 0.5773502691896257,
+            "min": 9,
+            "max": 10
+          },
+          "v18_second_moment": {
+            "values": [
+              2,
+              8,
+              6
+            ],
+            "mean": 5.333333333333333,
+            "sample_sd": 3.0550504633038935,
+            "min": 2,
+            "max": 8
+          }
+        }
+      }
+    },
+    "v19": {
+      "scores": {
+        "anchor_old_test": {
+          "values": [
+            56,
+            56,
+            48
+          ],
+          "mean": 53.333333333333336,
+          "sample_sd": 4.618802153517006,
+          "min": 48,
+          "max": 56
+        },
+        "anchor_new_test": {
+          "values": [
+            96,
+            95,
+            96
+          ],
+          "mean": 95.66666666666667,
+          "sample_sd": 0.5773502691896257,
+          "min": 95,
+          "max": 96
+        },
+        "perturbation": {
+          "values": [
+            71,
+            71,
+            70
+          ],
+          "mean": 70.66666666666667,
+          "sample_sd": 0.5773502691896257,
+          "min": 70,
+          "max": 71
+        },
+        "mc": {
+          "values": [
+            127,
+            127,
+            128
+          ],
+          "mean": 127.33333333333333,
+          "sample_sd": 0.5773502691896257,
+          "min": 127,
+          "max": 128
+        },
+        "mc_all_four": {
+          "values": [
+            20,
+            19,
+            20
+          ],
+          "mean": 19.666666666666668,
+          "sample_sd": 0.5773502691896257,
+          "min": 19,
+          "max": 20
+        }
+      },
+      "variants": {
+        "at_least_one": {
+          "values": [
+            8,
+            8,
+            8
+          ],
+          "mean": 8,
+          "sample_sd": 0.0,
+          "min": 8,
+          "max": 8
+        },
+        "exactly_one": {
+          "values": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "sample_sd": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "magnitude": {
+          "values": [
+            24,
+            24,
+            24
+          ],
+          "mean": 24,
+          "sample_sd": 0.0,
+          "min": 24,
+          "max": 24
+        },
+        "original": {
+          "values": [
+            24,
+            24,
+            24
+          ],
+          "mean": 24,
+          "sample_sd": 0.0,
+          "min": 24,
+          "max": 24
+        },
+        "paraphrase": {
+          "values": [
+            15,
+            15,
+            14
+          ],
+          "mean": 14.666666666666666,
+          "sample_sd": 0.5773502691896257,
+          "min": 14,
+          "max": 15
+        }
+      },
+      "by_family": {
+        "anchor_old_test": {
+          "at_least_one": {
+            "values": [
+              12,
+              12,
+              12
+            ],
+            "mean": 12,
+            "sample_sd": 0.0,
+            "min": 12,
+            "max": 12
+          },
+          "binomial": {
+            "values": [
+              12,
+              12,
+              12
+            ],
+            "mean": 12,
+            "sample_sd": 0.0,
+            "min": 12,
+            "max": 12
+          },
+          "exactly_one": {
+            "values": [
+              1,
+              7,
+              4
+            ],
+            "mean": 4,
+            "sample_sd": 3.0,
+            "min": 1,
+            "max": 7
+          },
+          "interval": {
+            "values": [
+              6,
+              8,
+              9
+            ],
+            "mean": 7.666666666666667,
+            "sample_sd": 1.5275252316519468,
+            "min": 6,
+            "max": 9
+          },
+          "moment": {
+            "values": [
+              0,
+              0,
+              0
+            ],
+            "mean": 0,
+            "sample_sd": 0.0,
+            "min": 0,
+            "max": 0
+          },
+          "poisson_scaled": {
+            "values": [
+              6,
+              1,
+              1
+            ],
+            "mean": 2.6666666666666665,
+            "sample_sd": 2.8867513459481287,
+            "min": 1,
+            "max": 6
+          },
+          "poisson_time": {
+            "values": [
+              8,
+              9,
+              6
+            ],
+            "mean": 7.666666666666667,
+            "sample_sd": 1.5275252316519468,
+            "min": 6,
+            "max": 9
+          },
+          "uniform_time": {
+            "values": [
+              11,
+              7,
+              4
+            ],
+            "mean": 7.333333333333333,
+            "sample_sd": 3.511884584284246,
+            "min": 4,
+            "max": 11
+          }
+        },
+        "anchor_new_test": {
+          "v18_conditional_wait": {
+            "values": [
+              24,
+              24,
+              24
+            ],
+            "mean": 24,
+            "sample_sd": 0.0,
+            "min": 24,
+            "max": 24
+          },
+          "v18_poisson_variance": {
+            "values": [
+              24,
+              24,
+              24
+            ],
+            "mean": 24,
+            "sample_sd": 0.0,
+            "min": 24,
+            "max": 24
+          },
+          "v18_scaled_variance": {
+            "values": [
+              24,
+              24,
+              24
+            ],
+            "mean": 24,
+            "sample_sd": 0.0,
+            "min": 24,
+            "max": 24
+          },
+          "v18_second_moment": {
+            "values": [
+              24,
+              23,
+              24
+            ],
+            "mean": 23.666666666666668,
+            "sample_sd": 0.5773502691896257,
+            "min": 23,
+            "max": 24
+          }
+        },
+        "perturbation": {
+          "at_least_one": {
+            "values": [
+              8,
+              8,
+              8
+            ],
+            "mean": 8,
+            "sample_sd": 0.0,
+            "min": 8,
+            "max": 8
+          },
+          "exactly_one": {
+            "values": [
+              0,
+              0,
+              0
+            ],
+            "mean": 0,
+            "sample_sd": 0.0,
+            "min": 0,
+            "max": 0
+          },
+          "v18_conditional_wait": {
+            "values": [
+              16,
+              16,
+              16
+            ],
+            "mean": 16,
+            "sample_sd": 0.0,
+            "min": 16,
+            "max": 16
+          },
+          "v18_poisson_variance": {
+            "values": [
+              17,
+              18,
+              17
+            ],
+            "mean": 17.333333333333332,
+            "sample_sd": 0.5773502691896257,
+            "min": 17,
+            "max": 18
+          },
+          "v18_scaled_variance": {
+            "values": [
+              16,
+              15,
+              15
+            ],
+            "mean": 15.333333333333334,
+            "sample_sd": 0.5773502691896257,
+            "min": 15,
+            "max": 16
+          },
+          "v18_second_moment": {
+            "values": [
+              14,
+              14,
+              14
+            ],
+            "mean": 14,
+            "sample_sd": 0.0,
+            "min": 14,
+            "max": 14
+          }
+        }
+      }
+    }
+  },
+  "verified_anchor_responses": 3120,
+  "pending": [],
+  "review_count": 128,
+  "scope": "Three retrainings conditional on each fixed parent; no between-parent replication; exposed benchmarks; SD across runs, not item sampling SE."
+}
