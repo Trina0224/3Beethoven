@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "v18_validation_poisson_variance_000_d1",
+    "question_sha256": "5432b60546cb613c18b18f80b4fbb6db32d7081e2ba87246c1f6fcde20445e56",
+    "raw_sha256": "b382e959eae43a743f9fa9eecc4db9279cf16fbe5487b80c5ddf285387574163",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_000_d2",
+    "question_sha256": "f2120cbfe9551ca58cb24f40bc0794ad02193465368e104d26ae543f9c97468f",
+    "raw_sha256": "9d5a8a1794e77dd11623438c9b1929769ca5f8dccdc89aaa1794121dbbe713a0",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_000_d3",
+    "question_sha256": "ed50672a78be68c36501098e6cc026f97b437101041a7c9f3b6800adb8b60c65",
+    "raw_sha256": "05fbae75fb84215bd1eefc9e5aa1154bcc6a68b420a00f32d6a166021e5e99fb",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_001_d1",
+    "question_sha256": "603f809c75790174c33052aba1881aa6ec617c7631222b8aa5b67a8a37f5a716",
+    "raw_sha256": "ceb909a3b5b3715f7a1fafb84255d0de4b63142e5b575d9e4cca881aa10d1c2e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_001_d2",
+    "question_sha256": "bab2619a2a3c4a6f326b8182b0e96c358c9accba3c0c1f969fab532fbf541273",
+    "raw_sha256": "aae9c792811521f3ed14a162e36629be5a15e2effbc868efb27590a5858546a8",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_001_d3",
+    "question_sha256": "a28b98aa559dd98d2dd3c1b6ba9f10ddfa7e659584a0afa570ec8e9416f4235f",
+    "raw_sha256": "0d66b97027ef304e37bb0c7204a9c727eea938e2b00ed0c0c55b15e4879e4a71",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_002_d1",
+    "question_sha256": "b002aa9ad48a19dc5a113395b0000c73542481a5b078baecf4b398f3d3e317e1",
+    "raw_sha256": "100fa20cbaf80821e43cdca071abd27d0979c07e502bdf1ca06832a6a93a6b1d",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_poisson_variance_002_d2",
+    "question_sha256": "80d3042616f8d7d666d44dbdf478132e982a991e86f838dccd30c57af9b39b79",
+    "raw_sha256": "c096db570260ae7a5faa3be51cc6632aced6ba023aae86446d426eabd7b12818",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_002_d3",
+    "question_sha256": "215dc6e76b7d758a62bfb22c9267afeb61399d1c073e5dd1b0e485192b02f07f",
+    "raw_sha256": "eaa2df56e1f1f26377ca7884393f4aa8715dea5cbb4f8cd8a5d1b580520aa53b",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d1",
+    "question_sha256": "c5076ddc08b7744c064e380b46e02257ff05131dcbe316244c9d00230bcbb2a6",
+    "raw_sha256": "d94fb94aa310302db90ef40e8894ee8514eb653c1cd792cbd3a8c91aa2b787fc",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d2",
+    "question_sha256": "99cbeaf6022eba0baa4ae7486425d6320006c8dc7f7da5aba38e9fab2de9a301",
+    "raw_sha256": "0c4719a2a800bfdee15838be505b1bcb1f060fd858a89edd3af3996d911f52a4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d3",
+    "question_sha256": "b20092a2e6133d2c16be9bb8a4967ebd553ed7f3e34953fe993a793e8d587be9",
+    "raw_sha256": "b66a915bffc85786ce00a609a0fa50b2afa8d5a6e954ee760a04166bae3f5096",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_000_d1",
+    "question_sha256": "d43f177890d0fb5e9c0e3946d7894bb741ac6348d9291e3ec75d04167f6c1913",
+    "raw_sha256": "3f686c72673d16413d6f7557c4ad072a1125ba1730712108d52aacefd1d49704",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_000_d2",
+    "question_sha256": "905e83d00c3e3a45589ea21fa01ceb905146081d25b685b5cc575af8ccd3ba98",
+    "raw_sha256": "6c766457fbe6ee16e3cce1fa363a3dbc91411f9ece4a89f5a08cc9c5c4635f2a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_000_d3",
+    "question_sha256": "a627a5a1376be004eaa5d6b34d8ab6b213d422ca9db0abc9e532f9531c4e318d",
+    "raw_sha256": "16bb514c52ff87de1c4d1527b072e49a4f8a9d0129392a0cc577b74a12423a14",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_001_d1",
+    "question_sha256": "4d700319ae07acd326aa859da9d526313a50ebf57d191c6732607822c151c313",
+    "raw_sha256": "3dc87cf970c8dfa8472e045a5f1d0d67e9853e5fbf51483690f330c3c2b75bb4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_001_d2",
+    "question_sha256": "6049d4ec414f439d3169f73fb830daee8debac77cff647315e2a697e58152445",
+    "raw_sha256": "cf2dc3730d7fe540018b573dc7b9ec87cd4cdf797a87f6a2cfbde69bc17491ae",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_001_d3",
+    "question_sha256": "8b92482e4564f3043fc7adafa57c2d805c3d2fb43a65c4caf7f33cb5f0a12945",
+    "raw_sha256": "aa8a11905eaaf33126997e58da240a12c6a28a7e64771148a824ca31488910c2",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_002_d1",
+    "question_sha256": "0706ed66d14538a29c2f053075a15eb82e805d36c5cadf483c794249ebd96e11",
+    "raw_sha256": "704bc7390b41980a5fc101c469c3499ce02fa97fa265e731b326ceccf9287a4e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_002_d2",
+    "question_sha256": "e89fd27ffb0255c3b6716fac0472d27ee23c154a88e8a4f35a9b17838eb81bc3",
+    "raw_sha256": "c0ce1b13e2783d9e2f08021cbc65f975157537e9f945b1296fff12f74d06da61",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_002_d3",
+    "question_sha256": "a396d24011885534a317c367cc135a4cc832bc4af63f0f00b828be11b4cc9722",
+    "raw_sha256": "1f82f72d7f32a124e3036510b10256a2063aa3e2a6142c880e18ad3b72cee950",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_003_d1",
+    "question_sha256": "273c408fcf9cc50b426fdb0af8c766eb0b4d2808ab6bc0b8684d323321238138",
+    "raw_sha256": "5692f5b30bef88dc4e9c9eeaab3aaa94262113ab0644c38c2b66d2127f961945",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_003_d2",
+    "question_sha256": "2f0fc90161539b2b716d65e4129c8f3dc4b8a77ef8bb15b3f6ac784e5c392f61",
+    "raw_sha256": "3ff4387d0428ed5faee2d66bc1c87650e6f6285190450ccbe69978c7cc108cf2",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_003_d3",
+    "question_sha256": "4ab221bf06f148bef996bb61553216605544a9b856736a18ae3abd9051be09f3",
+    "raw_sha256": "eea304ab9304c5438901e8ec9704ba71c9acb6c5cd55c4391c009b85212a2022",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d1",
+    "question_sha256": "7bae7916abe1724d05588b897ea7f248f9ea1c0e0bf8536aa9e39fcfb35e798e",
+    "raw_sha256": "6d4400caf7d795b8d48770d4d46cdc04f7dbfd5dfc9bdd10910e3a11f14fc66d",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d2",
+    "question_sha256": "15353dd510f88cb20fa6123b33e5addbd6d4fb00c1d90c32091966020bc2d45b",
+    "raw_sha256": "d89b488d5f4ae62ee5919f68108792a9ff546e17e850cf9b484b8cbdbb66c43e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d3",
+    "question_sha256": "e19551a91892a1779305c2d996a473d7901b092fea24c79c5114fa397cdfb19c",
+    "raw_sha256": "b29974ded1363f6c58b999d754d9915da9dceefb7623bc64fda1ff5552750f93",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d1",
+    "question_sha256": "cd3f2f358cd2301f1e739da590bccd160849e427cbf489170758df5c9334465c",
+    "raw_sha256": "786c5c64e9ac67b8db6b35a374060c4885e21578c4fa0f89a76c7aaac9f5afa2",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d2",
+    "question_sha256": "a59426f9bcce1c2d7e011e19ed021be051d0a9b11dcaf3ba9bd45ae41bc123b8",
+    "raw_sha256": "5f78c497372af22023e536f7fb1e7ad50c305c4502d19485a6bc5258360993dc",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d3",
+    "question_sha256": "4619349b38625c465b37a334dd1587e254e4a82b783c575cffb5de7e0064ba6f",
+    "raw_sha256": "3d29086b75b2783b3e5118a38259fcb619ae01ff31bbe2e11ea1ca079f5a8008",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d1",
+    "question_sha256": "0d227626b2cb81a1e391f9c0ccac7c7d19985852d65dd439e6b16ab87bbb25d3",
+    "raw_sha256": "bfe283b7722dd027fe0bd94c2c177e025d7590af2412f40f833f972642fff90f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d2",
+    "question_sha256": "22eec37c807dd5e546aca3674e97722621cfa95dee1cf3cbb3c5d2807ea814eb",
+    "raw_sha256": "2692907fa52b968835e6e0c314fe52db35b0b98d444e62a0ba9f9c64859923cf",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d3",
+    "question_sha256": "7a39dbc3feb397dc6787f68a8be5629ccea33935b2731e84eca7c7ea1bdfae5e",
+    "raw_sha256": "2f0fc1fd784f05c7def1aa4b46713308f07a5cfe0348eae996980c3b5a328d06",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d1",
+    "question_sha256": "932c6a6332a09020be860478264cfa3f9f624f345e96b12c80cd2b9d5578edb8",
+    "raw_sha256": "12b1b4d8be3b817104c0f1a4a9c623ef4c0b9fd439d73576914f3d2c9e28ed46",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d2",
+    "question_sha256": "ff45f21f92d64d688cded8421539ee873aaac7b3e83888b0ac38b9a04f43fd6e",
+    "raw_sha256": "5ecea87b0ec3b7f01925d878e204af45a6b8af6d235e18c485d60a6db130383a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d3",
+    "question_sha256": "fd4f58e37b1d08250645be4aa3352c9532678d408015e81ac7bee8b80ec95999",
+    "raw_sha256": "497291a602d50ac2d40d6837403aaf11fc7b90245cddfebca2c48d919e99bd99",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_conditional_wait_000_d1",
+    "question_sha256": "c10d93c53b5502032462ffde990ed6315985d7965e1b5c7fa557413bebf06a53",
+    "raw_sha256": "156281f12f2e6a596392d6e7d8859d24d8be04ea068f79ea236ad9238eaf23b4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_000_d2",
+    "question_sha256": "eaf223437bf50dc4df5c0cf03aef9b7bb757ea802a55adeafe10790b697a56f6",
+    "raw_sha256": "a28d3e10fc4c4dd993605ed61a34875762c3e99a47fd908059f0e3284ed6da09",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_000_d3",
+    "question_sha256": "bfb04ba1987ed97d5ef9e1b2150b2e9488e6d375209314eb29153cbc03b79d6a",
+    "raw_sha256": "c12385c0893b3b15adf9b464efaa3f212e026ac161435c28b7e8940c879b9423",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_001_d1",
+    "question_sha256": "818355c7305cd0ea1ddb065db9f307e79a2e2515b805d81778cfc096aa2aa1ce",
+    "raw_sha256": "f0ac0ce1c2ee14945f77e20d978607fccd91e9811c892c285dd588e17288cc7c",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_001_d2",
+    "question_sha256": "58bad3ed4c3dc29e75e57e0ccfa99b082b54f81a4abc206ed687642ae3348387",
+    "raw_sha256": "c1fd8dd85a3c6500b013210b5c98eace1a66054f5bc1b6b4e7de3aee14c0f4e3",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_001_d3",
+    "question_sha256": "54cc264af2422b58d78984a38fcb0f17f79194393111b5673d75e647ddd81cc5",
+    "raw_sha256": "c30da710a44e1c33b3542a3b7525d7cfe525c1b1d9ba2a4352dc4b8ad87105e5",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_002_d1",
+    "question_sha256": "feff579eeaaef360748ca8bbad73f3743246fadc8bf29e82fbdd9a6105f4aec8",
+    "raw_sha256": "d475b0d8200121f7082de995db8850ff3eff2a69b8fd386995f8f03318b35792",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_002_d2",
+    "question_sha256": "8a6476b9e3b7b0b4e2ce820ba0094395ba33b8f6589fef6451e36ce14006bb4d",
+    "raw_sha256": "4dd050aad6d876b9d4629d5aaa12d4cccd3b60b9f545d16829b76ca5138d81ea",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_002_d3",
+    "question_sha256": "87258493c810110c407a716e08a66e7999e8f3c92ecc8c073cdaf324ec426aae",
+    "raw_sha256": "35f6df0dc0752e4285ef4714620b941248bd5ba7b207ebf3128cf9acc2673a97",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_003_d1",
+    "question_sha256": "c6edb5f56f0d9c94210fc335d7e1deb7ce48f8badf9cfb15a67726d796599db8",
+    "raw_sha256": "c77ba415f386a9eba0e9b30d429b9edbf59bbee9335122c1f28b449264022f67",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_003_d2",
+    "question_sha256": "e53c30166795a38730a8eecc134eb0108c6987af8b5bde2c00881d2d4d34a0e7",
+    "raw_sha256": "bd5b8955ba2a0ae2e2a462b392c8f1416e19fb8644151b95a07394f6058c911d",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_003_d3",
+    "question_sha256": "38fe47634c1f9a632424bac8e2875bda7a7f813cf8708fa5e4b8e0e97b5beefa",
+    "raw_sha256": "a1c886925d54fccc325cab15f717eb59ce3ebc2f77bc7c3f21127a641992fcaa",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_000_exactly_one_s0",
+    "question_sha256": "91678bd7fe8a9d6a812d63205b3578691f47bb59fd2b304fbedcb026c788e32f",
+    "raw_sha256": "f95f37ebfe2ae261badafc5e76c1dcb68286470b4f4f4444454bff53a3415df6",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_000_both_s0",
+    "question_sha256": "e65c7c4cdf9912aa1273c263d0c0eb98a10c930dd24188cf0d099a9ca6da6e6b",
+    "raw_sha256": "d39a905ab1eb4a7f674b4c5eeddb952caba6910b62d900e9db6a3f9b85fc1ebb",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_000_neither_s0",
+    "question_sha256": "5beaa5d4990c516ef200a58c40fee923a810af22e3a96a503bd223bf268dab7a",
+    "raw_sha256": "d39a905ab1eb4a7f674b4c5eeddb952caba6910b62d900e9db6a3f9b85fc1ebb",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_000_same_s0",
+    "question_sha256": "bfca472c6886372db2b1cebb5a851a6788db296012f734b970065a09855e093b",
+    "raw_sha256": "6e0ed6f3cff84e27736b568092f3e7430310318a5a063c672e66823d8033e068",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_001_exactly_one_s0",
+    "question_sha256": "b160d1b4dfb525bf7dea5813a06904a65293d5cf8b88b175af6b22053fde275d",
+    "raw_sha256": "cac73d87b6fe6721c52d58563b0e2b3eb18b63974edf08e42c7550ae4a2e2895",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_001_both_s0",
+    "question_sha256": "191ba19bd5e048887454be4f33eb23622518998e6c03496654b0303b5211c52c",
+    "raw_sha256": "bc4e791d96c2731217a3c3c2e995e0c588e51a556c1fd6c369592aa5883431c5",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_001_neither_s0",
+    "question_sha256": "e051512543457b0e478c4dbffb8203eba40083a7930163a054b5d4c8083dd3db",
+    "raw_sha256": "bc4e791d96c2731217a3c3c2e995e0c588e51a556c1fd6c369592aa5883431c5",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_001_same_s0",
+    "question_sha256": "cd333099879c290f0b5c47b3430bb316a66e2fa518f7cc1e228e06af317529f8",
+    "raw_sha256": "6c4ad4589455b658ef89fc9857e30c6abbd12a73703c3ef8ccdd1d772d72b7f5",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_002_exactly_one_s0",
+    "question_sha256": "c8ce37df62260f3b3445de89b8160195d8ccf06a763f1ceb5d6076d1b5e78dad",
+    "raw_sha256": "ce3d7eb792db1eaba4e7db9a6a1403cf02fd141ede21b8e920467ac6c68f9eef",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_002_both_s0",
+    "question_sha256": "d442f5e4a0c23d995a3d25c3a02f7f1797fa22a83217f1629fc4d0190be1b4ce",
+    "raw_sha256": "5c15165aecb34408b8c36a3535eb3f355d3669c3a10fd569db75bf4f5820f8f3",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_002_neither_s0",
+    "question_sha256": "236f91294a53bc1f86b4e398eceb87ad22a67d6c003c01857d2d42fb81d20121",
+    "raw_sha256": "5c15165aecb34408b8c36a3535eb3f355d3669c3a10fd569db75bf4f5820f8f3",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_002_same_s0",
+    "question_sha256": "ba92d130953abd21013a9a4357e2193a37c46e569101d6b1c3c9baedce0e25c8",
+    "raw_sha256": "6e5ab6044d5cc9edfef196030ae2c1972d97ba41143112e63b95c2861bb8218b",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_003_exactly_one_s0",
+    "question_sha256": "7161873938d033d532abccffeeafb1d20ca89ade5de75139b4cb4b5826e02697",
+    "raw_sha256": "862ba80519b01ea5d8d77ff0bd3254c3f74bd58e02d04483089b828b0c4441b4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_003_both_s0",
+    "question_sha256": "54a84b327739d228684d0e807fc25ec8cebdc9faad7b2600ff1715cb5945df26",
+    "raw_sha256": "68947747c046a2e2bcfdaeb2db1b93b8a7e4d8a35d01efc068be95521ea34dc1",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_003_neither_s0",
+    "question_sha256": "79e05a0eac5ba5bfae1b3613a74c408481733c17f94cff9ddba585bf1f42d981",
+    "raw_sha256": "68947747c046a2e2bcfdaeb2db1b93b8a7e4d8a35d01efc068be95521ea34dc1",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_003_same_s0",
+    "question_sha256": "28316c1175f1946d991bb58e16c5c892b26f84e4db434796ff05c490ff5aa6db",
+    "raw_sha256": "67b76d3010cd4d078f061ed73950fedbb83c78a8c9ab2db1fd250bc318ac23a3",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_000",
+    "question_sha256": "57c449f9ecb8ac11957d37c20d8150b23dbf86cb1e338ff9b9b3e6242774dafa",
+    "raw_sha256": "f6a59187bf3d62de892c9dda4403b1c15638b3db2b969f4791d1882bd429538f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v17_validation_poisson_time_001",
+    "question_sha256": "871cacb861b2fac7aef006de80add5e3a4c4afed853394b7b2275053e91dda84",
+    "raw_sha256": "7e71e3c34190e841266b72018782deca8056d7ac430ac90d002d1d299a840f5f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v17_validation_poisson_time_002",
+    "question_sha256": "3ad1cfdc1d6fe130efd1725b7b974ea20cdb1915dc4a321c06fce5d7b1597d06",
+    "raw_sha256": "6cb0f0e411bb740bd7097b60c922458e79555588a34e75c7c17f04a7c32fdf5e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_004",
+    "question_sha256": "1412ba6dade4ffbeebf847e48457440355506eaa07a0c79064705e56bfe560e8",
+    "raw_sha256": "5d37dec2609bf0599a0094905fd610b634143d89a133ea70a395a735965e7852",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_000",
+    "question_sha256": "6bb86b09068aa876b8ca5239f45e67f066667e0a3cbddbc0e35c155de6866107",
+    "raw_sha256": "c027fa68c39ae67e57e916eed19a128bc83b5dd5d78641e66b96ba1eba8ffa94",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v15_validation_poisson_scaled_000",
+    "question_sha256": "2e3a50f729541d04b2617627b3fc0eec809773cf0164e718cfc2bc1fbb3bfc93",
+    "raw_sha256": "58262ded7a163b1af7003c074fc39cffc44a69fa3cd6caf956cdd5ff7ef68362",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_002",
+    "question_sha256": "cbaba490286829a9d7c122d9360b443d2abd456c29928c50758ff95f49f64310",
+    "raw_sha256": "0505c0ecb2927ea3020338221a0ba280fd8c55e7b9101e982b75af54cb4e83f8",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_003",
+    "question_sha256": "6f7519e7c12af97556abeada37afbb364c956fab7f0676bcf2caf9b1779e94a6",
+    "raw_sha256": "c5c49625945f0438ef65a555d71bb4a3665d7e826d9c357fcbe2174fcc6e8b89",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_004",
+    "question_sha256": "e7ff11c94dc2f091b70a7ab15f40a6e7c5f9e032eccca2c9d73f69849af9f8cd",
+    "raw_sha256": "97bd94adebdff708a252367129435dfe66bab848bfe99868e7ccfbb17015182e",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_005",
+    "question_sha256": "54ab4126d114faf5cf308ac74bef475b62c5912e3218dd0a375b9df481142b61",
+    "raw_sha256": "ace89fdbd6eefe28f9c162eb52a4d12c26c1cfd16cc4adedafdaf1461f4f7a93",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_moment_000",
+    "question_sha256": "e0bf92c8b89180379247ff4280e2399e1f3b55660cdcb9fa812f700802c6dfca",
+    "raw_sha256": "0ed5b478a72ca9cf9b6e7942225971f768d3b7e90f8380ce5aeadbdca460f553",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_001",
+    "question_sha256": "f5ebce2a82a4c30748d82455aaf98889bb44932209707da3f55a0d19ccacb5a6",
+    "raw_sha256": "8e007ef511ad28ccb3483648ed24b2e36d8c95799c5ad60a96eec842cda927fb",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_002",
+    "question_sha256": "3f7e11ecb4f5b818799df6fb4c138ad2a0e23e1f1c50cbd8a61f34c76007d2cf",
+    "raw_sha256": "484a96109d2c3ba7641ff4445a42bcc1111bd159e653e303eb63c16c9a83723a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_003",
+    "question_sha256": "ec24b31a1e46a9d1fda71df8b503ef935e8cf875b3d737bb5f1ab15ecf100a82",
+    "raw_sha256": "43d5e12b3ed8c7a788e0765083d65cafe1f9ea94c1c26b561081975828fac13e",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_004",
+    "question_sha256": "9b657be7af0f16465cdd26a55fa220ee5f062fd983ffc3a657164848e1249bdf",
+    "raw_sha256": "dd39bf12dcca9fb8736de7f69c604c5c2bea8fb5c851676613b8f886cb9ec4b9",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_005",
+    "question_sha256": "93a6b394216d6b849355bc75793d4157fba630c5dd2918bf232870ae64930547",
+    "raw_sha256": "fcc4a1ea106d6b62c08402e0f68183cd29a999a24ce5a3576fc810e88e995096",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_000",
+    "question_sha256": "fcfe32eac3239ece8f675db8bed3b3ef8529533caa6e8206e9a76c87881c5038",
+    "raw_sha256": "accb58f0e9b9f358c0914f1c71b9a639753778cb28ecbeb9fe739c38f6434cf5",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_uniform_time_001",
+    "question_sha256": "ff515db1e64340425a9937de8c3b71a2958efe1c1f51ff1c6bd2de570ba98d6f",
+    "raw_sha256": "e32b37bbb0fa805a2c196989cf5467a20ef8d96aa8b5ae83ca06e9de59b31910",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_uniform_time_002",
+    "question_sha256": "118c20c1e43604981abf0ea959de4bc13b31cd6c6c01c5b520d04bce7ae47248",
+    "raw_sha256": "03798ea3217f54bf2b3db333eff460a6c2396b97a99cadbf938df473e449838a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_uniform_time_003",
+    "question_sha256": "b70d7cbe067188412055140519ff7b9b1b9e28f476cbae1ee84150b46dab530e",
+    "raw_sha256": "ed324084fb09cc5d4346ac4dfb2c77823ccf909b42203144a2f7cbab2497ebf0",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_uniform_time_004",
+    "question_sha256": "8723c12d84bf903d0710898b2232548e6a26732a1a40edbf620a3ab9540be61f",
+    "raw_sha256": "2f9e1bce164682bd69d4f76e61b0784fbab03c667c79bdb86793e0a17bd53e71",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_uniform_time_005",
+    "question_sha256": "0b5a87dc871b2bf7452bc855b67d331ca8928253ab4d860aad90eff1c0523a14",
+    "raw_sha256": "527482c41563165e412c070176d4a5f64ca23294625132911b98d2aa2abc68b8",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_000",
+    "question_sha256": "314ad610046807c87eec83fc319ae3c97a2aa43d9ba09f7ff979c801819e66ff",
+    "raw_sha256": "f66d834ef071efad4e47cf46b9d29e3f7228575bbbb8a38f79af3c299ecbb6fc",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_001",
+    "question_sha256": "30031e76063a3325f7c337b10c5e02833f143b886eeefb4d2d4615336bd6368b",
+    "raw_sha256": "e54a80230c24457a6e3d185372805b48ae925d979195f37a89d82f4db1a45f83",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_002",
+    "question_sha256": "51caaf528908ac3d327d43e7ab121a517ea6e6a5fc87e7c77ead16d75bd88c72",
+    "raw_sha256": "c957bb15c82c9fff08246a720c8fcc55237faffeb61ee9a86d5d7cb8b39bb655",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_003",
+    "question_sha256": "dfae63a07ebc60b4f3e3177211644429bbd0ce31c968cd3d8a4f72ae8a055033",
+    "raw_sha256": "5e0d0e362f8bf5784a9e8b173f7597b34427ac8c3fd46d8019c618f232bf5d9e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_004",
+    "question_sha256": "ba43dfabb71d85e37c0ae8b12a9dfe1700de6088dbe1c16ae34512b3a9ab81ef",
+    "raw_sha256": "3bc867fdfa06f5412f727fd9050a4191ac9a6246887283658a0ed07dfc05399a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_binomial_005",
+    "question_sha256": "2b931d96ca2fe2ffb89bb547ac96df530e497efaebdfd8a262b960606ed46f5a",
+    "raw_sha256": "13d2af52c9f57af913d58239379e5d67ffeb4c51a025f985e0667f667b541a71",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_000",
+    "question_sha256": "47c710011ad0f510ceccc1f954a23fe9c0ae72e2e9c9a970f93b277dc6f95bd6",
+    "raw_sha256": "cdf5fb3c92024527e6578ff972a1e845b92d83a8c616daee3afa4a63643b1da7",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_001",
+    "question_sha256": "1a465c3035657c233c8a882ac1066da6694498d8ca67dd0ac66afe4b681c168f",
+    "raw_sha256": "9172b161672fad07bef5773d69d2bd3989e82d169e373e9e7d3b4b9fc5479b83",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_002",
+    "question_sha256": "146e128bb74f2c3b99b28e7a670e2a56e0673fdcd8e6c6903f2ae42c98ddf425",
+    "raw_sha256": "0ba43d8e0f595a038da4b445d777045740ef4a6322a8c6164065a59ec31491ad",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_003",
+    "question_sha256": "457a1237c9b41d168034ae87cc0d66021d393e752a1a184fea7581324dd638c2",
+    "raw_sha256": "258ce155425d8bb4f36596b966acdb5775bf98de655924f8590594f573900c4f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_004",
+    "question_sha256": "3dabe875a800cdf304c58d596f504136b43965cf248c07be08244911e3be735b",
+    "raw_sha256": "c77d7fd28e6e7c7c9764626a4231b3e02e16e08b7560507ddedb87b7fc7bfc0a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_005",
+    "question_sha256": "68c81dde5f4040f075ab42a4f25d51f02a5186447d6dce8d85dbd44342891830",
+    "raw_sha256": "d4ff2e9fbc97d62333cd0445c1f61545ed46395e729403400f1b169211e0bf71",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_000",
+    "question_sha256": "426c439e14acdbeea15fe5b4d1d643fdd7f2963fbe0b458df664d7035ec06695",
+    "raw_sha256": "a8e5bb3f1c2017056f0ebdc07f0540d7244fcaca11cf1807cacc1aa34e568290",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_001",
+    "question_sha256": "2aa703b8303d0170968595dbd2833be17c3d4caea57caf26cef98bd59d4cb4d4",
+    "raw_sha256": "f5df054653bf7395f9e5c7ab04f43d8215168289cd725bdf70f9b555edada48a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_002",
+    "question_sha256": "b172fe9faa4713c9780088a64113f2d2759961f21d22228691b931b99903b68c",
+    "raw_sha256": "7f01c6a080fd0148960a069cb72769c4e14cdce384f8702416ba8ff582c27c9b",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_003",
+    "question_sha256": "8fffc5c229bd4f356fb4a23cf2dc3e9b8a5d00aae24bd4ccadc6c8b34ef6f1ef",
+    "raw_sha256": "302e286c782e6fe3727f177011da3a2026fe17b7f913787ab946478264900a2e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_004",
+    "question_sha256": "964deaf9a6e131821c4cfd3cb28e7b930d8cd71b4cab8146e86ab5b7ad2ce107",
+    "raw_sha256": "168e79669f3d76719a650d0d7e19bbb86ff4e60a29544ab16b54501b60b42495",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_005",
+    "question_sha256": "863559d8b8702c1ea6140e06c2cdd615eb703cff1d9963a6564dcab0812c4743",
+    "raw_sha256": "2ec623b3b12b629b6e647e64e98f69c917c5b163d7e2b0a2df0c10b3e2cba70e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_000",
+    "question_sha256": "f6e0f710a2589b433c2809b1ea9181350c9df299103a4f2f488f4dfb9f78f13b",
+    "raw_sha256": "1e11e7cd311137e5563eaa47dd22f510308c4582d31fbaf81011402e7ab9e368",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_001",
+    "question_sha256": "60664972e11cad8a0a24313f50eb57b0f5bc9f456de9e2f8781bb8dc2e5bba73",
+    "raw_sha256": "b1bfa47c8be5b39e7d06f2693e61da4bd91d5717e928250695b8efd88e68fa02",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_002",
+    "question_sha256": "6a18c46af4789534382a4d1a7489e73f60c8a15cbc188cdefefe1ebffc113c11",
+    "raw_sha256": "f4988b22b9e0a254ca2c66a443cd1fea84af9ef45ba93ffb92ed33082e5d6d95",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_003",
+    "question_sha256": "362324e14e0edc9803a3cfb0152e34a158d9629f4d480b4e5566afb5d0ed4a94",
+    "raw_sha256": "ac111eb7e141db890ad40f1d6211f998d93f5a95211201595e70c8d406cfe3a7",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_004",
+    "question_sha256": "0e73d8859b95f8a1d1452a943c5067e2935d60243043df2520ede95900f9caa8",
+    "raw_sha256": "c057929ae4d3626e5faf8b248f2579dee37eae647d1b7c1fea2c705e64d7a52b",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_005",
+    "question_sha256": "d9d8d22a46c75e504b846c5bf42c8435797ce0b964278589ca930e2d09d1614a",
+    "raw_sha256": "98eda37077891aa00e9a14c433db0048459128ea7db31a5cba20ece382f09210",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_000_d3",
+    "question_sha256": "ed50672a78be68c36501098e6cc026f97b437101041a7c9f3b6800adb8b60c65",
+    "raw_sha256": "ed6a13fdc69195261b3a85d62b573762b80730b6fb6e196ce0fbf527697d7fe1",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_poisson_variance_001_d3",
+    "question_sha256": "a28b98aa559dd98d2dd3c1b6ba9f10ddfa7e659584a0afa570ec8e9416f4235f",
+    "raw_sha256": "53cec54d796c567a3ff5d98b094b880ad70cd139dd8430ccdf5b1ecac49dfd9c",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v18_validation_poisson_variance_002_d3",
+    "question_sha256": "215dc6e76b7d758a62bfb22c9267afeb61399d1c073e5dd1b0e485192b02f07f",
+    "raw_sha256": "b1ab46e386aa54e4a242021ab3f68ee738863618b3bfaf964eafdb398bcced1c",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v18_validation_scaled_variance_000_d3",
+    "question_sha256": "a627a5a1376be004eaa5d6b34d8ab6b213d422ca9db0abc9e532f9531c4e318d",
+    "raw_sha256": "09e4d3870d2741ef14b7b702e5fc2d624872b760b84b6f5dd2ebea3ed9102ab7",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_001_d3",
+    "question_sha256": "8b92482e4564f3043fc7adafa57c2d805c3d2fb43a65c4caf7f33cb5f0a12945",
+    "raw_sha256": "df7a31e687e84224e15c43fd03e96601b2a7533581a04556f18495b99164754e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d3",
+    "question_sha256": "e19551a91892a1779305c2d996a473d7901b092fea24c79c5114fa397cdfb19c",
+    "raw_sha256": "edca4365803a5faedbe0f2d5fe7e2f748a05e2a8e98eeefe2dc027eb9f5760d2",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d2",
+    "question_sha256": "a59426f9bcce1c2d7e011e19ed021be051d0a9b11dcaf3ba9bd45ae41bc123b8",
+    "raw_sha256": "5c3164e30e9f40e8ef7d40c7e8e5b15f4a96794fa3a33fd3ca2bebf9401262be",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d3",
+    "question_sha256": "4619349b38625c465b37a334dd1587e254e4a82b783c575cffb5de7e0064ba6f",
+    "raw_sha256": "0ff6e8a65946e0612b40674f6f3ddae6c263be35424bef8da7c576c615423c99",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d2",
+    "question_sha256": "22eec37c807dd5e546aca3674e97722621cfa95dee1cf3cbb3c5d2807ea814eb",
+    "raw_sha256": "3ce96dced4445e805ac065059a9a53e9b41bd90d8624ffb73019ddbe6007690d",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d3",
+    "question_sha256": "fd4f58e37b1d08250645be4aa3352c9532678d408015e81ac7bee8b80ec95999",
+    "raw_sha256": "4f823edd6fe4f5e1a3e0a156e929699e98f9042b9fdfe63188d3b7bf4823a5c5",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_conditional_wait_000_d2",
+    "question_sha256": "eaf223437bf50dc4df5c0cf03aef9b7bb757ea802a55adeafe10790b697a56f6",
+    "raw_sha256": "156281f12f2e6a596392d6e7d8859d24d8be04ea068f79ea236ad9238eaf23b4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_conditional_wait_003_d2",
+    "question_sha256": "e53c30166795a38730a8eecc134eb0108c6987af8b5bde2c00881d2d4d34a0e7",
+    "raw_sha256": "c77ba415f386a9eba0e9b30d429b9edbf59bbee9335122c1f28b449264022f67",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_000_neither_s0",
+    "question_sha256": "5beaa5d4990c516ef200a58c40fee923a810af22e3a96a503bd223bf268dab7a",
+    "raw_sha256": "14739998186635af7118d43ef03ae71883e88fa1f7907cb69b8e58fbcc54759e",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_001_exactly_one_s0",
+    "question_sha256": "b160d1b4dfb525bf7dea5813a06904a65293d5cf8b88b175af6b22053fde275d",
+    "raw_sha256": "ec5ecd8b73112e16cc214a8a91d069100b2222570949b386a95a72c1286eba4b",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_002_exactly_one_s0",
+    "question_sha256": "c8ce37df62260f3b3445de89b8160195d8ccf06a763f1ceb5d6076d1b5e78dad",
+    "raw_sha256": "af3d2a98e676f7fd624d93e6aca764e191f520b95f48d4887ea7b0e01af03c27",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_000",
+    "question_sha256": "57c449f9ecb8ac11957d37c20d8150b23dbf86cb1e338ff9b9b3e6242774dafa",
+    "raw_sha256": "70717a7da0a0c3b1deb35fc1bfcad74763f966d817b2724ae8a93acd210ee83e",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_time_002",
+    "question_sha256": "3ad1cfdc1d6fe130efd1725b7b974ea20cdb1915dc4a321c06fce5d7b1597d06",
+    "raw_sha256": "fc3ccaaad07f29fae36a34fdafe4444b9284d045fb096e64729ea6b4e4590e0c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_000",
+    "question_sha256": "6bb86b09068aa876b8ca5239f45e67f066667e0a3cbddbc0e35c155de6866107",
+    "raw_sha256": "822ef75b77d922c797ed13971853d0782a1cdb868bcead027e1cd180b25589ff",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_002",
+    "question_sha256": "cbaba490286829a9d7c122d9360b443d2abd456c29928c50758ff95f49f64310",
+    "raw_sha256": "8c006166afaef9a0e122d3df371ff14fd3607ea31e5c8f9873f922cae4858c9a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_003",
+    "question_sha256": "6f7519e7c12af97556abeada37afbb364c956fab7f0676bcf2caf9b1779e94a6",
+    "raw_sha256": "17344a1e662a97e24f07ca32b3a4d11517179a42e913f6ce7983aa5bc6411efc",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_004",
+    "question_sha256": "e7ff11c94dc2f091b70a7ab15f40a6e7c5f9e032eccca2c9d73f69849af9f8cd",
+    "raw_sha256": "78ace49dd238b2086da58d3afae115f47e965ab1ab46ac3c23ba49daa5e5b47c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_001",
+    "question_sha256": "f5ebce2a82a4c30748d82455aaf98889bb44932209707da3f55a0d19ccacb5a6",
+    "raw_sha256": "7a52f80aa1b0c6b037493ce9991fe0da9fedc9eaeb13ce919f4c2e54f0081ab4",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_002",
+    "question_sha256": "3f7e11ecb4f5b818799df6fb4c138ad2a0e23e1f1c50cbd8a61f34c76007d2cf",
+    "raw_sha256": "d840beb448aae949b8c00d8df2b8074d872f749efa243fd0c9cb2c84acb17374",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_003",
+    "question_sha256": "ec24b31a1e46a9d1fda71df8b503ef935e8cf875b3d737bb5f1ab15ecf100a82",
+    "raw_sha256": "4158849282d817429b2726d9816720e2dae9cb487a5d9e8eaae9acf926c6e14d",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_004",
+    "question_sha256": "9b657be7af0f16465cdd26a55fa220ee5f062fd983ffc3a657164848e1249bdf",
+    "raw_sha256": "274b2bbf8d7ce125de628dd613225f31cbb7dd3ece5f6761282c69ef168cec32",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_000",
+    "question_sha256": "fcfe32eac3239ece8f675db8bed3b3ef8529533caa6e8206e9a76c87881c5038",
+    "raw_sha256": "2f31f8123dd1c856dad8bb8152bd74e5a8ec7f9f1fdfcdbae485684f8aa1828a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_001",
+    "question_sha256": "ff515db1e64340425a9937de8c3b71a2958efe1c1f51ff1c6bd2de570ba98d6f",
+    "raw_sha256": "fffeada03237675fe228f5416bc388db767ecf86454452fc727ddd763c2b056f",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_002",
+    "question_sha256": "118c20c1e43604981abf0ea959de4bc13b31cd6c6c01c5b520d04bce7ae47248",
+    "raw_sha256": "a468f5682bfdfd25c51ee8a92e940561ca78d13d81d9d9f462a8401d8b2050d7",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_003",
+    "question_sha256": "b70d7cbe067188412055140519ff7b9b1b9e28f476cbae1ee84150b46dab530e",
+    "raw_sha256": "3e24ed405e1a0e901c95094130127c6e7ff0fa564dee1fd79fee349b219f0acf",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_004",
+    "question_sha256": "8723c12d84bf903d0710898b2232548e6a26732a1a40edbf620a3ab9540be61f",
+    "raw_sha256": "1c7f2fb9ac30dac198350a3bd913d16229b33a9ecf3008d2ceb7385de915c57e",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_005",
+    "question_sha256": "0b5a87dc871b2bf7452bc855b67d331ca8928253ab4d860aad90eff1c0523a14",
+    "raw_sha256": "6dfd13aec00f01f84ff29a4eaf67adaf53e0b24e5b2819b3705c9da3f94f4534",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Reviewed algebraic identity plus exact agreement; no answer-only credit."
+  },
+  {
+    "id": "v17_validation_at_least_one_005",
+    "question_sha256": "863559d8b8702c1ea6140e06c2cdd615eb703cff1d9963a6564dcab0812c4743",
+    "raw_sha256": "1887dfaa5abc21a33fd99bc06e0ed0ac78f3b8ff9574823c9534fc2e1c9be144",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_000",
+    "question_sha256": "f6e0f710a2589b433c2809b1ea9181350c9df299103a4f2f488f4dfb9f78f13b",
+    "raw_sha256": "3953abf6fb9687429e392fb44bcc667d737a7b77bfa4da7413939dbd8cf02fbb",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_001",
+    "question_sha256": "60664972e11cad8a0a24313f50eb57b0f5bc9f456de9e2f8781bb8dc2e5bba73",
+    "raw_sha256": "9ecabfe616680f0707e395529be38aa50672bd57a001a38d0c99206f43e1ba8f",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_002",
+    "question_sha256": "6a18c46af4789534382a4d1a7489e73f60c8a15cbc188cdefefe1ebffc113c11",
+    "raw_sha256": "9dae196e4ded29bb6eeed1c9dd10c462046b5df3478941e4d5d389abb719290f",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_003",
+    "question_sha256": "362324e14e0edc9803a3cfb0152e34a158d9629f4d480b4e5566afb5d0ed4a94",
+    "raw_sha256": "02e645b0bd0dbb6655f199e9180e805b22cf1e064155810f8aa34c0668753f15",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_004",
+    "question_sha256": "0e73d8859b95f8a1d1452a943c5067e2935d60243043df2520ede95900f9caa8",
+    "raw_sha256": "7323afa8c97dc5916053b00d83915a0418673484f22b38d374a9e60437768f34",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_005",
+    "question_sha256": "d9d8d22a46c75e504b846c5bf42c8435797ce0b964278589ca930e2d09d1614a",
+    "raw_sha256": "df393edeb6624d867dfed40e7703c4648da2f15a69278bdab355385bb32aa1dd",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_poisson_variance_000_d3",
+    "question_sha256": "ed50672a78be68c36501098e6cc026f97b437101041a7c9f3b6800adb8b60c65",
+    "raw_sha256": "3aa13981d645027745400d6f935684e665e6bb0189764893ed7e0c66c380e6fa",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v18_validation_poisson_variance_002_d1",
+    "question_sha256": "b002aa9ad48a19dc5a113395b0000c73542481a5b078baecf4b398f3d3e317e1",
+    "raw_sha256": "5c65926f9028a12201a0608ee276164ab50d48cc2a1a0760e06809ef7b1ccc58",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d1",
+    "question_sha256": "c5076ddc08b7744c064e380b46e02257ff05131dcbe316244c9d00230bcbb2a6",
+    "raw_sha256": "dec4c81fde88f4206cf823de8f1be982f0639756525e298c0f903f2433b36657",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_scaled_variance_000_d3",
+    "question_sha256": "a627a5a1376be004eaa5d6b34d8ab6b213d422ca9db0abc9e532f9531c4e318d",
+    "raw_sha256": "6c766457fbe6ee16e3cce1fa363a3dbc91411f9ece4a89f5a08cc9c5c4635f2a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_scaled_variance_001_d3",
+    "question_sha256": "8b92482e4564f3043fc7adafa57c2d805c3d2fb43a65c4caf7f33cb5f0a12945",
+    "raw_sha256": "cf2dc3730d7fe540018b573dc7b9ec87cd4cdf797a87f6a2cfbde69bc17491ae",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_scaled_variance_002_d3",
+    "question_sha256": "a396d24011885534a317c367cc135a4cc832bc4af63f0f00b828be11b4cc9722",
+    "raw_sha256": "c0ce1b13e2783d9e2f08021cbc65f975157537e9f945b1296fff12f74d06da61",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_scaled_variance_003_d3",
+    "question_sha256": "4ab221bf06f148bef996bb61553216605544a9b856736a18ae3abd9051be09f3",
+    "raw_sha256": "3ff4387d0428ed5faee2d66bc1c87650e6f6285190450ccbe69978c7cc108cf2",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d2",
+    "question_sha256": "15353dd510f88cb20fa6123b33e5addbd6d4fb00c1d90c32091966020bc2d45b",
+    "raw_sha256": "100fa20cbaf80821e43cdca071abd27d0979c07e502bdf1ca06832a6a93a6b1d",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d3",
+    "question_sha256": "e19551a91892a1779305c2d996a473d7901b092fea24c79c5114fa397cdfb19c",
+    "raw_sha256": "f66c21e2e66d52fd7371596252b5094eaa0a241571a80d976e59dde1581bd22c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d2",
+    "question_sha256": "a59426f9bcce1c2d7e011e19ed021be051d0a9b11dcaf3ba9bd45ae41bc123b8",
+    "raw_sha256": "e73159b871ec0d35b00d50ccbdf1fbe1ffd68f31acbe6240070a2cb42bb0c53c",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen Poisson second-moment factorization."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d3",
+    "question_sha256": "4619349b38625c465b37a334dd1587e254e4a82b783c575cffb5de7e0064ba6f",
+    "raw_sha256": "a35761440bf27e859a0365723164af1431a5ddaeff3f24b94b76466290276f06",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d2",
+    "question_sha256": "22eec37c807dd5e546aca3674e97722621cfa95dee1cf3cbb3c5d2807ea814eb",
+    "raw_sha256": "14e385c6bc633306f56ef0a0a8473a4280d430ea8ee1950add8458d876c5deb6",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen Poisson second-moment factorization."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d2",
+    "question_sha256": "ff45f21f92d64d688cded8421539ee873aaac7b3e83888b0ac38b9a04f43fd6e",
+    "raw_sha256": "cd83dfffad54cfd616dd272730aaa98e3c597a31cb5c31268bafe27aff697ca4",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d3",
+    "question_sha256": "fd4f58e37b1d08250645be4aa3352c9532678d408015e81ac7bee8b80ec95999",
+    "raw_sha256": "d8a859a559ea2ea930578352b74f07099aa37a19d3939ea242a7509e0947e16b",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_conditional_wait_001_d2",
+    "question_sha256": "58bad3ed4c3dc29e75e57e0ccfa99b082b54f81a4abc206ed687642ae3348387",
+    "raw_sha256": "f0ac0ce1c2ee14945f77e20d978607fccd91e9811c892c285dd588e17288cc7c",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_001_neither_s0",
+    "question_sha256": "e051512543457b0e478c4dbffb8203eba40083a7930163a054b5d4c8083dd3db",
+    "raw_sha256": "5ab94a5ef939a49a40d1a9325c806d27e56bdfd76309761ce4828778a71de33b",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_000",
+    "question_sha256": "57c449f9ecb8ac11957d37c20d8150b23dbf86cb1e338ff9b9b3e6242774dafa",
+    "raw_sha256": "89f59f05c16b573fa00bab1ed25166c13749249a694e1ac8235f0cc0e183a363",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_001",
+    "question_sha256": "871cacb861b2fac7aef006de80add5e3a4c4afed853394b7b2275053e91dda84",
+    "raw_sha256": "cf1833ae7192f470265510a636abf70b2ac6e140f0b62844a02c28180f638a17",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_003",
+    "question_sha256": "dee7f61ba4841a5e3cc5b2faedab26968e54cc89dec7a2b43ef0bfe2b9ee950c",
+    "raw_sha256": "6afad58bba23f78848e3c0d7b4607e6ca558b64fa4f065788b53e80efbd6a91e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_004",
+    "question_sha256": "1412ba6dade4ffbeebf847e48457440355506eaa07a0c79064705e56bfe560e8",
+    "raw_sha256": "c80c9aac40e6686d1db9a3e4ddee0b78e7691b5161a1fcd286622d8689ef6f8a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_time_005",
+    "question_sha256": "9f62a7742dd0bbc86d1e58ab4fe7c2f210f948c50f9c5d151a6ccc13238ea6e6",
+    "raw_sha256": "926ddd82871be84ceccdc67f8336fab203bd249d394750b3108b2c22de03519a",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_000",
+    "question_sha256": "6bb86b09068aa876b8ca5239f45e67f066667e0a3cbddbc0e35c155de6866107",
+    "raw_sha256": "17bc7065111c5d9b308ceb5129fa0f3ff705f61577957df7df880405a330cbda",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_002",
+    "question_sha256": "cbaba490286829a9d7c122d9360b443d2abd456c29928c50758ff95f49f64310",
+    "raw_sha256": "bd7baf9962f6479493adc7e370c7cc5bf95a19be04126b3d7a190015815dc802",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_moment_000",
+    "question_sha256": "e0bf92c8b89180379247ff4280e2399e1f3b55660cdcb9fa812f700802c6dfca",
+    "raw_sha256": "5aa963f4cd12460a3095cf28d7c5f8d7c2e681ccd108bcb8084416555ef90395",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_001",
+    "question_sha256": "f5ebce2a82a4c30748d82455aaf98889bb44932209707da3f55a0d19ccacb5a6",
+    "raw_sha256": "62df418295b85736a451c0f3870027622551757f9e6f162fe9d79929c09b2db2",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_002",
+    "question_sha256": "3f7e11ecb4f5b818799df6fb4c138ad2a0e23e1f1c50cbd8a61f34c76007d2cf",
+    "raw_sha256": "70d26fea809b389b2d578875297f7c602c9afc425fdbe7bc87ab0ea4424d3717",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_003",
+    "question_sha256": "ec24b31a1e46a9d1fda71df8b503ef935e8cf875b3d737bb5f1ab15ecf100a82",
+    "raw_sha256": "8310e02dc7418db030d8d68ff69be8ed50ebf55ecb406cda0fad161a26523b39",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_004",
+    "question_sha256": "9b657be7af0f16465cdd26a55fa220ee5f062fd983ffc3a657164848e1249bdf",
+    "raw_sha256": "8f28ccda23153f717f3037c96e4dc7495d3612903d0838f092e357298c0e97b1",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_005",
+    "question_sha256": "93a6b394216d6b849355bc75793d4157fba630c5dd2918bf232870ae64930547",
+    "raw_sha256": "c0baecbb2cf4fb83e960eb385dd640a428e1f56712d9ee93bee251e1640dced6",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_001",
+    "question_sha256": "ff515db1e64340425a9937de8c3b71a2958efe1c1f51ff1c6bd2de570ba98d6f",
+    "raw_sha256": "dcae6dfa4d2357044b71550cdaf38e104058d3fad8a2275f2309f9101b041a3a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_005",
+    "question_sha256": "0b5a87dc871b2bf7452bc855b67d331ca8928253ab4d860aad90eff1c0523a14",
+    "raw_sha256": "22698116c931893e9be398db65b10d0ac8be5026f8d14da8fd4ab3bffeb72cfc",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_binomial_000",
+    "question_sha256": "314ad610046807c87eec83fc319ae3c97a2aa43d9ba09f7ff979c801819e66ff",
+    "raw_sha256": "98c852103c0f6c8deb70dc257bfe8f0d68f6e5f3e17d7cf5a3e7b213fd2c97a9",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_000",
+    "question_sha256": "47c710011ad0f510ceccc1f954a23fe9c0ae72e2e9c9a970f93b277dc6f95bd6",
+    "raw_sha256": "597c70a6bf41b2655a064f40d158748591f9926983f543f84ff000f1618349b8",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_002",
+    "question_sha256": "146e128bb74f2c3b99b28e7a670e2a56e0673fdcd8e6c6903f2ae42c98ddf425",
+    "raw_sha256": "21ac67cb08c95463999d3e05acf733d5c8f5c1d71a4569387230f29a1bb82f3e",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_exactly_one_003",
+    "question_sha256": "457a1237c9b41d168034ae87cc0d66021d393e752a1a184fea7581324dd638c2",
+    "raw_sha256": "473e388d2eed1f7f9600faab195afe4e2936ad5921e948721b0e087a7e445cdb",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_at_least_one_002",
+    "question_sha256": "b172fe9faa4713c9780088a64113f2d2759961f21d22228691b931b99903b68c",
+    "raw_sha256": "e906a8bf00ece76340ff926cb072fc028fdfc902124f1b45cda894034dbf6ec6",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_001",
+    "question_sha256": "60664972e11cad8a0a24313f50eb57b0f5bc9f456de9e2f8781bb8dc2e5bba73",
+    "raw_sha256": "bb7c4cd38c012ee20325d871e9adfc283cd2b37e18a8c4e5053c122b8909fe87",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_000_neither_s0",
+    "question_sha256": "5beaa5d4990c516ef200a58c40fee923a810af22e3a96a503bd223bf268dab7a",
+    "raw_sha256": "932636ae419d4c9ec56c0ab2d32852c5beee481b1f7c24d43832a50df2b09d74",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v20_validation_002_neither_s0",
+    "question_sha256": "236f91294a53bc1f86b4e398eceb87ad22a67d6c003c01857d2d42fb81d20121",
+    "raw_sha256": "ea9401ff737ca97756891626c75ad11dc4f5ac63b6aa554aea4e258e336934b4",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_poisson_time_002",
+    "question_sha256": "3ad1cfdc1d6fe130efd1725b7b974ea20cdb1915dc4a321c06fce5d7b1597d06",
+    "raw_sha256": "b53d050f43f893ad6c12ff95456caf261057476ccc5b9138d661df30232d3bbf",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v17_validation_poisson_time_004",
+    "question_sha256": "1412ba6dade4ffbeebf847e48457440355506eaa07a0c79064705e56bfe560e8",
+    "raw_sha256": "eae9bedb7012426425a32f1b92056bc5fc3522808b6964f4bfb80693262ccb4f",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_003",
+    "question_sha256": "6f7519e7c12af97556abeada37afbb364c956fab7f0676bcf2caf9b1779e94a6",
+    "raw_sha256": "8c12b0a85bb833913f62fbcd208d68b3f76c7cb678524fb90743c0f2b134ff5a",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_binomial_000",
+    "question_sha256": "314ad610046807c87eec83fc319ae3c97a2aa43d9ba09f7ff979c801819e66ff",
+    "raw_sha256": "4d44a9bc4a918d3b5ae65a18b2fd8b26352d099101b38aa382b2c29a7ee2e255",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_exactly_one_000",
+    "question_sha256": "47c710011ad0f510ceccc1f954a23fe9c0ae72e2e9c9a970f93b277dc6f95bd6",
+    "raw_sha256": "0de71ea4ca8d17f29e133472d93610c126d8e4e53ca8287b679b58694c72e676",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_at_least_one_000",
+    "question_sha256": "426c439e14acdbeea15fe5b4d1d643fdd7f2963fbe0b458df664d7035ec06695",
+    "raw_sha256": "241d5dd70979f35322b689476ab79ed70cb2790d476da174ee4a41d59949f976",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_001",
+    "question_sha256": "2aa703b8303d0170968595dbd2833be17c3d4caea57caf26cef98bd59d4cb4d4",
+    "raw_sha256": "36fc2a715105138a4d009bf19311439e32a62b9286793e1f5873f4a0c1f91931",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_at_least_one_003",
+    "question_sha256": "8fffc5c229bd4f356fb4a23cf2dc3e9b8a5d00aae24bd4ccadc6c8b34ef6f1ef",
+    "raw_sha256": "083281fc2c7166f2b58fadfba735f1c3a352f80e2134380ef243a6f3c0268e94",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_002",
+    "question_sha256": "6a18c46af4789534382a4d1a7489e73f60c8a15cbc188cdefefe1ebffc113c11",
+    "raw_sha256": "4745cff62d862775d57411412cc21b7917e0db172cf4b89bffd480fbba33b010",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_003",
+    "question_sha256": "362324e14e0edc9803a3cfb0152e34a158d9629f4d480b4e5566afb5d0ed4a94",
+    "raw_sha256": "5a6d6876ac61ae57da1239da507a2506fb43162bfc762d9efa9217be3e58742d",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_005",
+    "question_sha256": "d9d8d22a46c75e504b846c5bf42c8435797ce0b964278589ca930e2d09d1614a",
+    "raw_sha256": "cb49519c073ec1bc754a138ec23e59e93d2af9dca7ce1f6d005372c2642fc9dc",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d3",
+    "question_sha256": "b20092a2e6133d2c16be9bb8a4967ebd553ed7f3e34953fe993a793e8d587be9",
+    "raw_sha256": "d8247968c7b23e348964154695675652f708755211db219275674c9ef52fe014",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_003_d3",
+    "question_sha256": "fd4f58e37b1d08250645be4aa3352c9532678d408015e81ac7bee8b80ec95999",
+    "raw_sha256": "cb1146e45ff8e7e7de9fe1cdf8722a107fed60e0d1a66dfb66e8895b82e59260",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v20_validation_001_exactly_one_s0",
+    "question_sha256": "b160d1b4dfb525bf7dea5813a06904a65293d5cf8b88b175af6b22053fde275d",
+    "raw_sha256": "eec1ef0f99b46de79bfe8fb6f5c9aa2d799dc997d4135ba50acb969e80a9e022",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_001",
+    "question_sha256": "f5ebce2a82a4c30748d82455aaf98889bb44932209707da3f55a0d19ccacb5a6",
+    "raw_sha256": "1a52d2b6e2c6f9394c5936732e9c396fe36fd9f0050dcf6bede635ac042efc55",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_002",
+    "question_sha256": "3f7e11ecb4f5b818799df6fb4c138ad2a0e23e1f1c50cbd8a61f34c76007d2cf",
+    "raw_sha256": "a03cef7024fb92ce6180ad51acb1199336642a6908e36fc2e927188cab446174",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_003",
+    "question_sha256": "ec24b31a1e46a9d1fda71df8b503ef935e8cf875b3d737bb5f1ab15ecf100a82",
+    "raw_sha256": "9e55f8b32bd4107c8040276a788a0f6209689058dcb0e13b76df943e6d2c7b5c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_004",
+    "question_sha256": "9b657be7af0f16465cdd26a55fa220ee5f062fd983ffc3a657164848e1249bdf",
+    "raw_sha256": "d67ec8ee7e8ba4b049180dfcd8c3e4654201057c46c4cc5f154809508aa7abe2",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_005",
+    "question_sha256": "93a6b394216d6b849355bc75793d4157fba630c5dd2918bf232870ae64930547",
+    "raw_sha256": "85df360b1c3e0469417b88b63c56b841956a1898225250c0a926213250a5ac77",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_001",
+    "question_sha256": "ff515db1e64340425a9937de8c3b71a2958efe1c1f51ff1c6bd2de570ba98d6f",
+    "raw_sha256": "f73152b67854e4c29c0d1c7dc12cf657643184bda6b8b056027161825e16a4e4",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_004",
+    "question_sha256": "8723c12d84bf903d0710898b2232548e6a26732a1a40edbf620a3ab9540be61f",
+    "raw_sha256": "a9adf250abcc50c683ca920f0426db81e562bc9df122e812a48cadedca689351",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_000",
+    "question_sha256": "f6e0f710a2589b433c2809b1ea9181350c9df299103a4f2f488f4dfb9f78f13b",
+    "raw_sha256": "b86264f67db51d642ddb16a9c4e77b0075c1da6637905baebeff1d69499aa90f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_001",
+    "question_sha256": "60664972e11cad8a0a24313f50eb57b0f5bc9f456de9e2f8781bb8dc2e5bba73",
+    "raw_sha256": "452472b0fb7482a00e9b336d580fb6fd13d1fb42db797460580c9289b302bc71",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v17_validation_interval_003",
+    "question_sha256": "362324e14e0edc9803a3cfb0152e34a158d9629f4d480b4e5566afb5d0ed4a94",
+    "raw_sha256": "3de5af421b40ec150b4660193c2750620f1e74c2dd8bd593c83469048a59947f",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Manual structural review: denominator 2*2 folded to 4; center and half-width scaling preserved."
+  },
+  {
+    "id": "v18_validation_poisson_variance_003_d3",
+    "question_sha256": "b20092a2e6133d2c16be9bb8a4967ebd553ed7f3e34953fe993a793e8d587be9",
+    "raw_sha256": "d000c67148c686d8df3975aed246e7876b182e56e29d4693fe04c4e13e6d5463",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement."
+  },
+  {
+    "id": "v17_validation_poisson_time_001",
+    "question_sha256": "871cacb861b2fac7aef006de80add5e3a4c4afed853394b7b2275053e91dda84",
+    "raw_sha256": "d0a28369821a50f5bdbadabdce5dd0fc9aa9704756a0c6df1c36b611e646f2d9",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+  },
+  {
+    "id": "v17_validation_poisson_time_003",
+    "question_sha256": "dee7f61ba4841a5e3cc5b2faedab26968e54cc89dec7a2b43ef0bfe2b9ee950c",
+    "raw_sha256": "a800ae58d5f046be827784a9c7bd6d27275421439bba18736db98f2fd0518df0",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_time_005",
+    "question_sha256": "9f62a7742dd0bbc86d1e58ab4fe7c2f210f948c50f9c5d151a6ccc13238ea6e6",
+    "raw_sha256": "46174db51d2faded2fb136a9f7d1be74e2424cdca2c42673f790714645bd7197",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_000",
+    "question_sha256": "e0bf92c8b89180379247ff4280e2399e1f3b55660cdcb9fa812f700802c6dfca",
+    "raw_sha256": "780e649bed133c6611bf211761e258dfbb5939f8614661499997f3c69b807467",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_001",
+    "question_sha256": "f5ebce2a82a4c30748d82455aaf98889bb44932209707da3f55a0d19ccacb5a6",
+    "raw_sha256": "3eaf80cd48d7b5a357a270458824da423a5f231fdc57bc87f86eaf0aff37d36d",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_interval_002",
+    "question_sha256": "6a18c46af4789534382a4d1a7489e73f60c8a15cbc188cdefefe1ebffc113c11",
+    "raw_sha256": "62bd06353fdf9846fb1192fecb080960e1f175b6f8c83417a4b55bff936f6603",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  },
+  {
+    "id": "v18_validation_second_moment_000_d3",
+    "question_sha256": "e19551a91892a1779305c2d996a473d7901b092fea24c79c5114fa397cdfb19c",
+    "raw_sha256": "ecd76d33accb1c9185cb5cce8d6d37c2e78a374604d3fe73977defde3d1ac23c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_002_d2",
+    "question_sha256": "22eec37c807dd5e546aca3674e97722621cfa95dee1cf3cbb3c5d2807ea814eb",
+    "raw_sha256": "2f0fc1fd784f05c7def1aa4b46713308f07a5cfe0348eae996980c3b5a328d06",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_000",
+    "question_sha256": "e0bf92c8b89180379247ff4280e2399e1f3b55660cdcb9fa812f700802c6dfca",
+    "raw_sha256": "fda6927e86f47bf6e5b502ff110dcebaf79caf1d8a4b89481f280b04f232947c",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_moment_003",
+    "question_sha256": "ec24b31a1e46a9d1fda71df8b503ef935e8cf875b3d737bb5f1ab15ecf100a82",
+    "raw_sha256": "8dd635a5fa1e9ce3afb725863f02352521ed57d676ba364a5b1d9f8cd5445c68",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_uniform_time_001",
+    "question_sha256": "ff515db1e64340425a9937de8c3b71a2958efe1c1f51ff1c6bd2de570ba98d6f",
+    "raw_sha256": "0ebd399790b5456a1bd6e8f0598481c38cf123ea1bb8f73c937d82dbbeef556f",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_binomial_000",
+    "question_sha256": "314ad610046807c87eec83fc319ae3c97a2aa43d9ba09f7ff979c801819e66ff",
+    "raw_sha256": "843c273197d52dfe64af111dc3818d9a38690ad17ae00ef9ec68a93743218e57",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Semantic review: Binomial n=7, k=4; 30/100=3/10 and 1-30/100=7/10. The original expression preserves comb(7,4), success exponent 4, and failure exponent 7-4. No raw edits."
+  },
+  {
+    "id": "v17_validation_poisson_time_003",
+    "question_sha256": "dee7f61ba4841a5e3cc5b2faedab26968e54cc89dec7a2b43ef0bfe2b9ee950c",
+    "raw_sha256": "74077e5de8e3e6ab611e033896c002bcda8473792ab9e3895ae7d164c075c9f2",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_time_005",
+    "question_sha256": "9f62a7742dd0bbc86d1e58ab4fe7c2f210f948c50f9c5d151a6ccc13238ea6e6",
+    "raw_sha256": "7c0056c7fa6242ac1e1e7e1c4981a5fb67da1e849d76dde56827ebba2f834f8d",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_scaled_002",
+    "question_sha256": "cbaba490286829a9d7c122d9360b443d2abd456c29928c50758ff95f49f64310",
+    "raw_sha256": "ad6375972fd7752f75efbb10fa9ca0f60bf434cac8c6dae3d89179d1c84df5ac",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v18_validation_second_moment_001_d3",
+    "question_sha256": "4619349b38625c465b37a334dd1587e254e4a82b783c575cffb5de7e0064ba6f",
+    "raw_sha256": "5cc965118afc6d4862fc3868a8772adcf46468d3ccda191687c6d14cadb8f1bb",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "The model expression yields the wrong value; no repair applied."
+  },
+  {
+    "id": "v17_validation_poisson_time_005",
+    "question_sha256": "9f62a7742dd0bbc86d1e58ab4fe7c2f210f948c50f9c5d151a6ccc13238ea6e6",
+    "raw_sha256": "04fa105cb72db0e250339337be6396b338d258b139bf57926c133349fcb10f80",
+    "math_correct": false,
+    "review_required": false,
+    "primary_correct": false,
+    "correct": false,
+    "reason": "Poisson count variance must be rate * seconds / 60. The raw answer raises 60 to the seconds power instead of multiplying by duration; reject without repairing the expression."
+  },
+  {
+    "id": "v17_validation_interval_005",
+    "question_sha256": "d9d8d22a46c75e504b846c5bf42c8435797ce0b964278589ca930e2d09d1614a",
+    "raw_sha256": "dd7eba1e09046cb8678f7fa07dd66a7aee06edb553c83499d70eac35980ba6a9",
+    "math_correct": true,
+    "review_required": false,
+    "primary_correct": true,
+    "correct": true,
+    "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately."
+  }
+]
