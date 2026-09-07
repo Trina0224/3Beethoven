@@ -1,0 +1,35 @@
+{
+  "scope": "filtered_pilot_student",
+  "step": 12,
+  "grading_change": false,
+  "reviews": [
+    {
+      "seed": 2027,
+      "id": "v17_validation_interval_000",
+      "raw_sha256": "79239cc2a37561b4d35390642fb189b676c67959ab3d22c7de7942bf6d34a14d",
+      "correct": true,
+      "reason": "For n multiplier 9, a+(b-a)/3+(b-a)/3 = a+2(b-a)/3 = (a+b)/2+(b-a)/(2*3). Algebraic identity for arbitrary endpoints; exact upper endpoint 838/3."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_001",
+      "raw_sha256": "d0a28369821a50f5bdbadabdce5dd0fc9aa9704756a0c6df1c36b611e646f2d9",
+      "correct": false,
+      "reason": "19/60**107 is not 19*107/60. Exponent replaces multiplication; reject without repairing answer."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_003",
+      "raw_sha256": "6665bc0ae5f4ce1b9846d15437bb52e7743604136b8065f7cb4bb4ff7ebec6ab",
+      "correct": false,
+      "reason": "47/60**520 is not 47*520/60. Exponent replaces multiplication; reject without repairing answer."
+    },
+    {
+      "seed": 31415,
+      "id": "v17_validation_poisson_time_005",
+      "raw_sha256": "04fa105cb72db0e250339337be6396b338d258b139bf57926c133349fcb10f80",
+      "correct": false,
+      "reason": "42/60**493 is not 42*493/60. Exponent replaces multiplication; reject without repairing answer."
+    }
+  ]
+}
