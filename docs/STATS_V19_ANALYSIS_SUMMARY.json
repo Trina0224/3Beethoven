@@ -1,0 +1,546 @@
+{
+  "models": {
+    "v15": {
+      "variants": {
+        "original": {
+          "n": 24,
+          "correct": 18,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "paraphrase": {
+          "n": 24,
+          "correct": 6,
+          "pending": 0,
+          "automatic_pending": 1
+        },
+        "magnitude": {
+          "n": 24,
+          "correct": 19,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "exactly_one": {
+          "n": 8,
+          "correct": 0,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "at_least_one": {
+          "n": 8,
+          "correct": 8,
+          "pending": 0,
+          "automatic_pending": 0
+        }
+      },
+      "paired": {
+        "paraphrase": {
+          "gains": 0,
+          "losses": 12,
+          "both_correct": 6,
+          "paired_questions": 24,
+          "story_clusters": 8,
+          "cluster_bootstrap_net_95": [
+            -15.0,
+            -8.0
+          ],
+          "note": "Eight stories only; descriptive conditional uncertainty, not training-seed variance."
+        },
+        "magnitude": {
+          "gains": 1,
+          "losses": 0,
+          "both_correct": 18,
+          "paired_questions": 24,
+          "story_clusters": 8,
+          "cluster_bootstrap_net_95": [
+            0.0,
+            3.0
+          ],
+          "note": "Eight stories only; descriptive conditional uncertainty, not training-seed variance."
+        }
+      },
+      "all_three_correct": 6,
+      "by_cell": {
+        "poisson_variance_d1": {
+          "original": 1,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "poisson_variance_d2": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "poisson_variance_d3": {
+          "original": 2,
+          "paraphrase": 1,
+          "magnitude": 2
+        },
+        "scaled_variance_d1": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "scaled_variance_d2": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "scaled_variance_d3": {
+          "original": 0,
+          "paraphrase": 0,
+          "magnitude": 0
+        },
+        "second_moment_d1": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "second_moment_d2": {
+          "original": 1,
+          "paraphrase": 0,
+          "magnitude": 1
+        },
+        "second_moment_d3": {
+          "original": 0,
+          "paraphrase": 0,
+          "magnitude": 0
+        },
+        "conditional_wait_d1": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "conditional_wait_d2": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "conditional_wait_d3": {
+          "original": 2,
+          "paraphrase": 1,
+          "magnitude": 2
+        }
+      },
+      "mc_correct": 126,
+      "mc_all_four": 19
+    },
+    "v19": {
+      "variants": {
+        "original": {
+          "n": 24,
+          "correct": 24,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "paraphrase": {
+          "n": 24,
+          "correct": 15,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "magnitude": {
+          "n": 24,
+          "correct": 24,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "exactly_one": {
+          "n": 8,
+          "correct": 0,
+          "pending": 0,
+          "automatic_pending": 0
+        },
+        "at_least_one": {
+          "n": 8,
+          "correct": 8,
+          "pending": 0,
+          "automatic_pending": 0
+        }
+      },
+      "paired": {
+        "paraphrase": {
+          "gains": 0,
+          "losses": 9,
+          "both_correct": 15,
+          "paired_questions": 24,
+          "story_clusters": 8,
+          "cluster_bootstrap_net_95": [
+            -13.0,
+            -5.0
+          ],
+          "note": "Eight stories only; descriptive conditional uncertainty, not training-seed variance."
+        },
+        "magnitude": {
+          "gains": 0,
+          "losses": 0,
+          "both_correct": 24,
+          "paired_questions": 24,
+          "story_clusters": 8,
+          "cluster_bootstrap_net_95": [
+            0.0,
+            0.0
+          ],
+          "note": "Eight stories only; descriptive conditional uncertainty, not training-seed variance."
+        }
+      },
+      "all_three_correct": 15,
+      "by_cell": {
+        "poisson_variance_d1": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "poisson_variance_d2": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "poisson_variance_d3": {
+          "original": 2,
+          "paraphrase": 1,
+          "magnitude": 2
+        },
+        "scaled_variance_d1": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "scaled_variance_d2": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "scaled_variance_d3": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "second_moment_d1": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "second_moment_d2": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "second_moment_d3": {
+          "original": 2,
+          "paraphrase": 0,
+          "magnitude": 2
+        },
+        "conditional_wait_d1": {
+          "original": 2,
+          "paraphrase": 2,
+          "magnitude": 2
+        },
+        "conditional_wait_d2": {
+          "original": 2,
+          "paraphrase": 1,
+          "magnitude": 2
+        },
+        "conditional_wait_d3": {
+          "original": 2,
+          "paraphrase": 1,
+          "magnitude": 2
+        }
+      },
+      "mc_correct": 127,
+      "mc_all_four": 20
+    }
+  },
+  "mc_paired": {
+    "question_clusters": 60,
+    "responses_per_model": 240,
+    "net_rotation_correct": 1,
+    "cluster_bootstrap_net_95": [
+      -6.0,
+      8.0
+    ],
+    "all_four_gains": 2,
+    "all_four_losses": 1,
+    "all_four_p_exact": 1.0
+  },
+  "original_reproduction": {
+    "v15": {
+      "n": 24,
+      "same_correctness": 24,
+      "same_raw": 24
+    },
+    "v19": {
+      "n": 24,
+      "same_correctness": 24,
+      "same_raw": 24
+    }
+  },
+  "review": {
+    "decisions": [
+      {
+        "model": "v15",
+        "id": "analysis_v19_test_scaled_variance_000_d1_paraphrase",
+        "raw": "Expression: (3 * X + 10 - 3 * X) ** 2",
+        "raw_sha256": "57cc54efafc10bac0ccc6d8180c9ee730fd7bee6dd3843e80fad6a8f19949d17",
+        "reference": "3**2*216",
+        "credit": false,
+        "reason": "X 相消後得到 10**2=100；參考式 3**2*216=1944。即使容許符號相消，答案仍錯。"
+      }
+    ],
+    "pending_remaining": 0,
+    "note": "All frozen scores unchanged; the sole pending expression is mathematically wrong."
+  },
+  "paraphrase_failures": [
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_poisson_variance_000_d1_paraphrase",
+      "question": "The expected value of a Poisson-distributed count X is 48. Report the variance of this count.",
+      "track": "poisson_variance",
+      "depth": 1,
+      "raw": "Expression: 48 ** 2",
+      "reference": "48"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_poisson_variance_001_d1_paraphrase",
+      "question": "The expected value of a Poisson-distributed count X is 53. Report the variance of this count.",
+      "track": "poisson_variance",
+      "depth": 1,
+      "raw": "Expression: 53 ** 2",
+      "reference": "53"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_poisson_variance_000_d2_paraphrase",
+      "question": "Consider a 3-minute observation. Events follow a homogeneous Poisson process at 48 per minute. Report the variance of the number observed.",
+      "track": "poisson_variance",
+      "depth": 2,
+      "raw": "Expression: 48 * (3 / 2)",
+      "reference": "48*3"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_poisson_variance_001_d2_paraphrase",
+      "question": "Consider a 2-minute observation. Events follow a homogeneous Poisson process at 53 per minute. Report the variance of the number observed.",
+      "track": "poisson_variance",
+      "depth": 2,
+      "raw": "Expression: 53 / 2",
+      "reference": "53*2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_poisson_variance_001_d3_paraphrase",
+      "question": "The observation lasts 150 seconds. Events follow a homogeneous Poisson process at 53 per minute. Report the variance of the number observed.",
+      "track": "poisson_variance",
+      "depth": 3,
+      "raw": "Expression: 53 / 30 ** 2",
+      "reference": "53*(150/60)"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_000_d1_paraphrase",
+      "question": "Report the variance of Y. Define Y by multiplying X by 3 and then adding 10; the variance of X is 216.",
+      "track": "scaled_variance",
+      "depth": 1,
+      "raw": "Expression: (3 * X + 10 - 3 * X) ** 2",
+      "reference": "3**2*216"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_001_d1_paraphrase",
+      "question": "Report the variance of Y. Define Y by multiplying X by 5 and then adding 12; the variance of X is 45.",
+      "track": "scaled_variance",
+      "depth": 1,
+      "raw": "Expression: (5 * 5) ** 2",
+      "reference": "5**2*45"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_000_d2_paraphrase",
+      "question": "Report the variance of Y. Define Y by multiplying X by 3 and then adding 10; X is a Poisson count whose expectation is 82.",
+      "track": "scaled_variance",
+      "depth": 2,
+      "raw": "Expression: 3 ** 2",
+      "reference": "3**2*82"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_001_d2_paraphrase",
+      "question": "Report the variance of Y. Define Y by multiplying X by 5 and then adding 12; X is a Poisson count whose expectation is 54.",
+      "track": "scaled_variance",
+      "depth": 2,
+      "raw": "Expression: 5 ** 2",
+      "reference": "5**2*54"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_000_d3_paraphrase",
+      "question": "Report the variance of Y, where Y=3*X+10. X counts events during 12 minutes; these events follow a homogeneous Poisson process at 82 per minute.",
+      "track": "scaled_variance",
+      "depth": 3,
+      "raw": "Expression: (3 ** 2) * 82 / 12",
+      "reference": "3**2*(82*12)"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_scaled_variance_001_d3_paraphrase",
+      "question": "Report the variance of Y, where Y=5*X+12. X counts events during 14 minutes; these events follow a homogeneous Poisson process at 54 per minute.",
+      "track": "scaled_variance",
+      "depth": 3,
+      "raw": "Expression: (5 ** 2 * 54 / 1) - (5 * 5 * 54 / (1 ** 2))",
+      "reference": "5**2*(54*14)"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_000_d1_paraphrase",
+      "question": "Report the expected value of the square of X. Its variance is 194, and its mean is 83.",
+      "track": "second_moment",
+      "depth": 1,
+      "raw": "Expression: 83 ** 2",
+      "reference": "194+83**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_001_d1_paraphrase",
+      "question": "Report the expected value of the square of X. Its variance is 123, and its mean is 66.",
+      "track": "second_moment",
+      "depth": 1,
+      "raw": "Expression: 66 ** 2",
+      "reference": "123+66**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_000_d2_paraphrase",
+      "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 83.",
+      "track": "second_moment",
+      "depth": 2,
+      "raw": "Expression: 83 ** 2",
+      "reference": "83+83**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_001_d2_paraphrase",
+      "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 66.",
+      "track": "second_moment",
+      "depth": 2,
+      "raw": "Expression: 66 ** 2",
+      "reference": "66+66**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_000_d3_paraphrase",
+      "question": "Report the expected value of X squared. X counts events over 13 minutes, from a homogeneous Poisson process at 83 events per minute.",
+      "track": "second_moment",
+      "depth": 3,
+      "raw": "Expression: 83 ** 2",
+      "reference": "(83*13)+(83*13)**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_second_moment_001_d3_paraphrase",
+      "question": "Report the expected value of X squared. X counts events over 11 minutes, from a homogeneous Poisson process at 66 events per minute.",
+      "track": "second_moment",
+      "depth": 3,
+      "raw": "Expression: 11 * (66 / 2) ** 2",
+      "reference": "(66*11)+(66*11)**2"
+    },
+    {
+      "model": "v15",
+      "id": "analysis_v19_test_conditional_wait_000_d3_paraphrase",
+      "question": "You know T has already exceeded 690 seconds. Before this information, T was uniform between 0 and 51 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+      "track": "conditional_wait",
+      "depth": 3,
+      "raw": "Expression: (51 * 60 + 690) / (60 * 51 - 690)",
+      "reference": "(690/60+51)/2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_poisson_variance_001_d3_paraphrase",
+      "question": "The observation lasts 150 seconds. Events follow a homogeneous Poisson process at 53 per minute. Report the variance of the number observed.",
+      "track": "poisson_variance",
+      "depth": 3,
+      "raw": "Expression: 53 / 30 * 150",
+      "reference": "53*(150/60)"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_scaled_variance_000_d3_paraphrase",
+      "question": "Report the variance of Y, where Y=3*X+10. X counts events during 12 minutes; these events follow a homogeneous Poisson process at 82 per minute.",
+      "track": "scaled_variance",
+      "depth": 3,
+      "raw": "Expression: (82*12)/(82*12)",
+      "reference": "3**2*(82*12)"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_scaled_variance_001_d3_paraphrase",
+      "question": "Report the variance of Y, where Y=5*X+12. X counts events during 14 minutes; these events follow a homogeneous Poisson process at 54 per minute.",
+      "track": "scaled_variance",
+      "depth": 3,
+      "raw": "Expression: (5*54+12-54*5)/(54*5)",
+      "reference": "5**2*(54*14)"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_second_moment_000_d2_paraphrase",
+      "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 83.",
+      "track": "second_moment",
+      "depth": 2,
+      "raw": "Expression: 83 ** 2",
+      "reference": "83+83**2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_second_moment_001_d2_paraphrase",
+      "question": "Report the expected value of the square of X. X follows a Poisson distribution with expected value 66.",
+      "track": "second_moment",
+      "depth": 2,
+      "raw": "Expression: 66 ** 2",
+      "reference": "66+66**2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_second_moment_000_d3_paraphrase",
+      "question": "Report the expected value of X squared. X counts events over 13 minutes, from a homogeneous Poisson process at 83 events per minute.",
+      "track": "second_moment",
+      "depth": 3,
+      "raw": "Expression: (83*13)",
+      "reference": "(83*13)+(83*13)**2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_second_moment_001_d3_paraphrase",
+      "question": "Report the expected value of X squared. X counts events over 11 minutes, from a homogeneous Poisson process at 66 events per minute.",
+      "track": "second_moment",
+      "depth": 3,
+      "raw": "Expression: (66*11)/(2*1)",
+      "reference": "(66*11)+(66*11)**2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_conditional_wait_000_d2_paraphrase",
+      "question": "You know T has already exceeded 11 minutes. Before this information, T was uniform between 0 and 51 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+      "track": "conditional_wait",
+      "depth": 2,
+      "raw": "Expression: (11+0)/2+(11+0)/2",
+      "reference": "(11+51)/2"
+    },
+    {
+      "model": "v19",
+      "id": "analysis_v19_test_conditional_wait_000_d3_paraphrase",
+      "question": "You know T has already exceeded 690 seconds. Before this information, T was uniform between 0 and 51 minutes. Report the conditional expected total T, in minutes, not the remaining time.",
+      "track": "conditional_wait",
+      "depth": 3,
+      "raw": "Expression: (51 / 60 + 51 / 60) / 2",
+      "reference": "(690/60+51)/2"
+    }
+  ],
+  "kaggle_version": 38,
+  "script_version_id": 347843399,
+  "receipt": {
+    "bytes": 317568,
+    "sha256": "5fdba3ca321bbc8408fa85c488fdbd19ee3482ff80dbc6a00c7bc19a5c04a3e2",
+    "crc_verified": true
+  },
+  "verified_responses": 656
+}

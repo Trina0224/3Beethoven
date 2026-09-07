@@ -6,6 +6,12 @@
 
 The project is intentionally playful on the surface and rigorous underneath.
 
+## Latest analysis — completed, Kaggle Version 38
+
+Saved v15/v19 weights were evaluated on 656 responses with zero training updates or teacher calls. Original / paraphrased / magnitude probes: v15 **18/24, 6/24, 19/24**; v19 **24/24, 15/24, 24/24**. Template success is fragile to wording. Same-runtime permanent MC: **126/240 vs 127/240**, without evidence of reliable improvement. Training-seed replication is designed but **not executed**. Keep v15; v19 remains diagnostic.
+
+[Complete analysis and evidence](docs/STATS_V19_ANALYSIS_REPORT.md) · [Current status](docs/STATS_CURRENT_STATUS.md)
+
 ## Current experiment — v0.19 completed and saved
 
 Kaggle Version 37 is Successful. Training stopped after one epoch / 60 updates at the preregistered retention gate. Same-test reviewed v15 / v19: new chains **72/96 / 96/96**; historical skill families **59/96 / 56/96**. Exactly-one event performance falls from 10/12 to 1/12, so v19 is not promoted. All 21 pending answers have been reviewed. Zero new teacher calls.

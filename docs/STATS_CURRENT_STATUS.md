@@ -1,12 +1,10 @@
-# 目前狀態：v19 已保存，固定權重分析進行中
+# 目前狀態：v19 分析與存檔完成
 
-Kaggle Version 38（347843399）正式執行：兩個保存模型、656 個推論回答，訓練更新 0、老師呼叫 0。原 Version 37 權重與結果保持不變。
+2026-09-06 19:26 PDT
 
-分析協定、永久錨點、擾動題與來源已先提交。配對統計已完成：整體 p=0.7011；exactly_one 原始 p=0.011719、八類 Holm 校正 p=0.09375。不升級依據仍是原實務保留門檻，不能把它說成整體顯著退步。
+固定權重分析已完成並保存為 Kaggle Version 38（347843399），Successful，656 筆回答，訓練更新與老師呼叫皆為 0。原題／改寫／量級測試：v15 為 18/24、6/24、19/24；v19 為 24/24、15/24、24/24。同環境永久 MC：126/240 對 127/240，未建立可靠提升。原舊題整體精確 McNemar p=0.7011；exactly_one 原始 p=0.011719、Holm p=0.09375，仍違反事前實務保留門檻。保留 v15，v19 不升級。三個訓練 seed 的設計已記錄，尚未執行，沒有量出訓練 seed 變異。
 
-已核對歷史六版本 MC 原始結果；固定基準並非完全不存在，缺口在集中追蹤、部分缺測與精確執行可比性。訓練 seed 重複實驗只記錄設計，尚未執行，不能聲稱量出其變異。
-
-[分析協定](STATS_V19_ANALYSIS_PROTOCOL.md) · [配對統計](STATS_V19_PAIRED_ANALYSIS.json) · [多 seed 設計](STATS_TRAINING_SEED_REPLICATION_PLAN.md)
+[完整分析](STATS_V19_ANALYSIS_REPORT.md) · [分析摘要](STATS_V19_ANALYSIS_SUMMARY.json) · [逐題完整資料](STATS_V19_ANALYSIS_RESULTS.json.gz.b64) · [多 seed 設計](STATS_TRAINING_SEED_REPLICATION_PLAN.md)
 
 以下保留歷史狀態。
 

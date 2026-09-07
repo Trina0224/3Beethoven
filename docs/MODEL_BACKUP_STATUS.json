@@ -1,5 +1,5 @@
 {
-  "status_as_of": "2026-09-06 15:23 PDT",
+  "status_as_of": "2026-09-06 19:26 PDT",
   "github_weight_binary_committed": false,
   "github_preserves": [
     "teacher data",
@@ -244,5 +244,25 @@
     "promotion": false,
     "full_checkpoints": "Kaggle directory output; excluded from compact ZIP",
     "fresh_inference_restore_verified": false
+  },
+  "v19_fixed_weight_analysis": {
+    "status": "Successful",
+    "kaggle_version": 38,
+    "script_version_id": 347843399,
+    "verified_responses": 656,
+    "training_updates": 0,
+    "teacher_calls": 0,
+    "archive_bytes": 317568,
+    "archive_sha256": "5fdba3ca321bbc8408fa85c488fdbd19ee3482ff80dbc6a00c7bc19a5c04a3e2",
+    "crc_verified": true,
+    "weights_remain_in_version": 37,
+    "fresh_adapter_restore_inference_verified": [
+      "v15",
+      "v19_epoch1"
+    ],
+    "restore_scope": "Saved adapters hash checked and loaded in a fresh run; original 24 responses per model exactly reproduced. Not a full optimizer-state training resume.",
+    "review_pending": 0,
+    "training_seed_replication_executed": false,
+    "report": "docs/STATS_V19_ANALYSIS_REPORT.md"
   }
 }

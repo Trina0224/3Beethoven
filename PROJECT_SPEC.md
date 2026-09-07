@@ -2,6 +2,8 @@
 
 ## Active statistics pilot addendum — 2026-09-06 PDT
 
+Latest completed analysis: **Kaggle Version 38**, Successful, 656 fixed-weight responses, zero new training or teacher calls. v19 scores 24/24 on original and magnitude probes, but 15/24 on paraphrases; v15 scores 18/24, 19/24, and 6/24 respectively. Same-runtime permanent MC is 126/240 vs 127/240. No promotion; training seed replication remains unexecuted. See [analysis report](docs/STATS_V19_ANALYSIS_REPORT.md).
+
 Latest completed run: **v0.19**, saved as Successful Kaggle Version 37. Reviewed same-test v15/v19: chains 72/96 and 96/96; old skills 59/96 and 56/96. Exactly-one falls 10/12 to 1/12; no promotion. See docs/STATS_V0_19_REPORT.md. All pending answers reviewed.
 
 Historical evaluated run: **v0.18**. New-chain reviewed v15/staged/shuffled scores: 76/96, 96/96, 96/96. Historical eight-family reviewed scores: 64/96, 36/96, 44/96. No promotion. All 35 pending transfer responses reviewed; 26 receive mathematical equivalence credit. Final full Kaggle preservation is not yet confirmed.

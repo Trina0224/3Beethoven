@@ -287,3 +287,10 @@ The initial detached interactive run was interrupted and no v19 checkpoint was f
 ## v19 完成後追加
 
 正式 Version 37 Successful；第一輪觸發保留門檻。新概念 72→96/96，舊技能複核 59→56/96，恰有一個事件 10→1/12；不升級。所有待確認答案已複核，完整結果與備份見 [完成報告](STATS_V0_19_REPORT.md)。原預期與停止規則不回改。
+
+
+## 已保存的固定權重分析 — Version 38
+
+Version 38（347843399）Successful；分析輸出目錄 `3beethoven_v19_analysis`，656 筆回答；完整摘要、原始資料及補充語意複核見 [分析報告](STATS_V19_ANALYSIS_REPORT.md)。分析 ZIP 317,568 bytes，SHA-256 `5fdba3ca321bbc8408fa85c488fdbd19ee3482ff80dbc6a00c7bc19a5c04a3e2`，CRC 通過。
+
+重跑 `scripts/kaggle_v19_analysis_entrypoint.py` 必須指定 **Version 37** 為來源輸入，因為兩個 adapter 與原始專案保存在 Version 37；Version 38 是分析輸出，不包含那兩個權重目錄。不要把 latest 自動解析成 Version 38 後直接重跑。Version 38 已完成兩模型保存權重的 SHA 核對及重新載入推論，並逐字重現各 24 筆原題。這不等於驗證 optimizer-state 訓練續跑。
