@@ -11,6 +11,7 @@ from pathlib import Path
 from flight_run_stats_v0_3 import TeacherClient, package, read_json, save_json
 from stats_consolidation_pilot import DOCS, TEACHER_MODEL, build, digest, assert_execution_released
 from stats_consolidation_grader import score, outcome, grader_fingerprint
+from stats_teacher_envelope import parse_answers as parse_envelope
 
 ROOT = Path("/kaggle/working/3beethoven_stats_consolidation_teacher")
 DECISION = DOCS / "STATS_CONSOLIDATION_DECISION_DRAFT.json"
@@ -35,20 +36,8 @@ class BudgetedClient(TeacherClient):
 
 
 def parse_answers(raw):
-    value = json.loads(raw)
-    answers = value.get("answers")
-    if not isinstance(answers, list):
-        raise ValueError("answers must be a list")
-    result = {}
-    for item in answers:
-        if not isinstance(item, dict) or set(item) != {"question_id", "expression"}:
-            raise ValueError("Each answer must contain only question_id and expression")
-        if not isinstance(item["question_id"], str) or not isinstance(item["expression"], str):
-            raise ValueError("Answer fields must be strings")
-        if item["question_id"] in result:
-            raise ValueError("Duplicate question_id")
-        result[item["question_id"]] = item["expression"].strip()
-    return result
+    answers, _ = parse_envelope(raw)
+    return {item["question_id"]: item["expression"].strip() for item in answers}
 
 
 def request_messages(request, pending_ids):
@@ -210,7 +199,9 @@ def main():
                                   max_tokens=teacher["max_tokens_per_story"], json_mode=True)
                 attempt_record = {"attempt": attempt, "raw": raw, "parsed": None, "error": None, "judgements": {}}
                 try:
-                    parsed = parse_answers(raw)
+                    items, repair = parse_envelope(raw, pending)
+                    parsed = {item["question_id"]: item["expression"].strip() for item in items}
+                    attempt_record["transport_repair"] = repair
                     attempt_record["parsed"] = parsed
                     for qid in pending:
                         if qid not in parsed:

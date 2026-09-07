@@ -19,7 +19,7 @@ GRADER_VERSION = "stats-consolidation-v2-reviewed-equivalences"
 
 def grader_fingerprint():
     root = Path(__file__).parent
-    names = ("stats_consolidation_grader.py", "stats_consolidation_semantics.py",
+    names = ("stats_consolidation_grader.py", "stats_consolidation_semantics.py", "stats_teacher_envelope.py",
              "stats_curriculum_v0_19.py", "stats_curriculum_v0_18.py",
              "stats_curriculum_v0_13.py", "formulation_grader.py", "exact_calculator.py")
     return hashlib.sha256(b"\0".join(name.encode()+b"\0"+(root/name).read_bytes() for name in names)).hexdigest()

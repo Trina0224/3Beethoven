@@ -10,28 +10,7 @@ from pathlib import Path
 
 from stats_consolidation_grader import score, outcome, grader_fingerprint
 from stats_consolidation_pilot import build, digest
-
-
-def parse_answers(raw):
-    """Parse the teacher envelope, repairing only redundant trailing braces.
-
-    The original bytes remain in the source record.  We intentionally do not
-    recover answers nested in an echoed request envelope.
-    """
-    repair = None
-    try:
-        payload = json.loads(raw)
-    except json.JSONDecodeError:
-        stripped = raw.strip()
-        payload, end = json.JSONDecoder().raw_decode(stripped)
-        trailing = stripped[end:].strip()
-        if not trailing or set(trailing) != {"}"}:
-            raise
-        repair = "removed_redundant_trailing_closing_brace"
-    items = payload["answers"]
-    if not isinstance(items, list):
-        raise ValueError("answers must be a list")
-    return items, repair
+from stats_teacher_envelope import parse_answers
 
 
 def audit(stories, requests, source):
@@ -50,7 +29,7 @@ def audit(stories, requests, source):
             if compatible:
                 for index, a in enumerate(record["attempts"]):
                     try:
-                        items, transport_repair = parse_answers(a["raw"])
+                        items, transport_repair = parse_answers(a["raw"], {x["id"] for x in story["questions"]})
                         ids = [x["question_id"] for x in items]
                         if len(ids) != len(set(ids)):
                             raise ValueError("Duplicate question ID in raw JSON")
