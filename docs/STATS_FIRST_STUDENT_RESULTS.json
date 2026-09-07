@@ -1,0 +1,1377 @@
+{
+  "baseline": {
+    "chain": {
+      "category_counts": {
+        "v18_conditional_wait": {
+          "correct": 12,
+          "depth3_correct": 4,
+          "depth3_n": 4,
+          "n": 12
+        },
+        "v18_poisson_variance": {
+          "correct": 12,
+          "depth3_correct": 4,
+          "depth3_n": 4,
+          "n": 12
+        },
+        "v18_scaled_variance": {
+          "correct": 8,
+          "depth3_correct": 0,
+          "depth3_n": 4,
+          "n": 12
+        },
+        "v18_second_moment": {
+          "correct": 6,
+          "depth3_correct": 0,
+          "depth3_n": 4,
+          "n": 12
+        }
+      },
+      "correct": 38,
+      "n": 48,
+      "pending": 0
+    },
+    "event": {
+      "category_counts": {
+        "both": {
+          "correct": 4,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 4
+        },
+        "exactly_one": {
+          "correct": 3,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 4
+        },
+        "neither": {
+          "correct": 1,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 4
+        },
+        "same": {
+          "correct": 4,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 4
+        }
+      },
+      "correct": 12,
+      "n": 16,
+      "pending": 0
+    },
+    "old": {
+      "category_counts": {
+        "at_least_one": {
+          "correct": 6,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "binomial": {
+          "correct": 6,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "exactly_one": {
+          "correct": 5,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "interval": {
+          "correct": 6,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "moment": {
+          "correct": 0,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "poisson_scaled": {
+          "correct": 3,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "poisson_time": {
+          "correct": 4,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        },
+        "uniform_time": {
+          "correct": 4,
+          "depth3_correct": 0,
+          "depth3_n": 0,
+          "n": 6
+        }
+      },
+      "correct": 34,
+      "n": 48,
+      "pending": 0
+    }
+  },
+  "new_training_rows": 67,
+  "promotion_eligible": false,
+  "replay_rows": 192,
+  "runs": {
+    "2027": {
+      "final_invocation_training_loss": 0.030335700873172645,
+      "gate": {
+        "checks": {
+          "chain:total": true,
+          "chain:v18_conditional_wait": true,
+          "chain:v18_conditional_wait:depth3": true,
+          "chain:v18_poisson_variance": true,
+          "chain:v18_poisson_variance:depth3": true,
+          "chain:v18_scaled_variance": true,
+          "chain:v18_scaled_variance:depth3": true,
+          "chain:v18_second_moment": true,
+          "chain:v18_second_moment:depth3": true,
+          "event:both": true,
+          "event:exactly_one": true,
+          "event:neither": true,
+          "event:same": true,
+          "event:total": true,
+          "no_pending": true,
+          "old:at_least_one": true,
+          "old:binomial": true,
+          "old:exactly_one": false,
+          "old:interval": true,
+          "old:moment": true,
+          "old:poisson_scaled": false,
+          "old:poisson_time": true,
+          "old:total": false,
+          "old:uniform_time": true
+        },
+        "passed": false
+      },
+      "history": [
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": false,
+              "chain:v18_poisson_variance:depth3": true,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": true,
+              "event:same": true,
+              "event:total": true,
+              "no_pending": true,
+              "old:at_least_one": false,
+              "old:binomial": true,
+              "old:exactly_one": true,
+              "old:interval": false,
+              "old:moment": true,
+              "old:poisson_scaled": true,
+              "old:poisson_time": true,
+              "old:total": false,
+              "old:uniform_time": true
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 8,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 10,
+                  "depth3_correct": 2,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 7,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 37,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 15,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 5,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 24,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 12,
+          "supervised_rows_seen_upper_bound": 96
+        },
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": false,
+              "chain:v18_poisson_variance:depth3": true,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": true,
+              "event:same": true,
+              "event:total": true,
+              "no_pending": true,
+              "old:at_least_one": true,
+              "old:binomial": true,
+              "old:exactly_one": true,
+              "old:interval": false,
+              "old:moment": true,
+              "old:poisson_scaled": true,
+              "old:poisson_time": false,
+              "old:total": false,
+              "old:uniform_time": false
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 8,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 10,
+                  "depth3_correct": 2,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 8,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 38,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 15,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 5,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 1,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 1,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 23,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 24,
+          "supervised_rows_seen_upper_bound": 192
+        },
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": true,
+              "chain:v18_poisson_variance:depth3": true,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": true,
+              "event:same": true,
+              "event:total": true,
+              "no_pending": true,
+              "old:at_least_one": true,
+              "old:binomial": true,
+              "old:exactly_one": false,
+              "old:interval": true,
+              "old:moment": true,
+              "old:poisson_scaled": false,
+              "old:poisson_time": true,
+              "old:total": false,
+              "old:uniform_time": true
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 11,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 8,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 8,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 39,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 14,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 1,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 29,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 33,
+          "supervised_rows_seen_upper_bound": 259
+        }
+      ],
+      "metrics": {
+        "chain": {
+          "category_counts": {
+            "v18_conditional_wait": {
+              "correct": 12,
+              "depth3_correct": 4,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_poisson_variance": {
+              "correct": 11,
+              "depth3_correct": 4,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_scaled_variance": {
+              "correct": 8,
+              "depth3_correct": 0,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_second_moment": {
+              "correct": 8,
+              "depth3_correct": 0,
+              "depth3_n": 4,
+              "n": 12
+            }
+          },
+          "correct": 39,
+          "n": 48,
+          "pending": 0
+        },
+        "event": {
+          "category_counts": {
+            "both": {
+              "correct": 4,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "exactly_one": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "neither": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "same": {
+              "correct": 4,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            }
+          },
+          "correct": 14,
+          "n": 16,
+          "pending": 0
+        },
+        "old": {
+          "category_counts": {
+            "at_least_one": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "binomial": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "exactly_one": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "interval": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "moment": {
+              "correct": 0,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "poisson_scaled": {
+              "correct": 1,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "poisson_time": {
+              "correct": 4,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "uniform_time": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            }
+          },
+          "correct": 29,
+          "n": 48,
+          "pending": 0
+        }
+      },
+      "selection": {
+        "diagnostic_step": 33,
+        "selected_step": null,
+        "stop_reason": "update_cap_without_full_pass"
+      },
+      "steps": 33,
+      "weights": {
+        "adapter_bytes": 97307544,
+        "adapter_sha256": "9c872e7105f7f446caa7cf988443f0c32e1446f89b7eff9bf06ea7f83b346d52",
+        "finite_tensors": 392,
+        "selected_or_diagnostic_step": 33
+      }
+    },
+    "31415": {
+      "final_invocation_training_loss": 0.026269596634489117,
+      "gate": {
+        "checks": {
+          "chain:total": true,
+          "chain:v18_conditional_wait": true,
+          "chain:v18_conditional_wait:depth3": true,
+          "chain:v18_poisson_variance": false,
+          "chain:v18_poisson_variance:depth3": false,
+          "chain:v18_scaled_variance": true,
+          "chain:v18_scaled_variance:depth3": true,
+          "chain:v18_second_moment": true,
+          "chain:v18_second_moment:depth3": true,
+          "event:both": true,
+          "event:exactly_one": true,
+          "event:neither": false,
+          "event:same": true,
+          "event:total": false,
+          "no_pending": true,
+          "old:at_least_one": true,
+          "old:binomial": true,
+          "old:exactly_one": true,
+          "old:interval": false,
+          "old:moment": true,
+          "old:poisson_scaled": true,
+          "old:poisson_time": false,
+          "old:total": false,
+          "old:uniform_time": false
+        },
+        "passed": false
+      },
+      "history": [
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": false,
+              "chain:v18_poisson_variance:depth3": true,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": true,
+              "event:same": true,
+              "event:total": true,
+              "no_pending": true,
+              "old:at_least_one": false,
+              "old:binomial": true,
+              "old:exactly_one": true,
+              "old:interval": true,
+              "old:moment": true,
+              "old:poisson_scaled": true,
+              "old:poisson_time": false,
+              "old:total": false,
+              "old:uniform_time": true
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 10,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 11,
+                  "depth3_correct": 3,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 7,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 40,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 15,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 5,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 5,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 28,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 12,
+          "supervised_rows_seen_upper_bound": 96
+        },
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": false,
+              "chain:v18_poisson_variance:depth3": true,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": false,
+              "event:same": true,
+              "event:total": false,
+              "no_pending": true,
+              "old:at_least_one": true,
+              "old:binomial": true,
+              "old:exactly_one": true,
+              "old:interval": true,
+              "old:moment": true,
+              "old:poisson_scaled": true,
+              "old:poisson_time": true,
+              "old:total": true,
+              "old:uniform_time": true
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 10,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 7,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 41,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 11,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 2,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 35,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 24,
+          "supervised_rows_seen_upper_bound": 192
+        },
+        {
+          "gate": {
+            "checks": {
+              "chain:total": true,
+              "chain:v18_conditional_wait": true,
+              "chain:v18_conditional_wait:depth3": true,
+              "chain:v18_poisson_variance": false,
+              "chain:v18_poisson_variance:depth3": false,
+              "chain:v18_scaled_variance": true,
+              "chain:v18_scaled_variance:depth3": true,
+              "chain:v18_second_moment": true,
+              "chain:v18_second_moment:depth3": true,
+              "event:both": true,
+              "event:exactly_one": true,
+              "event:neither": false,
+              "event:same": true,
+              "event:total": false,
+              "no_pending": true,
+              "old:at_least_one": true,
+              "old:binomial": true,
+              "old:exactly_one": true,
+              "old:interval": false,
+              "old:moment": true,
+              "old:poisson_scaled": true,
+              "old:poisson_time": false,
+              "old:total": false,
+              "old:uniform_time": false
+            },
+            "passed": false
+          },
+          "metrics": {
+            "chain": {
+              "category_counts": {
+                "v18_conditional_wait": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_poisson_variance": {
+                  "correct": 9,
+                  "depth3_correct": 3,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_scaled_variance": {
+                  "correct": 12,
+                  "depth3_correct": 4,
+                  "depth3_n": 4,
+                  "n": 12
+                },
+                "v18_second_moment": {
+                  "correct": 8,
+                  "depth3_correct": 0,
+                  "depth3_n": 4,
+                  "n": 12
+                }
+              },
+              "correct": 41,
+              "n": 48,
+              "pending": 0
+            },
+            "event": {
+              "category_counts": {
+                "both": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "exactly_one": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "neither": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                },
+                "same": {
+                  "correct": 4,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 4
+                }
+              },
+              "correct": 11,
+              "n": 16,
+              "pending": 0
+            },
+            "old": {
+              "category_counts": {
+                "at_least_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "binomial": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "exactly_one": {
+                  "correct": 6,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "interval": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "moment": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_scaled": {
+                  "correct": 3,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "poisson_time": {
+                  "correct": 0,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                },
+                "uniform_time": {
+                  "correct": 1,
+                  "depth3_correct": 0,
+                  "depth3_n": 0,
+                  "n": 6
+                }
+              },
+              "correct": 22,
+              "n": 48,
+              "pending": 0
+            }
+          },
+          "step": 33,
+          "supervised_rows_seen_upper_bound": 259
+        }
+      ],
+      "metrics": {
+        "chain": {
+          "category_counts": {
+            "v18_conditional_wait": {
+              "correct": 12,
+              "depth3_correct": 4,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_poisson_variance": {
+              "correct": 9,
+              "depth3_correct": 3,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_scaled_variance": {
+              "correct": 12,
+              "depth3_correct": 4,
+              "depth3_n": 4,
+              "n": 12
+            },
+            "v18_second_moment": {
+              "correct": 8,
+              "depth3_correct": 0,
+              "depth3_n": 4,
+              "n": 12
+            }
+          },
+          "correct": 41,
+          "n": 48,
+          "pending": 0
+        },
+        "event": {
+          "category_counts": {
+            "both": {
+              "correct": 4,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "exactly_one": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "neither": {
+              "correct": 0,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            },
+            "same": {
+              "correct": 4,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 4
+            }
+          },
+          "correct": 11,
+          "n": 16,
+          "pending": 0
+        },
+        "old": {
+          "category_counts": {
+            "at_least_one": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "binomial": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "exactly_one": {
+              "correct": 6,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "interval": {
+              "correct": 0,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "moment": {
+              "correct": 0,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "poisson_scaled": {
+              "correct": 3,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "poisson_time": {
+              "correct": 0,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            },
+            "uniform_time": {
+              "correct": 1,
+              "depth3_correct": 0,
+              "depth3_n": 0,
+              "n": 6
+            }
+          },
+          "correct": 22,
+          "n": 48,
+          "pending": 0
+        }
+      },
+      "selection": {
+        "diagnostic_step": 33,
+        "selected_step": null,
+        "stop_reason": "update_cap_without_full_pass"
+      },
+      "steps": 33,
+      "weights": {
+        "adapter_bytes": 97307544,
+        "adapter_sha256": "7c59309584374b0bef8618ded8c4923419aa51467771128242c8cbe20436ccae",
+        "finite_tensors": 392,
+        "selected_or_diagnostic_step": 33
+      }
+    }
+  },
+  "status": "two_seed_filtered_pilot_completed_no_promotion",
+  "teacher_scope": "filtered pilot; full teacher gate did not pass",
+  "teacher_usage": {
+    "new_calls": 29,
+    "new_cost": 0.00113858,
+    "prior_calls": 110,
+    "prior_cost": 0.00806302
+  }
+}
+

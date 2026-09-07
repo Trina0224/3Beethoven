@@ -1,17 +1,18 @@
 <!-- FIRST_STUDENT_LIVE_BEGIN -->
-目前執行中（2026-09-07）：已改為明確標記的 filtered-pilot 第一批學生，67 筆新教材＋192 筆 replay；完整教師教材 gate 仍未通過，本批不具升級資格。
+第一批已完成（2026-09-07）：filtered-pilot 診斷批次，67 筆新教材＋192 筆 replay。兩個 seed 均完成 33 updates、epoch 1.0；所有待判定項已複核，沒有全門檻過關點，不升級取代原 v15。
 
 - 原 v15 同環境基準已完成並複核：舊 34/48、組合 38/48、事件 12/16。
-- 2027 已完成 12 updates 與驗證、保存診斷 adapter；待判定答案需複核後再按一遍上限續跑。
-- 31415 正在同樣流程中。兩次皆最多 33 updates，先通過全部 gate 即停。
-- Version 52 保存了資料與執行起點；不是本批完成快照。最終權重與結果尚未交付。
+- 2027 最後：舊 29/48、組合 39/48、事件 14/16；舊 exactly_one 與 poisson_scaled 未過保留門檻。
+- 31415 最後：舊 22/48、組合 41/48、事件 11/16；舊 interval、poisson_time、uniform_time，組合 Poisson 與事件 neither 未過門檻。
+- Kaggle Version 53 已顯示 Successful，保存所有階段權重與 optimizer checkpoints。小型下載包 185,311,896 bytes，SHA-256 已驗證，含兩份最後診斷 adapter。下載位置見 STATS_FIRST_STUDENT_DOWNLOAD.json。
+- 報告見 STATS_FIRST_STUDENT_REPORT.md，逐项結果見 STATS_FIRST_STUDENT_RESULTS.json。完整教師教材 gate 仍未通過，fresh-base 與 v15 的完整四次比較尚未完成；本批是選點驗證，沒有獨立測試結論。
 
 規則見 STATS_FIRST_STUDENT_PROTOCOL.md；下方保留較早紀錄，不代表目前狀態。
 <!-- FIRST_STUDENT_LIVE_END -->
 
 # 統計蒸餾下一輪狀態
 
-## 最新：精簡輸出驗證完成，剩下區間縮放問題
+## 歷史：精簡輸出驗證完成，剩下區間縮放問題
 
 2026-09-07 07:14 PDT。已完成 24 次新教師呼叫、逐題複核與存檔。程式／預期／規則在付費前固定於 `50149e1c5c0ddfcf69dc5fd4fab81497b862d43e`。本輪仍用 Llama 3.3 70B、DeepInfra、temperature 0、400-token 上限；沒有學生訓練。
 
@@ -40,7 +41,7 @@
 
 ---
 
-## 現行結果：教師 A/B 已完成，未放行訓練
+## 歷史：教師 A/B 已完成，當時未放行訓練
 
 2026-09-07 05:29 PDT。已依離線期間授權完成修正、50 項測試、24 道新開發題 × 2 組共 48 次教師呼叫，以及全部原答複核。沒有啟用 GPU、沒有改學生權重、沒有生成 full 教材。下方 04:51 的紀錄保留為歷史，不能再當成最新診斷。
 
