@@ -1,5 +1,5 @@
 {
-  "status": "offline_repair_verified_pilot_regrade_required",
+  "status": "pilot_regraded_v2_failed_research_revision_required",
   "checks": {
     "generated_files_reproducible": true,
     "protocol_frozen": true,
@@ -22,7 +22,7 @@
     "holdout": "c30e1cf15e972b4f178bd6a5d402ed9a1da6d745dc01049534b12abd5dab7183",
     "benchmark": "9fdeea63ca4e3cb0b1cf906f624be91adfa80ebe164cbed92efa3fb818d95133"
   },
-  "grader_fingerprint": "612e1e80a61410cdf63a728c323dfeec6212c0aab10de76f111e375f674357e0",
+  "grader_fingerprint": "ee5cccc0e13f72b1fc70a6779861f093692cb51f5b0e42898c3f7a3dececc2dd",
   "domain_audit": {
     "questions_checked_including_replay": 860,
     "invalid_questions": 0,
@@ -30,7 +30,7 @@
   },
   "offline_test_run": {
     "returncode": 0,
-    "tests_run": 42,
+    "tests_run": 45,
     "command": "python -m unittest discover -s scripts -p 'test_stats_consolidation*.py'"
   },
   "teacher_calls": 38,
@@ -46,7 +46,23 @@
     "full_started": false,
     "role": "legacy_v1_evidence_not_current_execution_gate"
   },
-  "pilot_regrade_status": "not_executed_on_complete_source_records",
+  "pilot_regrade": {
+    "status": "completed_on_preserved_version_49_records",
+    "accepted_targets": 58,
+    "planned_targets": 65,
+    "minimum_targets": 59,
+    "first_attempt_accepted": 49,
+    "mathematical_errors": 6,
+    "malformed_responses": 1,
+    "pending": 0,
+    "failed_archetypes": [
+      "poisson_process",
+      "interval"
+    ],
+    "teacher_calls_added": 0,
+    "gate_passed": false,
+    "evidence": "STATS_CONSOLIDATION_PILOT_REGRADE_V2.json"
+  },
   "paid_execution_ready": false,
-  "next": "Read-only regrade of preserved Version 49 records; no new calls or GPU authorized by this repair"
+  "next": "Research decision: revise Poisson-process and interval teaching/prompt coverage, then authorize a new small pilot contract; full teacher and GPU remain locked"
 }

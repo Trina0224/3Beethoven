@@ -163,6 +163,27 @@ class IntegrityTests(unittest.TestCase):
             result = audit(stories, [request], source)
             self.assertEqual(result["classifications"], {"unavailable": 1})
 
+    def test_offline_regrade_repairs_only_redundant_trailing_brace(self):
+        from regrade_stats_consolidation_pilot import audit
+        stories, requests, _, _ = build()
+        request = next(r for r in requests if r["archetype"] == "chain_scaled_variance" and r["pilot_batch"])
+        story = next(s for s in stories if s["story_id"] == request["story_id"])
+        answers = [{"question_id": q["id"], "expression": q["expression"]}
+                   for q in story["questions"]]
+        record = {"request_sha256": digest(request), "accepted": {}, "attempts": [
+            {"raw": json.dumps({"answers": answers}) + "}"}]}
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp)
+            (source/"records").mkdir()
+            path = source/"records"/(request["story_id"]+".json")
+            original = json.dumps(record)
+            path.write_text(original)
+            result = audit(stories, [request], source)
+            self.assertEqual(result["classifications"], {"accepted": len(answers)})
+            self.assertEqual(result["rows"][0]["attempts"][0]["transport_repair"],
+                             "removed_redundant_trailing_closing_brace")
+            self.assertEqual(path.read_text(), original)
+
     def test_readiness_rerun_preserves_actual_pilot_accounting(self):
         from check_stats_consolidation_readiness import assess
         prior = {"teacher_calls": 38, "gpu_runs": 0, "pilot": {"accepted_targets": 42,

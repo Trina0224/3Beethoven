@@ -23,6 +23,8 @@ def assess(prior, test_run=None):
     selection = selection_validation(stories)
     holdout, benchmark = build_holdout()
     decision = load("STATS_CONSOLIDATION_DECISION_DRAFT.json")
+    regrade_path = DOCS / "STATS_CONSOLIDATION_PILOT_REGRADE_V2.json"
+    regrade = json.loads(regrade_path.read_text()) if regrade_path.exists() else None
     stored = {
         "stories": load("STATS_CONSOLIDATION_CANDIDATE_STORIES.json"),
         "requests": load("STATS_CONSOLIDATION_PILOT_REQUESTS.json"),
@@ -53,7 +55,9 @@ def assess(prior, test_run=None):
               "independent_domain_oracle": True,
               "effective_subtasks_disjoint_including_replay": True,
               "offline_test_suite": bool(test_run and test_run["returncode"] == 0)}
-    result = {"status": "offline_repair_verified_pilot_regrade_required" if all(checks.values()) else "blocked_offline_checks",
+    ready_status = ("pilot_regraded_v2_failed_research_revision_required" if regrade
+                    and not regrade["gate"]["passed"] else "offline_repair_verified_pilot_regrade_required")
+    result = {"status": ready_status if all(checks.values()) else "blocked_offline_checks",
               "checks": checks, "hashes": {key: digest(value) for key, value in stored.items()},
               "grader_fingerprint": grader_fingerprint(),
               "domain_audit": {"questions_checked_including_replay": len(all_questions),
@@ -61,9 +65,23 @@ def assess(prior, test_run=None):
               "offline_test_run": test_run,
               "teacher_calls": prior.get("teacher_calls", 0), "gpu_runs": prior.get("gpu_runs", 0),
               "pilot": prior.get("pilot"),
-              "pilot_regrade_status": "not_executed_on_complete_source_records",
+              "pilot_regrade": ({"status": "completed_on_preserved_version_49_records",
+                                  "accepted_targets": regrade["accepted_targets"],
+                                  "planned_targets": regrade["planned_targets"],
+                                  "minimum_targets": regrade["gate"]["minimum_accepted_targets"],
+                                  "first_attempt_accepted": regrade["first_attempt_accepted"],
+                                  "mathematical_errors": regrade["classifications"]["mathematical_error"],
+                                  "malformed_responses": regrade["classifications"]["malformed_response"],
+                                  "pending": 0,
+                                  "failed_archetypes": [name for name, row in regrade["by_archetype"].items()
+                                                        if not row["passed_4_of_5"]],
+                                  "teacher_calls_added": regrade["teacher_calls_added"],
+                                  "gate_passed": regrade["gate"]["passed"],
+                                  "evidence": regrade_path.name} if regrade else
+                                 {"status": "not_executed_on_complete_source_records"}),
               "paid_execution_ready": False,
-              "next": "Read-only regrade of preserved Version 49 records; no new calls or GPU authorized by this repair"}
+              "next": ("Research decision: revise Poisson-process and interval teaching/prompt coverage, then authorize a new small pilot contract; full teacher and GPU remain locked"
+                       if regrade else "Read-only regrade of preserved Version 49 records; no new calls or GPU authorized by this repair")}
     if result["pilot"] is not None:
         result["pilot"] = dict(result["pilot"], role="legacy_v1_evidence_not_current_execution_gate")
     return result

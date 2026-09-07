@@ -1,0 +1,52 @@
+{
+  "role": "offline_diagnostic_only_not_execution_gate",
+  "source": {
+    "kaggle_version": 49,
+    "script_version_id": 347939910,
+    "archive_sha256": "cdfd43defef28809bf6aa320884c58d74d8f7192cd2a7c4e2d7e2fd2b0ff957c",
+    "request_hash_errors": []
+  },
+  "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+  "grader_fingerprint": "ee5cccc0e13f72b1fc70a6779861f093692cb51f5b0e42898c3f7a3dececc2dd",
+  "teacher_calls_added": 0,
+  "planned_targets": 65,
+  "accepted_targets": 58,
+  "first_attempt_accepted": 49,
+  "classifications": {"accepted": 58, "mathematical_error": 6, "malformed_response": 1},
+  "gate": {
+    "minimum_accepted_targets": 59,
+    "minimum_fraction_by_archetype": "4/5",
+    "overall_pass": false,
+    "archetype_pass": false,
+    "passed": false
+  },
+  "by_archetype": {
+    "poisson_process": {"accepted": 2, "planned": 6, "passed_4_of_5": false},
+    "affine_poisson": {"accepted": 8, "planned": 9, "passed_4_of_5": true},
+    "general_moment": {"accepted": 9, "planned": 9, "passed_4_of_5": true},
+    "uniform_wait": {"accepted": 4, "planned": 4, "passed_4_of_5": true},
+    "binomial": {"accepted": 2, "planned": 2, "passed_4_of_5": true},
+    "detection_events": {"accepted": 15, "planned": 15, "passed_4_of_5": true},
+    "interval": {"accepted": 0, "planned": 2, "passed_4_of_5": false},
+    "chain_poisson_variance": {"accepted": 6, "planned": 6, "passed_4_of_5": true},
+    "chain_scaled_variance": {"accepted": 6, "planned": 6, "passed_4_of_5": true},
+    "chain_second_moment": {"accepted": 6, "planned": 6, "passed_4_of_5": true}
+  },
+  "transport_repairs": {
+    "policy": "Only redundant trailing closing braces after one complete JSON object are ignored; original source bytes are unchanged.",
+    "affected_targets": 6,
+    "affected_archetype": "chain_scaled_variance"
+  },
+  "reviewed_equivalence_credit": {
+    "newly_credited_targets": 16,
+    "remaining_pending": 0,
+    "answer_only_credit_allowed": false
+  },
+  "failure_summary": {
+    "poisson_process": "Four targets contain genuine rate/time or variance-vs-second-moment errors.",
+    "affine_poisson": "One second-moment target uses squared mean only and omits the variance contribution.",
+    "interval": "One response uses the wrong interval-shrink formula; the other only echoes the request envelope on both attempts."
+  },
+  "execution_release": false,
+  "next": "Revise the pilot teaching/prompt examples for Poisson per-minute conversion and interval recentering, then run a new small pilot contract before any full teacher or GPU run."
+}

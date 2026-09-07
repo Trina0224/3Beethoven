@@ -1,8 +1,31 @@
 # 統計蒸餾下一輪狀態
 
-更新：2026-09-07 04:28 PDT（America/Los_Angeles）。
+更新：2026-09-07 04:51 PDT（America/Los_Angeles）。
 
-**現行狀態：資料與判分的離線修正完成；舊 pilot 尚待完整原答重判，付費呼叫與 GPU 執行鎖定。先前「開跑包完成／ready」的結論撤回；下方 pilot 分數是歷史自動接受數，不是教師正確率。**
+**現行狀態：Version 49 的完整原答已用修正版 grader 離線重判，結果 58/65，未過 59/65 總門檻；`poisson_process` 2/6、`interval` 0/2 也未過各 family 80% 門檻。付費 full teacher 與 GPU 執行繼續鎖定。**
+
+## Version 49 離線重判結果
+
+| archetype | v2 接受／規劃 | 80% family gate |
+|---|---:|---|
+| poisson_process | 2/6 | 未過 |
+| affine_poisson | 8/9 | 通過 |
+| general_moment | 9/9 | 通過 |
+| uniform_wait | 4/4 | 通過 |
+| binomial | 2/2 | 通過 |
+| detection_events | 15/15 | 通過 |
+| interval | 0/2 | 未過 |
+| chain_poisson_variance | 6/6 | 通過 |
+| chain_scaled_variance | 6/6 | 通過 |
+| chain_second_moment | 6/6 | 通過 |
+
+- 65 題中 58 題接受、6 題數學真錯、1 題 malformed，待人工等價判定為 0；首輪即接受 49 題。
+- 6 題 `chain_scaled_variance` 原始 JSON 只多一個結尾 `}`。重判器只忽略完整 JSON 後多出的右括號，保留原始 bytes，答案本身逐題正確，因此全部恢復信用。
+- 另外 10 題屬已審核的結構等價式，包括 `comb(n,1)`、uniform midpoint、Poisson 二階動差的 factored form、以及 affine variance／second-moment 展開式；仍不允許只給最後數字。
+- 真失敗集中於三處：Poisson 每分鐘 rate 與秒數換算／variance-vs-second-moment 混淆 4 題；affine 二階動差漏掉 variance term 1 題；interval 有 1 題錯誤縮放、1 題兩次都回聲 request envelope。
+- 原始 24 個 pilot request 的 hash 全部相容；本次新增 teacher calls 0。完整摘要見 `STATS_CONSOLIDATION_PILOT_REGRADE_V2.json`。
+
+因此不能把 58/65 四捨五入成通過，也不能因只差一題就啟動 full：兩個 family gate 是獨立失敗。下一個合理動作是只修 `poisson_process` 與 `interval` 的教學／prompt 覆蓋，建立一個新的小 pilot contract 驗證；不重做已經 8 個 family 通過的整包教材，也不先跑 GPU。
 
 ## 本次修正與驗收（未增加教師呼叫）
 
@@ -11,10 +34,10 @@
 - 去重以每個子題的有效參數為準，包括等價時間單位；忽略與所求量無關的 offset。兩個非 pilot 情境重抽；24 個 pilot request 完全不變，可重用原始回答作離線診斷。
 - 另抓到選點題 `v17_validation_poisson_scaled_001` 與 replay 的 `3**2*67` 重複；僅在本輪矩陣替換為 `v15_validation_poisson_scaled_000`。112 題規模、類別配額及整數門檻不變，未使用 test 題。
 - grader v2 承認經檢核的 `comb(n,1)=n`、一次方、uniform「已等時間＋剩餘時間均值」與 interval 等價式；仍拒絕錯誤單位、剩餘等待取代總等待、未代入變數及只給最後數字。歷史 grader 檔案未改。
-- 新 readiness 實際驗證含 replay 的 860 筆題目，合法性錯誤與跨分割有效子題重疊皆為 0；42 項離線測試通過。重跑 readiness 保留既有 38 calls／費用／42/65，不再歸零或變成付費開跑就緒。
-- 新舊 grader／資料 gate 不可混用，待複核項不得放行；本次 `execution_authorization=offline_repairs_only`。原 pilot 的 23 個拒收目標尚未在完整來源紀錄上重判，不能宣稱修正後分數或 pilot 已通過。
+- 新 readiness 實際驗證含 replay 的 860 筆題目，合法性錯誤與跨分割有效子題重疊皆為 0；45 項離線測試通過。重跑 readiness 保留既有 38 calls／費用，不再歸零或變成付費開跑就緒。
+- 新舊 grader／資料 gate 不可混用；本次完整離線重判已無 pending，但 v2 總門檻與兩個 family gate 都未通過。
 
-下一步只需用已保存的 Version 49 `records/` 作離線重判，不必重新問老師：
+重現用命令（不必重新問老師）：
 
 ```bash
 python scripts/regrade_stats_consolidation_pilot.py \
@@ -22,7 +45,7 @@ python scripts/regrade_stats_consolidation_pilot.py \
   --output /path/outside/source/pilot_regrade_v2.json
 ```
 
-此命令不寫來源檔、不呼叫網路、不產生可放行的訓練 gate；有變更的 request 會標示不可重用。原 42/65 的歷史證據在 Kaggle Version 49 與下方表格。
+此命令不寫來源檔、不呼叫網路、不產生可放行的訓練 gate；有變更的 request 會標示不可重用。原 42/65 是舊 parser／grader 的自動接受數，v2 的 58/65 才是目前診斷值，但兩者都沒有通過 gate。
 
 限制：修正的是已確認的出題／分割／判分錯誤，不等於已證明自然語言語義全部無誤或跨句式泛化。教材仍是參數化模板；既有順序是故事內排列、故事間混合 replay，不能稱為完整的全體 1→2→3 課程。本次沒有追加教材、改 teacher prompt、改 replay 比例或更動兩起點×兩 seed 研究設計。
 
@@ -51,7 +74,7 @@ python scripts/regrade_stats_consolidation_pilot.py \
 - immutable contract 在開跑前即包含 parent、資料、grader、selection 與 token hash；採 `SequentialSampler`，只跑一個 epoch，不循環補足步數。
 - 教師採持久 ledger；每次請求先預留 US$0.01，pilot 未過不能進 full。
 
-## Pilot 實際結果
+## 歷史 v1 parser 的 pilot 自動接受結果
 
 | archetype | 接受／規劃 | gate |
 |---|---:|---|
@@ -66,14 +89,14 @@ python scripts/regrade_stats_consolidation_pilot.py \
 | chain_scaled_variance | 0/6 | 未過 |
 | chain_second_moment | 6/6 | 通過 |
 
-失敗不是單一原因。Poisson rate 題有真錯（把每分鐘 rate 也除以 60）；affine／scaled variance 常回傳含 `Var(X)`、`E[X]` 或等號鏈的非全數值式。另一方面，uniform midpoint、`comb(n,1)=n` 的 binomial、interval 等至少包含 grader 尚未自動承認的合法等價式。因此不能直接判定教師只有 42/65，也不能直接放寬 gate：下一步應先以保存的 23 個拒收 target 做盲式語義分類，分開「數學真錯」「格式違約」「合法等價式漏判」，再決定修 grader、修 prompt，或兩者都修後重跑一個新 pilot contract。
+這張表保留歷史稽核用途，已由上方 v2 完整重判取代。舊 parser 把多一個結尾右括號的完整 JSON、以及合法等價式一起算成拒收；v2 修正後為 58/65，但仍因真錯與 family gate 未過而停止。
 
 Kaggle 證據：[Version 49](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=347939910&select=3beethoven_stats_consolidation_teacher.zip)。該 ZIP 含 38 次原始回答、持久 ledger、逐故事 accepted、pilot gate、usage、manifest 與 SHA-256；沒有教師 benchmark 或 GPU 結果。
 
 ## Readiness 證據
 
 - 付費前 `STATS_CONSOLIDATION_READINESS.json` 為 `ready_for_paid_pilot`，9/9 離線檢查通過；pilot 後更新為 `pilot_failed_research_decision_required`。
-- 21 項離線測試通過，涵蓋自足 prompt、Poisson 假設、等待時間目標、split／parameter 衝突、112 題選點、pending gate、pilot/full gate、contract 恢復、288 題 holdout、教師子集與最終升級門檻。
-- 固定 SHA-256：candidate stories `4bfe7995...f9d52`；selection `d752d4a9...a0a9`；holdout `c5515b35...43df`；teacher benchmark `af13bdde...50c9`。
+- 45 項離線測試通過，涵蓋自足 prompt、Poisson 假設、等待時間目標、split／parameter 衝突、112 題選點、pending gate、pilot/full gate、contract 恢復、288 題 holdout、教師子集、等價式與受限 JSON transport repair。
+- 固定 SHA-256：candidate stories `87f6a75e...a6061e`；selection `10e7e222...221c89`；holdout `c30e1cf1...ab7183`；teacher benchmark `9fdeea63...95133`。
 
-目前停止點符合協議：不進 full、不啟動 GPU。高階模型只需決定拒收分類後的修復邊界；其餘兩起點×兩 seed、112 題選點與 288＋240 最終評估規則維持不變。
+目前停止點符合協議：不進 full、不啟動 GPU。下一個高階決策只剩要不要批准「兩個失敗 family 的定向教材／prompt 修補＋新小 pilot」；其餘兩起點×兩 seed、112 題選點與 288＋240 最終評估規則維持不變。

@@ -12,6 +12,28 @@ from stats_consolidation_grader import score, outcome, grader_fingerprint
 from stats_consolidation_pilot import build, digest
 
 
+def parse_answers(raw):
+    """Parse the teacher envelope, repairing only redundant trailing braces.
+
+    The original bytes remain in the source record.  We intentionally do not
+    recover answers nested in an echoed request envelope.
+    """
+    repair = None
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError:
+        stripped = raw.strip()
+        payload, end = json.JSONDecoder().raw_decode(stripped)
+        trailing = stripped[end:].strip()
+        if not trailing or set(trailing) != {"}"}:
+            raise
+        repair = "removed_redundant_trailing_closing_brace"
+    items = payload["answers"]
+    if not isinstance(items, list):
+        raise ValueError("answers must be a list")
+    return items, repair
+
+
 def audit(stories, requests, source):
     lookup = {s["story_id"]: s for s in stories}
     rows, request_errors = [], []
@@ -28,7 +50,7 @@ def audit(stories, requests, source):
             if compatible:
                 for index, a in enumerate(record["attempts"]):
                     try:
-                        items = json.loads(a["raw"])["answers"]
+                        items, transport_repair = parse_answers(a["raw"])
                         ids = [x["question_id"] for x in items]
                         if len(ids) != len(set(ids)):
                             raise ValueError("Duplicate question ID in raw JSON")
@@ -37,7 +59,8 @@ def audit(stories, requests, source):
                             continue
                         judged = score("Expression: " + matches[0], q)
                         attempts.append({"attempt": index, "raw_expression": matches[0],
-                                         "classification": outcome(judged), "judged": judged})
+                                         "classification": outcome(judged), "judged": judged,
+                                         "transport_repair": transport_repair})
                     except (ValueError, KeyError, TypeError) as exc:
                         attempts.append({"attempt": index, "classification": "malformed_response",
                                          "error": str(exc)})

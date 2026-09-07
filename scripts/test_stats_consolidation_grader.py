@@ -55,6 +55,23 @@ class ConsolidationGraderTests(unittest.TestCase):
         self.assertTrue(result["primary_correct"])
         self.assertFalse(result["strict_one_line_expression"])
 
+    def test_reviewed_factored_second_moment_gets_credit(self):
+        q = next(q for q in self.questions if q["category"] == "v18_second_moment"
+                 and q["semantics"]["kind"] == "process")
+        s = q["semantics"]
+        result = score(f"Expression: ({s['rate']})*({s['duration']})*(1+({s['rate']})*({s['duration']}))", q)
+        self.assertTrue(result["primary_correct"])
+        if "/" in s["duration"]:
+            numerator, denominator = s["duration"].split("/", 1)
+            converted = f"({s['rate']}/{denominator})*{numerator}"
+            self.assertTrue(score(f"Expression: {converted}*(1+{converted})", q)["primary_correct"])
+
+    def test_reviewed_folded_affine_coefficients_get_credit(self):
+        q = self.one("poisson_scaled")
+        b = q["bindings"]
+        result = score(f"Expression: {int(b['scale'])**2}*{b['mean']}", q)
+        self.assertTrue(result["primary_correct"])
+
 
 if __name__ == "__main__":
     unittest.main()
