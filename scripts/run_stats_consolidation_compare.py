@@ -173,6 +173,7 @@ def main():
     parser.add_argument("--teacher-gate", type=Path, default=Path("/kaggle/working/3beethoven_stats_consolidation_teacher/full_gate.json"))
     parser.add_argument("--v15-root", type=Path, default=Path("/kaggle/input"))
     parser.add_argument("--output-root", type=Path, default=DEFAULT_ROOT)
+    parser.add_argument("--pilot-student", action="store_true", help="Explicit separately preregistered filtered-pilot diagnostic only")
     args = parser.parse_args()
     config = read(args.decision); validate_decision(config)
     verified = read(args.teacher_rows)
@@ -181,11 +182,22 @@ def main():
     teacher_gate = read(args.teacher_gate, {})
     if not teacher_gate.get("passed"):
         raise RuntimeError("A persisted passing full teacher gate is required")
+    required_scope = "filtered_pilot_student" if args.pilot_student else "full"
+    if args.pilot_student:
+        if config.get('first_batch',{}).get('mode') != 'filtered_pilot_student_no_promotion':
+            raise RuntimeError('Filtered-pilot training is not authorized by this decision')
+        if len(verified.get('train',[])) < 60 or teacher_gate.get('full_teacher_gate_passed') is not False:
+            raise RuntimeError('Filtered-pilot quality/scope contract is missing')
+        planned_archetypes={s['archetype'] for s in build_candidate()[0]}
+        trained_ids={r['source_id'] for r in verified['train']}
+        represented={s['archetype'] for s in build_candidate()[0] if any(q['id'] in trained_ids for q in s['questions'])}
+        if represented != planned_archetypes:
+            raise RuntimeError('Filtered pilot lacks a training archetype')
     if (teacher_gate.get("grader_fingerprint") != grader_fingerprint()
             or teacher_gate.get("verified_rows_sha256") != digest(verified)
             or teacher_gate.get("decision_sha256") != digest(config)
             or teacher_gate.get("request_sha256") != digest(build_candidate()[1])
-            or teacher_gate.get("scope") != "full"):
+            or teacher_gate.get("scope") != required_scope):
         raise RuntimeError("Teacher gate belongs to a different data/grader contract")
     candidate_stories = build_candidate()[0]
     validate_verified_rows(verified, candidate_stories)
@@ -221,6 +233,8 @@ def main():
         "v15_baseline_adapter_sha256": file_sha(v15 / "adapter_model.safetensors"),
         "parent_adapter_sha256": file_sha(v15 / "adapter_model.safetensors") if args.start == "original_v15_continued_lora" else None,
         "token_accounting": token_counts,
+        "teacher_scope": required_scope,
+        "promotion_eligible": not args.pilot_student,
     }
     save_immutable_contract(output / "contract.json", contract)
     save(output / "training_order.json", train_rows)
