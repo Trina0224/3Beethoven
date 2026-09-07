@@ -1,3 +1,5 @@
+> Execution update: user explicitly replied「允許」to the exact data-use/training/evaluation/save scope. The approval blocker is resolved. Original v15 weights and Version54 teacher/review data were restored and hash-verified; corpus regeneration and both contract tests passed in Kaggle. Prepared baseline and the two-seed driver have started. Prior blocked state below is retained as history. Kaggle SDK switches the mounted version for this same notebook when fetching Version42/54; use returned paths and copy each required artifact into a stable working input directory before switching versions.
+
 # Multiview pilot execution checkpoint
 
 Updated: 2026-09-07 16:39 PDT (America/Los_Angeles).
