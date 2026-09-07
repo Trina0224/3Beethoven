@@ -73,6 +73,25 @@ class CompactTests(unittest.TestCase):
         self.assertEqual(summary(rows,True)['accepted'],22)
         self.assertFalse(summary(rows,True)['passed'])
 
+    def test_echo_recovery_checks_exact_source_and_preserves_wrong_math(self):
+        from review_stats_teacher_compact import audit_response, review
+        evidence=read_json(DOCS/'STATS_TEACHER_COMPACT_EVIDENCE.json')
+        q=read_json(DATA)['questions'][0]
+        raw=next(r['raw'] for r in evidence['results.json']['rows'] if r['id']==q['id'])
+        self.assertTrue(audit_response(raw,q,'stop')['accepted'])
+        obj=json.loads(raw)
+        obj['question_id']='another-question'
+        self.assertFalse(audit_response(json.dumps(obj),q,'stop')['accepted'])
+        obj=json.loads(raw)
+        obj['answers']=obj['output_structure']['answers']
+        self.assertFalse(audit_response(json.dumps(obj),q,'stop')['accepted'])
+        result=review()
+        self.assertEqual(result['accepted'],22)
+        self.assertEqual(result['by_family']['interval'],6)
+        self.assertEqual(result['classifications']['mathematical_error'],2)
+        self.assertEqual(result['pending'],[])
+        self.assertFalse(result['hypothetical_same_threshold_passed'])
+
 
 if __name__=='__main__':
     unittest.main()

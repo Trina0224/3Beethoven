@@ -1,0 +1,2544 @@
+{
+  "results.json": {
+    "completed": true,
+    "accepted": 10,
+    "n": 24,
+    "by_family": {
+      "poisson_process": 5,
+      "interval": 2,
+      "affine_poisson": 3
+    },
+    "strict_json": 13,
+    "classifications": {
+      "malformed_response": 13,
+      "accepted": 10,
+      "equivalence_pending": 1
+    },
+    "pending": [
+      "teacher_ab_interval_03"
+    ],
+    "passed": false,
+    "role": "reused_development_engineering_check",
+    "rows": [
+      {
+        "id": "teacher_ab_poisson_process_00",
+        "family": "poisson_process",
+        "raw": "{\"question_id\":\"teacher_ab_poisson_process_00\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 68 per minute. During a 347-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"347/60\",\"count_mean\":\"68*(347/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_00\",\"expression\":\"68*(347/60)\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_poisson_process_01",
+        "family": "poisson_process",
+        "raw": "{\"question_id\":\"teacher_ab_poisson_process_01\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 28 per minute. During a 695-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"695/60\",\"count_mean\":\"(28*695)/60\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_01\",\"expression\":\"(28*695)/60\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_poisson_process_02",
+        "family": "poisson_process",
+        "raw": "{\"intermediates\":{\"duration_minutes\":\"231/60\",\"count_mean\":\"18*(231/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_02\",\"expression\":\"18*(231/60)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "18*(231/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "18 * (231 / 60)",
+          "parse_notes": [],
+          "selected_source": "18*(231/60)",
+          "computed": "693/10",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "13e9fb0b5655b53409f72a261632260081f04fb51d3a98e4ff79786b9615358d",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_03",
+        "family": "poisson_process",
+        "raw": "{\"intermediates\":{\"duration_minutes\":\"408/60\",\"count_mean\":\"16*(408/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_03\",\"expression\":\"16*(408/60)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "16*(408/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "16 * (408 / 60)",
+          "parse_notes": [],
+          "selected_source": "16*(408/60)",
+          "computed": "544/5",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "91029323cc466544779c00e1e096e0e0d48c0e5909fc5f1c4adfde32106c88fe",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_04",
+        "family": "poisson_process",
+        "raw": "{\"intermediates\":{\"duration_minutes\":\"351/60\",\"count_mean\":\"45*(351/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_04\",\"expression\":\"45*(351/60)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "45*(351/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "45 * (351 / 60)",
+          "parse_notes": [],
+          "selected_source": "45*(351/60)",
+          "computed": "1053/4",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "3b143c3d6c68d1afd3e522719e5c943f5409e86c63af1a316460cfd355c7acf7",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_05",
+        "family": "poisson_process",
+        "raw": "{\"question_id\":\"teacher_ab_poisson_process_05\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 47 per minute. During a 443-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"443/60\",\"count_mean\":\"47*(443/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_05\",\"expression\":\"47*(443/60)\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_poisson_process_06",
+        "family": "poisson_process",
+        "raw": "{\"intermediates\":{\"duration_minutes\":\"320/60\",\"count_mean\":\"54*(320/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_06\",\"expression\":\"54*(320/60)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "54*(320/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "54 * (320 / 60)",
+          "parse_notes": [],
+          "selected_source": "54*(320/60)",
+          "computed": "288",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "ec970da840506aa6ee0fde7c041ec7a2c95af643f59067ea70b77d938268feab",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_07",
+        "family": "poisson_process",
+        "raw": "{\"intermediates\":{\"duration_minutes\":\"677/60\",\"count_mean\":\"42*(677/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_07\",\"expression\":\"42*(677/60)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "42*(677/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "42 * (677 / 60)",
+          "parse_notes": [],
+          "selected_source": "42*(677/60)",
+          "computed": "4739/10",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "9018bd9742fb8aca15a4ef3fa8240cf616ebdc11a00a9faae0ed754156209e3f",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_interval_00",
+        "family": "interval",
+        "raw": "{\"question_id\":\"teacher_ab_interval_00\",\"question\":\"A normal-theory interval is [25, 177]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"(25+177)/2\",\"old_half_width\":\"(177-25)/2\",\"new_half_width\":\"(177-25)/(2*3)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_00\",\"expression\":\"(25+177)/2+(177-25)/(2*3)\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_interval_01",
+        "family": "interval",
+        "raw": "{\"question_id\":\"teacher_ab_interval_01\",\"question\":\"A normal-theory interval is [57, 175]. Sample size is multiplied by 16; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"(57+175)/2\",\"old_half_width\":\"175-((57+175)/2)\",\"new_half_width\":\"(175-((57+175)/2))/4\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_01\",\"expression\":\"((57+175)/2)+(175-((57+175)/2))/4\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_interval_02",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"127.5\",\"old_half_width\":\"66.5\",\"new_half_width\":\"66.5*sqrt(25)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_02\",\"expression\":\"127.5 + 66.5*sqrt(25)\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Extra data: line 1 column 184 (char 183)"
+      },
+      {
+        "id": "teacher_ab_interval_03",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"213\",\"old_half_width\":\"89\",\"new_half_width\":\"89/3\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_03\",\"expression\":\"213+89/3\"}]}",
+        "accepted": false,
+        "classification": "equivalence_pending",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "213+89/3",
+        "intermediate_checks": {
+          "center": true,
+          "old_half_width": true,
+          "new_half_width": true
+        },
+        "judged": {
+          "math_correct": null,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": true,
+          "normalized_expression": "213 + 89 / 3",
+          "parse_notes": [],
+          "selected_source": "213+89/3",
+          "computed": "728/3",
+          "reason": "Numerically equal but structure not yet verified; needs semantic review, not an automatic failure.",
+          "correct": false,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "0c562799bbb3f00e25cba406cf808a8b7da35a24feb16fe653e0a17ebe1bbe95",
+          "strict_one_line_expression": true,
+          "primary_correct": false
+        }
+      },
+      {
+        "id": "teacher_ab_interval_04",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"(34+223)/2\",\"old_half_width\":\"(223-34)/2\",\"new_half_width\":\"(223-34)/2/2**0.5*2**0.5/2**0.5*4**0.5\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_04\",\"expression\":\"(34+223)/2+(223-34)/2/2**0.5*2**0.5/2**0.5*4**0.5\"}]}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": true,
+        "transport_repair": null,
+        "error": "Unsupported expression"
+      },
+      {
+        "id": "teacher_ab_interval_05",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"(86+210)/2\",\"old_half_width\":\"(210-86)/2\",\"new_half_width\":\"(210-86)/(2*2)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_05\",\"expression\":\"(86+210)/2+(210-86)/(2*2)\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "(86+210)/2+(210-86)/(2*2)",
+        "intermediate_checks": {
+          "center": true,
+          "old_half_width": true,
+          "new_half_width": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(86 + 210) / 2 + (210 - 86) / (2 * 2)",
+          "parse_notes": [],
+          "selected_source": "(86+210)/2+(210-86)/(2*2)",
+          "computed": "179",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "19b6b247491fbc2dd77d1d3b3d3afcee22d9ac9c09b632b96dc8889fe0fa540c",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_interval_06",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"(126+223)/2\",\"old_half_width\":\"(223-126)/2\",\"new_half_width\":\"(223-126)/2/sqrt(49)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_06\",\"expression\":\"(126+223)/2+(223-126)/2/sqrt(49)\"}]}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": true,
+        "transport_repair": null,
+        "error": "Unsupported expression"
+      },
+      {
+        "id": "teacher_ab_interval_07",
+        "family": "interval",
+        "raw": "{\"intermediates\":{\"center\":\"(21+188)/2\",\"old_half_width\":\"(188-21)/2\",\"new_half_width\":\"(188-21)/2/2\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_07\",\"expression\":\"(21+188)/2 + (188-21)/2/2\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "(21+188)/2 + (188-21)/2/2",
+        "intermediate_checks": {
+          "center": true,
+          "old_half_width": true,
+          "new_half_width": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(21 + 188) / 2 + (188 - 21) / 2 / 2",
+          "parse_notes": [],
+          "selected_source": "(21+188)/2 + (188-21)/2/2",
+          "computed": "585/4",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "f43364f985378f082b52fb6646b59e10df2c7cf072507b33de9e8f0dbfc1e6ca",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_00",
+        "family": "affine_poisson",
+        "raw": "{\"question_id\":\"teacher_ab_affine_poisson_00\",\"question\":\"X is Poisson with mean 54, and Y=2*X+11. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"2*54+11\",\"variance_Y\":\"4*54\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_00\",\"expression\":\"(2*54+11)**2+4*54\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_01",
+        "family": "affine_poisson",
+        "raw": "{\"question_id\":\"teacher_ab_affine_poisson_01\",\"question\":\"X is Poisson with mean 78, and Y=4*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"4*78+26\",\"variance_Y\":\"16*78\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_01\",\"expression\":\"(4*78+26)**2+16*78\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_02",
+        "family": "affine_poisson",
+        "raw": "{\"intermediates\":{\"mean_Y\":\"7*55+6\",\"variance_Y\":\"7**2*55\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_02\",\"expression\":\"(7*55+6)**2+7**2*55\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "(7*55+6)**2+7**2*55",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(7 * 55 + 6) ** 2 + 7 ** 2 * 55",
+          "parse_notes": [],
+          "selected_source": "(7*55+6)**2+7**2*55",
+          "computed": "155576",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "d61bf7d1a6f7b25ef1dc492baf9ef38007c986b32298ed66f0099da99968c319",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_03",
+        "family": "affine_poisson",
+        "raw": "{\"question_id\":\"teacher_ab_affine_poisson_03\",\"question\":\"X is Poisson with mean 59, and Y=6*X+23. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"6*59+23\",\"variance_Y\":\"6**2*59\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_03\",\"expression\":\"(6*59+23)**2+6**2*59\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_04",
+        "family": "affine_poisson",
+        "raw": "{\"intermediates\":{\"mean_Y\":\"2*37+15\",\"variance_Y\":\"4*37\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_04\",\"expression\":\"(2*37+15)**2+4*37\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "(2*37+15)**2+4*37",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(2 * 37 + 15) ** 2 + 4 * 37",
+          "parse_notes": [],
+          "selected_source": "(2*37+15)**2+4*37",
+          "computed": "8069",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "7ddfd76f7d5d05bfa81e59b10b1513b66d2fa0a0ea5db644518d7c5faa2e0a42",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_05",
+        "family": "affine_poisson",
+        "raw": "{\"question_id\":\"teacher_ab_affine_poisson_05\",\"question\":\"X is Poisson with mean 26, and Y=3*X+28. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"3*26+28\",\"variance_Y\":\"3**2*26\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_05\",\"expression\":\"(3*26+28)**2+3**2*26\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_06",
+        "family": "affine_poisson",
+        "raw": "{\"intermediates\":{\"mean_Y\":\"5*90+24\",\"variance_Y\":\"25*90\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_06\",\"expression\":\"(5*90+24)**2+25*90\"}]}",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": true,
+        "transport_repair": null,
+        "expression": "(5*90+24)**2+25*90",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(5 * 90 + 24) ** 2 + 25 * 90",
+          "parse_notes": [],
+          "selected_source": "(5*90+24)**2+25*90",
+          "computed": "226926",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "0b7b960a9f9a2b50d882c550790af26dd23d906bd4e93715b0de84fd8adbb6e7",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_07",
+        "family": "affine_poisson",
+        "raw": "{\"question_id\":\"teacher_ab_affine_poisson_07\",\"question\":\"X is Poisson with mean 73, and Y=3*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"3*73+26\",\"variance_Y\":\"9*73\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_07\",\"expression\":\"(3*73+26)**2+9*73\"}]}}",
+        "accepted": false,
+        "classification": "malformed_response",
+        "strict_json": false,
+        "error": "Unexpected envelope keys"
+      }
+    ],
+    "paired": {
+      "B1_C0": 5,
+      "B1_C1": 7,
+      "B0_C0": 9,
+      "B0_C1": 3
+    }
+  },
+  "usage.json": {
+    "prior_calls": 86,
+    "prior_cost": 0.00693694,
+    "calls": 24,
+    "new_cost": 0.00112608
+  },
+  "run_manifest.json": {
+    "data_sha256": "0e3513dafc70804cc2d90cab7d84bdaea917c0651d0300b4131b2a277d11b199",
+    "grader_fingerprint": "73159776c6f0eb2f9a2ebdae641cf9b52d3d4b2fa6638dc1a1d1a41689b4279e",
+    "runner_sha256": "01b5b0a2e8c4f74c9ad2b92d889a2663c7e3429dd91132d6e97c67bff64de91b",
+    "prior_calls": 86,
+    "prior_cost": 0.00693694
+  },
+  "old_B_common_contract.json": {
+    "completed": true,
+    "accepted": 12,
+    "n": 24,
+    "by_family": {
+      "poisson_process": 8,
+      "affine_poisson": 4
+    },
+    "strict_json": 0,
+    "classifications": {
+      "accepted": 12,
+      "truncated_or_non_stop": 11,
+      "intermediate_error": 1
+    },
+    "pending": [],
+    "passed": false,
+    "role": "reused_development_engineering_check",
+    "rows": [
+      {
+        "id": "teacher_ab_poisson_process_00",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "68 * (347 / 60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "68 * (347 / 60)",
+          "parse_notes": [],
+          "selected_source": "68 * (347 / 60)",
+          "computed": "5899/15",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "a443084a90541de6f9c15569ae190cbb277419ad1c845002aaf157956d067435",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_01",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "28 * (695/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "28 * (695 / 60)",
+          "parse_notes": [],
+          "selected_source": "28 * (695/60)",
+          "computed": "973/3",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "43ba0cc4147890d4b5dffbbe325fec13a4f6c10f79cdf0c59642a74939abead8",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_02",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "18*(231/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "18 * (231 / 60)",
+          "parse_notes": [],
+          "selected_source": "18*(231/60)",
+          "computed": "693/10",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "13e9fb0b5655b53409f72a261632260081f04fb51d3a98e4ff79786b9615358d",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_03",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(16 * (408/60))",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "16 * (408 / 60)",
+          "parse_notes": [],
+          "selected_source": "(16 * (408/60))",
+          "computed": "544/5",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "1040da1dd2b66993801b23a802761577070c3d955017c96b74b205f01d79d430",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_04",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "45*(351/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "45 * (351 / 60)",
+          "parse_notes": [],
+          "selected_source": "45*(351/60)",
+          "computed": "1053/4",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "3b143c3d6c68d1afd3e522719e5c943f5409e86c63af1a316460cfd355c7acf7",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_05",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "47 * (443/60)",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "47 * (443 / 60)",
+          "parse_notes": [],
+          "selected_source": "47 * (443/60)",
+          "computed": "20821/60",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "0bfdf3054e982a2bd546868552d77ab6e13fd4d33ebef926dc3cbb6843d2fcff",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_06",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(54 * (320/60))",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "54 * (320 / 60)",
+          "parse_notes": [],
+          "selected_source": "(54 * (320/60))",
+          "computed": "288",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "ef8d1cb5381b2d09e9d1893cb4552b012518b6b356353589c8896c2fcca085ca",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_poisson_process_07",
+        "family": "poisson_process",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(42 * (677 / 60))",
+        "intermediate_checks": {
+          "duration_minutes": true,
+          "count_mean": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "42 * (677 / 60)",
+          "parse_notes": [],
+          "selected_source": "(42 * (677 / 60))",
+          "computed": "4739/10",
+          "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "7e19c5e58c232cdbb975c6f5cc2e6c63b0fb0e18aa8ede0e7356fe9b7258a109",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_interval_00",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_01",
+        "family": "interval",
+        "accepted": false,
+        "classification": "intermediate_error",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "116 + 58/4",
+        "intermediate_checks": {
+          "center": true,
+          "old_half_width": false,
+          "new_half_width": false
+        },
+        "judged": {
+          "math_correct": false,
+          "format_exact": false,
+          "bindings_match_schema": false,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "116 + 58 / 4",
+          "parse_notes": [],
+          "selected_source": "116 + 58/4",
+          "computed": "261/2",
+          "reason": "The model expression yields the wrong value; no repair applied.",
+          "correct": false,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "cfe9607c750198adc7609e1561a278565e16ffb1ac94e4ba15d12dfd0ea30132",
+          "strict_one_line_expression": true,
+          "primary_correct": false
+        }
+      },
+      {
+        "id": "teacher_ab_interval_02",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_03",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_04",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_05",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_06",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_interval_07",
+        "family": "interval",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_00",
+        "family": "affine_poisson",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_01",
+        "family": "affine_poisson",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(4*78+26)**2 + 16*78",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(4 * 78 + 26) ** 2 + 16 * 78",
+          "parse_notes": [],
+          "selected_source": "(4*78+26)**2 + 16*78",
+          "computed": "115492",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "836e349928a20986ccc19a389256ccc4c011fab134d566b0789d0523d6a6ef10",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_02",
+        "family": "affine_poisson",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_03",
+        "family": "affine_poisson",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_04",
+        "family": "affine_poisson",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(2*37+15)**2 + 4*37",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(2 * 37 + 15) ** 2 + 4 * 37",
+          "parse_notes": [],
+          "selected_source": "(2*37+15)**2 + 4*37",
+          "computed": "8069",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "0dca3a94cb990d84533801f9af5559942dd556ada61e1c9f9546246163699cf6",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_05",
+        "family": "affine_poisson",
+        "accepted": false,
+        "classification": "truncated_or_non_stop",
+        "strict_json": false,
+        "finish_reason": "length"
+      },
+      {
+        "id": "teacher_ab_affine_poisson_06",
+        "family": "affine_poisson",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(5*90+24)**2 + 25*90",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(5 * 90 + 24) ** 2 + 25 * 90",
+          "parse_notes": [],
+          "selected_source": "(5*90+24)**2 + 25*90",
+          "computed": "226926",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "00636f5af16f004002183f667e2b4034210015292da1fffb74b22ffe5f23d5eb",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      },
+      {
+        "id": "teacher_ab_affine_poisson_07",
+        "family": "affine_poisson",
+        "accepted": true,
+        "classification": "accepted",
+        "strict_json": false,
+        "transport_repair": "extracted_unique_fenced_JSON",
+        "expression": "(3*73+26)**2 + 9*73",
+        "intermediate_checks": {
+          "mean_Y": true,
+          "variance_Y": true
+        },
+        "judged": {
+          "math_correct": true,
+          "format_exact": false,
+          "bindings_match_schema": true,
+          "executable": true,
+          "review_required": false,
+          "normalized_expression": "(3 * 73 + 26) ** 2 + 9 * 73",
+          "parse_notes": [],
+          "selected_source": "(3*73+26)**2 + 9*73",
+          "computed": "60682",
+          "reason": "Preregistered partially folded affine identity with independent exact agreement",
+          "correct": true,
+          "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+          "original_raw_unchanged": true,
+          "comb_notation_normalized": false,
+          "raw_sha256": "ba93b6ff6e63d3be748b078982a042b46ae01f33b1228067bf043739b56adc81",
+          "strict_one_line_expression": true,
+          "primary_correct": true
+        }
+      }
+    ]
+  },
+  "responses": [
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_00\",\"question\":\"X is Poisson with mean 54, and Y=2*X+11. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_00\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "031d99a8680b26a01b079cbfb668ddb108a5e9a0d241838d28d286babdfc7c25",
+      "text": "{\"question_id\":\"teacher_ab_affine_poisson_00\",\"question\":\"X is Poisson with mean 54, and Y=2*X+11. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"2*54+11\",\"variance_Y\":\"4*54\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_00\",\"expression\":\"(2*54+11)**2+4*54\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 98,
+        "total_tokens": 310,
+        "cost": 0.00005256,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005256,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00003136
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790209-oKgEh9n16kXhq6G0F2Jp"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_01\",\"question\":\"X is Poisson with mean 78, and Y=4*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_01\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "101204a7628a4a57a445d0f429780b486d9e82bb5333e413af2d75e430bb2fbd",
+      "text": "{\"question_id\":\"teacher_ab_affine_poisson_01\",\"question\":\"X is Poisson with mean 78, and Y=4*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"4*78+26\",\"variance_Y\":\"16*78\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_01\",\"expression\":\"(4*78+26)**2+16*78\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 98,
+        "total_tokens": 310,
+        "cost": 0.00005256,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005256,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00003136
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790222-kFHvTzh64ksW71PLUVKn"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_02\",\"question\":\"X is Poisson with mean 55, and Y=7*X+6. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_02\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "7b280757edfbf17e136bcee002214ed7f4a97e341194c0b7e4a72b8229e6fc6b",
+      "text": "{\"intermediates\":{\"mean_Y\":\"7*55+6\",\"variance_Y\":\"7**2*55\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_02\",\"expression\":\"(7*55+6)**2+7**2*55\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 58,
+        "total_tokens": 270,
+        "cost": 0.00003976,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003976,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00001856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790230-ExXW01F9CxbJy9ukPzgQ"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_03\",\"question\":\"X is Poisson with mean 59, and Y=6*X+23. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_03\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "7aa615f38ceccf4b061f820866025737705ff784a6f0c16f2488acb44f238e60",
+      "text": "{\"question_id\":\"teacher_ab_affine_poisson_03\",\"question\":\"X is Poisson with mean 59, and Y=6*X+23. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"6*59+23\",\"variance_Y\":\"6**2*59\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_03\",\"expression\":\"(6*59+23)**2+6**2*59\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 102,
+        "total_tokens": 314,
+        "cost": 0.00005384,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005384,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00003264
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790240-E8OO4PhW01VPCOWkgNFB"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_04\",\"question\":\"X is Poisson with mean 37, and Y=2*X+15. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_04\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "cf21d8f657792a9b8af44947943d6fa200cb919205456adbd497b9716c07031f",
+      "text": "{\"intermediates\":{\"mean_Y\":\"2*37+15\",\"variance_Y\":\"4*37\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_04\",\"expression\":\"(2*37+15)**2+4*37\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 54,
+        "total_tokens": 266,
+        "cost": 0.00003848,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003848,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00001728
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790246-imPOcefBxnqwMr6Gyhb4"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_05\",\"question\":\"X is Poisson with mean 26, and Y=3*X+28. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_05\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "9988f3ca8fd006703ea0ec4922fcea8f3bcff874de2c6b75f0e3a7e5ae5dd081",
+      "text": "{\"question_id\":\"teacher_ab_affine_poisson_05\",\"question\":\"X is Poisson with mean 26, and Y=3*X+28. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"3*26+28\",\"variance_Y\":\"3**2*26\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_05\",\"expression\":\"(3*26+28)**2+3**2*26\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 102,
+        "total_tokens": 314,
+        "cost": 0.00005384,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005384,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00003264
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790249-ewKRiIyqVALhs89w1LmX"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_06\",\"question\":\"X is Poisson with mean 90, and Y=5*X+24. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_06\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "478008be3ba6c431dd088ab57b7768ced89b000bcc6b4945562258401f6c8d4c",
+      "text": "{\"intermediates\":{\"mean_Y\":\"5*90+24\",\"variance_Y\":\"25*90\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_06\",\"expression\":\"(5*90+24)**2+25*90\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 54,
+        "total_tokens": 266,
+        "cost": 0.00003848,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003848,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00001728
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790257-7wVtO2Tfag2rrzKL6092"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_affine_poisson_07\",\"question\":\"X is Poisson with mean 73, and Y=3*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"<numerical expression>\",\"variance_Y\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_07\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "8127c07a698929a5708557be0c86660aaf6f7415bf52faec871721d11fecca48",
+      "text": "{\"question_id\":\"teacher_ab_affine_poisson_07\",\"question\":\"X is Poisson with mean 73, and Y=3*X+26. Set up E[Y**2].\",\"output_structure\":{\"intermediates\":{\"mean_Y\":\"3*73+26\",\"variance_Y\":\"9*73\"},\"answers\":[{\"question_id\":\"teacher_ab_affine_poisson_07\",\"expression\":\"(3*73+26)**2+9*73\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 212,
+        "completion_tokens": 98,
+        "total_tokens": 310,
+        "cost": 0.00005256,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005256,
+          "upstream_inference_prompt_cost": 0.0000212,
+          "upstream_inference_completions_cost": 0.00003136
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790260-Gf1ko2SCfu8OkpiC1eAh"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_00\",\"question\":\"A normal-theory interval is [25, 177]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_00\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "79c9746c430ac5d21abd3947e319c31acd16d8fe93734c960c2aedc1bd8ed802",
+      "text": "{\"question_id\":\"teacher_ab_interval_00\",\"question\":\"A normal-theory interval is [25, 177]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"(25+177)/2\",\"old_half_width\":\"(177-25)/2\",\"new_half_width\":\"(177-25)/(2*3)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_00\",\"expression\":\"(25+177)/2+(177-25)/(2*3)\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 122,
+        "total_tokens": 347,
+        "cost": 0.00006154,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00006154,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00003904
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790166-tnj44cP3VqFIcUIzzVWH"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_01\",\"question\":\"A normal-theory interval is [57, 175]. Sample size is multiplied by 16; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_01\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "3ee1f7abff669ab3206ad47064de49efb2c1179af8c22a94da2ff9743a022248",
+      "text": "{\"question_id\":\"teacher_ab_interval_01\",\"question\":\"A normal-theory interval is [57, 175]. Sample size is multiplied by 16; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"(57+175)/2\",\"old_half_width\":\"175-((57+175)/2)\",\"new_half_width\":\"(175-((57+175)/2))/4\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_01\",\"expression\":\"((57+175)/2)+(175-((57+175)/2))/4\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 128,
+        "total_tokens": 353,
+        "cost": 0.00006346,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00006346,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00004096
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790171-ggrVEg2waIjNL3rcMPs5"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_02\",\"question\":\"A normal-theory interval is [61, 194]. Sample size is multiplied by 25; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_02\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "f1a6f2d24bb89d95aba53b5e8540dad6dd2848a671bcaeb4a51b6314f0ab1882",
+      "text": "{\"intermediates\":{\"center\":\"127.5\",\"old_half_width\":\"66.5\",\"new_half_width\":\"66.5*sqrt(25)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_02\",\"expression\":\"127.5 + 66.5*sqrt(25)\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 61,
+        "total_tokens": 286,
+        "cost": 0.00004202,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00004202,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00001952
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790177-TsqqOqC01hkKgABvF0mU"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_03\",\"question\":\"A normal-theory interval is [124, 302]. Sample size is multiplied by 9; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_03\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "2b6a48fd291a6bd06b3fbcbf25f73c651141149e987c29b6969d87101ce9062d",
+      "text": "{\"intermediates\":{\"center\":\"213\",\"old_half_width\":\"89\",\"new_half_width\":\"89/3\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_03\",\"expression\":\"213+89/3\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 44,
+        "total_tokens": 269,
+        "cost": 0.00003658,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003658,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00001408
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790186-EKQ7I5xLw1lLgRkoxBVm"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_04\",\"question\":\"A normal-theory interval is [34, 223]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_04\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "0054e5c84dce1bfe323100acec82234373f82124b7009f018819d7c0e1223cd1",
+      "text": "{\"intermediates\":{\"center\":\"(34+223)/2\",\"old_half_width\":\"(223-34)/2\",\"new_half_width\":\"(223-34)/2/2**0.5*2**0.5/2**0.5*4**0.5\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_04\",\"expression\":\"(34+223)/2+(223-34)/2/2**0.5*2**0.5/2**0.5*4**0.5\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 112,
+        "total_tokens": 337,
+        "cost": 0.00005834,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00005834,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00003584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790189-5w9FxfkjwrcM71vXSuq1"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_05\",\"question\":\"A normal-theory interval is [86, 210]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_05\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "2f713799914e48c8067586f808cd786269c67a043ef53abb0a496193d68885b8",
+      "text": "{\"intermediates\":{\"center\":\"(86+210)/2\",\"old_half_width\":\"(210-86)/2\",\"new_half_width\":\"(210-86)/(2*2)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_05\",\"expression\":\"(86+210)/2+(210-86)/(2*2)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 70,
+        "total_tokens": 295,
+        "cost": 0.0000449,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0000449,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.0000224
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790194-7RxiFoVnZJtRS6qOXaYC"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_06\",\"question\":\"A normal-theory interval is [126, 223]. Sample size is multiplied by 49; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_06\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "03c206bde65c114cbfb73ee03bd3e5de9d0ce550a286ae6fafc476d8bde892c4",
+      "text": "{\"intermediates\":{\"center\":\"(126+223)/2\",\"old_half_width\":\"(223-126)/2\",\"new_half_width\":\"(223-126)/2/sqrt(49)\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_06\",\"expression\":\"(126+223)/2+(223-126)/2/sqrt(49)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 74,
+        "total_tokens": 299,
+        "cost": 0.00004618,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00004618,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00002368
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790198-giXZcLGDZQsrbr1CDEkJ"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_interval_07\",\"question\":\"A normal-theory interval is [21, 188]. Sample size is multiplied by 4; center, confidence level and population deviation stay fixed. Set up the new upper endpoint.\",\"output_structure\":{\"intermediates\":{\"center\":\"<numerical expression>\",\"old_half_width\":\"<numerical expression>\",\"new_half_width\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_07\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "ea64015c2de9c98a5a5900aacedbf2f56df8692b36c2c8d4f1205f7c84ec2dec",
+      "text": "{\"intermediates\":{\"center\":\"(21+188)/2\",\"old_half_width\":\"(188-21)/2\",\"new_half_width\":\"(188-21)/2/2\"},\"answers\":[{\"question_id\":\"teacher_ab_interval_07\",\"expression\":\"(21+188)/2 + (188-21)/2/2\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 225,
+        "completion_tokens": 69,
+        "total_tokens": 294,
+        "cost": 0.00004458,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00004458,
+          "upstream_inference_prompt_cost": 0.0000225,
+          "upstream_inference_completions_cost": 0.00002208
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790201-2B22JQZSlgBhUf5b5aPp"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_00\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 68 per minute. During a 347-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_00\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "9bfeadc63bde550cf3ee889f39b8f109c4647a9e092f466d7c4b3b519d2c7508",
+      "text": "{\"question_id\":\"teacher_ab_poisson_process_00\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 68 per minute. During a 347-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"347/60\",\"count_mean\":\"68*(347/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_00\",\"expression\":\"68*(347/60)\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 100,
+        "total_tokens": 319,
+        "cost": 0.0000539,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0000539,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.000032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790128-E0uOScOJP2cMvLCFGHyU"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_01\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 28 per minute. During a 695-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_01\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "3469634a0bfd95d531967c2aed0281db5860a90da3c7a790fc2a43fa84ff3c5a",
+      "text": "{\"question_id\":\"teacher_ab_poisson_process_01\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 28 per minute. During a 695-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"695/60\",\"count_mean\":\"(28*695)/60\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_01\",\"expression\":\"(28*695)/60\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 100,
+        "total_tokens": 319,
+        "cost": 0.0000539,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0000539,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.000032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790133-o8rOfPBillG3KFMvlj1s"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_02\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 18 per minute. During a 231-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_02\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "a712422b26235b06f6dd4059990539901d5e9d82de87ac034b3c00f4c38526e8",
+      "text": "{\"intermediates\":{\"duration_minutes\":\"231/60\",\"count_mean\":\"18*(231/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_02\",\"expression\":\"18*(231/60)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 47,
+        "total_tokens": 266,
+        "cost": 0.00003694,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003694,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.00001504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790138-p3yUA1lxczSI8c8ZgGRX"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_03\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 16 per minute. During a 408-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_03\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "c60666b61aaf54f5cc18c315ef823653df8a030f2a5641d247c7657b1639c6c3",
+      "text": "{\"intermediates\":{\"duration_minutes\":\"408/60\",\"count_mean\":\"16*(408/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_03\",\"expression\":\"16*(408/60)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 47,
+        "total_tokens": 266,
+        "cost": 0.00003694,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003694,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.00001504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790142-SZ7JLoJsihi1XZpk2pdn"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_04\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 45 per minute. During a 351-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_04\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "f782389567e6ee2896c06698db7729f12280f2ce1bdfa41061b942fda1cae2cb",
+      "text": "{\"intermediates\":{\"duration_minutes\":\"351/60\",\"count_mean\":\"45*(351/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_04\",\"expression\":\"45*(351/60)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 47,
+        "total_tokens": 266,
+        "cost": 0.00003694,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003694,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.00001504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790144-AZdKyFuHtQBf3vFjzSOM"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_05\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 47 per minute. During a 443-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_05\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "92e169f4dd59492d7102ee358fc0c6f73ec97beb6ce560e92193589fda4ed7c7",
+      "text": "{\"question_id\":\"teacher_ab_poisson_process_05\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 47 per minute. During a 443-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"443/60\",\"count_mean\":\"47*(443/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_05\",\"expression\":\"47*(443/60)\"}]}}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 100,
+        "total_tokens": 319,
+        "cost": 0.0000539,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0000539,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.000032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790149-bRs2rJhIghD2hGQreAQq"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_06\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 54 per minute. During a 320-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_06\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "ffdbabc98f861f6df36ff5332b5c7a0c2fd6661ac5003f3159afbc718082c111",
+      "text": "{\"intermediates\":{\"duration_minutes\":\"320/60\",\"count_mean\":\"54*(320/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_06\",\"expression\":\"54*(320/60)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 47,
+        "total_tokens": 266,
+        "cost": 0.00003694,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003694,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.00001504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790160-62uGOUmsItrDXdZ0hFz6"
+    },
+    {
+      "request": {
+        "model": "meta-llama/llama-3.3-70b-instruct",
+        "messages": [
+          {
+            "role": "system",
+            "content": "Return ONLY one compact JSON object. Start with { and end with }. No introduction, explanation, Markdown, code fence, derivation or text outside JSON. Fill every requested field with a short numerical expression string. Keep arithmetic in expressions unevaluated; use only numbers, +,-,*,/,**,comb(n,r). Replace variables by the supplied numbers. Do not output E[...], Var(...), or placeholders. The intermediate fields are the entire working: do not explain them. Keep the whole response under 180 tokens."
+          },
+          {
+            "role": "user",
+            "content": "{\"question_id\":\"teacher_ab_poisson_process_07\",\"question\":\"Arrivals at a service counter form a homogeneous Poisson process at 42 per minute. During a 677-second observation, what is the variance of the arrival count?\",\"output_structure\":{\"intermediates\":{\"duration_minutes\":\"<numerical expression>\",\"count_mean\":\"<numerical expression>\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_07\",\"expression\":\"<numerical expression>\"}]}}"
+          }
+        ],
+        "temperature": 0,
+        "max_tokens": 400,
+        "response_format": {
+          "type": "json_object"
+        },
+        "provider": {
+          "only": [
+            "deepinfra"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "enforce_distillable_text": true,
+          "max_price": {
+            "prompt": 1,
+            "completion": 2,
+            "request": 0
+          }
+        }
+      },
+      "request_sha256": "8df2ff32ae205659a8dfc351ecfb2c9c93798c3d9be8afca9b698ab4b880a72a",
+      "text": "{\"intermediates\":{\"duration_minutes\":\"677/60\",\"count_mean\":\"42*(677/60)\"},\"answers\":[{\"question_id\":\"teacher_ab_poisson_process_07\",\"expression\":\"42*(677/60)\"}]}",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 219,
+        "completion_tokens": 47,
+        "total_tokens": 266,
+        "cost": 0.00003694,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00003694,
+          "upstream_inference_prompt_cost": 0.0000219,
+          "upstream_inference_completions_cost": 0.00001504
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "id": "gen-1788790162-cgwH5oALkkyJDiVkVKgD"
+    }
+  ]
+}

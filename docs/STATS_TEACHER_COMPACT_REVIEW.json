@@ -1,0 +1,950 @@
+{
+  "role": "posthoc_diagnostic_not_execution_gate",
+  "teacher_calls_added": 0,
+  "source_digest": "51f8bc8cec986c0b4ca97062408d259aca6833951e7262f840da2503f5377a05",
+  "accepted": 22,
+  "n": 24,
+  "by_family": {
+    "poisson_process": 8,
+    "interval": 6,
+    "affine_poisson": 8
+  },
+  "pending": [],
+  "frozen_gate_passed": false,
+  "training_released": false,
+  "hypothetical_same_threshold_passed": false,
+  "old_B_same_diagnostic_accepted": 12,
+  "paired": {
+    "B1_C1": 12,
+    "B0_C1": 10,
+    "B0_C0": 2
+  },
+  "classifications": {
+    "accepted": 22,
+    "mathematical_error": 2
+  },
+  "rows": [
+    {
+      "id": "teacher_ab_poisson_process_00",
+      "family": "poisson_process",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "68*(347/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "68 * (347 / 60)",
+        "parse_notes": [],
+        "selected_source": "68*(347/60)",
+        "computed": "5899/15",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "afe6f22a4659cf17e13f3fc92e50bcb0f87403c5e351b12df382a41820357842",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "duration_minutes": "347/60",
+        "count_mean": "68*(347/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_01",
+      "family": "poisson_process",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(28*695)/60",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "28 * 695 / 60",
+        "parse_notes": [],
+        "selected_source": "(28*695)/60",
+        "computed": "973/3",
+        "reason": "Frozen commutative/reassociated arithmetic structure with exact agreement.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "f69cfcadfd11f6d1297d2828bcedb85f81e5f2f860d7c9e96241ec65a77f02de",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "duration_minutes": "695/60",
+        "count_mean": "(28*695)/60"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_02",
+      "family": "poisson_process",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "18*(231/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "18 * (231 / 60)",
+        "parse_notes": [],
+        "selected_source": "18*(231/60)",
+        "computed": "693/10",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "13e9fb0b5655b53409f72a261632260081f04fb51d3a98e4ff79786b9615358d",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "duration_minutes": "231/60",
+        "count_mean": "18*(231/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_03",
+      "family": "poisson_process",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "16*(408/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "16 * (408 / 60)",
+        "parse_notes": [],
+        "selected_source": "16*(408/60)",
+        "computed": "544/5",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "91029323cc466544779c00e1e096e0e0d48c0e5909fc5f1c4adfde32106c88fe",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "duration_minutes": "408/60",
+        "count_mean": "16*(408/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_04",
+      "family": "poisson_process",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "45*(351/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "45 * (351 / 60)",
+        "parse_notes": [],
+        "selected_source": "45*(351/60)",
+        "computed": "1053/4",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "3b143c3d6c68d1afd3e522719e5c943f5409e86c63af1a316460cfd355c7acf7",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "duration_minutes": "351/60",
+        "count_mean": "45*(351/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_05",
+      "family": "poisson_process",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "47*(443/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "47 * (443 / 60)",
+        "parse_notes": [],
+        "selected_source": "47*(443/60)",
+        "computed": "20821/60",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "c69665f4b187dccb71274a0df15ea63bb54680fb716681c552894ee07667617d",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "duration_minutes": "443/60",
+        "count_mean": "47*(443/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_06",
+      "family": "poisson_process",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "54*(320/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "54 * (320 / 60)",
+        "parse_notes": [],
+        "selected_source": "54*(320/60)",
+        "computed": "288",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "ec970da840506aa6ee0fde7c041ec7a2c95af643f59067ea70b77d938268feab",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "duration_minutes": "320/60",
+        "count_mean": "54*(320/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_poisson_process_07",
+      "family": "poisson_process",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "42*(677/60)",
+      "intermediate_checks": {
+        "duration_minutes": true,
+        "count_mean": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "42 * (677 / 60)",
+        "parse_notes": [],
+        "selected_source": "42*(677/60)",
+        "computed": "4739/10",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "9018bd9742fb8aca15a4ef3fa8240cf616ebdc11a00a9faae0ed754156209e3f",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "duration_minutes": "677/60",
+        "count_mean": "42*(677/60)"
+      }
+    },
+    {
+      "id": "teacher_ab_interval_00",
+      "family": "interval",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(25+177)/2+(177-25)/(2*3)",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(25 + 177) / 2 + (177 - 25) / (2 * 3)",
+        "parse_notes": [],
+        "selected_source": "(25+177)/2+(177-25)/(2*3)",
+        "computed": "379/3",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "3d2f14491f970b7ac9ebdf8055dfdc5010b7141944e0a5dce41c06672f042381",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "center": "(25+177)/2",
+        "old_half_width": "(177-25)/2",
+        "new_half_width": "(177-25)/(2*3)"
+      }
+    },
+    {
+      "id": "teacher_ab_interval_01",
+      "family": "interval",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "((57+175)/2)+(175-((57+175)/2))/4",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(57 + 175) / 2 + (175 - (57 + 175) / 2) / 4",
+        "parse_notes": [],
+        "selected_source": "((57+175)/2)+(175-((57+175)/2))/4",
+        "computed": "523/4",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "ac0cb742ccb7e44172eb6a6d984cf4336ee4035d862bcfca6ef577ff945cbdf0",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "center": "(57+175)/2",
+        "old_half_width": "175-((57+175)/2)",
+        "new_half_width": "(175-((57+175)/2))/4"
+      }
+    },
+    {
+      "id": "teacher_ab_interval_02",
+      "family": "interval",
+      "frozen_classification": "malformed_response",
+      "accepted": false,
+      "classification": "mathematical_error",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "127.5 + 66.5*sqrt(25)",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": false
+      },
+      "judged": {
+        "math_correct": false,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "255 / 2 + 133 / 2 * 5",
+        "parse_notes": [],
+        "selected_source": "127.5 + 66.5*sqrt(25)",
+        "computed": "460",
+        "reason": "The model expression yields the wrong value; no repair applied.",
+        "correct": false,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "b01236075212b78dd71adf9bb2833cf02549a76636d72f4b03b16e4cae942d21",
+        "strict_one_line_expression": true,
+        "primary_correct": false
+      },
+      "repairs": [
+        "removed_one_redundant_closing_brace"
+      ],
+      "original_intermediates": {
+        "center": "127.5",
+        "old_half_width": "66.5",
+        "new_half_width": "66.5*sqrt(25)"
+      },
+      "semantic_review": "New half-width is 66.5*5 instead of 66.5/5; multiplying sample size by 25 must shrink, not enlarge, the half-width."
+    },
+    {
+      "id": "teacher_ab_interval_03",
+      "family": "interval",
+      "frozen_classification": "equivalence_pending",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "213+89/3",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": null,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": true,
+        "normalized_expression": "213 + 89 / 3",
+        "parse_notes": [],
+        "selected_source": "213+89/3",
+        "computed": "728/3",
+        "reason": "Numerically equal but structure not yet verified; needs semantic review, not an automatic failure.",
+        "correct": false,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "0c562799bbb3f00e25cba406cf808a8b7da35a24feb16fe653e0a17ebe1bbe95",
+        "strict_one_line_expression": true,
+        "primary_correct": false
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "center": "213",
+        "old_half_width": "89",
+        "new_half_width": "89/3"
+      },
+      "semantic_review": "Verified fixed midpoint plus reduced half-width; partial arithmetic evaluation only"
+    },
+    {
+      "id": "teacher_ab_interval_04",
+      "family": "interval",
+      "frozen_classification": "malformed_response",
+      "accepted": false,
+      "classification": "mathematical_error",
+      "error": "Non-rational square root requires review",
+      "repairs": [],
+      "semantic_review": "The multiplicative factor after old half-width simplifies to sqrt(2), whereas multiplying sample size by 4 requires factor 1/2. The displayed final expression uses the same wrong factor. No irrational completion is invented."
+    },
+    {
+      "id": "teacher_ab_interval_05",
+      "family": "interval",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(86+210)/2+(210-86)/(2*2)",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(86 + 210) / 2 + (210 - 86) / (2 * 2)",
+        "parse_notes": [],
+        "selected_source": "(86+210)/2+(210-86)/(2*2)",
+        "computed": "179",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "19b6b247491fbc2dd77d1d3b3d3afcee22d9ac9c09b632b96dc8889fe0fa540c",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "center": "(86+210)/2",
+        "old_half_width": "(210-86)/2",
+        "new_half_width": "(210-86)/(2*2)"
+      }
+    },
+    {
+      "id": "teacher_ab_interval_06",
+      "family": "interval",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(126+223)/2+(223-126)/2/sqrt(49)",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(126 + 223) / 2 + (223 - 126) / 2 / 7",
+        "parse_notes": [],
+        "selected_source": "(126+223)/2+(223-126)/2/sqrt(49)",
+        "computed": "1270/7",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "3ab22ff40e88798f5646a984fa196049db5e576e5626c0259fdd228a3448b5a5",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "center": "(126+223)/2",
+        "old_half_width": "(223-126)/2",
+        "new_half_width": "(223-126)/2/sqrt(49)"
+      }
+    },
+    {
+      "id": "teacher_ab_interval_07",
+      "family": "interval",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(21+188)/2 + (188-21)/2/2",
+      "intermediate_checks": {
+        "center": true,
+        "old_half_width": true,
+        "new_half_width": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": false,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(21 + 188) / 2 + (188 - 21) / 2 / 2",
+        "parse_notes": [],
+        "selected_source": "(21+188)/2 + (188-21)/2/2",
+        "computed": "585/4",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "f43364f985378f082b52fb6646b59e10df2c7cf072507b33de9e8f0dbfc1e6ca",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "center": "(21+188)/2",
+        "old_half_width": "(188-21)/2",
+        "new_half_width": "(188-21)/2/2"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_00",
+      "family": "affine_poisson",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(2*54+11)**2+4*54",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(2 * 54 + 11) ** 2 + 4 * 54",
+        "parse_notes": [],
+        "selected_source": "(2*54+11)**2+4*54",
+        "computed": "14377",
+        "reason": "Preregistered partially folded affine identity with independent exact agreement",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "ea709366d02e16a02c9142d0c681e066ddb73ce70f5a57b87b26d979f3e19b0e",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "mean_Y": "2*54+11",
+        "variance_Y": "4*54"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_01",
+      "family": "affine_poisson",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(4*78+26)**2+16*78",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(4 * 78 + 26) ** 2 + 16 * 78",
+        "parse_notes": [],
+        "selected_source": "(4*78+26)**2+16*78",
+        "computed": "115492",
+        "reason": "Preregistered partially folded affine identity with independent exact agreement",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "d2621ff63012ca9c17fd4c2e19820a4b3623db6379d46bb4db05e7ead9795ce3",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "mean_Y": "4*78+26",
+        "variance_Y": "16*78"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_02",
+      "family": "affine_poisson",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(7*55+6)**2+7**2*55",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(7 * 55 + 6) ** 2 + 7 ** 2 * 55",
+        "parse_notes": [],
+        "selected_source": "(7*55+6)**2+7**2*55",
+        "computed": "155576",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "d61bf7d1a6f7b25ef1dc492baf9ef38007c986b32298ed66f0099da99968c319",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "mean_Y": "7*55+6",
+        "variance_Y": "7**2*55"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_03",
+      "family": "affine_poisson",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(6*59+23)**2+6**2*59",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(6 * 59 + 23) ** 2 + 6 ** 2 * 59",
+        "parse_notes": [],
+        "selected_source": "(6*59+23)**2+6**2*59",
+        "computed": "144253",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "7981552415e1362e8cb3e73500f0089839a32d04b58fbaa2aa079ec52fd9bdc9",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "mean_Y": "6*59+23",
+        "variance_Y": "6**2*59"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_04",
+      "family": "affine_poisson",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(2*37+15)**2+4*37",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(2 * 37 + 15) ** 2 + 4 * 37",
+        "parse_notes": [],
+        "selected_source": "(2*37+15)**2+4*37",
+        "computed": "8069",
+        "reason": "Preregistered partially folded affine identity with independent exact agreement",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "7ddfd76f7d5d05bfa81e59b10b1513b66d2fa0a0ea5db644518d7c5faa2e0a42",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "mean_Y": "2*37+15",
+        "variance_Y": "4*37"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_05",
+      "family": "affine_poisson",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(3*26+28)**2+3**2*26",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(3 * 26 + 28) ** 2 + 3 ** 2 * 26",
+        "parse_notes": [],
+        "selected_source": "(3*26+28)**2+3**2*26",
+        "computed": "11470",
+        "reason": "Correct fully substituted expression with reviewed mathematical structure; labels are scored separately.",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "f369d9682370dab0036c133c97eef9e35a3365b97a318842f70f702ffcb68bd0",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "mean_Y": "3*26+28",
+        "variance_Y": "3**2*26"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_06",
+      "family": "affine_poisson",
+      "frozen_classification": "accepted",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(5*90+24)**2+25*90",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(5 * 90 + 24) ** 2 + 25 * 90",
+        "parse_notes": [],
+        "selected_source": "(5*90+24)**2+25*90",
+        "computed": "226926",
+        "reason": "Preregistered partially folded affine identity with independent exact agreement",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "0b7b960a9f9a2b50d882c550790af26dd23d906bd4e93715b0de84fd8adbb6e7",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [],
+      "original_intermediates": {
+        "mean_Y": "5*90+24",
+        "variance_Y": "25*90"
+      }
+    },
+    {
+      "id": "teacher_ab_affine_poisson_07",
+      "family": "affine_poisson",
+      "frozen_classification": "malformed_response",
+      "accepted": true,
+      "classification": "accepted",
+      "strict_json": true,
+      "transport_repair": null,
+      "expression": "(3*73+26)**2+9*73",
+      "intermediate_checks": {
+        "mean_Y": true,
+        "variance_Y": true
+      },
+      "judged": {
+        "math_correct": true,
+        "format_exact": false,
+        "bindings_match_schema": true,
+        "executable": true,
+        "review_required": false,
+        "normalized_expression": "(3 * 73 + 26) ** 2 + 9 * 73",
+        "parse_notes": [],
+        "selected_source": "(3*73+26)**2+9*73",
+        "computed": "60682",
+        "reason": "Preregistered partially folded affine identity with independent exact agreement",
+        "correct": true,
+        "grader_version": "stats-consolidation-v2-reviewed-equivalences",
+        "original_raw_unchanged": true,
+        "comb_notation_normalized": false,
+        "raw_sha256": "9bcefd1b091efda7a0dfb616f657edc6aa83bc8b9c2e58bebcda3f925aac0e7b",
+        "strict_one_line_expression": true,
+        "primary_correct": true
+      },
+      "repairs": [
+        "extracted_verified_echoed_output_structure"
+      ],
+      "original_intermediates": {
+        "mean_Y": "3*73+26",
+        "variance_Y": "9*73"
+      }
+    }
+  ]
+}
