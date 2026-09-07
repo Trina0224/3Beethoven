@@ -1,5 +1,5 @@
 {
-  "status": "ready_for_paid_pilot",
+  "status": "pilot_failed_research_decision_required",
   "checks": {
     "generated_files_reproducible": true,
     "protocol_frozen": true,
@@ -19,7 +19,17 @@
     "holdout": "c5515b35ff5ee0a5abf7c283c8cab55e08ee2e0e45a0105766865d744ac343df",
     "benchmark": "af13bdde32a67851f7de224ca49bd9bbb2de0dd1e51dafcdb77414e2d8f250c9"
   },
-  "teacher_calls": 0,
+  "teacher_calls": 38,
   "gpu_runs": 0,
-  "next": "paid teacher pilot; full generation only if pilot gate passes"
+  "pilot": {
+    "kaggle_version": 49,
+    "script_version_id": 347939910,
+    "accepted_targets": 42,
+    "planned_targets": 65,
+    "minimum_targets": 59,
+    "reported_cost_usd": 0.00402078,
+    "gate_passed": false,
+    "full_started": false
+  },
+  "next": "semantic classification of 23 rejected targets; high-level decision before changing grader or teacher prompt"
 }
