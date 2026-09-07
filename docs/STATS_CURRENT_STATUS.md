@@ -1,3 +1,7 @@
+# 暫停並保存 review
+
+2026-09-06 23:23 PDT：分析、複核與 review 已保存；無新訓練。權重已在 Kaggle 保存，但尚未轉存 GitHub（二進位上傳／Git 認證受限）。[交接與證據界線](STATS_REVIEW_HANDOFF.md) · [權重清單](STATS_WEIGHT_TRANSFER_MANIFEST.json)。
+
 # 目前狀態：六次 seed 實驗與補充複核全部完成
 
 待判答案 0；MC 校正完成。保留原 v15，未啟動下一版。見 [最終結果](STATS_SEED_REPLICATION_REPORT.md)。

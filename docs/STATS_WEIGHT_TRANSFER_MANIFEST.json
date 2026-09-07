@@ -1,0 +1,78 @@
+{
+  "as_of": "2026-09-06 23:23 PDT",
+  "github_binary_uploaded": false,
+  "kaggle_version_42_status": "Successful",
+  "kaggle_url": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=347852579",
+  "weights": [
+    {
+      "name": "original_v14",
+      "version": 42,
+      "path": "3beethoven_stats_v0_14/adapter/adapter_model.safetensors",
+      "sha256": "c7def77757fefaaf41db6938500159795a47503dac54d72d79113de47a3239a5"
+    },
+    {
+      "name": "original_v15",
+      "version": 42,
+      "path": "3beethoven_stats_v0_15/adapter/adapter_model.safetensors",
+      "sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3"
+    },
+    {
+      "name": "v15_seed_1919",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v15_seed_1919/adapter/adapter_model.safetensors",
+      "sha256": "da061826d3cf3a7aa4ff667bb8b7e7b13b4d0f06ea9014c59cb696efb722cd78"
+    },
+    {
+      "name": "v15_seed_2027",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v15_seed_2027/adapter/adapter_model.safetensors",
+      "sha256": "16f34085ade761aa4b018d2c33c6e19d2e1f7845643a7b729cb492f0c63bc342"
+    },
+    {
+      "name": "v15_seed_31415",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v15_seed_31415/adapter/adapter_model.safetensors",
+      "sha256": "20bd319a29ff561b853ae80edd70395f27eea6d4b90ed666a67e6bcc97d885f6"
+    },
+    {
+      "name": "v19_seed_2027/epoch_1",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v19_seed_2027/epoch_1/adapter/adapter_model.safetensors",
+      "sha256": "c0e22e186bc33265ca1bb9cb3145f46929edc48342ae21ddd934580d28bb57f1"
+    },
+    {
+      "name": "v19_seed_2027/epoch_2",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v19_seed_2027/epoch_2/adapter/adapter_model.safetensors",
+      "sha256": "3f01c3fef5b048b1e90d3bc7ca8bed281a927f3d1e05efff5667f34127d435ea"
+    },
+    {
+      "name": "v19_seed_1919/epoch_1",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v19_seed_1919/epoch_1/adapter/adapter_model.safetensors",
+      "sha256": "9fe491ee18bd6e0b9da03ab0fa6b991d583cf6041364f4a742e00fd9f7f75a18"
+    },
+    {
+      "name": "v19_seed_31415/epoch_1",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v19_seed_31415/epoch_1/adapter/adapter_model.safetensors",
+      "sha256": "94374a2c80cdf9220296ff9dfcf026169a6a22f4383afff3bf5744570687ef77"
+    },
+    {
+      "name": "v19_seed_31415/epoch_2",
+      "version": 42,
+      "path": "3beethoven_seed_replication/v19_seed_31415/epoch_2/adapter/adapter_model.safetensors",
+      "sha256": "7e5289a545d4f8257a5174f2196084c28d1fe09a9c9d9e705b49cda26d134a0d"
+    }
+  ],
+  "archive": {
+    "bytes": 1507467761,
+    "sha256": "9a81a9445754ee17e66c521e3596716f9a755106f86d6d06eba286ff953acb03",
+    "crc_verified": true,
+    "optimizer_checkpoints": "preserved in formal output; excluded from compact zip"
+  },
+  "archive_path": "3beethoven_seed_replication.zip",
+  "note": "Compact archive contains seed adapters; original v14/v15 parent directories and optimizer checkpoints remain in full Version 42 output. All other historical weights retain their previously documented Kaggle locations. Base Llama weights are not included; adapters require the pinned base model and tokenizer.",
+  "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "transfer_blocker": "No binary upload capability in available GitHub connector; git push authentication missing."
+}
