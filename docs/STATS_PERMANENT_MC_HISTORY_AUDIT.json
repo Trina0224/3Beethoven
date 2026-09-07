@@ -1,0 +1,145 @@
+[
+  {
+    "version": 5,
+    "source": "STATS_V0_5_RESULTS.json",
+    "key": "v05_old",
+    "correct": 133,
+    "all_four_correct": 19,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "gpu": "Tesla T4",
+      "packages": {
+        "accelerate": "1.13.0",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "peft": "0.19.1",
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0"
+      }
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  },
+  {
+    "version": 9,
+    "source": "STATS_V0_9_RESULTS.json",
+    "key": "v09_old",
+    "correct": 127,
+    "all_four_correct": 19,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "gpu": "Tesla T4",
+      "packages": {
+        "accelerate": "1.13.0",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "peft": "0.19.1",
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0"
+      }
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  },
+  {
+    "version": 14,
+    "source": "STATS_V0_14_RESULTS.json",
+    "key": "v14_old",
+    "correct": 123,
+    "all_four_correct": 21,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "gpus": [
+        "Tesla T4"
+      ],
+      "max_sequence_tokens": 156,
+      "packages": {
+        "accelerate": "1.13.0",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "peft": "0.19.1",
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0"
+      }
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  },
+  {
+    "version": 15,
+    "source": "STATS_V0_15_RESULTS.json",
+    "key": "v15_old",
+    "correct": 127,
+    "all_four_correct": 20,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "gpus": [
+        "Tesla T4"
+      ],
+      "max_sequence_tokens": 156,
+      "packages": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0",
+        "peft": "0.19.1",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "accelerate": "1.13.0"
+      }
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  },
+  {
+    "version": 16,
+    "source": "STATS_V0_16_RESULTS.json",
+    "key": "v16_old",
+    "correct": 126,
+    "all_four_correct": 19,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "gpus": [
+        "Tesla T4"
+      ],
+      "packages": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0",
+        "peft": "0.19.1",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "accelerate": "1.13.0"
+      }
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  },
+  {
+    "version": 17,
+    "source": "STATS_V0_17_RESULTS.json",
+    "key": "train_8_old",
+    "correct": 127,
+    "all_four_correct": 20,
+    "question_ids_and_gold_verified": true,
+    "raw_regraded": true,
+    "logged_exact_prompt_hash": false,
+    "environment": {
+      "packages": {
+        "torch": "2.10.0+cu128",
+        "transformers": "5.0.0",
+        "peft": "0.19.1",
+        "bitsandbytes": "0.50.2",
+        "datasets": "5.0.0",
+        "accelerate": "1.13.0"
+      },
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ]
+    },
+    "comparability": "Historical nominal common-test retention trace, not a controlled common-runtime rerun or a blinded learning curve."
+  }
+]

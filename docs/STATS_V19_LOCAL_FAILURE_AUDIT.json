@@ -1,0 +1,252 @@
+{
+  "test_decisions": [
+    {
+      "id": "v19_old_test_exactly_one_000",
+      "raw": "Expression: (1 - 15 / 100) * (34 / 100)",
+      "reference": "(1-15/100)*(34/100)+(15/100)*(1-34/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_001",
+      "raw": "Expression: (1 - 2 / 5) * (31 / 100) + 2 / 5 * (1 - 31 / 100)",
+      "reference": "(1-40/100)*(31/100)+(40/100)*(1-31/100)",
+      "classification": "correct"
+    },
+    {
+      "id": "v19_old_test_exactly_one_002",
+      "raw": "Expression: (1 - 53 / 100) * (14 / 100)",
+      "reference": "(1-53/100)*(14/100)+(53/100)*(1-14/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_003",
+      "raw": "Expression: (67 / 100) * (14 / 100)",
+      "reference": "(1-67/100)*(14/100)+(67/100)*(1-14/100)",
+      "classification": "both_miss"
+    },
+    {
+      "id": "v19_old_test_exactly_one_004",
+      "raw": "Expression: (23 / 100) * (11 / 100)",
+      "reference": "(1-23/100)*(11/100)+(23/100)*(1-11/100)",
+      "classification": "both_miss"
+    },
+    {
+      "id": "v19_old_test_exactly_one_005",
+      "raw": "Expression: (1 - 65 / 100) * (40 / 100)",
+      "reference": "(1-65/100)*(40/100)+(65/100)*(1-40/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_006",
+      "raw": "Expression: (1 - 18 / 100) * (28 / 100)",
+      "reference": "(1-18/100)*(28/100)+(18/100)*(1-28/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_007",
+      "raw": "Expression: (1 - 66 / 100) * (35 / 100)",
+      "reference": "(1-66/100)*(35/100)+(66/100)*(1-35/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_008",
+      "raw": "Expression: (1 - 53 / 100) * (40 / 100)",
+      "reference": "(1-53/100)*(40/100)+(53/100)*(1-40/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_009",
+      "raw": "Expression: (61 / 100) * (11 / 100)",
+      "reference": "(1-61/100)*(11/100)+(61/100)*(1-11/100)",
+      "classification": "both_miss"
+    },
+    {
+      "id": "v19_old_test_exactly_one_010",
+      "raw": "Expression: (1 - 63 / 100) * (26 / 100)",
+      "reference": "(1-63/100)*(26/100)+(63/100)*(1-26/100)",
+      "classification": "only_A_detects_B_misses"
+    },
+    {
+      "id": "v19_old_test_exactly_one_011",
+      "raw": "Expression: (1 - 35 / 100) * (45 / 100)",
+      "reference": "(1-35/100)*(45/100)+(35/100)*(1-45/100)",
+      "classification": "only_A_detects_B_misses"
+    }
+  ],
+  "counts": {
+    "only_A_detects_B_misses": 8,
+    "correct": 1,
+    "both_miss": 3
+  },
+  "replay_audit": [
+    {
+      "source_id": "v15_train_exactly_one_000",
+      "target": "Expression: (1 - 43 / 100) * (3 / 10) + 43 / 100 * (1 - 3 / 10)",
+      "reference": "(1-43/100)*(30/100)+(43/100)*(1-30/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_001",
+      "target": "Expression: (1 - 57 / 100) * (21 / 50) + 57 / 100 * (1 - 21 / 50)",
+      "reference": "(1-57/100)*(42/100)+(57/100)*(1-42/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_002",
+      "target": "Expression: (1 - 2 / 5) * (11 / 25) + 2 / 5 * (1 - 11 / 25)",
+      "reference": "(1-40/100)*(44/100)+(40/100)*(1-44/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_003",
+      "target": "Expression: (1 - 66 / 100) * (29 / 100) + (1 - 29 / 100) * (66 / 100)",
+      "reference": "(1-66/100)*(29/100)+(66/100)*(1-29/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_004",
+      "target": "Expression: (1 - 27 / 50) * (4 / 25) + 27 / 50 * (1 - 4 / 25)",
+      "reference": "(1-54/100)*(16/100)+(54/100)*(1-16/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_005",
+      "target": "Expression: (1 - 3 / 5) * (8 / 25) + 3 / 5 * (1 - 8 / 25)",
+      "reference": "(1-60/100)*(32/100)+(60/100)*(1-32/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_006",
+      "target": "Expression: (1 - 57 / 100) * (47 / 100) + 57 / 100 * (1 - 47 / 100)",
+      "reference": "(1-57/100)*(47/100)+(57/100)*(1-47/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_007",
+      "target": "Expression: (1 - 13 / 100) * (12 / 100) + 13 / 100 * (1 - 12 / 100)",
+      "reference": "(1-13/100)*(12/100)+(13/100)*(1-12/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_008",
+      "target": "Expression: (1 - 23 / 100) * (3 / 25) + 23 / 100 * (1 - 3 / 25)",
+      "reference": "(1-23/100)*(12/100)+(23/100)*(1-12/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_009",
+      "target": "Expression: (1 - 19 / 100) * (12 / 100) + (1 - 12 / 100) * (19 / 100)",
+      "reference": "(1-19/100)*(12/100)+(19/100)*(1-12/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_010",
+      "target": "Expression: (1 - 56 / 100) * (27 / 100) + 56 / 100 * (1 - 27 / 100)",
+      "reference": "(1-56/100)*(27/100)+(56/100)*(1-27/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v15_train_exactly_one_011",
+      "target": "Expression: (1 - 57 / 100) * (37 / 100) + 57 / 100 * (1 - 37 / 100)",
+      "reference": "(1-57/100)*(37/100)+(57/100)*(1-37/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_000",
+      "target": "Expression: (1 - 2 / 5) * (48 / 100) + 2 / 5 * (1 - 48 / 100)",
+      "reference": "(1-40/100)*(48/100)+(40/100)*(1-48/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_001",
+      "target": "Expression: (1 - 38 / 100) * (29 / 100) + 38 / 100 * (1 - 29 / 100)",
+      "reference": "(1-38/100)*(29/100)+(38/100)*(1-29/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_002",
+      "target": "Expression: (1 - 38 / 100) * (21 / 100) + 38 / 100 * (1 - 21 / 100)",
+      "reference": "(1-38/100)*(21/100)+(38/100)*(1-21/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_003",
+      "target": "Expression: (1 - 22 / 100) * (49 / 100) + 22 / 100 * (1 - 49 / 100)",
+      "reference": "(1-22/100)*(49/100)+(22/100)*(1-49/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_004",
+      "target": "Expression: (1 - 27 / 100) * (27 / 100) + 27 / 100 * (1 - 27 / 100)",
+      "reference": "(1-27/100)*(27/100)+(27/100)*(1-27/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_005",
+      "target": "Expression: (1 - 32 / 100) * (27 / 100) + 32 / 100 * (1 - 27 / 100)",
+      "reference": "(1-32/100)*(27/100)+(32/100)*(1-27/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_006",
+      "target": "Expression: (1 - 28 / 100) * (12 / 100) + 28 / 100 * (1 - 12 / 100)",
+      "reference": "(1-28/100)*(12/100)+(28/100)*(1-12/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_007",
+      "target": "Expression: (1 - 27 / 100) * (43 / 100) + 27 / 100 * (1 - 43 / 100)",
+      "reference": "(1-27/100)*(43/100)+(27/100)*(1-43/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_008",
+      "target": "Expression: (1 - 19 / 50) * (47 / 100) + 19 / 50 * (1 - 47 / 100)",
+      "reference": "(1-38/100)*(47/100)+(38/100)*(1-47/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_009",
+      "target": "Expression: (1 - 23 / 100) * (23 / 100) + 23 / 100 * (1 - 23 / 100)",
+      "reference": "(1-23/100)*(23/100)+(23/100)*(1-23/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_010",
+      "target": "Expression: (1 - 39 / 100) * (35 / 100) + 39 / 100 * (1 - 35 / 100)",
+      "reference": "(1-39/100)*(35/100)+(39/100)*(1-35/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    },
+    {
+      "source_id": "v14_train_exactly_one_011",
+      "target": "Expression: (1 - 21 / 100) * (34 / 100) + 21 / 100 * (1 - 34 / 100)",
+      "reference": "(1-21/100)*(34/100)+(21/100)*(1-34/100)",
+      "training_only": true,
+      "exact_value_verified": true
+    }
+  ],
+  "interpretation": "Eight outputs omit the B-detects/A-misses branch; three compute both misses; one is correct. All 24 replay targets have correct numerical references and training-only source IDs. This local error signature does not establish erased internal knowledge or identify the causal training mechanism."
+}
