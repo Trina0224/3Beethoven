@@ -1,7 +1,7 @@
 <!-- MULTIVIEW_EXECUTION_LIVE_BEGIN -->
-## Latest checkpoint — 2026-09-07 16:39 PDT
+## Latest checkpoint — 2026-09-07 16:58 PDT
 
-Multiview curriculum and runner are frozen and locally validated:516 unique rows,2seeds×65 planned updates,48 crossed diagnostic tasks. **No new training or baseline/probe generation occurred.** Automatic approval review blocked restoring existing private weights/teacher/review data within the same Kaggle notebook and requires explicit current approval despite recovered prior authorization. GPU is being stopped. See [STATS_MULTIVIEW_STATUS.md](STATS_MULTIVIEW_STATUS.md) for exact approval scope and safe resumption. Do not mistake partial Kaggle setup files for a runnable experiment. V54 low-LR repair below remains the latest completed training result.
+User explicitly approved the exact existing-data reuse/training/evaluation/save scope. The prior automatic-approval blocker is resolved. Original v15 parent hash, teacher file hash, 516-row corpus hashes and contract tests passed in Kaggle. Fresh prepared v15 baseline completed at old34/48,chain38/48,event12/16 with no pending scores. Seed2027 is running; seed31415 follows automatically. Each seed has65 updates and checkpoints12/24/48/65, unchanged per-family gates, then post-training review and fixed-candidate crossed48-task probe. Source/decision: docs/STATS_MULTIVIEW_DECISION.json and scripts/run_stats_multiview.py. No new student result or promotion yet. See docs/STATS_MULTIVIEW_STATUS.md for preserved setup history.
 <!-- MULTIVIEW_EXECUTION_LIVE_END -->
 
 <!-- REPAIR_EXECUTION_LIVE_BEGIN -->
