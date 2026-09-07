@@ -1,0 +1,86 @@
+{
+  "status": "frozen_for_execution",
+  "experiment": "multiview_verified_response_distillation_pilot",
+  "trigger": "V54 low LR repair failed every gate; V38 same-number paraphrase deficit and V54 replay fit motivate meaning-preserving multiview training.",
+  "hypothesis": "Exposure to alternate descriptions with identical verified targets improves wording transfer while preserving each old and chain family and event coverage.",
+  "teacher_calls": 0,
+  "scope": "filtered pilot, original v15 continued only; no full four-run promotion claim",
+  "training": {
+    "seeds": [
+      2027,
+      31415
+    ],
+    "rows": 516,
+    "epochs": 1,
+    "max_updates_per_seed": 65,
+    "learning_rate": 5e-06,
+    "gradient_accumulation_steps": 8,
+    "scheduler": "constant",
+    "parent_sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
+    "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "other_settings": "same NF4/FP16 prepared parent and LoRA configuration as V54"
+  },
+  "train_sha256": "4dfe00b073e6ef805c7e83fbd18240e75c8a250749eaf5959911e41756a12a39",
+  "probe_sha256": "64b870cd43e11dafa720f9243f99a2c1277f4c873908e92ddc971793fbbf1fd7",
+  "validation_steps": [
+    12,
+    24,
+    48,
+    65
+  ],
+  "validation_gate": {
+    "status": "frozen_for_execution",
+    "baseline": "original_v15_same_questions_same_grader",
+    "all_pending_resolved_before_decision": true,
+    "suites": {
+      "old": {
+        "n": 48,
+        "per_category_n": 6,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1
+      },
+      "chain": {
+        "n": 48,
+        "per_category_n": 12,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1,
+        "allowed_depth3_loss_per_category": 0
+      },
+      "event": {
+        "n": 16,
+        "independent_stories": 4,
+        "minimum_correct_per_category": 3,
+        "minimum_correct_total": 14
+      }
+    },
+    "floor_rule": "max(0,baseline_correct-allowed_loss)",
+    "primary_credit": "math_correct and executable"
+  },
+  "selection": "Train uninterrupted for one pass regardless of pending or passing intermediate scores. Resolve every pending semantic judgment after both seeds complete, then select earliest all-gate pass per seed; otherwise step65 diagnostic. Freeze selection before probe.",
+  "controls": [
+    "fresh prepared original-v15 baseline on same112 selection questions",
+    "same corpus and token budget both seeds",
+    "actual microbatch input/label/order hash verification",
+    "same base revision, parent hash, grader, environment",
+    "raw outputs and automatic judgments retained; reuse previous reviews only with exact question and raw hashes"
+  ],
+  "transfer_probe": "48 crossed tasks:3 families x4 paired stories x known/new numerical task x exact familiar/unseen wording. Familiar new-number prompts replace only numeric fields. New mathematical task identities blocked against historical frozen splits, full consolidation candidates, selection, and holdout. Known-number cells are fitting diagnostics. Run v15 and two fixed candidates only after training/selection; never reselect from probe.",
+  "budget": {
+    "teacher_calls": 0,
+    "training_updates_total": 130,
+    "selection_generations": 1008,
+    "probe_generations": 144,
+    "gpu_minutes_cap": 150,
+    "additional_training_if_failure": false
+  },
+  "promotion": "No deployment or replacement of v15 from this pilot alone; full teacher gate and four-run independent comparison remain required. No additional independent288/MC240 evaluation in this bounded pilot.",
+  "interpretation_limit": "This doubles exposure approximately, changes wording and ordering, and removes2 duplicates; no matched repeat-only control, so any gain is attributed to the whole curriculum package, not wording augmentation alone.",
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.0.0",
+    "peft": "0.19.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.13.0",
+    "datasets": "5.0.0"
+  }
+}
