@@ -20,7 +20,7 @@ def main():
         '中間量以獨立有理數參考核對；教材答案保留教師算式字元，不以參考答案替換。學生評分器與通過門檻沒有放寬。','',
         '| 教材目標 | 合格題數 |','|---|---:|']
     lines += [f'| {k} | {v} |' for k,v in teacher['by_target'].items()]
-    lines += ['', '## 學生與原有門檻','','| Seed | 更新步數 | 固定評測步數 | 完整門檻通過 |','|---|---:|---:|---|']
+    lines += ['', '## 學生與原有門檻','','本輪原始 v15 基準為舊題 35/48、推理鏈 38/48、事件 12/16；111/112 份原始回答與 V55 相同，一道 Poisson 時間換算由錯轉對，確切執行差異來源尚未確立。本輪採用當次基準，原有公式使舊題總分及該類門檻各提高一分，沒有放寬；不宣稱歷史輸出完全重現。','','| Seed | 更新步數 | 固定評測步數 | 完整門檻通過 |','|---|---:|---:|---|']
     for seed,item in summary['seeds'].items():
         selection=read(root/f'seed_{seed}/selection.json');c=item['training_complete']
         lines.append(f"| {seed} | {c['global_steps']} | {selection['fixed_step']} | {'是' if selection['selected_step'] is not None else '否'} |")
