@@ -1,0 +1,9 @@
+{
+  "probe_sha256": "64b870cd43e11dafa720f9243f99a2c1277f4c873908e92ddc971793fbbf1fd7",
+  "new_distinct_tasks": 12,
+  "recognized_historical_question_ids": 2284,
+  "duplicate_teacher_row_references_resolved": 144,
+  "unresolved_relevant_historical_rows": [],
+  "new_task_overlap_with_historical": 0,
+  "note": "Rows lacking question semantics in V19/V20 are teacher-row references; all144 relevant references resolve to already blocked historical task identities. Unrelated arithmetic/moment task schemas are not claimed as parsed. The generator separately blocks full consolidation candidates/selection/holdout."
+}
