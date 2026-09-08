@@ -1,0 +1,509 @@
+{
+  "elapsed_minutes": 24.3745725274086,
+  "examples": {
+    "at_least_one": {
+      "after": "Expression: 1-(1-(10/13))*(1-(8/13))",
+      "before": "Expression: (10 / 13) * (8 / 13) + (1 - (10 / 13)) * (1 - (8 / 13))",
+      "question": "A and B are independent events. P(A)=10/13; P(B)=8/13. Find the probability that at least one occurs."
+    },
+    "binomial": {
+      "after": "Expression: comb(5,2)*(41/100)**2*(1-41/100)**(5-2)",
+      "before": "Expression: (41 / 100) ** 2 * (1 - 41 / 100) ** (5 - 2) / 2",
+      "question": "X is the number of successes in 5 independent trials, each with success probability 41/100. Find P(X=2)."
+    },
+    "exactly_one": {
+      "after": "Expression: (37/100)*(1-(49/100))+(1-(37/100))*(49/100)",
+      "before": "Expression: (37 / 100) * (49 / 100) + (37 / 100) * (1 - 49 / 100) + (1 - 37 / 100) * (49 / 100)",
+      "question": "A and B are independent events. P(A)=37/100; P(B)=49/100. Find the probability that exactly one occurs."
+    },
+    "interval": {
+      "after": "Expression: (48+175)/2+(175-48)/(2*7)",
+      "before": "Expression: (48 + (175 - 48) / (2 * 7)) * (1 / (2 / 7)) + (175 - 48) / (2 * 7)",
+      "question": "A normal-theory confidence interval is [48, 175]. Sample size is multiplied by 49; center, confidence level and population standard deviation stay fixed. Find the new upper endpoint."
+    },
+    "moment_second": {
+      "after": "Expression: 4**2*468+(4*71+5)**2",
+      "before": "Expression: 4 ** 2 * 71 ** 2 + (4 * 71 + 5) ** 2",
+      "question": "E[X]=71; Var(X)=468. Define Y=4*X+5. Find E[Y**2]."
+    },
+    "neither": {
+      "after": "Expression: (1-(60/100))*(1-(28/100))",
+      "before": "Expression: (60 / 100) * (28 / 100)",
+      "question": "A and B are independent events. P(A)=60/100; P(B)=28/100. Find the probability that neither occurs."
+    },
+    "poisson_second": {
+      "after": "Expression: 61+61**2",
+      "before": "Expression: 61 ** 2",
+      "question": "X has a Poisson distribution with mean 61. Find E[X**2]."
+    },
+    "process_scaled": {
+      "after": "Expression: 3**2*(59*(11))",
+      "before": "Expression: 3 ** 2 * 59",
+      "question": "A homogeneous Poisson process has rate 59 arrivals per minute. X counts arrivals during 11 minutes. Define Y=3*X+15. Find Var(Y)."
+    },
+    "process_second": {
+      "after": "Expression: (45*(224/60))+(45*(224/60))**2",
+      "before": "Expression: 45 * (224 / 60) * (224 / 60 + 45 / 60)",
+      "question": "A homogeneous Poisson process has rate 45 arrivals per minute. X counts arrivals during 224 seconds. Find E[X**2]."
+    }
+  },
+  "summary": {
+    "category_changes": {
+      "at_least_one": 1,
+      "binomial": 1,
+      "both": 0,
+      "exactly_one": 8,
+      "interval": 4,
+      "moment_mean": 0,
+      "moment_second": 4,
+      "moment_variance": 0,
+      "neither": 5,
+      "poisson_scaled": 0,
+      "poisson_second": 1,
+      "poisson_variance": 0,
+      "process_scaled": 5,
+      "process_second": 8,
+      "process_variance": 0,
+      "same": 0,
+      "uniform_conditional": 0,
+      "uniform_mean": 0
+    },
+    "gain": 37,
+    "models": {
+      "student": {
+        "development": {
+          "categories": {
+            "at_least_one": {
+              "correct": 4,
+              "n": 4
+            },
+            "binomial": {
+              "correct": 4,
+              "n": 4
+            },
+            "both": {
+              "correct": 4,
+              "n": 4
+            },
+            "exactly_one": {
+              "correct": 4,
+              "n": 4
+            },
+            "interval": {
+              "correct": 4,
+              "n": 4
+            },
+            "moment_mean": {
+              "correct": 4,
+              "n": 4
+            },
+            "moment_second": {
+              "correct": 4,
+              "n": 4
+            },
+            "moment_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "neither": {
+              "correct": 4,
+              "n": 4
+            },
+            "poisson_scaled": {
+              "correct": 4,
+              "n": 4
+            },
+            "poisson_second": {
+              "correct": 4,
+              "n": 4
+            },
+            "poisson_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "process_scaled": {
+              "correct": 4,
+              "n": 4
+            },
+            "process_second": {
+              "correct": 4,
+              "n": 4
+            },
+            "process_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "same": {
+              "correct": 4,
+              "n": 4
+            },
+            "uniform_conditional": {
+              "correct": 4,
+              "n": 4
+            },
+            "uniform_mean": {
+              "correct": 4,
+              "n": 4
+            }
+          },
+          "correct": 72,
+          "n": 72,
+          "pending": 0
+        },
+        "test": {
+          "categories": {
+            "at_least_one": {
+              "correct": 8,
+              "n": 8
+            },
+            "binomial": {
+              "correct": 8,
+              "n": 8
+            },
+            "both": {
+              "correct": 8,
+              "n": 8
+            },
+            "exactly_one": {
+              "correct": 8,
+              "n": 8
+            },
+            "interval": {
+              "correct": 8,
+              "n": 8
+            },
+            "moment_mean": {
+              "correct": 8,
+              "n": 8
+            },
+            "moment_second": {
+              "correct": 8,
+              "n": 8
+            },
+            "moment_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "neither": {
+              "correct": 8,
+              "n": 8
+            },
+            "poisson_scaled": {
+              "correct": 8,
+              "n": 8
+            },
+            "poisson_second": {
+              "correct": 8,
+              "n": 8
+            },
+            "poisson_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "process_scaled": {
+              "correct": 8,
+              "n": 8
+            },
+            "process_second": {
+              "correct": 8,
+              "n": 8
+            },
+            "process_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "same": {
+              "correct": 8,
+              "n": 8
+            },
+            "uniform_conditional": {
+              "correct": 8,
+              "n": 8
+            },
+            "uniform_mean": {
+              "correct": 8,
+              "n": 8
+            }
+          },
+          "correct": 144,
+          "n": 144,
+          "pending": 0
+        }
+      },
+      "v15": {
+        "development": {
+          "categories": {
+            "at_least_one": {
+              "correct": 4,
+              "n": 4
+            },
+            "binomial": {
+              "correct": 3,
+              "n": 4
+            },
+            "both": {
+              "correct": 4,
+              "n": 4
+            },
+            "exactly_one": {
+              "correct": 0,
+              "n": 4
+            },
+            "interval": {
+              "correct": 1,
+              "n": 4
+            },
+            "moment_mean": {
+              "correct": 4,
+              "n": 4
+            },
+            "moment_second": {
+              "correct": 1,
+              "n": 4
+            },
+            "moment_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "neither": {
+              "correct": 2,
+              "n": 4
+            },
+            "poisson_scaled": {
+              "correct": 4,
+              "n": 4
+            },
+            "poisson_second": {
+              "correct": 3,
+              "n": 4
+            },
+            "poisson_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "process_scaled": {
+              "correct": 2,
+              "n": 4
+            },
+            "process_second": {
+              "correct": 0,
+              "n": 4
+            },
+            "process_variance": {
+              "correct": 4,
+              "n": 4
+            },
+            "same": {
+              "correct": 4,
+              "n": 4
+            },
+            "uniform_conditional": {
+              "correct": 3,
+              "n": 4
+            },
+            "uniform_mean": {
+              "correct": 4,
+              "n": 4
+            }
+          },
+          "correct": 51,
+          "n": 72,
+          "pending": 0
+        },
+        "test": {
+          "categories": {
+            "at_least_one": {
+              "correct": 7,
+              "n": 8
+            },
+            "binomial": {
+              "correct": 7,
+              "n": 8
+            },
+            "both": {
+              "correct": 8,
+              "n": 8
+            },
+            "exactly_one": {
+              "correct": 0,
+              "n": 8
+            },
+            "interval": {
+              "correct": 4,
+              "n": 8
+            },
+            "moment_mean": {
+              "correct": 8,
+              "n": 8
+            },
+            "moment_second": {
+              "correct": 4,
+              "n": 8
+            },
+            "moment_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "neither": {
+              "correct": 3,
+              "n": 8
+            },
+            "poisson_scaled": {
+              "correct": 8,
+              "n": 8
+            },
+            "poisson_second": {
+              "correct": 7,
+              "n": 8
+            },
+            "poisson_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "process_scaled": {
+              "correct": 3,
+              "n": 8
+            },
+            "process_second": {
+              "correct": 0,
+              "n": 8
+            },
+            "process_variance": {
+              "correct": 8,
+              "n": 8
+            },
+            "same": {
+              "correct": 8,
+              "n": 8
+            },
+            "uniform_conditional": {
+              "correct": 8,
+              "n": 8
+            },
+            "uniform_mean": {
+              "correct": 8,
+              "n": 8
+            }
+          },
+          "correct": 107,
+          "n": 144,
+          "pending": 0
+        }
+      }
+    },
+    "pairs": {
+      "0->1": 37,
+      "1->1": 107
+    },
+    "pending": 0,
+    "regression_ids": [],
+    "semantic_reviews": 21,
+    "status": "complete",
+    "success": true
+  },
+  "timestamp": "2026-09-07T23:05:46.898008-07:00",
+  "training": {
+    "adapter_sha256": "60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5",
+    "finite_tensors": 392,
+    "log_history": [
+      {
+        "epoch": 0.08333333333333333,
+        "grad_norm": 1.457248330116272,
+        "learning_rate": 0.00002,
+        "loss": 0.37385404109954834,
+        "step": 12
+      },
+      {
+        "epoch": 0.16666666666666666,
+        "grad_norm": 1.8915349245071411,
+        "learning_rate": 0.00002,
+        "loss": 0.033430313070615135,
+        "step": 24
+      },
+      {
+        "epoch": 0.25,
+        "grad_norm": 0.12025651335716248,
+        "learning_rate": 0.00002,
+        "loss": 0.004685025351742904,
+        "step": 36
+      },
+      {
+        "epoch": 0.3333333333333333,
+        "grad_norm": 0.012338961474597454,
+        "learning_rate": 0.00002,
+        "loss": 0.0016299694155653317,
+        "step": 48
+      },
+      {
+        "epoch": 0.4166666666666667,
+        "grad_norm": 0.037326544523239136,
+        "learning_rate": 0.00002,
+        "loss": 0.000871083311115702,
+        "step": 60
+      },
+      {
+        "epoch": 0.5,
+        "grad_norm": 0.023457342758774757,
+        "learning_rate": 0.00002,
+        "loss": 0.000480752515917023,
+        "step": 72
+      },
+      {
+        "epoch": 0.5833333333333334,
+        "grad_norm": 0.006130637601017952,
+        "learning_rate": 0.00002,
+        "loss": 0.012765477101008097,
+        "step": 84
+      },
+      {
+        "epoch": 0.6666666666666666,
+        "grad_norm": 0.009439991787075996,
+        "learning_rate": 0.00002,
+        "loss": 0.0002197622088715434,
+        "step": 96
+      },
+      {
+        "epoch": 0.75,
+        "grad_norm": 0.004950727801769972,
+        "learning_rate": 0.00002,
+        "loss": 0.00022122405547027787,
+        "step": 108
+      },
+      {
+        "epoch": 0.8333333333333334,
+        "grad_norm": 0.006130949128419161,
+        "learning_rate": 0.00002,
+        "loss": 0.001259014243260026,
+        "step": 120
+      },
+      {
+        "epoch": 0.9166666666666666,
+        "grad_norm": 0.005608221050351858,
+        "learning_rate": 0.00002,
+        "loss": 0.00016400404274463654,
+        "step": 132
+      },
+      {
+        "epoch": 1,
+        "grad_norm": 0.004070529248565435,
+        "learning_rate": 0.00002,
+        "loss": 0.00017820993283142647,
+        "step": 144
+      },
+      {
+        "epoch": 1,
+        "step": 144,
+        "total_flos": 2381586918469632,
+        "train_loss": 0.035813239695724204,
+        "train_runtime": 643.0973,
+        "train_samples_per_second": 1.791,
+        "train_steps_per_second": 0.224
+      }
+    ],
+    "loss": 0.035813239695724204,
+    "rows": 1152,
+    "selection": "fixed_final",
+    "supervised_tokens": 16431,
+    "updates": 144
+  }
+}
