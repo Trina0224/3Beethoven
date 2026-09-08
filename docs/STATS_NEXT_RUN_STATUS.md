@@ -1,3 +1,20 @@
+# 已收束：無下一輪待執行
+
+2026-09-07 22:15 PDT（America/Los_Angeles）
+
+**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
+
+它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
+
+這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
+
+**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
+
+接續對話先讀 [目前狀態](STATS_CURRENT_STATUS.md) 與 [最終成功範例](STATS_BOUNDED_SUCCESS_EXAMPLE.md)。不用下載所有歷史權重，不用重做全案 review。
+
+<details>
+<summary>歷史紀錄（保留原文；不是目前狀態或執行指令）</summary>
+
 <!-- MULTIVIEW_EXECUTION_LIVE_BEGIN -->
 ## Latest completed checkpoint — 2026-09-07 17:52 PDT
 
@@ -216,3 +233,6 @@ Kaggle 證據：[Version 49](https://www.kaggle.com/code/trinashih/3beethoven-v0
 - 固定 SHA-256：candidate stories `87f6a75e...a6061e`；selection `10e7e222...221c89`；holdout `c30e1cf1...ab7183`；teacher benchmark `9fdeea63...95133`。
 
 目前停止點符合協議：不進 full、不啟動 GPU。下一個高階決策只剩要不要批准「兩個失敗 family 的定向教材／prompt 修補＋新小 pilot」；其餘兩起點×兩 seed、112 題選點與 288＋240 最終評估規則維持不變。
+
+
+</details>
