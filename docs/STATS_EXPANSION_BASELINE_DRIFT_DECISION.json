@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-09-07T18:56:42.435593-07:00",
+  "status": "frozen_before_student_training",
+  "observed": "111 of 112 raw baseline outputs match V55. All 112 question hashes match. One Poisson time-conversion response changed from wrong to correct.",
+  "question_id": "v17_validation_poisson_time_002",
+  "prior_raw": "Expression: 210 / 60 ** 2 * 50",
+  "current_raw": "Expression: 210 * (50 / 60)",
+  "environment": "Pinned package versions, original v15 adapter hash, base revision and Tesla T4 GPU confirmed. Exact cause of the one greedy-output difference remains unestablished.",
+  "decision": "Use this newly measured original-v15 baseline for both new students, as specified by same-question/same-grader gates. Do not rerun the baseline or change decoding. Keep the failed exact-reproduction check and both raw outputs.",
+  "current_baseline": {
+    "old": 35,
+    "chain": 38,
+    "event": 12
+  },
+  "prior_baseline": {
+    "old": 34,
+    "chain": 38,
+    "event": 12
+  },
+  "threshold_effect": "The unchanged old-total floor is 33 instead of 32, and the Poisson-time category floor increases by one. No threshold is relaxed. All other gates remain the same.",
+  "diagnostic_control": "Original v15 and V55 fixed prior student will both be evaluated in this runtime on the same frozen new 64 questions after new students are selected.",
+  "limitation": "Do not claim bitwise/exact historical baseline reproduction or attribute this one-answer change to training. No new student training has started."
+}
