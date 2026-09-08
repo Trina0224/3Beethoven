@@ -1,27 +1,21 @@
-# 更正與最後一次實驗：原 v15 仍是保留學生
+# 3Beethoven：目前規格與完成結果
 
-使用者已澄清：成功必須在約定的清楚統計列式範圍內整體勝過 v15，且原有各類能力不退步。**V57 repeat_control 的 16/16 只是局部改善，不算成功替代模型。** 先前「最後成功學生」與收束命名已撤回；下方原文僅保留歷史。
+**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
 
-使用者已另行授權最後一次實驗。目前固定資料與程序已啟動：原 v15 基準、唯一一個從原 v15 出發的新學生、固定一輪 144 updates；新測試 18 類共 144 題，總分至少 +5 且各類不退步才算成功。[固定協議](docs/STATS_FINAL_CLEAR_PROTOCOL.md)。尚未宣稱新學生成功，不增加第二輪。
+## 固定任務與驗收
 
----
+學生在 18 類直接、清楚的統計問題上輸出代入數值的算式，算術交由程式。測量範圍不含陌生語文改寫與任意統計泛化。原 v15 是唯一基準與訓練起點；以同題、同提示、同評分比較。
 
-# 目前範圍與收束決定
+訓練／development／final test 為 1,152／72／144，語意鍵與完整數值題情境互斥。事前通過門檻：final test 至少較 v15 多 5 題、18 類逐類不退步、待判為 0。只執行一次、固定最終權重，測試不參與教材修正與 checkpoint 選擇。實際增加 37 題、0 退步，通過。
 
-2026-09-07 22:15 PDT（America/Los_Angeles）
+本輪使用固定、清楚的數學問法，學生輸出代入數值的算式，算術由程式處理。共 18 類，訓練 1,152 筆、development 72 題、final test 144 題；各集合語意鍵與完整數值題情境不重疊。教材由助理根據核實的數學規則修正、擴充，其中 17 類有既有 70B 老師答案作依據，均勻分布均值類為助理規則教材；不是 1,152 筆新生成的 70B 回答。本輪新增雲端老師 API 呼叫為 0。
 
-**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
+教材、提示與超參數共同構成這次方案；沒有隔離實驗可把全部進步歸因於單一改動。
 
-它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
-
-這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
-
-**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
-
-[唯一最終成果與證據](docs/STATS_BOUNDED_SUCCESS_EXAMPLE.md)。以下既有設計與工作包保留為歷史，不再構成開跑指令；原本的 Git、資料保密與證據誠實要求仍適用。
+[最終報告](docs/STATS_FINAL_CLEAR_RESULTS.md) · [事前協議](docs/STATS_FINAL_CLEAR_PROTOCOL.md) · [恢復模型](docs/KAGGLE_RECOVERY.md)。GPU 已停止，本次授權已完成，沒有下一輪。
 
 <details>
-<summary>歷史紀錄（保留原文；不是目前狀態或執行指令）</summary>
+<summary>歷史專案規格（不代表目前待執行工作）</summary>
 
 # 3Beethoven Project Specification
 
@@ -340,6 +334,5 @@ The repo may be playful. The experiment must not be sloppy.
 Before generating data or starting a new version, record the triggering observation, why the change is proposed, the expected direction of change, what would weaken that expectation, the comparison/control, stopping and selection rules, and scope limitations. Commit that record before execution. Keep original expectations immutable; timestamp amendments and state what results were already visible. Append outcomes afterward rather than rewriting the original motivation.
 
 Researcher recollections and later narrative reconstruction must be labeled retrospective. The v15–v18 source audit, research narrative and reusable recording fields are in [STATS_MOTIVATION_EXPECTATIONS.md](docs/STATS_MOTIVATION_EXPECTATIONS.md).
-
 
 </details>
