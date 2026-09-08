@@ -1,0 +1,10 @@
+[
+  {
+    "path": "seed_31415/step_48/old.json",
+    "id": "v17_validation_interval_001",
+    "question_sha256": "60664972e11cad8a0a24313f50eb57b0f5bc9f456de9e2f8781bb8dc2e5bba73",
+    "raw_sha256": "ac2f2347a0d15c8086c333c2a730513b6eb7d62f5960e2f97d18cb4c6321607f",
+    "math_correct": true,
+    "reason": "The expression retains the interval midpoint and full-width dependence. Quadrupling sample size halves the half-width, so the full-width denominator is 2*sqrt(4)=2*2=4. This is the reference formula with that denominator explicitly folded, not answer-only numerical agreement."
+  }
+]
