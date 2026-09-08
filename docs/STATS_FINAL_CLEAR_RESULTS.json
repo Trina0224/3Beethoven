@@ -505,5 +505,16 @@
     "selection": "fixed_final",
     "supervised_tokens": 16431,
     "updates": 144
+  },
+  "delivery": {
+    "kaggle_version": 58,
+    "script_version_id": 348141342,
+    "url": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip",
+    "zip_filename": "3beethoven_final_clear_student.zip",
+    "bytes": 97086130,
+    "sha256": "047873f5db94168bbf8a924dea41a260f7fdedcb2b344b1e5eeb6bb2c93f483f",
+    "adapter_path": "student/adapter",
+    "download_verified": true,
+    "gpu_stopped": true
   }
 }
