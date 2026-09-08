@@ -1,0 +1,26 @@
+{
+  "status": "frozen_before_corrected_prompt_calls_and_student_training",
+  "reason": "The compact prompt allowed unspecified numbers, while the unchanged exact executor requires integer literals or rational arithmetic. First 15 completed event questions were rejected; decimal expressions and extra closing braces were observed.",
+  "observed_before_amendment": {
+    "started_calls": 31,
+    "cached_responses": 30,
+    "completed_questions": 15,
+    "accepted": 0
+  },
+  "interrupted_attempt": "expansion_train_events_03_neither_0",
+  "interrupted_attempt_policy": "Terminate the paused teacher process. Preserve its started ledger event, never retry that attempt, reserve USD0.01 for unknown billing, and count it toward the same 256-call cap. Its second, previously uncalled attempt may use the corrected prompt.",
+  "prompt_change": "For previously uncalled attempts only, require integer literals and fractions, forbid decimals in every field, and require exactly one complete JSON object with no extra closing brace.",
+  "cache_policy": "Previously cached raw responses and original requests remain immutable, are judged under their original format contract, and consume their original attempts. No failed target is replaced by an oracle.",
+  "unchanged": [
+    "128 training questions",
+    "64 diagnostic questions",
+    "12 accepted per target minimum",
+    "2 attempts per question",
+    "256 total started calls",
+    "USD0.50 including unknown-billing reserve",
+    "all student settings and validation gates",
+    "no student training has started"
+  ],
+  "timestamp_timezone": "America/Los_Angeles",
+  "timestamp": "2026-09-07T18:14:55.149967-07:00"
+}
