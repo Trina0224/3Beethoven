@@ -67,3 +67,6 @@
 STATS_MULTIVIEW_RESULTS.json含完整逐類分數、門檻檢查及固定選擇。Kaggle完整輸出保留八個檢查點的adapter與optimizer checkpoint；可攜封裝包含兩個固定最終學生、原始v15 adapter、原始作答、訓練順序/實際trace、教師來源、執行程式與檔案SHA256 manifest。封裝程式檢查每個adapter的392個tensor皆為有限值。
 
 目前決策：**保留v15為偏好的既有版本；新學生與第48次權重作研究候選。完整teacher gate與四組正式比較仍未完成。**
+
+
+保存確認（2026-09-07 17:52 PDT）：[Kaggle Version55完整輸出與模型封裝](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348091555&select=3beethoven_stats_multiview_download.zip)已成功保存並實際下載核對，ZIP CRC及460個檔案雜湊均通過。GPU已停止。[下載與權重憑證](STATS_MULTIVIEW_DOWNLOAD.json)。
