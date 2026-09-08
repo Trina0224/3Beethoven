@@ -1,0 +1,23 @@
+{
+  "status": "frozen_before_training",
+  "historical_blocked_identities": 2957,
+  "corrected_source_sha256": "ed70fc60a023eedeb4c0569ca90622f9a213bcf8d67532cfab4d388a731bc2da",
+  "arm_sha256": {
+    "repeat_control": "4cc6506cebd3262b2f34e38cd8561c8cf745cbcb969774400a0bf92e009b1bd6",
+    "semantic_course": "b8d76a27c054b5301fb9fe986d08dd264cf831563f1c6fc509bcdb93a2810615"
+  },
+  "holdout_sha256": "402b464d1c1540f06e32f414ee429c3ae44cd857048206e0636246b6a6df596c",
+  "new_train_identities": 128,
+  "new_holdout_identities": 64,
+  "shared_rows": 750,
+  "supplement_rows": 256,
+  "updates_per_arm": 126,
+  "teacher_calls": 0,
+  "source_sha256": {
+    "scripts/stats_semantic_course.py": "4de729c0ed06c42eec88151719930140cb54e176d991515b90756bc2b981c91e",
+    "scripts/run_stats_semantic_course.py": "e165cafaf8b150986d971a84277186558663a59b9958f7656af7bfe124fbdc6a",
+    "scripts/repair_stats_teacher_data.py": "7b26d2ee052ae5f4b23c9aac2e7ea5edbbac8e6534616b4278b20bf8d51ec37d",
+    "scripts/stats_teacher_fields.py": "096d1ca52270910c9e6b235a73d8c6c4cfcee95ce397b84fcde6ab13abfc8e37",
+    "scripts/stats_expansion_teacher.py": "570b63b6dad2521fb9de6fb3cba5c5b68865363bc64456aec3bcf41d9963e16d"
+  }
+}
