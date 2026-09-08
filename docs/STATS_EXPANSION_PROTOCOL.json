@@ -1,0 +1,120 @@
+{
+  "status": "frozen_before_data_generation",
+  "experiment": "coverage_expansion_v1",
+  "trigger": "V55 two seeds improve wording transfer but neither-event remains1-2/4; old moment0/6. Existing neither has3 distinct cases vs27 exactly-one.",
+  "hypothesis": "More independently verified event and affine-moment cases improve weak-family transfer while preserving old/chain gates.",
+  "weakening_evidence": "No gain on frozen new-case evaluation, seed disagreement, or retention loss would weaken the hypothesis.",
+  "teacher": {
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "DeepInfra",
+    "train_event_stories": 16,
+    "event_targets": [
+      "neither",
+      "both",
+      "exactly_one",
+      "at_least_one",
+      "same"
+    ],
+    "train_moment_stories": 16,
+    "moment_targets": [
+      "mean",
+      "variance",
+      "second_moment"
+    ],
+    "questions": 128,
+    "attempts_per_question_max": 2,
+    "calls_max": 256,
+    "cost_usd_cap": 0.5,
+    "max_tokens": 400,
+    "minimum_accepted_per_target": 12,
+    "initial_prompt": "compact JSON with independent intermediate quantities; no reference answer",
+    "second_attempt": "same problem plus generic symbolic rules, no instance-specific reference",
+    "preserve": "all requests/responses/usage/rejections; raw answers never overwritten"
+  },
+  "corpus": {
+    "prior_rows": 516,
+    "new_views_per_verified_target": 2,
+    "max_rows": 772,
+    "sampling": "seeded story-group order; each row used once; targets unchanged from accepted teacher expression",
+    "splits": "train16 event+16 moment stories; diagnostic8 event+8 moment stories. All mathematical identities disjoint from historical/consolidation/V55 probe identities and each other."
+  },
+  "training": {
+    "parent": "original_v15",
+    "parent_sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
+    "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+    "seeds": [
+      2027,
+      31415
+    ],
+    "learning_rate": 0.000005,
+    "gradient_accumulation_steps": 8,
+    "epochs": 1,
+    "max_updates_per_seed": 97,
+    "actual_updates": "ceil((516+2*accepted_new_targets)/8)",
+    "validation_steps": "12,24,48,final actual step; deduplicated",
+    "other_settings": "same as completed multiview pilot",
+    "interruptions": "no planned pause/early stop for pending or passing validation; no silent resumed-equivalence claim"
+  },
+  "validation_gate": {
+    "status": "frozen_for_execution",
+    "baseline": "original_v15_same_questions_same_grader",
+    "all_pending_resolved_before_decision": true,
+    "suites": {
+      "old": {
+        "n": 48,
+        "per_category_n": 6,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1
+      },
+      "chain": {
+        "n": 48,
+        "per_category_n": 12,
+        "allowed_total_loss": 2,
+        "allowed_per_category_loss": 1,
+        "allowed_depth3_loss_per_category": 0
+      },
+      "event": {
+        "n": 16,
+        "independent_stories": 4,
+        "minimum_correct_per_category": 3,
+        "minimum_correct_total": 14
+      }
+    },
+    "floor_rule": "max(0,baseline_correct-allowed_loss)",
+    "primary_credit": "math_correct and executable"
+  },
+  "selection": "After both runs finish and pending scores resolved, earliest all-gate pass; otherwise final diagnostic. Freeze before new64-question evaluation.",
+  "evaluation": {
+    "questions": 64,
+    "event_stories": 8,
+    "moment_stories": 8,
+    "models": [
+      "original_v15",
+      "V55_seed2027_step65_fixed_prior_diagnostic",
+      "new_seed2027_fixed",
+      "new_seed31415_fixed"
+    ],
+    "teacher_never_sees_evaluation": true,
+    "no_reselection": true
+  },
+  "budgets": {
+    "student_updates_max": 194,
+    "gpu_minutes_max": 180,
+    "new_teacher_calls_max": 256,
+    "evaluation_generations_max": 1264,
+    "additional_training_on_failure": false
+  },
+  "limits": [
+    "New cases, replay balance and exposure change together; no isolated data-diversity causal claim.",
+    "Selected pilot only, not full teacher gate/four-start-seed promotion protocol.",
+    "New diagnostic has8 paired stories per domain and correlated target variants."
+  ],
+  "environment": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.0.0",
+    "peft": "0.19.1",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.13.0",
+    "datasets": "5.0.0"
+  }
+}
