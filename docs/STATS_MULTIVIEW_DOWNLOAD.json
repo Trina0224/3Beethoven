@@ -1,0 +1,29 @@
+{
+  "bytes": 279618858,
+  "file": "3beethoven_stats_multiview_download.zip",
+  "full_checkpoint_weights": "retained separately in saved Kaggle output",
+  "manifest_files": 460,
+  "optimizer_updates": 130,
+  "portable_models": [
+    "2027",
+    "31415",
+    "v15_parent"
+  ],
+  "sha256": "45646ed868207cf16723a105455d24dd8d95348a032a621fa43184657f123144",
+  "teacher_calls": 0,
+  "verified_microbatches": 1032,
+  "kaggle_version": 55,
+  "script_version_id": 348091555,
+  "output_url": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348091555&select=3beethoven_stats_multiview_download.zip",
+  "download_verified_at": "2026-09-07 17:52 PDT",
+  "downloaded_file_sha256_verified": true,
+  "zip_crc_verified": true,
+  "all_460_manifest_file_hashes_verified": true,
+  "all_8_adapters_392_finite_tensors_verified": true,
+  "portable_adapter_sha256": {
+    "2027": "92eca7f1257880cb5c69bccd7bda8d600f0268bea62c9622d97551b1fbf6506a",
+    "31415": "d3680aa766f07a187e152f3deb3325fa7e8866ecee38eaa35e67cda5945015d8",
+    "v15_parent": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3"
+  },
+  "promotion": "none; retain original v15 preference"
+}
