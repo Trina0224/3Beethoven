@@ -10,7 +10,9 @@ def main():
     corpus=read(Path(__file__).resolve().parents[1]/'docs/STATS_EXPANSION_CORPUS.json')
     assert set(summary['probe'])=={'v15','prior_v55_2027','2027','31415'}
     now=datetime.datetime.now(zoneinfo.ZoneInfo('America/Los_Angeles')).isoformat()
-    lines=['# 新教材蒸餾結果','',f'更新時間：{now}（洛杉磯）。','',
+    scores={k:v['overall']['correct'] for k,v in summary['probe'].items()}
+    headline=f"兩個新學生完成訓練。新題成績：原始 v15 {scores['v15']}/64、上一批 V55 {scores['prior_v55_2027']}/64、新 2027 {scores['2027']}/64、新 31415 {scores['31415']}/64。"
+    lines=['# 新教材蒸餾結果','',f'更新時間：{now}（洛杉磯）。','',headline,'','本輪兩個新學生均未通過完整門檻，新題分數也未超過上一批；保存為實驗版，暫不替換原始 v15。','',
         f"新增 {teacher['accepted']} 道通過檢查的教師目標，每題兩種敘述；保留原有 516 筆教材，共 {len(corpus['train'])} 筆。",
         '原計畫 128 道教師題，117 題取得回應；第二次限流後因所有類型已達最低合格數量而結束收集。11 題未取得回應或未作答，均保留缺漏標記。',
         '兩個學生均從原始 v15 出發，固定 seeds 2027、31415，學習率 5e-6，各訓練一輪。','',
@@ -43,6 +45,7 @@ def main():
         wrong=focus['2027'][category]['wrong']
         if wrong:
             r=wrong[0];lines.append(f"| {label} | `{r['raw']}` | `{r['reference']}` |")
+    lines+=['','四個模型在新診斷的三種動差表述皆為 24/24，但兩個新學生在舊文字版動差皆為 0/6。下一輪應以配對題分離措辭、否定語意與機率表示法的影響，針對文字到公式的轉換補教材。']
     lines+=['','## 判讀','','新診斷題使用新數值與未重複的任務身分，但沿用教材的敘述風格；它測試新參數轉移，不能代替跨情境、跨敘述與不同機率表示法的泛化驗證。',
         '這是小型、篩選後的教材擴充試驗。新案例、教材比例與訓練曝光量同時改變，且教師輸出格式曾修正；不能單獨歸因於案例數量。每個領域僅 8 組新情境，同情境的多種目標彼此相關。',
         '本輪不等於完整教師門檻、四組起點／種子比較與正式保留題升級程序。原始 v15 仍保留；新權重作為可比較的候選學生。','',
