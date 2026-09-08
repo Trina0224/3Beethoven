@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-07T18:48:13.383018-07:00",
+  "status": "frozen_before_student_training",
+  "trigger": "Second HTTP 429 after 117 questions yielded cached responses; all eight targets already have at least 12 independently verified usable targets.",
+  "decision": "Stop teacher collection now without further requests. Review every planned question disposition, including failed/no-response and unattempted questions. Train on the 102 currently verified targets if the final review confirms the same unchanged per-target minimum.",
+  "planned_questions": 128,
+  "cached_question_count": 117,
+  "no_cached_response_question_count": 11,
+  "verified_target_preview": {
+    "neither": 13,
+    "both": 13,
+    "exactly_one": 13,
+    "at_least_one": 13,
+    "same": 13,
+    "mean": 13,
+    "variance": 12,
+    "second_moment": 12
+  },
+  "limits": "This is a service-limited collection, not completion of all 128 teacher questions or passage of the original full-response teacher gate. No test or student outputs were inspected.",
+  "unchanged": [
+    "minimum 12 verified targets for each target type",
+    "516 prior rows plus two views per accepted target",
+    "same original v15 parent, seeds, LR, one epoch, and actual step formula",
+    "student evaluation and all checkpoint gates",
+    "fixed 64-question diagnostic and no reselection",
+    "original total call/cost/GPU budgets"
+  ]
+}
