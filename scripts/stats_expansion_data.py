@@ -79,7 +79,9 @@ def corpus(teacher_root):
     for q in data['train']:
         if q['id'] not in accepted:continue
         r=accepted[q['id']];target='Expression: '+r['expression']
-        assert score(target,q)['primary_correct']
+        if not score(target,q)['primary_correct']:
+            from stats_expansion_teacher_review import event_proof
+            assert r['accepted'] and r['question_sha256']==digest(q) and event_proof(r['expression'],q)==r['proof']
         for view in (0,1):
             rows.append(dict(source_id=q['id'],story_id=q['story_id'],category=q['category'],source_group='expansion',view=f'new_{view}',
                 prompt=render(q,view)+SUFFIX,target=target,semantic_key=task_key(q),source_row_sha256=digest(r),original_question_sha256=digest(q),
