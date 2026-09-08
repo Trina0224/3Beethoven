@@ -1,0 +1,332 @@
+{
+  "status": "frozen_before_inference",
+  "historical_keys": 3149,
+  "categories": [
+    "both",
+    "neither",
+    "exactly_one",
+    "at_least_one",
+    "same",
+    "moment_mean",
+    "moment_variance",
+    "moment_second",
+    "poisson_variance",
+    "poisson_scaled",
+    "poisson_second",
+    "process_variance",
+    "process_scaled",
+    "process_second",
+    "uniform_mean",
+    "uniform_conditional",
+    "binomial",
+    "interval"
+  ],
+  "anchors": {
+    "both": {
+      "source_id": "repeat_semantic_train_events_02_both_v0",
+      "semantic_key": [
+        "events",
+        "both",
+        "11/100",
+        "21/100"
+      ],
+      "target": "Expression: 21 / 100 * (11 / 100)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "neither": {
+      "source_id": "expansion_train_events_05_neither",
+      "semantic_key": [
+        "events",
+        "neither",
+        "29/50",
+        "6/25"
+      ],
+      "target": "Expression: 76 / 100 * (42 / 100)",
+      "provenance": "assistant_edited_teacher_response_independently_checked"
+    },
+    "exactly_one": {
+      "source_id": "v14_train_exactly_one_001",
+      "semantic_key": [
+        "events",
+        "exactly_one",
+        "31/50",
+        "71/100"
+      ],
+      "target": "Expression: (1 - 38 / 100) * (29 / 100) + 38 / 100 * (1 - 29 / 100)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "at_least_one": {
+      "source_id": "v14_train_at_least_one_000",
+      "semantic_key": [
+        "events",
+        "at_least_one",
+        "11/20",
+        "18/25"
+      ],
+      "target": "Expression: 1 - 45 / 100 * (28 / 100)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "same": {
+      "source_id": "repeat_semantic_train_events_13_same_v1",
+      "semantic_key": [
+        "events",
+        "same",
+        "29/50",
+        "6/25"
+      ],
+      "target": "Expression: (1 - 76 / 100) * (1 - 42 / 100) + 76 / 100 * (42 / 100)",
+      "provenance": "assistant_edited_teacher_response_independently_checked"
+    },
+    "moment_mean": {
+      "source_id": "repeat_semantic_train_moments_14_mean_v1",
+      "semantic_key": [
+        "moments",
+        "mean",
+        [
+          "mean",
+          "24"
+        ],
+        [
+          "scale",
+          "7"
+        ],
+        [
+          "offset",
+          "14"
+        ]
+      ],
+      "target": "Expression: 7 * 24 + 14",
+      "provenance": "assistant_edited_teacher_response_independently_checked"
+    },
+    "moment_variance": {
+      "source_id": "expansion_train_moments_04_variance",
+      "semantic_key": [
+        "moments",
+        "variance",
+        [
+          "variance",
+          "281"
+        ],
+        [
+          "scale",
+          "8"
+        ]
+      ],
+      "target": "Expression: 64 * 281",
+      "provenance": "assistant_edited_teacher_response_independently_checked"
+    },
+    "moment_second": {
+      "source_id": "expansion_train_moments_05_second_moment",
+      "semantic_key": [
+        "moments",
+        "second_moment",
+        [
+          "mean",
+          "65"
+        ],
+        [
+          "variance",
+          "160"
+        ],
+        [
+          "scale",
+          "3"
+        ],
+        [
+          "offset",
+          "6"
+        ]
+      ],
+      "target": "Expression: (3 * 65 + 6) ** 2 + 9 * 160",
+      "provenance": "assistant_edited_teacher_response_independently_checked"
+    },
+    "poisson_variance": {
+      "source_id": "v15_train_poisson_scaled_007",
+      "semantic_key": [
+        "poisson",
+        "variance",
+        [
+          "mean",
+          "55"
+        ],
+        [
+          "scale",
+          "6"
+        ]
+      ],
+      "target": "Expression: 6 ** 2 * 55",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "poisson_scaled": {
+      "source_id": "v15_train_poisson_scaled_007",
+      "semantic_key": [
+        "poisson",
+        "variance",
+        [
+          "mean",
+          "55"
+        ],
+        [
+          "scale",
+          "6"
+        ]
+      ],
+      "target": "Expression: 6 ** 2 * 55",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "poisson_second": {
+      "source_id": "consolidation_train_chain_second_moment_000_01",
+      "semantic_key": [
+        "poisson",
+        "second_moment",
+        [
+          "mean",
+          "56"
+        ],
+        [
+          "scale",
+          "1"
+        ],
+        [
+          "offset",
+          "0"
+        ]
+      ],
+      "target": "Expression: 56 + 56 ** 2",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "process_variance": {
+      "source_id": "consolidation_train_chain_scaled_variance_000_02",
+      "semantic_key": [
+        "process",
+        "variance",
+        [
+          "rate",
+          "63"
+        ],
+        [
+          "duration",
+          "4"
+        ],
+        [
+          "scale",
+          "5"
+        ]
+      ],
+      "target": "Expression: 5 ** 2 * (63 * 4)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "process_scaled": {
+      "source_id": "consolidation_train_chain_scaled_variance_000_02",
+      "semantic_key": [
+        "process",
+        "variance",
+        [
+          "rate",
+          "63"
+        ],
+        [
+          "duration",
+          "4"
+        ],
+        [
+          "scale",
+          "5"
+        ]
+      ],
+      "target": "Expression: 5 ** 2 * (63 * 4)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "process_second": {
+      "source_id": "consolidation_train_poisson_process_002_01",
+      "semantic_key": [
+        "process",
+        "second_moment",
+        [
+          "rate",
+          "21"
+        ],
+        [
+          "duration",
+          "713/60"
+        ],
+        [
+          "scale",
+          "1"
+        ],
+        [
+          "offset",
+          "0"
+        ]
+      ],
+      "target": "Expression: 21 / 60 * 713 * (1 + 21 / 60 * 713)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "uniform_mean": null,
+    "uniform_conditional": {
+      "source_id": "v15_train_uniform_time_007",
+      "semantic_key": [
+        "uniform",
+        true,
+        "0",
+        "55",
+        "247/30"
+      ],
+      "target": "Expression: (494 / 60 + 55) / 2",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "binomial": {
+      "source_id": "v14_train_binomial_009",
+      "semantic_key": [
+        "binomial",
+        "binomial",
+        [
+          "n",
+          "7"
+        ],
+        [
+          "r",
+          "1"
+        ],
+        [
+          "p",
+          "39/100"
+        ]
+      ],
+      "target": "Expression: comb(7, 1) * (39 / 100) ** 1 * (1 - 39 / 100) ** (7 - 1)",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    },
+    "interval": {
+      "source_id": "consolidation_train_interval_005_00",
+      "semantic_key": [
+        "interval",
+        "interval",
+        [
+          "lower",
+          "45"
+        ],
+        [
+          "upper",
+          "193"
+        ],
+        [
+          "divisor",
+          "5"
+        ]
+      ],
+      "target": "Expression: 119 + 74 / 5",
+      "provenance": "unchanged_verified_70B_target_with_semantics_preserving_prompt_augmentation"
+    }
+  },
+  "split_sha256": {
+    "train": "28aadb818f62731d3668a7082c3b3b8506dfac4c0832574a650189ed67dd1fb9",
+    "development": "52bf46dc3efe2a69966be57c0573e14dad68c52b832b3d31c76b646fc5f4c54c",
+    "test": "852e5fe5feb34607e71c7adda3f24bf156a0cbdbc1f3f6ca3126372ae754f003"
+  },
+  "counts": {
+    "train": 1152,
+    "development": 72,
+    "test": 144
+  },
+  "authoring": "No new cloud teacher responses; explicit assistant-authored expansion of independently verified rules"
+}
