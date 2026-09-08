@@ -35,6 +35,14 @@ def main():
     lines+=['','| 題型（各 8 題） | v15 | V55 | 新 2027 | 新 31415 |','|---|---:|---:|---:|---:|']
     for cell in summary['probe']['v15']['cells']:
         lines.append('| '+cell+' | '+' | '.join(str(summary['probe'][name]['cells'][cell]['correct']) for name in labels)+' |')
+    focus=read(root/'STUDENT_FOCUSED_REVIEW.json')
+    lines+=['','## 原有弱項的原始輸出複查','','| 學生 | 文字版二階動差 /6 | 都不發生 /4 |','|---|---:|---:|']
+    for seed,groups in focus.items():lines.append(f"| {seed} | {groups['moment']['correct']} | {groups['neither']['correct']} |")
+    lines+=['','| 題型 | 學生原始錯答（seed 2027 範例） | 正確參考式 |','|---|---|---|']
+    for category,label in [('moment','文字版二階動差'),('neither','都不發生')]:
+        wrong=focus['2027'][category]['wrong']
+        if wrong:
+            r=wrong[0];lines.append(f"| {label} | `{r['raw']}` | `{r['reference']}` |")
     lines+=['','## 判讀','','新診斷題使用新數值與未重複的任務身分，但沿用教材的敘述風格；它測試新參數轉移，不能代替跨情境、跨敘述與不同機率表示法的泛化驗證。',
         '這是小型、篩選後的教材擴充試驗。新案例、教材比例與訓練曝光量同時改變，且教師輸出格式曾修正；不能單獨歸因於案例數量。每個領域僅 8 組新情境，同情境的多種目標彼此相關。',
         '本輪不等於完整教師門檻、四組起點／種子比較與正式保留題升級程序。原始 v15 仍保留；新權重作為可比較的候選學生。','',
