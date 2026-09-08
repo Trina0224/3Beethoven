@@ -13,7 +13,7 @@
 | V55–V57 等 | 歷史診斷學生；均未證明全面優於 v15 |
 | 新學生 | **尚未產生** |
 
-目前先完成教材、prompt↔語意、oracle、grader、資料洩漏、錯式突變、雜湊綁定與最終測試隔離等訓練前檢查，再允許老師生成或 GPU 訓練。範圍仍是直接、清楚的統計列式，不把目標改成語文能力。只規劃一個學生、一次訓練；是否成功必須由凍結後的同題比較和逐類零退步決定，不能靠內部模板滿分或訓練 loss 宣稱。
+多樣教材 v2 已重建：720 筆新 train、180 筆 development、180 筆隔離 final；每個 binomial 故事都是完整五連問。另物化 720 筆歷史 train replay，固定以 1:1 與新教材交錯；legacy development/final 仍只供評估。受控直接模板由 27 種增加到 train 48 種，單一模板最高重複 20 次，不加入一般語文能力。老師尚未呼叫、GPU 尚未啟動、新學生尚未產生。
 
 ## 可恢復的比較錨點
 
@@ -31,6 +31,7 @@ V58 權重仍可作歷史稽核，不應載入為新一輪父模型。其原始�
 
 - [目前狀態](docs/STATS_CURRENT_STATUS.md) · [下一輪狀態](docs/STATS_NEXT_RUN_STATUS.md)
 - [受控實驗協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [執行交接](docs/STATS_EXECUTION_HANDOFF.md)
+- [多樣教材協議](docs/STATS_DIVERSE_CURRICULUM_PROTOCOL.md) · [實際 replay rows](docs/STATS_DIVERSE_REPLAY.json)
 - [V58 撤回後記](docs/STATS_V58_POSTMORTEM.md) · [V58 歷史結果 JSON](docs/STATS_FINAL_CLEAR_RESULTS.json)
 - [v15／歷史模型恢復](docs/KAGGLE_RECOVERY.md) · [完整研究流程](docs/STATS_V01_V19_RESEARCH_FLOW.md)
 

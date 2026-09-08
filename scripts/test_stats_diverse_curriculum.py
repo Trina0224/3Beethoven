@@ -25,6 +25,7 @@ from prepare_stats_diverse_curriculum import (
     canonical_key,
     canonical_semantics,
     category_axis_audit,
+    contrast_group_audit,
     digest,
     discriminative_audit,
     expected_misconception_audit,
@@ -96,7 +97,7 @@ class DiverseCurriculumTests(unittest.TestCase):
         self.assertEqual(digest(receipt_body), receipt["receipt_sha256"])
         commitment = self.data["manifest"]["final_blind_commitment"]
         self.assertEqual(commitment["path"], "docs/STATS_DIVERSE_FINAL_BLIND.json")
-        self.assertEqual(commitment["count"], 144)
+        self.assertEqual(commitment["count"], 180)
         self.assertEqual(commitment["split_sha256"], digest(self.blind["final_blind"]))
         self.assertEqual(commitment["receipt_sha256"], receipt["receipt_sha256"])
         self.assertEqual(commitment["artifact_file_sha256"], text_digest(DEFAULT_BLIND_OUTPUT.read_text()))
@@ -126,10 +127,10 @@ class DiverseCurriculumTests(unittest.TestCase):
         ):
             fuzz = build(Path(temp_dir) / "public.json", Path(temp_dir) / "blind.json")
         self.assertEqual(fuzz["manifest"]["seed"], 31415)
-        self.assertEqual(ordering_audit(fuzz["train"])["event_rows_per_microbatch_histogram"], {"2": 84, "3": 24})
-        self.assertEqual(len(fuzz["train"]), 864)
-        self.assertEqual(len(fuzz["development"]), 108)
-        self.assertEqual(len(fuzz["final_blind"]), 144)
+        self.assertEqual(ordering_audit(fuzz["train"])["event_rows_per_microbatch_histogram"], {"2": 70, "3": 20})
+        self.assertEqual(len(fuzz["train"]), 720)
+        self.assertEqual(len(fuzz["development"]), 180)
+        self.assertEqual(len(fuzz["final_blind"]), 180)
         contract = self.data["manifest"]["non_selection_fuzz_contract"]
         self.assertFalse(contract["eligible_for_training"])
         self.assertFalse(contract["eligible_for_model_or_seed_selection"])
@@ -247,7 +248,7 @@ class DiverseCurriculumTests(unittest.TestCase):
         )
         self.assertEqual(set(cases), set(CATEGORIES))
         for category, (question, expected) in cases.items():
-            parsed = parse_question_semantics(question, category, "direct_shared")
+            parsed = parse_question_semantics(question, category, "givens_first")
             self.assertEqual(canonical_semantics(parsed), canonical_semantics(expected), category)
 
     def test_cross_split_and_historical_collision_contracts(self):
@@ -273,6 +274,28 @@ class DiverseCurriculumTests(unittest.TestCase):
     def test_coverage_slots_and_contrast_groups(self):
         train, development, final = (self.data[name] for name in ("train", "development", "final_blind"))
         events = [row for row in train if row["category"] in EVENT_CATEGORIES]
+        for split in SPLIT_SIZES:
+            self.assertEqual(
+                contrast_group_audit(self.data[split], split),
+                self.data["manifest"]["contrast_group_audit"][split],
+            )
+            groups = defaultdict(list)
+            for row in self.data[split]:
+                groups[row["contrast_group"]].append(row)
+            for group in groups.values():
+                family = group[0]["family"]
+                expected = {"events": 5, "moments": 3, "poisson": 3, "process": 3,
+                            "uniform": 2, "binomial": 5,
+                            "interval": 4 if split == "train" else 2}[family]
+                self.assertEqual(len(group), expected)
+                self.assertEqual({row["contrast_position"] for row in group}, set(range(expected)))
+                self.assertTrue(all(row["contrast_size"] == expected for row in group))
+                if family == "binomial":
+                    self.assertEqual(
+                        {row["coverage_axes"]["r_slot"] for row in group},
+                        {"r_zero", "r_one", "r_interior", "r_n_minus_one", "r_n"},
+                    )
+                    self.assertEqual(len({(row["semantics"]["n"], row["semantics"]["p"]) for row in group}), 1)
         for rows in (train, development, final):
             split_events = [row for row in rows if row["category"] in EVENT_CATEGORIES]
             self.assertEqual(
@@ -384,7 +407,7 @@ class DiverseCurriculumTests(unittest.TestCase):
         for geometry in ("cross_zero", "positive", "zero_lower"):
             self.assertGreater(train_interval_pairs[(geometry, "integers")], 0)
             self.assertGreater(train_interval_pairs[(geometry, "contains_fraction")], 0)
-        self.assertEqual({row["coverage_axes"]["interval_geometry"] for row in development if row["category"] == "interval"}, {"negative", "cross_zero", "positive"})
+        self.assertTrue({"negative", "cross_zero", "positive"} <= {row["coverage_axes"]["interval_geometry"] for row in development if row["category"] == "interval"})
         self.assertEqual({row["coverage_axes"]["interval_geometry"] for row in final if row["category"] == "interval"}, {"negative", "cross_zero", "positive", "zero_lower"})
         for rows in (development, final):
             self.assertEqual(
@@ -470,11 +493,12 @@ class DiverseCurriculumTests(unittest.TestCase):
             family_counts = Counter(CATEGORY_TO_FAMILY[row["category"]] for row in batch)
             histogram[family_counts["events"]] += 1
             self.assertTrue(all(count <= 2 for family, count in family_counts.items() if family != "events"))
-        self.assertEqual(histogram, Counter({2: 84, 3: 24}))
+        self.assertEqual(histogram, Counter({2: 70, 3: 20}))
         for start in range(0, len(train), 18):
             self.assertEqual({row["category"] for row in train[start : start + 18]}, set(CATEGORIES))
         for start in range(0, len(train), 288):
-            self.assertEqual(Counter(row["category"] for row in train[start : start + 288]), Counter({c: 16 for c in CATEGORIES}))
+            window = train[start : start + 288]
+            self.assertEqual(Counter(row["category"] for row in window), Counter({c: len(window) // 18 for c in CATEGORIES}))
 
     def test_misconception_mutations_are_audited_not_training_targets(self):
         manifest = self.data["manifest"]
@@ -527,6 +551,15 @@ class DiverseCurriculumTests(unittest.TestCase):
             for row in self.data[split]:
                 self.assertEqual(row["template_signature"], template_signature(row["question"], row["prompt"]))
         self.assertEqual(text_registry_audit({s: self.data[s] for s in SPLIT_SIZES}), self.data["manifest"]["exact_text_and_template_registry"])
+        for split in SPLIT_SIZES:
+            audit = self.data["manifest"]["exact_text_and_template_registry"][split]
+            self.assertGreaterEqual(audit["unique_template_signature_count"], 36)
+            self.assertLessEqual(audit["max_template_signature_reuse"], audit["max_template_signature_reuse_contract"])
+            for category in CATEGORIES:
+                self.assertEqual(
+                    {row["coverage_axes"]["surface_form"] for row in self.data[split] if row["category"] == category},
+                    {"givens_first", "target_first"},
+                )
         overlaps = self.data["manifest"]["exact_text_and_template_registry"]["cross_split_overlap"]
         self.assertTrue(all(item["exact_question_count"] == item["exact_prompt_count"] == 0 for item in overlaps.values()))
         self.assertTrue(any(item["shared_template_signature_count"] > 0 for item in overlaps.values()))

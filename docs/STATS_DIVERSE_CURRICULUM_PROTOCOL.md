@@ -4,7 +4,7 @@
 
 ## 1. 任務範圍
 
-學生只回答清楚、直接、已給定所有數值的統計列式題；輸出一行 `Expression: <fully substituted numerical expression>`，算術交給 bounded exact calculator。三個 split 共用同一個直接問法 renderer，不加入 split cue、陌生改寫或語文難度。`template_signature` 的重疊會據實回報，不把模板重疊誤稱為語文泛化。
+學生只回答清楚、直接、已給定所有數值的統計列式題；輸出一行 `Expression: <fully substituted numerical expression>`，算術交給 bounded exact calculator。三個 split 共用 `givens_first` 與 `target_first` 兩種受控直接問法，不加入 split cue、陌生改寫或語文難度。每類在每個 split 都必須出現兩種問法；train 單一 normalized template 最多 20 列。`template_signature` 的重疊會據實回報，不把模板重疊誤稱為語文泛化。
 
 固定 18 類：
 
@@ -24,9 +24,9 @@
 
 | split | 每類 | 總數 | 用途 |
 |---|---:|---:|---|
-| train | 48 | 864 | 唯一訓練／teacher-eligible split |
-| development | 6 | 108 | 訓練前診斷與選點；不訓練、不送 teacher |
-| final_blind | 8 | 144 | 訓練與選點完成後才解封 |
+| train | 40 | 720 | 新蒸餾教材；唯一 teacher-eligible split |
+| development | 10 | 180 | 訓練前診斷與選點；不訓練、不送 teacher |
+| final_blind | 10 | 180 | 訓練與選點完成後才解封 |
 
 物理檔案固定如下：
 
@@ -48,22 +48,22 @@ final 使用 `seeded_rng(SEED, split, family, index, attempt)` 的獨立 generat
 - Poisson mean 含分數；μ=0 只可作 train boundary，development/final 不用退化 μ。
 - process 同時含秒與分鐘 duration、整數與分數 rate；秒題的 semantics duration 一律換成分鐘後精確比對。
 - uniform lower 同時含 zero、nonzero integer、fraction；conditional cutoff 同時以秒與分鐘顯示。train 明含 seconds+nonzero-integer lower 與 minutes+fractional lower 作 compositional bridge，fractional-lower+seconds 才保留給 final。unconditional row 強制 `conditional=false` 且 `cutoff==lower`；conditional row明問 total T，不把剩餘等待時間當 target。
-- binomial 每個 split 都含 r=0、1、interior、n−1、n。r=0/n 時省略 `comb(n,r)=1` 是合法簡式，不能拿來當「漏 comb」判別題；同 split 另有 interior discriminator。
+- binomial 不只要求每個 split 合計含 r=0、1、interior、n−1、n；**每一個** `contrast_group` 都必須是同一 n,p 的完整五連問，且 `contrast_position=0…4` 不缺號。r=0/n 時省略 `comb(n,r)=1` 是合法簡式，不能拿來當「漏 comb」判別題；同組 interior row 負責 `comb` 判別。
 - interval 含全負、跨零、全正與 zero-lower；除事前保留的 negative+fractional conjunction 外，train 用其他 geometries 交叉整數／分數 endpoint，避免兩軸整體共線。sample-size multiplier 含整數與有理分數，其 width divisor 必須是 exact rational square root。development 至少含 negative/cross-zero/positive 且整體含兩種 endpoint form，final 再含 zero-lower。
 
 事前保留七種「train 與 development 都沒有、final 有」的組合：same-denominator events 配 B→A 給定順序（interior、五答案互異）；全負分數 affine mean/scale/offset；fractional Poisson mean 配兩個負分數 transform term；seconds process 配 fractional rate 與 negative-fraction scale；fractional uniform lower 配 seconds cutoff；even-n binomial 配 p>1/2（同一 final story 含五個 r slots）；negative fractional interval 配 rational sample multiplier。manifest 固定條件、各 split count 與 final match commitment hash。這些是已見單軸的新 conjunction，不是新文風。
 
 ## 4. 訓練順序與遺忘防線
 
-train 由 48 個 18-row cycle 組成，每個 cycle 每類恰一題。同故事 contrast 保持同一 cycle 與相同 `contrast_group`，但跨 family 交錯，不把五個 event row 連續堆在一起。
+新教材 train 由 40 個 18-row cycle 組成，每個 cycle 每類恰一題。同故事 contrast 保持相同 `contrast_group`，但跨 family 交錯。40 同時可被 binomial 的 5-row 與 train interval 的 4-row group 整除；development/final 的 10 可被 binomial 的 5-row 與 interval 的 2-row group 整除，禁止再以 split 配額截斷故事。
 
 凍結的 8-row microbatch 合約從 category→domain-family 常數重算，不信任 row 自填 family：
 
-- 108 個 microbatch 中 events 必須恰為 24 batch×3 rows 加 84 batch×2 rows；這是 240 event rows 下的數學最低上限。
+- 新教材的 90 個 microbatch 中 events 必須恰為 20 batch×3 rows 加 70 batch×2 rows。
 - 其他 domain family 每個 microbatch最多 2 rows；單一 category 最多 2 rows。
-- 每個 288-row window 每類恰 16 rows；尾端 72/144 rows 的逐類 counts 另存 manifest。
+- 前兩個 288-row window 每類恰 16 rows；尾端 144 rows 每類恰 8 rows，逐段 counts 另存 manifest。
 
-legacy retention 是 runner 的外部、whole-file-hash-locked 輸入，不由本 builder 重造或偽造 hash。現有 24-probe bundle 也是外部輸入；本教材不宣稱產生它們。最終 promotion 仍須逐類不低於原 v15，不能以總分掩蓋遺忘。
+legacy retention development/final 是 runner 的外部、whole-file-hash-locked 評估輸入，永不進訓練。另由歷史 `STATS_FINAL_CLEAR_DATA` 的 **train split** 物化 720 筆實際 replay（18 類各 40）到 `STATS_DIVERSE_REPLAY.json`；runner 必須以一筆新教材、一筆 replay 的固定 1:1 次序組成 1,440-row 訓練序列。只做事後 retention 評分而沒有 replay exposure receipt 必須拒絕開跑。
 
 ## 5. 每列四層驗證
 
@@ -76,7 +76,7 @@ legacy retention 是 runner 的外部、whole-file-hash-locked 輸入，不由�
 
 測試另用 18 個手寫 prompt fixture 驗 parser，不從 generator 自我複製；也用手寫 legal-equivalence / near-wrong pairs 驗 events、affine second moment、Poisson second moment、process conversion、uniform total mean、interval width 與 binomial boundary folds。
 
-builder 本身對每列執行 parser/oracle/grader/mutation 驗證並檢查 order/count；測試另以 seed `31415` 在記憶體重建一份即棄 corpus，重跑同一組 invariants。它不落盤、不進訓練、不供選 root seed 或模型，也不據此宣稱 training-seed robustness。
+builder 本身對每列執行 parser/oracle/grader/mutation 驗證並檢查 order/count；另逐一按 `contrast_group` 驗證 family、實際 size、宣告 size、完整 position、category 集合，以及 binomial 的同 n,p 與五種 r slot。測試另以 seed `31415` 在記憶體重建一份即棄 corpus，重跑同一組 invariants。它不落盤、不進訓練、不供選 root seed 或模型，也不據此宣稱 training-seed robustness。
 
 ## 6. 歷史撞題掃描
 
@@ -103,6 +103,12 @@ PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts \
 
 PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts \
   python scripts/test_stats_diverse_curriculum.py -v
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts \
+  python scripts/prepare_stats_diverse_replay.py
+
+PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=scripts \
+  python scripts/test_prepare_stats_diverse_replay.py -v
 ```
 
 任何 count/hash、prompt binding、coverage slot、mutation、history registry、physical split、microbatch order 或 deterministic rebuild 不符即停止，不開始訓練。final_blind 僅能在最後 adapter 已固定且 selection 完成後由 final runner 開啟。

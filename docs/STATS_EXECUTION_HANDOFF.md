@@ -16,8 +16,9 @@
 2. 教材、development、final 的題目數、類別數、結構軸覆蓋與雜湊符合現行協議。
 3. prompt 中的數值、條件、單位、事件與結構化 semantics 一致；oracle 與 grader 的正反例／錯式突變測試全過。
 4. train／development／final 以及歷史題之間沒有完整題、語意鍵或參數情境碰撞。
-5. final test 在 checkpoint 選定與人工等價式定案前不可載入；測後不得調整或再跑。
-6. 老師結果須綁定請求與題目雜湊，保留原始回覆、usage、cost、parse 與 rejection；缺成本或超預算即停止。
+5. STATS_DIVERSE_REPLAY.json 必須含 720 筆來源為歷史 train 的完整 rows；training plan 必須證明 720 new＋720 replay 嚴格 1:1 交錯，development/test 不得出現。
+6. final test 在 checkpoint 選定與人工等價式定案前不可載入；測後不得調整或再跑。
+7. 老師結果須綁定請求與題目雜湊，保留原始回覆、usage、cost、parse 與 rejection；缺成本或超預算即停止。
 
 只有以上收據齊全，才能把準備狀態改成「允許訓練」。目前不要根據歷史 notebook 的舊工作包直接 Run All。
 

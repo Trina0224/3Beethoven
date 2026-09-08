@@ -22,7 +22,7 @@ def make_curriculum(path: Path) -> tuple[dict[str, str], dict[str, object]]:
     document: dict[str, object] = {
         "manifest": {"fixture": True, "final_blind_sha256": "f" * 64},
     }
-    counts = {"train": 48, "development": 6}
+    counts = {"train": 40, "development": 10}
     split_offsets = {"train": 0, "development": 10000}
     for split, per_category in counts.items():
         rows = []
@@ -70,7 +70,7 @@ def make_curriculum(path: Path) -> tuple[dict[str, str], dict[str, object]]:
                 expressions[qid] = expression
         document[split] = rows
     document["manifest"].update({
-        "counts": {"train": 864, "development": 108, "final_blind": 144},
+        "counts": {"train": 720, "development": 180, "final_blind": 180},
         "categories": list(collector.EXPECTED_CATEGORIES),
         "split_sha256": {
             "train": collector.digest(document["train"]),
@@ -191,15 +191,15 @@ class DiverseTeacherCollectorTests(unittest.TestCase):
             )
 
         self.assertTrue(result["training_release"])
-        self.assertEqual(result["counts"]["usable_targets"], 864)
-        self.assertEqual(result["counts"]["raw_teacher_accepted"], 863)
+        self.assertEqual(result["counts"]["usable_targets"], 720)
+        self.assertEqual(result["counts"]["raw_teacher_accepted"], 719)
         self.assertEqual(result["counts"]["canonical_corrected"], 1)
         self.assertEqual(result["counts"]["pending"], 0)
         self.assertEqual(
             result["supervision_description"],
             "hybrid_teacher_response_and_canonical_oracle_supervision",
         )
-        self.assertEqual(result["supervision_proportions"]["raw_teacher_accepted"]["count"], 863)
+        self.assertEqual(result["supervision_proportions"]["raw_teacher_accepted"]["count"], 719)
         self.assertEqual(result["supervision_proportions"]["canonical_corrected"]["count"], 1)
         self.assertEqual(set(result["counts"]["by_category_status"]), set(collector.EXPECTED_CATEGORIES))
         for category_counts in result["counts"]["by_category_status"].values():
@@ -207,9 +207,9 @@ class DiverseTeacherCollectorTests(unittest.TestCase):
                 set(category_counts),
                 {"raw_teacher_accepted", "canonical_corrected", "pending", "failed_or_unattempted"},
             )
-            self.assertEqual(sum(category_counts.values()), 48)
-        self.assertEqual(result["usage"]["calls"], 73)
-        self.assertEqual(len(teacher.requests), 73)
+            self.assertEqual(sum(category_counts.values()), 40)
+        self.assertEqual(result["usage"]["calls"], 61)
+        self.assertEqual(len(teacher.requests), 61)
         self.assertEqual(
             (root / (collector.RESULT_NAME + ".sha256")).read_text().strip(),
             collector.file_sha256(root / collector.RESULT_NAME),
@@ -219,7 +219,7 @@ class DiverseTeacherCollectorTests(unittest.TestCase):
             2 * result["usage"]["calls"],
         )
         tree = result["receipts"]["teacher_evidence_tree"]
-        self.assertEqual(tree["file_count"], 146)
+        self.assertEqual(tree["file_count"], 122)
         self.assertRegex(tree["tree_sha256"], r"^[0-9a-f]{64}$")
         corrected = next(row for row in result["rows"] if row["training_row_id"] == bad_always)
         self.assertEqual(corrected["target_provenance"]["kind"], "canonical_corrected")
@@ -308,8 +308,8 @@ class DiverseTeacherCollectorTests(unittest.TestCase):
                 expected_curriculum_sha256=self.curriculum_sha,
             )
         self.assertTrue(resumed["training_release"])
-        self.assertEqual(resumed["usage"]["calls"], 72)
-        self.assertEqual(len(teacher.requests), 72)
+        self.assertEqual(resumed["usage"]["calls"], 60)
+        self.assertEqual(len(teacher.requests), 60)
         self.assertFalse((root / "inflight.json").exists())
         self.assertFalse(pending_path.exists())
 
@@ -521,7 +521,7 @@ class DiverseTeacherCollectorTests(unittest.TestCase):
         with mock.patch.object(collector, "openrouter_transport", side_effect=AssertionError("network called")):
             result = collector.validate_only(public_path)
         self.assertTrue(result["curriculum_valid"])
-        self.assertEqual(result["manifest"]["initial_packet_count"], 72)
+        self.assertEqual(result["manifest"]["initial_packet_count"], 60)
 
 
 if __name__ == "__main__":

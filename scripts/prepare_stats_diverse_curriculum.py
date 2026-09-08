@@ -36,8 +36,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 DEFAULT_OUTPUT = DOCS / "STATS_DIVERSE_CURRICULUM.json"
 DEFAULT_BLIND_OUTPUT = DOCS / "STATS_DIVERSE_FINAL_BLIND.json"
-DATA_REVISION = "stats-diverse-curriculum-v1"
-PROMPT_PARSER_VERSION = "stats-diverse-direct-parser-v1"
+DATA_REVISION = "stats-diverse-curriculum-v2"
+PROMPT_PARSER_VERSION = "stats-diverse-direct-parser-v2"
 TEMPLATE_NORMALIZER_VERSION = "nfkc-lower-number-mask-whitespace-v1"
 SEED = 684031
 PROVENANCE = "assistant_authored_verified_rule_expansion"
@@ -47,7 +47,10 @@ SUFFIX = (
     "fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation."
 )
 
-SPLIT_SIZES = {"train": 48, "development": 6, "final_blind": 8}
+# Whole-story contract: train must be divisible by both the five-row binomial
+# contrast and the four-row interval contrast; evaluation splits must be
+# divisible by the five-row binomial and two-row interval contrasts.
+SPLIT_SIZES = {"train": 40, "development": 10, "final_blind": 10}
 EVENT_CATEGORIES = ("both", "neither", "exactly_one", "at_least_one", "same")
 MOMENT_CATEGORIES = ("moment_mean", "moment_variance", "moment_second")
 POISSON_CATEGORIES = ("poisson_variance", "poisson_scaled", "poisson_second")
@@ -329,27 +332,33 @@ def historical_registry(output_paths=(DEFAULT_OUTPUT, DEFAULT_BLIND_OUTPUT)):
 def build_question(category, semantics, axes):
     """Render from semantics; validation re-renders instead of trusting shadow bindings."""
     s = semantics
-    prefix = {"direct_shared": ""}[axes["surface_form"]]
+    surface = axes["surface_form"]
+    if surface not in ("givens_first", "target_first"):
+        raise ValueError("Unknown controlled surface form")
     if category in EVENT_CATEGORIES:
         a, b = s["p"], s["p_b"]
         first = f"P(A)=({a}); P(B)=({b})"
         if axes["given_order"] == "B_then_A":
             first = f"P(B)=({b}); P(A)=({a})"
-        return prefix + (
-            f"A and B are independent events. {first}. "
-            f"Find the probability that {EVENT_ASK[category]}."
-        )
+        if surface == "givens_first":
+            return f"A and B are independent events. {first}. Find the probability that {EVENT_ASK[category]}."
+        return f"For independent events A and B, find the probability that {EVENT_ASK[category]}. Given {first}."
     if category in MOMENT_CATEGORIES:
         _, ask = MOMENT_TARGET[category]
-        return prefix + (
-            f"E[X]=({s['mean']}); Var(X)=({s['variance']}). "
-            f"Define Y=({s['scale']})*X+({s['offset']}). Find {ask}."
-        )
+        facts = f"E[X]=({s['mean']}); Var(X)=({s['variance']}); Y=({s['scale']})*X+({s['offset']})"
+        if surface == "givens_first":
+            return f"E[X]=({s['mean']}); Var(X)=({s['variance']}). Define Y=({s['scale']})*X+({s['offset']}). Find {ask}."
+        return f"Find {ask}. Given {facts}."
     if category in POISSON_CATEGORIES:
         text = f"X has a Poisson distribution with mean ({s['mean']}). "
         if category == "poisson_scaled":
-            return prefix + text + f"Define Y=({s['scale']})*X+({s['offset']}). Find Var(Y)."
-        return prefix + text + ("Find Var(X)." if category == "poisson_variance" else "Find E[X**2].")
+            if surface == "givens_first":
+                return text + f"Define Y=({s['scale']})*X+({s['offset']}). Find Var(Y)."
+            return f"Find Var(Y). Given X is Poisson with mean ({s['mean']}) and Y=({s['scale']})*X+({s['offset']})."
+        ask = "Var(X)" if category == "poisson_variance" else "E[X**2]"
+        if surface == "givens_first":
+            return text + f"Find {ask}."
+        return f"Find {ask}. Given X is Poisson with mean ({s['mean']})."
     if category in PROCESS_CATEGORIES:
         duration = F(s["duration"])
         if axes["duration_unit"] == "seconds":
@@ -359,17 +368,24 @@ def build_question(category, semantics, axes):
             shown_duration, unit = str(seconds.numerator), "seconds"
         else:
             shown_duration, unit = s["duration"], "minutes"
-        text = (
+        facts = (
             f"A homogeneous Poisson process has rate ({s['rate']}) arrivals per minute. "
             f"X counts arrivals during ({shown_duration}) {unit}. "
         )
         if category == "process_scaled":
-            return prefix + text + f"Define Y=({s['scale']})*X+({s['offset']}). Find Var(Y)."
-        return prefix + text + ("Find Var(X)." if category == "process_variance" else "Find E[X**2].")
+            if surface == "givens_first":
+                return facts + f"Define Y=({s['scale']})*X+({s['offset']}). Find Var(Y)."
+            return f"Find Var(Y). Given a homogeneous Poisson process with rate ({s['rate']}) arrivals per minute, X counts arrivals during ({shown_duration}) {unit}, and Y=({s['scale']})*X+({s['offset']})."
+        ask = "Var(X)" if category == "process_variance" else "E[X**2]"
+        if surface == "givens_first":
+            return facts + f"Find {ask}."
+        return f"Find {ask}. Given a homogeneous Poisson process with rate ({s['rate']}) arrivals per minute, X counts arrivals during ({shown_duration}) {unit}."
     if category in UNIFORM_CATEGORIES:
         text = f"T is uniform on [({s['lower']}), ({s['upper']})] minutes. "
         if category == "uniform_mean":
-            return prefix + text + "Find E[T] in minutes."
+            if surface == "givens_first":
+                return text + "Find E[T] in minutes."
+            return f"Find E[T] in minutes. Given T is uniform on [({s['lower']}), ({s['upper']})] minutes."
         cutoff = F(s["cutoff"])
         if axes["cutoff_unit"] == "seconds":
             seconds = cutoff * 60
@@ -378,23 +394,19 @@ def build_question(category, semantics, axes):
             shown_cutoff, unit = str(seconds.numerator), "seconds"
         else:
             shown_cutoff, unit = s["cutoff"], "minutes"
-        return (
-            prefix
-            + text
-            + f"Given T>({shown_cutoff}) {unit}, find the conditional mean of total T in minutes."
-        )
+        if surface == "givens_first":
+            return text + f"Given T>({shown_cutoff}) {unit}, find the conditional mean of total T in minutes."
+        return f"Find the conditional mean of total T in minutes, given T>({shown_cutoff}) {unit} and T uniform on [({s['lower']}), ({s['upper']})] minutes."
     if category == "binomial":
-        return prefix + (
-            f"X is the number of successes in ({s['n']}) independent trials, each with "
-            f"success probability ({s['p']}). Find P(X=({s['r']}))."
-        )
+        if surface == "givens_first":
+            return f"X is the number of successes in ({s['n']}) independent trials, each with success probability ({s['p']}). Find P(X=({s['r']}))."
+        return f"Find P(X=({s['r']})). Given X counts successes in ({s['n']}) independent trials with success probability ({s['p']}) per trial."
     if category == "interval":
         multiplier = qstr(F(s["divisor"]) ** 2)
-        return prefix + (
-            f"A normal-theory confidence interval is [({s['lower']}), ({s['upper']})]. "
-            f"The sample size is multiplied by ({multiplier}); the center, confidence level, "
-            "and population standard deviation stay fixed. Find the new upper endpoint."
-        )
+        facts = f"a normal-theory confidence interval is [({s['lower']}), ({s['upper']})], the sample size is multiplied by ({multiplier}), and the center, confidence level, and population standard deviation stay fixed"
+        if surface == "givens_first":
+            return f"A normal-theory confidence interval is [({s['lower']}), ({s['upper']})]. The sample size is multiplied by ({multiplier}); the center, confidence level, and population standard deviation stay fixed. Find the new upper endpoint."
+        return f"Find the new upper endpoint, given {facts}."
     raise ValueError(f"Unknown category: {category}")
 
 
@@ -471,7 +483,7 @@ def prompt_bindings(category, s, axes):
 
 def make_row(split, category, index, family, semantics, axes, group_key, contrast_size):
     axes = dict(axes)
-    axes["surface_form"] = "direct_shared"
+    axes["surface_form"] = "givens_first" if index % 2 == 0 else "target_first"
     question = build_question(category, semantics, axes)
     expression = expression_for(category, semantics, axes)
     group_story_id = "diverse_" + digest(group_key)[:24]
@@ -1176,9 +1188,7 @@ def attach_misconception_audit(row):
 
 
 NUM_PATTERN = r"-?\d+(?:/\d+)?"
-SURFACE_PREFIX = {
-    "direct_shared": "",
-}
+CONTROLLED_SURFACE_FORMS = ("givens_first", "target_first")
 PARSED_EVENT_PHRASES = {
     "both": "both A and B occur",
     "neither": "neither A nor B occurs",
@@ -1213,19 +1223,24 @@ def canonical_semantics(spec):
 
 def parse_question_semantics(question, category, surface_form):
     """Independent, closed-form parser for the controlled direct interface."""
-    prefix = SURFACE_PREFIX[surface_form]
-    if not question.startswith(prefix):
-        raise ValueError("Unexpected split-specific direct-interface prefix")
-    body = question[len(prefix) :]
+    if surface_form not in CONTROLLED_SURFACE_FORMS:
+        raise ValueError("Unexpected controlled surface form")
+    body = question
     num = NUM_PATTERN
     if category in EVENT_CATEGORIES:
-        match = re.fullmatch(
-            rf"A and B are independent events\. P\((?P<label1>[AB])\)=\((?P<v1>{num})\); "
-            rf"P\((?P<label2>[AB])\)=\((?P<v2>{num})\)\. Find the probability that "
-            + re.escape(PARSED_EVENT_PHRASES[category])
-            + r"\.",
-            body,
-        )
+        if surface_form == "givens_first":
+            pattern = (
+                rf"A and B are independent events\. P\((?P<label1>[AB])\)=\((?P<v1>{num})\); "
+                rf"P\((?P<label2>[AB])\)=\((?P<v2>{num})\)\. Find the probability that "
+                + re.escape(PARSED_EVENT_PHRASES[category]) + r"\."
+            )
+        else:
+            pattern = (
+                r"For independent events A and B, find the probability that "
+                + re.escape(PARSED_EVENT_PHRASES[category])
+                + rf"\. Given P\((?P<label1>[AB])\)=\((?P<v1>{num})\); P\((?P<label2>[AB])\)=\((?P<v2>{num})\)\."
+            )
+        match = re.fullmatch(pattern, body)
         if not match or match["label1"] == match["label2"]:
             raise ValueError("Event prompt does not match the frozen direct grammar")
         values = {match["label1"]: match["v1"], match["label2"]: match["v2"]}
@@ -1237,28 +1252,33 @@ def parse_question_semantics(question, category, surface_form):
         }
     if category in MOMENT_CATEGORIES:
         target, ask = PARSED_MOMENT_ASK[category]
-        match = re.fullmatch(
-            rf"E\[X\]=\((?P<mean>{num})\); Var\(X\)=\((?P<variance>{num})\)\. "
-            rf"Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find {re.escape(ask)}\.",
-            body,
+        pattern = (
+            rf"E\[X\]=\((?P<mean>{num})\); Var\(X\)=\((?P<variance>{num})\)\. Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find {re.escape(ask)}\."
+            if surface_form == "givens_first"
+            else rf"Find {re.escape(ask)}\. Given E\[X\]=\((?P<mean>{num})\); Var\(X\)=\((?P<variance>{num})\); Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\."
         )
+        match = re.fullmatch(pattern, body)
         if not match:
             raise ValueError("Moment prompt does not match the frozen direct grammar")
         return {"kind": "moments", "target": target, **match.groupdict()}
     if category in POISSON_CATEGORIES:
         if category == "poisson_scaled":
-            match = re.fullmatch(
-                rf"X has a Poisson distribution with mean \((?P<mean>{num})\)\. "
-                rf"Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find Var\(Y\)\.",
-                body,
+            pattern = (
+                rf"X has a Poisson distribution with mean \((?P<mean>{num})\)\. Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find Var\(Y\)\."
+                if surface_form == "givens_first"
+                else rf"Find Var\(Y\)\. Given X is Poisson with mean \((?P<mean>{num})\) and Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\."
             )
+            match = re.fullmatch(pattern, body)
             if not match:
                 raise ValueError("Scaled Poisson prompt does not match the frozen direct grammar")
             return {"kind": "poisson", "target": "variance", **match.groupdict()}
         ask = r"Var\(X\)" if category == "poisson_variance" else r"E\[X\*\*2\]"
-        match = re.fullmatch(
-            rf"X has a Poisson distribution with mean \((?P<mean>{num})\)\. Find {ask}\.", body
+        pattern = (
+            rf"X has a Poisson distribution with mean \((?P<mean>{num})\)\. Find {ask}\."
+            if surface_form == "givens_first"
+            else rf"Find {ask}\. Given X is Poisson with mean \((?P<mean>{num})\)\."
         )
+        match = re.fullmatch(pattern, body)
         if not match:
             raise ValueError("Poisson prompt does not match the frozen direct grammar")
         return {
@@ -1267,18 +1287,28 @@ def parse_question_semantics(question, category, surface_form):
             "mean": match["mean"],
         }
     if category in PROCESS_CATEGORIES:
-        ending = {
-            "process_variance": r"Find Var\(X\)\.",
-            "process_scaled": rf"Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find Var\(Y\)\.",
-            "process_second": r"Find E\[X\*\*2\]\.",
-        }[category]
-        match = re.fullmatch(
-            rf"A homogeneous Poisson process has rate \((?P<rate>{num})\) arrivals per minute\. "
-            rf"X counts arrivals during \((?P<duration>{num})\) (?P<unit>seconds|minutes)\. {ending}",
-            body,
-        )
+        if surface_form == "givens_first":
+            ending = {
+                "process_variance": r"Find Var\(X\)\.",
+                "process_scaled": rf"Define Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\. Find Var\(Y\)\.",
+                "process_second": r"Find E\[X\*\*2\]\.",
+            }[category]
+            pattern = rf"A homogeneous Poisson process has rate \((?P<rate>{num})\) arrivals per minute\. X counts arrivals during \((?P<duration>{num})\) (?P<unit>seconds|minutes)\. {ending}"
+        else:
+            ask = {
+                "process_variance": r"Var\(X\)",
+                "process_scaled": r"Var\(Y\)",
+                "process_second": r"E\[X\*\*2\]",
+            }[category]
+            tail = (
+                rf", and Y=\((?P<scale>{num})\)\*X\+\((?P<offset>{num})\)\."
+                if category == "process_scaled" else r"\."
+            )
+            separator = ", " if category == "process_scaled" else ", "
+            pattern = rf"Find {ask}\. Given a homogeneous Poisson process with rate \((?P<rate>{num})\) arrivals per minute{separator}X counts arrivals during \((?P<duration>{num})\) (?P<unit>seconds|minutes){tail}"
+        match = re.fullmatch(pattern, body)
         if not match:
-            raise ValueError("Process prompt does not match the frozen direct grammar")
+            raise ValueError(f"Process prompt does not match the frozen direct grammar: {surface_form}: {body}")
         duration = F(match["duration"]) / 60 if match["unit"] == "seconds" else F(match["duration"])
         parsed = {
             "kind": "process",
@@ -1291,11 +1321,12 @@ def parse_question_semantics(question, category, surface_form):
         return parsed
     if category in UNIFORM_CATEGORIES:
         if category == "uniform_mean":
-            match = re.fullmatch(
-                rf"T is uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\. "
-                r"Find E\[T\] in minutes\.",
-                body,
+            pattern = (
+                rf"T is uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\. Find E\[T\] in minutes\."
+                if surface_form == "givens_first"
+                else rf"Find E\[T\] in minutes\. Given T is uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\."
             )
+            match = re.fullmatch(pattern, body)
             if not match:
                 raise ValueError("Uniform-mean prompt does not match the frozen direct grammar")
             return {
@@ -1305,12 +1336,12 @@ def parse_question_semantics(question, category, surface_form):
                 "cutoff": match["lower"],
                 "upper": match["upper"],
             }
-        match = re.fullmatch(
-            rf"T is uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\. "
-            rf"Given T>\((?P<cutoff>{num})\) (?P<unit>seconds|minutes), "
-            r"find the conditional mean of total T in minutes\.",
-            body,
+        pattern = (
+            rf"T is uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\. Given T>\((?P<cutoff>{num})\) (?P<unit>seconds|minutes), find the conditional mean of total T in minutes\."
+            if surface_form == "givens_first"
+            else rf"Find the conditional mean of total T in minutes, given T>\((?P<cutoff>{num})\) (?P<unit>seconds|minutes) and T uniform on \[\((?P<lower>{num})\), \((?P<upper>{num})\)\] minutes\."
         )
+        match = re.fullmatch(pattern, body)
         if not match:
             raise ValueError("Conditional-uniform prompt does not match the frozen direct grammar")
         cutoff = F(match["cutoff"]) / 60 if match["unit"] == "seconds" else F(match["cutoff"])
@@ -1322,21 +1353,22 @@ def parse_question_semantics(question, category, surface_form):
             "upper": match["upper"],
         }
     if category == "binomial":
-        match = re.fullmatch(
-            rf"X is the number of successes in \((?P<n>{num})\) independent trials, each with "
-            rf"success probability \((?P<p>{num})\)\. Find P\(X=\((?P<r>{num})\)\)\.",
-            body,
+        pattern = (
+            rf"X is the number of successes in \((?P<n>{num})\) independent trials, each with success probability \((?P<p>{num})\)\. Find P\(X=\((?P<r>{num})\)\)\."
+            if surface_form == "givens_first"
+            else rf"Find P\(X=\((?P<r>{num})\)\)\. Given X counts successes in \((?P<n>{num})\) independent trials with success probability \((?P<p>{num})\) per trial\."
         )
+        match = re.fullmatch(pattern, body)
         if not match:
             raise ValueError("Binomial prompt does not match the frozen direct grammar")
         return {"kind": "binomial", **match.groupdict()}
     if category == "interval":
-        match = re.fullmatch(
-            rf"A normal-theory confidence interval is \[\((?P<lower>{num})\), \((?P<upper>{num})\)\]\. "
-            rf"The sample size is multiplied by \((?P<multiplier>{num})\); the center, confidence level, "
-            r"and population standard deviation stay fixed\. Find the new upper endpoint\.",
-            body,
+        pattern = (
+            rf"A normal-theory confidence interval is \[\((?P<lower>{num})\), \((?P<upper>{num})\)\]\. The sample size is multiplied by \((?P<multiplier>{num})\); the center, confidence level, and population standard deviation stay fixed\. Find the new upper endpoint\."
+            if surface_form == "givens_first"
+            else rf"Find the new upper endpoint, given a normal-theory confidence interval is \[\((?P<lower>{num})\), \((?P<upper>{num})\)\], the sample size is multiplied by \((?P<multiplier>{num})\), and the center, confidence level, and population standard deviation stay fixed\."
         )
+        match = re.fullmatch(pattern, body)
         if not match:
             raise ValueError("Interval prompt does not match the frozen direct grammar")
         return {
@@ -1628,6 +1660,21 @@ def text_registry_audit(data):
         questions = [row["question"] for row in rows]
         prompts = [row["prompt"] for row in rows]
         signatures = [row["template_signature"] for row in rows]
+        signature_counts = Counter(signatures)
+        surface_counts = Counter(row["coverage_axes"]["surface_form"] for row in rows)
+        for category in CATEGORIES:
+            forms = {
+                row["coverage_axes"]["surface_form"]
+                for row in rows
+                if row["category"] == category
+            }
+            if forms != set(CONTROLLED_SURFACE_FORMS):
+                raise RuntimeError(("Category lacks both controlled surface forms", split, category, forms))
+        max_allowed = math.ceil(len(rows) / len(CATEGORIES) / len(CONTROLLED_SURFACE_FORMS))
+        if max(signature_counts.values()) > max_allowed:
+            raise RuntimeError(("A normalized template is over-concentrated", split, max(signature_counts.values()), max_allowed))
+        if len(signature_counts) < len(CATEGORIES) * len(CONTROLLED_SURFACE_FORMS):
+            raise RuntimeError(("Too few controlled templates", split, len(signature_counts)))
         result[split] = {
             "question_count": len(questions),
             "unique_question_count": len(set(questions)),
@@ -1635,7 +1682,11 @@ def text_registry_audit(data):
             "prompt_count": len(prompts),
             "unique_prompt_count": len(set(prompts)),
             "prompt_registry_sha256": digest(sorted(prompts)),
-            "template_signature_counts": dict(sorted(Counter(signatures).items())),
+            "template_signature_counts": dict(sorted(signature_counts.items())),
+            "unique_template_signature_count": len(signature_counts),
+            "max_template_signature_reuse": max(signature_counts.values()),
+            "max_template_signature_reuse_contract": max_allowed,
+            "surface_form_counts": dict(sorted(surface_counts.items())),
             "template_signature_registry_sha256": digest(sorted(signatures)),
         }
     overlaps = {}
@@ -1681,14 +1732,17 @@ def ordering_audit(train):
         if any(count > 2 for family, count in family_counts.items() if family != "events"):
             raise RuntimeError(("Non-event family exceeds two rows in a microbatch", batch_index))
         batch_observations.append((batch_index, dict(sorted(category_counts.items())), dict(sorted(family_counts.items()))))
-    if event_histogram != Counter({2: 84, 3: 24}):
+    expected_three = len([row for row in train if row["category"] in EVENT_CATEGORIES]) - 2 * len(batches)
+    expected_histogram = Counter({2: len(batches) - expected_three, 3: expected_three})
+    if event_histogram != expected_histogram:
         raise RuntimeError(("Event microbatch histogram drift", event_histogram))
     windows = []
     for start in range(0, len(train), 288):
         window = train[start : start + 288]
         counts = Counter(row["category"] for row in window)
-        if len(window) != 288 or any(counts[category] != 16 for category in CATEGORIES):
-            raise RuntimeError(("A 288-row window is not exactly category-balanced", start, counts))
+        expected_per_category = len(window) // len(CATEGORIES)
+        if len(window) % len(CATEGORIES) or any(counts[category] != expected_per_category for category in CATEGORIES):
+            raise RuntimeError(("A curriculum window is not exactly category-balanced", start, counts))
         windows.append((start, dict(sorted(counts.items()))))
     sliding_family_max = {
         family: max(
@@ -1709,7 +1763,9 @@ def ordering_audit(train):
         "sliding_8_row_family_max": sliding_family_max,
         "window_size": 288,
         "window_count": len(windows),
-        "each_category_per_window": 16,
+        "full_window_each_category": 16,
+        "tail_window_rows": len(train) % 288,
+        "tail_window_each_category": (len(train) % 288) // len(CATEGORIES),
         "window_registry_sha256": digest(windows),
     }
 
@@ -1766,6 +1822,61 @@ def split_summary(rows):
         "family_counts": dict(sorted(Counter(row["family"] for row in rows).items())),
         "group_story_count": len({canonical_key(row["group_story_key"]) for row in rows}),
         "task_key_count": len({canonical_key(row["semantic_key"]) for row in rows}),
+    }
+
+
+def contrast_group_audit(rows, split):
+    """Reject correct aggregate counts built from incomplete contrast stories."""
+    groups = {}
+    for row in rows:
+        groups.setdefault(row["contrast_group"], []).append(row)
+    expected_categories = {
+        "events": set(EVENT_CATEGORIES),
+        "moments": set(MOMENT_CATEGORIES),
+        "poisson": set(POISSON_CATEGORIES),
+        "process": set(PROCESS_CATEGORIES),
+        "uniform": set(UNIFORM_CATEGORIES),
+        "binomial": {"binomial"},
+        "interval": {"interval"},
+    }
+    expected_sizes = {
+        "events": 5,
+        "moments": 3,
+        "poisson": 3,
+        "process": 3,
+        "uniform": 2,
+        "binomial": 5,
+        "interval": 4 if split == "train" else 2,
+    }
+    observations = []
+    for group_id, group in sorted(groups.items()):
+        families = {row["family"] for row in group}
+        if len(families) != 1:
+            raise RuntimeError(("Contrast group mixes families", split, group_id, families))
+        family = next(iter(families))
+        expected_size = expected_sizes[family]
+        if len(group) != expected_size:
+            raise RuntimeError(("Incomplete contrast group", split, family, group_id, len(group), expected_size))
+        if any(row["contrast_size"] != expected_size for row in group):
+            raise RuntimeError(("Stored contrast size disagrees with group", split, group_id))
+        if {row["contrast_position"] for row in group} != set(range(expected_size)):
+            raise RuntimeError(("Contrast positions are incomplete", split, group_id))
+        categories = {row["category"] for row in group}
+        if family != "binomial" and family != "interval" and categories != expected_categories[family]:
+            raise RuntimeError(("Contrast categories are incomplete", split, family, group_id, categories))
+        if family == "binomial":
+            slots = {row["coverage_axes"]["r_slot"] for row in group}
+            required = {"r_zero", "r_one", "r_interior", "r_n_minus_one", "r_n"}
+            if slots != required:
+                raise RuntimeError(("Binomial r slots are incomplete", split, group_id, slots))
+            if len({(row["semantics"]["n"], row["semantics"]["p"]) for row in group}) != 1:
+                raise RuntimeError(("Binomial story changes n or p", split, group_id))
+        observations.append((group_id, family, expected_size, sorted(categories)))
+    return {
+        "group_count": len(groups),
+        "family_group_counts": dict(sorted(Counter(item[1] for item in observations).items())),
+        "all_groups_complete": True,
+        "sha256": digest(observations),
     }
 
 
@@ -1831,12 +1942,13 @@ def build(output_path=DEFAULT_OUTPUT, blind_output_path=DEFAULT_BLIND_OUTPUT):
         for split in SPLIT_SIZES
     }
     text_registry = text_registry_audit(split_rows)
+    contrast_groups = {split: contrast_group_audit(rows, split) for split, rows in split_rows.items()}
     held_out = held_out_combination_audit(split_rows)
     split_streams = {
         split: {
             "domain_label_sha256": text_digest(f"{SEED}|{split}"),
             "derivation": "sha256(SEED|split|family|index|attempt) first 8 bytes -> Random seed",
-            "shared_question_renderer": "build_question/direct_shared",
+            "shared_question_renderer": "build_question/givens_first_or_target_first",
         }
         for split in SPLIT_SIZES
     }
@@ -1888,6 +2000,8 @@ def build(output_path=DEFAULT_OUTPUT, blind_output_path=DEFAULT_BLIND_OUTPUT):
         "semantic_task_key_sha256": semantic_key_sha256,
         "group_story_key_sha256": story_key_sha256,
         "exact_text_and_template_registry": text_registry,
+        "contrast_group_audit": contrast_groups,
+        "contrast_group_audit_sha256": digest(contrast_groups),
         "coverage_axis_audit": coverage,
         "coverage_axis_audit_sha256": digest(coverage),
         "category_coverage_axis_audit": category_coverage,
@@ -1910,7 +2024,7 @@ def build(output_path=DEFAULT_OUTPUT, blind_output_path=DEFAULT_BLIND_OUTPUT):
         },
         "category_contracts": category_contracts(),
         "ordering": {
-            "train_strategy": "48 balanced 18-row cycles; same-story contrasts stay in one cycle and are interleaved across families",
+            "train_strategy": "40 balanced 18-row cycles; same-story contrasts stay in one cycle and are interleaved across families",
             "cycle_size": len(CATEGORIES),
             "cycle_count": SPLIT_SIZES["train"],
             "every_cycle_has_each_category_once": True,
@@ -1944,6 +2058,11 @@ def build(output_path=DEFAULT_OUTPUT, blind_output_path=DEFAULT_BLIND_OUTPUT):
             "blind_artifact_top_level_keys": ["final_blind", "receipt"],
             "legacy_retention_required": True,
             "legacy_retention_artifact": "external_runner_input_not_produced_by_this_builder",
+            "training_replay_required": True,
+            "training_replay_artifact": "docs/STATS_DIVERSE_REPLAY.json",
+            "training_replay_count": 720,
+            "training_replay_source_split": "historical_train_only",
+            "new_to_replay_ratio": "1:1",
             "external_24_probe_bundle": "external_existing_input_not_produced_by_this_builder",
         },
         "verification_contract": {

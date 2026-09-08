@@ -27,8 +27,8 @@ from stats_teacher_envelope import _unique_object
 
 MODEL = "meta-llama/llama-3.3-70b-instruct"
 PACKET_SIZE = 12
-EXPECTED_SPLIT_COUNTS = {"train": 864, "development": 108}
-EXPECTED_CATEGORY_COUNTS = {"train": 48, "development": 6}
+EXPECTED_SPLIT_COUNTS = {"train": 720, "development": 180}
+EXPECTED_CATEGORY_COUNTS = {"train": 40, "development": 10}
 EXPECTED_CATEGORIES = (
     "both", "neither", "exactly_one", "at_least_one", "same",
     "moment_mean", "moment_variance", "moment_second",
@@ -36,7 +36,7 @@ EXPECTED_CATEGORIES = (
     "process_variance", "process_scaled", "process_second",
     "uniform_mean", "uniform_conditional", "binomial", "interval",
 )
-MAX_CALLS = 144
+MAX_CALLS = 120
 MAX_COST_USD = 0.30
 MAX_OUTPUT_TOKENS = 900
 RESULT_NAME = "STATS_DIVERSE_TEACHER_RESULTS.json"

@@ -6,7 +6,7 @@
 |---|---|
 | 原 v15 | 唯一可信的訓練起點與同題比較錨點；不是成功終點 |
 | `final_clear`／Kaggle V58 | 歷史窄模板結果；採用與成功解讀已撤回 |
-| 新的多樣教材 | 訓練前設計、驗證與凍結中 |
+| 新的多樣教材 v2 | 已重建；720 new＋720 historical-train replay，73 項相關測試通過 |
 | 新學生 | 尚未產生 |
 
 ## 為何撤回 V58
@@ -26,7 +26,14 @@ V58 在原先固定的 18 類 clear-interface 測試上確實得到 v15 **107/14
 
 本輪維持原始目標：在有限、直接、清楚的統計列式範圍內，讓一個新學生全面勝過 v15；不把任務改成語文能力。
 
-訓練前必須完成並凍結：
+已完成的教材修正：
+
+- 新教材為 train/development/final 每類 40/10/10；每個 contrast group 都按 family 逐組驗證，不再容許 binomial 或 interval 被 split 配額截斷；
+- 720 筆歷史 train rows 已實際物化成 replay，與 720 筆新教材固定 1:1 交錯；retention development/final 不進訓練；
+- train normalized template 為 48 種，單一模板最高 20 列；只採 givens-first/target-first 兩種直接問法，不增加語文任務；
+- promotion 數學分固定只讀 math_correct＋executable；strict one-line 只作格式診斷。
+
+進入老師與 GPU 前仍須完成並凍結：
 
 - 18 類能力與結構軸的覆蓋矩陣，不以同模板換數字充數；
 - 每題 prompt 與結構化語意的雙向核對；
@@ -35,6 +42,6 @@ V58 在原先固定的 18 類 clear-interface 測試上確實得到 v15 **107/14
 - v15、教材、老師回覆、grader 和執行設定的雜湊綁定；
 - final test 在選點前不可見，以及失敗即停止、不得測後補跑的規則。
 
-只有全部 preflight 通過，才會進入老師生成與一次 GPU 訓練。目前文件所述仍是準備狀態，不得推論已產生新教材、老師答案或模型改善。
+只有全部 preflight 通過，才會進入老師生成與一次 GPU 訓練。目前已有新教材與 replay，但沒有老師答案或模型改善。
 
 [受控實驗協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [V58 撤回後記](STATS_V58_POSTMORTEM.md) · [下一輪狀態](STATS_NEXT_RUN_STATUS.md) · [執行交接](STATS_EXECUTION_HANDOFF.md) · [模型恢復](KAGGLE_RECOVERY.md)
