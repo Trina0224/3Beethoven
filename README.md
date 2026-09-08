@@ -1,5 +1,68 @@
 # 3Beethoven
 
+更新：2026-09-07 22:15 PDT（America/Los_Angeles）
+
+**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
+
+它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
+
+這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
+
+## 哪一個學生是最後成果？
+
+| 名稱 | 最後定位 |
+|---|---|
+| **V57 `repeat_control`** | **本次最後採用的雙事件列式成功範例：16/16** |
+| V57 `semantic_course` | 新語意課程比較組；事件 15/16，保留為實驗紀錄 |
+| `prior_v55` | V55 的歷史比較學生；事件 13/16 |
+| 原 `v15` | 訓練起點及較廣範圍比較基準；事件 12/16，不是本次最終展示學生 |
+| 其他 v0.x／seed／checkpoint | 歷史實驗，不需依序繼續訓練 |
+
+Kaggle Version 57 是保存版本號，不是新命名的「模型 v0.57」。`repeat_control` 雖名為對照組，確實是完成訓練的新學生，不是未訓練基線。
+
+## 成功範圍與結果
+
+輸入兩個獨立事件的明確機率，要求列出「兩者都發生／兩者都不發生／恰好一個發生／結果相同」的數值算式。固定清楚用語，不把任意改寫或隱含定義理解列為本示範的必要條件。
+
+| 題型 | 原 v15 | V57 repeat_control |
+|---|---:|---:|
+| 兩者都發生 | 4/4 | 4/4 |
+| 兩者都不發生 | 1/4 | 4/4 |
+| 恰好一個發生 | 3/4 | 4/4 |
+| 結果相同 | 4/4 | 4/4 |
+| 合計 | 12/16 | **16/16** |
+
+例如機率為 23/101、44/101，問兩者都不發生：原學生輸出 `(23/101)*(44/101)`；最終學生輸出 `(1-23/101)*(1-44/101)`，正確選用補事件。回答未經人工修補。
+
+## 模型取得
+
+- [下載已保存的模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348126445&select=3beethoven_semantic_course_students.zip)（Kaggle 權限與 Hugging Face 基礎模型存取權需沿用既有帳號）。
+- ZIP：`3beethoven_semantic_course_students.zip`；選用其中 **`repeat_control/adapter`**。
+- 基礎模型：`meta-llama/Llama-3.2-3B-Instruct`。
+- 基礎模型 revision：`0cb88a4f764b7a12671c53f0838cd831a0843b95`。
+- Adapter SHA-256：`8419430c6b7b58bd1c16c992964b1cedd76062020ce6651cb25e51df119f0eb9`。
+- 這是 LoRA adapter，必須搭配上述基礎模型，不能當成獨立完整基礎權重；直接載入此最終 adapter，不要再疊加 v15 adapter。
+- 實際訓練：seed 2027、126 updates、1,006 筆（750 筆修正教材＋256 筆既有教材重複練習），固定最後一步。
+- 教材包含核對過的 70B 回答、助手修正的老師答案與題目措辭調整；屬 response distillation／SFT，不是 logits 蒸餾，也不是全數未修改的老師原文。
+
+## 文件入口
+
+- [最終成果、全部 16 題原始配對輸出](docs/STATS_BOUNDED_SUCCESS_EXAMPLE.md)
+- [目前狀態與版本定位](docs/STATS_CURRENT_STATUS.md)
+- [V57 完整比較結果及限制](docs/STATS_SEMANTIC_COURSE_RESULTS.md)
+- [模型恢復指引](docs/KAGGLE_RECOVERY.md)
+- [目前任務範圍](PROJECT_SPEC.md)
+- [接續工作狀態](docs/STATS_NEXT_RUN_STATUS.md)
+
+**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
+
+專案最早以古典音樂為構想，後來轉為使用者授權的統計列式試驗。老師使用 Meta Llama，學生為約 3B 的 Meta Llama；數學列式與計算分開。歷史內容保留供查證，並不表示仍在訓練音樂模型。
+
+<details>
+<summary>歷史紀錄（保留原文；不是目前狀態或執行指令）</summary>
+
+# 3Beethoven
+
 Latest: six training-seed runs, harmonized MC, and all pending-answer reviews are complete. See [final results](docs/STATS_SEED_REPLICATION_REPORT.md). No new training is running. Earlier unexecuted-status paragraphs below are historical.
 
 **A tiny local classical-music snob, distilled from a much larger Llama teacher.**
@@ -320,3 +383,6 @@ Kaggle Quick Save version 18 (script version 347636958) is Successful and contai
 Hybrid exact-arithmetic SFT plus prior teacher-response rehearsal produced a mixed outcome. Independently reviewed canonical arithmetic:43/60 to39/60; equivalent representations:23/60 to31/60; both representations correct:22/60 to27/60; fresh statistical transfer:16/48 to16/48; old MC:130/240 to133/240. These are matched comparisons on the same new questions, not the previous v0.10 benchmark. Primary gain and statistical-transfer goals failed; retain both models without blanket promotion of v0.11. The selected first-epoch checkpoint was chosen by validation before tests; all816 responses and392 finite adapter tensors were verified. Zero new teacher API calls.
 
 See [full reviewed report](docs/STATS_V0_11_REPORT.md) and [raw responses and independent format audit](docs/STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. The arithmetic follow-up was pursued in v0.12; the current objective has since changed to correct formulation with arithmetic delegated to a tool. Historical arithmetic endpoints remain unchanged.
+
+
+</details>
