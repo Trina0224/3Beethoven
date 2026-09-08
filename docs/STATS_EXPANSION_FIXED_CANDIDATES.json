@@ -1,0 +1,22 @@
+{
+  "selection_rule": "final diagnostic because no checkpoint passed all frozen gates",
+  "probe_sha256": "4272990b96525505f0ed99a1ce254e6a4ca89987deb5eff5bf685a7fcb29bd35",
+  "selections": {
+    "2027": {
+      "all_pending_resolved": true,
+      "decision_sha256": "072f2ffcdaba90cf8772308127c9b1a472216125333f7aafb88158481eb7f962",
+      "fixed_step": 90,
+      "reason": "final_diagnostic_no_full_gate_pass",
+      "reviewed_history_sha256": "ebeffef58b2877710a07cdcaa167d1cbe69aa54e4347d81c2f986327d9aab5e4",
+      "selected_step": null
+    },
+    "31415": {
+      "all_pending_resolved": true,
+      "decision_sha256": "072f2ffcdaba90cf8772308127c9b1a472216125333f7aafb88158481eb7f962",
+      "fixed_step": 90,
+      "reason": "final_diagnostic_no_full_gate_pass",
+      "reviewed_history_sha256": "23e7f14401a28dd36c05bea9bcc811b231eaa35013ca338f9ef265fa6bd86e86",
+      "selected_step": null
+    }
+  }
+}
