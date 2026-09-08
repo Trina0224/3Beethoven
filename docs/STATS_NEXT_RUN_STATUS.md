@@ -1,7 +1,16 @@
 <!-- MULTIVIEW_EXECUTION_LIVE_BEGIN -->
-## Latest checkpoint — 2026-09-07 16:58 PDT
+## Latest completed checkpoint — 2026-09-07 17:52 PDT
 
-User explicitly approved the exact existing-data reuse/training/evaluation/save scope. The prior automatic-approval blocker is resolved. Original v15 parent hash, teacher file hash, 516-row corpus hashes and contract tests passed in Kaggle. Fresh prepared v15 baseline completed at old34/48,chain38/48,event12/16 with no pending scores. Seed2027 is running; seed31415 follows automatically. Each seed has65 updates and checkpoints12/24/48/65, unchanged per-family gates, then post-training review and fixed-candidate crossed48-task probe. Source/decision: docs/STATS_MULTIVIEW_DECISION.json and scripts/run_stats_multiview.py. No new student result or promotion yet. See docs/STATS_MULTIVIEW_STATUS.md for preserved setup history.
+**Multiview pilot complete; GPU stopped and stop confirmed.** User explicitly authorized existing-data reuse and training/evaluation/save. Two seeds completed65 updates each,1032/1032 actual microbatch input/label/order hashes verified;10990 supervised tokens per seed. Prepared v15 baseline reproduced112/112 raw answers.
+
+- No checkpoint passed every original gate. Both step48 checkpoints passed old/chain retention but failed event:neither and event total. Keep v15 preferred; preserve all eight research checkpoints.
+- Final diagnostics fixed BEFORE probe: seed2027step65 old34/48,chain39/48,event13/16; seed31415step65 old34/48,chain41/48,event12/16.
+- Crossed probe per12 questions: known/familiar12→12,12; known/unseen5→11,11; new/familiar12→12,12; new/unseen4→7,6 (v15→2027,31415). Limited to3families×4paired stories, not broad independent promotion evidence. Exposure and wording changed together.
+- Two pending answers resolved without changing grader: one wrong exponent in student selection; one valid cancelling-term identity credited to v15 probe. No pending remains.
+- Kaggle Version55 successful, scriptVersionId348091555. [Verified output and portable archive](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348091555&select=3beethoven_stats_multiview_download.zip).279618858bytes; SHA25645646ed868207cf16723a105455d24dd8d95348a032a621fa43184657f123144. Download CRC and460 manifest hashes verified. Archive includes both final students and original v15 adapter; full8adapters and optimizer checkpoints in saved output.
+- Read docs/STATS_MULTIVIEW_REPORT.md, STATS_MULTIVIEW_RESULTS.json, STATS_MULTIVIEW_DOWNLOAD.json and STATS_MULTIVIEW_WEIGHT_MANIFEST.json before planning another experiment. Do not redo this round.
+
+Next bounded decision: increase verified, distinct neither-event cases and contrast detection/miss wording while preserving old/chain gates; the current corpus has only3 distinct neither tasks versus27 exactly-one tasks. General old moment remains0/6. Treat this as a data-coverage hypothesis, not a proven cause. Preregister a new run before more generation/training. Full teacher gate and the original four-run independent comparison remain incomplete. No further training scheduled in this completed round.
 <!-- MULTIVIEW_EXECUTION_LIVE_END -->
 
 <!-- REPAIR_EXECUTION_LIVE_BEGIN -->
