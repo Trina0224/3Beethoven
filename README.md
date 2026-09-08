@@ -1,396 +1,49 @@
-# 更正與最後一次實驗：原 v15 仍是保留學生
-
-使用者已澄清：成功必須在約定的清楚統計列式範圍內整體勝過 v15，且原有各類能力不退步。**V57 repeat_control 的 16/16 只是局部改善，不算成功替代模型。** 先前「最後成功學生」與收束命名已撤回；下方原文僅保留歷史。
-
-使用者已另行授權最後一次實驗。目前固定資料與程序已啟動：原 v15 基準、唯一一個從原 v15 出發的新學生、固定一輪 144 updates；新測試 18 類共 144 題，總分至少 +5 且各類不退步才算成功。[固定協議](docs/STATS_FINAL_CLEAR_PROTOCOL.md)。尚未宣稱新學生成功，不增加第二輪。
-
----
-
 # 3Beethoven
 
-更新：2026-09-07 22:15 PDT（America/Los_Angeles）
+**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
 
-**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
+這項結論限於約定的 18 類清楚統計列式介面；不擴張為任意語文表述或所有統計問題的能力聲明。
 
-它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
-
-這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
-
-## 哪一個學生是最後成果？
-
-| 名稱 | 最後定位 |
+| 模型 | 目前定位 |
 |---|---|
-| **V57 `repeat_control`** | **本次最後採用的雙事件列式成功範例：16/16** |
-| V57 `semantic_course` | 新語意課程比較組；事件 15/16，保留為實驗紀錄 |
-| `prior_v55` | V55 的歷史比較學生；事件 13/16 |
-| 原 `v15` | 訓練起點及較廣範圍比較基準；事件 12/16，不是本次最終展示學生 |
-| 其他 v0.x／seed／checkpoint | 歷史實驗，不需依序繼續訓練 |
+| **final_clear / Kaggle V58** | **最後採用的成功學生** |
+| 原 v15 | 本輪起點與同題比較基準 |
+| V57 repeat_control 等 | 歷史實驗；先前「最後成功學生」定位已撤回 |
 
-Kaggle Version 57 是保存版本號，不是新命名的「模型 v0.57」。`repeat_control` 雖名為對照組，確實是完成訓練的新學生，不是未訓練基線。
-
-## 成功範圍與結果
-
-輸入兩個獨立事件的明確機率，要求列出「兩者都發生／兩者都不發生／恰好一個發生／結果相同」的數值算式。固定清楚用語，不把任意改寫或隱含定義理解列為本示範的必要條件。
-
-| 題型 | 原 v15 | V57 repeat_control |
+| 同題評估 | 原 v15 | final_clear |
 |---|---:|---:|
-| 兩者都發生 | 4/4 | 4/4 |
-| 兩者都不發生 | 1/4 | 4/4 |
-| 恰好一個發生 | 3/4 | 4/4 |
-| 結果相同 | 4/4 | 4/4 |
-| 合計 | 12/16 | **16/16** |
+| Development | 51/72 | 72/72 |
+| Final test | 107/144 | 144/144 |
+| 恰好一個發生 | 0/8 | 8/8 |
+| Poisson 過程 E[X²] | 0/8 | 8/8 |
+| 仿射變換 E[Y²] | 4/8 | 8/8 |
 
-例如機率為 23/101、44/101，問兩者都不發生：原學生輸出 `(23/101)*(44/101)`；最終學生輸出 `(1-23/101)*(1-44/101)`，正確選用補事件。回答未經人工修補。
+## 已保存模型
 
-## 模型取得
+[下載 V58 模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip)（Kaggle Version 58，scriptVersionId `348141342`，Successful）。
 
-- [下載已保存的模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348126445&select=3beethoven_semantic_course_students.zip)（Kaggle 權限與 Hugging Face 基礎模型存取權需沿用既有帳號）。
-- ZIP：`3beethoven_semantic_course_students.zip`；選用其中 **`repeat_control/adapter`**。
-- 基礎模型：`meta-llama/Llama-3.2-3B-Instruct`。
-- 基礎模型 revision：`0cb88a4f764b7a12671c53f0838cd831a0843b95`。
-- Adapter SHA-256：`8419430c6b7b58bd1c16c992964b1cedd76062020ce6651cb25e51df119f0eb9`。
-- 這是 LoRA adapter，必須搭配上述基礎模型，不能當成獨立完整基礎權重；直接載入此最終 adapter，不要再疊加 v15 adapter。
-- 實際訓練：seed 2027、126 updates、1,006 筆（750 筆修正教材＋256 筆既有教材重複練習），固定最後一步。
-- 教材包含核對過的 70B 回答、助手修正的老師答案與題目措辭調整；屬 response distillation／SFT，不是 logits 蒸餾，也不是全數未修改的老師原文。
+- 檔名：`3beethoven_final_clear_student.zip`；97,086,130 bytes。
+- ZIP 內模型路徑：`student/adapter`。
+- ZIP SHA-256：`047873f5db94168bbf8a924dea41a260f7fdedcb2b344b1e5eeb6bb2c93f483f`。
+- Adapter SHA-256：`60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5`。
+- Base：`meta-llama/Llama-3.2-3B-Instruct`，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
+
+ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base；直接載入 final_clear adapter，不要再疊加 v15 adapter。GPU 已停止，沒有排程下一輪。
+
+## 本次工作
+
+本輪使用固定、清楚的數學問法，學生輸出代入數值的算式，算術由程式處理。共 18 類，訓練 1,152 筆、development 72 題、final test 144 題；各集合語意鍵與完整數值題情境不重疊。教材由助理根據核實的數學規則修正、擴充，其中 17 類有既有 70B 老師答案作依據，均勻分布均值類為助理規則教材；不是 1,152 筆新生成的 70B 回答。本輪新增雲端老師 API 呼叫為 0。
+
+只跑一次、1 epoch、144 updates，固定採用最後權重。訓練約 10.72 分鐘，基準、訓練及全部 432 次推論合計約 24.37 分鐘（不含準備與封存）。最終測試未用於選 checkpoint、修改教材或訓練。事前成功門檻為總分至少 +5/144、18 類各不低於 v15、無待判；實際 +37，通過。
 
 ## 文件入口
 
-- [最終成果、全部 16 題原始配對輸出](docs/STATS_BOUNDED_SUCCESS_EXAMPLE.md)
-- [目前狀態與版本定位](docs/STATS_CURRENT_STATUS.md)
-- [V57 完整比較結果及限制](docs/STATS_SEMANTIC_COURSE_RESULTS.md)
-- [模型恢復指引](docs/KAGGLE_RECOVERY.md)
-- [目前任務範圍](PROJECT_SPEC.md)
-- [接續工作狀態](docs/STATS_NEXT_RUN_STATUS.md)
-
-**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
-
-專案最早以古典音樂為構想，後來轉為使用者授權的統計列式試驗。老師使用 Meta Llama，學生為約 3B 的 Meta Llama；數學列式與計算分開。歷史內容保留供查證，並不表示仍在訓練音樂模型。
-
-<details>
-<summary>歷史紀錄（保留原文；不是目前狀態或執行指令）</summary>
-
-# 3Beethoven
-
-Latest: six training-seed runs, harmonized MC, and all pending-answer reviews are complete. See [final results](docs/STATS_SEED_REPLICATION_REPORT.md). No new training is running. Earlier unexecuted-status paragraphs below are historical.
-
-**A tiny local classical-music snob, distilled from a much larger Llama teacher.**
-
-3Beethoven is an experiment in **response distillation / synthetic-data distillation**. The goal is to use a large cloud-hosted Meta Llama model as a teacher, then train a much smaller local Llama student to become a focused classical-music specialist.
-
-The project is intentionally playful on the surface and rigorous underneath.
-
-## Latest analysis — completed, Kaggle Version 38
-
-Saved v15/v19 weights were evaluated on 656 responses with zero training updates or teacher calls. Original / paraphrased / magnitude probes: v15 **18/24, 6/24, 19/24**; v19 **24/24, 15/24, 24/24**. Template success is fragile to wording. Same-runtime permanent MC: **126/240 vs 127/240**, without evidence of reliable improvement. Training-seed replication is designed but **not executed**. Keep v15; v19 remains diagnostic.
-
-[Complete analysis and evidence](docs/STATS_V19_ANALYSIS_REPORT.md) · [Current status](docs/STATS_CURRENT_STATUS.md)
-
-## Current experiment — v0.19 completed and saved
-
-Kaggle Version 37 is Successful. Training stopped after one epoch / 60 updates at the preregistered retention gate. Same-test reviewed v15 / v19: new chains **72/96 / 96/96**; historical skill families **59/96 / 56/96**. Exactly-one event performance falls from 10/12 to 1/12, so v19 is not promoted. All 21 pending answers have been reviewed. Zero new teacher calls.
-
-[Full report and recovery](docs/STATS_V0_19_REPORT.md) · [Current status](docs/STATS_CURRENT_STATUS.md) · [Research motivations](docs/STATS_MOTIVATION_EXPECTATIONS.md)
-
-## Previous experiment — v0.17 completed, 2026-09-06 PDT
-
-**Exact adapter mixtures and conservative retraining are complete; neither is promoted.**
-
-| Same fresh 96-question unaided formulation test | Correct |
-|---|---:|
-| v0.15 | 64/96 |
-| v0.16 | 57/96 |
-| 75% v0.15 + 25% v0.16 delta mixture | 65/96 |
-| v0.17 retrained, validation-selected step 8 | 64/96 |
-
-The mixture gains five answers and loses four; the new student gains one and loses
-one. Old MC stays 127/240 for v0.15 and the selected student. A 32-step rehearsal
-run completed on 256 verified historical Llama targets, with zero new teacher calls.
-Three mixture ratios and three training checkpoints were selected using a separate
-48-question balanced validation set before the final test.
-
-v0.16 reaches **9/12 second moments and 12/12 affine Poisson variance without
-formula reminders on this test**, but loses waiting-time and interval skills.
-Complementary capabilities are present; successful single-model consolidation is
-not established. Keep v0.15 as the general candidate and preserve the alternatives.
-The prompt explicitly permits `comb(n,r)` and differs from the earlier experiment;
-absolute scores across runs are not directly comparable.
-
-See the [full v0.17 report](docs/STATS_V0_17_REPORT.md),
-[all raw results](docs/STATS_V0_17_RESULTS.json),
-[semantic review](docs/STATS_V0_17_SEMANTIC_REVIEW.json), and
-[weight recovery/backup status](docs/MODEL_BACKUP_STATUS.json).
-
-## Previous v0.16 experiment — 2026-09-06 PDT
-
-**v0.16 training and evaluation are complete. It is not a general replacement for v0.15.**
-
-| Same new test, semantic formulation review | v0.15 | v0.16 |
-|---|---:|---:|
-| Unaided, 96 questions | **34/96** | 29/96 |
-| Task-specific formula reminders, 24 weak-family questions | 11/24 | **22/24** |
-| Old multiple-choice retention | 127/240 | 126/240 |
-
-The student completed 150 optimizer steps through full reminders, quantity-only
-cues and no reminders. Unaided moments improve 0/12→3/12 and affine Poisson variance
-1/12→4/12, but other families regress. With rules, v0.16 reaches 10/12 moments and
-12/12 Poisson variance. Keep v0.15 as the general candidate and v0.16 as a
-rule-assisted specialist candidate. A complete skill/router system is not yet tested.
-The earlier 44/64 score below uses different questions and output instructions.
-
-All 720 responses, 392 finite tensors and ZIP integrity passed verification.
-Teacher cost: US$0.010648875. See the [full v0.16 report](docs/STATS_V0_16_REPORT.md),
-[raw results](docs/STATS_V0_16_RESULTS.json), [semantic review](docs/STATS_V0_16_SEMANTIC_REVIEW.json),
-and [backup status](docs/MODEL_BACKUP_STATUS.json).
-
-## Previous v0.15 experiment
-
-**v0.15 student training is complete: 44/64 correctly grounded formulations (68.8%).**
-The student emits a numerical expression; an exact calculator performs arithmetic.
-Training uses verified 70B responses, decomposed moment tasks, more weak-family
-practice and 32 replay examples. 200 train / 30 validation, 75 steps, checkpoint-75
-selected by validation loss only.
-
-| Same new 64-question test | Vanilla 3B | v0.14 | v0.15 |
-|---|---:|---:|---:|
-| Frozen automatic score | 8/64 | 30/64 | 42/64 |
-| Supplemental semantic review | 8/64 | 30/64 | **44/64** |
-| Old multiple-choice retention | 86/240 | 123/240 | 127/240 |
-
-Paired outcomes: 14 newly correct, zero newly wrong, 30 correct in both versions.
-Two equivalent numerical expressions receive supplemental credit; all original
-scores and raw responses remain unchanged. Student prompts and graders are
-identical within this comparison. The test is a bounded eight-family statistics
-set with new parameters, not a general reasoning benchmark.
-
-**The targeted moment problem is NOT solved yet.** Both versions score 0/8 on
-second moments and affine Poisson variance, despite verified teacher targets.
-Poisson time and conditional total wait improve from 0/8 to 6/8 each. Binomial,
-exactly-one, at-least-one and interval formulations reach 8/8 each. Intermediate
-steps were taught; a subsequent paired diagnostic now tests them separately.
-
-**New diagnostic: general formula reminders lift v0.15 to 7/8 on moments and 4/8
-on affine Poisson variance; v0.14 remains 0/8 on both with the same reminders.**
-The reminders contain no numeric answers. Unaided diagnostic results remain 0/8;
-number-role identification and independent mean/variance formulation are still
-unreliable. These are post-test diagnostic results, separate from the 44/64 score.
-See the [paired diagnostic and next teaching strategy](docs/STATS_V0_15_DIAGNOSTIC.md).
-
-The initial multi-rule teacher prompt accepted 133/168 train and 23/32 validation
-candidates. A separately recorded focused-teaching revision corrected 42 of 44
-rejected candidates, with no numeric gold supplied. Total teacher cost US$0.01766836.
-This combines several curriculum changes and does not isolate a decomposition-only effect.
-
-**Kaggle Version 29: Successful, weights and outputs saved.** All 912 predictions,
-392 finite weight tensors and ZIP integrity were verified. GitHub contains source,
-teacher records, results and semantic review; binary weights are preserved on Kaggle.
-
-- [Current status and category results](docs/STATS_CURRENT_STATUS.md)
-- [Frozen protocol and teaching decisions](docs/STATS_V0_15_PROTOCOL.md)
-- [Full results and teacher supplements](docs/STATS_V0_15_RESULTS.json)
-- [Initial teacher responses](docs/STATS_V0_15_TEACHER_INITIAL.json)
-- [Semantic review](docs/STATS_V0_15_SEMANTIC_REVIEW.json)
-- [Weight recovery](docs/KAGGLE_RECOVERY.md)
-- [Previous v0.14 run](docs/STATS_V0_14_TRAINING_RUN.md)
-
-## Core idea
-
-```text
-Large cloud Llama teacher
-        ↓
-Generate structured classical-music examples
-        ↓
-Validate and filter teacher output
-        ↓
-Fine-tune / response-distill a local ~3B Llama student
-        ↓
-Compare:
-  vanilla student vs distilled student vs teacher
-```
-
-## What the student should learn
-
-The first version focuses on mature, well-documented classical-music knowledge:
-
-- historical periods and chronology
-- composers and representative works
-- musical forms and genres
-- instrumentation and orchestration concepts
-- terminology
-- stylistic comparison using observable/historical features
-- correction of common misconceptions
-
-The project avoids subjective "who is greatest?" judgments as evaluation targets.
-
-## Why 3Beethoven?
-
-The joke is the mismatch between size and attitude: a roughly **3B-parameter** local model with the confidence of an unbearable conservatory expert.
-
-It may say things like:
-
-> You called Bach Romantic. My three billion parameters would like a word.
-
-But the joke is presentation only. Factual accuracy is evaluated separately.
-
-## Research question
-
-> Can a small local Llama inherit useful classical-music expertise from a much larger cloud Llama through response distillation?
-
-## Planned evaluation
-
-At minimum, compare:
-
-1. vanilla local student
-2. distilled local student
-3. cloud teacher
-
-Candidate metrics include factual accuracy, classification accuracy/F1, misconception correction, explanation quality, hallucination/error rate, latency, memory footprint, and model size.
-
-## Distillation paths
-
-### Phase 1 — current
-
-**Response distillation / synthetic-data distillation**
-
-The teacher generates high-quality structured examples; the local student trains on filtered teacher responses.
-
-### Future
-
-**Logit-based knowledge distillation**
-
-A later experiment may use teacher logits/soft targets, temperature scaling, softmax distributions, KL divergence, and distillation loss.
-
-## Important project rules
-
-See [`AGENTS.md`](AGENTS.md) before making changes.
-
-In particular:
-
-- no `Co-authored-by:` commit trailers
-- no AI/bot authorship metadata
-- no NDA or company-internal material
-- no secrets or API keys
-- no claims based only on cherry-picked demos
-- preserve a held-out evaluation set
-
-Full experiment design: [`PROJECT_SPEC.md`](PROJECT_SPEC.md)
-
-## Status
-
-**Historical checkpoint through v0.9.** Targeted v0.9 reached 64.06% on its frozen test, exceeding twice baseline, but missed the rotation-robustness goal and regressed slightly on the older test. At that checkpoint, v0.5 was retained as the broader comparison candidate. See the current experiment above for the subsequent formulation objective and v0.13/v0.14 status.
-
-| Checkpoint | Baseline | Trained v0.3 | Interpretation |
-|---|---:|---:|---|
-| Exposed development set, 24 questions | 33.3% | 75.0% | Development result |
-| New holdout, original order, 60 questions | 35.0% | 58.3% | Internally authored evaluation |
-| Same holdout, four cyclic rotations | 35.8% | 53.8% | Position-sensitivity diagnostic |
-| All four rotations correct | 1/60 | 17/60 | Robustness remains limited |
-
-- [Training report](docs/STATS_V0_3_RESULTS.md)
-- [Holdout report](docs/STATS_HOLDOUT_V1_RESULTS.md)
-- [Rotation report and raw responses](docs/STATS_ROTATION_V1_RESULTS.md)
-- [Teacher policy](docs/TEACHER_POLICY.md)
-
-Code and text results are preserved in GitHub. The adapter and holdout archives are in Kaggle version 5 (347584475); rotation results are in version 6 (347586668). Total recorded teacher usage through this checkpoint is 154 calls and $0.007196965 in response-reported costs, not a billing statement. Rotation evaluation added no teacher calls.
-
-The v0.4 repair reused the same teacher records with rotated letter targets. On a new 24-question, four-rotation probe, baseline / v0.3 / v0.4 scored 30.21% / 56.25% / 51.04%. The old-set gain (53.75% to 55.83%) did not carry over to this new probe; v0.4 is not promoted. Both trained models answered all rotations correctly for 8/24 new questions.
-
-- [v0.4 complete results and all 1,008 responses](docs/STATS_V0_4_RESULTS.md)
-- [v0.4 frozen protocol](docs/STATS_V0_4_PROTOCOL.md)
-- [Kaggle recovery and resume instructions](docs/KAGGLE_RECOVERY.md)
-
-The v0.4 model archive is preserved in Kaggle version 7 (347590242). This repair added zero teacher calls. The evidence supports partial transfer with remaining position sensitivity and weak arithmetic generalization, not a claim that distillation failed or that the teacher is inadequate. A subsequent study should examine training coverage and target weighting with a separately frozen evaluation.
-
-## Expanded curriculum experiment — completed
-
-v0.5 expanded to 180 training questions across 18 task families, 24 validation questions and 36 frozen test questions. All 204 teacher records were independently read before training; 27 records were revised by Llama to correct false or misleading explanations. Final student explanation targets remain Llama-only.
-
-| Same-run comparison | Baseline | v0.3 | v0.5 |
-|---|---:|---:|---:|
-| New 36 questions × four rotations | 40/144 (27.78%) | 52/144 (36.11%) | 72/144 (50.00%) |
-| New questions all four correct | 0/36 | 0/36 | 2/36 |
-| Old 60 questions × four rotations | 86/240 (35.83%) | 128/240 (53.33%) | 133/240 (55.42%) |
-| Old questions all four correct | 1/60 | 17/60 | 19/60 |
-
-All six new topic totals improved, but position sensitivity remains substantial. These are six parameterized test families, not 144 independent questions. The run increased curriculum coverage and training compute; it is not a compute-matched ablation. Training ran 135 steps, while validation selected the first-epoch checkpoint at step 45. Later validation losses worsened.
-
-The current v0.3 old-set result differs from historical 129/240 by one answer; the full report preserves and identifies the difference. Historical results above are not overwritten.
-
-- [Complete v0.5 report](docs/STATS_V0_5_RESULTS.md)
-- [All 1,152 model responses, runtime versions and logs](docs/STATS_V0_5_RESULTS.json)
-- [Teacher data audit and costs](docs/STATS_V0_5_DATA_AUDIT.md)
-- [Audited teacher records and provenance](docs/STATS_V0_5_TEACHER_DATA.json)
-- [Frozen v0.5 protocol](docs/STATS_V0_5_PROTOCOL.md)
-- [All frozen questions](docs/STATS_V0_5_FROZEN_QUESTIONS.json)
-- [Kaggle recovery instructions](docs/KAGGLE_RECOVERY.md)
-
-Kaggle version 8 (347596444) preserves the pre-training corpus; version 9 (347598932) preserves the complete model and verified ZIP. This run used 572 teacher calls and $0.037577505 in response-reported costs. Across recorded experiments: 726 calls and $0.044774470, not an account balance or invoice. Model archives remain on Kaggle; code and text results are in GitHub.
-
-## Same questions, paired teaching — v0.6 completed
-
-v0.6 reused the audited v0.5 questions and paired related Llama explanations. Independently rejected abstract lesson cards were preserved but excluded from training. The frozen new test and success thresholds were unchanged.
-
-| Same-run comparison on the v0.6 test | Baseline | v0.5 | v0.6 |
-|---|---:|---:|---:|
-| New 48 questions × four rotations | 55/192 (28.65%) | 79/192 (41.15%) | 79/192 (41.15%) |
-| New questions all four correct | 0/48 | 10/48 | 9/48 |
-| Old 60 questions × four rotations | 86/240 (35.83%) | 133/240 (55.42%) | 140/240 (58.33%) |
-
-**No fresh-test gain; all three success thresholds were missed. v0.6 is not promoted.** These 48 questions differ from the v0.5 test above. The teacher scored 30/48 (62.50%) in original order; that is not a rotation average. Sequence count and optimizer schedule matched v0.5, but longer paired targets added tokens and repeated exposure, so this is not a compute-matched ablation.
-
-- [Complete v0.6 report](docs/STATS_V0_6_RESULTS.md)
-- [All 1,296 student responses, teacher answers and logs](docs/STATS_V0_6_RESULTS.json)
-- [Data audit and protocol deviation](docs/STATS_V0_6_DATA_AUDIT.md)
-- [Frozen protocol](docs/STATS_V0_6_PROTOCOL.md)
-- [Recovery instructions](docs/KAGGLE_RECOVERY.md)
-
-Kaggle version 10 (347602173) preserves preparation; version 11 (347605195) preserves the selected adapter and verified ZIP. This run added 113 teacher calls and $0.005929430 in response-reported costs. Cumulative recorded usage is 839 calls and $0.050703900, not an account balance or invoice. The GPU session was stopped after successful preservation.
-
-## Student failure diagnosis — v0.7 completed
-
-Inference-only comparison of baseline and v0.5 on 24 exposed questions (576 responses): v0.5 maps a supplied correct value to its option in 96/96 cases, but solves only 41/96 original MC rotations. After explicit format review, no-choice direct answers are 4/24 correct; supplied-rule answers 5/24; supplied arithmetic expressions 6/24. Observed errors include variance scaling, probability arithmetic and interval endpoint rules. These are diagnostic conditions, not new held-out accuracy.
-
-Short-calculation outputs were often truncated (baseline 16/24, v0.5 6/24), so their scores cannot establish unconstrained reasoning performance. The report preserves strict scores, all raw answers and every format-only correction. Both models reproduce all 96 original MC outputs.
-
-- [Complete diagnosis and concrete errors](docs/STATS_DIAGNOSTIC_V0_7_RESULTS.md)
-- [Raw responses and format audit](docs/STATS_DIAGNOSTIC_V0_7_RESULTS.json)
-- [Fixed diagnostic protocol](docs/STATS_DIAGNOSTIC_V0_7_PROTOCOL.md)
-
-No weights changed and no teacher calls were made. Results are preserved in Kaggle version 12 (347608100); GPU stopped. v0.5 remains the leading experimental candidate.
-
-## Prompt and output-length diagnosis — v0.8 completed
-
-On the same 24 exposed questions, compact supplied-arithmetic strict scores rose to baseline 14/24 and v0.5 18/24 (format review: 18/24 and 20/24). Extending previously truncated original-step outputs yielded 8/24 and 10/24 strict. Compact full-problem scores were 3/24 and 8/24: compact formatting alone was not universally better. These results qualify the earlier interpretation of broad arithmetic weakness and highlight problem-to-formula translation as a remaining bottleneck. There were no teacher calls or weight changes.
-
-- [v0.8 report and limitations](docs/STATS_DIAGNOSTIC_V0_8_RESULTS.md)
-- [All responses and explicit format review](docs/STATS_DIAGNOSTIC_V0_8_RESULTS.json)
-
-The v0.8 archive and audited v0.9 preparation are preserved in Kaggle version 13 (347615356). v0.9 uses 180 new targeted training examples and a separately frozen 48-question test; its [protocol](docs/STATS_V0_9_PROTOCOL.md), [teacher corpus](docs/STATS_V0_9_TEACHER_DATA.json), and [data audit](docs/STATS_V0_9_DATA_AUDIT.md) are preserved before the final comparison.
-
-## Targeted concise teaching — v0.9 completed
-
-Same-run new-test MC: baseline 59/192 (30.73%), v0.5 91/192 (47.40%), v0.9 123/192 (64.06%). Two of three predefined goals met: ≥60% and ≥2×baseline. All-four correct improved from 0/48 to 8/48 to 17/48, still below the 24/48 goal.
-
-No-choice strict scores: 9/48, 11/48, 33/48; independent format review: 18/48, 12/48, 33/48. Gains concentrate in squared expectation and conditional-uniform skills. Fraction arithmetic remains weak. Old-test v0.9 127/240 (52.92%) is below historical v0.5 133/240 (55.42%); those old controls were not rerun. This is targeted skill transfer, not proof of general mathematical improvement.
-
-- [Complete report, costs and limitations](docs/STATS_V0_9_RESULTS.md)
-- [960 student responses, teacher answers, logs and explicit format audit](docs/STATS_V0_9_RESULTS.json)
-- [Model recovery and exact archive hashes](docs/KAGGLE_RECOVERY.md)
-
-This run used 467 teacher calls and US$0.024613645 in reported response costs. Recorded cumulative usage is 1,306 calls and US$0.075317545, not an account balance or invoice.
-
-
-## v0.10 completed — 2026-09-05 PDT
-
-Installation was authorized and completed; training and all 1,200 student responses finished. Same-test numeric scores improved 13/48 to 20/48 and MC 67/192 to 87/192; old MC 127/240 to 130/240. Primary improvement/half-correct goals were not met. See [reviewed report](docs/STATS_V0_10_REPORT.md) and complete raw STATS_V0_10_RESULTS.json. Fraction arithmetic remains the principal bottleneck.
-
-Kaggle Quick Save version 18 (script version 347636958) is Successful and contains final 93,104,858-byte 3beethoven_stats_v0_10.zip, SHA-256 470e4013b2f11ef52e6bd60736f73a1121e66e0bfe757093a8d3fd4e9affc677. Selected adapter SHA-256 14812770a7e612ab984e4ffad54bf514a3e00425655aa5adf732b975502f96f9. Restore version 18, not preparation-only version 15. GitHub stores code/data/results; binary backup status is in MODEL_BACKUP_STATUS.json.
-
-
-## v0.11 completed — 2026-09-06 PDT
-
-Hybrid exact-arithmetic SFT plus prior teacher-response rehearsal produced a mixed outcome. Independently reviewed canonical arithmetic:43/60 to39/60; equivalent representations:23/60 to31/60; both representations correct:22/60 to27/60; fresh statistical transfer:16/48 to16/48; old MC:130/240 to133/240. These are matched comparisons on the same new questions, not the previous v0.10 benchmark. Primary gain and statistical-transfer goals failed; retain both models without blanket promotion of v0.11. The selected first-epoch checkpoint was chosen by validation before tests; all816 responses and392 finite adapter tensors were verified. Zero new teacher API calls.
-
-See [full reviewed report](docs/STATS_V0_11_REPORT.md) and [raw responses and independent format audit](docs/STATS_V0_11_RESULTS.json). Final binary locations are tracked in MODEL_BACKUP_STATUS.json. The arithmetic follow-up was pursued in v0.12; the current objective has since changed to correct formulation with arithmetic delegated to a tool. Historical arithmetic endpoints remain unchanged.
-
-
-</details>
+- [完整結果、18 類比較與錯誤改正範例](docs/STATS_FINAL_CLEAR_RESULTS.md)
+- [機器可讀結果](docs/STATS_FINAL_CLEAR_RESULTS.json)
+- [目前狀態](docs/STATS_CURRENT_STATUS.md) · [模型恢復](docs/KAGGLE_RECOVERY.md)
+- [事前協議](docs/STATS_FINAL_CLEAR_PROTOCOL.md) · [資料清單與來源](docs/STATS_FINAL_CLEAR_MANIFEST.json)
+- [固定單輪執行程式](scripts/run_stats_final_clear.py) · [專案規格](PROJECT_SPEC.md)
+- [完成交接](docs/STATS_EXECUTION_HANDOFF.md) · [後續狀態：無下一輪](docs/STATS_NEXT_RUN_STATUS.md)
+- [V57 歷史實驗](docs/STATS_SEMANTIC_COURSE_RESULTS.md) · [舊局部範例](docs/STATS_BOUNDED_SUCCESS_EXAMPLE.md)
+
+原始音樂概念與早期實驗保留為歷史背景。Kaggle 版本號是 notebook 保存版本，不能直接當作學生世代或品質排名；模型身份應以 adapter 路徑與雜湊判定。
