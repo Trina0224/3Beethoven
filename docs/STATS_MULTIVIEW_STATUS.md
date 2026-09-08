@@ -1,3 +1,21 @@
+# Multiview pilot — completed
+
+2026-09-07 17:52 PDT (America/Los_Angeles)
+
+The explicitly authorized two-seed experiment is complete. All130 planned updates and1152 selection/probe generations are finished. Actual1032 microbatches and all archived file hashes verified; no pending semantic judgments. GPU stopped and UI confirmed.
+
+New wording performance improved on the small crossed probe: known-number/unseen wording5/12→11/12 for both seeds; new-number/unseen wording4/12→7/12 and6/12. None of the eight checkpoints passed all unchanged original gates, so v15 remains preferred. Both step48 candidates preserve old/chain gates but still fail neither-event coverage; all weights remain available for research.
+
+[Report](STATS_MULTIVIEW_REPORT.md) · [Full results](STATS_MULTIVIEW_RESULTS.json) · [Verified download receipt](STATS_MULTIVIEW_DOWNLOAD.json) · [All weight hashes](STATS_MULTIVIEW_WEIGHT_MANIFEST.json)
+
+Saved Kaggle Version55, scriptVersionId348091555: [portable archive and full output](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348091555&select=3beethoven_stats_multiview_download.zip). Portable archive includes original v15 plus two final diagnostic students;279618858bytes,SHA25645646ed868207cf16723a105455d24dd8d95348a032a621fa43184657f123144. ZIP CRC and460 file hashes verified after download. Full output preserves all eight checkpoint adapters and optimizer states.
+
+Do not rerun this experiment. Read the report's problem analysis and freeze a separate next protocol before more generation/training. The prior approval blocker was resolved by the user's explicit「允許」; no renewed permission is needed for already authorized actions.
+
+## Historical preparation and resolved blocker
+
+The following text records the pre-execution state; it is superseded by the completed result above.
+
 > Execution update: user explicitly replied「允許」to the exact data-use/training/evaluation/save scope. The approval blocker is resolved. Original v15 weights and Version54 teacher/review data were restored and hash-verified; corpus regeneration and both contract tests passed in Kaggle. Prepared baseline and the two-seed driver have started. Prior blocked state below is retained as history. Kaggle SDK switches the mounted version for this same notebook when fetching Version42/54; use returned paths and copy each required artifact into a stable working input directory before switching versions.
 
 # Multiview pilot execution checkpoint
