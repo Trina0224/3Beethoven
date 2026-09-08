@@ -6,6 +6,7 @@ import hashlib
 import importlib.metadata
 import json
 import os
+import glob
 from pathlib import Path
 
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "0")
@@ -71,6 +72,20 @@ def main():
     args = parser.parse_args()
     if args.output.exists():
         raise RuntimeError("Output exists; refusing a second student trajectory")
+    if not (args.parent / "adapter_model.safetensors").exists():
+        matches = [Path(path).parent for path in glob.glob(
+            "/kaggle/input/**/v15_probe/adapter/adapter_model.safetensors", recursive=True
+        ) if sha(path) == PARENT_SHA256]
+        if len(matches) != 1:
+            raise RuntimeError(f"Could not resolve the frozen v15 parent: {matches}")
+        args.parent = matches[0]
+    if not args.teacher.exists():
+        matches = [Path(path) for path in glob.glob(
+            "/kaggle/input/**/STATS_DIVERSE_TEACHER_RESULTS.json", recursive=True
+        )]
+        if len(matches) != 1:
+            raise RuntimeError(f"Could not resolve frozen teacher results: {matches}")
+        args.teacher = matches[0]
     if sha(args.parent / "adapter_model.safetensors") != PARENT_SHA256:
         raise RuntimeError("v15 parent SHA-256 mismatch")
 
