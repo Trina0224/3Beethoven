@@ -1,0 +1,100 @@
+{
+  "protocol_sha256": "84bcf3a84a51d395265edf0a0f2b373830a80de39d0a347be58ec4cc572dbcdf",
+  "initial_blocked_identities": 2765,
+  "source_files": [
+    {
+      "file": "STATS_CONSOLIDATION_CANDIDATE_STORIES.json",
+      "sha256": "87f6a75ebf39a6547d30b4f3e74f0e059e490f9e2a214b713356522e48a6061e",
+      "questions_scanned": 268
+    },
+    {
+      "file": "STATS_CONSOLIDATION_HOLDOUT.json",
+      "sha256": "c30e1cf15e972b4f178bd6a5d402ed9a1da6d745dc01049534b12abd5dab7183",
+      "questions_scanned": 288
+    },
+    {
+      "file": "STATS_CONSOLIDATION_SELECTION_VALIDATION.json",
+      "sha256": "10e7e2228cc7396e76e1283482a855fa5e62b4c1cd9e53848c258b183d221c89",
+      "questions_scanned": 112
+    },
+    {
+      "file": "STATS_CONSOLIDATION_TEACHER_BENCHMARK.json",
+      "sha256": "9fdeea63ca4e3cb0b1cf906f624be91adfa80ebe164cbed92efa3fb818d95133",
+      "questions_scanned": 24
+    },
+    {
+      "file": "STATS_MULTIVIEW_CORPUS.json",
+      "sha256": "381911b9978d96801f457d788b8017f01dddd206d6feda7ed03681b575f96e1d",
+      "questions_scanned": 48
+    },
+    {
+      "file": "STATS_PERMANENT_ANCHOR_V1.json",
+      "sha256": "ee141365e07e5b838c40e270d22276bc02e17cf85f884f7b6074141d1951b3c0",
+      "questions_scanned": 192
+    },
+    {
+      "file": "STATS_TEACHER_AB_DATA.json",
+      "sha256": "0e3513dafc70804cc2d90cab7d84bdaea917c0651d0300b4131b2a277d11b199",
+      "questions_scanned": 24
+    },
+    {
+      "file": "STATS_V0_13_FROZEN_QUESTIONS.json",
+      "sha256": "192d8ff8a214349968db62c0d1f659a1817345677effe2328c3a68e087ad9ff8",
+      "questions_scanned": 544
+    },
+    {
+      "file": "STATS_V0_14_FROZEN_QUESTIONS.json",
+      "sha256": "78da1ed6f18c5068e6dd0cc2608be16292c9eaa67c98d3864ca1db7691430d38",
+      "questions_scanned": 224
+    },
+    {
+      "file": "STATS_V0_14_TEACHER_PERTURBATIONS.json",
+      "sha256": "14bc722c03b772df8750dbb38c69e900b86fe88308a08f806933b4245b2f5852",
+      "questions_scanned": 48
+    },
+    {
+      "file": "STATS_V0_14_TEACHER_SCAFFOLD.json",
+      "sha256": "98448816c00fd5fc0e4cb3a30ea2451ba339a07acf133a9e98409c77c1429f2b",
+      "questions_scanned": 48
+    },
+    {
+      "file": "STATS_V0_15_FROZEN_QUESTIONS.json",
+      "sha256": "d7df943fa318ffbaeffabd12834a8f345c54f71c48f8c8cc1cbef8c78ba55f1f",
+      "questions_scanned": 240
+    },
+    {
+      "file": "STATS_V0_16_FROZEN_QUESTIONS.json",
+      "sha256": "db2a2a3513e680ca64cea2d2a80e84f23e332377b140bcbc5150ccd0311c0f6c",
+      "questions_scanned": 156
+    },
+    {
+      "file": "STATS_V0_17_FROZEN_QUESTIONS.json",
+      "sha256": "6b686160203e15ca9cc6be270ec2fe98efeccfcf961be560505af3d2eb477908",
+      "questions_scanned": 144
+    },
+    {
+      "file": "STATS_V0_18_FROZEN_QUESTIONS.json",
+      "sha256": "0e51ed04578b29e8d91f931dfbeec78a94867ba3d52dd6a45e06c45ee186f57c",
+      "questions_scanned": 432
+    },
+    {
+      "file": "STATS_V0_19_FROZEN_QUESTIONS.json",
+      "sha256": "44935d14b7cc876b340ac92eb74ec5560229fe0227f34eaba1b930d5177d584f",
+      "questions_scanned": 288
+    },
+    {
+      "file": "STATS_V0_20_FROZEN_QUESTIONS.json",
+      "sha256": "e66c47dc3e45195ded1bb84a977cf8b4384dd69b6a59656b4fcfea58d63769e2",
+      "questions_scanned": 352
+    },
+    {
+      "file": "STATS_V19_PERTURBATION_QUESTIONS.json",
+      "sha256": "2e562ae07c0cd22236136e522dd83420d43e20a1519c9bde32a4b0a59f814536",
+      "questions_scanned": 88
+    }
+  ],
+  "train_sha256": "61f7353955e72969ebc8be7745e7bc2548bc01375f9d8810bb01044c91242d82",
+  "probe_sha256": "4272990b96525505f0ed99a1ce254e6a4ca89987deb5eff5bf685a7fcb29bd35",
+  "new_identities": 192,
+  "overlap": 0
+}
