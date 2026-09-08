@@ -1,16 +1,18 @@
-# 最後一次實驗：final_clear 在約定列式範圍內勝過原 v15
+# V58 歷史窄模板結果：採用與成功解讀已撤回
+
+> **2026-09-08 解讀修正：**本頁保留 V58 當時的題目、分數、權重與交付事實，不刪除原始 107/144 → 144/144 結果；但 `final_clear` 已撤回採用資格，不再稱為目前成功學生。後續稽核發現教材及評估的結構多樣性不足，原內部 gate 只能說明這套狹窄 clear-interface 模板上的表現。外部 24 題結構診斷只留下聚合 v15 10/24、V58 16/24，逐題 raw bundle 未保存在 GitHub 或 Kaggle 保存版，因此也不能作新一輪可重現 gate。現行狀態見 [STATS_CURRENT_STATUS.md](STATS_CURRENT_STATUS.md)，完整撤回理由見 [STATS_V58_POSTMORTEM.md](STATS_V58_POSTMORTEM.md)。
 
 完成時間：2026-09-07T23:05:46.898008-07:00（America/Los_Angeles）
 
-## 最終結論
+## 原始內部結論（升級解讀已撤回）
 
-**成功學生是 `final_clear`，不是 V57 repeat_control。** 最後同題保留測試：原 v15 **107/144（74.3%）**，final_clear **144/144（100%）**。18 類全部不退步；9 類改善、9 類維持滿分。原先正確的 107 題全部保住，改正 37 題，退步 0 題。所有待判答案均完成複核。
+**依當時內部 gate，`final_clear` 通過了這批固定題；這不再等同於採用或成功學生。** 同題窄模板測試：原 v15 **107/144（74.3%）**，final_clear **144/144（100%）**。18 類在該題集全部不退步；9 類改善、9 類維持滿分。原先正確的 107 題全部保住，改正 37 題，退步 0 題。所有待判答案均完成複核。
 
-這次符合使用者的成功定義：在事前約定的統計列式範圍內，整體優於 v15 並保留各類能力。先前 V57 的事件局部 16/16 不符合此定義，已撤回「最後成功學生」定位，僅保留歷史實驗紀錄。
+當時曾將這組結果解讀為符合成功定義；此解讀現已撤回。V57 與 V58 都只保留為歷史實驗：V57 是事件局部結果，V58 是窄模板整體結果，兩者均未建立跨結構、全面優於 v15 的可重現證據。
 
 ## 固定範圍與成功門檻
 
-[執行前協議](STATS_FINAL_CLEAR_PROTOCOL.md) 在新教材生成、基準推論與訓練前提交（commit `08f2afc6ed0426e55cd31826df07ae3bf67d1b6b`）。成功須新測試總分至少 +5/144，且 18 類逐類正確數均不低於 v15，無待判答案；實際 +37，全部通過。
+[執行前協議](STATS_FINAL_CLEAR_PROTOCOL.md) 在新教材生成、基準推論與訓練前提交（commit `08f2afc6ed0426e55cd31826df07ae3bf67d1b6b`）。當時內部 gate 要求總分至少 +5/144、18 類逐類不低於 v15、無待判；V58 在該題集實際 +37 並通過。這個歷史 gate 後來判定覆蓋不足，不再作現行升級標準。
 
 採直接、固定的數學問法，明列 E[X]、Var(X)、E[Y]、Var(Y)、E[Y²] 或事件與條件；學生輸出已代入數值的算式，算術交給程式。不要求陌生措辭、隱含定義、選擇題或自由形式語文泛化。原 v15 和新學生的題目、提示與評分方式完全相同。
 
@@ -92,7 +94,7 @@ A normal-theory confidence interval is [48, 175]. Sample size is multiplied by 4
 
 **新數值教材是助手編寫的參數展開，不是新呼叫 70B 所得的原始回答。** 17 類記錄了既有已驗證老師答案作規則來源；uniform_mean 沒有在所用來源集合找到對應老師錨點，明確標記為助手提供的均勻分布規則。這是承接老師蒸餾學生的 teacher-informed SFT／response-distillation 後續實驗，含明示的人工式教材修正與合成展開，不是純未修改老師輸出或 logits 蒸餾。新老師 API 呼叫為 0。
 
-這次一起改變了提示標準化、例題分布、參數練習和學習率，結果不能單獨歸因於其中一項。低訓練 loss 沒有被用來宣稱成功，成功依據是事前固定的同題保留測試。
+這次一起改變了提示標準化、例題分布、參數練習和學習率，結果不能單獨歸因於其中一項。低訓練 loss 不是能力證據；當時依據的同題保留測試後來也因結構覆蓋不足而不再支持成功升級。
 
 ## 學生身份、訓練與成本範圍
 
@@ -116,9 +118,9 @@ A normal-theory confidence interval is [48, 175]. Sample size is multiplied by 4
 
 驗證環境：torch 2.10.0+cu128、transformers 5.0.0、peft 0.19.1、bitsandbytes 0.50.2、accelerate 1.13.0、datasets 5.0.0。推論採 greedy、max_new_tokens=160，使用相同 Llama chat template 與既有數值前處理。
 
-**本輪工作完成後停止，不再自動安排下一個學生。**
+**以上是 V58 當時的執行紀錄；後續已另行撤回升級並開始新的訓練前準備。**
 
-## 已保存模型
+## 已保存模型（歷史封存，不是現行採用學生）
 
 [下載 V58 模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip)（Kaggle Version 58，scriptVersionId `348141342`，Successful）。
 
@@ -128,6 +130,6 @@ A normal-theory confidence interval is [48, 175]. Sample size is multiplied by 4
 - Adapter SHA-256：`60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5`。
 - Base：`meta-llama/Llama-3.2-3B-Instruct`，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
 
-ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base；直接載入 final_clear adapter，不要再疊加 v15 adapter。GPU 已停止，沒有排程下一輪。
+ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base。它只供 V58 歷史稽核；新的受控實驗不得以它為父模型，而應恢復原 v15。
 
 交付資訊於模型封存後補入 GitHub；沒有因此重新訓練或改動封存模型。

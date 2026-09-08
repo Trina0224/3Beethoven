@@ -13,8 +13,39 @@ from pathlib import Path
 from stats_curriculum_v0_19 import score as historical_score
 from formulation_grader import parse_expression, shape
 from stats_consolidation_semantics import spec_for, validate_question
+from exact_calculator import calculate
 
-GRADER_VERSION = "stats-consolidation-v3-reviewed-partial-folds"
+GRADER_VERSION = "stats-consolidation-v5-whole-raw-diagnostic"
+
+
+_RAW_EXPRESSION_CHARACTERS = re.compile(r"(?:[0-9(),+\-*/\s]|comb)+\Z")
+
+
+def validate_raw_expression(raw):
+    """Return the unchanged executable expression and its exact value.
+
+    The historical grader intentionally extracts a useful expression from
+    labels, assignments, semicolon-delimited work, comments, and a few
+    alternate syntaxes. That tolerance is useful for retrospective review,
+    but it must not make malformed text an executable training target or a
+    primary-success output. This contract therefore accepts only a complete
+    one-line arithmetic expression, with an optional ``Expression:`` label.
+
+    No rewriting is performed: ``^``, assignments, comments, prose, decimal
+    literals, names, and functions other than ``comb`` are rejected. The
+    bounded exact calculator provides the AST allowlist, arity checks, and
+    resource limits.
+    """
+    if not isinstance(raw, str):
+        raise TypeError("raw model response must be a string")
+    text = raw.strip()
+    if not text or "\n" in text or "\r" in text:
+        raise ValueError("raw response must contain one non-empty line")
+    labelled = re.fullmatch(r"Expression\s*:\s*(.+)", text, flags=re.IGNORECASE)
+    expression = labelled.group(1).strip() if labelled else text
+    if not expression or not _RAW_EXPRESSION_CHARACTERS.fullmatch(expression):
+        raise ValueError("raw response is not an unchanged allowed expression")
+    return expression, calculate(expression)
 
 
 def grader_fingerprint():
@@ -34,6 +65,19 @@ def reviewed_shape(expression):
                     return node.left
                 if node.right.value == 0:
                     return ast.Constant(value=1)
+            if isinstance(node.op, ast.Mult):
+                if isinstance(node.left, ast.Constant) and node.left.value == 1:
+                    return node.right
+                if isinstance(node.right, ast.Constant) and node.right.value == 1:
+                    return node.left
+            if isinstance(node.op, ast.Add):
+                if isinstance(node.left, ast.Constant) and node.left.value == 0:
+                    return node.right
+                if isinstance(node.right, ast.Constant) and node.right.value == 0:
+                    return node.left
+            if (isinstance(node.op, ast.Sub) and isinstance(node.right, ast.Constant)
+                    and node.right.value == 0):
+                return node.left
             return node
 
         def visit_Call(self, node):
@@ -55,7 +99,27 @@ def equivalent_references(q):
     refs = [q["expression"]]
     def number(value):
         value = F(value)
-        return str(value.numerator) if value.denominator == 1 else f"({value.numerator}/{value.denominator})"
+        if value.denominator == 1:
+            rendered = str(value.numerator)
+            return f"({rendered})" if value < 0 else rendered
+        return f"({value.numerator}/{value.denominator})"
+    if s["kind"] == "events":
+        p, z = "("+s["p"]+")", "("+s["p_b"]+")"
+        target = s["target"]
+        # Standard Boolean-algebra expansions.  These remain structural
+        # references containing both supplied probabilities; numerical
+        # agreement alone is still insufficient for credit.
+        if target == "neither":
+            refs += [f"1-{p}-{z}+{p}*{z}", f"1-({p}+{z}-{p}*{z})"]
+        elif target == "at_least_one":
+            refs += [f"{p}+{z}-{p}*{z}", f"{p}+(1-{p})*{z}",
+                     f"{z}+(1-{z})*{p}"]
+        elif target == "exactly_one":
+            refs += [f"{p}+{z}-2*{p}*{z}",
+                     f"({p}+{z}-{p}*{z})-{p}*{z}"]
+        elif target == "same":
+            refs += [f"1-{p}-{z}+2*{p}*{z}",
+                     f"1-({p}+{z}-2*{p}*{z})"]
     if s["kind"] == "uniform":
         t, u = "("+s["cutoff"]+")", "("+s["upper"]+")"
         # elapsed + expected remaining == conditional TOTAL mean.
@@ -69,6 +133,23 @@ def equivalent_references(q):
         half = number((F(s['upper'])-F(s['lower']))/2)
         refs += [f"{center}+{half}/{k}", f"{center}+({hi}-{lo})/(2*{k})",
                  f"({lo}+{hi})/2+{half}/{k}", f"{center}+({hi}-{center})/{k}"]
+    if s["kind"] == "binomial":
+        n, r, p = int(F(s["n"])), int(F(s["r"])), "("+s["p"]+")"
+        # Boundary factors that are identically one may be omitted. These are
+        # symbolic identities, not answer-only credit; wrong exponents or
+        # coefficients still have different reviewed shapes and values.
+        if r == 0:
+            refs += [f"(1-{p})**{n}", f"{p}**0*(1-{p})**{n}",
+                     f"comb({n},0)*(1-{p})**{n}"]
+        elif r == n:
+            refs += [f"{p}**{n}", f"comb({n},{n})*{p}**{n}",
+                     f"{p}**{n}*(1-{p})**0"]
+        elif r == 1:
+            refs += [f"{n}*{p}*(1-{p})**({n}-1)",
+                     f"{n}*{p}*(1-{p})**{n-1}"]
+        elif r == n-1:
+            refs += [f"{n}*{p}**({n}-1)*(1-{p})",
+                     f"{n}*{p}**{n-1}*(1-{p})"]
     if s["kind"] == "process" and s["target"] == "second_moment":
         rate, duration = "("+s["rate"]+")", "("+s["duration"]+")"
         refs += [f"{rate}*{duration}*(1+{rate}*{duration})"]
@@ -76,6 +157,10 @@ def equivalent_references(q):
             numerator, denominator = s["duration"].split("/", 1)
             converted = f"({s['rate']}/{denominator})*{numerator}"
             refs += [f"{converted}*(1+{converted})"]
+    if s["kind"] == "poisson" and s["target"] == "second_moment":
+        mean = number(F(s["mean"]))
+        refs += [f"{mean}*({mean}+1)", f"{mean}+{mean}**2",
+                 f"{mean}**2+{mean}"]
     if s["kind"] in ("poisson", "moments") and "scale" in s:
         scale = F(s["scale"])
         mean = F(s.get("mean", 0))
@@ -93,6 +178,18 @@ def equivalent_references(q):
                 f"+2*{number(scale)}*{number(offset)}*{number(mean)}+{number(offset)}**2",
             ]
             refs += [f"{number(scale*scale)}*{number(variance)}+({number(scale)}*{number(mean)}+{number(offset)})**2"]
+            # Fully distribute a^2 over Var(X)+E[X]^2.  This is a common,
+            # exact presentation and was previously left as review-pending.
+            refs += [
+                f"{number(scale)}**2*{number(variance)}"
+                f"+{number(scale)}**2*{number(mean)}**2"
+                f"+2*{number(scale)}*{number(offset)}*{number(mean)}"
+                f"+{number(offset)}**2",
+                f"{number(scale*scale)}*{number(variance)}"
+                f"+{number(scale*scale)}*{number(mean)}**2"
+                f"+{number(2*scale*offset)}*{number(mean)}"
+                f"+{number(offset*offset)}",
+            ]
             for cross in (f"2*{number(scale)}*{number(offset)}*{number(mean)}",
                           f"{number(2*scale)}*{number(offset)}*{number(mean)}",
                           f"{number(2*scale*offset)}*{number(mean)}"):
@@ -113,10 +210,25 @@ def score(raw, question):
         if any(candidate == reviewed_shape(ref) for ref in equivalent_references(question)):
             judged.update(math_correct=True, review_required=False,
                           reason="Reviewed algebraic identity plus exact agreement; no answer-only credit.")
+    historical_executable = judged.get("executable") is True
+    try:
+        raw_expression, raw_computed = validate_raw_expression(raw)
+        raw_contract_error = None
+        raw_executable = True
+    except (TypeError, ValueError, SyntaxError, RecursionError, OverflowError) as exc:
+        raw_expression = None
+        raw_computed = None
+        raw_contract_error = str(exc)
+        raw_executable = False
     judged["grader_version"] = GRADER_VERSION
     judged["raw_sha256"] = hashlib.sha256(raw.encode()).hexdigest()
+    judged["historical_executable_after_extraction"] = historical_executable
+    judged["whole_raw_expression"] = raw_expression
+    judged["whole_raw_computed"] = raw_computed
+    judged["whole_raw_expression_contract_error"] = raw_contract_error
+    judged["whole_raw_executable"] = raw_executable
     judged["strict_one_line_expression"] = bool(
-        re.fullmatch(r"\s*Expression:\s*[^\n]+\s*", raw)
+        raw_executable and re.fullmatch(r"\s*Expression:\s*[^\n]+\s*", raw)
     )
     judged["primary_correct"] = bool(
         judged.get("math_correct") is True and judged.get("executable") is True

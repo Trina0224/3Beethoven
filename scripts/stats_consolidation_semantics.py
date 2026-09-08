@@ -82,9 +82,15 @@ def oracle(spec):
                    for a in (0,1) for b in (0,1) if predicate(a,b))
     if k == "uniform":
         lo, hi, cut = f("lower"), f("upper"), f("cutoff")
-        require(0 <= lo < hi and lo <= cut < hi, "Invalid uniform support or impossible conditioning")
-        # Integral of t divided by the length of the conditional support.
-        return (hi**2-cut**2)/(2*(hi-cut))
+        require(lo < hi, "Invalid uniform support")
+        conditional = spec.get("conditional")
+        require(type(conditional) is bool, "Uniform conditional flag must be boolean")
+        if conditional:
+            require(lo <= cut < hi, "Impossible uniform conditioning")
+            # Integral of t divided by the length of the conditional support.
+            return (hi**2-cut**2)/(2*(hi-cut))
+        require(cut == lo, "Unconditional uniform cutoff must equal lower support")
+        return (lo+hi)/2
     if k == "interval":
         lo, hi, divisor = f("lower"), f("upper"), f("divisor")
         require(lo < hi and divisor > 0, "Invalid interval or sample-size factor")

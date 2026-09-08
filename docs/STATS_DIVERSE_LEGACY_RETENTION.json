@@ -1,0 +1,95 @@
+{
+  "categories": [
+    "both",
+    "neither",
+    "exactly_one",
+    "at_least_one",
+    "same",
+    "moment_mean",
+    "moment_variance",
+    "moment_second",
+    "poisson_variance",
+    "poisson_scaled",
+    "poisson_second",
+    "process_variance",
+    "process_scaled",
+    "process_second",
+    "uniform_mean",
+    "uniform_conditional",
+    "binomial",
+    "interval"
+  ],
+  "purpose": "V15-era capability retention only; not evidence of new-scope improvement",
+  "schema_version": "stats-diverse-legacy-retention-v1",
+  "source": {
+    "decoded_json_sha256": "c5ee6f022226469bd33c51dc95455ae8d130c07dc332d6dad9c084b27976f2c1",
+    "file_sha256": "efe223810a704455d234f388c2f1d74e001a16cdd079701319295d957c2759d1",
+    "gzip_payload_sha256": "63f6ae30240c5f3b5b97e23bc91221ab66b34d1965c25188ac572b57c25c40c4",
+    "repository_path": "docs/STATS_FINAL_CLEAR_DATA.json.gz.b64"
+  },
+  "splits": {
+    "development": {
+      "category_counts": {
+        "at_least_one": 4,
+        "binomial": 4,
+        "both": 4,
+        "exactly_one": 4,
+        "interval": 4,
+        "moment_mean": 4,
+        "moment_second": 4,
+        "moment_variance": 4,
+        "neither": 4,
+        "poisson_scaled": 4,
+        "poisson_second": 4,
+        "poisson_variance": 4,
+        "process_scaled": 4,
+        "process_second": 4,
+        "process_variance": 4,
+        "same": 4,
+        "uniform_conditional": 4,
+        "uniform_mean": 4
+      },
+      "count": 72,
+      "order_sha256": "c183c543341a56e16e96705a825734d3bd637a2a2031b0dcb750be457364207c",
+      "reference_targets_accepted": 72,
+      "reference_targets_pending": 0,
+      "rows_sha256": "52bf46dc3efe2a69966be57c0573e14dad68c52b832b3d31c76b646fc5f4c54c",
+      "source_split": "development"
+    },
+    "final": {
+      "category_counts": {
+        "at_least_one": 8,
+        "binomial": 8,
+        "both": 8,
+        "exactly_one": 8,
+        "interval": 8,
+        "moment_mean": 8,
+        "moment_second": 8,
+        "moment_variance": 8,
+        "neither": 8,
+        "poisson_scaled": 8,
+        "poisson_second": 8,
+        "poisson_variance": 8,
+        "process_scaled": 8,
+        "process_second": 8,
+        "process_variance": 8,
+        "same": 8,
+        "uniform_conditional": 8,
+        "uniform_mean": 8
+      },
+      "count": 144,
+      "order_sha256": "0384c5e822e98d24b9c596d5885e7e5ca86bf316598d0da43764b6ea766a359f",
+      "reference_targets_accepted": 144,
+      "reference_targets_pending": 0,
+      "rows_sha256": "852e5fe5feb34607e71c7adda3f24bf156a0cbdbc1f3f6ca3126372ae754f003",
+      "source_split": "test"
+    }
+  },
+  "status": "frozen_before_student_training",
+  "validation": {
+    "all_216_reference_targets_accepted": true,
+    "grader_fingerprint": "f73c1d38cbd5e1ab9454275300907aa6c6a43c3833a303441ffb1311c18ad68b",
+    "pending_equivalences": 0,
+    "rows_duplicated_into_this_manifest": false
+  }
+}

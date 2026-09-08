@@ -1,45 +1,40 @@
-# 目前狀態：final_clear 已成功完成
+# 目前狀態：V58 已撤回，受控重做仍在訓練前
 
-**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
+截至本次文件修正，沒有可稱為全面優於原 v15 的新學生。
 
-| 題型（每類 8 題） | 原 v15 | final_clear | 變化 |
-|---|---:|---:|---:|
-| 至少一個發生 | 7/8 | 8/8 | +1 |
-| 二項分布指定成功次數 | 7/8 | 8/8 | +1 |
-| 兩者都發生 | 8/8 | 8/8 | +0 |
-| 恰好一個發生 | 0/8 | 8/8 | +8 |
-| 樣本量增加後區間上界 | 4/8 | 8/8 | +4 |
-| 仿射變換後 E[Y] | 8/8 | 8/8 | +0 |
-| 仿射變換後 E[Y²] | 4/8 | 8/8 | +4 |
-| 仿射變換後 Var(Y) | 8/8 | 8/8 | +0 |
-| 兩者都不發生 | 3/8 | 8/8 | +5 |
-| Poisson 仿射變換後 Var(Y) | 8/8 | 8/8 | +0 |
-| Poisson E[X²] | 7/8 | 8/8 | +1 |
-| Poisson Var(X) | 8/8 | 8/8 | +0 |
-| Poisson 過程仿射變換 Var(Y) | 3/8 | 8/8 | +5 |
-| Poisson 過程計數 E[X²] | 0/8 | 8/8 | +8 |
-| Poisson 過程計數 Var(X) | 8/8 | 8/8 | +0 |
-| 兩者結果相同 | 8/8 | 8/8 | +0 |
-| 條件均勻分布總等待 E[T] | 8/8 | 8/8 | +0 |
-| 均勻分布 E[T] | 8/8 | 8/8 | +0 |
-| **合計** | **107/144** | **144/144** | **+37** |
+| 模型／工作 | 目前定位 |
+|---|---|
+| 原 v15 | 唯一可信的訓練起點與同題比較錨點；不是成功終點 |
+| `final_clear`／Kaggle V58 | 歷史窄模板結果；採用與成功解讀已撤回 |
+| 新的多樣教材 | 訓練前設計、驗證與凍結中 |
+| 新學生 | 尚未產生 |
 
-Development：v15 51/72 → final_clear 72/72。共 21 筆等價性複核，原始輸出與判定依據保留；待判 0。最終兩模型逐題比較為 107 題皆對、37 題由錯轉對，沒有退步。
+## 為何撤回 V58
 
-本輪使用固定、清楚的數學問法，學生輸出代入數值的算式，算術由程式處理。共 18 類，訓練 1,152 筆、development 72 題、final test 144 題；各集合語意鍵與完整數值題情境不重疊。教材由助理根據核實的數學規則修正、擴充，其中 17 類有既有 70B 老師答案作依據，均勻分布均值類為助理規則教材；不是 1,152 筆新生成的 70B 回答。本輪新增雲端老師 API 呼叫為 0。
+V58 在原先固定的 18 類 clear-interface 測試上確實得到 v15 **107/144**、V58 **144/144**，原報告中的逐題分數、權重及交付雜湊均保留。問題不在這些數字是否曾出現，而在它們只證明對狹窄模板分布的改善：教材與 train／development／test 共用過強的表述骨架，符號、分母、正負號、邊界、單位與支撐範圍等變化不足。因此原內部 gate 不能支持「全面比 v15 好」或「已成功蒸餾」的升級結論。
 
-事前門檻：至少 +5/144、各類不退步、無待判。只訓練一次，固定最後權重，不用測試挑模型。成功範圍為這 18 類清楚列式題型。
+後續外部結構診斷只留下歷史聚合：
 
-## 已保存模型
+| 診斷（24 題） | 正確 |
+|---|---:|
+| 原 v15 | 10/24 |
+| V58 | 16/24 |
 
-[下載 V58 模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip)（Kaggle Version 58，scriptVersionId `348141342`，Successful）。
+這 24 題的逐題 raw bundle 未保存在 GitHub 或 Kaggle 的已保存版本。聚合只能支持撤回與重新設計教材的決定，不能在本輪充當可執行、可重現的選點或成功 gate，也不能用來改教材後再宣稱盲測。
 
-- 檔名：`3beethoven_final_clear_student.zip`；97,086,130 bytes。
-- ZIP 內模型路徑：`student/adapter`。
-- ZIP SHA-256：`047873f5db94168bbf8a924dea41a260f7fdedcb2b344b1e5eeb6bb2c93f483f`。
-- Adapter SHA-256：`60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5`。
-- Base：`meta-llama/Llama-3.2-3B-Instruct`，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
+## 現在正在做什麼
 
-ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base；直接載入 final_clear adapter，不要再疊加 v15 adapter。GPU 已停止，沒有排程下一輪。
+本輪維持原始目標：在有限、直接、清楚的統計列式範圍內，讓一個新學生全面勝過 v15；不把任務改成語文能力。
 
-[完整報告](STATS_FINAL_CLEAR_RESULTS.md) · [結果 JSON](STATS_FINAL_CLEAR_RESULTS.json) · [事前協議](STATS_FINAL_CLEAR_PROTOCOL.md) · [恢復指南](KAGGLE_RECOVERY.md)
+訓練前必須完成並凍結：
+
+- 18 類能力與結構軸的覆蓋矩陣，不以同模板換數字充數；
+- 每題 prompt 與結構化語意的雙向核對；
+- 獨立 oracle、合法等價式與已知錯式突變測試；
+- train／development／final 以及歷史題的碰撞與洩漏稽核；
+- v15、教材、老師回覆、grader 和執行設定的雜湊綁定；
+- final test 在選點前不可見，以及失敗即停止、不得測後補跑的規則。
+
+只有全部 preflight 通過，才會進入老師生成與一次 GPU 訓練。目前文件所述仍是準備狀態，不得推論已產生新教材、老師答案或模型改善。
+
+[受控實驗協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [V58 撤回後記](STATS_V58_POSTMORTEM.md) · [下一輪狀態](STATS_NEXT_RUN_STATUS.md) · [執行交接](STATS_EXECUTION_HANDOFF.md) · [模型恢復](KAGGLE_RECOVERY.md)

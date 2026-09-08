@@ -1,31 +1,28 @@
-# 完成交接：final_clear / V58
+# 執行交接：受控重做尚未進入訓練
 
-**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
+## 決定
 
-## 交接決定
+- 撤回 `final_clear`／V58 的採用與成功定位；保留其 107/144 → 144/144 窄模板結果作歷史證據。
+- 只從原 v15 開始；不得從 V55–V58 或其他偏科候選接續。
+- v15 是比較錨點，不是已達標終點。
+- 只建立一個新學生、執行一次訓練；目前尚無新學生或新成績。
+- 任務仍是直接統計列式，算術由程式處理；不加入一般語文能力或無邊界自然語言泛化。
 
-- 本次最後一輪已完成；無下一輪，GPU 已停止。
-- 起點是原 v15，不是 v14 或 V55–V57。final_clear 是延續後完整 LoRA adapter，不需再疊加 v15。
-- 約定範圍是 18 類固定清楚的統計列式題型；不加語文改寫測驗。
-- 1,152 筆、1 epoch、144 updates、seed 2027、LR 2e-5；固定最終權重。沒有重跑或從多名新學生挑結果。
-- 訓練約 10.72 分鐘；基準、訓練及 432 次推論約 24.37 分鐘。新增雲端老師 API 呼叫 0。
+## 執行前硬鎖
 
-本輪使用固定、清楚的數學問法，學生輸出代入數值的算式，算術由程式處理。共 18 類，訓練 1,152 筆、development 72 題、final test 144 題；各集合語意鍵與完整數值題情境不重疊。教材由助理根據核實的數學規則修正、擴充，其中 17 類有既有 70B 老師答案作依據，均勻分布均值類為助理規則教材；不是 1,152 筆新生成的 70B 回答。本輪新增雲端老師 API 呼叫為 0。
+在老師呼叫或載入 GPU 訓練套件前，必須逐項通過並保存收據：
 
-## 已保存模型
+1. v15 adapter SHA-256 為 `9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3`；base revision 為 `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
+2. 教材、development、final 的題目數、類別數、結構軸覆蓋與雜湊符合現行協議。
+3. prompt 中的數值、條件、單位、事件與結構化 semantics 一致；oracle 與 grader 的正反例／錯式突變測試全過。
+4. train／development／final 以及歷史題之間沒有完整題、語意鍵或參數情境碰撞。
+5. final test 在 checkpoint 選定與人工等價式定案前不可載入；測後不得調整或再跑。
+6. 老師結果須綁定請求與題目雜湊，保留原始回覆、usage、cost、parse 與 rejection；缺成本或超預算即停止。
 
-[下載 V58 模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip)（Kaggle Version 58，scriptVersionId `348141342`，Successful）。
+只有以上收據齊全，才能把準備狀態改成「允許訓練」。目前不要根據歷史 notebook 的舊工作包直接 Run All。
 
-- 檔名：`3beethoven_final_clear_student.zip`；97,086,130 bytes。
-- ZIP 內模型路徑：`student/adapter`。
-- ZIP SHA-256：`047873f5db94168bbf8a924dea41a260f7fdedcb2b344b1e5eeb6bb2c93f483f`。
-- Adapter SHA-256：`60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5`。
-- Base：`meta-llama/Llama-3.2-3B-Instruct`，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
+## 評估界線
 
-ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base；直接載入 final_clear adapter，不要再疊加 v15 adapter。GPU 已停止，沒有排程下一輪。
+V58 後來的外部結構診斷只有聚合 v15 10/24、V58 16/24；逐題 raw bundle 未保存在 GitHub 或 Kaggle 保存版。因此它不是本輪可執行 gate，也不可拿 16/24 當新學生要追的盲測分數。新的 success gate 必須使用事前凍結、完整保存的同題證據，且逐類零退步、配對損失為零、待判為零。
 
-## 證據與操作
-
-[完整報告](STATS_FINAL_CLEAR_RESULTS.md)、[JSON](STATS_FINAL_CLEAR_RESULTS.json)、[事前協議](STATS_FINAL_CLEAR_PROTOCOL.md)、[資料來源清單](STATS_FINAL_CLEAR_MANIFEST.json)、[模型恢復](KAGGLE_RECOVERY.md)。ZIP 包含原始與複核輸出、逐題比較依據、資料與程式。以同一批題目比較模型，不把歷史異質分數當成同一量尺。
-
-GitHub 是目前文件來源；本機舊 checkout 可能有其他未提交工作。不要建立分支／PR、改寫歷史、加入共同作者或 blanket staging；必要文件應逐檔精準更新。不要依舊工作包再訓練。
+[受控協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](STATS_CURRENT_STATUS.md) · [V58 撤回後記](STATS_V58_POSTMORTEM.md) · [恢復錨點](KAGGLE_RECOVERY.md)

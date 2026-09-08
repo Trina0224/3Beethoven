@@ -1,19 +1,18 @@
-# 執行已完成，沒有下一輪
+# 下一輪狀態：只做一次，仍在訓練前準備
 
-**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
+V58 已撤回採用資格；原 v15 恢復為唯一可信的起點與比較錨點。v15 並不是成功終點，新學生尚未產生。
 
-模型已保存、下載驗證，GPU 已停止。最後一次授權已執行完成；目前無待跑的訓練、老師呼叫或推論。不要依照歷史文件重新啟動多 seed、四臂或語文改寫工作包。
+本輪的順序固定為：先完成教材與評估 preflight，留下可重現收據；再生成／驗證老師教材；只有所有 gate 通過才啟動一次學生訓練。不得先訓練再補教材理由，不得查看 final test 後修題、調參或重跑。
 
-使用 `final_clear`，ZIP 路徑 `student/adapter`，不是 V57 repeat_control。後續如需使用模型，依 [恢復指南](KAGGLE_RECOVERY.md)；完整證據見 [最終報告](STATS_FINAL_CLEAR_RESULTS.md)。
+目前邊界：
 
-## 已保存模型
+- 目標限於直接、清楚的統計列式，不考一般語文能力；
+- 一個 v15 起點學生、一條訓練軌跡、一次訓練；
+- 教材須覆蓋負數、零、分數、分母變化、邊界、單位與非零支撐範圍等結構差異；
+- 選點只用 development 與既有回歸集；final test 保持隔離；
+- 成功必須總分增加、逐類不退步、v15 原本正確題零損失、待判為零；
+- 任一必要 preflight 或資料完整性檢查失敗就停止，不花老師或 GPU 成本補救。
 
-[下載 V58 模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348141342&select=3beethoven_final_clear_student.zip)（Kaggle Version 58，scriptVersionId `348141342`，Successful）。
+歷史 24 題外部診斷的 v15 10/24、V58 16/24 沒有逐題 raw bundle 可供 GitHub／Kaggle 重現，只用於解釋 V58 撤回，不列入本輪執行 gate。
 
-- 檔名：`3beethoven_final_clear_student.zip`；97,086,130 bytes。
-- ZIP 內模型路徑：`student/adapter`。
-- ZIP SHA-256：`047873f5db94168bbf8a924dea41a260f7fdedcb2b344b1e5eeb6bb2c93f483f`。
-- Adapter SHA-256：`60c5c7e956480484c8dacf5d5dbbf4bb17da6d46a49ecbff24e803b42621b2d5`。
-- Base：`meta-llama/Llama-3.2-3B-Instruct`，revision `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
-
-ZIP 已下載並驗證 CRC、檔案與權重雜湊。這是 LoRA adapter 加 tokenizer，載入時仍需上述 base；直接載入 final_clear adapter，不要再疊加 v15 adapter。GPU 已停止，沒有排程下一輪。
+[現行協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](STATS_CURRENT_STATUS.md) · [執行交接](STATS_EXECUTION_HANDOFF.md)

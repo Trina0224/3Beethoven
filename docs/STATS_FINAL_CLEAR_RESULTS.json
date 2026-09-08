@@ -1,4 +1,22 @@
 {
+  "promotion_status": "withdrawn",
+  "interpretation_amendment": {
+    "date": "2026-09-08",
+    "status": "withdrawn_as_adopted_or_successful_student",
+    "preserved_fact": "The recorded narrow clear-interface comparison remains v15 107/144 and final_clear 144/144.",
+    "reason": "Subsequent audit found insufficient structural diversity in the curriculum and evaluation, so the original internal gate does not establish comprehensive superiority over v15.",
+    "external_diagnostic_aggregate": {
+      "v15_correct": 10,
+      "v58_correct": 16,
+      "n": 24,
+      "raw_bundle_preserved_in_github_or_saved_kaggle": false,
+      "gate_eligible": false
+    },
+    "current_anchor": "original_v15",
+    "current_anchor_is_success_endpoint": false,
+    "new_student_available": false,
+    "summary_success_meaning": "summary.success=true below records only that V58 passed the original narrow internal gate; it is not a current promotion or adoption decision."
+  },
   "elapsed_minutes": 24.3745725274086,
   "examples": {
     "at_least_one": {
@@ -399,7 +417,9 @@
     "regression_ids": [],
     "semantic_reviews": 21,
     "status": "complete",
-    "success": true
+    "success": true,
+    "success_scope": "original_narrow_internal_gate_only",
+    "promotion_status": "withdrawn"
   },
   "timestamp": "2026-09-07T23:05:46.898008-07:00",
   "training": {
