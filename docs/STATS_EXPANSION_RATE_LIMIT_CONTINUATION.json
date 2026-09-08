@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-09-07T18:30:29.339084-07:00",
+  "reason": "HTTP 429 after 139 cached responses; no automatic retry occurred.",
+  "failed_attempt": "expansion_train_events_14_both_1",
+  "policy": "Do not retry this attempt. Preserve HTTP ledger and prior logs. Continue previously uncalled attempts after cooldown, with 5 seconds pacing per new call. Any new HTTP error stops execution again.",
+  "unknown_billing_reserve_usd": 0.02,
+  "unchanged": "256 total calls, two attempts per question, USD0.50 including reserve, original 180-minute GPU budget, all coverage/training/student gates."
+}
