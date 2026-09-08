@@ -1,3 +1,20 @@
+# 目前範圍與收束決定
+
+2026-09-07 22:15 PDT（America/Los_Angeles）
+
+**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
+
+它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
+
+這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
+
+**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
+
+[唯一最終成果與證據](docs/STATS_BOUNDED_SUCCESS_EXAMPLE.md)。以下既有設計與工作包保留為歷史，不再構成開跑指令；原本的 Git、資料保密與證據誠實要求仍適用。
+
+<details>
+<summary>歷史紀錄（保留原文；不是目前狀態或執行指令）</summary>
+
 # 3Beethoven Project Specification
 
 Latest: six training-seed runs, harmonized MC, and all pending-answer reviews are complete. See [final results](docs/STATS_SEED_REPLICATION_REPORT.md). No new training is running. Earlier unexecuted-status paragraphs below are historical.
@@ -315,3 +332,6 @@ The repo may be playful. The experiment must not be sloppy.
 Before generating data or starting a new version, record the triggering observation, why the change is proposed, the expected direction of change, what would weaken that expectation, the comparison/control, stopping and selection rules, and scope limitations. Commit that record before execution. Keep original expectations immutable; timestamp amendments and state what results were already visible. Append outcomes afterward rather than rewriting the original motivation.
 
 Researcher recollections and later narrative reconstruction must be labeled retrospective. The v15–v18 source audit, research narrative and reusable recording fields are in [STATS_MOTIVATION_EXPECTATIONS.md](docs/STATS_MOTIVATION_EXPECTATIONS.md).
+
+
+</details>
