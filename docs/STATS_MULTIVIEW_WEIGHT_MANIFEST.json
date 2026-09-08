@@ -1,0 +1,42 @@
+{
+  "2027/step_12": {
+    "sha256": "466e5e22c06882119726e589c53abc7e455e899696a5878ad8bc71789cca0214",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "2027/step_24": {
+    "sha256": "937760c7bae6ca604e45e630e70cf793e5fba33b183f34791adddee7a482cf6f",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "2027/step_48": {
+    "sha256": "ee209b05e77f8ace6532869c74050e65b43fb2e7651474f77af1f4cbe7252be1",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "2027/step_65": {
+    "sha256": "92eca7f1257880cb5c69bccd7bda8d600f0268bea62c9622d97551b1fbf6506a",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "31415/step_12": {
+    "sha256": "8e4cb60fb71bf3534db90225182cf3caec51bd47f20b998728b570e08bdde898",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "31415/step_24": {
+    "sha256": "09f41b034c52ad72233122ace7c41f2971470b6da5a9f083ebe7d911f36739f2",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "31415/step_48": {
+    "sha256": "7e30451d88488110695b076757bf56716fee73daf98842dc7600e8e24726b69f",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  },
+  "31415/step_65": {
+    "sha256": "d3680aa766f07a187e152f3deb3325fa7e8866ecee38eaa35e67cda5945015d8",
+    "bytes": 97307544,
+    "finite_tensors": 392
+  }
+}
