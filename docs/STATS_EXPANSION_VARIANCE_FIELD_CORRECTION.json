@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-07T18:37:53.797051-07:00",
+  "reason": "Variance-only questions correctly omit E[X], but the teacher envelope mistakenly requested mean_Y in addition to variance_Y. Raw teachers invented E[X]=0 while producing correct variance targets.",
+  "scope": "All 16 variance training questions, consistently; no changes to their mathematical tasks or test questions.",
+  "correction": "For selecting training targets, verify variance_Y and final Var(Y) against the stated variance and scale. Preserve mean_Y as an unsupported, excluded working field; do not label the complete teacher working as correct. Only the final teacher expression enters training, unchanged. Other target types retain all required intermediate checks.",
+  "limitations": "This is a post-output repair of an under-specified teacher working-field contract, not a pass of the original full-response teacher gate.",
+  "unchanged": [
+    "12 verified targets per target type",
+    "student grader and checkpoint gates",
+    "training and evaluation budgets",
+    "no replacement of teacher target expressions",
+    "all original raw outputs and prior rejections"
+  ]
+}
