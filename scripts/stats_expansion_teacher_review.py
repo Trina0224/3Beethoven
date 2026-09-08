@@ -64,14 +64,19 @@ def review(record,q):
         assert record['finish_reason']=='stop' and isinstance(record['text'],str)
         obj,repairs=envelope(record['text'],q)
         items,_=parse_answers(json.dumps({'answers':obj['answers']}),{q['id']});assert len(items)==1
-        expected=intermediates(q);steps=obj['intermediates'];assert set(steps)==set(expected)
+        expected=intermediates(q);steps=obj['intermediates'];excluded={}
+        if spec_for(q)['kind']=='moments' and spec_for(q)['target']=='variance':
+            assert set(steps) in ({'variance_Y'},{'mean_Y','variance_Y'})
+            if 'mean_Y' in steps:excluded={'mean_Y':{'raw':steps['mean_Y'],'reason':'E[X] not supplied; unsupported working is excluded, not endorsed'}}
+            expected={'variance_Y':expected['variance_Y']}
+        else:assert set(steps)==set(expected)
         checks={k:isinstance(steps[k],str) and F(calculate(steps[k]))==v for k,v in expected.items()};assert all(checks.values())
         expression=items[0]['expression'];judged=score('Expression: '+expression,q)
         assert judged['executable'] and F(judged['computed'])==F(q['answer'])
         proof={'method':'unchanged_primary_grader'}
         if not judged['primary_correct']:proof=event_proof(expression,q)
         return dict(accepted=True,classification='accepted_after_documented_review',expression=expression,intermediate_checks=checks,
-                    repairs=repairs,proof=proof,question_sha256=digest(q),raw_sha256=hashlib.sha256(record['text'].encode()).hexdigest(),judged=judged)
+                    repairs=repairs,excluded_unsupported_working=excluded,full_working_endorsed=not bool(excluded),proof=proof,question_sha256=digest(q),raw_sha256=hashlib.sha256(record['text'].encode()).hexdigest(),judged=judged)
     except (ValueError,AssertionError,KeyError,TypeError,SyntaxError) as exc:
         return dict(result,error=str(exc))
 
