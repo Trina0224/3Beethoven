@@ -1,49 +1,11 @@
-# 更正與最後一次實驗：原 v15 仍是保留學生
+# 舊局部成功範例：最終採用模型已更新為 V58
 
-使用者已澄清：成功必須在約定的清楚統計列式範圍內整體勝過 v15，且原有各類能力不退步。**V57 repeat_control 的 16/16 只是局部改善，不算成功替代模型。** 先前「最後成功學生」與收束命名已撤回；下方原文僅保留歷史。
+**已完成：最後採用學生 `final_clear`（Kaggle V58），直接從原 v15 接續訓練。** 同一份最終保留測試，v15 **107/144** → final_clear **144/144**；18 類全部不退步，9 類改善、9 類維持滿分。改正 37 題，保留原本正確 107 題，退步 0 題，待判 0 題。
 
-使用者已另行授權最後一次實驗。目前固定資料與程序已啟動：原 v15 基準、唯一一個從原 v15 出發的新學生、固定一輪 144 updates；新測試 18 類共 144 題，總分至少 +5 且各類不退步才算成功。[固定協議](STATS_FINAL_CLEAR_PROTOCOL.md)。尚未宣稱新學生成功，不增加第二輪。
+目前結論與模型請見 [最終報告](STATS_FINAL_CLEAR_RESULTS.md) 與 [恢復指南](KAGGLE_RECOVERY.md)。V57 的局部成功不足以滿足整體優於 v15 的要求，先前「最後成功學生」定位已撤回。下方保留原始實驗數字及當時敘述供追溯，並非目前模型選擇或下一輪指令。
 
----
-
-# 最後成功範例：V57-repeat_control
-
-文件更新：2026-09-07 22:15 PDT（America/Los_Angeles）
-
-**最後採用的成功範例：`V57-repeat_control`。** 這是展示名稱；實際權重資料夾仍是 `repeat_control/adapter`，沒有重新命名權重，也沒有新增一個學生。
-
-它是從原 v15 接續訓練、使用修正後 Llama 老師教材的 Llama-3.2-3B-Instruct 學生。在直接問法的雙事件機率列式套題中，原 v15 **12/16**，本學生 **16/16**。學生自行列出代入數值的算式，計算交給程式。
-
-這是使用者收束目標後選定的既有成果展示：題組已曝光，屬回顧性範例，不是新盲測或通用統計能力認證。所有 16 題均列入；四組機率各問四種事件。機率組合未出現在該學生的事件教材中。原廣泛保留門檻未通過的紀錄維持不變。
-
-## 不同學生的最終定位
-
-| 名稱 | 最後定位 |
-|---|---|
-| **V57 `repeat_control`** | **本次最後採用的雙事件列式成功範例：16/16** |
-| V57 `semantic_course` | 新語意課程比較組；事件 15/16，保留為實驗紀錄 |
-| `prior_v55` | V55 的歷史比較學生；事件 13/16 |
-| 原 `v15` | 訓練起點及較廣範圍比較基準；事件 12/16，不是本次最終展示學生 |
-| 其他 v0.x／seed／checkpoint | 歷史實驗，不需依序繼續訓練 |
-
-Kaggle Version 57 是保存版本號，不是新命名的「模型 v0.57」。`repeat_control` 雖名為對照組，確實是完成訓練的新學生，不是未訓練基線。
-
-## 模型識別與取得
-
-- [下載已保存的模型 ZIP](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348126445&select=3beethoven_semantic_course_students.zip)（Kaggle 權限與 Hugging Face 基礎模型存取權需沿用既有帳號）。
-- ZIP：`3beethoven_semantic_course_students.zip`；選用其中 **`repeat_control/adapter`**。
-- 基礎模型：`meta-llama/Llama-3.2-3B-Instruct`。
-- 基礎模型 revision：`0cb88a4f764b7a12671c53f0838cd831a0843b95`。
-- Adapter SHA-256：`8419430c6b7b58bd1c16c992964b1cedd76062020ce6651cb25e51df119f0eb9`。
-- 這是 LoRA adapter，必須搭配上述基礎模型，不能當成獨立完整基礎權重；直接載入此最終 adapter，不要再疊加 v15 adapter。
-- 實際訓練：seed 2027、126 updates、1,006 筆（750 筆修正教材＋256 筆既有教材重複練習），固定最後一步。
-- 教材包含核對過的 70B 回答、助手修正的老師答案與題目措辭調整；屬 response distillation／SFT，不是 logits 蒸餾，也不是全數未修改的老師原文。
-
-**工作已收束；沒有待執行的新訓練。** 不因歷史交接、未達成的舊門檻或待辦段落，自動呼叫老師、啟動 GPU、重跑 seed 或擴大題型。只有使用者另行提出新工作時再開始。
-
-下列完整證據保留原始輸出。這次只整理文件，沒有新增模型訓練或推論。
-
----
+<details>
+<summary>歷史紀錄</summary>
 
 # Limited-scope response-distillation success example
 
@@ -108,3 +70,5 @@ The original broad retention failures remain recorded: old-suite totals were 35/
 | v20_validation_003_both_s0 | `Expression: (36 / 101) * (62 / 101)` | `Expression: (36 / 101) * (62 / 101)` | correct → correct |
 | v20_validation_003_neither_s0 | `Expression: (36 / 101) * (62 / 101)` | `Expression: (1 - 36 / 101) * (1 - 62 / 101)` | incorrect → correct |
 | v20_validation_003_same_s0 | `Expression: (36 / 101) * (62 / 101) + (1 - 36 / 101) * (1 - 62 / 101)` | `Expression: (36 / 101) * (62 / 101) + (1 - 36 / 101) * (1 - 62 / 101)` | correct → correct |
+
+</details>
