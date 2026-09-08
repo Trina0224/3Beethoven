@@ -92,10 +92,11 @@ def main():
             path=a.root/'api_cache'/(q['id']+'_'+str(attempt)+'.json')
             if not path.exists():continue
             record=json.loads(path.read_text());r=dict(id=q['id'],target=q['semantics']['target'],attempt=attempt,raw=record['text'],**review(record,q));allreviews.append(r);options.append(r)
-        rows.append(next((r for r in options if r['accepted']),options[-1]))
+        if options:rows.append(next((r for r in options if r['accepted']),options[-1]))
+        else:rows.append(dict(id=q['id'],target=q['semantics']['target'],accepted=False,classification='no_cached_response_service_limited_collection'))
     counts=Counter(r['target'] for r in rows if r['accepted']);passed=all(counts[t]>=12 for t in ('neither','both','exactly_one','at_least_one','same','mean','variance','second_moment'))
     (a.root/'semantic_reviews.json').write_text(json.dumps(allreviews,indent=2)+'\n')
-    resultpath.write_text(json.dumps(dict(completed=True,passed=passed,accepted=sum(counts.values()),by_target=dict(counts),review_type='post-output raw-preserving engineering review; unchanged student grader',rows=rows),indent=2)+'\n')
+    resultpath.write_text(json.dumps(dict(completed=True,teacher_collection_complete=False,collection_stop='STATS_EXPANSION_COLLECTION_STOP.json',cached_question_count=sum(any(r['id']==q['id'] for r in allreviews) for q in questions),passed=passed,accepted=sum(counts.values()),by_target=dict(counts),review_type='post-output raw-preserving engineering review; unchanged student grader',rows=rows),indent=2)+'\n')
     print('EXPANSION_TEACHER_REVIEW',json.dumps({'passed':passed,'by_target':dict(counts),'accepted':sum(counts.values())}),flush=True)
     assert passed,'Minimum teacher coverage still not met'
     from stats_expansion_data import corpus
