@@ -1,0 +1,188 @@
+{
+  "evaluation_type": "post_training_teacher_demonstration",
+  "note": "Four examples selected after inspecting base/student results. Teacher inference was performed after student training and final evaluation. This is not an independent teacher benchmark, and these teacher answers were not the student's training targets.",
+  "teacher_model": "meta-llama/llama-3.3-70b-instruct",
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 512,
+    "messages": "One user message containing the unchanged evaluation prompt."
+  },
+  "rows": [
+    {
+      "id": "diverse_final_blind_poisson_second_000",
+      "category": "poisson_second",
+      "prompt": "X has a Poisson distribution with mean (177/17). Find E[X**2].\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "prompt_sha256": "d078d7322525aee056bda25bebba5e7f7669bd54bde8a1c87af3fdabad843bb5",
+      "base_raw": "Expression: (177/17)**2",
+      "base_primary_correct": false,
+      "student_raw": "Expression: ((177/17)**2)+(177/17)",
+      "student_primary_correct": true,
+      "teacher_raw": "(177/17) + (177/17)**2",
+      "teacher_raw_sha256": "5c6da60f96ebae0517e66e5b84c10e37730a784a61ef58cbd9ee04648840749a",
+      "teacher_requested_model": "meta-llama/llama-3.3-70b-instruct",
+      "teacher_returned_model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "response_id": "gen-1788922018-coHbueBx52uTGrPvjrTU",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 75,
+        "completion_tokens": 13,
+        "total_tokens": 88,
+        "cost": 1.166e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.166e-05,
+          "upstream_inference_prompt_cost": 7.5e-06,
+          "upstream_inference_completions_cost": 4.16e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "timestamp_utc": "2026-09-09T02:46:59.596671+00:00",
+      "elapsed_seconds": 1.43,
+      "teacher_review_status": "not_yet_reviewed",
+      "api_response_file": "diverse_final_blind_poisson_second_000_api_response.json"
+    },
+    {
+      "id": "diverse_final_blind_process_variance_001",
+      "category": "process_variance",
+      "prompt": "Find Var(X). Given a homogeneous Poisson process with rate (23) arrivals per minute, X counts arrivals during (16) minutes.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "prompt_sha256": "10be0222c3dcab25786dd0b42513600f25cc3fe4ad88c38e76900bc39ed39085",
+      "base_raw": "Var(X) = (23 * 16) / (60 ** 2)",
+      "base_primary_correct": false,
+      "student_raw": "Expression: (23)*(16)",
+      "student_primary_correct": true,
+      "teacher_raw": "(23 * 16)",
+      "teacher_raw_sha256": "62a0113fe826137420e69c1df3721c1f50f361c8a4a273ccbc6f375419f43fcc",
+      "teacher_requested_model": "meta-llama/llama-3.3-70b-instruct",
+      "teacher_returned_model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "response_id": "gen-1788922019-ivQZFPI8RW0hStB29FEk",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 7,
+        "total_tokens": 91,
+        "cost": 1.064e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.064e-05,
+          "upstream_inference_prompt_cost": 8.4e-06,
+          "upstream_inference_completions_cost": 2.24e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "timestamp_utc": "2026-09-09T02:47:00.102556+00:00",
+      "elapsed_seconds": 0.5,
+      "teacher_review_status": "not_yet_reviewed",
+      "api_response_file": "diverse_final_blind_process_variance_001_api_response.json"
+    },
+    {
+      "id": "diverse_final_blind_same_000",
+      "category": "same",
+      "prompt": "A and B are independent events. P(B)=(116/131); P(A)=(81/131). Find the probability that both occur or neither occurs.\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "prompt_sha256": "2f94ee6a46a16bb3c0425d910ec876faf8952ad701a2cb52946c89c6c57cd624",
+      "base_raw": "P(A and B) + P(neither A nor B) = P(A) + P(B) - P(A and B) = (81/131) + (116/131) - (81/131)*(116/131)",
+      "base_primary_correct": false,
+      "student_raw": "Expression: (81/131)*(116/131)+(1-(81/131))*(1-(116/131))",
+      "student_primary_correct": true,
+      "teacher_raw": "(81/131)*(116/131) + (1 - 81/131)*(1 - 116/131)",
+      "teacher_raw_sha256": "80706722ef8465e269277b4c1491f273ee09fefe1c7789256c74b587faa275d5",
+      "teacher_requested_model": "meta-llama/llama-3.3-70b-instruct",
+      "teacher_returned_model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "DeepInfra",
+      "response_id": "gen-1788922020-5xCc9BwgUHphTKjGa5mY",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 26,
+        "total_tokens": 113,
+        "cost": 1.702e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 1.702e-05,
+          "upstream_inference_prompt_cost": 8.7e-06,
+          "upstream_inference_completions_cost": 8.32e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "timestamp_utc": "2026-09-09T02:47:01.261774+00:00",
+      "elapsed_seconds": 1.16,
+      "teacher_review_status": "not_yet_reviewed",
+      "api_response_file": "diverse_final_blind_same_000_api_response.json"
+    },
+    {
+      "id": "diverse_final_blind_moment_variance_000",
+      "category": "moment_variance",
+      "prompt": "E[X]=(-25/11); Var(X)=(58). Define Y=(-23/13)*X+(-14/23). Find Var(Y).\nReturn one line: Expression: <a fully substituted numerical expression>. Keep arithmetic and unit conversion operations unevaluated. Use integers, fractions, +, -, *, /, ** and comb(n,r). No final answer or explanation.",
+      "prompt_sha256": "876197832fdbd28107e060edb06cee7a760d73c3abd8498e8c0084c69fb295e1",
+      "base_raw": "Var(Y)=((-23/13)**2)*Var(X)+((-23/13)**2)*(-25/11)+((-14/23)**2)*Var(X)+((-14/23)**2)*(-25/11)+2*((-23/13)*(-14/23))*(-25/11)",
+      "base_primary_correct": false,
+      "student_raw": "Expression: ((-23/13)**2)*(58)",
+      "student_primary_correct": true,
+      "teacher_raw": "Var(Y)=((-23/13)**2)*(58)",
+      "teacher_raw_sha256": "501ebdc1a19b2be57ae1abcbcf472c633ca3879a9ea2f3a7f40f165a206ca04f",
+      "teacher_requested_model": "meta-llama/llama-3.3-70b-instruct",
+      "teacher_returned_model": "meta-llama/llama-3.3-70b-instruct",
+      "provider": "Groq",
+      "response_id": "gen-1788922021-EeoFJgYPSEJ5SDQtmg9e",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 112,
+        "completion_tokens": 13,
+        "total_tokens": 125,
+        "cost": 7.635e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 7.635e-05,
+          "upstream_inference_prompt_cost": 6.608e-05,
+          "upstream_inference_completions_cost": 1.027e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "timestamp_utc": "2026-09-09T02:47:01.499964+00:00",
+      "elapsed_seconds": 0.24,
+      "teacher_review_status": "not_yet_reviewed",
+      "api_response_file": "diverse_final_blind_moment_variance_000_api_response.json"
+    }
+  ]
+}

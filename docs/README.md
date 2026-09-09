@@ -2,6 +2,10 @@
 
 English is the primary language for the current project documentation. Files ending in `.zh-TW.md` preserve the previous Traditional Chinese versions; they are historical snapshots and may contain superseded status statements.
 
+## Engineering retrospective
+
+- [From curriculum failures to a successful 3B student](DISTILLATION_ENGINEERING_RETROSPECTIVE.md) — technical article with four recorded base/teacher/student examples.
+
 ## Start here
 
 - [Project overview](../README.md)
