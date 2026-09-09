@@ -1,34 +1,29 @@
-# 執行交接：step 180 正式 final blind 評測完成
+# Execution Handoff — Step180 Delivered
 
-## 最新權重：Hugging Face
+## Completed work
 
-正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+- One 1,440-example training trajectory: 720 new examples plus 720 materialized replay examples; 180 optimizer updates.
+- Final evaluation on 180 reserved questions: original 3B 45/180; step180 170/180.
+- Student format: 180/180 strict one-line expressions; no pending answers.
+- All ten student failures were inspected against the questions and reference expressions; they are actual formulation errors.
+- Weights are published on [Hugging Face](https://huggingface.co/kozakurayuki/3Beethoven-step180); raw results are in [the evaluation ZIP](../final_blind_eval_results.zip).
 
-- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
-- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
-- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
+## Reproduction identity
 
-這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
+- Base: `meta-llama/Llama-3.2-3B-Instruct`
+- Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
+- Adapter: `kozakurayuki/3Beethoven-step180`
+- Adapter revision: `682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256: `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
 
+Load this adapter directly on the pinned base. Do not stack it on v15. Use the base tokenizer, not the old tokenizer configuration from the Kaggle archive.
 
-## 已完成
+Use the [Colab instructions](STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md). Both arms use the same base tokenizer, prompts, greedy decoding, token budget, grader, and NF4 loading configuration. The adapter archive's old `TokenizersBackend` configuration is incompatible with the tested Transformers runtime; the evaluator now explicitly loads the pinned base tokenizer.
 
-- 唯一訓練軌跡：720 new＋720 replay，180 optimizer updates。
-- 最新 adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`。
-- Diverse final blind：180 題、18 類各 10 題；在訓練與選點期間保持封存。
-- 原始 3B：45/180，strict format 26/180，66 pending。
-- step 180：170/180，strict format 180/180，0 pending。
-- 配對結果：`0→0: 8`、`0→1: 127`、`1→0: 2`、`1→1: 43`。
-- 學生 10 題失敗與 2 題 paired loss 已逐題檢查，沒有 grader 誤殺。
+## Interpretation
 
-## 重現規則
+The earlier v15-based frozen selection protocol remains `no_checkpoint_passed`: it required zero paired losses and had documented execution deviations. The owner subsequently requested a separate final comparison against the unmodified 3B model. This supports a bounded project success claim; it does not retroactively pass the earlier protocol or establish zero regressions.
 
-使用固定 revision `0cb88a4f764b7a12671c53f0838cd831a0843b95` 的 `meta-llama/Llama-3.2-3B-Instruct`。Baseline 不掛任何 adapter；學生從另一份新載入的相同 base 直接掛 step 180 LoRA。兩者都使用 base model tokenizer。不要使用 adapter ZIP 內舊的 `tokenizer_config.json`，其 `TokenizersBackend` 類別會在 Colab Transformers 環境造成載入錯誤；目前 evaluator 已固定從 base revision 載入 tokenizer。
+This is evidence for the tested statistics-expression task, not general language ability, arbitrary mathematical reasoning, or isolated teacher-transfer causality. The run combines corrected synthetic supervision and historical replay; no ablation isolates their individual effects. The final set is now exposed and must not be reused as an untouched test for future model selection.
 
-完整重跑方式見 [Colab 交接](STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)。完整輸出已保存於 repo 根目錄 [`final_blind_eval_results.zip`](../final_blind_eval_results.zip)。
-
-## 解讀
-
-這次正式產品比較足以判定限定統計列式蒸餾成功。舊 v15 frozen selection protocol 的失敗結論不追溯修改；它描述當時的選點合規性，本次描述最終學生相對原始 3B 的實際能力。
-
-[正式報告](STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [機器摘要](STATS_DIVERSE_FINAL_BLIND_RESULTS.json) · [目前狀態](STATS_CURRENT_STATUS.md)
+[Preserved Traditional Chinese version](STATS_EXECUTION_HANDOFF.zh-TW.md)

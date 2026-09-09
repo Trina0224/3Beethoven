@@ -1,346 +1,38 @@
-# 3Beethoven：目前規格與正式蒸餾結果
+# 3Beethoven — Current Project Specification
 
-## 最新結果：限定統計列式蒸餾成功
+## Objective
 
-2026-09-08 PDT，最新 step 180 學生在事前封存且未參與訓練或選點的 180 題 diverse final blind 上，對原始 `meta-llama/Llama-3.2-3B-Instruct` 完成同條件比較。原始 3B 為 **45/180（25.0%）**，學生為 **170/180（94.4%）**；學生另達到 180/180 嚴格一行可執行算式、0 pending。18 類中 17 類提高、1 類持平、0 類下降。
+Produce a focused Llama 3.2 3B Instruct student that emits correct numerical expressions for direct statistics questions. Required training-target interface: `Expression: <fully substituted numerical expression>`. Keep arithmetic unevaluated; use a bounded exact calculator downstream. General prose generation, unfamiliar paraphrases, and multiple-choice performance are outside the current objective.
 
-本專案現可主張：response distillation 讓同一個 3B base 在約定的直接統計列式範圍內出現顯著、廣泛且可重現的改善。這項主張不涵蓋一般語文能力、長篇推理、未知統計領域或完整蒸餾因果分解。正式證據見 [final blind 報告](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md)。
+## Scope
 
-## 歷史選點結論
+Eighteen categories cover independent events, affine moments, Poisson counts and processes, uniform means and conditional means, binomial probabilities, and confidence-interval upper endpoints after sample-size changes. Structural diversity includes signed fractions, boundary cases, different probability denominators, input ordering, and seconds/minutes conversion.
 
-**V58 的採用與成功解讀已撤回。** 原先同題窄模板結果 v15 **107/144** → `final_clear` **144/144** 是實際歷史紀錄，但教材與評估沒有覆蓋足夠的符號、邊界、單位與結構變化，不能證明它全面優於 v15。V58 不得作現行父模型或成功終點。
+## Method and current artifact
 
-## 現行任務與驗收
+Use verified synthetic responses and materialized historical training replay. Teacher text is not ground truth: preserve provenance and corrections. Logit-based KD remains deferred. The latest run continued v15 using 720 new examples and 720 replay examples in alternating order, one epoch, seed 2027, learning rate 1e-5, and 180 optimizer updates.
 
-學生只需在約定範圍的直接、清楚統計題上輸出已代入數值的可執行算式，算術交由程式。不把陌生語文改寫、長篇解釋或一般語文能力加入成功定義。
+- Base: `meta-llama/Llama-3.2-3B-Instruct`
+- Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
+- Adapter: `kozakurayuki/3Beethoven-step180`
+- Adapter revision: `682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256: `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
 
-原 v15 是本輪訓練起點與歷史 selection 錨點。本輪按「一個學生、一次訓練」完成 720 筆新教材＋720 筆實際歷史 train replay、180 optimizer updates。step 180 在固定 new development 為自動 172/180，接受使用者唯一暫行 pending 放行後為 173/180；legacy development 為 72/72，但仍有兩題 v15→student paired loss。因此當時 selection 狀態為 **`no_checkpoint_passed`**。
+Load this adapter directly on the pinned base. Do not stack it on v15. Use the base tokenizer, not the old tokenizer configuration from the Kaggle archive.
 
-Frozen-protocol compliance 不成立：除了兩題 paired loss，baseline 是訓練後補做，step 180 早於固定選點順序被查看，唯一人工放行是在看到輸出後才定案。後續依使用者指定，產品層級的自然 baseline 改為原始 3B，並另行解封 final blind。正式評測支持專案成功，但不把舊 selection protocol 追溯改寫為通過。
+## Evaluation and outcome
 
-後來的 24 題外部結構診斷只保留聚合 v15 **10/24**、V58 **16/24**。因逐題 raw bundle 未存入 GitHub 或 Kaggle 已保存版本，它是撤回動機，不是本輪可執行 gate。
+| Metric | Original 3B Instruct | Step180 adapter |
+|---|---:|---:|
+| Automatically correct | 45/180 (25.0%) | **170/180 (94.4%)** |
+| Strict one-line format | 26/180 | **180/180** |
+| Pending review | 66 | **0** |
 
-[本輪完整結果](docs/STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](docs/STATS_DIVERSE_RUN_RESULTS.json) · [現行受控協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](docs/STATS_CURRENT_STATUS.md) · [恢復模型](docs/KAGGLE_RECOVERY.md)
+Paired outcomes: 127 wrong-to-right, 2 right-to-wrong, 43 both correct, and 8 neither correct. Net gain: 125 questions (+69.4 percentage points). Category totals improved in 17 of 18 categories and tied in one; none declined under the automatic scoring rule. Even crediting all 66 baseline pending answers would bring that baseline to only 111/180, below 170/180. This is a sensitivity bound, not a completed semantic review of those 66 answers.
+The earlier v15-based frozen selection protocol remains `no_checkpoint_passed`: it required zero paired losses and had documented execution deviations. The owner subsequently requested a separate final comparison against the unmodified 3B model. This supports a bounded project success claim; it does not retroactively pass the earlier protocol or establish zero regressions.
 
-<details>
-<summary>歷史專案規格（不代表目前待執行工作）</summary>
+This is evidence for the tested statistics-expression task, not general language ability, arbitrary mathematical reasoning, or isolated teacher-transfer causality. The run combines corrected synthetic supervision and historical replay; no ablation isolates their individual effects. The final set is now exposed and must not be reused as an untouched test for future model selection.
 
-# 3Beethoven Project Specification
+See the [final report](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md), [method overview](docs/STATS_METHOD_OVERVIEW.md), and [original specification snapshot](PROJECT_SPEC.zh-TW.md). V58 remains withdrawn; its narrow-template results are historical, not the current success artifact.
 
-Latest: six training-seed runs, harmonized MC, and all pending-answer reviews are complete. See [final results](docs/STATS_SEED_REPLICATION_REPORT.md). No new training is running. Earlier unexecuted-status paragraphs below are historical.
-
-## Active statistics pilot addendum — 2026-09-06 PDT
-
-Latest completed analysis: **Kaggle Version 38**, Successful, 656 fixed-weight responses, zero new training or teacher calls. v19 scores 24/24 on original and magnitude probes, but 15/24 on paraphrases; v15 scores 18/24, 19/24, and 6/24 respectively. Same-runtime permanent MC is 126/240 vs 127/240. No promotion; training seed replication remains unexecuted. See [analysis report](docs/STATS_V19_ANALYSIS_REPORT.md).
-
-Latest completed run: **v0.19**, saved as Successful Kaggle Version 37. Reviewed same-test v15/v19: chains 72/96 and 96/96; old skills 59/96 and 56/96. Exactly-one falls 10/12 to 1/12; no promotion. See docs/STATS_V0_19_REPORT.md. All pending answers reviewed.
-
-Historical evaluated run: **v0.18**. New-chain reviewed v15/staged/shuffled scores: 76/96, 96/96, 96/96. Historical eight-family reviewed scores: 64/96, 36/96, 44/96. No promotion. All 35 pending transfer responses reviewed; 26 receive mathematical equivalence credit. Final full Kaggle preservation is not yet confirmed.
-
-Previously authorized, now completed: **v0.19**, full eight-family historical teacher replay plus v18 procedural chain supervision from exact v15. Record the hypothesis and retention/selection gates before training; see [v19 protocol](docs/STATS_V0_19_PROTOCOL.md). New teacher calls remain zero; logit KD remains deferred. This repair does not isolate a replay-only causal effect.
-
-Previous completed run: **v0.17**. Exact v15/v16 mixtures and conservative retraining were evaluated using validation-only candidate selection. On the same new 96-question unaided test, v15/v16/25%-v16-mixture/retrained-step8 score 64/57/65/64. The selected student's old MC remains 127/240. Neither approach meets the promotion target; keep v15 as general candidate and preserve complementary v16 capability. v16's second-moment and affine-Poisson-variance scores are 9/12 and 12/12 in this new prompt/test condition. This does not isolate prompting from question differences. Training completed 32 steps on 256 accepted historical teacher responses; no new teacher calls. See `docs/STATS_V0_17_REPORT.md`.
-
-Previous completed run: v0.16, 150 steps with same-story contrasts and fading formula support. On the same new 96-question unaided test, reviewed v15/v16 scores are 34/29; with focused symbolic rules on 24 target-family questions they are 11/22. v16 is not promoted as a general replacement: retain v15 as the general candidate and preserve v16 for rule-assisted formulation. Low validation loss did not ensure broad transfer. See `docs/STATS_V0_16_REPORT.md`; prior v15 results below remain historical facts on their original test.
-
-The original classical-music specification below is retained as project history and application intent. The user-authorized active pilot now targets **correct mathematical formulation**: understand a word problem, identify the event and units, bind the correct numbers, and emit an executable expression. Final arithmetic is performed by a bounded exact calculator. Merely naming a formula or giving the right final number does not meet this objective.
-
-v0.15 training is complete: 200 training examples, 30 validation, 75 steps, selected checkpoint-75. On the same new 64-question test, vanilla/v0.14/v0.15 semantic counts are 8/30/44 (automatic 8/30/42). Poisson time and conditional wait improve, while second moments and affine Poisson variance remain 0/8. Teacher moment targets were verified, but student transfer remains unsolved. The run combines decomposition, more weak-family practice, focused symbolic teacher reminders and replay; it does not isolate any one factor. Preserve all failed teacher attempts and separate initial from supplemented acceptance. Reserve test questions from teacher generation and checkpoint selection. Weights are saved in Kaggle Version 29.
-
-Teacher text is not ground truth, and text explanations are not access to internal reasoning. Preserve rejected attempts, report reference conditioning and format-only corrections, and compare student checkpoints on identical questions and prompts. Logit-based distillation remains deferred. Current evidence and backup locations are recorded in [STATS_CURRENT_STATUS.md](docs/STATS_CURRENT_STATUS.md).
-
-## 1. One-line concept
-
-**Distill a large cloud Llama's classical-music knowledge and explanatory style into a small local Llama specialist that is technically credible and intentionally funny.**
-
-## 2. Research question
-
-Can a roughly 3B-parameter local Llama become a materially better classical-music specialist after response distillation from a much larger cloud Llama teacher, while remaining small enough for practical local inference?
-
-## 3. Why this domain
-
-Classical music is a good first distillation domain because much of the core knowledge is mature, stable, extensively documented, and separable from subjective taste. That makes it easier to build reliable training examples and held-out evaluation than open-ended troubleshooting or expert-system domains.
-
-The project intentionally prioritizes:
-
-1. a memorable/funny demo,
-2. a defensible experiment,
-3. measurable learning,
-4. practical usefulness only after the above.
-
-## 4. Initial model plan
-
-### Teacher
-
-A large cloud-hosted Meta Llama model, preferably around the 70B class if access and cost are reasonable.
-
-The teacher is used to generate synthetic training examples and structured explanations. It is not assumed to be infallible.
-
-### Student
-
-A local Meta Llama model in approximately the 3B class.
-
-The first baseline is the unmodified student. The trained artifact is the same student architecture after response-distillation training/fine-tuning on filtered teacher-generated examples.
-
-### Why not 1B first
-
-A 1B student may be useful for extremely narrow tasks, but the intended project combines factual knowledge, terminology, classification, stylistic comparison, and explanation. A ~3B student offers a better balance between local deployability and domain capacity for the first experiment.
-
-## 5. Distillation method — phase 1
-
-This project begins with **response distillation / synthetic-data distillation**.
-
-Pipeline:
-
-1. Define a bounded classical-music competency map.
-2. Generate prompts/tasks from that map.
-3. Query the large Llama teacher.
-4. Store structured teacher responses.
-5. Validate/filter records.
-6. Split train/validation/test with leakage controls.
-7. Fine-tune the local student on teacher responses.
-8. Compare vanilla student, distilled student, and teacher on held-out tasks.
-
-This is deliberately different from logit-based KD; the latter is reserved for a later project phase.
-
-## 6. Competency map — draft v0
-
-The first dataset should cover a bounded set of skills rather than "all classical music."
-
-### A. Period recognition
-
-- Baroque
-- Classical
-- Romantic
-- late Romantic / transition into early modernism where appropriate
-- selected early modern / 20th-century context if needed
-
-Tasks:
-
-- identify period from factual/stylistic clues
-- order periods chronologically
-- reject anachronisms
-
-### B. Composer knowledge
-
-Core representative composers may include Bach, Handel, Vivaldi, Haydn, Mozart, Beethoven, Schubert, Chopin, Schumann, Brahms, Tchaikovsky, Wagner, Verdi, Mahler, Debussy, Ravel, and selected others needed for balanced coverage.
-
-Tasks:
-
-- composer-period mapping
-- representative work matching
-- factual comparison
-- common misconception detection
-
-### C. Musical forms and genres
-
-Examples:
-
-- fugue
-- sonata / sonata form
-- symphony
-- concerto
-- rondo
-- theme and variations
-- opera
-- string quartet
-- tone poem
-
-Tasks:
-
-- definition
-- recognition from description
-- comparison between forms
-- composer/work examples
-
-### D. Instrumentation and orchestration
-
-Tasks:
-
-- instrument-family knowledge
-- ensemble/orchestra terminology
-- historically reasonable orchestration distinctions
-- differences in broad orchestral practice across periods
-
-Avoid unverifiable aesthetic judgments.
-
-### E. Terminology
-
-Examples:
-
-- tempo and expression terms
-- dynamics
-- articulation
-- texture
-- harmony-related vocabulary at an accessible but musically correct level
-
-### F. Style comparison
-
-Tasks should ask for observable or historically grounded differences, not subjective rankings.
-
-Example:
-
-- compare Mozart and Mahler in broad orchestral scale and historical context
-- contrast Baroque contrapuntal practice with later Classical textures
-
-### G. Misconception detection
-
-This is intentionally demo-friendly.
-
-Examples:
-
-- "Bach was a Romantic composer."
-- "Beethoven wrote The Four Seasons."
-- "A fugue is simply any fast orchestral movement."
-
-The model should identify the factual error, correct it, and briefly explain why.
-
-## 7. Humor/personality layer
-
-The distilled model may have a playful persona: a tiny local model with the confidence of an intolerable conservatory know-it-all.
-
-However:
-
-- correctness comes first,
-- humor should be separable from factual content,
-- evaluation should score facts independent of jokes,
-- persona examples must not dominate the dataset,
-- the student should be able to answer plainly when requested.
-
-Possible demo persona line:
-
-> "You called Bach Romantic. My three billion parameters would like a word."
-
-This is presentation flavor, not an evaluation criterion.
-
-## 8. Dataset record design — draft
-
-Prefer structured JSONL records such as:
-
-```json
-{
-  "id": "period_000123",
-  "category": "period_recognition",
-  "difficulty": "medium",
-  "prompt": "A composer active around 1720 writes dense contrapuntal keyboard works and church cantatas. Which broad period best fits?",
-  "answer": "Baroque",
-  "explanation": "The chronology and emphasis on contrapuntal keyboard and sacred vocal writing are characteristic of the Baroque period.",
-  "key_facts": ["c.1720", "counterpoint", "church cantatas"],
-  "teacher_model": "<model-id>",
-  "generation_version": "v1",
-  "validation_status": "pending"
-}
-```
-
-A separate presentation/persona field can be introduced later if useful.
-
-## 9. Validation strategy
-
-Teacher outputs must be checked before becoming training data.
-
-Possible validation layers:
-
-1. deterministic checks for dates, mappings, and structured fields,
-2. comparison against trusted public reference data,
-3. second-pass teacher critique where useful,
-4. manual spot checks,
-5. duplicate/near-duplicate detection,
-6. ambiguity filtering.
-
-The project should prefer fewer high-quality records over a huge noisy synthetic dataset in the first experiment.
-
-## 10. Evaluation design
-
-Create a held-out benchmark before or independently from final training generation.
-
-Suggested metrics:
-
-- exact-match accuracy for factual mappings
-- classification accuracy
-- macro F1 where classes are imbalanced
-- misconception correction accuracy
-- rubric-based explanation score
-- factual hallucination/error rate
-- response latency
-- peak memory usage
-- model/storage size
-
-Minimum comparison:
-
-| Model | Role |
-|---|---|
-| Vanilla local Llama ~3B | Baseline student |
-| Distilled local Llama ~3B | Experimental student |
-| Large cloud Llama | Teacher/reference |
-
-## 11. Success criteria — initial
-
-Do not hard-code a required percentage before seeing baseline difficulty. The first experiment is successful if it demonstrates all of the following:
-
-1. statistically/operationally meaningful improvement over the vanilla student on held-out classical-music tasks,
-2. clear retained advantage in local inference cost/latency/footprint versus the cloud teacher,
-3. no evidence that gains come only from train/test leakage,
-4. documented failure cases and limitations,
-5. reproducible training and evaluation steps.
-
-## 12. Out of scope for phase 1
-
-- audio understanding or direct music recognition from recordings
-- score-image/OCR analysis
-- MIDI generation
-- music composition quality evaluation
-- subjective "best composer" judgments
-- RAG as the main mechanism
-- AMD/company-internal knowledge
-- NDA material
-- Linux/kernel debugging
-- general-purpose agent routing
-- claims that the student is equivalent to a professional musicologist
-
-## 13. Future experiments
-
-### Phase 2: logit-based KD
-
-Compare response-only distillation with classic soft-target KD using teacher logits/logprobs where a suitable model/provider permits it.
-
-Potential variables:
-
-- temperature
-- forward/reverse KL variants
-- soft-target vs hard-target mixtures
-- top-k logit storage
-
-### Phase 3: retrieval augmentation
-
-Optionally explore whether a distilled specialist plus RAG performs better than either approach alone for obscure factual material.
-
-### Phase 4: audio/multimodal extension
-
-Only after the text specialist is stable, consider audio descriptors, symbolic music, MIDI, score analysis, or multimodal models.
-
-## 14. Deliverables
-
-Initial target deliverables:
-
-- reproducible teacher-data generation pipeline
-- validated classical-music synthetic dataset
-- baseline benchmark
-- distilled local student
-- comparison report/plots
-- concise interactive demo
-- documentation explaining what did and did not transfer
-
-## 15. Project tone
-
-The repo may be playful. The experiment must not be sloppy.
-
-**3Beethoven should be funny enough that people want to try it, and rigorous enough that an ML engineer can inspect the methodology without immediately finding an obvious hole.**
-
-
-## Motivation and expectations for future statistics versions
-
-Before generating data or starting a new version, record the triggering observation, why the change is proposed, the expected direction of change, what would weaken that expectation, the comparison/control, stopping and selection rules, and scope limitations. Commit that record before execution. Keep original expectations immutable; timestamp amendments and state what results were already visible. Append outcomes afterward rather than rewriting the original motivation.
-
-Researcher recollections and later narrative reconstruction must be labeled retrospective. The v15–v18 source audit, research narrative and reusable recording fields are in [STATS_MOTIVATION_EXPECTATIONS.md](docs/STATS_MOTIVATION_EXPECTATIONS.md).
-
-</details>
+[Preserved Traditional Chinese version](PROJECT_SPEC.zh-TW.md)

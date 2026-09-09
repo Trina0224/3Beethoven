@@ -1,33 +1,22 @@
-# Diverse final blind 正式結果：蒸餾目標成功
+# Final Evaluation — Original 3B vs Step180
 
-## 最新權重：Hugging Face
+The owner ran the evaluation in Colab and returned the complete raw bundle on September 8, 2026 (PDT). The final set contains 180 questions, ten in each of 18 categories, reserved from training and checkpoint selection. The later owner-authorized evaluation compares the unmodified 3B Instruct base with that same base plus the already chosen step180 adapter.
 
-正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+## Results
 
-- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
-- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
-- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
-
-這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
-
-
-狀態：**完成。最新 step 180 學生在原始 3B 對照下通過專案目標。**
-
-2026-09-08 PDT，依使用者最終指定，以未掛 LoRA 的原始 `meta-llama/Llama-3.2-3B-Instruct` 作自然 baseline，與同一個 base 直接掛載最新 step 180 LoRA 的學生，在先前封存且未用於訓練或選點的 180 題 final blind 上比較。兩者使用相同 tokenizer、prompt、greedy decoding、grader 與 4-bit 載入條件；沒有載入或疊加 v15。
-
-## 正式成績
-
-| 指標 | 原始 3B | 最新 step 180 |
+| Metric | Original 3B Instruct | Step180 adapter |
 |---|---:|---:|
-| 自動正確 | 45/180（25.0%） | **170/180（94.4%）** |
-| Strict one-line expression | 26/180 | **180/180** |
-| Pending | 66 | **0** |
+| Automatically correct | 45/180 (25.0%) | **170/180 (94.4%)** |
+| Strict one-line format | 26/180 | **180/180** |
+| Pending review | 66 | **0** |
 
-配對轉移為 `0→0: 8`、`0→1: 127`、`1→0: 2`、`1→1: 43`，即 127 題由錯轉對、2 題由對轉錯，淨增加 125 題。即使把原始 3B 的全部 66 題 pending 都暫時判對，其上限也只有 111/180，仍低於學生的 170/180。
+Paired outcomes: 127 wrong-to-right, 2 right-to-wrong, 43 both correct, and 8 neither correct. Net gain: 125 questions (+69.4 percentage points). Category totals improved in 17 of 18 categories and tied in one; none declined under the automatic scoring rule. Even crediting all 66 baseline pending answers would bring that baseline to only 111/180, below 170/180. This is a sensitivity bound, not a completed semantic review of those 66 answers.
 
-## 各類別
+The mathematical primary score and strict formatting are separate metrics. Formatting alone is not the mathematical pass criterion.
 
-| 類別（各 10 題） | 原始 3B | step 180 |
+## Category scores
+
+| Category (10 questions each) | Original 3B | Step180 |
 |---|---:|---:|
 | at_least_one | 4 | 10 |
 | binomial | 3 | 9 |
@@ -48,35 +37,49 @@
 | uniform_conditional | 0 | 9 |
 | uniform_mean | 9 | 10 |
 
-18 類中 17 類提高、1 類持平、0 類下降。這不是由少數題型灌高總分。
+## Review of the ten student errors
 
-## 剩餘錯誤檢查
+IDs below omit the common `diverse_final_blind_` prefix.
 
-學生的 10 題失敗均為實際列式或代入錯誤，沒有 grader 誤殺，也沒有 pending：
+| Question ID | Actual error |
+|---|---|
+| interval_001 | Adds endpoints instead of subtracting them when computing interval half-width. |
+| process_scaled_003 | Omits the arrival rate. |
+| process_scaled_004 | Omits the observation duration. |
+| process_scaled_005 | Omits the arrival rate. |
+| moment_second_004 | Incorrectly forms the squared mean term. |
+| moment_variance_006 | Adds the squared mean to the variance. |
+| moment_second_006 | Uses an incorrect second-moment expansion. |
+| neither_007 | Omits the complement of the first event. |
+| uniform_conditional_008 | Uses the original lower endpoint instead of the conditional cutoff. |
+| binomial_009 | Multiplies by an extra failure-probability factor when r=n. |
 
-- `interval_001`：區間半寬把端點相加，應為相減。
-- `process_scaled_003`、`004`、`005`：漏乘 Poisson rate 或觀察時間。
-- `moment_second_004`、`006`：二階動差展開錯誤。
-- `moment_variance_006`：把平均數平方項誤加進變異數。
-- `neither_007`：漏掉第一個事件的補集；這是兩題 paired loss 之一。
-- `uniform_conditional_008`：條件截斷端點代入錯誤。
-- `binomial_009`：`r=n` 時仍多乘一次 `(1-p)`；這是另一題 paired loss。
+These are real numerical formulation errors, not grader false negatives. `neither_007` and `binomial_009` are the two questions the baseline answered correctly and the student missed. No scores were changed during this review.
 
-弱點最集中在 `process_scaled`（7/10）與 `moment_second`（8/10）；這些是日後修訂教材時最明確的局部方向，不影響本次限定範圍內的成功判定。
+## Reproduction and evidence
 
-## 結論邊界
+- Base: `meta-llama/Llama-3.2-3B-Instruct`
+- Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
+- Adapter: `kozakurayuki/3Beethoven-step180`
+- Adapter revision: `682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256: `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
 
-本結果支持的主張是：response distillation 使原始 3B 在約定的直接統計列式範圍，由 25.0% 提升至 94.4%，並學會 180/180 的嚴格一行算式輸出。它不主張一般語文能力、未知統計領域能力或完整蒸餾因果消融。
+Load this adapter directly on the pinned base. Do not stack it on v15. Use the base tokenizer, not the old tokenizer configuration from the Kaggle archive.
 
-先前以 v15 作選點錨點的 frozen protocol 仍保持原始歷史結論 `no_checkpoint_passed`；本次後續 final blind 比較不能倒推改寫當時的 protocol compliance。使用者之後明確指定自然產品比較應為「原始 3B vs 最新學生」，所以目前專案成果採用 step 180 作最新成功學生，而 v15 保留為歷史訓練起點與研究錨點。
+- Final split SHA-256: `9b216083cafab17f76b0c28f3e0941e9727234ede0d2d270056b64c5c2d6524a`
+- Grader fingerprint: `f73c1d38cbd5e1ab9454275300907aa6c6a43c3833a303441ffb1311c18ad68b`
+- [Raw result ZIP](../final_blind_eval_results.zip): 83,251 bytes; SHA-256 `4f3e57aeb129a6d43870496841fdf1b806e688ac9e8bfced12b0c5b968cbad54`
+- [Machine-readable summary](STATS_DIVERSE_FINAL_BLIND_RESULTS.json)
+- [Colab reproduction](STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)
+- [Weights on Hugging Face](https://huggingface.co/kozakurayuki/3Beethoven-step180)
+- [Historical Kaggle ZIP backup](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348384546): `3Beethoven_latest_step180_weights.zip`; SHA-256 `4a97c1070fd81ff2fb570699eb630043562b9b4968b799dfed6dfb410fdf036e`.
 
-## 可重現身份與證據
+Both arms use the pinned base tokenizer and identical prompts, greedy decoding, a 160-token generation limit, and 4-bit NF4 loading. This reports a single evaluated artifact, not training-seed robustness.
 
-- Base：`meta-llama/Llama-3.2-3B-Instruct`
-- Base revision：`0cb88a4f764b7a12671c53f0838cd831a0843b95`
-- step 180 adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
-- Final blind split SHA-256：`9b216083cafab17f76b0c28f3e0941e9727234ede0d2d270056b64c5c2d6524a`
-- Grader fingerprint：`f73c1d38cbd5e1ab9454275300907aa6c6a43c3833a303441ffb1311c18ad68b`
-- 完整結果 ZIP：[`final_blind_eval_results.zip`](../final_blind_eval_results.zip)，83,251 bytes，SHA-256 `4f3e57aeb129a6d43870496841fdf1b806e688ac9e8bfced12b0c5b968cbad54`
-- 機器可讀摘要：[STATS_DIVERSE_FINAL_BLIND_RESULTS.json](STATS_DIVERSE_FINAL_BLIND_RESULTS.json)
-- 最新權重：[Kaggle Version 63](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348384546)，下載 `3Beethoven_latest_step180_weights.zip`
+## Limits of the success claim
+
+The earlier v15-based frozen selection protocol remains `no_checkpoint_passed`: it required zero paired losses and had documented execution deviations. The owner subsequently requested a separate final comparison against the unmodified 3B model. This supports a bounded project success claim; it does not retroactively pass the earlier protocol or establish zero regressions.
+
+This is evidence for the tested statistics-expression task, not general language ability, arbitrary mathematical reasoning, or isolated teacher-transfer causality. The run combines corrected synthetic supervision and historical replay; no ablation isolates their individual effects. The final set is now exposed and must not be reused as an untouched test for future model selection.
+
+[Preserved Traditional Chinese version](STATS_DIVERSE_FINAL_BLIND_RESULTS.zh-TW.md)

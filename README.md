@@ -1,47 +1,49 @@
 # 3Beethoven
 
-## 最新權重：Hugging Face
+**A 3B statistics-expression student: 25.0% → 94.4% on a reserved 180-question evaluation.**
 
-正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+3Beethoven explores response distillation and verified synthetic-data fine-tuning with Meta Llama models. The current task is deliberately bounded: turn a direct statistics question into a fully substituted, executable expression. A calculator handles arithmetic. The original classical-music concept remains project history.
 
-- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
-- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
-- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
+## Latest result
 
-這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
+| Metric | Original 3B Instruct | Step180 adapter |
+|---|---:|---:|
+| Automatically correct | 45/180 (25.0%) | **170/180 (94.4%)** |
+| Strict one-line format | 26/180 | **180/180** |
+| Pending review | 66 | **0** |
 
+Paired outcomes: 127 wrong-to-right, 2 right-to-wrong, 43 both correct, and 8 neither correct. Net gain: 125 questions (+69.4 percentage points). Category totals improved in 17 of 18 categories and tied in one; none declined under the automatic scoring rule. Even crediting all 66 baseline pending answers would bring that baseline to only 111/180, below 170/180. This is a sensitivity bound, not a completed semantic review of those 66 answers.
 
-## 目前狀態：response distillation 成功
+The latest student is **step180**. It was trained by continuing the v15 adapter for one epoch on 720 new examples interleaved with 720 historical training replay examples (180 optimizer updates). Its inference artifact loads directly on the original base; v15 is not loaded separately.
 
-最新 step 180 學生已在先前封存、未用於訓練或選點的 180 題 diverse final blind 上完成正式評測。自然產品比較使用原始 `meta-llama/Llama-3.2-3B-Instruct` 作 baseline：原始 3B 為 **45/180（25.0%）**，最新學生為 **170/180（94.4%）**，淨增加 125 題。學生同時達到 **180/180 嚴格一行可執行算式、0 pending**。
+## Download
 
-18 個類別中，學生相對原始 3B 有 17 類提高、1 類持平、0 類下降。配對結果有 127 題由錯轉對、2 題由對轉錯；逐一檢查學生剩餘 10 題後，均為真實列式錯誤，沒有 grader 誤殺。這支持本專案的限定主張：學生學會約定範圍內的直接統計列式能力；不延伸成一般語文或未知統計領域能力。
+[Model and weights on Hugging Face](https://huggingface.co/kozakurayuki/3Beethoven-step180) · [Files](https://huggingface.co/kozakurayuki/3Beethoven-step180/tree/main)
 
-[正式 final blind 結果](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [機器可讀摘要](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.json) · [完整結果 ZIP](final_blind_eval_results.zip)
+- Base: `meta-llama/Llama-3.2-3B-Instruct`
+- Base revision: `0cb88a4f764b7a12671c53f0838cd831a0843b95`
+- Adapter: `kozakurayuki/3Beethoven-step180`
+- Adapter revision: `682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256: `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
 
-| 模型 | 目前定位 |
-|---|---|
-| 原始 Llama 3.2 3B Instruct | 正式自然 baseline：45/180 |
-| **多樣教材 step 180** | **目前成功學生：170/180；180/180 strict format；0 pending** |
-| 原 v15 | 歷史訓練起點與 selection 錨點；不再作最終產品 headline baseline |
-| final_clear / V58 | 歷史窄模板結果；採用資格維持撤回 |
+Load this adapter directly on the pinned base. Do not stack it on v15. Use the base tokenizer, not the old tokenizer configuration from the Kaggle archive.
 
-學生由原 v15 接續訓練，使用 720 筆新 train 與 720 筆物化歷史 train replay，固定 1:1 組成 1,440-row 訓練序列，共 180 optimizer updates；最後記錄 loss 約 `0.20015`。step 180 adapter SHA-256 為 `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`。
+## Documentation
 
-## 下載最新學生
+English is the primary documentation language. Preserved Traditional Chinese versions and historical records are linked from the [documentation index](docs/README.md).
 
-權重位於 [Kaggle Version 63](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348384546)，檔名 `3Beethoven_latest_step180_weights.zip`。ZIP SHA-256 為 `4a97c1070fd81ff2fb570699eb630043562b9b4968b799dfed6dfb410fdf036e`；其中 adapter SHA-256 如上。把 step 180 LoRA 直接掛在固定 revision 的原始 3B base，不要疊加 v15。
+- [Final evaluation and error review](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md)
+- [Current status](docs/STATS_CURRENT_STATUS.md) and [project specification](PROJECT_SPEC.md)
+- [Colab reproduction instructions](docs/STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)
+- [Training and development results](docs/STATS_DIVERSE_RUN_RESULTS.md)
+- [Curriculum and evaluation overview](docs/STATS_METHOD_OVERVIEW.md)
+- [Machine-readable final summary](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.json)
+- [Complete raw evaluation bundle](final_blind_eval_results.zip)
 
-## 實驗解讀
+## Interpretation
 
-先前凍結的 v15 selection protocol 要求逐題零 paired loss，當時 step 180 在 development 有兩題 loss，因此歷史 selection 結論仍是 `no_checkpoint_passed`。後續依使用者明確指定，正式產品比較改以原始 3B 對最新學生，並解封 final blind；這個結果證明蒸餾目標成功，但不倒推改寫舊 protocol 的執行偏差或合規結論。
+The earlier v15-based frozen selection protocol remains `no_checkpoint_passed`: it required zero paired losses and had documented execution deviations. The owner subsequently requested a separate final comparison against the unmodified 3B model. This supports a bounded project success claim; it does not retroactively pass the earlier protocol or establish zero regressions.
 
-## 文件入口
+This is evidence for the tested statistics-expression task, not general language ability, arbitrary mathematical reasoning, or isolated teacher-transfer causality. The run combines corrected synthetic supervision and historical replay; no ablation isolates their individual effects. The final set is now exposed and must not be reused as an untouched test for future model selection.
 
-- [正式 final blind 結果](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [Colab 重跑說明](docs/STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)
-- [訓練與 development 歷史結果](docs/STATS_DIVERSE_RUN_RESULTS.md) · [目前狀態](docs/STATS_CURRENT_STATUS.md)
-- [受控實驗協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [執行交接](docs/STATS_EXECUTION_HANDOFF.md)
-- [多樣教材協議](docs/STATS_DIVERSE_CURRICULUM_PROTOCOL.md) · [實際 replay rows](docs/STATS_DIVERSE_REPLAY.json)
-- [V58 撤回後記](docs/STATS_V58_POSTMORTEM.md) · [完整研究流程](docs/STATS_V01_V19_RESEARCH_FLOW.md)
-
-原始音樂概念與早期實驗保留為歷史背景。Kaggle 版本號只是 notebook 保存版本；模型身份以 base revision、adapter 路徑與 SHA-256 判定。
+[Preserved Traditional Chinese version](README.zh-TW.md)

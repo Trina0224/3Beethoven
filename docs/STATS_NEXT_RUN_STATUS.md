@@ -1,13 +1,11 @@
-# 下一步狀態：正式評測已完成
+# Next Steps — Completed Delivery
 
-目前沒有訓練或評測正在執行。最新 step 180 學生在 diverse final blind 得到 **170/180（94.4%）**，原始 3B 為 **45/180（25.0%）**；學生 180/180 遵守嚴格一行算式格式，0 pending。這一輪工作已到可交付段落。
+The current run is complete: step180 scored 170/180 against the original 3B model's 45/180. No additional training, seeds, or GPU jobs are scheduled.
 
-目前固定決定：
+Keep step180 as the current deliverable. If a future repair is requested, prioritize scaled Poisson-process variance (7/10) and affine second moments (8/10). Prepare a new reserved evaluation before selecting another model; the present final set has been inspected and is no longer blind.
 
-- step 180 是本專案目前成功學生，模型身份以 adapter SHA-256 `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23` 固定。
-- 正式 headline baseline 是原始 Llama 3.2 3B，而非 v15。
-- 不再追加 seed、擴大語文能力或為追求 180/180 繼續燒算力。
-- 若未來另開局部修補，優先處理 `process_scaled`（7/10）與 `moment_second`（8/10），並使用新考卷，不能重複用本次 final blind 做模型選擇。
-- 舊 frozen v15 selection 的 `no_checkpoint_passed` 是歷史 protocol 結論，與後續產品評測成功並列保留。
+The prior v15 selection failure remains a historical protocol result. Do not restart training merely to eliminate that label or chase 180/180.
 
-[正式結果](STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [目前狀態](STATS_CURRENT_STATUS.md) · [Colab 重跑](STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)
+[Current status](STATS_CURRENT_STATUS.md) · [Final report](STATS_DIVERSE_FINAL_BLIND_RESULTS.md)
+
+[Preserved Traditional Chinese version](STATS_NEXT_RUN_STATUS.zh-TW.md)
