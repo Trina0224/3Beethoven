@@ -1,45 +1,27 @@
-# 目前狀態：多樣教材學生已完成，沒有 checkpoint 通過畢業門檻
+# 目前狀態：最新 step 180 學生通過原始 3B final blind 比較
 
-狀態：**`no_checkpoint_passed`。保留原 v15；final blind 未解封。**
+狀態：**蒸餾目標成功；正式評測完成。**
 
-| 模型／工作 | 目前定位 |
-|---|---|
-| 原 v15 | 受控起點與比較錨點；adapter SHA-256 `9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3` |
-| `final_clear`／Kaggle V58 | 歷史窄模板結果；採用與成功解讀仍為撤回狀態 |
-| 多樣教材 v2 | 已完成 720 new＋720 historical-train replay 的唯一訓練軌跡 |
-| step 180 新學生 | Aggregate 最佳，但因兩題 paired loss 未畢業、不取代 v15 |
+2026-09-08 PDT，使用先前封存且未參與訓練或 checkpoint 選擇的 180 題 diverse final blind，完成原始 3B 與最新 step 180 學生的同條件比較。
 
-## 本輪實際完成內容
+| 指標 | 原始 3B | step 180 |
+|---|---:|---:|
+| 正確 | 45/180 | **170/180** |
+| Strict one-line expression | 26/180 | **180/180** |
+| Pending | 66 | **0** |
 
-- 訓練資料：1,440 rows，包含 720 筆新教材與 720 筆歷史 train replay。
-- 訓練長度：180 optimizer updates；最後記錄 loss 約 `0.20015`。
-- step 180 adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`。
-- Kaggle Quick Save：已成功保存為 [Version 62](https://www.kaggle.com/code/trinashih/3beethoven-v0-2?scriptVersionId=348379527)，scriptVersionId `348379527`。
+配對轉移：127 題錯轉對、2 題對轉錯、43 題共同答對、8 題共同答錯。18 類中 17 類提高、1 類持平、0 類下降。學生剩餘 10 題均已人工檢查，屬實際數學或代入錯誤，沒有 grader 誤殺。
 
-固定驗收結果如下；主分只使用 `math_correct is True and executable is True`：
+## 現行模型
 
-| 模型／checkpoint | New development／180 | New paired losses | Unresolved pending | Legacy development／72 |
-|---|---:|---:|---:|---:|
-| 原 v15 | 91（另有 5 題 pending） | — | — | 51 |
-| step 60 | 139 | 2 | 2 | 69 |
-| step 120 | 167 | 0 | 1 | 72 |
-| step 180 | 自動 172；暫行 173 | 2 | 0（唯一放行後） | 72 |
+- Base：`meta-llama/Llama-3.2-3B-Instruct`
+- Base revision：`0cb88a4f764b7a12671c53f0838cd831a0843b95`
+- Student：原始 base 直接掛 step 180 LoRA；不可再疊加 v15。
+- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
+- 權重：[Kaggle Version 63](https://www.kaggle.com/code/trinashih/3beethoven-v0-2/output?scriptVersionId=348384546)，`3Beethoven_latest_step180_weights.zip`
 
-三個 checkpoint 在 new 與 legacy development 的逐類分數均不低於 v15；legacy development 也都是 0 paired loss、0 pending。step 60 因 new development 的 paired loss 與 pending 失敗；step 120 因一題 unresolved pending 失敗；step 180 則在唯一 pending 精確放行後，仍因兩題 paired loss 失敗。逐題 ID 見[完整結果](STATS_DIVERSE_RUN_RESULTS.md)。
+## 歷史協議邊界
 
-step 180 的暫行 173 只接受使用者明示的唯一 pending：`diverse_development_process_scaled_001`。原始輸出為 `Expression: ((12/19)**2)*(10**2)`，raw SHA-256 為 `327520af57a1a3eb0098b0cd9ff40592aa9cec561976a44427bf0ba05df3fb37`，精確值為 `14400/361`。這個 credit 只用於 provisional capability 解讀，不覆寫原自動 pending，也不算 frozen-protocol compliance。
+原 v15 仍是本輪訓練來源與歷史 selection 錨點。凍結 selection protocol 的 `no_checkpoint_passed` 結論不變，因為 development 上的逐題零損失硬門檻未達成，且存在已記錄的執行偏差。後續 final blind 是使用者明確改定自然比較對象後進行的正式產品評估，因此可以宣稱限定範圍內的蒸餾成功，但不能宣稱舊 frozen protocol 已追溯通過。
 
-step 180 在 new development 的 18 類 aggregate 都不低於 v15，但仍有兩題 paired loss：
-
-1. `diverse_development_moment_variance_006`
-2. `diverse_development_binomial_009`
-
-凍結門檻要求 paired losses 為 0。因此 step 60、120、180 均未通過全部選點 gate；沒有 selected checkpoint。Legacy final 依協議只對 selected checkpoint 執行，所以本輪是按協議未跑、不是忘記驗證；final blind 亦未讀取或解封。
-
-## 能成立與不能成立的結論
-
-可以成立：本輪在有限、直接的統計列式範圍內出現顯著且廣泛的 empirical capability 改善；new development 從 v15 的 91/180 提高到 step 180 的自動 172/180，legacy development aggregate 亦提高到 72/72。
-
-不能成立：全面比 v15 好、畢業、取代 v15，或完整遵循 frozen protocol。除了兩題 paired loss，本輪 baseline 是訓練後補做，step 180 早於固定 60→120→180 選點順序被查看，唯一人工放行也在看到輸出後才定案。這些 execution deviations 必須原樣保留。
-
-[完整結果](STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](STATS_DIVERSE_RUN_RESULTS.json) · [受控實驗協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [下一輪狀態](STATS_NEXT_RUN_STATUS.md) · [模型恢復](KAGGLE_RECOVERY.md)
+[正式結果](STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [機器摘要](STATS_DIVERSE_FINAL_BLIND_RESULTS.json) · [訓練歷史](STATS_DIVERSE_RUN_RESULTS.md) · [執行交接](STATS_EXECUTION_HANDOFF.md)

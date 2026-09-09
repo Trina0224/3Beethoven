@@ -210,8 +210,12 @@ def main() -> None:
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA GPU is required for this 3B final-blind run")
     args.output.mkdir(parents=True, exist_ok=True)
-    tokenizer_source = adapter if (adapter / "tokenizer_config.json").exists() else BASE
-    tokenizer = AutoTokenizer.from_pretrained(tokenizer_source, revision=None if tokenizer_source != BASE else BASE_REVISION, token=args.hf_token)
+    # The adapter archive once contained a tokenizer_config.json naming
+    # `TokenizersBackend`, which is not a loadable tokenizer class in the
+    # Colab Transformers runtime. Both arms must use the frozen base tokenizer
+    # anyway, so load it explicitly from the pinned base revision.
+    tokenizer_source = BASE
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_source, revision=BASE_REVISION, token=args.hf_token)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -292,4 +296,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

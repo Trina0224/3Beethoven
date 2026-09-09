@@ -1,4 +1,12 @@
-# 3Beethoven：目前規格與多樣教材單輪結果
+# 3Beethoven：目前規格與正式蒸餾結果
+
+## 最新結果：限定統計列式蒸餾成功
+
+2026-09-08 PDT，最新 step 180 學生在事前封存且未參與訓練或選點的 180 題 diverse final blind 上，對原始 `meta-llama/Llama-3.2-3B-Instruct` 完成同條件比較。原始 3B 為 **45/180（25.0%）**，學生為 **170/180（94.4%）**；學生另達到 180/180 嚴格一行可執行算式、0 pending。18 類中 17 類提高、1 類持平、0 類下降。
+
+本專案現可主張：response distillation 讓同一個 3B base 在約定的直接統計列式範圍內出現顯著、廣泛且可重現的改善。這項主張不涵蓋一般語文能力、長篇推理、未知統計領域或完整蒸餾因果分解。正式證據見 [final blind 報告](docs/STATS_DIVERSE_FINAL_BLIND_RESULTS.md)。
+
+## 歷史選點結論
 
 **V58 的採用與成功解讀已撤回。** 原先同題窄模板結果 v15 **107/144** → `final_clear` **144/144** 是實際歷史紀錄，但教材與評估沒有覆蓋足夠的符號、邊界、單位與結構變化，不能證明它全面優於 v15。V58 不得作現行父模型或成功終點。
 
@@ -6,9 +14,9 @@
 
 學生只需在約定範圍的直接、清楚統計題上輸出已代入數值的可執行算式，算術交由程式。不把陌生語文改寫、長篇解釋或一般語文能力加入成功定義。
 
-原 v15 是唯一可信的訓練起點與比較錨點，但不是已完成的成功學生。本輪已按「一個學生、一次訓練」完成 720 筆新教材＋720 筆實際歷史 train replay、180 optimizer updates。step 180 在固定 new development 為自動 172/180，接受使用者唯一暫行 pending 放行後為 173/180；legacy development 為 72/72，但仍有兩題 v15→student paired loss。因此 selection 狀態為 **`no_checkpoint_passed`**，原 v15 不被取代，final blind 未解封。
+原 v15 是本輪訓練起點與歷史 selection 錨點。本輪按「一個學生、一次訓練」完成 720 筆新教材＋720 筆實際歷史 train replay、180 optimizer updates。step 180 在固定 new development 為自動 172/180，接受使用者唯一暫行 pending 放行後為 173/180；legacy development 為 72/72，但仍有兩題 v15→student paired loss。因此當時 selection 狀態為 **`no_checkpoint_passed`**。
 
-本輪 empirical capability 有顯著改善，但 frozen-protocol compliance 不成立：除了兩題 paired loss，baseline 是訓練後補做，step 180 早於固定選點順序被查看，唯一人工放行是在看到輸出後才定案。只有同題總分增加、所有約定類別不退步、配對既有正確題零損失、待判為零時，才能稱為成功；本輪沒有達到，不能用 aggregate 提升改寫成全面畢業。
+Frozen-protocol compliance 不成立：除了兩題 paired loss，baseline 是訓練後補做，step 180 早於固定選點順序被查看，唯一人工放行是在看到輸出後才定案。後續依使用者指定，產品層級的自然 baseline 改為原始 3B，並另行解封 final blind。正式評測支持專案成功，但不把舊 selection protocol 追溯改寫為通過。
 
 後來的 24 題外部結構診斷只保留聚合 v15 **10/24**、V58 **16/24**。因逐題 raw bundle 未存入 GitHub 或 Kaggle 已保存版本，它是撤回動機，不是本輪可執行 gate。
 

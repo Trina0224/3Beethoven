@@ -1,15 +1,13 @@
-# 下一輪狀態：本輪已停止，尚未啟動新的實驗
+# 下一步狀態：正式評測已完成
 
-多樣教材 v2 的唯一學生已完成 1,440-row、180-update 訓練，但 selection 結果為 **`no_checkpoint_passed`**。step 180 的 new development 為自動 172/180；接受使用者唯一暫行 pending 放行後為 173/180，legacy development 為 72/72，但仍有兩題 v15→student paired loss。它有明顯 aggregate 改善，沒有達到全面不退步的畢業定義。
+目前沒有訓練或評測正在執行。最新 step 180 學生在 diverse final blind 得到 **170/180（94.4%）**，原始 3B 為 **45/180（25.0%）**；學生 180/180 遵守嚴格一行算式格式，0 pending。這一輪工作已到可交付段落。
 
-目前固定狀態：
+目前固定決定：
 
-- 原 v15 繼續作受控起點與比較錨點；不以 step 180 取代。
-- step 60、120、180 均未通過全部 selection gates；不事後改選。
-- 因沒有 selected checkpoint，legacy final 依協議未執行；這是按停止規則未跑，不是忘記驗證。Final blind 也未讀取、未解封，不拿未測資料推測成功。
-- 不追加訓練、不增加 seed，也不把任務擴成一般語文能力。
-- Kaggle Quick Save 已成功保存為 [Version 62](https://www.kaggle.com/code/trinashih/3beethoven-v0-2?scriptVersionId=348379527)，scriptVersionId `348379527`。
+- step 180 是本專案目前成功學生，模型身份以 adapter SHA-256 `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23` 固定。
+- 正式 headline baseline 是原始 Llama 3.2 3B，而非 v15。
+- 不再追加 seed、擴大語文能力或為追求 180/180 繼續燒算力。
+- 若未來另開局部修補，優先處理 `process_scaled`（7/10）與 `moment_second`（8/10），並使用新考卷，不能重複用本次 final blind 做模型選擇。
+- 舊 frozen v15 selection 的 `no_checkpoint_passed` 是歷史 protocol 結論，與後續產品評測成功並列保留。
 
-若日後另行授權新實驗，必須先建立新的事前協議與收據；不得用補跑、事後人工放行或回頭修改本輪 gate，把這次結果改寫成 frozen-protocol success。目前沒有下一輪正在執行。
-
-[本輪完整結果](STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](STATS_DIVERSE_RUN_RESULTS.json) · [目前狀態](STATS_CURRENT_STATUS.md) · [本輪凍結協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md)
+[正式結果](STATS_DIVERSE_FINAL_BLIND_RESULTS.md) · [目前狀態](STATS_CURRENT_STATUS.md) · [Colab 重跑](STATS_DIVERSE_FINAL_BLIND_COLAB_HANDOFF.md)

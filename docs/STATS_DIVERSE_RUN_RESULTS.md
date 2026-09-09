@@ -1,4 +1,6 @@
-# 多樣教材單輪訓練結果：有實質改善，但沒有 checkpoint 通過畢業門檻
+# 多樣教材單輪訓練與 selection 歷史結果
+
+> 後續狀態：使用者另行指定以原始 3B 作自然 baseline，並授權解封 final blind。step 180 在該正式評測得到 **170/180**，原始 3B 為 **45/180**，因此限定統計列式蒸餾目標成功。見 [正式 final blind 結果](STATS_DIVERSE_FINAL_BLIND_RESULTS.md)。以下保留當時 v15 frozen selection 的原始結論，不追溯改寫。
 
 狀態：**`no_checkpoint_passed`；保留原 v15，不解封 final blind。**
 

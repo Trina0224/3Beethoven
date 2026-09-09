@@ -1,0 +1,447 @@
+{
+  "status": "completed_success_on_original_3b_comparison",
+  "evaluated_at": "2026-09-08 PDT",
+  "comparison": "original Llama 3.2 3B Instruct vs same base plus latest step180 LoRA",
+  "scope": "bounded one-line statistics expression formulation",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "base_revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+  "adapter_sha256": "ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23",
+  "final_blind_count": 180,
+  "final_blind_split_sha256": "9b216083cafab17f76b0c28f3e0941e9727234ede0d2d270056b64c5c2d6524a",
+  "grader_fingerprint": "f73c1d38cbd5e1ab9454275300907aa6c6a43c3833a303441ffb1311c18ad68b",
+  "original_3b": {
+    "n": 180,
+    "correct": 45,
+    "pending": 66,
+    "strict_one_line_expression": 26,
+    "by_category": {
+      "at_least_one": {
+        "n": 10,
+        "correct": 4,
+        "pending": 6,
+        "format_strict": 0
+      },
+      "binomial": {
+        "n": 10,
+        "correct": 3,
+        "pending": 5,
+        "format_strict": 2
+      },
+      "both": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 0
+      },
+      "exactly_one": {
+        "n": 10,
+        "correct": 0,
+        "pending": 8,
+        "format_strict": 0
+      },
+      "interval": {
+        "n": 10,
+        "correct": 0,
+        "pending": 2,
+        "format_strict": 0
+      },
+      "moment_mean": {
+        "n": 10,
+        "correct": 4,
+        "pending": 1,
+        "format_strict": 6
+      },
+      "moment_second": {
+        "n": 10,
+        "correct": 0,
+        "pending": 6,
+        "format_strict": 3
+      },
+      "moment_variance": {
+        "n": 10,
+        "correct": 0,
+        "pending": 9,
+        "format_strict": 1
+      },
+      "neither": {
+        "n": 10,
+        "correct": 7,
+        "pending": 2,
+        "format_strict": 0
+      },
+      "poisson_scaled": {
+        "n": 10,
+        "correct": 0,
+        "pending": 7,
+        "format_strict": 0
+      },
+      "poisson_second": {
+        "n": 10,
+        "correct": 1,
+        "pending": 3,
+        "format_strict": 7
+      },
+      "poisson_variance": {
+        "n": 10,
+        "correct": 5,
+        "pending": 0,
+        "format_strict": 4
+      },
+      "process_scaled": {
+        "n": 10,
+        "correct": 1,
+        "pending": 6,
+        "format_strict": 0
+      },
+      "process_second": {
+        "n": 10,
+        "correct": 0,
+        "pending": 0,
+        "format_strict": 3
+      },
+      "process_variance": {
+        "n": 10,
+        "correct": 1,
+        "pending": 1,
+        "format_strict": 0
+      },
+      "same": {
+        "n": 10,
+        "correct": 0,
+        "pending": 9,
+        "format_strict": 0
+      },
+      "uniform_conditional": {
+        "n": 10,
+        "correct": 0,
+        "pending": 1,
+        "format_strict": 0
+      },
+      "uniform_mean": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 0
+      }
+    },
+    "by_family": {
+      "binomial": {
+        "n": 10,
+        "correct": 3,
+        "pending": 5
+      },
+      "events": {
+        "n": 50,
+        "correct": 21,
+        "pending": 25
+      },
+      "interval": {
+        "n": 10,
+        "correct": 0,
+        "pending": 2
+      },
+      "moments": {
+        "n": 30,
+        "correct": 4,
+        "pending": 16
+      },
+      "poisson": {
+        "n": 30,
+        "correct": 6,
+        "pending": 10
+      },
+      "process": {
+        "n": 30,
+        "correct": 2,
+        "pending": 7
+      },
+      "uniform": {
+        "n": 20,
+        "correct": 9,
+        "pending": 1
+      }
+    }
+  },
+  "latest_step180": {
+    "n": 180,
+    "correct": 170,
+    "pending": 0,
+    "strict_one_line_expression": 180,
+    "by_category": {
+      "at_least_one": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "binomial": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "both": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "exactly_one": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "interval": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "moment_mean": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "moment_second": {
+        "n": 10,
+        "correct": 8,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "moment_variance": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "neither": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "poisson_scaled": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "poisson_second": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "poisson_variance": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "process_scaled": {
+        "n": 10,
+        "correct": 7,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "process_second": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "process_variance": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "same": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "uniform_conditional": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0,
+        "format_strict": 10
+      },
+      "uniform_mean": {
+        "n": 10,
+        "correct": 10,
+        "pending": 0,
+        "format_strict": 10
+      }
+    },
+    "by_family": {
+      "binomial": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0
+      },
+      "events": {
+        "n": 50,
+        "correct": 49,
+        "pending": 0
+      },
+      "interval": {
+        "n": 10,
+        "correct": 9,
+        "pending": 0
+      },
+      "moments": {
+        "n": 30,
+        "correct": 27,
+        "pending": 0
+      },
+      "poisson": {
+        "n": 30,
+        "correct": 30,
+        "pending": 0
+      },
+      "process": {
+        "n": 30,
+        "correct": 27,
+        "pending": 0
+      },
+      "uniform": {
+        "n": 20,
+        "correct": 19,
+        "pending": 0
+      }
+    }
+  },
+  "transitions_base_to_latest": {
+    "0->0": 8,
+    "0->1": 127,
+    "1->0": 2,
+    "1->1": 43
+  },
+  "paired_gains": 127,
+  "paired_losses": 2,
+  "paired_loss_ids": [
+    "diverse_final_blind_neither_007",
+    "diverse_final_blind_binomial_009"
+  ],
+  "student_failures": [
+    {
+      "id": "diverse_final_blind_interval_001",
+      "category": "interval",
+      "family": "interval",
+      "raw": "Expression: ((-208/11)+(-21/11))/2+((-21/11)+(-208/11))/(2*(3/2))",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_process_scaled_003",
+      "category": "process_scaled",
+      "family": "process",
+      "raw": "Expression: (12**2)*(693/60)",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_process_scaled_004",
+      "category": "process_scaled",
+      "family": "process",
+      "raw": "Expression: ((-9)**2)*(36/17)",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_moment_second_004",
+      "category": "moment_second",
+      "family": "moments",
+      "raw": "Expression: ((78/11)**2)*(58/11)+(78/11)*(18)+(-8)**2",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_process_scaled_005",
+      "category": "process_scaled",
+      "family": "process",
+      "raw": "Expression: ((-16/7)**2)*(21/5)",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_moment_variance_006",
+      "category": "moment_variance",
+      "family": "moments",
+      "raw": "Expression: ((12)**2)*(21)+((12)*(-10/13)+(23/11))**2",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_moment_second_006",
+      "category": "moment_second",
+      "family": "moments",
+      "raw": "Expression: ((12)**2)*((21)+((-10/13))**2)+2*((12)*(-10/13)+(23/11))*((12)*(-10/13)+(23/11))",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_neither_007",
+      "category": "neither",
+      "family": "events",
+      "raw": "Expression: (1/127)*(1-(13/149))",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_uniform_conditional_008",
+      "category": "uniform_conditional",
+      "family": "uniform",
+      "raw": "Expression: ((2736/187)+(38/11))/2",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    },
+    {
+      "id": "diverse_final_blind_binomial_009",
+      "category": "binomial",
+      "family": "binomial",
+      "raw": "Expression: comb(9,9)*(2/103)**9*(1-(2/103))",
+      "reason": "The model expression yields the wrong value; no repair applied.",
+      "math_correct": false,
+      "executable": true,
+      "review_required": false
+    }
+  ],
+  "category_dominance": {
+    "improved": 17,
+    "tied": 1,
+    "worse": 0
+  },
+  "result_zip": {
+    "path": "final_blind_eval_results.zip",
+    "sha256": "4f3e57aeb129a6d43870496841fdf1b806e688ac9e8bfced12b0c5b968cbad54",
+    "bytes": 83251
+  },
+  "interpretation": {
+    "project_objective_success": true,
+    "frozen_v15_selection_protocol_retroactively_passed": false,
+    "reason": "The later user-authorized final comparison changed the headline baseline to vanilla 3B. Historical v15 selection deviations and paired-loss failure remain recorded."
+  }
+}

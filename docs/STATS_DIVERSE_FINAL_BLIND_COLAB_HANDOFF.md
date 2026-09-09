@@ -1,6 +1,6 @@
-# Colab 交接：原始 3B vs 最新 step180 的 diverse final blind 考試
+# Colab 重跑：原始 3B vs 最新 step180 的 diverse final blind 考試
 
-Kaggle 目前因 GPU quota 超過而不能完成 final blind 比較。這份交接只做缺少的那個比較：原始 `meta-llama/Llama-3.2-3B-Instruct` 對最新 step180 LoRA adapter，考卷使用已封存的 diverse final blind。
+正式評測已於 2026-09-08 PDT 在 Colab 完成。原始 `meta-llama/Llama-3.2-3B-Instruct` 為 **45/180**，最新 step180 LoRA adapter 為 **170/180**。這份交接供完全相同條件重跑。
 
 ## 這次比較回答什麼
 
@@ -67,7 +67,9 @@ python /content/3Beethoven/scripts/evaluate_stats_diverse_final_blind_colab.py \
 }
 ```
 
-上面的 0 只是 schema 範例，不是預期分數。
+成功重跑的正式輸出應為原始 3B `45/180`、step180 `170/180`；配對 transitions 為 `0->0: 8`、`0->1: 127`、`1->0: 2`、`1->1: 43`。
+
+Evaluator 固定從 base model revision 載入 tokenizer。不要改成優先讀 adapter ZIP 內的 `tokenizer_config.json`；舊檔指定的 `TokenizersBackend` 在目前 Colab Transformers 會造成 `Tokenizer class TokenizersBackend does not exist`。
 
 若要把結果下載回來：
 
@@ -75,4 +77,3 @@ python /content/3Beethoven/scripts/evaluate_stats_diverse_final_blind_colab.py \
 cd /content
 zip -r final_blind_eval_results.zip 3beethoven_final_blind_eval
 ```
-
