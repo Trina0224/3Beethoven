@@ -1,5 +1,16 @@
 # Colab 重跑：原始 3B vs 最新 step180 的 diverse final blind 考試
 
+## 最新權重：Hugging Face
+
+正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+
+- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
+- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
+
+這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
+
+
 正式評測已於 2026-09-08 PDT 在 Colab 完成。原始 `meta-llama/Llama-3.2-3B-Instruct` 為 **45/180**，最新 step180 LoRA adapter 為 **170/180**。這份交接供完全相同條件重跑。
 
 ## 這次比較回答什麼
@@ -77,3 +88,21 @@ Evaluator 固定從 base model revision 載入 tokenizer。不要改成優先讀
 cd /content
 zip -r final_blind_eval_results.zip 3beethoven_final_blind_eval
 ```
+
+## 從 Hugging Face 直接準備 Colab 權重
+
+已有 HF_TOKEN 環境變數時，可取代上傳與解壓縮 Kaggle ZIP 的步驟：
+
+```python
+import os
+from huggingface_hub import snapshot_download
+snapshot_download(
+    repo_id="kozakurayuki/3Beethoven-step180",
+    revision="682d5555b0e6115135ac7b9b5d718d2abef186de",
+    local_dir="/content/3beethoven_step180_zip/adapter",
+    allow_patterns=["adapter_model.safetensors", "adapter_config.json"],
+    token=os.environ.get("HF_TOKEN"),
+)
+```
+
+保留與 Transformers 4.57.6 相容的 `huggingface_hub>=0.34,<1.0`；不要為下載權重無限制升級套件。

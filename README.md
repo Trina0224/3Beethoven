@@ -1,5 +1,16 @@
 # 3Beethoven
 
+## 最新權重：Hugging Face
+
+正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+
+- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
+- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
+
+這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
+
+
 ## 目前狀態：response distillation 成功
 
 最新 step 180 學生已在先前封存、未用於訓練或選點的 180 題 diverse final blind 上完成正式評測。自然產品比較使用原始 `meta-llama/Llama-3.2-3B-Instruct` 作 baseline：原始 3B 為 **45/180（25.0%）**，最新學生為 **170/180（94.4%）**，淨增加 125 題。學生同時達到 **180/180 嚴格一行可執行算式、0 pending**。

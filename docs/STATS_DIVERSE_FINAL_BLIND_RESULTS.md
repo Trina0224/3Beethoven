@@ -1,5 +1,16 @@
 # Diverse final blind 正式結果：蒸餾目標成功
 
+## 最新權重：Hugging Face
+
+正式模型頁：[kozakurayuki/3Beethoven-step180](https://huggingface.co/kozakurayuki/3Beethoven-step180)。權重與 `adapter_config.json` 已上傳；遠端 LFS SHA-256 與完成 170/180 評測的 step 180 權重一致。下方 Kaggle ZIP 保留為歷史備份。
+
+- HF revision：`682d5555b0e6115135ac7b9b5d718d2abef186de`
+- Adapter SHA-256：`ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`
+- [直接下載 adapter_model.safetensors](https://huggingface.co/kozakurayuki/3Beethoven-step180/resolve/682d5555b0e6115135ac7b9b5d718d2abef186de/adapter_model.safetensors?download=true)
+
+這是 LoRA adapter，載入時仍需固定 revision 的原始 Llama 3.2 3B Instruct；不要疊加 v15。Tokenizer 使用原始 base。
+
+
 狀態：**完成。最新 step 180 學生在原始 3B 對照下通過專案目標。**
 
 2026-09-08 PDT，依使用者最終指定，以未掛 LoRA 的原始 `meta-llama/Llama-3.2-3B-Instruct` 作自然 baseline，與同一個 base 直接掛載最新 step 180 LoRA 的學生，在先前封存且未用於訓練或選點的 180 題 final blind 上比較。兩者使用相同 tokenizer、prompt、greedy decoding、grader 與 4-bit 載入條件；沒有載入或疊加 v15。
