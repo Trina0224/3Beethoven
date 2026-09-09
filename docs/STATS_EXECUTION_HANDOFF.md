@@ -1,29 +1,20 @@
-# 執行交接：受控重做尚未進入訓練
+# 執行交接：本輪選點失敗，已停止在 final blind 之前
 
-## 決定
+## 已完成
 
-- 撤回 `final_clear`／V58 的採用與成功定位；保留其 107/144 → 144/144 窄模板結果作歷史證據。
-- 只從原 v15 開始；不得從 V55–V58 或其他偏科候選接續。
-- v15 是比較錨點，不是已達標終點。
-- 只建立一個新學生、執行一次訓練；目前尚無新學生或新成績。
-- 任務仍是直接統計列式，算術由程式處理；不加入一般語文能力或無邊界自然語言泛化。
+- 從原 v15 adapter SHA-256 `9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3` 出發，完成唯一一條 1,440-row（720 new＋720 replay）、180-update 訓練軌跡；最後記錄 loss 約 `0.20015`。
+- step 180 adapter SHA-256 為 `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`。
+- 固定 new development：v15 91/180（5 pending）；step 60 139/180；step 120 167/180；step 180 自動 172/180，接受唯一使用者暫行放行後 173/180。
+- Legacy development：v15 51/72；step 60 69/72；step 120 與 step 180 均為 72/72。
+- 三個 checkpoint 的 new／legacy development 逐類均不退；legacy development 均為 0 paired loss、0 pending。New development 的失敗向量為：step 60 有 2 paired losses、2 unresolved pending；step 120 有 0 paired loss、1 unresolved pending；step 180 在唯一精確人工放行後有 0 unresolved pending、2 paired losses。
+- Kaggle Quick Save 已成功保存為 [Version 62](https://www.kaggle.com/code/trinashih/3beethoven-v0-2?scriptVersionId=348379527)，scriptVersionId `348379527`。
 
-## 執行前硬鎖
+## 停止原因與邊界
 
-在老師呼叫或載入 GPU 訓練套件前，必須逐項通過並保存收據：
+step 180 雖然在 new development 的 18 類 aggregate 均不退步，仍失去 v15 原本答對的兩題：`diverse_development_moment_variance_006` 與 `diverse_development_binomial_009`。paired losses 為 2，不符合凍結門檻的 0；三個 checkpoint 的完整選點結果因此是 `no_checkpoint_passed`。
 
-1. v15 adapter SHA-256 為 `9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3`；base revision 為 `0cb88a4f764b7a12671c53f0838cd831a0843b95`。
-2. 教材、development、final 的題目數、類別數、結構軸覆蓋與雜湊符合現行協議。
-3. prompt 中的數值、條件、單位、事件與結構化 semantics 一致；oracle 與 grader 的正反例／錯式突變測試全過。
-4. train／development／final 以及歷史題之間沒有完整題、語意鍵或參數情境碰撞。
-5. STATS_DIVERSE_REPLAY.json 必須含 720 筆來源為歷史 train 的完整 rows；training plan 必須證明 720 new＋720 replay 嚴格 1:1 交錯，development/test 不得出現。
-6. final test 在 checkpoint 選定與人工等價式定案前不可載入；測後不得調整或再跑。
-7. 老師結果須綁定請求與題目雜湊，保留原始回覆、usage、cost、parse 與 rejection；缺成本或超預算即停止。
+唯一暫行放行題是 `diverse_development_process_scaled_001`，raw `Expression: ((12/19)**2)*(10**2)`，raw SHA-256 `327520af57a1a3eb0098b0cd9ff40592aa9cec561976a44427bf0ba05df3fb37`。它只算 provisional capability credit，不算 frozen-protocol compliance。
 
-只有以上收據齊全，才能把準備狀態改成「允許訓練」。目前不要根據歷史 notebook 的舊工作包直接 Run All。
+沒有 selected checkpoint，所以 legacy final 按協議不執行；這不是忘記驗證。Final blind 同樣不讀取、不解封。保留原 v15；step 180 只供研究與稽核，不發布成全面勝過 v15 的學生。不要補跑、改 gate 或以 final blind 做事後挑選。
 
-## 評估界線
-
-V58 後來的外部結構診斷只有聚合 v15 10/24、V58 16/24；逐題 raw bundle 未保存在 GitHub 或 Kaggle 保存版。因此它不是本輪可執行 gate，也不可拿 16/24 當新學生要追的盲測分數。新的 success gate 必須使用事前凍結、完整保存的同題證據，且逐類零退步、配對損失為零、待判為零。
-
-[受控協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](STATS_CURRENT_STATUS.md) · [V58 撤回後記](STATS_V58_POSTMORTEM.md) · [恢復錨點](KAGGLE_RECOVERY.md)
+[完整結果](STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](STATS_DIVERSE_RUN_RESULTS.json) · [目前狀態](STATS_CURRENT_STATUS.md) · [受控協議](STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [恢復錨點](KAGGLE_RECOVERY.md)

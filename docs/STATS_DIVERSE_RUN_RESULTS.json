@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "status": "no_checkpoint_passed",
+  "baseline": {
+    "name": "v15",
+    "adapter_sha256": "9369d52de4a886df9da0c872cd41bd4e01af0a38bf02ad724b5951c1a6b9f5d3",
+    "new_development": {
+      "correct": 91,
+      "total": 180,
+      "pending": 5
+    },
+    "legacy_development": {
+      "correct": 51,
+      "total": 72,
+      "pending": 0
+    }
+  },
+  "training": {
+    "total_rows": 1440,
+    "new_rows": 720,
+    "replay_rows": 720,
+    "optimizer_updates": 180,
+    "final_recorded_loss": 0.20015,
+    "final_recorded_loss_is_approximate": true
+  },
+  "evaluation_contract": {
+    "grader_fingerprint": "f73c1d38cbd5e1ab9454275300907aa6c6a43c3833a303441ffb1311c18ad68b",
+    "new_development": {
+      "rows_split_sha256": "28ad5fc66e2f99ab137d340b03c4b5db6616ff89200bb0e787af80fe63f364ce",
+      "order_sha256": "5290523a8ea6a62dc2ce6b4d8f17b1485bb108467c2fe3d6e0872542a9fdb8d8"
+    },
+    "legacy_development": {
+      "rows_sha256": "52bf46dc3efe2a69966be57c0573e14dad68c52b832b3d31c76b646fc5f4c54c",
+      "order_sha256": "c183c543341a56e16e96705a825734d3bd637a2a2031b0dcb750be457364207c"
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 60,
+      "new_development_correct": 139,
+      "new_development_total": 180,
+      "new_development_all_category_nonregression": true,
+      "new_development_paired_loss_count": 2,
+      "new_development_paired_loss_ids": [
+        "diverse_development_moment_variance_006",
+        "diverse_development_moment_second_007"
+      ],
+      "new_development_unresolved_pending_count": 2,
+      "new_development_unresolved_pending_ids": [
+        "diverse_development_process_scaled_002",
+        "diverse_development_moment_second_007"
+      ],
+      "legacy_development_correct": 69,
+      "legacy_development_total": 72,
+      "legacy_development_all_category_nonregression": true,
+      "legacy_development_paired_loss_count": 0,
+      "legacy_development_paired_loss_ids": [],
+      "legacy_development_pending": 0,
+      "passed_all_selection_gates": false
+    },
+    {
+      "step": 120,
+      "new_development_correct": 167,
+      "new_development_total": 180,
+      "new_development_all_category_nonregression": true,
+      "new_development_paired_loss_count": 0,
+      "new_development_paired_loss_ids": [],
+      "new_development_unresolved_pending_count": 1,
+      "new_development_unresolved_pending_ids": [
+        "diverse_development_process_scaled_002"
+      ],
+      "legacy_development_correct": 72,
+      "legacy_development_total": 72,
+      "legacy_development_all_category_nonregression": true,
+      "legacy_development_paired_loss_count": 0,
+      "legacy_development_paired_loss_ids": [],
+      "legacy_development_pending": 0,
+      "passed_all_selection_gates": false
+    },
+    {
+      "step": 180,
+      "adapter_sha256": "ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23",
+      "new_development_automatic_correct": 172,
+      "new_development_provisional_correct": 173,
+      "new_development_total": 180,
+      "new_development_automatic_pending_count": 1,
+      "new_development_automatic_pending_ids": [
+        "diverse_development_process_scaled_001"
+      ],
+      "new_development_unresolved_pending_count_after_override": 0,
+      "new_development_unresolved_pending_ids_after_override": [],
+      "new_development_all_category_nonregression": true,
+      "legacy_development_correct": 72,
+      "legacy_development_total": 72,
+      "legacy_development_all_category_nonregression": true,
+      "legacy_development_paired_loss_count": 0,
+      "legacy_development_paired_loss_ids": [],
+      "legacy_development_pending": 0,
+      "new_development_paired_loss_count": 2,
+      "new_development_paired_loss_ids": [
+        "diverse_development_moment_variance_006",
+        "diverse_development_binomial_009"
+      ],
+      "passed_all_selection_gates": false
+    }
+  ],
+  "manual_override": {
+    "scope": "provisional_capability_credit_only",
+    "id": "diverse_development_process_scaled_001",
+    "raw": "Expression: ((12/19)**2)*(10**2)",
+    "raw_sha256": "327520af57a1a3eb0098b0cd9ff40592aa9cec561976a44427bf0ba05df3fb37",
+    "exact_value": "14400/361",
+    "counts_as_frozen_protocol_compliance": false
+  },
+  "selection": {
+    "selected_checkpoint": null,
+    "legacy_final_run": false,
+    "legacy_final_not_run_reason": "protocol stops before legacy final when no checkpoint passes selection",
+    "final_blind_opened": false,
+    "final_blind_run": false,
+    "retained_model": "v15"
+  },
+  "interpretation": {
+    "empirical_capability_improved": true,
+    "frozen_protocol_compliant": false,
+    "promotion_claim": false
+  },
+  "execution_deviations": [
+    "v15 baseline was evaluated retrospectively rather than before training",
+    "step 180 was inspected before completing the fixed 60-to-120-to-180 selection order",
+    "the single provisional manual override was decided after seeing model output"
+  ],
+  "preservation": {
+    "provider": "Kaggle",
+    "notebook_version": 62,
+    "script_version_id": 348379527,
+    "quick_save_successful": true,
+    "url": "https://www.kaggle.com/code/trinashih/3beethoven-v0-2?scriptVersionId=348379527"
+  }
+}

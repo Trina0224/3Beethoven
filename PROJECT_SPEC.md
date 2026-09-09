@@ -1,4 +1,4 @@
-# 3Beethoven：目前規格與受控重做狀態
+# 3Beethoven：目前規格與多樣教材單輪結果
 
 **V58 的採用與成功解讀已撤回。** 原先同題窄模板結果 v15 **107/144** → `final_clear` **144/144** 是實際歷史紀錄，但教材與評估沒有覆蓋足夠的符號、邊界、單位與結構變化，不能證明它全面優於 v15。V58 不得作現行父模型或成功終點。
 
@@ -6,13 +6,13 @@
 
 學生只需在約定範圍的直接、清楚統計題上輸出已代入數值的可執行算式，算術交由程式。不把陌生語文改寫、長篇解釋或一般語文能力加入成功定義。
 
-原 v15 是唯一可信的訓練起點與比較錨點，但不是已完成的成功學生。新一輪只允許一個學生、一次訓練；目前已重建 720 筆完整群組新教材及 720 筆實際歷史 train replay，仍未呼叫老師或 GPU，**尚無新學生、尚無新訓練結果**。
+原 v15 是唯一可信的訓練起點與比較錨點，但不是已完成的成功學生。本輪已按「一個學生、一次訓練」完成 720 筆新教材＋720 筆實際歷史 train replay、180 optimizer updates。step 180 在固定 new development 為自動 172/180，接受使用者唯一暫行 pending 放行後為 173/180；legacy development 為 72/72，但仍有兩題 v15→student paired loss。因此 selection 狀態為 **`no_checkpoint_passed`**，原 v15 不被取代，final blind 未解封。
 
-在老師呼叫或 GPU 更新前，必須先凍結並留下可核對收據：教材覆蓋矩陣、prompt↔語意一致性、獨立 oracle、grader 正反例與錯式突變測試、歷史／跨分割碰撞、最終測試隔離、v15 與資料雜湊，以及失敗即停止規則。只有同題總分增加、所有約定類別不退步、配對既有正確題零損失、待判為零時，才能稱為成功；測試不能回流教材或選點。
+本輪 empirical capability 有顯著改善，但 frozen-protocol compliance 不成立：除了兩題 paired loss，baseline 是訓練後補做，step 180 早於固定選點順序被查看，唯一人工放行是在看到輸出後才定案。只有同題總分增加、所有約定類別不退步、配對既有正確題零損失、待判為零時，才能稱為成功；本輪沒有達到，不能用 aggregate 提升改寫成全面畢業。
 
 後來的 24 題外部結構診斷只保留聚合 v15 **10/24**、V58 **16/24**。因逐題 raw bundle 未存入 GitHub 或 Kaggle 已保存版本，它是撤回動機，不是本輪可執行 gate。
 
-[現行受控協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](docs/STATS_CURRENT_STATUS.md) · [V58 撤回後記](docs/STATS_V58_POSTMORTEM.md) · [恢復模型](docs/KAGGLE_RECOVERY.md)
+[本輪完整結果](docs/STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](docs/STATS_DIVERSE_RUN_RESULTS.json) · [現行受控協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [目前狀態](docs/STATS_CURRENT_STATUS.md) · [恢復模型](docs/KAGGLE_RECOVERY.md)
 
 <details>
 <summary>歷史專案規格（不代表目前待執行工作）</summary>

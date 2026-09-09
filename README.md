@@ -1,19 +1,21 @@
 # 3Beethoven
 
-## 目前狀態：V58 已撤回，受控重做仍在訓練前
+## 目前狀態：新學生已完成，但沒有 checkpoint 通過畢業門檻
 
-`final_clear`（Kaggle V58）不再是採用學生，也不能稱為本專案的成功結果。它在原先固定、狹窄的 18 類模板測試上確實得到原 v15 **107/144 → 144/144**；這些數字保留為歷史結果，但後續檢查發現教材和評估的結構多樣性不足，原 gate 無法支持「全面比 v15 好」的結論。
+多樣教材 v2 的唯一學生訓練與 development／legacy development 選點已完成。step 180 在固定 new development 由原 v15 的 **91/180** 提高至自動 **172/180**；依使用者明示暫行放行唯一 pending 後為 **173/180**，legacy development 為 **72/72**。但它仍失去 v15 原本答對的兩題，因此 paired-loss gate 未過，結果是 **`no_checkpoint_passed`**。本輪不解封 final blind，原 v15 繼續保留。
 
-一組後來做的外部結構診斷只有歷史聚合：v15 **10/24**、V58 **16/24**。逐題 raw bundle 未保存在 GitHub 或 Kaggle 的已保存版本，因此它只能解釋為何撤回，**不能成為新一輪可執行或可重現的 gate**。
+這個結論分成兩層：本輪使用新教材與 replay 後，確實觀察到顯著的 empirical capability 改善；但 paired losses、訓練後才補跑 baseline，以及輸出後人工放行 pending，都使它不能宣稱符合 frozen protocol，更不能稱為全面勝過 v15 的畢業學生。完整數字與 execution deviations 見[本輪結果](docs/STATS_DIVERSE_RUN_RESULTS.md)。
 
 | 模型 | 目前定位 |
 |---|---|
 | **原 v15** | 唯一可信的受控起點與比較錨點；不是成功終點 |
 | **final_clear / V58** | 歷史窄模板結果；升級與採用資格已撤回 |
 | V55–V57 等 | 歷史診斷學生；均未證明全面優於 v15 |
-| 新學生 | **尚未產生** |
+| 多樣教材 step 180 | Aggregate 大幅改善；因 2 題 paired loss 未畢業、不取代 v15 |
 
-多樣教材 v2 已重建：720 筆新 train、180 筆 development、180 筆隔離 final；每個 binomial 故事都是完整五連問。另物化 720 筆歷史 train replay，固定以 1:1 與新教材交錯；legacy development/final 仍只供評估。受控直接模板由 27 種增加到 train 48 種，單一模板最高重複 20 次，不加入一般語文能力。老師尚未呼叫、GPU 尚未啟動、新學生尚未產生。
+本輪使用 720 筆新 train 與 720 筆物化歷史 train replay，固定 1:1 組成 1,440-row 訓練序列，共 180 optimizer updates，最後記錄 loss 約 `0.20015`。step 60／120／180 的 new development 分別為 139／167／172；legacy development 分別為 69／72／72。step 180 adapter SHA-256 為 `ff89a22f097e4db457dab287042ae36520ec6b9b36f26e5ed11fe42337c04f23`。
+
+結果與 notebook 已成功保存為 [Kaggle Version 62](https://www.kaggle.com/code/trinashih/3beethoven-v0-2?scriptVersionId=348379527)，scriptVersionId `348379527`。
 
 ## 可恢復的比較錨點
 
@@ -29,6 +31,7 @@ V58 權重仍可作歷史稽核，不應載入為新一輪父模型。其原始�
 
 ## 文件入口
 
+- [本輪結果](docs/STATS_DIVERSE_RUN_RESULTS.md) · [機器可讀摘要](docs/STATS_DIVERSE_RUN_RESULTS.json)
 - [目前狀態](docs/STATS_CURRENT_STATUS.md) · [下一輪狀態](docs/STATS_NEXT_RUN_STATUS.md)
 - [受控實驗協議](docs/STATS_DIVERSE_EXPERIMENT_PROTOCOL.md) · [執行交接](docs/STATS_EXECUTION_HANDOFF.md)
 - [多樣教材協議](docs/STATS_DIVERSE_CURRICULUM_PROTOCOL.md) · [實際 replay rows](docs/STATS_DIVERSE_REPLAY.json)
